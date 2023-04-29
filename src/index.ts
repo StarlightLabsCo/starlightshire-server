@@ -45,7 +45,7 @@ const handlers = {
     // ConversationEnd: endConversation,
 };
 
-wss.on("connection", (ws) => {
+wss.on("connection", async (ws) => {
     // Init Connection
     console.log("WebSocket connection established");
 
@@ -96,6 +96,13 @@ wss.on("connection", (ws) => {
         console.log(`connection (id = ${clients.get(ws).id}) closed`);
         clients.delete(ws);
     });
+
+    while (true) {
+        ws.send(JSON.stringify({ type: "Ping", data: "Ping" }));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+    }
 });
+
+console.log(`WebSocket server listening on port ${process.env.PORT}`);
 
 export { wss, clients };
