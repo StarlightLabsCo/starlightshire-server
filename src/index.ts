@@ -96,26 +96,6 @@ wss.on("connection", async (ws) => {
         console.log(`connection (id = ${clients.get(ws).id}) closed`);
         clients.delete(ws);
     });
-
-    while (true) {
-        for (let i = 0; i < 3; i++) {
-            ws.send(
-                JSON.stringify({
-                    type: "MoveEvent",
-                    data: {
-                        characterId: `${i}`,
-                        movementInput: {
-                            // Outputs should be between -0.2 and -0.1, and then also between 0.1 and 0.2
-                            x: Math.random() * 0.4 - 0.2,
-                            y: Math.random() * 0.4 - 0.2,
-                        },
-                    },
-                })
-            );
-        }
-
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-    }
 });
 
 console.log(`WebSocket server listening on port ${process.env.PORT}`);
