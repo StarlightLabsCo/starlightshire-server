@@ -14,8 +14,14 @@ model Character {
   id String @id @default(cuid())
 
   name String @unique
+  age  Int
 
-  memories Memory[]
+  memories            Memory[]
+  reflectionThreshold Float    @default(0)
+
+  // Metadata
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 // There are 2 types of memories:
@@ -35,6 +41,7 @@ model Memory {
   accessedAt DateTime @default(now())
 
   // Metadata
+  gameDate  Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
