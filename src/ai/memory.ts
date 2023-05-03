@@ -78,10 +78,7 @@ const createMemory = async (characterId: string, memory: string) => {
         },
     });
 
-    // TODO: make this threshold a variable
     if (updatedCharacter.reflectionThreshold >= config.reflectionThreshold) {
-        console.log("Threshold reached.. Generating reflection");
-
         // Reset the threshold
         await prisma.character.update({
             where: {
@@ -93,7 +90,6 @@ const createMemory = async (characterId: string, memory: string) => {
         });
 
         // Generate reflection
-        // This is done async for performance reasons
         generateReflection(characterId);
     }
 };
@@ -192,6 +188,7 @@ const getRelevantMemories = async (
         }
 
         // Recency (accessedAt)
+        // TODO: add exponential decay to recency (so that memories that were accessed a long time ago are less relevant)
         if (!recencyMin || memory.accessedAt.getTime() < recencyMin) {
             recencyMin = memory.accessedAt.getTime();
         }
