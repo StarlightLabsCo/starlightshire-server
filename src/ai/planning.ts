@@ -16,10 +16,7 @@ const generatePlan = async (characterId: string) => {
     const agentSummary = await generateAgentSummary(characterId);
 
     // Generate summary of the previous day
-    const previousDaySummary = await generateDaySummary(
-        characterId,
-        gameDate - 1
-    );
+    const previousDaySummary = await generateDaySummary(characterId, gameDate - 1);
 
     // Create the planning prompt
     let planningPrompt;
@@ -60,17 +57,8 @@ const generateAgentSummary = async (characterId: string) => {
         `How would one describe ${character.name}'s feeling about his recent progress in life given the above statements?`,
     ];
 
-    const generateSummaryInfo = async (
-        characterId: string,
-        query: string,
-        question: string
-    ) => {
-        const memories = await getRelevantMemories(
-            characterId,
-            query,
-            10,
-            false
-        );
+    const generateSummaryInfo = async (characterId: string, query: string, question: string) => {
+        const memories = await getRelevantMemories(characterId, query, 10, false);
 
         let prompt = `Statements about ${character.name}\n`;
         for (let j = 0; j < memories.length; j++) {
@@ -87,12 +75,9 @@ const generateAgentSummary = async (characterId: string) => {
         return completion.data.choices[0].message.content;
     };
 
-    const [coreCharacteristics, currentDailyOccupation, recentProgress] =
-        await Promise.all(
-            queries.map((query, index) =>
-                generateSummaryInfo(characterId, query, question[index])
-            )
-        );
+    const [coreCharacteristics, currentDailyOccupation, recentProgress] = await Promise.all(
+        queries.map((query, index) => generateSummaryInfo(characterId, query, question[index]))
+    );
 
     // Combine into a single summary
     let summary;
@@ -113,7 +98,7 @@ const generateDaySummary = async (characterId: string, gameDate: number) => {
     ]);
 
     // Generate the summary prompt
-    let summary;
+    let summary: string;
     summary += `Date: ${gameDate}\n`;
     summary += `Memories:\n`;
     for (let i = 0; i < memories.length; i++) {

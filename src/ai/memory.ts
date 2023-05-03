@@ -132,6 +132,9 @@ const getRelevantMemories = async (
     top_k: number,
     updateAccessedAt: boolean = true
 ) => {
+    // Get the embedding of the query
+    const queryEmbedding = await getMemoryEmbedding(query);
+
     // TODO: this is probably the most inefficient function I have ever written
     // TODO: please for the love of god, optimize this, I'm begging you
     const memories = await prisma.memory.findMany({
@@ -139,9 +142,6 @@ const getRelevantMemories = async (
             characterId,
         },
     });
-
-    // Get the embedding of the query
-    const queryEmbedding = await getMemoryEmbedding(query);
 
     // Turn embedding strings into arrays that can be searched via cosign similarity
     // TODO: ideally it would already be stored as a float array, so no conversion would be necessary
@@ -153,49 +153,30 @@ const getRelevantMemories = async (
     });
 
     // Noramlize the memories based on their similarity, importance, and recency
-    let similarityMin;
-    let similarityMax;
+    let similarityMin: number;
+    let similarityMax: number;
 
-    let recencyMin;
-    let recencyMax;
+    let recencyMin: number;
+    let recencyMax: number;
 
-    let importanceMin;
-    let importanceMax;
+    let importanceMin: number;
+    let importanceMax: number;
 
     // Also add the similarity to the query (so it doesn't have to be calculated again)
     const memoriesWithSimilarity = memoriesWithEmbeddings.map((memory) => {
         // Similarity
-        const similarity = cosineSimilarity(
-            queryEmbedding,
-            memory.embedding as number[]
-        );
+        const similarity = cosineSimilarity(queryEmbedding, memory.embedding as number[]);
 
-        if (!similarityMin || similarity < similarityMin) {
-            similarityMin = similarity;
-        }
+        similarityMin = Math.min(similarityMin, similarity);
+        similarityMax = Math.max(similarityMax, similarity);
 
-        if (!similarityMax || similarity > similarityMax) {
-            similarityMax = similarity;
-        }
+        importanceMin = Math.min(importanceMin, memory.importance);
+        importanceMax = Math.max(importanceMax, memory.importance);
 
-        // Importance
-        if (!importanceMin || memory.importance < importanceMin) {
-            importanceMin = memory.importance;
-        }
-
-        if (!importanceMax || memory.importance > importanceMax) {
-            importanceMax = memory.importance;
-        }
-
+        // TODO: Add exponential decay
         // Recency (accessedAt)
-        // TODO: add exponential decay to recency (so that memories that were accessed a long time ago are less relevant)
-        if (!recencyMin || memory.accessedAt.getTime() < recencyMin) {
-            recencyMin = memory.accessedAt.getTime();
-        }
-
-        if (!recencyMax || memory.accessedAt.getTime() > recencyMax) {
-            recencyMax = memory.accessedAt.getTime();
-        }
+        recencyMin = Math.min(recencyMin, memory.accessedAt.getTime());
+        recencyMax = Math.max(recencyMax, memory.accessedAt.getTime());
 
         return {
             ...memory,
@@ -204,41 +185,28 @@ const getRelevantMemories = async (
     });
 
     // Normalize the memories
-    const memoriesWithNormalizedValues = memoriesWithSimilarity.map(
-        (memory) => {
-            const similarity =
-                (memory.similarity - similarityMin) /
-                (similarityMax - similarityMin);
+    const memoriesWithNormalizedValues = memoriesWithSimilarity.map((memory) => {
+        const similarity = (memory.similarity - similarityMin) / (similarityMax - similarityMin);
 
-            const importance =
-                (memory.importance - importanceMin) /
-                (importanceMax - importanceMin);
+        const importance = (memory.importance - importanceMin) / (importanceMax - importanceMin);
 
-            const recency =
-                (memory.accessedAt.getTime() - recencyMin) /
-                (recencyMax - recencyMin);
+        const recency = (memory.accessedAt.getTime() - recencyMin) / (recencyMax - recencyMin);
 
-            const normalizedScore = similarity + importance + recency;
+        const normalizedScore = similarity + importance + recency;
 
-            return {
-                ...memory,
-                normalizedScore,
-            };
-        }
-    );
+        return {
+            ...memory,
+            normalizedScore,
+        };
+    });
 
     // Sort the memories by their normalized score
-    const memoriesSortedByNormalizedScore = memoriesWithNormalizedValues.sort(
-        (a, b) => {
-            return b.normalizedScore - a.normalizedScore;
-        }
-    );
+    const memoriesSortedByNormalizedScore = memoriesWithNormalizedValues.sort((a, b) => {
+        return a.normalizedScore - b.normalizedScore; // normally b - a, but we want descending order
+    });
 
     // Return top k memories
-    const mostRelevantMemories = memoriesSortedByNormalizedScore.slice(
-        0,
-        top_k
-    );
+    const mostRelevantMemories = memoriesSortedByNormalizedScore.slice(0, top_k);
 
     // If we don't want to update the accessedAt, return the memories
     if (!updateAccessedAt) {

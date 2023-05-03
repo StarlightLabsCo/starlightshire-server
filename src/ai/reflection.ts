@@ -1,9 +1,5 @@
 import { getCharacter } from "../character";
-import {
-    createMemory,
-    getLatestMemories,
-    getRelevantMemories,
-} from "./memory";
+import { createMemory, getLatestMemories, getRelevantMemories } from "./memory";
 import { openai } from "./openai";
 import * as config from "../config.json";
 
@@ -11,10 +7,7 @@ import * as config from "../config.json";
 // There are two stages to reflections:
 // 1.) Generating questions to ask based on the character's memories (these are reflection questions)
 // 2.) Generating the reflections based on the questions and retrieved memories
-const answerReflectionQuestion = async (
-    characterId: string,
-    reflectionQuestion: string
-) => {
+const answerReflectionQuestion = async (characterId: string, reflectionQuestion: string) => {
     // Get the character's name & Retrieve the latest 15 memories based on the reflection question
     // This will update the memory's accessedAt timestamp because the NPC is reflecting on it
     const [character, memories] = await Promise.all([
@@ -59,7 +52,7 @@ const generateReflection = async (characterId: string) => {
     const memories = await getLatestMemories(characterId, 100);
 
     // Figure out the most important questions to ask, and reflect on
-    let generateReflectionQuestionsPrompt;
+    let generateReflectionQuestionsPrompt: string;
     for (let i = 0; i < memories.length; i++) {
         const memory = memories[i];
         generateReflectionQuestionsPrompt += `${i + 1}. ${memory.memory}\n`;
@@ -70,16 +63,14 @@ const generateReflection = async (characterId: string) => {
     // Generate the reflection questions
     const completion = await openai.createChatCompletion({
         model: config.model,
-        messages: [
-            { role: "user", content: generateReflectionQuestionsPrompt },
-        ],
+        messages: [{ role: "user", content: generateReflectionQuestionsPrompt }],
     });
 
     const reflectionQuestions = completion.data.choices[0].message.content;
 
     // Parse the reflection questions (remove the numbers e.g. (1. ), and split by new line)
     const reflectionQuestionsParsed = reflectionQuestions
-        .replace(/[0-9]. /g, "")
+        .replace(/^[0-9].\s+?/g, "")
         .trim()
         .split("\n");
 
