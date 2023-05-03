@@ -162,51 +162,73 @@ const getRelevantMemories = async (
     let importanceMin: number;
     let importanceMax: number;
 
+    // Start time used for calculating exponential deca of recency
+    const startTime = Date.now();
+
     // Also add the similarity to the query (so it doesn't have to be calculated again)
     const memoriesWithSimilarity = memoriesWithEmbeddings.map((memory) => {
         // Similarity
-        const similarity = cosineSimilarity(queryEmbedding, memory.embedding as number[]);
+        const similarity = cosineSimilarity(
+            queryEmbedding,
+            memory.embedding as number[]
+        );
 
+        // In our implementation, we treat recency as an exponential decay function
+        // over the number of sandbox game hours since the memory was
+        // last retrieved. Our decay factor is 0.99.
+        const recency = Math.pow(0.99, startTime - memory.accessedAt.getTime());
+
+        // Mark the min and max values for each to normalize later
         similarityMin = Math.min(similarityMin, similarity);
         similarityMax = Math.max(similarityMax, similarity);
 
         importanceMin = Math.min(importanceMin, memory.importance);
         importanceMax = Math.max(importanceMax, memory.importance);
 
-        // TODO: Add exponential decay
-        // Recency (accessedAt)
-        recencyMin = Math.min(recencyMin, memory.accessedAt.getTime());
-        recencyMax = Math.max(recencyMax, memory.accessedAt.getTime());
+        recencyMin = Math.min(recencyMin, recency);
+        recencyMax = Math.max(recencyMax, recency);
 
         return {
             ...memory,
             similarity,
+            recency,
         };
     });
 
     // Normalize the memories
-    const memoriesWithNormalizedValues = memoriesWithSimilarity.map((memory) => {
-        const similarity = (memory.similarity - similarityMin) / (similarityMax - similarityMin);
+    const memoriesWithNormalizedValues = memoriesWithSimilarity.map(
+        (memory) => {
+            const similarity =
+                (memory.similarity - similarityMin) /
+                (similarityMax - similarityMin);
+            const importance =
+                (memory.importance - importanceMin) /
+                (importanceMax - importanceMin);
 
-        const importance = (memory.importance - importanceMin) / (importanceMax - importanceMin);
+            const recency =
+                (memory.recency - recencyMin) / (recencyMax - recencyMin);
 
-        const recency = (memory.accessedAt.getTime() - recencyMin) / (recencyMax - recencyMin);
+            const normalizedScore = similarity + importance + recency;
 
-        const normalizedScore = similarity + importance + recency;
-
-        return {
-            ...memory,
-            normalizedScore,
-        };
-    });
+            return {
+                ...memory,
+                normalizedScore,
+            };
+        }
+    );
 
     // Sort the memories by their normalized score
-    const memoriesSortedByNormalizedScore = memoriesWithNormalizedValues.sort((a, b) => {
-        return a.normalizedScore - b.normalizedScore; // normally b - a, but we want descending order
-    });
+    const memoriesSortedByNormalizedScore = memoriesWithNormalizedValues.sort(
+        (a, b) => {
+            return a.normalizedScore - b.normalizedScore; // normally b - a, but we want descending order
+        }
+    );
 
     // Return top k memories
-    const mostRelevantMemories = memoriesSortedByNormalizedScore.slice(0, top_k);
+    const mostRelevantMemories = memoriesSortedByNormalizedScore.slice(
+        0,
+        top_k
+    );
 
     // If we don't want to update the accessedAt, return the memories
     if (!updateAccessedAt) {
