@@ -1,4 +1,4 @@
-import { getRelevantMemories } from "./memory";
+import { getRelevantMemories } from "./memory.js";
 
 // Agent Loop
 const agentLoop = async (characterId: string) => {

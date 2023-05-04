@@ -1,8 +1,11 @@
 import { prisma } from "../db.js";
 import { getCharacter } from "../character.js";
+import { getGameDate } from "../game.js";
 import { openai } from "./openai.js";
-import * as config from "../config.json";
 import { generateReflection } from "./reflection.js";
+import config from "../config.json" assert { type: "json" };
+
+if (!config.model) throw new Error("No model provided in config.json");
 
 // Importance (Using LLM to determine importance from 1-10)
 const getMemoryImportance = async (memory: string) => {
@@ -153,17 +156,17 @@ const getRelevantMemories = async (
     });
 
     // Noramlize the memories based on their similarity, importance, and recency
-    let similarityMin: number;
-    let similarityMax: number;
+    let similarityMin: number = Number.MAX_VALUE;
+    let similarityMax: number = Number.MIN_VALUE;
 
-    let recencyMin: number;
-    let recencyMax: number;
+    let recencyMin: number = Number.MAX_VALUE;
+    let recencyMax: number = Number.MIN_VALUE;
 
-    let importanceMin: number;
-    let importanceMax: number;
+    let importanceMin: number = Number.MAX_VALUE;
+    let importanceMax: number = Number.MIN_VALUE;
 
-    // Start time used for calculating exponential deca of recency
-    const startTime = Date.now();
+    //  Time used for calculating exponential decay of recency. We save it here so it's the same for all memories
+    const currentTime = Date.now();
 
     // Also add the similarity to the query (so it doesn't have to be calculated again)
     const memoriesWithSimilarity = memoriesWithEmbeddings.map((memory) => {
@@ -176,7 +179,10 @@ const getRelevantMemories = async (
         // In our implementation, we treat recency as an exponential decay function
         // over the number of sandbox game hours since the memory was
         // last retrieved. Our decay factor is 0.99.
-        const recency = Math.pow(0.99, startTime - memory.accessedAt.getTime());
+        const recency = Math.pow(
+            0.99,
+            (currentTime - memory.accessedAt.getTime()) / 1000 / 60 / 60 /// turn into hours
+        );
 
         // Mark the min and max values for each to normalize later
         similarityMin = Math.min(similarityMin, similarity);
@@ -201,6 +207,7 @@ const getRelevantMemories = async (
             const similarity =
                 (memory.similarity - similarityMin) /
                 (similarityMax - similarityMin);
+
             const importance =
                 (memory.importance - importanceMin) /
                 (importanceMax - importanceMin);
@@ -220,7 +227,7 @@ const getRelevantMemories = async (
     // Sort the memories by their normalized score
     const memoriesSortedByNormalizedScore = memoriesWithNormalizedValues.sort(
         (a, b) => {
-            return a.normalizedScore - b.normalizedScore; // normally b - a, but we want descending order
+            return b.normalizedScore - a.normalizedScore;
         }
     );
 

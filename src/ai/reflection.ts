@@ -1,18 +1,28 @@
-import { getCharacter } from "../character";
-import { createMemory, getLatestMemories, getRelevantMemories } from "./memory";
-import { openai } from "./openai";
-import * as config from "../config.json";
+import { openai } from "./openai.js";
+import { getCharacter } from "../character.js";
+import {
+    createMemory,
+    getLatestMemories,
+    getRelevantMemories,
+} from "./memory.js";
+import config from "../config.json" assert { type: "json" };
+
+if (!config.model) throw new Error("No model provided in config.json");
 
 // Reflections
 // There are two stages to reflections:
 // 1.) Generating questions to ask based on the character's memories (these are reflection questions)
 // 2.) Generating the reflections based on the questions and retrieved memories
-const answerReflectionQuestion = async (characterId: string, reflectionQuestion: string) => {
-    // Get the character's name & Retrieve the latest 15 memories based on the reflection question
+const answerReflectionQuestion = async (
+    characterId: string,
+    reflectionQuestion: string
+) => {
+    // Get the character's name & Retrieve the latest 10 memories based on the reflection question
+    // TODO: 10 is an arbitrary number, we should figure out a better way to do this
     // This will update the memory's accessedAt timestamp because the NPC is reflecting on it
     const [character, memories] = await Promise.all([
         getCharacter(characterId),
-        getRelevantMemories(characterId, reflectionQuestion, 15),
+        getRelevantMemories(characterId, reflectionQuestion, 10),
     ]);
 
     // Create the reflection prompt
@@ -63,7 +73,9 @@ const generateReflection = async (characterId: string) => {
     // Generate the reflection questions
     const completion = await openai.createChatCompletion({
         model: config.model,
-        messages: [{ role: "user", content: generateReflectionQuestionsPrompt }],
+        messages: [
+            { role: "user", content: generateReflectionQuestionsPrompt },
+        ],
     });
 
     const reflectionQuestions = completion.data.choices[0].message.content;
