@@ -1,83 +1,77 @@
-import { createMemory, getRelevantMemories } from "../src/ai/memory.js";
+import { Character } from "@prisma/client";
+import { createMemory } from "../src/ai/memory.js";
 import { generatePlan } from "../src/ai/planning.js";
 import { prisma } from "../src/db.js";
+import { getLatestTask } from "../src/ai/task.js";
+import { agentLoop } from "../src/ai/agent.js";
 
 async function createCharacter() {
     await prisma.character.deleteMany({});
 
     const character = await prisma.character.create({
         data: {
-            name: "Harris Rothaermel",
-            age: 24,
+            name: "John Lin",
+            age: 42,
         },
     });
 
     return character;
 }
 
-async function testMemory(characterId: string) {
-    await createMemory(characterId, "I woke up and went to the bathroom.");
+async function testMemory(character: Character) {
+    await prisma.memory.deleteMany({});
 
     await createMemory(
-        characterId,
-        "I went downstairs and started working on my computer."
+        character,
+        "John Lin is a pharmacy shopkeeper at the Willow Market and Pharmacy who loves to help people. He is always looking for ways to make the process of getting medication easier for his customers."
     );
 
     await createMemory(
-        characterId,
-        "I took a short walk around the block to get some fresh air."
+        character,
+        "John Lin is living with his wife, Mei Lin, who is a college professor, and son, Eddy Lin, who is a student studying music theory"
     );
 
-    await createMemory(characterId, "I browsed Twitter for a bit.");
-
-    await createMemory(characterId, "I played Crab Champions with a friend.");
-
-    await createMemory(characterId, "I got lunch at Chipotle");
+    await createMemory(character, "John Lin loves his family very much");
 
     await createMemory(
-        characterId,
-        "I went to Stripe Sessions at Pier 48, a conference for developers of Stripe, a payment processing company."
+        character,
+        "John Lin has known the old couple next-door, Sam Moore and Jennifer Moore, for a few years"
     );
 
     await createMemory(
-        characterId,
-        "At Stripe Sessions, I went to an AI panel with some of the top AI researchers in the world."
+        character,
+        "John Lin thinks Sam Moore is a kind and nice man;"
     );
 
     await createMemory(
-        characterId,
-        "I attended the fireside chat with Sam Altman, the CEO of OpenAI."
-    );
-
-    await createMemory(characterId, "I ubered home from Stripe Sessions.");
-
-    await createMemory(
-        characterId,
-        "I got dinner at The Bird, a fried chicken restaurant."
+        character,
+        "John Lin knows his neighbor, Yuriko Yamamoto, well"
     );
 
     await createMemory(
-        characterId,
-        "I went back on my computer and worked on my project."
+        character,
+        "John Lin knows of his neighbors, Tamara Taylor and Carmen Ortiz, but has not met them before"
     );
 
-    await createMemory(characterId, "I browsed Twitter for a bit.");
+    await createMemory(
+        character,
+        "John Lin and Tom Moreno are colleagues at The Willows Market and Pharmacy; John Lin and Tom Moreno are friends and like to discuss local politics together"
+    );
 
-    await createMemory(characterId, "I went to bed.");
-
-    const memories = await getRelevantMemories(
-        characterId,
-        "What is Harris working on?",
-        5
+    await createMemory(
+        character,
+        "John Lin knows the Moreno family somewhat well — the husband Tom Moreno and the wife Jane Moreno"
     );
 }
 
 async function testPlanning() {
-    const ch = await createCharacter();
-    const memories = await testMemory(ch.id);
-    const plan = await generatePlan(ch.id);
+    console.log("Creating character & memory");
 
-    console.log("Plan", plan);
+    const ch = await createCharacter();
+
+    await testMemory(ch);
+    await generatePlan(ch);
+    await agentLoop(ch.id);
 }
 
 testPlanning();

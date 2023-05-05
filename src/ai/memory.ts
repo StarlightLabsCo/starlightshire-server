@@ -1,8 +1,10 @@
 import { prisma } from "../db.js";
-import { getCharacter } from "../character.js";
-import { getGameDate } from "../game.js";
+import { Character } from "@prisma/client";
+
 import { openai } from "./openai.js";
+import { getGameDate } from "../game.js";
 import { generateReflection } from "./reflection.js";
+
 import config from "../config.json" assert { type: "json" };
 
 if (!config.model) throw new Error("No model provided in config.json");
@@ -54,10 +56,9 @@ const cosineSimilarity = (a: number[], b: number[]) => {
 };
 
 // Storage
-const createMemory = async (characterId: string, memory: string) => {
-    // Get the character, current gameDate, importance of the memory, and the embedding of the memory in parallel
-    const [character, gameDate, importance, embedding] = await Promise.all([
-        getCharacter(characterId),
+const createMemory = async (character: Character, memory: string) => {
+    // Get the current gameDate, importance of the memory, and the embedding of the memory in parallel
+    const [gameDate, importance, embedding] = await Promise.all([
         getGameDate(),
         getMemoryImportance(memory),
         getMemoryEmbedding(memory),
@@ -66,7 +67,7 @@ const createMemory = async (characterId: string, memory: string) => {
     // Create the memory, and update the character's reflection threshold
     const updatedCharacter = await prisma.character.update({
         where: {
-            id: characterId,
+            id: character.id,
         },
         data: {
             reflectionThreshold: character.reflectionThreshold + importance,
@@ -85,7 +86,7 @@ const createMemory = async (characterId: string, memory: string) => {
         // Reset the threshold
         await prisma.character.update({
             where: {
-                id: characterId,
+                id: character.id,
             },
             data: {
                 reflectionThreshold: 0,
@@ -93,17 +94,17 @@ const createMemory = async (characterId: string, memory: string) => {
         });
 
         // Generate reflection
-        generateReflection(characterId);
+        generateReflection(character);
     }
 };
 
 // Retrieval
 
 // Returns the latest memories (used by the reflection system to figure out what to reflect on)
-const getLatestMemories = async (characterId: string, top_k: number) => {
+const getLatestMemories = async (character: Character, top_k: number) => {
     const memories = await prisma.memory.findMany({
         where: {
-            characterId,
+            id: character.id,
         },
         orderBy: {
             createdAt: "desc",
@@ -116,11 +117,22 @@ const getLatestMemories = async (characterId: string, top_k: number) => {
 
 // Returns all the memories from a specific game date
 // This is used by the system to summarize a day, for planning and as such shouldn't update the accessedAt field
-const getAllMemoriesFromDay = async (characterId: string, gameDate: number) => {
+const getAllMemoriesFromDay = async (character: Character, gameDate: Date) => {
     const memories = await prisma.memory.findMany({
         where: {
-            characterId,
-            gameDate,
+            id: character.id,
+            gameDate: {
+                gte: new Date(
+                    gameDate.getFullYear(),
+                    gameDate.getMonth(),
+                    gameDate.getDate()
+                ),
+                lt: new Date(
+                    gameDate.getFullYear(),
+                    gameDate.getMonth(),
+                    gameDate.getDate() + 1
+                ),
+            },
         },
     });
 
@@ -130,7 +142,7 @@ const getAllMemoriesFromDay = async (characterId: string, gameDate: number) => {
 // Returns relevant memories using the noramlized similarity, importance, and recency, and updates the accessedAt field if updateAccessedAt is true
 // This will be mainly used by the NPC, and as such should update the accessedAt field
 const getRelevantMemories = async (
-    characterId: string,
+    character: Character,
     query: string,
     top_k: number,
     updateAccessedAt: boolean = true
@@ -138,16 +150,13 @@ const getRelevantMemories = async (
     // Get the embedding of the query
     const queryEmbedding = await getMemoryEmbedding(query);
 
-    // TODO: this is probably the most inefficient function I have ever written
-    // TODO: please for the love of god, optimize this, I'm begging you
     const memories = await prisma.memory.findMany({
         where: {
-            characterId,
+            characterId: character.id,
         },
     });
 
     // Turn embedding strings into arrays that can be searched via cosign similarity
-    // TODO: ideally it would already be stored as a float array, so no conversion would be necessary
     const memoriesWithEmbeddings = memories.map((memory) => {
         return {
             ...memory,
@@ -243,16 +252,34 @@ const getRelevantMemories = async (
     }
 
     // Otherwise, update the returned memories' accessedAt values
-    mostRelevantMemories.map((memory) => {
-        return prisma.memory.update({
-            where: {
-                id: memory.id,
-            },
-            data: {
-                accessedAt: new Date(),
-            },
-        });
-    });
+
+    // for (const memory of mostRelevantMemories) {
+    //     try {
+    //         await prisma.memory.update({
+    //             where: {
+    //                 id: memory.id,
+    //             },
+    //             data: {
+    //                 accessedAt: new Date(),
+    //             },
+    //         });
+    //     } catch (e) {
+    //         console.log(e);
+    //     }
+    // }
+
+    await Promise.all(
+        mostRelevantMemories.map((memory) =>
+            prisma.memory.update({
+                where: {
+                    id: memory.id,
+                },
+                data: {
+                    accessedAt: new Date(),
+                },
+            })
+        )
+    );
 
     return mostRelevantMemories;
 };

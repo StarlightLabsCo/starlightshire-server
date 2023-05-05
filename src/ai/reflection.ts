@@ -1,10 +1,10 @@
 import { openai } from "./openai.js";
-import { getCharacter } from "../character.js";
 import {
     createMemory,
     getLatestMemories,
     getRelevantMemories,
 } from "./memory.js";
+import { Character } from "@prisma/client";
 import config from "../config.json" assert { type: "json" };
 
 if (!config.model) throw new Error("No model provided in config.json");
@@ -14,16 +14,17 @@ if (!config.model) throw new Error("No model provided in config.json");
 // 1.) Generating questions to ask based on the character's memories (these are reflection questions)
 // 2.) Generating the reflections based on the questions and retrieved memories
 const answerReflectionQuestion = async (
-    characterId: string,
+    character: Character,
     reflectionQuestion: string
 ) => {
     // Get the character's name & Retrieve the latest 10 memories based on the reflection question
     // TODO: 10 is an arbitrary number, we should figure out a better way to do this
     // This will update the memory's accessedAt timestamp because the NPC is reflecting on it
-    const [character, memories] = await Promise.all([
-        getCharacter(characterId),
-        getRelevantMemories(characterId, reflectionQuestion, 10),
-    ]);
+    const memories = await getRelevantMemories(
+        character,
+        reflectionQuestion,
+        10
+    );
 
     // Create the reflection prompt
     let reflectionPrompt = `Statements about ${character.name}\n`;
@@ -50,16 +51,16 @@ const answerReflectionQuestion = async (
 
     // Add the reflections to the database as a memory
     for (let i = 0; i < reflections.length; i++) {
-        createMemory(character.id, reflections[i]);
+        createMemory(character, reflections[i]);
     }
 };
 
-const generateReflection = async (characterId: string) => {
+const generateReflection = async (character: Character) => {
     // Retrieve the latest 100 memories
     // TODO: 100 is an arbitrary number, we should figure out a better way to do this
     // Maybe we can use the timestamp of the last reflection to determine which memories to retrieve
     // So that we're not retrieving the same memories over and over again
-    const memories = await getLatestMemories(characterId, 100);
+    const memories = await getLatestMemories(character, 100);
 
     // Figure out the most important questions to ask, and reflect on
     let generateReflectionQuestionsPrompt: string;
@@ -88,7 +89,7 @@ const generateReflection = async (characterId: string) => {
 
     // Answer the reflection questions
     for (let i = 0; i < reflectionQuestionsParsed.length; i++) {
-        answerReflectionQuestion(characterId, reflectionQuestionsParsed[i]);
+        answerReflectionQuestion(character, reflectionQuestionsParsed[i]);
     }
 };
 

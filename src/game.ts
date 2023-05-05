@@ -1,6 +1,5 @@
 const getGameDate = async () => {
-    // TODO: get the game date from the database
-    return 42;
+    return new Date();
 };
 
 export { getGameDate };
