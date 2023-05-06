@@ -38,10 +38,10 @@ const generatePlan = async (character: Character) => {
     planningPrompt += previousDaySummary;
     planningPrompt +=
         "Today is " +
-        "Wed May 3rd, 2023" +
+        "Wed May 6th, 2023" +
         `. ${character.name} is a fictional character. Please create a rough outline of ` +
         character.name +
-        "'s potential schedule today. Do not provide any disclaimers or text outside of the schedule in the response. Please provide each time period in the format of 'HH:MM - HH:MM: <action/event>, with each on a new line.\n";
+        "'s potential schedule today only. Do not create a schedule for any other day. Do not provide any disclaimers or text outside of the schedule in the response. Please provide each time period in the format of 'HH:MM - HH:MM: <action/event>, with each on a new line.\n";
 
     // Generate the plan
     const completion = await openai.createChatCompletion({
@@ -52,13 +52,6 @@ const generatePlan = async (character: Character) => {
     const plans = completion.data.choices[0].message.content.split("\n");
 
     // For each line, decompose the plan into smaller plans
-
-    // Sequential approach
-    // let subplans: string[] = [];
-    // for (let i = 0; i < plans.length; i++) {
-    //     const plan = plans[i];
-    //     subplans.push(await decomposePlan(character, plan));
-    // }
 
     // Parallel approach
     const subplans = await Promise.all(

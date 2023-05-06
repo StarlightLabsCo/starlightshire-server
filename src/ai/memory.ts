@@ -253,21 +253,6 @@ const getRelevantMemories = async (
 
     // Otherwise, update the returned memories' accessedAt values
 
-    // for (const memory of mostRelevantMemories) {
-    //     try {
-    //         await prisma.memory.update({
-    //             where: {
-    //                 id: memory.id,
-    //             },
-    //             data: {
-    //                 accessedAt: new Date(),
-    //             },
-    //         });
-    //     } catch (e) {
-    //         console.log(e);
-    //     }
-    // }
-
     await Promise.all(
         mostRelevantMemories.map((memory) =>
             prisma.memory.update({

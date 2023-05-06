@@ -2,8 +2,6 @@ import { Character } from "@prisma/client";
 import { createMemory } from "../src/ai/memory.js";
 import { generatePlan } from "../src/ai/planning.js";
 import { prisma } from "../src/db.js";
-import { getLatestTask } from "../src/ai/task.js";
-import { agentLoop } from "../src/ai/agent.js";
 
 async function createCharacter() {
     await prisma.character.deleteMany({});
@@ -12,6 +10,8 @@ async function createCharacter() {
         data: {
             name: "John Lin",
             age: 42,
+            location: "Home",
+            tool: "Sword",
         },
     });
 
@@ -71,7 +71,7 @@ async function testPlanning() {
 
     await testMemory(ch);
     await generatePlan(ch);
-    await agentLoop(ch.id);
+    // await agentLoop(ch.id);
 }
 
 testPlanning();

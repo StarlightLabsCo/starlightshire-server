@@ -16,6 +16,9 @@ model Character {
   name String @unique
   age  Int
 
+  location String
+  tool     String
+
   tasks Task[]
 
   memories            Memory[]

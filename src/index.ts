@@ -23,27 +23,17 @@ export type StreamMessage = {
     data: any;
 };
 
-// Starlight functions
-// import {
-//     startAudioCaptureStream,
-//     handleAudioCaptureStreamData,
-//     endAudioCaptureStream,
-// } from "./audioCapture.js";
-// import {
-//     startConversation,
-//     endConversation,
-//     continueConversation,
-//     startNPCConversations,
-// } from "./conversation.js";
+import { agentPlan, agentLoop } from "./ai/agent.js";
 
 const handlers = {
-    // AudioCaptureStreamStart: startAudioCaptureStream,
-    // AudioCaptureStreamData: handleAudioCaptureStreamData,
-    // AudioCaptureStreamEnd: endAudioCaptureStream,
-    // ConversationStart: startConversation,
-    // ConversationContinue: continueConversation,
-    // ConversationEnd: endConversation,
+    AgentPlan: agentPlan,
+    AgentLoop: agentLoop,
 };
+
+console.log("Creating Thomas..");
+import { createThomas } from "./character.js";
+
+await createThomas();
 
 wss.on("connection", async (ws) => {
     // Init Connection

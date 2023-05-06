@@ -8,6 +8,99 @@ import { openai } from "./openai.js";
 import config from "../config.json" assert { type: "json" };
 import { Character, Memory, Task } from "@prisma/client";
 
+const actions = [
+    {
+        description: "Move to a location",
+        format: {
+            type: "MoveEvent",
+            data: {
+                characterId: "",
+                location: "",
+            },
+        },
+    },
+    {
+        description: "Use the selected tool",
+        format: {
+            type: "ToolEvent",
+            data: {
+                characterId: "",
+            },
+        },
+    },
+    {
+        description: "Switch tool",
+        format: {
+            type: "SwitchToolEvent",
+            data: {
+                characterId: "",
+                tool: "",
+            },
+        },
+    },
+];
+
+const locations = [
+    {
+        name: "Home",
+        description: "Your home",
+    },
+    {
+        name: "Lumberyard",
+        description: "A section of forest with many trees",
+    },
+    {
+        name: "Campfire",
+        description: "A campfire",
+    },
+    {
+        name: "Bridge",
+        decription: "A bridge to the east island",
+    },
+    {
+        name: "Berries",
+        description: "A field of berries",
+    },
+    {
+        name: "East Island",
+        description: "A small island to the east",
+    },
+    {
+        name: "North Outlook",
+        description: "A lookout to the north",
+    },
+    {
+        name: "Dock",
+        description: "A dock to the south",
+    },
+    {
+        name: "Skeleton Cave",
+        description: "A cave near the dock, with many dangeorus skeletons",
+    },
+];
+
+let tools = [
+    {
+        name: "sword",
+    },
+    {
+        name: "pickaxe",
+    },
+    {
+        name: "axe",
+    },
+    {
+        name: "hammer",
+    },
+    {
+        name: "fishingrod",
+    },
+    {
+        name: "doing",
+        description: "A generic tool for doing everything else",
+    },
+];
+
 async function pickAction(
     character: Character,
     task: Task,
@@ -15,22 +108,35 @@ async function pickAction(
 ) {
     // Create prompt
     let prompt = "Character:\n";
-    prompt += "- " + character.name + "\n";
-    // prompt += "Location:\n";
-    // prompt += "- " + character.location + "\n";
+    prompt += "- Name: " + character.name + "\n";
+    prompt += "- ID: " + character.id + "\n";
+    prompt += "- Current location: " + character.location + "\n";
+    prompt += "- Selected tool: " + character.tool + "\n";
     prompt += "Memories:\n";
     for (let memory of relevantMemories) {
         prompt += "- " + memory.memory + "\n";
     }
-    prompt += "Task:\n";
+    prompt += "Available Locations:\n";
+    for (let location of locations) {
+        prompt += "- " + location.name + "\n";
+        prompt += "  - " + location.description + "\n";
+    }
+    prompt += "Available Tools:\n";
+    for (let tool of tools) {
+        prompt += "- " + tool.name + "\n";
+        if (tool.description) {
+            prompt += "  - " + tool.description + "\n";
+        }
+    }
+    prompt += "Goal:\n";
     prompt += "- " + task.task + "\n";
     prompt += "Available Actions:\n";
-    prompt += "- Move to a location\n";
-    prompt += "- Attack another character\n";
-    prompt += "- Chop a tree\n";
-    prompt += '- Generic "do something" action & animation\n';
+    for (let action of actions) {
+        prompt += "- " + action.description + "\n";
+        prompt += "  - " + JSON.stringify(action.format) + "\n";
+    }
     prompt +=
-        '"Based on the above information and available actions, pick the most applicable action. You can only pick one.\n"';
+        "Based on the above information and available actions, pick the most applicable action to accomplish the goal, and create the corresponding JSON object. Only pick one action. Do not create new actions. Only return the JSON parseable object, no commentary!\n";
 
     console.log("--- Prompt ---");
     console.log(prompt);
@@ -45,8 +151,4 @@ async function pickAction(
     return completion.data.choices[0].message.content;
 }
 
-async function executeAction(character, chosenAction) {
-    return "";
-}
-
-export { pickAction, executeAction };
+export { pickAction };
