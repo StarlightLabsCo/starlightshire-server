@@ -26,12 +26,12 @@ const createThomas = async () => {
 
     const memories: string[] = [
         "Hope Island is a small island in the middle of the ocean, it has a small beech with a elevated valley with grass, trees, and berries.",
-        "Thomas and Susie crash landed on Hope Island almost 3 months ago, and have used the tools they had on the boat (axe, shovel, pickaxe, sword, bucket, etc) to gather materials (chop trees) to construct a small house in the valley.",
+        "Thomas and Susie crash landed on Hope Island almost 3 months ago, and have used the tools they had on the boat (axe, shovel, pickaxe, sword, bucket, etc) to gather materials (chop trees) to construct a small house on the plateau.",
         "Thomas and Susie have been extra productive and created ladders and bridges to connect the island together.",
         "Hope Island is now also connected to a smaller island to the east via a self made bridge.",
         "So far Thomas and Susie have lived off berries, plants, and small animals that are on the island, but are worried this will eventually run out.",
         "With seemingly no help on the way, Thomas and Susie decided to construct a raft boat as large as possible with as many supplies as possible to begin their journey back to civilization.  ",
-        "Thomas is a kind, humble, 28 year old air force pilot, who is married to Susie, a 25 year old nurse.  They have been married for 3 years and have no children. They were on a vacation to the Bahamas when their boat crashed into a storm and they were stranded on Hope Island.  ",
+        "Thomas is a kind, humble, 28 year old air force pilot, who is married to Susie, a 25 year old nurse.  They have been married for 3 years and have no children. They were on a vacation to the Bahamas when their boat crashed into a storm and they were stranded on Hope Island.",
         "Thomas has been working on the raft for 2 months now, and is almost finished. He has been working on it every day, and has been working on it for 8 hours a day.",
         "Susie is an adventureous person at heart, and always enjoyed the outdoors. She decided to become a nurse after a traumatic event in her childhood, and swore it'd never happen to anyone else.  She is very kind and caring, and is always looking out for others, but enjoys teasing and joking around with Thomas.",
         "Susie is now 3 months pregnant.",

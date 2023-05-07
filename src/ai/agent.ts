@@ -45,56 +45,47 @@ const agentLoop = async (
     console.log(task);
 
     // Retrieve relevant memories
-    const relevantMemories = await getRelevantMemories(
-        character,
-        task.task,
-        10
-    );
+    const relevantMemories = await getRelevantMemories(character, task.task, 10);
 
     // Pick action based on plan and available actions
     let tryCount = 0;
     while (tryCount < 5) {
         try {
-            const chosenAction = await pickAction(
-                character,
-                task,
-                relevantMemories as unknown as Memory[]
-            );
+            const chosenActions = await pickAction(character, task, relevantMemories as unknown as Memory[]);
 
-            console.log("--- Chosen Action ---");
-            console.log(chosenAction);
+            console.log("--- Chosen Actions ---");
+            console.log(chosenActions);
 
-            // Turn to webocket event & make
+            const actionsObject = JSON.parse(chosenActions);
 
-            let websocketMessage = JSON.parse(chosenAction);
-            ws.send(JSON.stringify(websocketMessage));
+            if (actionsObject.length) {
+                // Iterate over actions and send them to the websocket listener
+                for (let action of actionsObject) {
+                    ws.send(JSON.stringify(action));
 
-            await createMemory(
-                character,
-                `Task: ${task.task} -> Action: ${chosenAction}`
-            );
+                    await createMemory(character, `Task: ${task.task} -> Action: ${action}`);
 
-            if (websocketMessage.type === "ToolSwitchEvent") {
-                await prisma.character.update({
-                    where: {
-                        id: character.id,
-                    },
-                    data: {
-                        tool: websocketMessage.data.tool,
-                    },
-                });
-            } else if (websocketMessage.type === "MoveEvent") {
-                await prisma.character.update({
-                    where: {
-                        id: character.id,
-                    },
-                    data: {
-                        location: websocketMessage.data.location,
-                    },
-                });
+                    if (action.type === "ToolSwitchEvent") {
+                        await prisma.character.update({
+                            where: {
+                                id: character.id,
+                            },
+                            data: {
+                                tool: action.data.tool,
+                            },
+                        });
+                    } else if (action.type === "MoveEvent") {
+                        await prisma.character.update({
+                            where: {
+                                id: character.id,
+                            },
+                            data: {
+                                location: action.data.location,
+                            },
+                        });
+                    }
+                }
             }
-
-            // TODO: Ask LLM if the action was enough to complete the task, if not create new task and add it to top of stack
 
             break;
         } catch (error) {

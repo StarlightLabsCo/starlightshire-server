@@ -27,10 +27,7 @@ const generatePlan = async (character: Character) => {
     const agentSummary = await generateAgentSummary(character);
 
     // Generate summary of the previous day
-    const previousDaySummary = await generateDaySummary(
-        character,
-        new Date(gameDate.getTime() - 86400000)
-    );
+    const previousDaySummary = await generateDaySummary(character, new Date(gameDate.getTime() - 86400000));
 
     // Create the planning prompt
     let planningPrompt;
@@ -54,9 +51,7 @@ const generatePlan = async (character: Character) => {
     // For each line, decompose the plan into smaller plans
 
     // Parallel approach
-    const subplans = await Promise.all(
-        plans.map((subplan) => decomposePlan(character, subplan))
-    );
+    const subplans = await Promise.all(plans.map((subplan) => decomposePlan(character, subplan)));
 
     // Split subplans by newline
     let tasks: string[] = [];
@@ -69,9 +64,7 @@ const generatePlan = async (character: Character) => {
         // Use regex to extract start time (HH:MM) and end time (HH:MM). It's in the format of "HH:MM - HH:MM: <action/event>"
         // example: "9:00 - 10:00: Go to the gym"
 
-        const matches = tasks[i].match(
-            /(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2}): (.*)/
-        );
+        const matches = tasks[i].match(/(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2}): (.*)/);
 
         console.log("------------------------");
         if (matches) {
@@ -85,8 +78,6 @@ const generatePlan = async (character: Character) => {
             console.log('Task: "' + task + '"');
             console.log("Start time: " + startTime); // Start Time: 9:00
             console.log("End time: " + endTime); // End Time: 10:00
-
-            // How can I convert the start and end time to a date in the same day as the game date?
 
             await prisma.task.create({
                 data: {
@@ -145,11 +136,7 @@ async function cleanupPlan(character: Character, plan: string) {
 }
 
 // Agent Summary Description
-const generateSummaryInfo = async (
-    character: Character,
-    query: string,
-    question: string
-) => {
+const generateSummaryInfo = async (character: Character, query: string, question: string) => {
     // Get character and memories (15 is arbitrary number)
     const memories = await getRelevantMemories(character, query, 15, false);
 
@@ -181,12 +168,9 @@ const generateAgentSummary = async (character: Character) => {
         `How would one describe ${character.name}'s feeling about his recent progress in life given the above statements?`,
     ];
 
-    const [coreCharacteristics, currentDailyOccupation, recentProgress] =
-        await Promise.all(
-            queries.map((query, index) =>
-                generateSummaryInfo(character, query, question[index])
-            )
-        );
+    const [coreCharacteristics, currentDailyOccupation, recentProgress] = await Promise.all(
+        queries.map((query, index) => generateSummaryInfo(character, query, question[index]))
+    );
 
     // Combine into a single summary
     let summary = `Name: ${character.name} (age: ${character.age})\n`;

@@ -101,11 +101,7 @@ let tools = [
     },
 ];
 
-async function pickAction(
-    character: Character,
-    task: Task,
-    relevantMemories: Memory[]
-) {
+async function pickAction(character: Character, task: Task, relevantMemories: Memory[]): Promise<string> {
     // Create prompt
     let prompt = "Character:\n";
     prompt += "- Name: " + character.name + "\n";
@@ -136,7 +132,7 @@ async function pickAction(
         prompt += "  - " + JSON.stringify(action.format) + "\n";
     }
     prompt +=
-        "Based on the above information and available actions, pick the most applicable action to accomplish the goal, and create the corresponding JSON object. Only pick one action. Do not create new actions. Only return the JSON parseable object, no commentary!\n";
+        "Based on the above information and available actions, give an array of the most applicable actions to accomplish the goal, and create the corresponding JSON object. Ensure the output is always in an array. If only one action is needed, do not add more. Do not create new actions. Only return a JSON parseable object, no commentary!\n";
 
     console.log("--- Prompt ---");
     console.log(prompt);
