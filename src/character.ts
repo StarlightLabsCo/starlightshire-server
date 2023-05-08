@@ -46,4 +46,15 @@ const createThomas = async () => {
     await generatePlan(thomas);
 };
 
-export { getCharacter, createThomas };
+function characterObservation(
+    ws: WebSocket,
+    data: {
+        characterId: string;
+        observations: string[];
+    }
+) {
+    console.log("Observations received");
+    console.log(data);
+}
+
+export { getCharacter, createThomas, characterObservation };
