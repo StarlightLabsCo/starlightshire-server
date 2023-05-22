@@ -11,6 +11,8 @@ const getCharacter = async (id: string) => {
 };
 
 const createThomas = async () => {
+    console.log("Creating Thomas");
+
     await prisma.character.deleteMany({});
     await prisma.memory.deleteMany({});
 
@@ -43,18 +45,31 @@ const createThomas = async () => {
 
     await Promise.all(memories.map((memory) => createMemory(thomas, memory)));
 
+    console.log("Thomas created");
+
     await generatePlan(thomas);
+
+    console.log("Plan generated");
 };
 
-function characterObservation(
+async function characterObservation(
     ws: WebSocket,
     data: {
         characterId: string;
-        observations: string[];
+        observation: string;
     }
 ) {
-    console.log("Observations received");
+    console.log("--- Observations received -- ");
     console.log(data);
+
+    const character = await getCharacter(data.characterId);
+
+    if (!character) {
+        console.log("Character not found");
+        return;
+    }
+
+    await createMemory(character, data.observation);
 }
 
 export { getCharacter, createThomas, characterObservation };

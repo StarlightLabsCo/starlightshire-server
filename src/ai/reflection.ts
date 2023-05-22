@@ -1,4 +1,4 @@
-import { openai } from "./openai.js";
+import { createChatCompletion } from "./openai.js";
 import {
     createMemory,
     getLatestMemories,
@@ -38,13 +38,12 @@ const answerReflectionQuestion = async (
         "What 5 high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))";
 
     // Generate the reflection
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [{ role: "user", content: reflectionPrompt }],
-    });
+    const completion = await createChatCompletion([
+        { role: "user", content: reflectionPrompt },
+    ]);
 
     // Parse the completion (remove numbers e.g. 1. , and trim)
-    const reflections = completion.data.choices[0].message.content
+    const reflections = completion
         .replace(/[0-9]. /g, "")
         .trim()
         .split("\n");
@@ -72,17 +71,12 @@ const generateReflection = async (character: Character) => {
     generateReflectionQuestionsPrompt += `Given only the information above, what are 3 most salient high-level questions we can answer about the subjects in the statements?\n`;
 
     // Generate the reflection questions
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [
-            { role: "user", content: generateReflectionQuestionsPrompt },
-        ],
-    });
-
-    const reflectionQuestions = completion.data.choices[0].message.content;
+    const completion = await createChatCompletion([
+        { role: "user", content: generateReflectionQuestionsPrompt },
+    ]);
 
     // Parse the reflection questions (remove the numbers e.g. (1. ), and split by new line)
-    const reflectionQuestionsParsed = reflectionQuestions
+    const reflectionQuestionsParsed = completion
         .replace(/^[0-9].\s+?/g, "")
         .trim()
         .split("\n");

@@ -23,19 +23,12 @@ export type StreamMessage = {
     data: any;
 };
 
-import { agentPlan, agentLoop } from "./ai/agent.js";
-import { characterObservation } from "./character.js";
+import { getAction } from "./ai/agent.js";
 
 const handlers = {
-    AgentPlan: agentPlan,
-    AgentLoop: agentLoop,
-    Observation: characterObservation,
+    GetAction: getAction,
+    Observation: () => {},
 };
-
-console.log("Creating Thomas..");
-import { createThomas } from "./character.js";
-
-await createThomas();
 
 wss.on("connection", async (ws) => {
     // Init Connection
@@ -57,7 +50,11 @@ wss.on("connection", async (ws) => {
     // Define event handlers
     ws.on("message", async (message) => {
         // Check if message is valid
-        if (!message || message == undefined || message.toString().length === 0) {
+        if (
+            !message ||
+            message == undefined ||
+            message.toString().length === 0
+        ) {
             console.log("No message received. Skipping...");
             return;
         }

@@ -1,14 +1,13 @@
-import { openai } from "./openai.js";
 import { getCharacter } from "../character.js";
 import { getGameDate } from "../game.js";
 import { getAllMemoriesFromDay, getRelevantMemories } from "./memory.js";
 import config from "../config.json" assert { type: "json" };
 import { Character } from "@prisma/client";
 import { prisma } from "../db.js";
+import { createChatCompletion } from "./openai.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
-// Planning (TODO)
 const generateDateWithTime = (baseDate, timeString) => {
     const [hours, minutes] = timeString.split(":");
     const newDate = new Date(baseDate);
@@ -27,7 +26,10 @@ const generatePlan = async (character: Character) => {
     const agentSummary = await generateAgentSummary(character);
 
     // Generate summary of the previous day
-    const previousDaySummary = await generateDaySummary(character, new Date(gameDate.getTime() - 86400000));
+    const previousDaySummary = await generateDaySummary(
+        character,
+        new Date(gameDate.getTime() - 86400000)
+    );
 
     // Create the planning prompt
     let planningPrompt;
@@ -41,62 +43,13 @@ const generatePlan = async (character: Character) => {
         "'s potential schedule today only. Do not create a schedule for any other day. Do not provide any disclaimers or text outside of the schedule in the response. Please provide each time period in the format of 'HH:MM - HH:MM: <action/event>, with each on a new line.\n";
 
     // Generate the plan
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [{ role: "user", content: planningPrompt }],
-    });
+    const completion = await createChatCompletion([
+        { role: "user", content: planningPrompt },
+    ]);
 
-    const plans = completion.data.choices[0].message.content.split("\n");
+    const plans = completion.split("\n");
 
-    // For each line, decompose the plan into smaller plans
-
-    // Parallel approach
-    const subplans = await Promise.all(plans.map((subplan) => decomposePlan(character, subplan)));
-
-    // Split subplans by newline
-    let tasks: string[] = [];
-    for (let i = 0; i < subplans.length; i++) {
-        tasks = tasks.concat(subplans[i].split("\n"));
-    }
-
-    // Add the subplans to the database as a memory
-    for (let i = 0; i < tasks.length; i++) {
-        // Use regex to extract start time (HH:MM) and end time (HH:MM). It's in the format of "HH:MM - HH:MM: <action/event>"
-        // example: "9:00 - 10:00: Go to the gym"
-
-        const matches = tasks[i].match(/(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2}): (.*)/);
-
-        console.log("------------------------");
-        if (matches) {
-            const startTime = matches[1];
-            const endTime = matches[2];
-            const task = matches[3];
-
-            const startTimeDate = generateDateWithTime(gameDate, startTime);
-            const endTimeDate = generateDateWithTime(gameDate, endTime);
-
-            console.log('Task: "' + task + '"');
-            console.log("Start time: " + startTime); // Start Time: 9:00
-            console.log("End time: " + endTime); // End Time: 10:00
-
-            await prisma.task.create({
-                data: {
-                    character: {
-                        connect: {
-                            id: character.id,
-                        },
-                    },
-                    gameDateStart: startTimeDate,
-                    gameDateEnd: endTimeDate,
-                    task: task,
-                },
-            });
-        } else {
-            console.log('Task: "' + tasks[i] + '"');
-            console.log("No matches found.");
-        }
-        console.log("------------------------");
-    }
+    return plans;
 };
 
 async function decomposePlan(character: Character, plan: string) {
@@ -113,30 +66,19 @@ async function decomposePlan(character: Character, plan: string) {
     prompt += `Create a schedule of subtasks to complete the following task within the provided timeframe. Do not create tasks outside this time frame. Please keep the same format, just with smaller time increments. Decompose this task: ${plan}\n`;
 
     // Generate the subtasks
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [{ role: "user", content: prompt }],
-    });
+    const completion = await createChatCompletion([
+        { role: "user", content: prompt },
+    ]);
 
-    return completion.data.choices[0].message.content;
-}
-
-async function cleanupPlan(character: Character, plan: string) {
-    let prompt;
-    prompt += `This is the upcoming schedule for ${character.name}:\n`;
-    prompt += plan + "\n";
-    prompt += `Please fix the formating in the above schedule in the following format: "HH:MM - HH:MM: <action/event>", with each on a new line. Remove any duplicate tasks, or tasks that do not make sense.\n`;
-
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [{ role: "user", content: prompt }],
-    });
-
-    return completion.data.choices[0].message.content;
+    return completion;
 }
 
 // Agent Summary Description
-const generateSummaryInfo = async (character: Character, query: string, question: string) => {
+const generateSummaryInfo = async (
+    character: Character,
+    query: string,
+    question: string
+) => {
     // Get character and memories (15 is arbitrary number)
     const memories = await getRelevantMemories(character, query, 15, false);
 
@@ -147,12 +89,11 @@ const generateSummaryInfo = async (character: Character, query: string, question
     }
     prompt += question + "\n";
 
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [{ role: "user", content: prompt }],
-    });
+    const completion = await createChatCompletion([
+        { role: "user", content: prompt },
+    ]);
 
-    return completion.data.choices[0].message.content;
+    return completion;
 };
 
 const generateAgentSummary = async (character: Character) => {
@@ -168,9 +109,12 @@ const generateAgentSummary = async (character: Character) => {
         `How would one describe ${character.name}'s feeling about his recent progress in life given the above statements?`,
     ];
 
-    const [coreCharacteristics, currentDailyOccupation, recentProgress] = await Promise.all(
-        queries.map((query, index) => generateSummaryInfo(character, query, question[index]))
-    );
+    const [coreCharacteristics, currentDailyOccupation, recentProgress] =
+        await Promise.all(
+            queries.map((query, index) =>
+                generateSummaryInfo(character, query, question[index])
+            )
+        );
 
     // Combine into a single summary
     let summary = `Name: ${character.name} (age: ${character.age})\n`;
@@ -196,18 +140,15 @@ const generateDaySummary = async (character: Character, gameDate: Date) => {
     }
 
     // Generate the summary
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [
-            { role: "user", content: summary },
-            {
-                role: "assistant",
-                content: `Here is ${character.name}'s summary for the day:`,
-            },
-        ],
-    });
+    const completion = await createChatCompletion([
+        { role: "user", content: summary },
+        {
+            role: "assistant",
+            content: `Here is ${character.name}'s summary for the day:`,
+        },
+    ]);
 
-    return completion.data.choices[0].message.content;
+    return completion;
 };
 
 export { generatePlan, generateDaySummary, generateAgentSummary };

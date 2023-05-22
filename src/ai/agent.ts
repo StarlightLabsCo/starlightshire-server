@@ -1,100 +1,80 @@
-import { Memory, Task } from "@prisma/client";
-import { createMemory, getRelevantMemories } from "./memory.js";
-import { getTask } from "./task.js";
-import { getCharacter } from "../character.js";
-import { pickAction } from "./action.js";
-import { generatePlan } from "./planning.js";
-import { prisma } from "../db.js";
+import { createChatCompletion } from "./openai.js";
 
-// The flow of the agent loop is as follows:
-// - GeneratePlan
-// - AgentLoop until plan is complete
-// - Repeat
-
-const agentPlan = async (
+async function getAction(
     ws: WebSocket,
     data: {
         characterId: string;
+        location: {
+            x: number;
+            y: number;
+        };
+        availableActions: string[];
+        inventory: string[];
+        environment: string[];
+        hitbox: string[];
     }
-) => {
-    const characterId = data.characterId;
-
-    const character = await getCharacter(characterId);
-
-    await generatePlan(character);
-};
-
-const agentLoop = async (
-    ws: WebSocket,
-    data: {
-        characterId: string;
+) {
+    let prompt = "";
+    prompt += `Character: \n`;
+    prompt += `- ID: 1\n`;
+    prompt += `- Name: Thomas Smith` + "\n";
+    prompt += `- Age: 25` + "\n";
+    prompt += `- Occupation: Lumberjack` + "\n";
+    prompt += `- Personality: Introverted, Shy, Kind, Hardworking` + "\n";
+    prompt += `Location: ${data.location.x}, ${data.location.y}\n`;
+    prompt += `Environment:\n`;
+    for (let i = 0; i < data.environment.length; i++) {
+        const environment = data.environment[i];
+        prompt += `- ${environment}\n`;
     }
-) => {
-    // Get character ID
-    const characterId = data.characterId;
+    prompt += `Inventory:\n`;
+    for (let i = 0; i < data.inventory.length; i++) {
+        const item = data.inventory[i];
+        prompt += `- ${item}\n`;
+    }
+    prompt += `Available Actions:\n`;
+    for (let i = 0; i < data.availableActions.length; i++) {
+        const action = data.availableActions[i];
+        prompt += `- ${action}\n`;
+    }
+    prompt += `Hitbox (what you would hit with an action):\n`;
+    for (let i = 0; i < data.hitbox.length; i++) {
+        const hitbox = data.hitbox[i];
+        prompt += `- ${hitbox}\n`;
+    }
 
-    // Get character
-    const character = await getCharacter(characterId);
+    prompt += `Task: \n`;
+    prompt += `- Chop down the forest\n`;
 
-    console.log("--- Agent Loop ---");
+    prompt += `Given the above information, what action should Thomas take? The desired output format is JSON, in the form { type: EventType, data: {any required parameters}}. You must include the character id (e.g. characterId) and reason in the data field. Please do not provide any other information or explanation. Also note that you will not be able to get to exactly all locations because of pathfinding limitations so consider anything below 0.5m as being at that location. Additionally anything within your hitbox will be hit by a chosen swing action.\n`;
 
-    // Get latest task
-    const task = await getTask(character);
-
-    console.log("--- Task ---");
-    console.log(task);
-
-    // Retrieve relevant memories
-    const relevantMemories = await getRelevantMemories(character, task.task, 10);
-
-    // Pick action based on plan and available actions
-    let tryCount = 0;
-    while (tryCount < 5) {
+    let generationAttempts = 0;
+    while (generationAttempts < 5) {
         try {
-            const chosenActions = await pickAction(character, task, relevantMemories as unknown as Memory[]);
+            const response = await createChatCompletion([
+                {
+                    role: "user",
+                    content: prompt,
+                },
+            ]);
 
-            console.log("--- Chosen Actions ---");
-            console.log(chosenActions);
+            console.log("--- Prompt ---");
+            console.log(prompt);
 
-            const actionsObject = JSON.parse(chosenActions);
+            console.log("--- Response ---");
+            console.log(response);
 
-            if (actionsObject.length) {
-                // Iterate over actions and send them to the websocket listener
-                for (let action of actionsObject) {
-                    ws.send(JSON.stringify(action));
+            // Parse the response
+            const action = JSON.parse(response);
 
-                    await createMemory(character, `Task: ${task.task} -> Action: ${action}`);
+            ws.send(JSON.stringify(action));
 
-                    if (action.type === "ToolSwitchEvent") {
-                        await prisma.character.update({
-                            where: {
-                                id: character.id,
-                            },
-                            data: {
-                                tool: action.data.tool,
-                            },
-                        });
-                    } else if (action.type === "MoveEvent") {
-                        await prisma.character.update({
-                            where: {
-                                id: character.id,
-                            },
-                            data: {
-                                location: action.data.location,
-                            },
-                        });
-                    }
-                }
-            }
-
-            break;
-        } catch (error) {
-            console.log("Action could not be parsed as JSON.");
-            console.log(error);
+            return;
+        } catch (e) {
+            console.log(e);
+            generationAttempts++;
         }
-
-        tryCount++;
     }
-};
+}
 
-export { agentPlan, agentLoop };
+export { getAction };

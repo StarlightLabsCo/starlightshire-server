@@ -1,7 +1,7 @@
 import { prisma } from "../db.js";
 import { Character } from "@prisma/client";
 
-import { openai } from "./openai.js";
+import { createChatCompletion, getEmbedding } from "./openai.js";
 import { getGameDate } from "../game.js";
 import { generateReflection } from "./reflection.js";
 
@@ -10,35 +10,22 @@ import config from "../config.json" assert { type: "json" };
 if (!config.model) throw new Error("No model provided in config.json");
 
 // Importance (Using LLM to determine importance from 1-10)
-const getMemoryImportance = async (memory: string) => {
+const getMemoryImportance = async (character: Character, memory: string) => {
+    // TODO: draw relevant memories from the character's memory bank to help the model determine importance
+
     const memoryImportancePromptBase = `On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number`;
     const memoryImportancePrompt = `${memoryImportancePromptBase}\nMemory: `;
 
-    const completion = await openai.createChatCompletion({
-        model: config.model,
-        messages: [
-            { role: "user", content: memoryImportancePrompt + memory },
-            {
-                role: "assistant",
-                content: "Rating: ",
-            },
-        ],
-    });
-
-    const importance = completion.data.choices[0].message.content.trim();
+    const importance = await createChatCompletion([
+        { role: "user", content: memoryImportancePrompt + memory },
+        {
+            role: "assistant",
+            content: "Rating: ",
+        },
+    ]);
 
     // Convert from string to number
     return Number(importance);
-};
-
-// Relevancy (Embeddings)
-const getMemoryEmbedding = async (memory: string) => {
-    const response = await openai.createEmbedding({
-        model: config.embeddingModel,
-        input: memory,
-    });
-
-    return response.data.data[0].embedding;
 };
 
 const cosineSimilarity = (a: number[], b: number[]) => {
@@ -60,8 +47,8 @@ const createMemory = async (character: Character, memory: string) => {
     // Get the current gameDate, importance of the memory, and the embedding of the memory in parallel
     const [gameDate, importance, embedding] = await Promise.all([
         getGameDate(),
-        getMemoryImportance(memory),
-        getMemoryEmbedding(memory),
+        getMemoryImportance(character, memory),
+        getEmbedding(memory),
     ]);
 
     // Create the memory, and update the character's reflection threshold
@@ -148,7 +135,7 @@ const getRelevantMemories = async (
     updateAccessedAt: boolean = true
 ) => {
     // Get the embedding of the query
-    const queryEmbedding = await getMemoryEmbedding(query);
+    const queryEmbedding = await getEmbedding(query);
 
     const memories = await prisma.memory.findMany({
         where: {
@@ -271,7 +258,6 @@ const getRelevantMemories = async (
 
 export {
     getMemoryImportance,
-    getMemoryEmbedding,
     cosineSimilarity,
     createMemory,
     getLatestMemories,

@@ -13,11 +13,11 @@ datasource db {
 model Character {
   id String @id @default(cuid())
 
-  name String @unique
-  age  Int
+  name        String   @unique
+  age         Int
+  personality String[]
 
   location String
-  tool     String
 
   tasks Task[]
 
@@ -45,8 +45,6 @@ model Memory {
   importance Float
   accessedAt DateTime @default(now())
 
-  gameDate DateTime // This is being repsented as a DateTime but it is a game specific date, the simulation will be at like 4x speed or something
-
   // Metadata
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -59,9 +57,6 @@ model Task {
   character   Character? @relation(fields: [characterId], references: [id], onDelete: Cascade)
 
   task String
-
-  gameDateStart DateTime
-  gameDateEnd   DateTime
 
   // Metadata
   createdAt DateTime @default(now())
