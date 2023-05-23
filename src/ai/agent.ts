@@ -28,25 +28,34 @@ async function getAction(
         prompt += `- ${environment}\n`;
     }
     prompt += `Inventory:\n`;
-    for (let i = 0; i < data.inventory.length; i++) {
-        const item = data.inventory[i];
-        prompt += `- ${item}\n`;
+    if (data.inventory.length === 0) {
+        prompt += `- Nothing\n`;
+    } else {
+        for (let i = 0; i < data.inventory.length; i++) {
+            const item = data.inventory[i];
+            prompt += `- ${item}\n`;
+        }
     }
-    prompt += `Available Actions:\n`;
+    prompt += `Available Actions (you can do these right now!):\n`;
     for (let i = 0; i < data.availableActions.length; i++) {
         const action = data.availableActions[i];
         prompt += `- ${action}\n`;
     }
     prompt += `Hitbox (what you would hit with an action):\n`;
-    for (let i = 0; i < data.hitbox.length; i++) {
-        const hitbox = data.hitbox[i];
-        prompt += `- ${hitbox}\n`;
+    if (data.hitbox.length === 0) {
+        prompt += `- Nothing\n`;
+    } else {
+        for (let i = 0; i < data.hitbox.length; i++) {
+            const hitbox = data.hitbox[i];
+            prompt += `- ${hitbox}\n`;
+        }
     }
 
     prompt += `Task: \n`;
-    prompt += `- Chop down the forest\n`;
+    prompt += `- Find and pick up wood.\n`;
+    prompt += "\n";
 
-    prompt += `Given the above information, what action should Thomas take? The desired output format is JSON, in the form { type: EventType, data: {any required parameters}}. You must include the character id (e.g. characterId) and reason in the data field. Please do not provide any other information or explanation. Also note that you will not be able to get to exactly all locations because of pathfinding limitations so consider anything below 0.5m as being at that location. Additionally anything within your hitbox will be hit by a chosen swing action.\n`;
+    prompt += `What action should Thomas take, accounting for pathfinding limits (no exact location reach, consider <0.5m as destination) and hitbox rules? Respond in JSON: { type: [ActionType], data: {characterId, reason, optional parameters}}. Optional parameters: 'x', 'y' for MoveTo, 'itemId' for PickupItem. No extra info needed.\n`;
 
     let generationAttempts = 0;
     while (generationAttempts < 5) {
@@ -55,6 +64,10 @@ async function getAction(
                 {
                     role: "user",
                     content: prompt,
+                },
+                {
+                    role: "assistant",
+                    content: "Action:",
                 },
             ]);
 
