@@ -55,7 +55,7 @@ async function getAction(
     prompt += `- Find and pick up wood.\n`;
     prompt += "\n";
 
-    prompt += `What action should Thomas take, accounting for pathfinding limits (no exact location reach, consider <0.5m as destination) and hitbox rules? Respond in JSON: { type: [ActionType], data: {characterId, reason, optional parameters}}. Optional parameters: 'x', 'y' for MoveTo, 'itemId' for PickupItem. No extra info needed.\n`;
+    prompt += `Given the available actions, and accounting for pathfinding limits (no exact location reach, consider <0.5m as destination) and hitbox rules, which should Thomas take? Respond in JSON: { type: [ActionType], data: {characterId, reason, optional parameters}}. Optional parameters: 'x', 'y' for MoveTo, 'itemId' for PickUpItem. No extra info needed.\n`;
 
     let generationAttempts = 0;
     while (generationAttempts < 5) {
