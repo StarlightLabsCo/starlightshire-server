@@ -7,7 +7,14 @@ import config from "../config.json" assert { type: "json" };
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
+    basePath: "https://api.openai.withlogging.com/v1",
+    baseOptions: {
+        headers: {
+            "X-Api-Key": `Bearer ${process.env.LLM_REPORT_API_KEY}`,
+        },
+    },
 });
+
 const openai = new OpenAIApi(configuration);
 
 async function getEmbedding(input: string) {
@@ -41,6 +48,8 @@ async function createChatCompletion(messages: ChatCompletionRequestMessage[]) {
             return response.data.choices[0].message.content.trim();
         } catch (e) {
             console.log(e);
+            console.log("Failed to create chat completion. Retrying...");
+
             requestAttempts++;
         }
     }
