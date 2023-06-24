@@ -8,8 +8,9 @@ async function getTask(character: Character) {
         },
     });
 
+    // TODO: this doesn't work, i just put createdAt so it would build. Need to redo this
     const oldestTask = tasks.sort((a, b) => {
-        return a.gameDateStart.getTime() - b.gameDateStart.getTime();
+        return a.createdAt.getTime() - b.createdAt.getTime();
     })[0];
 
     // Remove the task from the list of tasks

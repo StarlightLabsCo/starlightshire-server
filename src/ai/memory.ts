@@ -45,6 +45,7 @@ const cosineSimilarity = (a: number[], b: number[]) => {
 // Storage
 const createMemory = async (character: Character, memory: string) => {
     // Get the current gameDate, importance of the memory, and the embedding of the memory in parallel
+    // TODO: game date? needed or not?
     const [gameDate, importance, embedding] = await Promise.all([
         getGameDate(),
         getMemoryImportance(character, memory),
@@ -52,6 +53,7 @@ const createMemory = async (character: Character, memory: string) => {
     ]);
 
     // Create the memory, and update the character's reflection threshold
+    // TODO: I removed game date from here, reconsider if it's needed or not..
     const updatedCharacter = await prisma.character.update({
         where: {
             id: character.id,
@@ -60,8 +62,7 @@ const createMemory = async (character: Character, memory: string) => {
             reflectionThreshold: character.reflectionThreshold + importance,
             memories: {
                 create: {
-                    memory,
-                    gameDate,
+                    memory, //
                     embedding: embedding.toString(),
                     importance: importance,
                 },
@@ -105,10 +106,11 @@ const getLatestMemories = async (character: Character, top_k: number) => {
 // Returns all the memories from a specific game date
 // This is used by the system to summarize a day, for planning and as such shouldn't update the accessedAt field
 const getAllMemoriesFromDay = async (character: Character, gameDate: Date) => {
+    // TODO: I replaced game date with createdAt, but need to refactor this whole section
     const memories = await prisma.memory.findMany({
         where: {
             id: character.id,
-            gameDate: {
+            createdAt: {
                 gte: new Date(
                     gameDate.getFullYear(),
                     gameDate.getMonth(),

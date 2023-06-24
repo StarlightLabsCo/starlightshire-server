@@ -15,9 +15,8 @@ model Character {
 
   name        String   @unique
   age         Int
+  occupation  String
   personality String[]
-
-  location String
 
   tasks Task[]
 

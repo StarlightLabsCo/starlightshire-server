@@ -24,11 +24,15 @@ export type StreamMessage = {
 };
 
 import { getAction } from "./ai/agent.js";
+import { observe } from "./ai/observation.js";
+import { createThomas } from "./character.js";
 
 const handlers = {
     GetAction: getAction,
-    Observation: () => {},
+    Observation: observe,
 };
+
+createThomas();
 
 wss.on("connection", async (ws) => {
     // Init Connection

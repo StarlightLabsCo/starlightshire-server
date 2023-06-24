@@ -1,4 +1,6 @@
 import { Action } from "../actions.js";
+import { getCharacter } from "../character.js";
+import { extractJSON } from "../utils.js";
 import { createChatCompletion } from "./openai.js";
 
 const history = [];
@@ -17,13 +19,18 @@ async function getAction(
         hitbox: string[];
     }
 ) {
+    const character = await getCharacter(data.characterId);
+
+    console.log(character);
+
     let prompt = "";
     prompt += `Character: \n`;
-    prompt += `- ID: A1\n`;
-    prompt += `- Name: Thomas Smith` + "\n";
-    prompt += `- Age: 25` + "\n";
-    prompt += `- Occupation: Lumberjack` + "\n";
-    prompt += `- Personality: Introverted, Shy, Kind, Hardworking` + "\n\n";
+    prompt += `- ID: ${character.id}\n`;
+    prompt += `- Name: ${character.name}\n`;
+    prompt += `- Age: ${character.age}\n`;
+    prompt += `- Occupation: ${character.occupation}\n`;
+    prompt += `- Personality: ${character.personality.join(", ")}\n\n`;
+
     prompt += `Location: ${data.location.x}, ${data.location.y}\n\n`;
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
@@ -33,15 +40,30 @@ async function getAction(
     prompt += "\n";
 
     if (data.inventory.length > 0) {
-        prompt += `Inventory:\n`;
+        prompt += `Inventory (` + data.inventory.length + `/10):\n`;
+
+        // Count the number of each item in the inventory
+        const itemCounts = {};
         for (let i = 0; i < data.inventory.length; i++) {
             const item = data.inventory[i];
-            prompt += `- ${item}\n`;
+            if (itemCounts[item] === undefined) {
+                itemCounts[item] = 0;
+            }
+            itemCounts[item]++;
+        }
+
+        // Print the items in the inventory
+        for (const [item, count] of Object.entries(itemCounts)) {
+            prompt += `- ${item} x ${count}\n`;
         }
         prompt += "\n";
     }
 
     prompt += `Available Actions:\n`;
+
+    // Turn the available actions string array into a set to remove duplicates
+    const availableActionsSet = new Set(data.availableActions);
+    data.availableActions = Array.from(availableActionsSet);
     for (let i = 0; i < data.availableActions.length; i++) {
         const action = data.availableActions[i];
         prompt += `- ${action}\n\n`;
@@ -57,6 +79,7 @@ async function getAction(
         prompt += "\n";
     }
 
+    // TODO: allow agents to set tasks based on prior planning
     prompt += `Task List: \n`;
     prompt += `- Find and pick up all the wood possible.\n`;
     prompt += "- Store any extra wood in the chest.\n";
@@ -73,28 +96,6 @@ async function getAction(
     }
 
     prompt += `Given the available actions and the assigned task, which should Thomas take? Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. (e.g. if PickUpItem is in available actions, you can pick up that item by creating a PickUpItem json object.) First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
-
-    const extractJSON = (str) => {
-        let firstOpen, firstClose, candidate;
-        firstOpen = str.indexOf("{");
-        do {
-            firstClose = str.lastIndexOf("}");
-            if (firstClose <= firstOpen) {
-                return null;
-            }
-            do {
-                candidate = str.substring(firstOpen, firstClose + 1);
-                try {
-                    const result = JSON.parse(candidate);
-                    return result;
-                } catch (e) {
-                    console.log("Failed to parse " + candidate);
-                }
-                firstClose = str.substr(0, firstClose).lastIndexOf("}");
-            } while (firstClose > firstOpen);
-            firstOpen = str.indexOf("{", firstOpen + 1);
-        } while (firstOpen !== -1);
-    };
 
     let generationAttempts = 0;
     while (generationAttempts < 5) {
@@ -122,9 +123,11 @@ async function getAction(
             if (actionJSON === null) {
                 throw new Error("No valid JSON object found in response");
             }
-
             // Verify action schema
             const verifiedAction = Action.parse(actionJSON);
+
+            console.log("--- Verified Action ---");
+            console.log(verifiedAction);
 
             history.push(verifiedAction);
 
