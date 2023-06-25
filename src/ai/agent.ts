@@ -1,7 +1,15 @@
 import { Action } from "../actions.js";
 import { getCharacter } from "../character.js";
 import { extractJSON } from "../utils.js";
+import { getRelevantMemories } from "./memory.js";
 import { createChatCompletion } from "./openai.js";
+
+import TimeAgo from "javascript-time-ago";
+import en from "javascript-time-ago/locale/en";
+
+TimeAgo.addDefaultLocale(en);
+
+const timeAgo = new TimeAgo("en-US");
 
 const history = [];
 
@@ -40,7 +48,11 @@ async function getAction(
     prompt += "\n";
 
     if (data.inventory.length > 0) {
-        prompt += `Inventory (` + data.inventory.length + `/10):\n`;
+        prompt += `Inventory (` + data.inventory.length + `/10)`;
+        if (data.inventory.length === 10) {
+            prompt += ` [FULL]`;
+        }
+        prompt += `:\n`;
 
         // Count the number of each item in the inventory
         const itemCounts = {};
@@ -58,6 +70,29 @@ async function getAction(
         }
         prompt += "\n";
     }
+
+    const memories = await getRelevantMemories(
+        character,
+        "- Find and pick up all the wood possible.",
+        5
+    );
+
+    if (memories.length > 0) {
+        prompt += `Memories:\n`;
+        for (let i = 0; i < memories.length; i++) {
+            const memory = memories[i];
+            prompt += `- ${memory.memory} [${timeAgo.format(
+                memory.createdAt
+            )}]\n`;
+        }
+        prompt += "\n";
+    }
+
+    // TODO: allow agents to set tasks based on prior planning
+    prompt += `Task List: \n`;
+    prompt += `- Find and pick up all the wood possible.\n`;
+    prompt += "- Store any extra wood in the chest.\n";
+    prompt += "\n";
 
     prompt += `Available Actions:\n`;
 
@@ -78,12 +113,6 @@ async function getAction(
         }
         prompt += "\n";
     }
-
-    // TODO: allow agents to set tasks based on prior planning
-    prompt += `Task List: \n`;
-    prompt += `- Find and pick up all the wood possible.\n`;
-    prompt += "- Store any extra wood in the chest.\n";
-    prompt += "\n";
 
     if (history.length > 0) {
         prompt += `Previous Actions:\n`;
