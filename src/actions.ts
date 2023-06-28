@@ -19,7 +19,17 @@ const DropItemEvent = z
         data: z
             .object({
                 characterId: z.string(),
-                itemId: z.string(),
+                itemId: z.union([
+                    z.literal("wood"),
+                    z.literal("stone"),
+                    z.literal("iron"),
+                    z.literal("diamond"),
+                    z.literal("copper"),
+                    z.literal("coal"),
+                    z.literal("axe"),
+                    z.literal("pickaxe"),
+                    z.literal("sword"),
+                ]),
             })
             .strict(),
     })
@@ -64,7 +74,17 @@ const AddItemToChest = z
         data: z
             .object({
                 characterId: z.string(),
-                itemId: z.string(),
+                itemId: z.union([
+                    z.literal("wood"),
+                    z.literal("stone"),
+                    z.literal("iron"),
+                    z.literal("diamond"),
+                    z.literal("copper"),
+                    z.literal("coal"),
+                    z.literal("axe"),
+                    z.literal("pickaxe"),
+                    z.literal("sword"),
+                ]),
                 chestId: z.string(),
             })
             .strict(),

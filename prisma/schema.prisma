@@ -55,9 +55,15 @@ model Task {
   characterId String?
   character   Character? @relation(fields: [characterId], references: [id], onDelete: Cascade)
 
-  task String
+  task     String
+  priority Int
+
+  parentTaskId String?
+  parentTask   Task?   @relation("TaskToSubtask", fields: [parentTaskId], references: [id])
+  subtasks     Task[]  @relation("TaskToSubtask")
 
   // Metadata
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  completedAt DateTime?
 }

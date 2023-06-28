@@ -45,10 +45,18 @@ const cosineSimilarity = (a: number[], b: number[]) => {
 // Storage
 const createMemory = async (character: Character, memory: string) => {
     // Get the current gameDate, importance of the memory, and the embedding of the memory in parallel
+
+    // Prevent infinite loops by working with latest info
+    const latestCharacter = await prisma.character.findUnique({
+        where: {
+            id: character.id,
+        },
+    });
+
     // TODO: game date? needed or not?
     const [gameDate, importance, embedding] = await Promise.all([
         getGameDate(),
-        getMemoryImportance(character, memory),
+        getMemoryImportance(latestCharacter, memory),
         getEmbedding(memory),
     ]);
 
@@ -56,13 +64,14 @@ const createMemory = async (character: Character, memory: string) => {
     // TODO: I removed game date from here, reconsider if it's needed or not..
     const updatedCharacter = await prisma.character.update({
         where: {
-            id: character.id,
+            id: latestCharacter.id,
         },
         data: {
-            reflectionThreshold: character.reflectionThreshold + importance,
+            reflectionThreshold:
+                latestCharacter.reflectionThreshold + importance,
             memories: {
                 create: {
-                    memory, //
+                    memory,
                     embedding: embedding.toString(),
                     importance: importance,
                 },
@@ -127,6 +136,15 @@ const getAllMemoriesFromDay = async (character: Character, gameDate: Date) => {
 
     return memories;
 };
+
+function calculateMaxMemoriesForTask(priority) {
+    // Assuming priority is a number that is greater for less important tasks
+    // You can modify this function according to your logic
+    const maxPriority = 5; // Replace this with the maximum priority value in your system
+    const maxMemories = 10; // Replace this with the maximum number of memories you want to fetch
+
+    return Math.round(((maxPriority - priority) / maxPriority) * maxMemories);
+}
 
 // Returns relevant memories using the noramlized similarity, importance, and recency, and updates the accessedAt field if updateAccessedAt is true
 // This will be mainly used by the NPC, and as such should update the accessedAt field
@@ -263,6 +281,7 @@ export {
     cosineSimilarity,
     createMemory,
     getLatestMemories,
+    calculateMaxMemoriesForTask,
     getAllMemoriesFromDay,
     getRelevantMemories,
 };

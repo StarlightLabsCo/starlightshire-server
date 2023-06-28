@@ -8,16 +8,6 @@ import { createChatCompletion } from "./openai.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
-const generateDateWithTime = (baseDate, timeString) => {
-    const [hours, minutes] = timeString.split(":");
-    const newDate = new Date(baseDate);
-    newDate.setHours(parseInt(hours, 10));
-    newDate.setMinutes(parseInt(minutes, 10));
-    newDate.setSeconds(0);
-    newDate.setMilliseconds(0);
-    return newDate;
-};
-
 const generatePlan = async (character: Character) => {
     // Get the current game date
     const gameDate = await getGameDate();

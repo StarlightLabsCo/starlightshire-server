@@ -1,11 +1,13 @@
 import { Action } from "../actions.js";
 import { getCharacter } from "../character.js";
 import { extractJSON } from "../utils.js";
-import { getRelevantMemories } from "./memory.js";
+import { calculateMaxMemoriesForTask, getRelevantMemories } from "./memory.js";
 import { createChatCompletion } from "./openai.js";
+import * as fs from "fs";
 
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
+import { getUnfinishedTasks } from "./task.js";
 
 TimeAgo.addDefaultLocale(en);
 
@@ -29,9 +31,8 @@ async function getAction(
 ) {
     const character = await getCharacter(data.characterId);
 
-    console.log(character);
-
     let prompt = "";
+    // TODO: replace with planning.ts 's generate agent summary function or something like it(?)
     prompt += `Character: \n`;
     prompt += `- ID: ${character.id}\n`;
     prompt += `- Name: ${character.name}\n`;
@@ -71,28 +72,50 @@ async function getAction(
         prompt += "\n";
     }
 
-    const memories = await getRelevantMemories(
-        character,
-        "- Find and pick up all the wood possible.",
-        5
-    );
+    const tasks = await getUnfinishedTasks(character);
+    const allMemories = [];
+    const memorySet = new Set(); // A set to store unique memories
 
-    if (memories.length > 0) {
+    if (tasks.length > 0) {
+        prompt += `Tasks:\n`;
+        for (let i = 0; i < tasks.length; i++) {
+            const task = tasks[i];
+            prompt += `- ${task.task} [Priority: ${
+                task.priority
+            }] [${timeAgo.format(task.createdAt)}]\n`;
+
+            const maxMemoriesForTask = calculateMaxMemoriesForTask(
+                task.priority
+            );
+
+            const memories = await getRelevantMemories(
+                character,
+                task.task,
+                maxMemoriesForTask
+            );
+
+            for (let j = 0; j < memories.length; j++) {
+                const memory = memories[j];
+                const memoryKey = memory.memory + memory.createdAt;
+                if (!memorySet.has(memoryKey)) {
+                    memorySet.add(memoryKey);
+                    allMemories.push(memory);
+                }
+            }
+        }
+        prompt += "\n";
+    }
+
+    if (allMemories.length > 0) {
         prompt += `Memories:\n`;
-        for (let i = 0; i < memories.length; i++) {
-            const memory = memories[i];
+        for (let i = 0; i < allMemories.length; i++) {
+            const memory = allMemories[i];
             prompt += `- ${memory.memory} [${timeAgo.format(
                 memory.createdAt
             )}]\n`;
         }
         prompt += "\n";
     }
-
-    // TODO: allow agents to set tasks based on prior planning
-    prompt += `Task List: \n`;
-    prompt += `- Find and pick up all the wood possible.\n`;
-    prompt += "- Store any extra wood in the chest.\n";
-    prompt += "\n";
 
     prompt += `Available Actions:\n`;
 
@@ -127,7 +150,7 @@ async function getAction(
     prompt += `Given the available actions and the assigned task, which should Thomas take? Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. (e.g. if PickUpItem is in available actions, you can pick up that item by creating a PickUpItem json object.) First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
 
     let generationAttempts = 0;
-    while (generationAttempts < 5) {
+    while (generationAttempts < 10) {
         try {
             console.log("--- Prompt ---");
             console.log(prompt);
@@ -158,9 +181,13 @@ async function getAction(
             console.log("--- Verified Action ---");
             console.log(verifiedAction);
 
-            history.push(verifiedAction);
-
             ws.send(JSON.stringify(verifiedAction));
+
+            // --- History --
+            history.push(verifiedAction);
+            const historyString = JSON.stringify(history, null, 2);
+
+            fs.writeFileSync("history.txt", historyString);
 
             return;
         } catch (e) {

@@ -25,6 +25,22 @@ const createThomas = async () => {
             age: 25,
             occupation: "Lumberjack",
             personality: ["Brave", "Calm", "Honest"],
+            tasks: {
+                create: [
+                    {
+                        task: "Chop wood",
+                        priority: 1,
+                    },
+                    {
+                        task: "Store wood in chest",
+                        priority: 2,
+                    },
+                    {
+                        task: "Cook dinner",
+                        priority: 3,
+                    },
+                ],
+            },
         },
     });
 
