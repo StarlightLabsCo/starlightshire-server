@@ -6,20 +6,20 @@ dotenv.config();
 import config from "../config.json" assert { type: "json" };
 import colors from "colors";
 
-// const configuration = new Configuration({
-//     apiKey: process.env.OPENAI_API_KEY,
-//     basePath: "https://api.openai.com/v1",
-// });
-
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
-    basePath: "https://api.openai.withlogging.com/v1",
-    baseOptions: {
-        headers: {
-            "X-Api-Key": `Bearer ${process.env.LLM_REPORT_API_KEY}`,
-        },
-    },
+    basePath: "https://api.openai.com/v1",
 });
+
+// const configuration = new Configuration({
+//     apiKey: process.env.OPENAI_API_KEY,
+//     basePath: "https://api.openai.withlogging.com/v1",
+//     baseOptions: {
+//         headers: {
+//             "X-Api-Key": `Bearer ${process.env.LLM_REPORT_API_KEY}`,
+//         },
+//     },
+// });
 
 const openai = new OpenAIApi(configuration);
 

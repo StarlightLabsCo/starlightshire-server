@@ -13,7 +13,24 @@ TimeAgo.addDefaultLocale(en);
 
 const timeAgo = new TimeAgo("en-US");
 
-const history = [];
+const actionHistory = [];
+const actionResults = [];
+
+async function saveActionResult(
+    ws: WebSocket,
+    data: {
+        characterId: string;
+        result: string;
+    }
+) {
+    actionResults.push({
+        characterId: data.characterId,
+        result: data.result,
+        timestamp: new Date(),
+    });
+    const historyString = JSON.stringify(actionResults, null, 2);
+    fs.writeFileSync("./data/results.txt", historyString);
+}
 
 async function getAction(
     ws: WebSocket,
@@ -137,17 +154,24 @@ async function getAction(
         prompt += "\n";
     }
 
-    if (history.length > 0) {
+    if (actionHistory.length > 0) {
         prompt += `Previous Actions:\n`;
-        // print the most recent 5 actions
-        for (let i = Math.max(0, history.length - 5); i < history.length; i++) {
-            const action = history[i];
-            prompt += `- [${action.type}]: ${JSON.stringify(action.data)}\n`;
+        // print the most recent 10 actions
+        for (
+            let i = Math.max(0, actionHistory.length - 10);
+            i < actionHistory.length;
+            i++
+        ) {
+            const action = actionHistory[i];
+            const result = actionResults[i];
+            prompt += `- [${action.type}]: ${result.result} [${timeAgo.format(
+                result.timestamp
+            )}]\n`;
         }
         prompt += "\n";
     }
 
-    prompt += `Given the available actions and the assigned task, which should Thomas take? Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. (e.g. if PickUpItem is in available actions, you can pick up that item by creating a PickUpItem json object.) First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
+    prompt += `Given the available actions and the assigned task, which should Thomas take? Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
 
     let generationAttempts = 0;
     while (generationAttempts < 10) {
@@ -184,10 +208,10 @@ async function getAction(
             ws.send(JSON.stringify(verifiedAction));
 
             // --- History --
-            history.push(verifiedAction);
-            const historyString = JSON.stringify(history, null, 2);
+            actionHistory.push(verifiedAction);
+            const historyString = JSON.stringify(actionHistory, null, 2);
 
-            fs.writeFileSync("history.txt", historyString);
+            fs.writeFileSync("./data/history.txt", historyString);
 
             return;
         } catch (e) {
@@ -197,4 +221,4 @@ async function getAction(
     }
 }
 
-export { getAction };
+export { getAction, saveActionResult };

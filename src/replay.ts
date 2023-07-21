@@ -24,7 +24,7 @@ export type StreamMessage = {
 };
 
 export function loadHistory() {
-    const historyString = fs.readFileSync("history.txt", "utf8");
+    const historyString = fs.readFileSync("./data/history.txt", "utf8");
     const history = JSON.parse(historyString);
     return history;
 }

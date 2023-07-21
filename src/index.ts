@@ -23,12 +23,13 @@ export type StreamMessage = {
     data: any;
 };
 
-import { getAction } from "./ai/agent.js";
+import { getAction, saveActionResult } from "./ai/agent.js";
 import { observe } from "./ai/observation.js";
 import { createThomas } from "./character.js";
 
 const handlers = {
     GetAction: getAction,
+    ActionExecuted: saveActionResult,
     Observation: observe,
 };
 
