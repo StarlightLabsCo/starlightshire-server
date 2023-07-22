@@ -24,7 +24,16 @@ export type StreamMessage = {
 };
 
 export function loadHistory() {
-    const historyString = fs.readFileSync("./data/history.txt", "utf8");
+    const dataFolders = fs.readdirSync("./data");
+    const latestDataFolder = dataFolders.reduce((a, b) => {
+        return parseInt(a, 10) > parseInt(b, 10) ? a : b;
+    });
+
+    const historyString = fs.readFileSync(
+        `./data/${latestDataFolder}/actions.txt`,
+        "utf8"
+    );
+
     const history = JSON.parse(historyString);
     return history;
 }

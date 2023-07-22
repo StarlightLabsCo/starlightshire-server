@@ -16,6 +16,9 @@ const timeAgo = new TimeAgo("en-US");
 const actionHistory = [];
 const actionResults = [];
 
+const replayTimestamp = new Date();
+fs.mkdirSync(`./data/${replayTimestamp.getTime()}`);
+
 async function saveActionResult(
     ws: WebSocket,
     data: {
@@ -29,7 +32,10 @@ async function saveActionResult(
         timestamp: new Date(),
     });
     const historyString = JSON.stringify(actionResults, null, 2);
-    fs.writeFileSync("./data/results.txt", historyString);
+    fs.writeFileSync(
+        `./data/${replayTimestamp.getTime()}/results.txt`,
+        historyString
+    );
 }
 
 async function getAction(
@@ -46,6 +52,7 @@ async function getAction(
         hitbox: string[];
     }
 ) {
+    // -- Get Action --
     const character = await getCharacter(data.characterId);
 
     let prompt = "";
@@ -93,13 +100,21 @@ async function getAction(
     const allMemories = [];
     const memorySet = new Set(); // A set to store unique memories
 
+    let tasksArray = []; // An array to store task objects
+
     if (tasks.length > 0) {
-        prompt += `Tasks:\n`;
         for (let i = 0; i < tasks.length; i++) {
             const task = tasks[i];
-            prompt += `- ${task.task} [Priority: ${
-                task.priority
-            }] [${timeAgo.format(task.createdAt)}]\n`;
+
+            const taskObj = {
+                id: task.id,
+                task: task.task,
+                priority: task.priority,
+                createdAt: timeAgo.format(task.createdAt),
+                completedAt: "undefined",
+            };
+
+            tasksArray.push(taskObj); // Add each task object to the array
 
             const maxMemoriesForTask = calculateMaxMemoriesForTask(
                 task.priority
@@ -120,7 +135,8 @@ async function getAction(
                 }
             }
         }
-        prompt += "\n";
+
+        prompt += `Tasks:\n${JSON.stringify(tasksArray, null, 2)}\n\n`;
     }
 
     if (allMemories.length > 0) {
@@ -171,7 +187,7 @@ async function getAction(
         prompt += "\n";
     }
 
-    prompt += `Given the available actions and the assigned task, which should Thomas take? Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
+    prompt += `Given the available information, update your task list, and pick the best available action to accomplish the highest priority task. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
 
     let generationAttempts = 0;
     while (generationAttempts < 10) {
@@ -211,7 +227,10 @@ async function getAction(
             actionHistory.push(verifiedAction);
             const historyString = JSON.stringify(actionHistory, null, 2);
 
-            fs.writeFileSync("./data/history.txt", historyString);
+            fs.writeFileSync(
+                `./data/${replayTimestamp.getTime()}/actions.txt`,
+                historyString
+            );
 
             return;
         } catch (e) {
