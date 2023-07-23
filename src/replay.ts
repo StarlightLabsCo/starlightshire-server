@@ -34,7 +34,17 @@ dataFolders.sort((a, b) => {
 const selectedFolder = await cliSelect({
     values: dataFolders,
     valueRenderer: (value, selected) => {
-        return new Date(parseInt(value)).toLocaleString();
+        let description = "No description.txt found";
+        if (fs.existsSync(`./data/${value}/description.txt`)) {
+            description = fs.readFileSync(
+                `./data/${value}/description.txt`,
+                "utf8"
+            );
+        }
+
+        let dateText = new Date(parseInt(value)).toLocaleString();
+
+        return description ? `${dateText} - ${description}` : dateText;
     },
 });
 

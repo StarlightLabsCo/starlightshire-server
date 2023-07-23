@@ -7,7 +7,7 @@ import * as fs from "fs";
 
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
-import { getUnfinishedTasks } from "./task.js";
+import { getUnfinishedTasks, updateTasks } from "./task.js";
 
 TimeAgo.addDefaultLocale(en);
 
@@ -18,6 +18,26 @@ const actionResults = [];
 
 const replayTimestamp = new Date();
 fs.mkdirSync(`./data/${replayTimestamp.getTime()}`);
+
+// get string input from user to describe the run
+import { createInterface } from "readline";
+
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+const description = await new Promise<string>((resolve) => {
+    rl.question("Please describe the run: ", (description) => {
+        resolve(description);
+    });
+});
+
+fs.writeFileSync(
+    `./data/${replayTimestamp.getTime()}/description.txt`,
+    description
+);
+rl.close();
 
 async function saveActionResult(
     ws: WebSocket,
@@ -103,11 +123,9 @@ async function updateTaskList(data: {
             const task = tasks[i];
 
             const taskObj = {
-                id: task.id,
                 task: task.task,
                 priority: task.priority,
-                createdAt: timeAgo.format(task.createdAt),
-                completedAt: "undefined",
+                // createdAt: timeAgo.format(task.createdAt),
             };
 
             tasksArray.push(taskObj);
@@ -135,9 +153,15 @@ async function updateTaskList(data: {
         prompt += `Tasks:\n${JSON.stringify(tasksArray, null, 2)}\n\n`;
     }
 
+    allMemories.sort((a, b) => {
+        return a.createdAt.getTime() - b.createdAt.getTime();
+    });
+
+    let numMemories = allMemories.length > 10 ? 10 : allMemories.length;
+
     if (allMemories.length > 0) {
         prompt += `Memories:\n`;
-        for (let i = 0; i < allMemories.length; i++) {
+        for (let i = 0; i < numMemories; i++) {
             const memory = allMemories[i];
             prompt += `- ${memory.memory} [${timeAgo.format(
                 memory.createdAt
@@ -204,16 +228,15 @@ async function updateTaskList(data: {
 
             console.log("--- Response ---");
             console.log("Updated Tasks: ");
-            console.log(response);
 
-            // const tasksJSON = extractJSON(response);
+            // use regex to select a JSON array
+            const taskArray = response.match(/\[.*\]/s)[0];
 
-            // if (actionJSON === null) {
-            //     throw new Error("No valid JSON object found in response");
-            // }
+            const tasksJSON = JSON.parse(taskArray);
 
-            // Verify action schema
-            // const verifiedAction = Action.parse(actionJSON);
+            console.log(tasksJSON);
+
+            updateTasks(tasksJSON);
 
             return;
         } catch (e) {
@@ -294,11 +317,9 @@ async function getAction(
             const task = tasks[i];
 
             const taskObj = {
-                id: task.id,
                 task: task.task,
                 priority: task.priority,
-                createdAt: timeAgo.format(task.createdAt),
-                completedAt: "undefined",
+                // createdAt: timeAgo.format(task.createdAt),
             };
 
             tasksArray.push(taskObj); // Add each task object to the array
@@ -326,9 +347,15 @@ async function getAction(
         prompt += `Tasks:\n${JSON.stringify(tasksArray, null, 2)}\n\n`;
     }
 
+    allMemories.sort((a, b) => {
+        return a.createdAt.getTime() - b.createdAt.getTime();
+    });
+
+    let numMemories = allMemories.length > 10 ? 10 : allMemories.length;
+
     if (allMemories.length > 0) {
         prompt += `Memories:\n`;
-        for (let i = 0; i < allMemories.length; i++) {
+        for (let i = 0; i < numMemories; i++) {
             const memory = allMemories[i];
             prompt += `- ${memory.memory} [${timeAgo.format(
                 memory.createdAt
