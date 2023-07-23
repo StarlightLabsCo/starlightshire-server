@@ -2,6 +2,8 @@ import * as fs from "fs";
 import dotenv from "dotenv";
 dotenv.config();
 
+import cliSelect from "cli-select";
+
 // Webs Sockets
 import { WebSocketServer } from "ws";
 
@@ -23,14 +25,22 @@ export type StreamMessage = {
     data: any;
 };
 
-export function loadHistory() {
-    const dataFolders = fs.readdirSync("./data");
-    const latestDataFolder = dataFolders.reduce((a, b) => {
-        return parseInt(a, 10) > parseInt(b, 10) ? a : b;
-    });
+const dataFolders = fs.readdirSync("./data");
 
+dataFolders.sort((a, b) => {
+    return parseInt(b) - parseInt(a);
+});
+
+const selectedFolder = await cliSelect({
+    values: dataFolders,
+    valueRenderer: (value, selected) => {
+        return new Date(parseInt(value)).toLocaleString();
+    },
+});
+
+export function loadHistory() {
     const historyString = fs.readFileSync(
-        `./data/${latestDataFolder}/actions.txt`,
+        `./data/${selectedFolder.value}/actions.txt`,
         "utf8"
     );
 
