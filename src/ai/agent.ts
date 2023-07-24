@@ -207,7 +207,7 @@ async function updateTaskList(data: {
         prompt += "\n";
     }
 
-    prompt += `Given the available information, update your task list. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info.`;
+    prompt += `Given the available information, update your task list. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible.`;
 
     let generationAttempts = 0;
     while (generationAttempts < 10) {
