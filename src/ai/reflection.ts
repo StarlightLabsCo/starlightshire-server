@@ -7,6 +7,7 @@ import {
 import { Character } from "@prisma/client";
 import config from "../config.json" assert { type: "json" };
 import colors from "colors";
+import { log } from "../logger.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
@@ -14,14 +15,14 @@ const answerReflectionQuestion = async (
     character: Character,
     reflectionQuestion: string
 ) => {
-    console.log(colors.yellow("[REFLECTION] Answering reflection question..."));
+    log(colors.yellow("[REFLECTION] Answering reflection question..."));
 
     const memories = await getRelevantMemories(
         character,
         reflectionQuestion,
         10
     );
-    console.log(
+    log(
         colors.green(
             `[REFLECTION] Retrieved ${memories.length} relevant memories for the reflection question.`
         )
@@ -52,7 +53,7 @@ const answerReflectionQuestion = async (
         createMemory(character, reflections[i]);
     }
 
-    console.log(
+    log(
         colors.green(
             "[REFLECTION] Reflection question answered and memories created."
         )
@@ -60,10 +61,10 @@ const answerReflectionQuestion = async (
 };
 
 const generateReflection = async (character: Character) => {
-    console.log(colors.yellow("Generating reflection..."));
+    log(colors.yellow("Generating reflection..."));
 
     const memories = await getLatestMemories(character, 100);
-    console.log(
+    log(
         colors.green(
             `[REFLECTION] Retrieved ${memories.length} latest memories for reflection generation.`
         )
@@ -90,7 +91,7 @@ const generateReflection = async (character: Character) => {
         answerReflectionQuestion(character, reflectionQuestionsParsed[i]);
     }
 
-    console.log(colors.green("[REFLECTION] Reflection generation completed."));
+    log(colors.green("[REFLECTION] Reflection generation completed."));
 };
 
 export { generateReflection };

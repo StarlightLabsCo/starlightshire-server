@@ -5,6 +5,7 @@ dotenv.config();
 
 import config from "../config.json" assert { type: "json" };
 import colors from "colors";
+import { log } from "../logger.js";
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -28,7 +29,7 @@ async function sleep(ms) {
 }
 
 async function getEmbedding(input: string) {
-    console.log(colors.yellow("[OPENAI] Creating embedding..."));
+    log(colors.yellow("[OPENAI] Creating embedding..."));
 
     let requestAttempts = 0;
 
@@ -39,15 +40,13 @@ async function getEmbedding(input: string) {
                 input: input,
             });
 
-            console.log(
-                colors.green("[OPENAI] Embedding created successfully.")
-            );
+            log(colors.green("[OPENAI] Embedding created successfully."));
             return response.data.data[0].embedding;
         } catch (e) {
             if (e.response && e.response.status === 429) {
                 const resetTime =
                     e.response.headers["x-ratelimit-reset-requests"] * 1000; // Convert to milliseconds
-                console.log(
+                log(
                     colors.red(
                         `Rate limit exceeded. Waiting for ${resetTime}ms`
                     )
@@ -55,7 +54,7 @@ async function getEmbedding(input: string) {
                 await sleep(resetTime);
                 requestAttempts++;
             } else {
-                console.log(colors.red(e));
+                log(colors.red(e));
                 requestAttempts++;
             }
         }
@@ -63,7 +62,7 @@ async function getEmbedding(input: string) {
 }
 
 async function createChatCompletion(messages: ChatCompletionRequestMessage[]) {
-    console.log(colors.yellow("[OPENAI] Creating chat completion..."));
+    log(colors.yellow("[OPENAI] Creating chat completion..."));
 
     let requestAttempts = 0;
     while (requestAttempts < config.requestAttempts) {
@@ -77,7 +76,7 @@ async function createChatCompletion(messages: ChatCompletionRequestMessage[]) {
 
             const endTime = performance.now();
 
-            console.log(
+            log(
                 colors.cyan(
                     `[OPENAI] Chat completion took ${endTime - startTime}ms`
                 )
@@ -85,7 +84,7 @@ async function createChatCompletion(messages: ChatCompletionRequestMessage[]) {
 
             const generatedTokens = response.data.usage.completion_tokens;
 
-            console.log(
+            log(
                 colors.cyan(
                     `[OPENAI] Tokens per second: ` +
                         generatedTokens / ((endTime - startTime) / 1000) +
@@ -93,18 +92,16 @@ async function createChatCompletion(messages: ChatCompletionRequestMessage[]) {
                 )
             );
 
-            console.log(
-                colors.green("[OPENAI] Chat completion created successfully.")
-            );
+            log(colors.green("[OPENAI] Chat completion created successfully."));
             return response.data.choices[0].message.content.trim();
         } catch (e) {
-            console.log(e);
+            log(e);
             if (e.response && e.response.status === 429) {
                 const resetTime =
                     e.response.headers["x-ratelimit-reset-requests"].split(
                         "s"
                     )[0] * 1000; // Convert to milliseconds
-                console.log(
+                log(
                     colors.red(
                         `[OPENAI] Rate limit exceeded. Waiting for ${resetTime}ms`
                     )
@@ -112,8 +109,8 @@ async function createChatCompletion(messages: ChatCompletionRequestMessage[]) {
                 await sleep(resetTime);
                 requestAttempts++;
             } else {
-                console.log(colors.red(e));
-                console.log(
+                log(colors.red(e));
+                log(
                     colors.red("Failed to create chat completion. Retrying...")
                 );
 

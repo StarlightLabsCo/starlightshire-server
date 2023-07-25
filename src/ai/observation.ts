@@ -1,4 +1,5 @@
 import { getCharacter } from "../character.js";
+import { log } from "../logger.js";
 import { createMemory } from "./memory.js";
 
 async function observe(
@@ -8,13 +9,13 @@ async function observe(
         observation: string;
     }
 ) {
-    console.log("--- Observations received -- ");
-    console.log(data);
+    log("--- Observations received -- ");
+    log(data);
 
     const character = await getCharacter(data.observerId);
 
     if (!character) {
-        console.log("Character not found");
+        log("Character not found");
         return;
     }
 

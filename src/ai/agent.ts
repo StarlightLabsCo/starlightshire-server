@@ -9,6 +9,8 @@ import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
 import { getUnfinishedTasks, updateTasks } from "./task.js";
 
+import { log, setLogFile } from "../logger.js";
+
 TimeAgo.addDefaultLocale(en);
 
 const timeAgo = new TimeAgo("en-US");
@@ -18,6 +20,7 @@ const actionResults = [];
 
 const replayTimestamp = new Date();
 fs.mkdirSync(`./data/${replayTimestamp.getTime()}`);
+setLogFile(`./data/${replayTimestamp.getTime()}/log.txt`);
 
 // get string input from user to describe the run
 import { createInterface } from "readline";
@@ -212,8 +215,8 @@ async function updateTaskList(data: {
     let generationAttempts = 0;
     while (generationAttempts < 10) {
         try {
-            console.log("--- Prompt ---");
-            console.log(prompt);
+            log("--- Prompt ---");
+            log(prompt);
 
             const response = await createChatCompletion([
                 {
@@ -226,25 +229,27 @@ async function updateTaskList(data: {
                 },
             ]);
 
-            console.log("--- Response ---");
-            console.log("Updated Tasks: ");
+            log("--- Response ---");
+            log("Updated Tasks: ");
 
             // use regex to select a JSON array
             const taskArray = response.match(/\[.*\]/s)[0];
 
             const tasksJSON = JSON.parse(taskArray);
 
-            console.log(tasksJSON);
+            log(tasksJSON);
 
             updateTasks(tasksJSON);
 
             return;
         } catch (e) {
-            console.log(e);
+            log(e);
             generationAttempts++;
         }
     }
 }
+
+let counter = 0;
 
 async function getAction(
     ws: WebSocket,
@@ -260,7 +265,11 @@ async function getAction(
         hitbox: string[];
     }
 ) {
-    await updateTaskList(data);
+    counter += 1;
+
+    if (counter % 5 === 0) {
+        await updateTaskList(data);
+    }
 
     // -- Get Action --
     const character = await getCharacter(data.characterId);
@@ -406,8 +415,8 @@ async function getAction(
     let generationAttempts = 0;
     while (generationAttempts < 10) {
         try {
-            console.log("--- Prompt ---");
-            console.log(prompt);
+            log("--- Prompt ---");
+            log(prompt);
 
             const response = await createChatCompletion([
                 {
@@ -420,9 +429,9 @@ async function getAction(
                 },
             ]);
 
-            console.log("--- Response ---");
-            console.log("Plan: ");
-            console.log(response);
+            log("--- Response ---");
+            log("Plan: ");
+            log(response);
 
             const actionJSON = extractJSON(response);
 
@@ -432,8 +441,8 @@ async function getAction(
             // Verify action schema
             const verifiedAction = Action.parse(actionJSON);
 
-            console.log("--- Verified Action ---");
-            console.log(verifiedAction);
+            log("--- Verified Action ---");
+            log(verifiedAction);
 
             ws.send(JSON.stringify(verifiedAction));
 
@@ -448,7 +457,7 @@ async function getAction(
 
             return;
         } catch (e) {
-            console.log(e);
+            log(e);
             generationAttempts++;
         }
     }
