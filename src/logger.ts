@@ -15,7 +15,7 @@ function log(message: any) {
     }
 
     if (logfile.length > 0) {
-        fs.appendFileSync(logfile, messageString + "\n");
+        fs.appendFileSync(logfile, `[${Date.now()}]` + messageString + "\n");
     }
 }
 
