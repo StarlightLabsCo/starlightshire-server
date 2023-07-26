@@ -7,7 +7,7 @@
     "scripts": {
         "build": "rm -rf dist && npx tsc",
         "test": "jest",
-        "start": "node dist/src/index.js",
+        "start": "rm -rf dist && npx tsc && node dist/src/index.js",
         "replay": "node dist/src/replay.js",
         "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/index.js\""
     },

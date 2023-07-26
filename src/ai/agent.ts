@@ -265,11 +265,11 @@ async function getAction(
         hitbox: string[];
     }
 ) {
-    counter += 1;
+    // counter += 1;
 
-    if (counter % 5 === 0) {
-        await updateTaskList(data);
-    }
+    // if (counter % 5 === 0) {
+    //     await updateTaskList(data);
+    // }
 
     // -- Get Action --
     const character = await getCharacter(data.characterId);
@@ -364,7 +364,11 @@ async function getAction(
 
     if (allMemories.length > 0) {
         prompt += `Memories:\n`;
-        for (let i = 0; i < numMemories; i++) {
+        for (
+            let i = allMemories.length - 1;
+            i > allMemories.length - 1 - numMemories;
+            i--
+        ) {
             const memory = allMemories[i];
             prompt += `- ${memory.memory} [${timeAgo.format(
                 memory.createdAt
@@ -410,7 +414,7 @@ async function getAction(
         prompt += "\n";
     }
 
-    prompt += `Given the available information, update your task list, and pick the best available action to accomplish the highest priority task. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
+    prompt += `Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
 
     let generationAttempts = 0;
     while (generationAttempts < 10) {

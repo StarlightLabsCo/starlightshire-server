@@ -36,7 +36,9 @@ const answerReflectionQuestion = async (
     }
 
     reflectionPrompt +=
-        "What 5 high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))";
+        "What 5 high-level insights can you infer from the above statements?" +
+        character.name +
+        "'s point of view.\n";
 
     const completion = await createChatCompletion([
         { role: "user", content: reflectionPrompt },

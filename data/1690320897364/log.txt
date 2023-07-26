@@ -1,0 +1,1085 @@
+[1690320922029]--- Observations received -- 
+[1690320922034]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: -0.42, Y: -3.52."
+}
+[1690320922035]--- Observations received -- 
+[1690320922035]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 0.86, Y: -2.57."
+}
+[1690320922036]--- Observations received -- 
+[1690320922036]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 2.38, Y: -3.11."
+}
+[1690320922036]--- Observations received -- 
+[1690320922036]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 0.86, Y: -0.9."
+}
+[1690320922036]--- Observations received -- 
+[1690320922036]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 2.38, Y: -1.65."
+}
+[1690320922037]--- Observations received -- 
+[1690320922037]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 1.22, Y: -4.18."
+}
+[1690320922037]--- Observations received -- 
+[1690320922037]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: -0.6865366, Y: -1.433641."
+}
+[1690320922037]--- Observations received -- 
+[1690320922037]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 4.14, Y: -3.64."
+}
+[1690320922528][33m[OPENAI] Creating embedding...[39m
+[1690320922965][32m[OPENAI] Embedding created successfully.[39m
+[1690320923031][33m[OPENAI] Creating embedding...[39m
+[1690320923183][32m[OPENAI] Embedding created successfully.[39m
+[1690320923213][33m[OPENAI] Creating embedding...[39m
+[1690320923394][33m[OPENAI] Creating chat completion...[39m
+[1690320923395][33m[OPENAI] Creating embedding...[39m
+[1690320923396][33m[OPENAI] Creating chat completion...[39m
+[1690320923397][33m[OPENAI] Creating embedding...[39m
+[1690320923397][33m[OPENAI] Creating chat completion...[39m
+[1690320923397][33m[OPENAI] Creating embedding...[39m
+[1690320923397][33m[OPENAI] Creating chat completion...[39m
+[1690320923397][33m[OPENAI] Creating embedding...[39m
+[1690320923397][33m[OPENAI] Creating chat completion...[39m
+[1690320923398][33m[OPENAI] Creating embedding...[39m
+[1690320923398][33m[OPENAI] Creating chat completion...[39m
+[1690320923398][33m[OPENAI] Creating embedding...[39m
+[1690320923398][33m[OPENAI] Creating chat completion...[39m
+[1690320923398][33m[OPENAI] Creating embedding...[39m
+[1690320923398][33m[OPENAI] Creating chat completion...[39m
+[1690320923398][33m[OPENAI] Creating embedding...[39m
+[1690320923583][32m[OPENAI] Embedding created successfully.[39m
+[1690320923619][32m[OPENAI] Embedding created successfully.[39m
+[1690320923620][32m[OPENAI] Embedding created successfully.[39m
+[1690320923655][32m[OPENAI] Embedding created successfully.[39m
+[1690320923669][32m[OPENAI] Embedding created successfully.[39m
+[1690320923679][32m[OPENAI] Embedding created successfully.[39m
+[1690320923710][32m[OPENAI] Embedding created successfully.[39m
+[1690320923733][32m[OPENAI] Embedding created successfully.[39m
+[1690320923734][32m[OPENAI] Embedding created successfully.[39m
+[1690320923802][36m[OPENAI] Chat completion took 406.86320781707764ms[39m
+[1690320923802][36m[OPENAI] Tokens per second: 2.457828530048831tps[39m
+[1690320923802][32m[OPENAI] Chat completion created successfully.[39m
+[1690320923859][36m[OPENAI] Chat completion took 462.176167011261ms[39m
+[1690320923859][36m[OPENAI] Tokens per second: 2.1636771243888804tps[39m
+[1690320923859][32m[OPENAI] Chat completion created successfully.[39m
+[1690320923941][36m[OPENAI] Chat completion took 542.6310830116272ms[39m
+[1690320923941][36m[OPENAI] Tokens per second: 1.8428726833154387tps[39m
+[1690320923941][32m[OPENAI] Chat completion created successfully.[39m
+[1690320923964][36m[OPENAI] Chat completion took 566.3734169006348ms[39m
+[1690320923964][36m[OPENAI] Tokens per second: 1.7656195897616451tps[39m
+[1690320923964][32m[OPENAI] Chat completion created successfully.[39m
+[1690320924034][36m[OPENAI] Chat completion took 636.1222920417786ms[39m
+[1690320924034][36m[OPENAI] Tokens per second: 1.572024770253332tps[39m
+[1690320924035][32m[OPENAI] Chat completion created successfully.[39m
+[1690320924154][36m[OPENAI] Chat completion took 756.8360424041748ms[39m
+[1690320924154][36m[OPENAI] Tokens per second: 1.3212901394381107tps[39m
+[1690320924154][32m[OPENAI] Chat completion created successfully.[39m
+[1690320924326][36m[OPENAI] Chat completion took 927.4125843048096ms[39m
+[1690320924326][36m[OPENAI] Tokens per second: 1.0782687413602459tps[39m
+[1690320924326][32m[OPENAI] Chat completion created successfully.[39m
+[1690320924343][36m[OPENAI] Chat completion took 946.2257919311523ms[39m
+[1690320924343][36m[OPENAI] Tokens per second: 1.0568302074699316tps[39m
+[1690320924343][32m[OPENAI] Chat completion created successfully.[39m
+[1690320924994]--- Prompt ---
+[1690320924995]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 25
+- Occupation: Lumberjack
+- Personality: Brave, Calm, Honest
+
+Location: 0, 0
+
+Environment:
+- Tree (Health: 10/10) [X: 0.86, Y: -0.9, Distance: 1.244829m]
+- Tree (Health: 10/10) [X: -0.6865366, Y: -1.433641, Distance: 1.589547m]
+- Tree (Health: 10/10) [X: 0.86, Y: -2.57, Distance: 2.710074m]
+- Tree (Health: 10/10) [X: 2.38, Y: -1.65, Distance: 2.896015m]
+- Tree (Health: 10/10) [X: -0.42, Y: -3.52, Distance: 3.544968m]
+- Tree (Health: 10/10) [X: 2.38, Y: -3.11, Distance: 3.916184m]
+- Tree (Health: 10/10) [X: 1.22, Y: -4.18, Distance: 4.3544m]
+- Tree (Health: 10/10) [X: -0.48, Y: -5.31, Distance: 5.331651m]
+- Tree (Health: 10/10) [X: 4.14, Y: -3.64, Distance: 5.51264m]
+- Tree (Health: 10/10) [X: 2.72, Y: -5.11, Distance: 5.788826m]
+- Tree (Health: 10/10) [X: 1.1, Y: -5.79, Distance: 5.893564m]
+- Chest (Health: 10/10) [X: -5.51, Y: -4.46, Distance: 7.088843m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: -5.66, Y: 5.23, Distance: 7.706393m]
+
+Inventory (1/10):
+- Axe x 1
+
+Tasks:
+[
+  {
+    "task": "Chop wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 3
+  }
+]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690320924995][33m[OPENAI] Creating chat completion...[39m
+[1690320932051][36m[OPENAI] Chat completion took 7055.523750305176ms[39m
+[1690320932052][36m[OPENAI] Tokens per second: 13.322894703023879tps[39m
+[1690320932052][32m[OPENAI] Chat completion created successfully.[39m
+[1690320932052]--- Response ---
+[1690320932053]Plan: 
+[1690320932053]1. The priority task is to "Chop wood", so Thomas needs to move towards the nearest tree.
+2. The nearest tree is located at X: 0.86, Y: -0.9.
+3. Therefore, Thomas should move to that location to chop wood.
+
+Action: {"type": "MoveTo", "data": {"characterId": "A1", "x": 0.86, "y": -0.9}}
+[1690320932055]--- Verified Action ---
+[1690320932055]{
+  "type": "MoveTo",
+  "data": {
+    "characterId": "A1",
+    "x": 0.86,
+    "y": -0.9
+  }
+}
+[1690320932080]--- Observations received -- 
+[1690320932081]{
+  "observerId": "A1",
+  "observation": "Thomas Smith has started walking to 0.86, Y: -0.9."
+}
+[1690320932480]--- Observations received -- 
+[1690320932480]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 2.72, Y: -5.11."
+}
+[1690320932500]--- Observations received -- 
+[1690320932500]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: -0.48, Y: -5.31."
+}
+[1690320932779]--- Observations received -- 
+[1690320932780]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 1.1, Y: -5.79."
+}
+[1690320932828]--- Observations received -- 
+[1690320932828]{
+  "observerId": "A1",
+  "observation": "Thomas Smith finished walking to 0.86, Y: -0.9."
+}
+[1690320936315][33m[OPENAI] Creating chat completion...[39m
+[1690320936316][33m[OPENAI] Creating embedding...[39m
+[1690320936482][32m[OPENAI] Embedding created successfully.[39m
+[1690320936879][36m[OPENAI] Chat completion took 563.4267082214355ms[39m
+[1690320936880][36m[OPENAI] Tokens per second: 1.7748537394627453tps[39m
+[1690320936880][32m[OPENAI] Chat completion created successfully.[39m
+[1690320939569][33m[OPENAI] Creating embedding...[39m
+[1690320939728][33m[OPENAI] Creating chat completion...[39m
+[1690320939729][33m[OPENAI] Creating embedding...[39m
+[1690320939749][32m[OPENAI] Embedding created successfully.[39m
+[1690320940290][36m[OPENAI] Chat completion took 561.6798748970032ms[39m
+[1690320940291][36m[OPENAI] Tokens per second: 1.7803735627582753tps[39m
+[1690320940291][32m[OPENAI] Chat completion created successfully.[39m
+[1690320940292][32m[OPENAI] Embedding created successfully.[39m
+[1690320941250][33m[OPENAI] Creating chat completion...[39m
+[1690320941250][33m[OPENAI] Creating embedding...[39m
+[1690320941373][33m[OPENAI] Creating chat completion...[39m
+[1690320941373][33m[OPENAI] Creating embedding...[39m
+[1690320941515][32m[OPENAI] Embedding created successfully.[39m
+[1690320941856][32m[OPENAI] Embedding created successfully.[39m
+[1690320941885][36m[OPENAI] Chat completion took 512.1989998817444ms[39m
+[1690320941886][36m[OPENAI] Tokens per second: 1.9523661706307087tps[39m
+[1690320941886][32m[OPENAI] Chat completion created successfully.[39m
+[1690320942438][36m[OPENAI] Chat completion took 1187.6423749923706ms[39m
+[1690320942439][36m[OPENAI] Tokens per second: 0.8420043112779838tps[39m
+[1690320942439][32m[OPENAI] Chat completion created successfully.[39m
+[1690320945875][33m[OPENAI] Creating embedding...[39m
+[1690320946139][32m[OPENAI] Embedding created successfully.[39m
+[1690320955628][33m[OPENAI] Creating chat completion...[39m
+[1690320955631][33m[OPENAI] Creating embedding...[39m
+[1690320956125][32m[OPENAI] Embedding created successfully.[39m
+[1690320956427][36m[OPENAI] Chat completion took 797.366334438324ms[39m
+[1690320956427][36m[OPENAI] Tokens per second: 1.2541286944405723tps[39m
+[1690320956428][32m[OPENAI] Chat completion created successfully.[39m
+[1690320956768][33m[OPENAI] Creating embedding...[39m
+[1690320956952][32m[OPENAI] Embedding created successfully.[39m
+[1690320972912]--- Prompt ---
+[1690320972913]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 25
+- Occupation: Lumberjack
+- Personality: Brave, Calm, Honest
+
+Location: 0.8062669, -0.7564592
+
+Environment:
+- Tree (Health: 10/10) [X: 0.86, Y: -0.9, Distance: 0.1532684m]
+- Tree (Health: 10/10) [X: -0.6865366, Y: -1.433641, Distance: 1.639219m]
+- Tree (Health: 10/10) [X: 2.38, Y: -1.65, Distance: 1.80971m]
+- Tree (Health: 10/10) [X: 0.86, Y: -2.57, Distance: 1.814337m]
+- Tree (Health: 10/10) [X: 2.38, Y: -3.11, Distance: 2.831217m]
+- Tree (Health: 10/10) [X: -0.42, Y: -3.52, Distance: 3.02339m]
+- Tree (Health: 10/10) [X: 1.22, Y: -4.18, Distance: 3.44845m]
+- Tree (Health: 10/10) [X: 4.14, Y: -3.64, Distance: 4.407787m]
+- Tree (Health: 10/10) [X: -0.48, Y: -5.31, Distance: 4.731724m]
+- Tree (Health: 10/10) [X: 2.72, Y: -5.11, Distance: 4.755596m]
+- Tree (Health: 10/10) [X: 1.1, Y: -5.79, Distance: 5.042104m]
+- Chest (Health: 10/10) [X: -5.51, Y: -4.46, Distance: 7.321983m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: -5.66, Y: 5.23, Distance: 8.811941m]
+
+Inventory (1/10):
+- Axe x 1
+
+Tasks:
+[
+  {
+    "task": "Chop wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith sees Tree at X: -0.42, Y: -3.52. [1 minute ago]
+- Thomas Smith sees Tree at X: 0.86, Y: -2.57. [1 minute ago]
+- Thomas Smith sees Tree at X: -0.6865366, Y: -1.433641. [1 minute ago]
+- Thomas Smith sees Tree at X: 1.22, Y: -4.18. [1 minute ago]
+- Thomas Smith sees Tree at X: 2.38, Y: -1.65. [1 minute ago]
+- Thomas Smith sees Tree at X: 0.86, Y: -0.9. [1 minute ago]
+- Thomas Smith sees Tree at X: 4.14, Y: -3.64. [1 minute ago]
+- Thomas Smith sees Tree at X: 2.38, Y: -3.11. [1 minute ago]
+- Thomas Smith sees Tree at X: 2.72, Y: -5.11. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree (Health: 10/10)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 0.86, Y: -0.9. [1 minute ago]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690320972913][33m[OPENAI] Creating chat completion...[39m
+[1690320977693][36m[OPENAI] Chat completion took 4780.180666923523ms[39m
+[1690320977694][36m[OPENAI] Tokens per second: 12.970221069050636tps[39m
+[1690320977694][32m[OPENAI] Chat completion created successfully.[39m
+[1690320977695]--- Response ---
+[1690320977695]Plan: 
+[1690320977695]The first task is to "Chop wood". Thomas is already near a tree according to the environment and the hit box. Therefore, Thomas should proceed to chop the tree he is currently nearest to.
+
+Action: {"type": "SwingAxe", "data": {"characterId": "A1"}}
+[1690320977697]--- Verified Action ---
+[1690320977698]{
+  "type": "SwingAxe",
+  "data": {
+    "characterId": "A1"
+  }
+}
+[1690320978949][33m[OPENAI] Creating embedding...[39m
+[1690320979160][32m[OPENAI] Embedding created successfully.[39m
+[1690320980475][33m[OPENAI] Creating embedding...[39m
+[1690320980696][32m[OPENAI] Embedding created successfully.[39m
+[1690320983068][33m[OPENAI] Creating embedding...[39m
+[1690320983303][32m[OPENAI] Embedding created successfully.[39m
+[1690320987263]--- Prompt ---
+[1690320987264]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 25
+- Occupation: Lumberjack
+- Personality: Brave, Calm, Honest
+
+Location: 0.8062669, -0.7564592
+
+Environment:
+- Tree (Health: 5/10) [X: 0.86, Y: -0.9, Distance: 0.1532684m]
+- Tree (Health: 10/10) [X: -0.6865366, Y: -1.433641, Distance: 1.639219m]
+- Tree (Health: 10/10) [X: 2.38, Y: -1.65, Distance: 1.80971m]
+- Tree (Health: 10/10) [X: 0.86, Y: -2.57, Distance: 1.814337m]
+- Tree (Health: 10/10) [X: 2.38, Y: -3.11, Distance: 2.831217m]
+- Tree (Health: 10/10) [X: -0.42, Y: -3.52, Distance: 3.02339m]
+- Tree (Health: 10/10) [X: 1.22, Y: -4.18, Distance: 3.44845m]
+- Tree (Health: 10/10) [X: 4.14, Y: -3.64, Distance: 4.407787m]
+- Tree (Health: 10/10) [X: -0.48, Y: -5.31, Distance: 4.731724m]
+- Tree (Health: 10/10) [X: 2.72, Y: -5.11, Distance: 4.755596m]
+- Tree (Health: 10/10) [X: 1.1, Y: -5.79, Distance: 5.042104m]
+- Chest (Health: 10/10) [X: -5.51, Y: -4.46, Distance: 7.321983m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: -5.66, Y: 5.23, Distance: 8.811941m]
+
+Inventory (1/10):
+- Axe x 1
+
+Tasks:
+[
+  {
+    "task": "Chop wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith sees Tree at X: -0.42, Y: -3.52. [1 minute ago]
+- Thomas Smith sees Tree at X: 0.86, Y: -2.57. [1 minute ago]
+- Thomas Smith sees Tree at X: -0.6865366, Y: -1.433641. [1 minute ago]
+- Thomas Smith sees Tree at X: 1.22, Y: -4.18. [1 minute ago]
+- Thomas Smith sees Tree at X: 4.14, Y: -3.64. [1 minute ago]
+- Thomas Smith finished walking to 0.86, Y: -0.9. [1 minute ago]
+- Thomas Smith has started walking to 0.86, Y: -0.9. [1 minute ago]
+- Thomas Smith sees Tree at X: 2.72, Y: -5.11. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree (Health: 5/10)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 0.86, Y: -0.9. [1 minute ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690320987265][33m[OPENAI] Creating chat completion...[39m
+[1690320995262][36m[OPENAI] Chat completion took 7996.505332946777ms[39m
+[1690320995262][36m[OPENAI] Tokens per second: 16.63226552879549tps[39m
+[1690320995262][32m[OPENAI] Chat completion created successfully.[39m
+[1690320995263]--- Response ---
+[1690320995263]Plan: 
+[1690320995263]1. Using the axe in his inventory, Thomas is supposed to chop some wood as that is his first task as per the priority list.
+2. He is already at the location with a tree with health 5/10, so there is no need for him to move.
+3. He can swing the axe to chop some wood from the tree.
+
+Reasoning:
+
+Thomas doesn't need to move to another location nor does he require any other item from his inventory. By chopping the wood, he can proceed with his tasks as per the priority list.
+
+Action:
+
+{"type": "SwingAxe", "data": {"characterId": "A1"}}
+[1690320995263]--- Verified Action ---
+[1690320995263]{
+  "type": "SwingAxe",
+  "data": {
+    "characterId": "A1"
+  }
+}
+[1690320995910]--- Observations received -- 
+[1690320995911]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree Stump at X: 0.86, Y: -0.9."
+}
+[1690320999577][33m[OPENAI] Creating embedding...[39m
+[1690320999724][32m[OPENAI] Embedding created successfully.[39m
+[1690320999900][33m[OPENAI] Creating chat completion...[39m
+[1690320999900][33m[OPENAI] Creating embedding...[39m
+[1690321000096][32m[OPENAI] Embedding created successfully.[39m
+[1690321000429][36m[OPENAI] Chat completion took 528.446750164032ms[39m
+[1690321000429][36m[OPENAI] Tokens per second: 1.892338252983098tps[39m
+[1690321000429][32m[OPENAI] Chat completion created successfully.[39m
+[1690321005935][33m[OPENAI] Creating embedding...[39m
+[1690321006128][32m[OPENAI] Embedding created successfully.[39m
+[1690321006798][33m[OPENAI] Creating embedding...[39m
+[1690321006973][32m[OPENAI] Embedding created successfully.[39m
+[1690321012829]--- Prompt ---
+[1690321012830]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 25
+- Occupation: Lumberjack
+- Personality: Brave, Calm, Honest
+
+Location: 0.8062669, -0.7564592
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 0.86, Y: -0.9, Distance: 0.1532684m]
+- Tree (Health: 10/10) [X: -0.6865366, Y: -1.433641, Distance: 1.639219m]
+- Tree (Health: 10/10) [X: 2.38, Y: -1.65, Distance: 1.80971m]
+- Tree (Health: 10/10) [X: 0.86, Y: -2.57, Distance: 1.814337m]
+- Tree (Health: 10/10) [X: 2.38, Y: -3.11, Distance: 2.831217m]
+- Tree (Health: 10/10) [X: -0.42, Y: -3.52, Distance: 3.02339m]
+- Tree (Health: 10/10) [X: 1.22, Y: -4.18, Distance: 3.44845m]
+- Tree (Health: 10/10) [X: 4.14, Y: -3.64, Distance: 4.407787m]
+- Tree (Health: 10/10) [X: -0.48, Y: -5.31, Distance: 4.731724m]
+- Tree (Health: 10/10) [X: 2.72, Y: -5.11, Distance: 4.755596m]
+- Tree (Health: 10/10) [X: 1.1, Y: -5.79, Distance: 5.042104m]
+- Chest (Health: 10/10) [X: -5.51, Y: -4.46, Distance: 7.321983m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: -5.66, Y: 5.23, Distance: 8.811941m]
+
+Inventory (2/10):
+- Axe x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Chop wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith sees Tree at X: -0.42, Y: -3.52. [1 minute ago]
+- Thomas Smith sees Tree at X: 0.86, Y: -2.57. [1 minute ago]
+- Thomas Smith sees Tree at X: -0.6865366, Y: -1.433641. [1 minute ago]
+- Thomas Smith sees Tree at X: 1.22, Y: -4.18. [1 minute ago]
+- Thomas Smith sees Tree at X: 4.14, Y: -3.64. [1 minute ago]
+- Thomas Smith finished walking to 0.86, Y: -0.9. [1 minute ago]
+- Thomas Smith has started walking to 0.86, Y: -0.9. [1 minute ago]
+- Thomas Smith sees Tree at X: 2.72, Y: -5.11. [1 minute ago]
+- Thomas Smith sees Tree Stump at X: 0.86, Y: -0.9. [just now]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [DropItem] Drop Wood from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "wood"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 0.86, Y: -0.9. [1 minute ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [1 minute ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690321012830][33m[OPENAI] Creating chat completion...[39m
+[1690321026674][36m[OPENAI] Chat completion took 13843.36420917511ms[39m
+[1690321026675][36m[OPENAI] Tokens per second: 15.675380400392605tps[39m
+[1690321026675][32m[OPENAI] Chat completion created successfully.[39m
+[1690321026675]--- Response ---
+[1690321026675]Plan: 
+[1690321026675]Thomas Smith's first task is to chop wood. He is currently by a tree stump and is able to attack it with his axe. Once the tree stump's health has come down to 0, it will drop wood which Thomas can pick up. Given that his second task is to store wood in a chest, after collecting this wood, he should move towards the chest. 
+
+However, after checking the environment, it's apparent that there are several trees in relatively close proximity that have higher health (10/10), and these trees could potentially give more wood upon being chopped, whereas the stump's health is only 5/5. It might be more efficient to go after chopping a tree instead of the stump, but this choice depends on how much wood each tree or stump yields when they are fully chopped down.
+
+Since there isn't enough data available to decide which option yields more wood, we will go with the current available option of chopping the tree stump. 
+
+Action: 
+
+{"type": "SwingAxe", "data": {"characterId": "A1"}}
+[1690321026676]--- Verified Action ---
+[1690321026677]{
+  "type": "SwingAxe",
+  "data": {
+    "characterId": "A1"
+  }
+}
+[1690321027763][33m[OPENAI] Creating embedding...[39m
+[1690321027918][32m[OPENAI] Embedding created successfully.[39m
+[1690321028581][33m[OPENAI] Creating embedding...[39m
+[1690321028717][32m[OPENAI] Embedding created successfully.[39m
+[1690321029466][33m[OPENAI] Creating embedding...[39m
+[1690321029602][32m[OPENAI] Embedding created successfully.[39m
+[1690321030208]--- Prompt ---
+[1690321030210]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 25
+- Occupation: Lumberjack
+- Personality: Brave, Calm, Honest
+
+Location: 0.8062669, -0.7564592
+
+Environment:
+- Tree (Health: 10/10) [X: -0.6865366, Y: -1.433641, Distance: 1.639219m]
+- Tree (Health: 10/10) [X: 2.38, Y: -1.65, Distance: 1.80971m]
+- Tree (Health: 10/10) [X: 0.86, Y: -2.57, Distance: 1.814337m]
+- Tree (Health: 10/10) [X: 2.38, Y: -3.11, Distance: 2.831217m]
+- Tree (Health: 10/10) [X: -0.42, Y: -3.52, Distance: 3.02339m]
+- Tree (Health: 10/10) [X: 1.22, Y: -4.18, Distance: 3.44845m]
+- Tree (Health: 10/10) [X: 4.14, Y: -3.64, Distance: 4.407787m]
+- Tree (Health: 10/10) [X: -0.48, Y: -5.31, Distance: 4.731724m]
+- Tree (Health: 10/10) [X: 2.72, Y: -5.11, Distance: 4.755596m]
+- Tree (Health: 10/10) [X: 1.1, Y: -5.79, Distance: 5.042104m]
+- Chest (Health: 10/10) [X: -5.51, Y: -4.46, Distance: 7.321983m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: -5.66, Y: 5.23, Distance: 8.811941m]
+
+Inventory (3/10):
+- Axe x 1
+- Wood x 2
+
+Tasks:
+[
+  {
+    "task": "Chop wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith sees Tree at X: -0.42, Y: -3.52. [2 minutes ago]
+- Thomas Smith sees Tree at X: 0.86, Y: -2.57. [2 minutes ago]
+- Thomas Smith sees Tree at X: -0.6865366, Y: -1.433641. [2 minutes ago]
+- Thomas Smith sees Tree at X: 1.22, Y: -4.18. [2 minutes ago]
+- Thomas Smith sees Tree at X: 4.14, Y: -3.64. [2 minutes ago]
+- Thomas Smith has started walking to 0.86, Y: -0.9. [1 minute ago]
+- Thomas Smith sees Tree at X: 2.72, Y: -5.11. [1 minute ago]
+- Thomas Smith sees Tree Stump at X: 0.86, Y: -0.9. [just now]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [DropItem] Drop Wood from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "wood"}}
+
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 0.86, Y: -0.9. [2 minutes ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [1 minute ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [1 minute ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [just now]
+
+Given the available information, update your task list. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible.
+[1690321030210][33m[OPENAI] Creating chat completion...[39m
+[1690321038626][36m[OPENAI] Chat completion took 8415.47716665268ms[39m
+[1690321038627][36m[OPENAI] Tokens per second: 12.83349688452162tps[39m
+[1690321038628][32m[OPENAI] Chat completion created successfully.[39m
+[1690321038628]--- Response ---
+[1690321038628]Updated Tasks: 
+[1690321038629][
+  {
+    "task": "Collect wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "MoveTo Stone Ore Deposit (Large)",
+    "priority": 3
+  },
+  {
+    "task": "Mine Stone Ore Deposit (Large)",
+    "priority": 4
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 5
+  }
+]
+[1690321038879][33m[OPENAI] Creating embedding...[39m
+[1690321039332][32m[OPENAI] Embedding created successfully.[39m
+[1690321057916][33m[OPENAI] Creating embedding...[39m
+[1690321059480][32m[OPENAI] Embedding created successfully.[39m
+[1690321074624][33m[OPENAI] Creating embedding...[39m
+[1690321074905][32m[OPENAI] Embedding created successfully.[39m
+[1690321080904][33m[OPENAI] Creating embedding...[39m
+[1690321081077][32m[OPENAI] Embedding created successfully.[39m
+[1690321087075][33m[OPENAI] Creating embedding...[39m
+[1690321087587][31mError [ERR_SOCKET_CONNECTION_TIMEOUT]: Socket connection timeout[39m
+[31m    at new NodeError (node:internal/errors:399:5)[39m
+[31m    at internalConnectMultiple (node:net:1099:20)[39m
+[31m    at Timeout.internalConnectMultipleTimeout (node:net:1638:3)[39m
+[31m    at listOnTimeout (node:internal/timers:575:11)[39m
+[31m    at process.processTimers (node:internal/timers:514:7) {[39m
+[31m  code: 'ERR_SOCKET_CONNECTION_TIMEOUT',[39m
+[31m  config: {[39m
+[31m    transitional: {[39m
+[31m      silentJSONParsing: true,[39m
+[31m      forcedJSONParsing: true,[39m
+[31m      clarifyTimeoutError: false[39m
+[31m    },[39m
+[31m    adapter: [Function: httpAdapter],[39m
+[31m    transformRequest: [ [Function: transformRequest] ],[39m
+[31m    transformResponse: [ [Function: transformResponse] ],[39m
+[31m    timeout: 0,[39m
+[31m    xsrfCookieName: 'XSRF-TOKEN',[39m
+[31m    xsrfHeaderName: 'X-XSRF-TOKEN',[39m
+[31m    maxContentLength: -1,[39m
+[31m    maxBodyLength: -1,[39m
+[31m    validateStatus: [Function: validateStatus],[39m
+[31m    headers: {[39m
+[31m      Accept: 'application/json, text/plain, */*',[39m
+[31m      'Content-Type': 'application/json',[39m
+[31m      'User-Agent': 'OpenAI/NodeJS/3.2.1',[39m
+[31m      Authorization: 'Bearer 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',[39m
+[31m      'Content-Length': 56[39m
+[31m    },[39m
+[31m    method: 'post',[39m
+[31m    data: '{"model":"text-embedding-ada-002","input":"Cook dinner"}',[39m
+[31m    url: 'https://api.openai.com/v1/embeddings'[39m
+[31m  },[39m
+[31m  request: <ref *1> Writable {[39m
+[31m    _writableState: WritableState {[39m
+[31m      objectMode: false,[39m
+[31m      highWaterMark: 16384,[39m
+[31m      finalCalled: false,[39m
+[31m      needDrain: false,[39m
+[31m      ending: false,[39m
+[31m      ended: false,[39m
+[31m      finished: false,[39m
+[31m      destroyed: false,[39m
+[31m      decodeStrings: true,[39m
+[31m      defaultEncoding: 'utf8',[39m
+[31m      length: 0,[39m
+[31m      writing: false,[39m
+[31m      corked: 0,[39m
+[31m      sync: true,[39m
+[31m      bufferProcessing: false,[39m
+[31m      onwrite: [Function: bound onwrite],[39m
+[31m      writecb: null,[39m
+[31m      writelen: 0,[39m
+[31m      afterWriteTickInfo: null,[39m
+[31m      buffered: [],[39m
+[31m      bufferedIndex: 0,[39m
+[31m      allBuffers: true,[39m
+[31m      allNoop: true,[39m
+[31m      pendingcb: 0,[39m
+[31m      constructed: true,[39m
+[31m      prefinished: false,[39m
+[31m      errorEmitted: false,[39m
+[31m      emitClose: true,[39m
+[31m      autoDestroy: true,[39m
+[31m      errored: null,[39m
+[31m      closed: false,[39m
+[31m      closeEmitted: false,[39m
+[31m      [Symbol(kOnFinished)]: [][39m
+[31m    },[39m
+[31m    _events: [Object: null prototype] {[39m
+[31m      response: [Function: handleResponse],[39m
+[31m      error: [Function: handleRequestError],[39m
+[31m      socket: [Function: handleRequestSocket][39m
+[31m    },[39m
+[31m    _eventsCount: 3,[39m
+[31m    _maxListeners: undefined,[39m
+[31m    _options: {[39m
+[31m      maxRedirects: 21,[39m
+[31m      maxBodyLength: 10485760,[39m
+[31m      protocol: 'https:',[39m
+[31m      path: '/v1/embeddings',[39m
+[31m      method: 'POST',[39m
+[31m      headers: [Object],[39m
+[31m      agent: undefined,[39m
+[31m      agents: [Object],[39m
+[31m      auth: undefined,[39m
+[31m      hostname: 'api.openai.com',[39m
+[31m      port: null,[39m
+[31m      nativeProtocols: [Object],[39m
+[31m      pathname: '/v1/embeddings'[39m
+[31m    },[39m
+[31m    _ended: false,[39m
+[31m    _ending: true,[39m
+[31m    _redirectCount: 0,[39m
+[31m    _redirects: [],[39m
+[31m    _requestBodyLength: 56,[39m
+[31m    _requestBodyBuffers: [ [Object] ],[39m
+[31m    _onNativeResponse: [Function (anonymous)],[39m
+[31m    _currentRequest: ClientRequest {[39m
+[31m      _events: [Object: null prototype],[39m
+[31m      _eventsCount: 7,[39m
+[31m      _maxListeners: undefined,[39m
+[31m      outputData: [],[39m
+[31m      outputSize: 0,[39m
+[31m      writable: true,[39m
+[31m      destroyed: false,[39m
+[31m      _last: false,[39m
+[31m      chunkedEncoding: false,[39m
+[31m      shouldKeepAlive: true,[39m
+[31m      maxRequestsOnConnectionReached: false,[39m
+[31m      _defaultKeepAlive: true,[39m
+[31m      useChunkedEncodingByDefault: true,[39m
+[31m      sendDate: false,[39m
+[31m      _removedConnection: false,[39m
+[31m      _removedContLen: false,[39m
+[31m      _removedTE: false,[39m
+[31m      strictContentLength: false,[39m
+[31m      _contentLength: 56,[39m
+[31m      _hasBody: true,[39m
+[31m      _trailer: '',[39m
+[31m      finished: false,[39m
+[31m      _headerSent: true,[39m
+[31m      _closed: false,[39m
+[31m      socket: [TLSSocket],[39m
+[31m      _header: 'POST /v1/embeddings HTTP/1.1\r\n' +[39m
+[31m        'Accept: application/json, text/plain, */*\r\n' +[39m
+[31m        'Content-Type: application/json\r\n' +[39m
+[31m        'User-Agent: OpenAI/NodeJS/3.2.1\r\n' +[39m
+[31m        'Authorization: Bearer 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\r\n' +[39m
+[31m        'Content-Length: 56\r\n' +[39m
+[31m        'Host: api.openai.com\r\n' +[39m
+[31m        'Connection: keep-alive\r\n' +[39m
+[31m        '\r\n',[39m
+[31m      _keepAliveTimeout: 0,[39m
+[31m      _onPendingData: [Function: nop],[39m
+[31m      agent: [Agent],[39m
+[31m      socketPath: undefined,[39m
+[31m      method: 'POST',[39m
+[31m      maxHeaderSize: undefined,[39m
+[31m      insecureHTTPParser: undefined,[39m
+[31m      joinDuplicateHeaders: undefined,[39m
+[31m      path: '/v1/embeddings',[39m
+[31m      _ended: false,[39m
+[31m      res: null,[39m
+[31m      aborted: false,[39m
+[31m      timeoutCb: [Function: emitRequestTimeout],[39m
+[31m      upgradeOrConnect: false,[39m
+[31m      parser: null,[39m
+[31m      maxHeadersCount: null,[39m
+[31m      reusedSocket: false,[39m
+[31m      host: 'api.openai.com',[39m
+[31m      protocol: 'https:',[39m
+[31m      _redirectable: [Circular *1],[39m
+[31m      [Symbol(kCapture)]: false,[39m
+[31m      [Symbol(kBytesWritten)]: 0,[39m
+[31m      [Symbol(kNeedDrain)]: false,[39m
+[31m      [Symbol(corked)]: 0,[39m
+[31m      [Symbol(kOutHeaders)]: [Object: null prototype],[39m
+[31m      [Symbol(errored)]: null,[39m
+[31m      [Symbol(kHighWaterMark)]: 16384,[39m
+[31m      [Symbol(kRejectNonStandardBodyWrites)]: false,[39m
+[31m      [Symbol(kUniqueHeaders)]: null[39m
+[31m    },[39m
+[31m    _currentUrl: 'https://api.openai.com/v1/embeddings',[39m
+[31m    [Symbol(kCapture)]: false[39m
+[31m  },[39m
+[31m  response: undefined,[39m
+[31m  isAxiosError: true,[39m
+[31m  toJSON: [Function: toJSON][39m
+[31m}[39m
+[1690321088096][31mError [ERR_SOCKET_CONNECTION_TIMEOUT]: Socket connection timeout[39m
+[31m    at new NodeError (node:internal/errors:399:5)[39m
+[31m    at internalConnectMultiple (node:net:1099:20)[39m
+[31m    at Timeout.internalConnectMultipleTimeout (node:net:1638:3)[39m
+[31m    at listOnTimeout (node:internal/timers:575:11)[39m
+[31m    at process.processTimers (node:internal/timers:514:7) {[39m
+[31m  code: 'ERR_SOCKET_CONNECTION_TIMEOUT',[39m
+[31m  config: {[39m
+[31m    transitional: {[39m
+[31m      silentJSONParsing: true,[39m
+[31m      forcedJSONParsing: true,[39m
+[31m      clarifyTimeoutError: false[39m
+[31m    },[39m
+[31m    adapter: [Function: httpAdapter],[39m
+[31m    transformRequest: [ [Function: transformRequest] ],[39m
+[31m    transformResponse: [ [Function: transformResponse] ],[39m
+[31m    timeout: 0,[39m
+[31m    xsrfCookieName: 'XSRF-TOKEN',[39m
+[31m    xsrfHeaderName: 'X-XSRF-TOKEN',[39m
+[31m    maxContentLength: -1,[39m
+[31m    maxBodyLength: -1,[39m
+[31m    validateStatus: [Function: validateStatus],[39m
+[31m    headers: {[39m
+[31m      Accept: 'application/json, text/plain, */*',[39m
+[31m      'Content-Type': 'application/json',[39m
+[31m      'User-Agent': 'OpenAI/NodeJS/3.2.1',[39m
+[31m      Authorization: 'Bearer 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',[39m
+[31m      'Content-Length': 56[39m
+[31m    },[39m
+[31m    method: 'post',[39m
+[31m    data: '{"model":"text-embedding-ada-002","input":"Cook dinner"}',[39m
+[31m    url: 'https://api.openai.com/v1/embeddings'[39m
+[31m  },[39m
+[31m  request: <ref *1> Writable {[39m
+[31m    _writableState: WritableState {[39m
+[31m      objectMode: false,[39m
+[31m      highWaterMark: 16384,[39m
+[31m      finalCalled: false,[39m
+[31m      needDrain: false,[39m
+[31m      ending: false,[39m
+[31m      ended: false,[39m
+[31m      finished: false,[39m
+[31m      destroyed: false,[39m
+[31m      decodeStrings: true,[39m
+[31m      defaultEncoding: 'utf8',[39m
+[31m      length: 0,[39m
+[31m      writing: false,[39m
+[31m      corked: 0,[39m
+[31m      sync: true,[39m
+[31m      bufferProcessing: false,[39m
+[31m      onwrite: [Function: bound onwrite],[39m
+[31m      writecb: null,[39m
+[31m      writelen: 0,[39m
+[31m      afterWriteTickInfo: null,[39m
+[31m      buffered: [],[39m
+[31m      bufferedIndex: 0,[39m
+[31m      allBuffers: true,[39m
+[31m      allNoop: true,[39m
+[31m      pendingcb: 0,[39m
+[31m      constructed: true,[39m
+[31m      prefinished: false,[39m
+[31m      errorEmitted: false,[39m
+[31m      emitClose: true,[39m
+[31m      autoDestroy: true,[39m
+[31m      errored: null,[39m
+[31m      closed: false,[39m
+[31m      closeEmitted: false,[39m
+[31m      [Symbol(kOnFinished)]: [][39m
+[31m    },[39m
+[31m    _events: [Object: null prototype] {[39m
+[31m      response: [Function: handleResponse],[39m
+[31m      error: [Function: handleRequestError],[39m
+[31m      socket: [Function: handleRequestSocket][39m
+[31m    },[39m
+[31m    _eventsCount: 3,[39m
+[31m    _maxListeners: undefined,[39m
+[31m    _options: {[39m
+[31m      maxRedirects: 21,[39m
+[31m      maxBodyLength: 10485760,[39m
+[31m      protocol: 'https:',[39m
+[31m      path: '/v1/embeddings',[39m
+[31m      method: 'POST',[39m
+[31m      headers: [Object],[39m
+[31m      agent: undefined,[39m
+[31m      agents: [Object],[39m
+[31m      auth: undefined,[39m
+[31m      hostname: 'api.openai.com',[39m
+[31m      port: null,[39m
+[31m      nativeProtocols: [Object],[39m
+[31m      pathname: '/v1/embeddings'[39m
+[31m    },[39m
+[31m    _ended: false,[39m
+[31m    _ending: true,[39m
+[31m    _redirectCount: 0,[39m
+[31m    _redirects: [],[39m
+[31m    _requestBodyLength: 56,[39m
+[31m    _requestBodyBuffers: [ [Object] ],[39m
+[31m    _onNativeResponse: [Function (anonymous)],[39m
+[31m    _currentRequest: ClientRequest {[39m
+[31m      _events: [Object: null prototype],[39m
+[31m      _eventsCount: 7,[39m
+[31m      _maxListeners: undefined,[39m
+[31m      outputData: [],[39m
+[31m      outputSize: 0,[39m
+[31m      writable: true,[39m
+[31m      destroyed: false,[39m
+[31m      _last: false,[39m
+[31m      chunkedEncoding: false,[39m
+[31m      shouldKeepAlive: true,[39m
+[31m      maxRequestsOnConnectionReached: false,[39m
+[31m      _defaultKeepAlive: true,[39m
+[31m      useChunkedEncodingByDefault: true,[39m
+[31m      sendDate: false,[39m
+[31m      _removedConnection: false,[39m
+[31m      _removedContLen: false,[39m
+[31m      _removedTE: false,[39m
+[31m      strictContentLength: false,[39m
+[31m      _contentLength: 56,[39m
+[31m      _hasBody: true,[39m
+[31m      _trailer: '',[39m
+[31m      finished: false,[39m
+[31m      _headerSent: true,[39m
+[31m      _closed: false,[39m
+[31m      socket: [TLSSocket],[39m
+[31m      _header: 'POST /v1/embeddings HTTP/1.1\r\n' +[39m
+[31m        'Accept: application/json, text/plain, */*\r\n' +[39m
+[31m        'Content-Type: application/json\r\n' +[39m
+[31m        'User-Agent: OpenAI/NodeJS/3.2.1\r\n' +[39m
+[31m        'Authorization: Bearer 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\r\n' +[39m
+[31m        'Content-Length: 56\r\n' +[39m
+[31m        'Host: api.openai.com\r\n' +[39m
+[31m        'Connection: keep-alive\r\n' +[39m
+[31m        '\r\n',[39m
+[31m      _keepAliveTimeout: 0,[39m
+[31m      _onPendingData: [Function: nop],[39m
+[31m      agent: [Agent],[39m
+[31m      socketPath: undefined,[39m
+[31m      method: 'POST',[39m
+[31m      maxHeaderSize: undefined,[39m
+[31m      insecureHTTPParser: undefined,[39m
+[31m      joinDuplicateHeaders: undefined,[39m
+[31m      path: '/v1/embeddings',[39m
+[31m      _ended: false,[39m
+[31m      res: null,[39m
+[31m      aborted: false,[39m
+[31m      timeoutCb: [Function: emitRequestTimeout],[39m
+[31m      upgradeOrConnect: false,[39m
+[31m      parser: null,[39m
+[31m      maxHeadersCount: null,[39m
+[31m      reusedSocket: false,[39m
+[31m      host: 'api.openai.com',[39m
+[31m      protocol: 'https:',[39m
+[31m      _redirectable: [Circular *1],[39m
+[31m      [Symbol(kCapture)]: false,[39m
+[31m      [Symbol(kBytesWritten)]: 0,[39m
+[31m      [Symbol(kNeedDrain)]: false,[39m
+[31m      [Symbol(corked)]: 0,[39m
+[31m      [Symbol(kOutHeaders)]: [Object: null prototype],[39m
+[31m      [Symbol(errored)]: null,[39m
+[31m      [Symbol(kHighWaterMark)]: 16384,[39m
+[31m      [Symbol(kRejectNonStandardBodyWrites)]: false,[39m
+[31m      [Symbol(kUniqueHeaders)]: null[39m
+[31m    },[39m
+[31m    _currentUrl: 'https://api.openai.com/v1/embeddings',[39m
+[31m    [Symbol(kCapture)]: false[39m
+[31m  },[39m
+[31m  response: undefined,[39m
+[31m  isAxiosError: true,[39m
+[31m  toJSON: [Function: toJSON][39m
+[31m}[39m
+[1690321088340][32m[OPENAI] Embedding created successfully.[39m
+[1690321088985]--- Prompt ---
+[1690321088985]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 25
+- Occupation: Lumberjack
+- Personality: Brave, Calm, Honest
+
+Location: 0.8062669, -0.7564592
+
+Environment:
+- Tree (Health: 10/10) [X: -0.6865366, Y: -1.433641, Distance: 1.639219m]
+- Tree (Health: 10/10) [X: 2.38, Y: -1.65, Distance: 1.80971m]
+- Tree (Health: 10/10) [X: 0.86, Y: -2.57, Distance: 1.814337m]
+- Tree (Health: 10/10) [X: 2.38, Y: -3.11, Distance: 2.831217m]
+- Tree (Health: 10/10) [X: -0.42, Y: -3.52, Distance: 3.02339m]
+- Tree (Health: 10/10) [X: 1.22, Y: -4.18, Distance: 3.44845m]
+- Tree (Health: 10/10) [X: 4.14, Y: -3.64, Distance: 4.407787m]
+- Tree (Health: 10/10) [X: -0.48, Y: -5.31, Distance: 4.731724m]
+- Tree (Health: 10/10) [X: 2.72, Y: -5.11, Distance: 4.755596m]
+- Tree (Health: 10/10) [X: 1.1, Y: -5.79, Distance: 5.042104m]
+- Chest (Health: 10/10) [X: -5.51, Y: -4.46, Distance: 7.321983m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: -5.66, Y: 5.23, Distance: 8.811941m]
+
+Inventory (3/10):
+- Axe x 1
+- Wood x 2
+
+Tasks:
+[
+  {
+    "task": "Collect wood",
+    "priority": 1
+  },
+  {
+    "task": "Store wood in chest",
+    "priority": 2
+  },
+  {
+    "task": "MoveTo Stone Ore Deposit (Large)",
+    "priority": 3
+  },
+  {
+    "task": "Mine Stone Ore Deposit (Large)",
+    "priority": 4
+  },
+  {
+    "task": "Cook dinner",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Tree at X: -0.42, Y: -3.52. [3 minutes ago]
+- Thomas Smith sees Tree at X: 0.86, Y: -2.57. [3 minutes ago]
+- Thomas Smith sees Tree at X: -0.6865366, Y: -1.433641. [3 minutes ago]
+- Thomas Smith sees Tree at X: 1.22, Y: -4.18. [3 minutes ago]
+- Thomas Smith sees Tree at X: 4.14, Y: -3.64. [3 minutes ago]
+- Thomas Smith has started walking to 0.86, Y: -0.9. [2 minutes ago]
+- Thomas Smith sees Tree at X: 2.72, Y: -5.11. [2 minutes ago]
+- Thomas Smith sees Tree Stump at X: 0.86, Y: -0.9. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [DropItem] Drop Wood from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "wood"}}
+
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 0.86, Y: -0.9. [3 minutes ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [2 minutes ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [2 minutes ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 0.8062669, Y: -0.7564592 and hit 1 trees. [1 minute ago]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690321088986][33m[OPENAI] Creating chat completion...[39m
