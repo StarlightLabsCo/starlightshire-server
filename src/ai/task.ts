@@ -3,15 +3,15 @@ import { prisma } from "../db.js";
 
 let tasks = [
     {
-        task: "Chop wood",
+        task: "Mine ore",
         priority: 1,
     },
     {
-        task: "Store wood in chest",
+        task: "Store extra materials in chest",
         priority: 2,
     },
     {
-        task: "Cook dinner",
+        task: "Chop trees",
         priority: 3,
     },
 ];

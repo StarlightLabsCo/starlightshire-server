@@ -1,0 +1,2063 @@
+[1690658523938]--- Observations received -- 
+[1690658523940]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Medium) at X: 46.05, Y: 17.85."
+}
+[1690658523941]--- Observations received -- 
+[1690658523941]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Small) at X: 47.58, Y: 19.17."
+}
+[1690658523941]--- Observations received -- 
+[1690658523941]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Small) at X: 45.73, Y: 15.31."
+}
+[1690658523941]--- Observations received -- 
+[1690658523941]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Copper Ore Deposit (Small) at X: 53.88, Y: 19.83."
+}
+[1690658523941]--- Observations received -- 
+[1690658523941]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Coal Ore Deposit (Small) at X: 54.64, Y: 16.97."
+}
+[1690658523942]--- Observations received -- 
+[1690658523942]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Copper Ore Deposit (Medium) at X: 53.76, Y: 21.7."
+}
+[1690658523942]--- Observations received -- 
+[1690658523942]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Copper Ore Deposit (Small) at X: 50.43, Y: 20.71."
+}
+[1690658523943]--- Observations received -- 
+[1690658523944]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Chest at X: 50.52, Y: 14.5."
+}
+[1690658523978][33m[OPENAI] Creating embedding...[39m
+[1690658524206][32m[OPENAI] Embedding created successfully.[39m
+[1690658524256][33m[OPENAI] Creating embedding...[39m
+[1690658524271][33m[OPENAI] Creating chat completion...[39m
+[1690658524272][33m[OPENAI] Creating embedding...[39m
+[1690658524309][33m[OPENAI] Creating chat completion...[39m
+[1690658524309][33m[OPENAI] Creating embedding...[39m
+[1690658524309][33m[OPENAI] Creating chat completion...[39m
+[1690658524310][33m[OPENAI] Creating embedding...[39m
+[1690658524311][33m[OPENAI] Creating chat completion...[39m
+[1690658524311][33m[OPENAI] Creating embedding...[39m
+[1690658524311][33m[OPENAI] Creating chat completion...[39m
+[1690658524311][33m[OPENAI] Creating embedding...[39m
+[1690658524311][33m[OPENAI] Creating chat completion...[39m
+[1690658524312][33m[OPENAI] Creating embedding...[39m
+[1690658524312][33m[OPENAI] Creating chat completion...[39m
+[1690658524312][33m[OPENAI] Creating embedding...[39m
+[1690658524312][33m[OPENAI] Creating chat completion...[39m
+[1690658524312][33m[OPENAI] Creating embedding...[39m
+[1690658524380][32m[OPENAI] Embedding created successfully.[39m
+[1690658524406][33m[OPENAI] Creating embedding...[39m
+[1690658524414][32m[OPENAI] Embedding created successfully.[39m
+[1690658524464][32m[OPENAI] Embedding created successfully.[39m
+[1690658524477][32m[OPENAI] Embedding created successfully.[39m
+[1690658524489][32m[OPENAI] Embedding created successfully.[39m
+[1690658524493][32m[OPENAI] Embedding created successfully.[39m
+[1690658524520][32m[OPENAI] Embedding created successfully.[39m
+[1690658524522][32m[OPENAI] Embedding created successfully.[39m
+[1690658524574][32m[OPENAI] Embedding created successfully.[39m
+[1690658524585][32m[OPENAI] Embedding created successfully.[39m
+[1690658524617]--- Prompt ---
+[1690658524619]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 50.95, 16.53
+
+Environment:
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 2.075043m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 3.716139m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 4.212219m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 4.280945m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 4.413037m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 5.074684m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 5.360673m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 5.690484m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 5.8843m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 6.040075m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 6.369183m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 52.01, Y: 23.05, Distance: 6.605602m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 46.53, Y: 21.65, Distance: 6.763934m]
+- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 7.097554m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 49.03, Y: 23.52, Distance: 7.248897m]
+- Tree (Health: 10/10) [X: 50.77, Y: 9.22, Distance: 7.312216m]
+- Stone Ore Deposit (Large) (Health: 10/10) [X: 44.3, Y: 20.36, Distance: 7.674075m]
+- Tree (Health: 10/10) [X: 53.93, Y: 9.11, Distance: 7.99605m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 42.53862, Y: 17.00157, Distance: 8.424593m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 8.451461m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 54.06, Y: 24.46, Distance: 8.518039m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [DropItem] Drop Pickaxe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "pickaxe"}}
+
+- [DropItem] Drop Sword from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "sword"}}
+
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690658524632][33m[OPENAI] Creating chat completion...[39m
+[1690658524683][36m[OPENAI] Chat completion took 371.7222499847412ms[39m
+[1690658524684][36m[OPENAI] Tokens per second: 2.6901806390148795tps[39m
+[1690658524684][32m[OPENAI] Chat completion created successfully.[39m
+[1690658524878][36m[OPENAI] Chat completion took 566.3269996643066ms[39m
+[1690658524878][36m[OPENAI] Tokens per second: 1.7657643032960733tps[39m
+[1690658524878][32m[OPENAI] Chat completion created successfully.[39m
+[1690658524897][36m[OPENAI] Chat completion took 585.1127920150757ms[39m
+[1690658524897][36m[OPENAI] Tokens per second: 1.709072188553749tps[39m
+[1690658524897][32m[OPENAI] Chat completion created successfully.[39m
+[1690658524900][36m[OPENAI] Chat completion took 591.1262907981873ms[39m
+[1690658524900][36m[OPENAI] Tokens per second: 1.6916858809472304tps[39m
+[1690658524900][32m[OPENAI] Chat completion created successfully.[39m
+[1690658525055][36m[OPENAI] Chat completion took 744.0975828170776ms[39m
+[1690658525055][36m[OPENAI] Tokens per second: 1.3439097547046208tps[39m
+[1690658525055][32m[OPENAI] Chat completion created successfully.[39m
+[1690658525058][36m[OPENAI] Chat completion took 748.1256251335144ms[39m
+[1690658525058][36m[OPENAI] Tokens per second: 1.3366739039603606tps[39m
+[1690658525058][32m[OPENAI] Chat completion created successfully.[39m
+[1690658525082][36m[OPENAI] Chat completion took 810.3904576301575ms[39m
+[1690658525082][36m[OPENAI] Tokens per second: 1.2339730688886958tps[39m
+[1690658525082][32m[OPENAI] Chat completion created successfully.[39m
+[1690658525086][36m[OPENAI] Chat completion took 774.3685841560364ms[39m
+[1690658525086][36m[OPENAI] Tokens per second: 1.2913747025131104tps[39m
+[1690658525086][32m[OPENAI] Chat completion created successfully.[39m
+[1690658531135][36m[OPENAI] Chat completion took 6501.966875076294ms[39m
+[1690658531135][36m[OPENAI] Tokens per second: 17.99455491668083tps[39m
+[1690658531136][32m[OPENAI] Chat completion created successfully.[39m
+[1690658531136]--- Response ---
+[1690658531137]Plan: 
+[1690658531138]Thomas Smith's primary task is to mine ore which means we should move to the closest ore deposit for effective use of time. From the environment objects, we can tell that the closest resource is the Coal Ore Deposit with the coordinates [X: 54.64, Y: 16.97]. We ought to travel to these coordinates to begin mining.
+
+The JSON action for this would be:
+
+Action: { "type": "MoveTo", "data": { "characterId": "A1", "x": 54.64, "y": 16.97 }}
+[1690658531144]--- Verified Action ---
+[1690658531146]{
+  "type": "MoveTo",
+  "data": {
+    "characterId": "A1",
+    "x": 54.64,
+    "y": 16.97
+  }
+}
+[1690658531188]--- Observations received -- 
+[1690658531189]{
+  "observerId": "A1",
+  "observation": "Thomas Smith has started walking to 54.64, Y: 16.97."
+}
+[1690658531278][33m[OPENAI] Creating chat completion...[39m
+[1690658531278][33m[OPENAI] Creating embedding...[39m
+[1690658531341]--- Observations received -- 
+[1690658531342]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees CopperOreMedium (2) at X: 53.76, Y: 21.7"
+}
+[1690658531407][33m[OPENAI] Creating chat completion...[39m
+[1690658531407][33m[OPENAI] Creating embedding...[39m
+[1690658531464][32m[OPENAI] Embedding created successfully.[39m
+[1690658531595][32m[OPENAI] Embedding created successfully.[39m
+[1690658531628][36m[OPENAI] Chat completion took 349.8817501068115ms[39m
+[1690658531629][36m[OPENAI] Tokens per second: 2.8581084886385786tps[39m
+[1690658531629][32m[OPENAI] Chat completion created successfully.[39m
+[1690658531853][36m[OPENAI] Chat completion took 445.2734999656677ms[39m
+[1690658531853][36m[OPENAI] Tokens per second: 2.2458107209997986tps[39m
+[1690658531853][32m[OPENAI] Chat completion created successfully.[39m
+[1690658532203]--- Observations received -- 
+[1690658532205]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees CopperOreSmall (3) at X: 53.88, Y: 19.83"
+}
+[1690658532294][33m[OPENAI] Creating chat completion...[39m
+[1690658532294][33m[OPENAI] Creating embedding...[39m
+[1690658532324]--- Observations received -- 
+[1690658532324]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97"
+}
+[1690658532380][33m[OPENAI] Creating chat completion...[39m
+[1690658532380][33m[OPENAI] Creating embedding...[39m
+[1690658532428][32m[OPENAI] Embedding created successfully.[39m
+[1690658532552][32m[OPENAI] Embedding created successfully.[39m
+[1690658532584]--- Observations received -- 
+[1690658532585]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Large) at X: 44.3, Y: 20.36."
+}
+[1690658532640][33m[OPENAI] Creating chat completion...[39m
+[1690658532640][33m[OPENAI] Creating embedding...[39m
+[1690658532802]--- Observations received -- 
+[1690658532802]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Medium) at X: 42.53862, Y: 17.00157."
+}
+[1690658532820][36m[OPENAI] Chat completion took 439.388041973114ms[39m
+[1690658532820][36m[OPENAI] Tokens per second: 2.275892615350669tps[39m
+[1690658532820][32m[OPENAI] Chat completion created successfully.[39m
+[1690658532825][32m[OPENAI] Embedding created successfully.[39m
+[1690658532855][33m[OPENAI] Creating chat completion...[39m
+[1690658532857][33m[OPENAI] Creating embedding...[39m
+[1690658532983][32m[OPENAI] Embedding created successfully.[39m
+[1690658533042][36m[OPENAI] Chat completion took 748.0665411949158ms[39m
+[1690658533042][36m[OPENAI] Tokens per second: 1.3367794774013835tps[39m
+[1690658533043][32m[OPENAI] Chat completion created successfully.[39m
+[1690658533268][36m[OPENAI] Chat completion took 412.05683422088623ms[39m
+[1690658533268][36m[OPENAI] Tokens per second: 2.426849689050279tps[39m
+[1690658533268][32m[OPENAI] Chat completion created successfully.[39m
+[1690658533435][36m[OPENAI] Chat completion took 795.2584581375122ms[39m
+[1690658533436][36m[OPENAI] Tokens per second: 1.2574528315511295tps[39m
+[1690658533436][32m[OPENAI] Chat completion created successfully.[39m
+[1690658533442]--- Observations received -- 
+[1690658533442]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees CopperOreSmall (2) at X: 50.43, Y: 20.71"
+}
+[1690658533537][33m[OPENAI] Creating chat completion...[39m
+[1690658533537][33m[OPENAI] Creating embedding...[39m
+[1690658533671][32m[OPENAI] Embedding created successfully.[39m
+[1690658533763]--- Observations received -- 
+[1690658533763]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Small) at X: 41.33658, Y: 13.99647."
+}
+[1690658533817][33m[OPENAI] Creating chat completion...[39m
+[1690658533817][33m[OPENAI] Creating embedding...[39m
+[1690658533964][32m[OPENAI] Embedding created successfully.[39m
+[1690658533971][36m[OPENAI] Chat completion took 433.91912508010864ms[39m
+[1690658533971][36m[OPENAI] Tokens per second: 2.3045769181420233tps[39m
+[1690658533971][32m[OPENAI] Chat completion created successfully.[39m
+[1690658534222][36m[OPENAI] Chat completion took 405.4472918510437ms[39m
+[1690658534222][36m[OPENAI] Tokens per second: 2.4664118372441552tps[39m
+[1690658534223][32m[OPENAI] Chat completion created successfully.[39m
+[1690658534663]--- Observations received -- 
+[1690658534664]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Large) at X: 40.75, Y: 19.74."
+}
+[1690658534728][33m[OPENAI] Creating chat completion...[39m
+[1690658534728][33m[OPENAI] Creating embedding...[39m
+[1690658534822]--- Observations received -- 
+[1690658534822]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Chest (1) at X: 50.52, Y: 14.5"
+}
+[1690658534881][33m[OPENAI] Creating chat completion...[39m
+[1690658534881][33m[OPENAI] Creating embedding...[39m
+[1690658534885][32m[OPENAI] Embedding created successfully.[39m
+[1690658535000][32m[OPENAI] Embedding created successfully.[39m
+[1690658535205][36m[OPENAI] Chat completion took 476.4469575881958ms[39m
+[1690658535205][36m[OPENAI] Tokens per second: 2.0988695259217574tps[39m
+[1690658535205][32m[OPENAI] Chat completion created successfully.[39m
+[1690658535363]--- Observations received -- 
+[1690658535363]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 45.24001, Y: 10.2."
+}
+[1690658535404]--- Observations received -- 
+[1690658535404]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Small) at X: 38.24, Y: 15.93."
+}
+[1690658535421][36m[OPENAI] Chat completion took 540.1145000457764ms[39m
+[1690658535421][36m[OPENAI] Tokens per second: 1.8514592737562998tps[39m
+[1690658535421][32m[OPENAI] Chat completion created successfully.[39m
+[1690658535427][33m[OPENAI] Creating chat completion...[39m
+[1690658535429][33m[OPENAI] Creating embedding...[39m
+[1690658535459][33m[OPENAI] Creating chat completion...[39m
+[1690658535459][33m[OPENAI] Creating embedding...[39m
+[1690658535549][32m[OPENAI] Embedding created successfully.[39m
+[1690658535581][32m[OPENAI] Embedding created successfully.[39m
+[1690658535602]--- Observations received -- 
+[1690658535603]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (479) at X: 45.24001, Y: 10.2"
+}
+[1690658535660][33m[OPENAI] Creating chat completion...[39m
+[1690658535660][33m[OPENAI] Creating embedding...[39m
+[1690658535662]--- Observations received -- 
+[1690658535663]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreSmall (5) at X: 47.58, Y: 19.17"
+}
+[1690658535721][33m[OPENAI] Creating chat completion...[39m
+[1690658535721][33m[OPENAI] Creating embedding...[39m
+[1690658535816][32m[OPENAI] Embedding created successfully.[39m
+[1690658535857][36m[OPENAI] Chat completion took 427.7842917442322ms[39m
+[1690658535857][36m[OPENAI] Tokens per second: 2.3376267415585463tps[39m
+[1690658535857][32m[OPENAI] Chat completion created successfully.[39m
+[1690658535876][32m[OPENAI] Embedding created successfully.[39m
+[1690658535899][36m[OPENAI] Chat completion took 440.192458152771ms[39m
+[1690658535900][36m[OPENAI] Tokens per second: 2.271733605333477tps[39m
+[1690658535900][32m[OPENAI] Chat completion created successfully.[39m
+[1690658536022]--- Observations received -- 
+[1690658536022]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78."
+}
+[1690658536059][36m[OPENAI] Chat completion took 398.7763328552246ms[39m
+[1690658536059][36m[OPENAI] Tokens per second: 2.5076713877176084tps[39m
+[1690658536059][32m[OPENAI] Chat completion created successfully.[39m
+[1690658536088][33m[OPENAI] Creating chat completion...[39m
+[1690658536088][33m[OPENAI] Creating embedding...[39m
+[1690658536225][32m[OPENAI] Embedding created successfully.[39m
+[1690658536230][36m[OPENAI] Chat completion took 508.96566677093506ms[39m
+[1690658536230][36m[OPENAI] Tokens per second: 1.9647690704647467tps[39m
+[1690658536230][32m[OPENAI] Chat completion created successfully.[39m
+[1690658536504][36m[OPENAI] Chat completion took 415.5462908744812ms[39m
+[1690658536504][36m[OPENAI] Tokens per second: 2.4064707638121052tps[39m
+[1690658536504][32m[OPENAI] Chat completion created successfully.[39m
+[1690658536508]--- Observations received -- 
+[1690658536508]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreLarge (2) at X: 44.3, Y: 20.36"
+}
+[1690658536561][33m[OPENAI] Creating chat completion...[39m
+[1690658536561][33m[OPENAI] Creating embedding...[39m
+[1690658536683][32m[OPENAI] Embedding created successfully.[39m
+[1690658536993][36m[OPENAI] Chat completion took 432.3304581642151ms[39m
+[1690658536994][36m[OPENAI] Tokens per second: 2.3130454519587955tps[39m
+[1690658536994][32m[OPENAI] Chat completion created successfully.[39m
+[1690658537023]--- Observations received -- 
+[1690658537024]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreMedium (1) at X: 46.05, Y: 17.85"
+}
+[1690658537085][33m[OPENAI] Creating chat completion...[39m
+[1690658537085][33m[OPENAI] Creating embedding...[39m
+[1690658537206][32m[OPENAI] Embedding created successfully.[39m
+[1690658537463]--- Observations received -- 
+[1690658537464]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreSmall (4) at X: 45.73, Y: 15.31"
+}
+[1690658537517][33m[OPENAI] Creating chat completion...[39m
+[1690658537517][33m[OPENAI] Creating embedding...[39m
+[1690658537537][36m[OPENAI] Chat completion took 451.5068325996399ms[39m
+[1690658537537][36m[OPENAI] Tokens per second: 2.2148059072379973tps[39m
+[1690658537537][32m[OPENAI] Chat completion created successfully.[39m
+[1690658537696][32m[OPENAI] Embedding created successfully.[39m
+[1690658537724]--- Observations received -- 
+[1690658537724]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Stone Ore Deposit (Small) at X: 35.5, Y: 18.48."
+}
+[1690658537779][33m[OPENAI] Creating chat completion...[39m
+[1690658537779][33m[OPENAI] Creating embedding...[39m
+[1690658537982][36m[OPENAI] Chat completion took 464.8086247444153ms[39m
+[1690658537982][36m[OPENAI] Tokens per second: 2.1514230734205304tps[39m
+[1690658537982][32m[OPENAI] Chat completion created successfully.[39m
+[1690658537986][32m[OPENAI] Embedding created successfully.[39m
+[1690658538524]--- Observations received -- 
+[1690658538525]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreLarge (1) at X: 40.75, Y: 19.74"
+}
+[1690658538560][36m[OPENAI] Chat completion took 780.414834022522ms[39m
+[1690658538560][36m[OPENAI] Tokens per second: 1.2813698002710454tps[39m
+[1690658538560][32m[OPENAI] Chat completion created successfully.[39m
+[1690658538591][33m[OPENAI] Creating chat completion...[39m
+[1690658538591][33m[OPENAI] Creating embedding...[39m
+[1690658538736][32m[OPENAI] Embedding created successfully.[39m
+[1690658539040][36m[OPENAI] Chat completion took 448.8492498397827ms[39m
+[1690658539041][36m[OPENAI] Tokens per second: 2.2279195082913725tps[39m
+[1690658539041][32m[OPENAI] Chat completion created successfully.[39m
+[1690658539122]--- Observations received -- 
+[1690658539122]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreMedium at X: 42.53862, Y: 17.00157"
+}
+[1690658539176][33m[OPENAI] Creating chat completion...[39m
+[1690658539176][33m[OPENAI] Creating embedding...[39m
+[1690658539363][32m[OPENAI] Embedding created successfully.[39m
+[1690658540023]--- Observations received -- 
+[1690658540023]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreSmall (3) at X: 41.33658, Y: 13.99647"
+}
+[1690658540034][36m[OPENAI] Chat completion took 856.9584579467773ms[39m
+[1690658540034][36m[OPENAI] Tokens per second: 1.166917708468555tps[39m
+[1690658540034][32m[OPENAI] Chat completion created successfully.[39m
+[1690658540089][33m[OPENAI] Creating chat completion...[39m
+[1690658540089][33m[OPENAI] Creating embedding...[39m
+[1690658540249][32m[OPENAI] Embedding created successfully.[39m
+[1690658540482]--- Observations received -- 
+[1690658540482]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreMedium (2) at X: 38.03, Y: 18.78"
+}
+[1690658540536][33m[OPENAI] Creating chat completion...[39m
+[1690658540536][33m[OPENAI] Creating embedding...[39m
+[1690658540623]--- Observations received -- 
+[1690658540623]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 31.24, Y: 9.42."
+}
+[1690658540673][36m[OPENAI] Chat completion took 584.0216670036316ms[39m
+[1690658540673][36m[OPENAI] Tokens per second: 1.7122652403130478tps[39m
+[1690658540674][32m[OPENAI] Chat completion created successfully.[39m
+[1690658540679][33m[OPENAI] Creating chat completion...[39m
+[1690658540679][33m[OPENAI] Creating embedding...[39m
+[1690658540684][32m[OPENAI] Embedding created successfully.[39m
+[1690658540800][32m[OPENAI] Embedding created successfully.[39m
+[1690658540918][36m[OPENAI] Chat completion took 381.99670791625977ms[39m
+[1690658540918][36m[OPENAI] Tokens per second: 2.617823607577312tps[39m
+[1690658540918][32m[OPENAI] Chat completion created successfully.[39m
+[1690658541115][36m[OPENAI] Chat completion took 435.17254066467285ms[39m
+[1690658541115][36m[OPENAI] Tokens per second: 2.2979391081813714tps[39m
+[1690658541115][32m[OPENAI] Chat completion created successfully.[39m
+[1690658541583]--- Observations received -- 
+[1690658541583]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 27.82, Y: 15.83."
+}
+[1690658541586]--- Observations received -- 
+[1690658541588]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 27.82, Y: 15.83."
+}
+[1690658541604]--- Observations received -- 
+[1690658541605]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreSmall (6) at X: 38.24, Y: 15.93"
+}
+[1690658541650][33m[OPENAI] Creating chat completion...[39m
+[1690658541650][33m[OPENAI] Creating embedding...[39m
+[1690658541676][33m[OPENAI] Creating chat completion...[39m
+[1690658541676][33m[OPENAI] Creating embedding...[39m
+[1690658541698][33m[OPENAI] Creating chat completion...[39m
+[1690658541698][33m[OPENAI] Creating embedding...[39m
+[1690658541745]--- Observations received -- 
+[1690658541745]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees StoneOreSmall (7) at X: 35.5, Y: 18.48"
+}
+[1690658541768][32m[OPENAI] Embedding created successfully.[39m
+[1690658541807][33m[OPENAI] Creating chat completion...[39m
+[1690658541807][33m[OPENAI] Creating embedding...[39m
+[1690658541857][32m[OPENAI] Embedding created successfully.[39m
+[1690658541860][32m[OPENAI] Embedding created successfully.[39m
+[1690658541949][32m[OPENAI] Embedding created successfully.[39m
+[1690658541962]--- Observations received -- 
+[1690658541962]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 28.99001, Y: 18.02."
+}
+[1690658541963]--- Observations received -- 
+[1690658541963]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 28.99, Y: 18.02."
+}
+[1690658542014][33m[OPENAI] Creating chat completion...[39m
+[1690658542015][33m[OPENAI] Creating embedding...[39m
+[1690658542022][33m[OPENAI] Creating chat completion...[39m
+[1690658542023][33m[OPENAI] Creating embedding...[39m
+[1690658542102][36m[OPENAI] Chat completion took 425.8277077674866ms[39m
+[1690658542103][36m[OPENAI] Tokens per second: 2.3483676185440405tps[39m
+[1690658542103][32m[OPENAI] Chat completion created successfully.[39m
+[1690658542111][32m[OPENAI] Embedding created successfully.[39m
+[1690658542158][36m[OPENAI] Chat completion took 460.3376250267029ms[39m
+[1690658542158][36m[OPENAI] Tokens per second: 2.172318632312518tps[39m
+[1690658542159][32m[OPENAI] Chat completion created successfully.[39m
+[1690658542177][32m[OPENAI] Embedding created successfully.[39m
+[1690658542382]--- Observations received -- 
+[1690658542383]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 26.35, Y: 11.34."
+}
+[1690658542388][36m[OPENAI] Chat completion took 581.2305407524109ms[39m
+[1690658542389][36m[OPENAI] Tokens per second: 1.72048770648818tps[39m
+[1690658542389][32m[OPENAI] Chat completion created successfully.[39m
+[1690658542445][33m[OPENAI] Creating chat completion...[39m
+[1690658542445][33m[OPENAI] Creating embedding...[39m
+[1690658542471][36m[OPENAI] Chat completion took 456.34245920181274ms[39m
+[1690658542471][36m[OPENAI] Tokens per second: 2.191336746856948tps[39m
+[1690658542471][32m[OPENAI] Chat completion created successfully.[39m
+[1690658542541][36m[OPENAI] Chat completion took 518.6143341064453ms[39m
+[1690658542541][36m[OPENAI] Tokens per second: 1.9282151190883794tps[39m
+[1690658542542][32m[OPENAI] Chat completion created successfully.[39m
+[1690658542609][32m[OPENAI] Embedding created successfully.[39m
+[1690658542873][36m[OPENAI] Chat completion took 427.5911250114441ms[39m
+[1690658542873][36m[OPENAI] Tokens per second: 2.3386827777897308tps[39m
+[1690658542874][32m[OPENAI] Chat completion created successfully.[39m
+[1690658543337][36m[OPENAI] Chat completion took 1686.6390838623047ms[39m
+[1690658543337][36m[OPENAI] Tokens per second: 0.5928950713688305tps[39m
+[1690658543338][32m[OPENAI] Chat completion created successfully.[39m
+[1690658543624]--- Observations received -- 
+[1690658543625]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 24.05, Y: 14.29."
+}
+[1690658543690][33m[OPENAI] Creating chat completion...[39m
+[1690658543690][33m[OPENAI] Creating embedding...[39m
+[1690658543854][32m[OPENAI] Embedding created successfully.[39m
+[1690658543922]--- Observations received -- 
+[1690658543922]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 25.51001, Y: 17.32."
+}
+[1690658543923]--- Observations received -- 
+[1690658543924]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 25.51001, Y: 17.32."
+}
+[1690658543978][33m[OPENAI] Creating chat completion...[39m
+[1690658543978][33m[OPENAI] Creating embedding...[39m
+[1690658543984][33m[OPENAI] Creating chat completion...[39m
+[1690658543984][33m[OPENAI] Creating embedding...[39m
+[1690658544055][36m[OPENAI] Chat completion took 364.3277921676636ms[39m
+[1690658544055][36m[OPENAI] Tokens per second: 2.7447809952961264tps[39m
+[1690658544055][32m[OPENAI] Chat completion created successfully.[39m
+[1690658544104][32m[OPENAI] Embedding created successfully.[39m
+[1690658544120][32m[OPENAI] Embedding created successfully.[39m
+[1690658544396][36m[OPENAI] Chat completion took 411.65675020217896ms[39m
+[1690658544396][36m[OPENAI] Tokens per second: 2.4292083137440725tps[39m
+[1690658544396][32m[OPENAI] Chat completion created successfully.[39m
+[1690658544482][36m[OPENAI] Chat completion took 504.1683340072632ms[39m
+[1690658544482][36m[OPENAI] Tokens per second: 1.983464514821341tps[39m
+[1690658544482][32m[OPENAI] Chat completion created successfully.[39m
+[1690658544683]--- Observations received -- 
+[1690658544683]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (950) at X: 28.99001, Y: 18.02"
+}
+[1690658544683]--- Observations received -- 
+[1690658544683]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (957) at X: 28.99, Y: 18.02"
+}
+[1690658544735][33m[OPENAI] Creating chat completion...[39m
+[1690658544735][33m[OPENAI] Creating embedding...[39m
+[1690658544748][33m[OPENAI] Creating chat completion...[39m
+[1690658544748][33m[OPENAI] Creating embedding...[39m
+[1690658544876][32m[OPENAI] Embedding created successfully.[39m
+[1690658544885][32m[OPENAI] Embedding created successfully.[39m
+[1690658545286][36m[OPENAI] Chat completion took 550.8267917633057ms[39m
+[1690658545297][36m[OPENAI] Tokens per second: 1.8154527248008434tps[39m
+[1690658545297][32m[OPENAI] Chat completion created successfully.[39m
+[1690658545302][36m[OPENAI] Chat completion took 553.5406670570374ms[39m
+[1690658545302][36m[OPENAI] Tokens per second: 1.8065520015297434tps[39m
+[1690658545302][32m[OPENAI] Chat completion created successfully.[39m
+[1690658545362]--- Observations received -- 
+[1690658545362]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 20.97, Y: 12.33."
+}
+[1690658545413][33m[OPENAI] Creating chat completion...[39m
+[1690658545414][33m[OPENAI] Creating embedding...[39m
+[1690658545422]--- Observations received -- 
+[1690658545423]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 22.73, Y: 16.71."
+}
+[1690658545474][33m[OPENAI] Creating chat completion...[39m
+[1690658545474][33m[OPENAI] Creating embedding...[39m
+[1690658545533][32m[OPENAI] Embedding created successfully.[39m
+[1690658545542]--- Observations received -- 
+[1690658545542]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 22.99, Y: 7.73."
+}
+[1690658545604]--- Observations received -- 
+[1690658545605]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (207) at X: 31.24, Y: 9.42"
+}
+[1690658545605][32m[OPENAI] Embedding created successfully.[39m
+[1690658545606][33m[OPENAI] Creating chat completion...[39m
+[1690658545606][33m[OPENAI] Creating embedding...[39m
+[1690658545622]--- Observations received -- 
+[1690658545622]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 20.98, Y: 9.859999."
+}
+[1690658545658][33m[OPENAI] Creating chat completion...[39m
+[1690658545658][33m[OPENAI] Creating embedding...[39m
+[1690658545683][33m[OPENAI] Creating chat completion...[39m
+[1690658545683][33m[OPENAI] Creating embedding...[39m
+[1690658545707][32m[OPENAI] Embedding created successfully.[39m
+[1690658545788][36m[OPENAI] Chat completion took 313.8903331756592ms[39m
+[1690658545789][36m[OPENAI] Tokens per second: 3.1858260491264647tps[39m
+[1690658545789][32m[OPENAI] Chat completion created successfully.[39m
+[1690658545842][32m[OPENAI] Embedding created successfully.[39m
+[1690658545876][36m[OPENAI] Chat completion took 462.3747501373291ms[39m
+[1690658545876][36m[OPENAI] Tokens per second: 2.1627478570207215tps[39m
+[1690658545876][32m[OPENAI] Chat completion created successfully.[39m
+[1690658545886][32m[OPENAI] Embedding created successfully.[39m
+[1690658545967][36m[OPENAI] Chat completion took 361.1181674003601ms[39m
+[1690658545967][36m[OPENAI] Tokens per second: 2.7691766581528205tps[39m
+[1690658545967][32m[OPENAI] Chat completion created successfully.[39m
+[1690658546044][36m[OPENAI] Chat completion took 385.59520864486694ms[39m
+[1690658546044][36m[OPENAI] Tokens per second: 2.5933932206118246tps[39m
+[1690658546044][32m[OPENAI] Chat completion created successfully.[39m
+[1690658546147][36m[OPENAI] Chat completion took 464.00033378601074ms[39m
+[1690658546148][36m[OPENAI] Tokens per second: 2.155170863435593tps[39m
+[1690658546148][32m[OPENAI] Chat completion created successfully.[39m
+[1690658546468]--- Observations received -- 
+[1690658546470]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 19.73999, Y: 14.99."
+}
+[1690658546524][33m[OPENAI] Creating chat completion...[39m
+[1690658546524][33m[OPENAI] Creating embedding...[39m
+[1690658546640][32m[OPENAI] Embedding created successfully.[39m
+[1690658546822]--- Observations received -- 
+[1690658546823]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (955) at X: 25.51001, Y: 17.32"
+}
+[1690658546824]--- Observations received -- 
+[1690658546824]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (962) at X: 25.51001, Y: 17.32"
+}
+[1690658546877][33m[OPENAI] Creating chat completion...[39m
+[1690658546877][33m[OPENAI] Creating embedding...[39m
+[1690658546885][33m[OPENAI] Creating chat completion...[39m
+[1690658546885][33m[OPENAI] Creating embedding...[39m
+[1690658546958][36m[OPENAI] Chat completion took 433.72812509536743ms[39m
+[1690658546958][36m[OPENAI] Tokens per second: 2.3055917800583523tps[39m
+[1690658546959][32m[OPENAI] Chat completion created successfully.[39m
+[1690658546995][32m[OPENAI] Embedding created successfully.[39m
+[1690658547001][32m[OPENAI] Embedding created successfully.[39m
+[1690658547123]--- Observations received -- 
+[1690658547124]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 19.62, Y: 7.73."
+}
+[1690658547124]--- Observations received -- 
+[1690658547124]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (949) at X: 27.82, Y: 15.83"
+}
+[1690658547125]--- Observations received -- 
+[1690658547125]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (956) at X: 27.82, Y: 15.83"
+}
+[1690658547178][33m[OPENAI] Creating chat completion...[39m
+[1690658547178][33m[OPENAI] Creating embedding...[39m
+[1690658547179][33m[OPENAI] Creating chat completion...[39m
+[1690658547179][33m[OPENAI] Creating embedding...[39m
+[1690658547234][33m[OPENAI] Creating chat completion...[39m
+[1690658547234][33m[OPENAI] Creating embedding...[39m
+[1690658547299][32m[OPENAI] Embedding created successfully.[39m
+[1690658547302][36m[OPENAI] Chat completion took 416.2638750076294ms[39m
+[1690658547302][36m[OPENAI] Tokens per second: 2.402322324947539tps[39m
+[1690658547302][32m[OPENAI] Chat completion created successfully.[39m
+[1690658547303][36m[OPENAI] Chat completion took 426.1999168395996ms[39m
+[1690658547303][36m[OPENAI] Tokens per second: 2.346316741249741tps[39m
+[1690658547303][32m[OPENAI] Chat completion created successfully.[39m
+[1690658547323][32m[OPENAI] Embedding created successfully.[39m
+[1690658547362]--- Observations received -- 
+[1690658547362]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.61, Y: 10.35."
+}
+[1690658547363]--- Observations received -- 
+[1690658547363]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.61, Y: 10.35."
+}
+[1690658547366][32m[OPENAI] Embedding created successfully.[39m
+[1690658547417][33m[OPENAI] Creating chat completion...[39m
+[1690658547417][33m[OPENAI] Creating embedding...[39m
+[1690658547426][33m[OPENAI] Creating chat completion...[39m
+[1690658547426][33m[OPENAI] Creating embedding...[39m
+[1690658547558][32m[OPENAI] Embedding created successfully.[39m
+[1690658547574][32m[OPENAI] Embedding created successfully.[39m
+[1690658547675][36m[OPENAI] Chat completion took 495.92120933532715ms[39m
+[1690658547675][36m[OPENAI] Tokens per second: 2.0164493495655877tps[39m
+[1690658547675][32m[OPENAI] Chat completion created successfully.[39m
+[1690658547686][36m[OPENAI] Chat completion took 507.2197918891907ms[39m
+[1690658547686][36m[OPENAI] Tokens per second: 1.9715318999587939tps[39m
+[1690658547686][32m[OPENAI] Chat completion created successfully.[39m
+[1690658547702][36m[OPENAI] Chat completion took 467.839750289917ms[39m
+[1690658547702][36m[OPENAI] Tokens per second: 2.1374840410211124tps[39m
+[1690658547702][32m[OPENAI] Chat completion created successfully.[39m
+[1690658547855][36m[OPENAI] Chat completion took 429.37229108810425ms[39m
+[1690658547855][36m[OPENAI] Tokens per second: 2.3289812145674924tps[39m
+[1690658547856][32m[OPENAI] Chat completion created successfully.[39m
+[1690658547859][36m[OPENAI] Chat completion took 442.2713327407837ms[39m
+[1690658547860][36m[OPENAI] Tokens per second: 2.2610554335568986tps[39m
+[1690658547860][32m[OPENAI] Chat completion created successfully.[39m
+[1690658548003]--- Observations received -- 
+[1690658548003]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.49, Y: 8.12."
+}
+[1690658548004]--- Observations received -- 
+[1690658548004]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.49, Y: 8.12."
+}
+[1690658548055][33m[OPENAI] Creating chat completion...[39m
+[1690658548055][33m[OPENAI] Creating embedding...[39m
+[1690658548077][33m[OPENAI] Creating chat completion...[39m
+[1690658548077][33m[OPENAI] Creating embedding...[39m
+[1690658548184]--- Observations received -- 
+[1690658548184]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 16.48, Y: 13.87."
+}
+[1690658548209][32m[OPENAI] Embedding created successfully.[39m
+[1690658548212][32m[OPENAI] Embedding created successfully.[39m
+[1690658548239][33m[OPENAI] Creating chat completion...[39m
+[1690658548239][33m[OPENAI] Creating embedding...[39m
+[1690658548398][32m[OPENAI] Embedding created successfully.[39m
+[1690658548463]--- Observations received -- 
+[1690658548463]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 15.79, Y: 9.76."
+}
+[1690658548463]--- Observations received -- 
+[1690658548464]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 15.79, Y: 9.76."
+}
+[1690658548485][36m[OPENAI] Chat completion took 430.41249990463257ms[39m
+[1690658548485][36m[OPENAI] Tokens per second: 2.3233525983134133tps[39m
+[1690658548485][32m[OPENAI] Chat completion created successfully.[39m
+[1690658548516][33m[OPENAI] Creating chat completion...[39m
+[1690658548517][33m[OPENAI] Creating embedding...[39m
+[1690658548519][33m[OPENAI] Creating chat completion...[39m
+[1690658548519][33m[OPENAI] Creating embedding...[39m
+[1690658548573][36m[OPENAI] Chat completion took 495.6490831375122ms[39m
+[1690658548573][36m[OPENAI] Tokens per second: 2.0175564406775295tps[39m
+[1690658548573][32m[OPENAI] Chat completion created successfully.[39m
+[1690658548626]--- Observations received -- 
+[1690658548626]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (935) at X: 22.73, Y: 16.71"
+}
+[1690658548657][32m[OPENAI] Embedding created successfully.[39m
+[1690658548672][32m[OPENAI] Embedding created successfully.[39m
+[1690658548675]--- Observations received -- 
+[1690658548675]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.63, Y: 16.04."
+}
+[1690658548681][33m[OPENAI] Creating chat completion...[39m
+[1690658548681][33m[OPENAI] Creating embedding...[39m
+[1690658548725][33m[OPENAI] Creating chat completion...[39m
+[1690658548725][33m[OPENAI] Creating embedding...[39m
+[1690658548837][32m[OPENAI] Embedding created successfully.[39m
+[1690658548843]--- Observations received -- 
+[1690658548843]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (1098) at X: 26.35, Y: 11.34"
+}
+[1690658548845][32m[OPENAI] Embedding created successfully.[39m
+[1690658548898][33m[OPENAI] Creating chat completion...[39m
+[1690658548898][33m[OPENAI] Creating embedding...[39m
+[1690658548961][36m[OPENAI] Chat completion took 442.5036253929138ms[39m
+[1690658548962][36m[OPENAI] Tokens per second: 2.2598684905961313tps[39m
+[1690658548962][32m[OPENAI] Chat completion created successfully.[39m
+[1690658548988][36m[OPENAI] Chat completion took 748.640625ms[39m
+[1690658548988][36m[OPENAI] Tokens per second: 1.3357543881618767tps[39m
+[1690658548988][32m[OPENAI] Chat completion created successfully.[39m
+[1690658549054][32m[OPENAI] Embedding created successfully.[39m
+[1690658549206][36m[OPENAI] Chat completion took 525.4166250228882ms[39m
+[1690658549207][36m[OPENAI] Tokens per second: 1.903251538636483tps[39m
+[1690658549207][32m[OPENAI] Chat completion created successfully.[39m
+[1690658549268][36m[OPENAI] Chat completion took 543.0291666984558ms[39m
+[1690658549269][36m[OPENAI] Tokens per second: 1.841521710665866tps[39m
+[1690658549269][32m[OPENAI] Chat completion created successfully.[39m
+[1690658549384]--- Observations received -- 
+[1690658549384]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 19.85, Y: 5.77."
+}
+[1690658549432][33m[OPENAI] Creating chat completion...[39m
+[1690658549432][33m[OPENAI] Creating embedding...[39m
+[1690658549501][36m[OPENAI] Chat completion took 603.0578751564026ms[39m
+[1690658549502][36m[OPENAI] Tokens per second: 1.658215639320937tps[39m
+[1690658549502][32m[OPENAI] Chat completion created successfully.[39m
+[1690658549512][36m[OPENAI] Chat completion took 995.3813328742981ms[39m
+[1690658549512][36m[OPENAI] Tokens per second: 1.0046400981946937tps[39m
+[1690658549512][32m[OPENAI] Chat completion created successfully.[39m
+[1690658549579][32m[OPENAI] Embedding created successfully.[39m
+[1690658549585]--- Observations received -- 
+[1690658549585]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.89, Y: 5.77."
+}
+[1690658549585]--- Observations received -- 
+[1690658549585]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 17.89, Y: 5.77."
+}
+[1690658549640][33m[OPENAI] Creating chat completion...[39m
+[1690658549640][33m[OPENAI] Creating embedding...[39m
+[1690658549642][33m[OPENAI] Creating chat completion...[39m
+[1690658549642][33m[OPENAI] Creating embedding...[39m
+[1690658549683]--- Observations received -- 
+[1690658549683]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (1100) at X: 24.05, Y: 14.29"
+}
+[1690658549738][33m[OPENAI] Creating chat completion...[39m
+[1690658549738][33m[OPENAI] Creating embedding...[39m
+[1690658549762][32m[OPENAI] Embedding created successfully.[39m
+[1690658549766][32m[OPENAI] Embedding created successfully.[39m
+[1690658549804]--- Observations received -- 
+[1690658549804]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 13.65, Y: 8.8."
+}
+[1690658549805]--- Observations received -- 
+[1690658549805]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 13.65, Y: 8.8."
+}
+[1690658549853][33m[OPENAI] Creating chat completion...[39m
+[1690658549853][33m[OPENAI] Creating embedding...[39m
+[1690658549859][33m[OPENAI] Creating chat completion...[39m
+[1690658549860][33m[OPENAI] Creating embedding...[39m
+[1690658549893][32m[OPENAI] Embedding created successfully.[39m
+[1690658549987][32m[OPENAI] Embedding created successfully.[39m
+[1690658550007][32m[OPENAI] Embedding created successfully.[39m
+[1690658550171][36m[OPENAI] Chat completion took 432.856999874115ms[39m
+[1690658550171][36m[OPENAI] Tokens per second: 2.3102317862269146tps[39m
+[1690658550172][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550239][36m[OPENAI] Chat completion took 597.2676672935486ms[39m
+[1690658550239][36m[OPENAI] Tokens per second: 1.6742912010144257tps[39m
+[1690658550240][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550263][36m[OPENAI] Chat completion took 623.1944169998169ms[39m
+[1690658550264][36m[OPENAI] Tokens per second: 1.6046356846619403tps[39m
+[1690658550264][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550285][36m[OPENAI] Chat completion took 853.1296253204346ms[39m
+[1690658550286][36m[OPENAI] Tokens per second: 1.172154817181974tps[39m
+[1690658550286][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550324]--- Observations received -- 
+[1690658550324]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (196) at X: 22.99, Y: 7.73"
+}
+[1690658550373][36m[OPENAI] Chat completion took 512.9392919540405ms[39m
+[1690658550373][36m[OPENAI] Tokens per second: 1.9495484469331708tps[39m
+[1690658550373][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550386][33m[OPENAI] Creating chat completion...[39m
+[1690658550386][33m[OPENAI] Creating embedding...[39m
+[1690658550522][32m[OPENAI] Embedding created successfully.[39m
+[1690658550528][36m[OPENAI] Chat completion took 674.9253749847412ms[39m
+[1690658550529][36m[OPENAI] Tokens per second: 1.4816452856326643tps[39m
+[1690658550529][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550542]--- Observations received -- 
+[1690658550543]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 13.48, Y: 6.9."
+}
+[1690658550543]--- Observations received -- 
+[1690658550543]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 13.48, Y: 6.9."
+}
+[1690658550591][33m[OPENAI] Creating chat completion...[39m
+[1690658550592][33m[OPENAI] Creating embedding...[39m
+[1690658550605][33m[OPENAI] Creating chat completion...[39m
+[1690658550605][33m[OPENAI] Creating embedding...[39m
+[1690658550716][32m[OPENAI] Embedding created successfully.[39m
+[1690658550756][32m[OPENAI] Embedding created successfully.[39m
+[1690658550762][36m[OPENAI] Chat completion took 376.1160001754761ms[39m
+[1690658550763][36m[OPENAI] Tokens per second: 2.6587542128849937tps[39m
+[1690658550763][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550783]--- Observations received -- 
+[1690658550783]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 15.38, Y: 5.49."
+}
+[1690658550783]--- Observations received -- 
+[1690658550783]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 15.38, Y: 5.49."
+}
+[1690658550837][33m[OPENAI] Creating chat completion...[39m
+[1690658550837][33m[OPENAI] Creating embedding...[39m
+[1690658550843][33m[OPENAI] Creating chat completion...[39m
+[1690658550844][33m[OPENAI] Creating embedding...[39m
+[1690658550903]--- Observations received -- 
+[1690658550903]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 14.03, Y: 15.48."
+}
+[1690658550922]--- Observations received -- 
+[1690658550922]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 11.43, Y: 11.79."
+}
+[1690658550923]--- Observations received -- 
+[1690658550923]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 11.43, Y: 11.79."
+}
+[1690658550939][36m[OPENAI] Chat completion took 333.6000828742981ms[39m
+[1690658550939][36m[OPENAI] Tokens per second: 2.997601173788689tps[39m
+[1690658550939][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550962]--- Observations received -- 
+[1690658550963]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 12.56, Y: 14.36."
+}
+[1690658550963]--- Observations received -- 
+[1690658550963]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 12.56, Y: 14.36."
+}
+[1690658550965][33m[OPENAI] Creating chat completion...[39m
+[1690658550965][33m[OPENAI] Creating embedding...[39m
+[1690658550971][33m[OPENAI] Creating chat completion...[39m
+[1690658550972][33m[OPENAI] Creating embedding...[39m
+[1690658550974][36m[OPENAI] Chat completion took 382.04820823669434ms[39m
+[1690658550974][36m[OPENAI] Tokens per second: 2.617470723434095tps[39m
+[1690658550974][32m[OPENAI] Chat completion created successfully.[39m
+[1690658550976][33m[OPENAI] Creating chat completion...[39m
+[1690658550979][33m[OPENAI] Creating embedding...[39m
+[1690658550982]--- Observations received -- 
+[1690658550983]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (114) at X: 19.85, Y: 5.77"
+}
+[1690658550990][32m[OPENAI] Embedding created successfully.[39m
+[1690658551002]--- Observations received -- 
+[1690658551002]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 11.42, Y: 8.92."
+}
+[1690658551003]--- Observations received -- 
+[1690658551003]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 11.42, Y: 8.92."
+}
+[1690658551016][33m[OPENAI] Creating chat completion...[39m
+[1690658551017][33m[OPENAI] Creating embedding...[39m
+[1690658551019][32m[OPENAI] Embedding created successfully.[39m
+[1690658551037][33m[OPENAI] Creating chat completion...[39m
+[1690658551038][33m[OPENAI] Creating embedding...[39m
+[1690658551063]--- Observations received -- 
+[1690658551063]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (938) at X: 17.63, Y: 16.04"
+}
+[1690658551063][33m[OPENAI] Creating chat completion...[39m
+[1690658551064][33m[OPENAI] Creating embedding...[39m
+[1690658551085][32m[OPENAI] Embedding created successfully.[39m
+[1690658551086][33m[OPENAI] Creating chat completion...[39m
+[1690658551087][33m[OPENAI] Creating embedding...[39m
+[1690658551095][33m[OPENAI] Creating chat completion...[39m
+[1690658551095][33m[OPENAI] Creating embedding...[39m
+[1690658551118][32m[OPENAI] Embedding created successfully.[39m
+[1690658551125][33m[OPENAI] Creating chat completion...[39m
+[1690658551126][33m[OPENAI] Creating embedding...[39m
+[1690658551151][32m[OPENAI] Embedding created successfully.[39m
+[1690658551221][32m[OPENAI] Embedding created successfully.[39m
+[1690658551226][32m[OPENAI] Embedding created successfully.[39m
+[1690658551228][32m[OPENAI] Embedding created successfully.[39m
+[1690658551232][36m[OPENAI] Chat completion took 388.3171248435974ms[39m
+[1690658551232][36m[OPENAI] Tokens per second: 2.575214781997498tps[39m
+[1690658551232][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551241][32m[OPENAI] Embedding created successfully.[39m
+[1690658551252][32m[OPENAI] Embedding created successfully.[39m
+[1690658551312][32m[OPENAI] Embedding created successfully.[39m
+[1690658551383][36m[OPENAI] Chat completion took 545.7039589881897ms[39m
+[1690658551383][36m[OPENAI] Tokens per second: 1.8324954098814634tps[39m
+[1690658551383][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551418][36m[OPENAI] Chat completion took 439.10445833206177ms[39m
+[1690658551418][36m[OPENAI] Tokens per second: 2.277362438537973tps[39m
+[1690658551418][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551452][36m[OPENAI] Chat completion took 435.7256660461426ms[39m
+[1690658551453][36m[OPENAI] Tokens per second: 2.2950220240046675tps[39m
+[1690658551453][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551464]--- Observations received -- 
+[1690658551464]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (939) at X: 19.73999, Y: 14.99"
+}
+[1690658551467][36m[OPENAI] Chat completion took 495.2387909889221ms[39m
+[1690658551467][36m[OPENAI] Tokens per second: 2.0192279324548483tps[39m
+[1690658551467][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551472][36m[OPENAI] Chat completion took 433.98883295059204ms[39m
+[1690658551472][36m[OPENAI] Tokens per second: 2.3042067538955457tps[39m
+[1690658551472][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551524][33m[OPENAI] Creating chat completion...[39m
+[1690658551525][33m[OPENAI] Creating embedding...[39m
+[1690658551550][36m[OPENAI] Chat completion took 584.7785420417786ms[39m
+[1690658551550][36m[OPENAI] Tokens per second: 1.710049066623509tps[39m
+[1690658551550][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551557][36m[OPENAI] Chat completion took 461.4700837135315ms[39m
+[1690658551557][36m[OPENAI] Tokens per second: 2.166987710130249tps[39m
+[1690658551557][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551559][36m[OPENAI] Chat completion took 495.3298749923706ms[39m
+[1690658551559][36m[OPENAI] Tokens per second: 2.0188566256283305tps[39m
+[1690658551559][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551623]--- Observations received -- 
+[1690658551623]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 10.82, Y: 13.33."
+}
+[1690658551624]--- Observations received -- 
+[1690658551624]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 10.82, Y: 13.33."
+}
+[1690658551626][36m[OPENAI] Chat completion took 539.886833190918ms[39m
+[1690658551627][36m[OPENAI] Tokens per second: 1.8522400223944229tps[39m
+[1690658551627][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551641][36m[OPENAI] Chat completion took 515.2192087173462ms[39m
+[1690658551641][36m[OPENAI] Tokens per second: 1.9409214235034642tps[39m
+[1690658551641][32m[OPENAI] Chat completion created successfully.[39m
+[1690658551647][32m[OPENAI] Embedding created successfully.[39m
+[1690658551823]--- Observations received -- 
+[1690658551823]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (199) at X: 20.97, Y: 12.33"
+}
+[1690658551877][33m[OPENAI] Creating chat completion...[39m
+[1690658551877][33m[OPENAI] Creating embedding...[39m
+[1690658551918][33m[OPENAI] Creating chat completion...[39m
+[1690658551919][33m[OPENAI] Creating embedding...[39m
+[1690658551950][33m[OPENAI] Creating chat completion...[39m
+[1690658551951][33m[OPENAI] Creating embedding...[39m
+[1690658551963]--- Observations received -- 
+[1690658551964]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 11.74, Y: 5.87."
+}
+[1690658551964]--- Observations received -- 
+[1690658551965]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 11.74, Y: 5.87."
+}
+[1690658551965]--- Observations received -- 
+[1690658551965]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (197) at X: 20.98, Y: 9.859999"
+}
+[1690658551971][36m[OPENAI] Chat completion took 445.72491693496704ms[39m
+[1690658551971][36m[OPENAI] Tokens per second: 2.2435362305444184tps[39m
+[1690658551971][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552002]--- Observations received -- 
+[1690658552002]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 9.51, Y: 10.14."
+}
+[1690658552003]--- Observations received -- 
+[1690658552003]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 9.51, Y: 10.14."
+}
+[1690658552015][32m[OPENAI] Embedding created successfully.[39m
+[1690658552016][33m[OPENAI] Creating chat completion...[39m
+[1690658552016][33m[OPENAI] Creating embedding...[39m
+[1690658552019][33m[OPENAI] Creating chat completion...[39m
+[1690658552019][33m[OPENAI] Creating embedding...[39m
+[1690658552026][33m[OPENAI] Creating chat completion...[39m
+[1690658552026][33m[OPENAI] Creating embedding...[39m
+[1690658552035][32m[OPENAI] Embedding created successfully.[39m
+[1690658552053][33m[OPENAI] Creating chat completion...[39m
+[1690658552054][33m[OPENAI] Creating embedding...[39m
+[1690658552058][33m[OPENAI] Creating chat completion...[39m
+[1690658552058][33m[OPENAI] Creating embedding...[39m
+[1690658552070]--- Observations received -- 
+[1690658552070]{
+  "observerId": "A1",
+  "observation": "Thomas Smith finished walking to 54.64, Y: 16.97."
+}
+[1690658552086][32m[OPENAI] Embedding created successfully.[39m
+[1690658552097][33m[OPENAI] Creating embedding...[39m
+[1690658552123][33m[OPENAI] Creating chat completion...[39m
+[1690658552124][33m[OPENAI] Creating embedding...[39m
+[1690658552166][32m[OPENAI] Embedding created successfully.[39m
+[1690658552167][32m[OPENAI] Embedding created successfully.[39m
+[1690658552174][32m[OPENAI] Embedding created successfully.[39m
+[1690658552185][32m[OPENAI] Embedding created successfully.[39m
+[1690658552202][32m[OPENAI] Embedding created successfully.[39m
+[1690658552247][32m[OPENAI] Embedding created successfully.[39m
+[1690658552257][32m[OPENAI] Embedding created successfully.[39m
+[1690658552351][36m[OPENAI] Chat completion took 332.2431664466858ms[39m
+[1690658552351][36m[OPENAI] Tokens per second: 3.0098436957934167tps[39m
+[1690658552352][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552370][36m[OPENAI] Chat completion took 451.16074991226196ms[39m
+[1690658552370][36m[OPENAI] Tokens per second: 2.216504871477565tps[39m
+[1690658552370][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552400][36m[OPENAI] Chat completion took 522.2296252250671ms[39m
+[1690658552400][36m[OPENAI] Tokens per second: 1.9148664719452224tps[39m
+[1690658552400][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552460][36m[OPENAI] Chat completion took 406.84037494659424ms[39m
+[1690658552460][36m[OPENAI] Tokens per second: 2.457966469358577tps[39m
+[1690658552460][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552478][36m[OPENAI] Chat completion took 462.36170864105225ms[39m
+[1690658552478][36m[OPENAI] Tokens per second: 2.1628088600570843tps[39m
+[1690658552478][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552493][36m[OPENAI] Chat completion took 434.6154160499573ms[39m
+[1690658552493][36m[OPENAI] Tokens per second: 2.300884789335347tps[39m
+[1690658552493][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552501][36m[OPENAI] Chat completion took 550.8647923469543ms[39m
+[1690658552502][36m[OPENAI] Tokens per second: 1.815327488510401tps[39m
+[1690658552502][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552517][36m[OPENAI] Chat completion took 490.75558280944824ms[39m
+[1690658552517][36m[OPENAI] Tokens per second: 2.037674221198381tps[39m
+[1690658552517][32m[OPENAI] Chat completion created successfully.[39m
+[1690658552610][36m[OPENAI] Chat completion took 485.53766679763794ms[39m
+[1690658552610][36m[OPENAI] Tokens per second: 2.0595724459350326tps[39m
+[1690658552611][32m[OPENAI] Chat completion created successfully.[39m
+[1690658553192][33m[OPENAI] Creating embedding...[39m
+[1690658553318][32m[OPENAI] Embedding created successfully.[39m
+[1690658553941][33m[OPENAI] Creating embedding...[39m
+[1690658554058][32m[OPENAI] Embedding created successfully.[39m
+[1690658554667]--- Prompt ---
+[1690658554669]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 15.10197, 10.01852
+
+Environment:
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.734993m]
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.734993m]
+- Tree (Health: 10/10) [X: 13.65, Y: 8.8, Distance: 1.895524m]
+- Tree (Health: 10/10) [X: 13.65, Y: 8.8, Distance: 1.895524m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.529836m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.529836m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 3.050746m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 3.050746m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 3.515103m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 3.515103m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.84235m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.84235m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.07695m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.07695m]
+- Tree (Health: 10/10) [X: 16.48, Y: 13.87, Distance: 4.090583m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 4.537045m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 4.537045m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.030913m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.030913m]
+- Tree (Health: 10/10) [X: 19.62, Y: 7.73, Distance: 5.064572m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 5.081635m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 5.081635m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 5.339762m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 5.339762m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.413058m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.413058m]
+- Tree (Health: 10/10) [X: 14.03, Y: 15.48, Distance: 5.565689m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.593291m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.593291m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.643693m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.643693m]
+- Tree (Health: 10/10) [X: 20.98, Y: 9.859999, Distance: 5.880165m]
+- Tree (Health: 10/10) [X: 20.97, Y: 12.33, Distance: 6.306877m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 6.319224m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 6.319224m]
+- Tree (Health: 10/10) [X: 19.85, Y: 5.77, Distance: 6.371317m]
+- Tree (Health: 10/10) [X: 17.63, Y: 16.04, Distance: 6.530632m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 6.677001m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 6.677001m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.692899m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.692899m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 6.765002m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 6.765002m]
+- Tree (Health: 10/10) [X: 19.73999, Y: 14.99, Distance: 6.799035m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 7.211065m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 7.211065m]
+- Tree (Health: 10/10) [X: 19.09, Y: 3.52, Distance: 7.624639m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.636469m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.636469m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.79202m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.79202m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 7.851535m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 7.851535m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.10315m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.10315m]
+- Tree (Health: 10/10) [X: 22.1, Y: 5.77, Distance: 8.186716m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.189507m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.189507m]
+- Tree (Health: 10/10) [X: 22.99, Y: 7.73, Distance: 8.213299m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 8.385744m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 8.385744m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.650128m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.650128m]
+- Tree (Health: 10/10) [X: 12.99, Y: 18.43, Distance: 8.672566m]
+- Tree (Health: 10/10) [X: 16.02999, Y: 18.69, Distance: 8.720998m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith no longer sees Tree (114) at X: 19.85, Y: 5.77 [just now]
+- Thomas Smith no longer sees Tree (196) at X: 22.99, Y: 7.73 [just now]
+- Thomas Smith no longer sees Tree (935) at X: 22.73, Y: 16.71 [just now]
+- Thomas Smith no longer sees Tree (956) at X: 27.82, Y: 15.83 [just now]
+- Thomas Smith no longer sees Tree (207) at X: 31.24, Y: 9.42 [just now]
+- Thomas Smith no longer sees StoneOreSmall (7) at X: 35.5, Y: 18.48 [just now]
+- Thomas Smith sees Stone Ore Deposit (Small) at X: 35.5, Y: 18.48. [just now]
+- Thomas Smith sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78. [just now]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [DropItem] Drop Pickaxe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "pickaxe"}}
+
+- [DropItem] Drop Sword from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "sword"}}
+
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 54.64, Y: 16.97. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690658554669][33m[OPENAI] Creating chat completion...[39m
+[1690658567842][36m[OPENAI] Chat completion took 13172.325333118439ms[39m
+[1690658567844][36m[OPENAI] Tokens per second: 18.22001764537211tps[39m
+[1690658567844][32m[OPENAI] Chat completion created successfully.[39m
+[1690658567844]--- Response ---
+[1690658567844]Plan: 
+[1690658567844]Thomas Smith's first priority task is to mine ore. However, the location of the ore is not specified in the environment nor in his memories. This means he will need to explore the area to find the ore. The nearest unexplored area appears to be South of his current location (decreasing Y-coordinate).
+
+The character can handle three tasks:
+1. Mine ore
+2. Store extra materials in chest
+3. Chop trees
+
+Since the locations of ore and chest are not specified, the character can't execute tasks 1 and 2. The third task is to chop trees. There are several trees in the environment, but the character should probably focus on the nearest ones first. The shortest distance to a tree from the character is 0.73m. However, the character should prioritize finding the ore, as this is his top priority task.
+
+So, the best course of action for Thomas should be to move south, hoping to find some ore. 
+
+Action: 
+{
+  "type": "MoveTo", 
+  "data": { "characterId": "A1", "x": 15.10197, "y": 9.01852 }
+}
+[1690658567847]--- Verified Action ---
+[1690658567848]{
+  "type": "MoveTo",
+  "data": {
+    "characterId": "A1",
+    "x": 15.10197,
+    "y": 9.01852
+  }
+}
+[1690658567852]--- Observations received -- 
+[1690658567852]{
+  "observerId": "A1",
+  "observation": "Thomas Smith has started walking to 15.10197, Y: 9.01852."
+}
+[1690658567874]--- Observations received -- 
+[1690658567874]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree Stump at X: 9.65, Y: 8.56."
+}
+[1690658567875]--- Observations received -- 
+[1690658567875]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree Stump at X: 9.65, Y: 8.56."
+}
+[1690658567935][33m[OPENAI] Creating chat completion...[39m
+[1690658567935][33m[OPENAI] Creating embedding...[39m
+[1690658567988][33m[OPENAI] Creating chat completion...[39m
+[1690658567989][33m[OPENAI] Creating embedding...[39m
+[1690658567989][33m[OPENAI] Creating chat completion...[39m
+[1690658567989][33m[OPENAI] Creating embedding...[39m
+[1690658568036]--- Observations received -- 
+[1690658568036]{
+  "observerId": "A1",
+  "observation": "Thomas Smith no longer sees Tree (937) at X: 14.03, Y: 15.48"
+}
+[1690658568120][33m[OPENAI] Creating chat completion...[39m
+[1690658568121][33m[OPENAI] Creating embedding...[39m
+[1690658568188][32m[OPENAI] Embedding created successfully.[39m
+[1690658568199][32m[OPENAI] Embedding created successfully.[39m
+[1690658568264][32m[OPENAI] Embedding created successfully.[39m
+[1690658568272][32m[OPENAI] Embedding created successfully.[39m
+[1690658568364]--- Observations received -- 
+[1690658568364]{
+  "observerId": "A1",
+  "observation": "Thomas Smith finished walking to 15.10197, Y: 9.01852."
+}
+[1690658568391][36m[OPENAI] Chat completion took 402.1308341026306ms[39m
+[1690658568391][36m[OPENAI] Tokens per second: 2.4867528555265745tps[39m
+[1690658568391][32m[OPENAI] Chat completion created successfully.[39m
+[1690658568398][33m[OPENAI] Creating embedding...[39m
+[1690658568413][36m[OPENAI] Chat completion took 477.7389998435974ms[39m
+[1690658568413][36m[OPENAI] Tokens per second: 2.0931931458963593tps[39m
+[1690658568413][32m[OPENAI] Chat completion created successfully.[39m
+[1690658568417][33m[OPENAI] Creating chat completion...[39m
+[1690658568418][33m[OPENAI] Creating embedding...[39m
+[1690658568548][32m[OPENAI] Embedding created successfully.[39m
+[1690658568561][32m[OPENAI] Embedding created successfully.[39m
+[1690658568633][36m[OPENAI] Chat completion took 645.0189580917358ms[39m
+[1690658568634][36m[OPENAI] Tokens per second: 1.550342028641239tps[39m
+[1690658568634][32m[OPENAI] Chat completion created successfully.[39m
+[1690658568670][36m[OPENAI] Chat completion took 549.727707862854ms[39m
+[1690658568671][36m[OPENAI] Tokens per second: 1.819082403336817tps[39m
+[1690658568671][32m[OPENAI] Chat completion created successfully.[39m
+[1690658568893][36m[OPENAI] Chat completion took 475.508957862854ms[39m
+[1690658568893][36m[OPENAI] Tokens per second: 2.1030098034208207tps[39m
+[1690658568894][32m[OPENAI] Chat completion created successfully.[39m
+[1690658569097][33m[OPENAI] Creating embedding...[39m
+[1690658569223][32m[OPENAI] Embedding created successfully.[39m
+[1690658569896][33m[OPENAI] Creating embedding...[39m
+[1690658570013][32m[OPENAI] Embedding created successfully.[39m
+[1690658570551]--- Prompt ---
+[1690658570552]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 15.01058, 9.17419
+
+Environment:
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.9750236m]
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.9750236m]
+- Tree (Health: 10/10) [X: 13.65, Y: 8.8, Distance: 1.411097m]
+- Tree (Health: 10/10) [X: 13.65, Y: 8.8, Distance: 1.411097m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 2.694224m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 2.694224m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 2.741279m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 2.741279m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.852981m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.852981m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.599565m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.599565m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 3.702665m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 3.702665m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.434299m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.434299m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 4.458651m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 4.458651m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 4.649125m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 4.649125m]
+- Tree (Health: 10/10) [X: 19.62, Y: 7.73, Distance: 4.830366m]
+- Tree (Health: 10/10) [X: 16.48, Y: 13.87, Distance: 4.920349m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.39565m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.39565m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 5.52674m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 5.52674m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.584725m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.584725m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.735676m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.735676m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.90184m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.90184m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 5.916443m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 5.916443m]
+- Tree (Health: 10/10) [X: 19.85, Y: 5.77, Distance: 5.916799m]
+- Tree (Health: 10/10) [X: 20.98, Y: 9.859999, Distance: 6.008687m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.258401m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.258401m]
+- Tree (Health: 10/10) [X: 14.03, Y: 15.48, Distance: 6.381596m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 6.412617m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 6.412617m]
+- Tree (Health: 10/10) [X: 20.97, Y: 12.33, Distance: 6.743429m]
+- Tree (Health: 10/10) [X: 19.09, Y: 3.52, Distance: 6.972198m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.064337m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.064337m]
+- Tree (Health: 10/10) [X: 17.63, Y: 16.04, Distance: 7.348517m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.427702m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.427702m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 7.443773m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 7.443773m]
+- Tree (Health: 10/10) [X: 19.73999, Y: 14.99, Distance: 7.496067m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 7.848812m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 7.848812m]
+- Tree (Health: 10/10) [X: 22.1, Y: 5.77, Distance: 7.864376m]
+- Tree (Health: 10/10) [X: 22.99, Y: 7.73, Distance: 8.109057m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.413109m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.413109m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 8.501121m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 8.501121m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.512517m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.512517m]
+- Tree Stump (Health: 5/5) [X: 20.14, Y: 2.16, Distance: 8.689638m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.689812m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.689812m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith no longer sees Tree (937) at X: 14.03, Y: 15.48 [just now]
+- Thomas Smith no longer sees Tree (114) at X: 19.85, Y: 5.77 [just now]
+- Thomas Smith no longer sees Tree (196) at X: 22.99, Y: 7.73 [just now]
+- Thomas Smith no longer sees Tree (935) at X: 22.73, Y: 16.71 [just now]
+- Thomas Smith no longer sees Tree (956) at X: 27.82, Y: 15.83 [just now]
+- Thomas Smith no longer sees Tree (207) at X: 31.24, Y: 9.42 [just now]
+- Thomas Smith no longer sees StoneOreSmall (7) at X: 35.5, Y: 18.48 [just now]
+- Thomas Smith sees Stone Ore Deposit (Small) at X: 35.5, Y: 18.48. [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [SwingPickaxe] Swing pickaxe.
+
+- [DropItem] Drop Pickaxe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "pickaxe"}}
+
+- [SwingSword] Swing sword.
+
+- [DropItem] Drop Sword from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "sword"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree (Health: 10/10)
+- Tree (Health: 10/10)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 54.64, Y: 16.97. [just now]
+- [MoveTo]: Thomas Smith walked to X: 15.10197, Y: 9.01852. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690658570552][33m[OPENAI] Creating chat completion...[39m
+[1690658578029][36m[OPENAI] Chat completion took 7477.226417064667ms[39m
+[1690658578031][36m[OPENAI] Tokens per second: 14.443858454455835tps[39m
+[1690658578032][32m[OPENAI] Chat completion created successfully.[39m
+[1690658578033]--- Response ---
+[1690658578033]Plan: 
+[1690658578033]Thomas Smith's highest priority task is to mine ore, however there are not any ore deposits nearby currently. So he should start focusing on the second highest priority task which is to store extra materials in the chest, but there are no extra materials in the inventory to store. In light of this, he should move to the third highest priority task which is to chop trees. Looking at his environment, there are plenty of trees nearby.
+
+Action: {"type": "SwingAxe", "data": {"characterId": "A1"}}
+[1690658578035]--- Verified Action ---
+[1690658578036]{
+  "type": "SwingAxe",
+  "data": {
+    "characterId": "A1"
+  }
+}
+[1690658579082][33m[OPENAI] Creating embedding...[39m
+[1690658579220][32m[OPENAI] Embedding created successfully.[39m
+[1690658579839][33m[OPENAI] Creating embedding...[39m
+[1690658579985][32m[OPENAI] Embedding created successfully.[39m
+[1690658580497][33m[OPENAI] Creating embedding...[39m
+[1690658580618][32m[OPENAI] Embedding created successfully.[39m
+[1690658581093]--- Prompt ---
+[1690658581094]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 15.01058, 9.17419
+
+Environment:
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.9750236m]
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.9750236m]
+- Tree (Health: 5/10) [X: 13.65, Y: 8.8, Distance: 1.411097m]
+- Tree (Health: 5/10) [X: 13.65, Y: 8.8, Distance: 1.411097m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 2.694224m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 2.694224m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 2.741279m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 2.741279m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.852981m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.852981m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.599565m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.599565m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 3.702665m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 3.702665m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.434299m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.434299m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 4.458651m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 4.458651m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 4.649125m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 4.649125m]
+- Tree (Health: 10/10) [X: 19.62, Y: 7.73, Distance: 4.830366m]
+- Tree (Health: 10/10) [X: 16.48, Y: 13.87, Distance: 4.920349m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.39565m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.39565m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 5.52674m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 5.52674m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.584725m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.584725m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.735676m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.735676m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.90184m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.90184m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 5.916443m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 5.916443m]
+- Tree (Health: 10/10) [X: 19.85, Y: 5.77, Distance: 5.916799m]
+- Tree (Health: 10/10) [X: 20.98, Y: 9.859999, Distance: 6.008687m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.258401m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.258401m]
+- Tree (Health: 10/10) [X: 14.03, Y: 15.48, Distance: 6.381596m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 6.412617m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 6.412617m]
+- Tree (Health: 10/10) [X: 20.97, Y: 12.33, Distance: 6.743429m]
+- Tree (Health: 10/10) [X: 19.09, Y: 3.52, Distance: 6.972198m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.064337m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.064337m]
+- Tree (Health: 10/10) [X: 17.63, Y: 16.04, Distance: 7.348517m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.427702m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.427702m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 7.443773m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 7.443773m]
+- Tree (Health: 10/10) [X: 19.73999, Y: 14.99, Distance: 7.496067m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 7.848812m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 7.848812m]
+- Tree (Health: 10/10) [X: 22.1, Y: 5.77, Distance: 7.864376m]
+- Tree (Health: 10/10) [X: 22.99, Y: 7.73, Distance: 8.109057m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.413109m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.413109m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 8.501121m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 8.501121m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.512517m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.512517m]
+- Tree Stump (Health: 5/5) [X: 20.14, Y: 2.16, Distance: 8.689638m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.689812m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.689812m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith no longer sees Tree (937) at X: 14.03, Y: 15.48 [just now]
+- Thomas Smith no longer sees Tree (114) at X: 19.85, Y: 5.77 [just now]
+- Thomas Smith no longer sees Tree (196) at X: 22.99, Y: 7.73 [1 minute ago]
+- Thomas Smith no longer sees Tree (935) at X: 22.73, Y: 16.71 [1 minute ago]
+- Thomas Smith no longer sees Tree (207) at X: 31.24, Y: 9.42 [1 minute ago]
+- Thomas Smith no longer sees StoneOreSmall (7) at X: 35.5, Y: 18.48 [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Small) at X: 35.5, Y: 18.48. [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [SwingPickaxe] Swing pickaxe.
+
+- [DropItem] Drop Pickaxe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "pickaxe"}}
+
+- [SwingSword] Swing sword.
+
+- [DropItem] Drop Sword from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "sword"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree (Health: 5/10)
+- Tree (Health: 5/10)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 54.64, Y: 16.97. [just now]
+- [MoveTo]: Thomas Smith walked to X: 15.10197, Y: 9.01852. [just now]
+- [SwingAxe]: Thomas Smith swong their axe at X: 15.01058, Y: 9.17419 and hit 2 trees. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690658581094][33m[OPENAI] Creating chat completion...[39m
+[1690658591251][36m[OPENAI] Chat completion took 10154.973667144775ms[39m
+[1690658591251][36m[OPENAI] Tokens per second: 18.513095765895674tps[39m
+[1690658591251][32m[OPENAI] Chat completion created successfully.[39m
+[1690658591252]--- Response ---
+[1690658591252]Plan: 
+[1690658591252]Based on Thomas's tasks, I can identify that he needs to mine ores first (highest priority), then store the materials, and lastly, chop trees. However, checking his surroundings, there is no mine within his immediate vicinity. But considering he has memories of stone ore deposits at certain coordinates, he can move to those coordinates to fulfill his initial task of mining.
+
+The closest memory of a stone ore deposit is at X: 35.5, Y: 18.48.
+
+First, Thomas will move to the location of the stone deposit remembered. After this, the next steps in his plan would be to mine the ore, store any materials he already has, and then proceed to chopping down trees for resources until his task list is exhausted.
+
+Action: 
+{"type": "MoveTo", "data": {"characterId": "A1", "x": 35.5, "y": 18.48}}
+[1690658591260]--- Verified Action ---
+[1690658591264]{
+  "type": "MoveTo",
+  "data": {
+    "characterId": "A1",
+    "x": 35.5,
+    "y": 18.48
+  }
+}
+[1690658591268]--- Observations received -- 
+[1690658591268]{
+  "observerId": "A1",
+  "observation": "Thomas Smith has started walking to 35.5, Y: 18.48."
+}
+[1690658591385][33m[OPENAI] Creating chat completion...[39m
+[1690658591386][33m[OPENAI] Creating embedding...[39m
+[1690658591874][32m[OPENAI] Embedding created successfully.[39m
+[1690658591907][36m[OPENAI] Chat completion took 521.6867504119873ms[39m
+[1690658591907][36m[OPENAI] Tokens per second: 1.9168591098207466tps[39m
+[1690658591907][32m[OPENAI] Chat completion created successfully.[39m
+[1690658592176]--- Observations received -- 
+[1690658592177]{
+  "observerId": "A1",
+  "observation": "Thomas Smith finished walking to 35.5, Y: 18.48."
+}
+[1690658592188]--- Observations received -- 
+[1690658592188]{
+  "observerId": "A1",
+  "observation": "Thomas Smith sees Tree at X: 14.03, Y: 15.48."
+}
+[1690658592272][33m[OPENAI] Creating embedding...[39m
+[1690658592290][33m[OPENAI] Creating chat completion...[39m
+[1690658592290][33m[OPENAI] Creating embedding...[39m
+[1690658592325][33m[OPENAI] Creating chat completion...[39m
+[1690658592326][33m[OPENAI] Creating embedding...[39m
+[1690658592405][32m[OPENAI] Embedding created successfully.[39m
+[1690658592438][32m[OPENAI] Embedding created successfully.[39m
+[1690658592633][32m[OPENAI] Embedding created successfully.[39m
+[1690658592794][36m[OPENAI] Chat completion took 504.47445821762085ms[39m
+[1690658592795][36m[OPENAI] Tokens per second: 1.9822609127390525tps[39m
+[1690658592795][32m[OPENAI] Chat completion created successfully.[39m
+[1690658592825][36m[OPENAI] Chat completion took 499.6359157562256ms[39m
+[1690658592826][36m[OPENAI] Tokens per second: 2.0014573982065453tps[39m
+[1690658592826][32m[OPENAI] Chat completion created successfully.[39m
+[1690658593047][33m[OPENAI] Creating embedding...[39m
+[1690658593207][32m[OPENAI] Embedding created successfully.[39m
+[1690658593625][33m[OPENAI] Creating embedding...[39m
+[1690658593784][32m[OPENAI] Embedding created successfully.[39m
+[1690658594368]--- Prompt ---
+[1690658594371]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 14.99524, 9.838897
+
+Environment:
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.79867m]
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.79867m]
+- Tree (Health: 5/10) [X: 13.65, Y: 8.8, Distance: 1.699696m]
+- Tree (Health: 5/10) [X: 13.65, Y: 8.8, Distance: 1.699696m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.664244m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.664244m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 3.029596m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 3.029596m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 3.306517m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 3.306517m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.691434m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.691434m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.064199m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.064199m]
+- Tree (Health: 10/10) [X: 16.48, Y: 13.87, Distance: 4.295848m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 4.365885m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 4.365885m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 4.993553m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 4.993553m]
+- Tree (Health: 10/10) [X: 19.62, Y: 7.73, Distance: 5.082901m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 5.133099m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 5.133099m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.135247m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.135247m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.442463m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.442463m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.493494m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.493494m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.496101m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.496101m]
+- Tree (Health: 10/10) [X: 14.03, Y: 15.48, Distance: 5.723086m]
+- Tree (Health: 10/10) [X: 20.98, Y: 9.859999, Distance: 5.9848m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 6.111073m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 6.111073m]
+- Tree (Health: 10/10) [X: 19.85, Y: 5.77, Distance: 6.334403m]
+- Tree (Health: 10/10) [X: 20.97, Y: 12.33, Distance: 6.473282m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.51568m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.51568m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 6.579042m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 6.579042m]
+- Tree (Health: 10/10) [X: 17.63, Y: 16.04, Distance: 6.73763m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 6.808955m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 6.808955m]
+- Tree (Health: 10/10) [X: 19.73999, Y: 14.99, Distance: 7.003327m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 7.060403m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 7.060403m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.49859m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.49859m]
+- Tree (Health: 10/10) [X: 19.09, Y: 3.52, Distance: 7.529644m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.583847m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.583847m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 7.936825m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 7.936825m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.111954m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.111954m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.148184m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.148184m]
+- Tree (Health: 10/10) [X: 22.1, Y: 5.77, Distance: 8.187405m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 8.195243m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 8.195243m]
+- Tree (Health: 10/10) [X: 22.99, Y: 7.73, Distance: 8.268232m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.565019m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.565019m]
+- Tree (Health: 10/10) [X: 12.99, Y: 18.43, Distance: 8.822018m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith no longer sees Tree (937) at X: 14.03, Y: 15.48 [just now]
+- Thomas Smith no longer sees Tree (114) at X: 19.85, Y: 5.77 [1 minute ago]
+- Thomas Smith no longer sees Tree (196) at X: 22.99, Y: 7.73 [1 minute ago]
+- Thomas Smith no longer sees Tree (935) at X: 22.73, Y: 16.71 [1 minute ago]
+- Thomas Smith no longer sees Tree (207) at X: 31.24, Y: 9.42 [1 minute ago]
+- Thomas Smith no longer sees StoneOreSmall (7) at X: 35.5, Y: 18.48 [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Small) at X: 35.5, Y: 18.48. [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [SwingPickaxe] Swing pickaxe.
+
+- [DropItem] Drop Pickaxe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "pickaxe"}}
+
+- [SwingSword] Swing sword.
+
+- [DropItem] Drop Sword from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "sword"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree (Health: 10/10)
+- Tree (Health: 10/10)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 54.64, Y: 16.97. [1 minute ago]
+- [MoveTo]: Thomas Smith walked to X: 15.10197, Y: 9.01852. [just now]
+- [SwingAxe]: Thomas Smith swong their axe at X: 15.01058, Y: 9.17419 and hit 2 trees. [just now]
+- [MoveTo]: Thomas Smith walked to X: 35.5, Y: 18.48. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690658594372][33m[OPENAI] Creating chat completion...[39m
+[1690658603008][36m[OPENAI] Chat completion took 8634.980000019073ms[39m
+[1690658603008][36m[OPENAI] Tokens per second: 14.59181144596996tps[39m
+[1690658603009][32m[OPENAI] Chat completion created successfully.[39m
+[1690658603010]--- Response ---
+[1690658603010]Plan: 
+[1690658603010]The main task Thomas Smith needs to perform now is "Mine ore". However, there is no visible ore in the environment. Thomas Smith should move towards the last known indexes of ore deposits based on his memories. Out of the options available, the closest known ore deposit appears to be at X: 35.5, Y: 18.48. Thomas Smith should therefore move to this location to potentially find the ore and mine it.
+
+Action:
+{ "type": "MoveTo", "data": { "characterId": "A1", "x": 35.5, "y": 18.48 }}
+[1690658603011]--- Verified Action ---
+[1690658603012]{
+  "type": "MoveTo",
+  "data": {
+    "characterId": "A1",
+    "x": 35.5,
+    "y": 18.48
+  }
+}
+[1690658603013]--- Observations received -- 
+[1690658603014]{
+  "observerId": "A1",
+  "observation": "Thomas Smith has started walking to 35.5, Y: 18.48."
+}
+[1690658603059]--- Observations received -- 
+[1690658603059]{
+  "observerId": "A1",
+  "observation": "Thomas Smith finished walking to 35.5, Y: 18.48."
+}
+[1690658603089][33m[OPENAI] Creating embedding...[39m
+[1690658603107][33m[OPENAI] Creating chat completion...[39m
+[1690658603107][33m[OPENAI] Creating embedding...[39m
+[1690658603150][33m[OPENAI] Creating chat completion...[39m
+[1690658603150][33m[OPENAI] Creating embedding...[39m
+[1690658603221][32m[OPENAI] Embedding created successfully.[39m
+[1690658603298][32m[OPENAI] Embedding created successfully.[39m
+[1690658603310][32m[OPENAI] Embedding created successfully.[39m
+[1690658603533][36m[OPENAI] Chat completion took 425.50595808029175ms[39m
+[1690658603533][36m[OPENAI] Tokens per second: 2.3501433552460456tps[39m
+[1690658603533][32m[OPENAI] Chat completion created successfully.[39m
+[1690658603698][36m[OPENAI] Chat completion took 548.2442908287048ms[39m
+[1690658603698][36m[OPENAI] Tokens per second: 1.8240044022865038tps[39m
+[1690658603699][32m[OPENAI] Chat completion created successfully.[39m
+[1690658603737][33m[OPENAI] Creating embedding...[39m
+[1690658603891][32m[OPENAI] Embedding created successfully.[39m
+[1690658604272][33m[OPENAI] Creating embedding...[39m
+[1690658604414][32m[OPENAI] Embedding created successfully.[39m
+[1690658604988]--- Prompt ---
+[1690658604989]Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 14.99627, 9.873881
+
+Environment:
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.8018568m]
+- Tree (Health: 10/10) [X: 15.79, Y: 9.76, Distance: 0.8018568m]
+- Tree (Health: 5/10) [X: 13.65, Y: 8.8, Distance: 1.722111m]
+- Tree (Health: 5/10) [X: 13.65, Y: 8.8, Distance: 1.722111m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.656737m]
+- Tree (Health: 10/10) [X: 17.61, Y: 10.35, Distance: 2.656737m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 3.048735m]
+- Tree (Health: 10/10) [X: 17.49, Y: 8.12, Distance: 3.048735m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 3.338121m]
+- Tree (Health: 10/10) [X: 13.48, Y: 6.9, Distance: 3.338121m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.701298m]
+- Tree (Health: 10/10) [X: 11.42, Y: 8.92, Distance: 3.701298m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.048431m]
+- Tree (Health: 10/10) [X: 11.43, Y: 11.79, Distance: 4.048431m]
+- Tree (Health: 10/10) [X: 16.48, Y: 13.87, Distance: 4.262677m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 4.400644m]
+- Tree (Health: 10/10) [X: 15.38, Y: 5.49, Distance: 4.400644m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 5.021504m]
+- Tree (Health: 10/10) [X: 17.89, Y: 5.77, Distance: 5.021504m]
+- Tree (Health: 10/10) [X: 19.62, Y: 7.73, Distance: 5.096576m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.104967m]
+- Tree (Health: 10/10) [X: 12.56, Y: 14.36, Distance: 5.104967m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 5.16085m]
+- Tree (Health: 10/10) [X: 11.74, Y: 5.87, Distance: 5.16085m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.420886m]
+- Tree (Health: 10/10) [X: 10.82, Y: 13.33, Distance: 5.420886m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.492722m]
+- Tree (Health: 10/10) [X: 9.51, Y: 10.14, Distance: 5.492722m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.505352m]
+- Tree Stump (Health: 5/5) [X: 9.65, Y: 8.56, Distance: 5.505352m]
+- Tree (Health: 10/10) [X: 14.03, Y: 15.48, Distance: 5.688782m]
+- Tree (Health: 10/10) [X: 20.98, Y: 9.859999, Distance: 5.983745m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 6.143075m]
+- Tree (Health: 10/10) [X: 12.35, Y: 4.33, Distance: 6.143075m]
+- Tree (Health: 10/10) [X: 19.85, Y: 5.77, Distance: 6.356141m]
+- Tree (Health: 10/10) [X: 20.97, Y: 12.33, Distance: 6.458943m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.532455m]
+- Tree (Health: 10/10) [X: 9.18, Y: 6.9, Distance: 6.532455m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 6.614031m]
+- Tree (Health: 10/10) [X: 14.63, Y: 3.27, Distance: 6.614031m]
+- Tree (Health: 10/10) [X: 17.63, Y: 16.04, Distance: 6.705039m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 6.776319m]
+- Tree (Health: 10/10) [X: 12.73, Y: 16.26, Distance: 6.776319m]
+- Tree (Health: 10/10) [X: 19.73999, Y: 14.99, Distance: 6.976932m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 7.09415m]
+- Tree (Health: 10/10) [X: 16.67, Y: 2.98, Distance: 7.09415m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.505747m]
+- Tree (Health: 10/10) [X: 7.61, Y: 8.54, Distance: 7.505747m]
+- Tree (Health: 10/10) [X: 19.09, Y: 3.52, Distance: 7.558467m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.612886m]
+- Tree (Health: 10/10) [X: 10.57, Y: 3.68, Distance: 7.612886m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 7.908606m]
+- Tree (Health: 10/10) [X: 10.5, Y: 16.38, Distance: 7.908606m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.093369m]
+- Tree (Health: 10/10) [X: 8.26, Y: 14.36, Distance: 8.093369m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.13724m]
+- Tree (Health: 10/10) [X: 7.34, Y: 12.63, Distance: 8.13724m]
+- Tree (Health: 10/10) [X: 22.1, Y: 5.77, Distance: 8.203951m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 8.216072m]
+- Tree (Health: 10/10) [X: 8.26, Y: 5.17, Distance: 8.216072m]
+- Tree (Health: 10/10) [X: 22.99, Y: 7.73, Distance: 8.276225m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.561659m]
+- Tree (Health: 10/10) [X: 6.5, Y: 10.93, Distance: 8.561659m]
+- Tree (Health: 10/10) [X: 12.99, Y: 18.43, Distance: 8.788188m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- Thomas Smith no longer sees Tree (937) at X: 14.03, Y: 15.48 [1 minute ago]
+- Thomas Smith no longer sees Tree (114) at X: 19.85, Y: 5.77 [1 minute ago]
+- Thomas Smith no longer sees Tree (196) at X: 22.99, Y: 7.73 [1 minute ago]
+- Thomas Smith no longer sees Tree (935) at X: 22.73, Y: 16.71 [1 minute ago]
+- Thomas Smith no longer sees Tree (207) at X: 31.24, Y: 9.42 [1 minute ago]
+- Thomas Smith no longer sees StoneOreSmall (7) at X: 35.5, Y: 18.48 [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Small) at X: 35.5, Y: 18.48. [1 minute ago]
+- Thomas Smith sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78. [1 minute ago]
+
+Available Actions:
+- [MoveTo] Move to a specific target location (X, Y). 
+-- e.g. { "type": "MoveTo", "data": { "characterId": "A1", "x": -0.6865366, "y": -1.433641 }}
+
+- [SwingAxe] Swing axe. 
+-- e.g. {"type": "SwingAxe", "data": {"characterId": "A1"}}
+
+- [DropItem] Drop Axe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "axe"}}
+
+- [SwingPickaxe] Swing pickaxe.
+
+- [DropItem] Drop Pickaxe from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "pickaxe"}}
+
+- [SwingSword] Swing sword.
+
+- [DropItem] Drop Sword from inventory to ground.
+-- e.g. {"type": "DropItem", "data": {"characterId": "A1", "itemId": "sword"}}
+
+
+Hitbox (what you would hit with a swing based action):
+- Tree (Health: 10/10)
+- Tree (Health: 10/10)
+
+Previous Actions:
+- [MoveTo]: Thomas Smith walked to X: 54.64, Y: 16.97. [1 minute ago]
+- [MoveTo]: Thomas Smith walked to X: 15.10197, Y: 9.01852. [1 minute ago]
+- [SwingAxe]: Thomas Smith swong their axe at X: 15.01058, Y: 9.17419 and hit 2 trees. [just now]
+- [MoveTo]: Thomas Smith walked to X: 35.5, Y: 18.48. [just now]
+- [MoveTo]: Thomas Smith walked to X: 35.5, Y: 18.48. [just now]
+
+Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.
+
+
+[1690658604989][33m[OPENAI] Creating chat completion...[39m

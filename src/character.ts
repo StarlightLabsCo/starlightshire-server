@@ -22,8 +22,8 @@ const createThomas = async () => {
         data: {
             id: "A1",
             name: "Thomas Smith",
-            age: 25,
-            occupation: "Lumberjack",
+            age: 32,
+            occupation: "Village Leader",
             personality: ["Brave", "Calm", "Honest"],
             tasks: {
                 create: [
