@@ -263,6 +263,7 @@ async function getAction(
         inventory: string[];
         environment: string[];
         hitbox: string[];
+        time: string;
     }
 ) {
     // counter += 1;
@@ -284,6 +285,9 @@ async function getAction(
     prompt += `- Personality: ${character.personality.join(", ")}\n\n`;
 
     prompt += `Location: ${data.location.x}, ${data.location.y}\n\n`;
+
+    prompt += `Time: ${data.time}\n\n`;
+
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
         const environment = data.environment[i];
