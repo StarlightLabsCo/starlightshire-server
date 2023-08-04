@@ -18,8 +18,6 @@ model Character {
   occupation  String
   personality String[]
 
-  tasks Task[]
-
   memories            Memory[]
   reflectionThreshold Float    @default(0)
 
@@ -45,25 +43,5 @@ model Memory {
   accessedAt DateTime @default(now())
 
   // Metadata
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-model Task {
-  id String @id @default(cuid())
-
-  characterId String?
-  character   Character? @relation(fields: [characterId], references: [id], onDelete: Cascade)
-
-  task     String
-  priority Int
-
-  parentTaskId String?
-  parentTask   Task?   @relation("TaskToSubtask", fields: [parentTaskId], references: [id])
-  subtasks     Task[]  @relation("TaskToSubtask")
-
-  // Metadata
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  completedAt DateTime?
+  time Float
 }

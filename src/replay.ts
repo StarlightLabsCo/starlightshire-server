@@ -55,7 +55,18 @@ export function loadHistory() {
     );
 
     const history = JSON.parse(historyString);
-    return history;
+
+    const setWorldCommandsString = fs.readFileSync(
+        `./data/${selectedFolder.value}/setWorldCommands.txt`,
+        "utf8"
+    );
+
+    const setWorldCommands = JSON.parse(setWorldCommandsString);
+
+    return {
+        history: history,
+        setWorldCommands: setWorldCommands,
+    };
 }
 
 wss.on("connection", async (ws) => {
@@ -68,6 +79,9 @@ wss.on("connection", async (ws) => {
 
     clients.set(ws, connectionMetadata);
 
+    const data = loadHistory();
+    let currentActionIndex = 0;
+
     ws.send(
         JSON.stringify({
             type: "ConnectionEstablished",
@@ -75,13 +89,33 @@ wss.on("connection", async (ws) => {
         })
     );
 
-    const history = loadHistory();
+    ws.on("message", async (message) => {
+        // Check if message is valid
+        if (
+            !message ||
+            message == undefined ||
+            message.toString().length === 0
+        ) {
+            console.log("No message received. Skipping...");
+            return;
+        }
 
-    for (const action of history) {
-        console.log("--- Replaying Action ---");
-        console.log(action);
-        ws.send(JSON.stringify(action));
-    }
+        // Parse message
+        const streamMessage = JSON.parse(message.toString()) as StreamMessage;
+
+        // Check if parsed message is valid
+        if (!streamMessage.type) {
+            console.log("No type received. Skipping...");
+            return;
+        }
+
+        if (streamMessage.type === "GetAction") {
+            ws.send(JSON.stringify(data.setWorldCommands[currentActionIndex])); // SetWorldTime
+            ws.send(JSON.stringify(data.history[currentActionIndex])); // Action
+        } else if (streamMessage.type === "ActionExecuted") {
+            currentActionIndex++;
+        }
+    });
 });
 
 console.log(`WebSocket server listening on port ${process.env.PORT}`);

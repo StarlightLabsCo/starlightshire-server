@@ -1,8 +1,8 @@
 import { prisma } from "../db.js";
 import { Character } from "@prisma/client";
+import colors from "colors";
 
 import { createChatCompletion, getEmbedding } from "./openai.js";
-import { getGameDate } from "../game.js";
 import { generateReflection } from "./reflection.js";
 
 import config from "../config.json" assert { type: "json" };
@@ -16,7 +16,7 @@ const getMemoryImportance = async (character: Character, memory: string) => {
     const memoryImportancePromptBase = `On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number`;
     const memoryImportancePrompt = `${memoryImportancePromptBase}\nMemory: `;
 
-    const importance = await createChatCompletion([
+    const response = await createChatCompletion([
         { role: "user", content: memoryImportancePrompt + memory },
         {
             role: "assistant",
@@ -25,7 +25,7 @@ const getMemoryImportance = async (character: Character, memory: string) => {
     ]);
 
     // Convert from string to number
-    return Number(importance);
+    return Number(response.content.trim());
 };
 
 const cosineSimilarity = (a: number[], b: number[]) => {
@@ -43,25 +43,33 @@ const cosineSimilarity = (a: number[], b: number[]) => {
 };
 
 // Storage
-const createMemory = async (character: Character, memory: string) => {
-    // Get the current gameDate, importance of the memory, and the embedding of the memory in parallel
+const createMemory = async (
+    character: Character,
+    memory: string,
+    time: number
+) => {
+    console.log(
+        colors.red("[createMemory]") +
+            " " +
+            character +
+            " " +
+            memory +
+            " " +
+            time
+    );
 
-    // Prevent infinite loops by working with latest info
     const latestCharacter = await prisma.character.findUnique({
         where: {
             id: character.id,
         },
     });
 
-    // TODO: game date? needed or not?
-    const [gameDate, importance, embedding] = await Promise.all([
-        getGameDate(),
+    const [importance, embedding] = await Promise.all([
         getMemoryImportance(latestCharacter, memory),
         getEmbedding(memory),
     ]);
 
-    // Create the memory, and update the character's reflection threshold
-    // TODO: I removed game date from here, reconsider if it's needed or not..
+    // // Create the memory, and update the character's reflection threshold
     const updatedCharacter = await prisma.character.update({
         where: {
             id: latestCharacter.id,
@@ -74,6 +82,7 @@ const createMemory = async (character: Character, memory: string) => {
                     memory,
                     embedding: embedding.toString(),
                     importance: importance,
+                    time,
                 },
             },
         },
@@ -91,7 +100,7 @@ const createMemory = async (character: Character, memory: string) => {
         });
 
         // Generate reflection
-        generateReflection(character);
+        generateReflection(character, time);
     }
 };
 
@@ -104,7 +113,7 @@ const getLatestMemories = async (character: Character, top_k: number) => {
             id: character.id,
         },
         orderBy: {
-            createdAt: "desc",
+            time: "desc",
         },
         take: top_k,
     });
@@ -114,36 +123,43 @@ const getLatestMemories = async (character: Character, top_k: number) => {
 
 // Returns all the memories from a specific game date
 // This is used by the system to summarize a day, for planning and as such shouldn't update the accessedAt field
-const getAllMemoriesFromDay = async (character: Character, gameDate: Date) => {
-    // TODO: I replaced game date with createdAt, but need to refactor this whole section
-    const memories = await prisma.memory.findMany({
-        where: {
-            id: character.id,
-            createdAt: {
-                gte: new Date(
-                    gameDate.getFullYear(),
-                    gameDate.getMonth(),
-                    gameDate.getDate()
-                ),
-                lt: new Date(
-                    gameDate.getFullYear(),
-                    gameDate.getMonth(),
-                    gameDate.getDate() + 1
-                ),
-            },
-        },
-    });
+// const getAllMemoriesFromDay = async (character: Character, gameDate: Date) => {
+//     // TODO: I replaced game date with createdAt, but need to refactor this whole section
+//     const memories = await prisma.memory.findMany({
+//         where: {
+//             id: character.id,
+//             createdAt: {
+//                 gte: new Date(
+//                     gameDate.getFullYear(),
+//                     gameDate.getMonth(),
+//                     gameDate.getDate()
+//                 ),
+//                 lt: new Date(
+//                     gameDate.getFullYear(),
+//                     gameDate.getMonth(),
+//                     gameDate.getDate() + 1
+//                 ),
+//             },
+//         },
+//     });
 
-    return memories;
-};
+//     return memories;
+// };
+
+function clamp(num, min, max) {
+    return num <= min ? min : num >= max ? max : num;
+}
 
 function calculateMaxMemoriesForTask(priority) {
     // Assuming priority is a number that is greater for less important tasks
     // You can modify this function according to your logic
-    const maxPriority = 5; // Replace this with the maximum priority value in your system
+    const maxPriority = 8; // Replace this with the maximum priority value in your system
     const maxMemories = 10; // Replace this with the maximum number of memories you want to fetch
 
-    return Math.round(((maxPriority - priority) / maxPriority) * maxMemories);
+    return Math.round(
+        ((maxPriority + 1 - clamp(priority, 0, maxPriority)) / maxPriority) *
+            maxMemories
+    );
 }
 
 // Returns relevant memories using the noramlized similarity, importance, and recency, and updates the accessedAt field if updateAccessedAt is true
@@ -282,6 +298,5 @@ export {
     createMemory,
     getLatestMemories,
     calculateMaxMemoriesForTask,
-    getAllMemoriesFromDay,
     getRelevantMemories,
 };

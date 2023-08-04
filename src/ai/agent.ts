@@ -1,21 +1,17 @@
 import { Action } from "../actions.js";
 import { getCharacter } from "../character.js";
-import { extractJSON } from "../utils.js";
+import { convertTimeToString, extractJSON, getRelativeTime } from "../utils.js";
 import { calculateMaxMemoriesForTask, getRelevantMemories } from "./memory.js";
 import { createChatCompletion } from "./openai.js";
 import * as fs from "fs";
+import colors from "colors";
 
-import TimeAgo from "javascript-time-ago";
-import en from "javascript-time-ago/locale/en";
 import { getUnfinishedTasks, updateTasks } from "./task.js";
 
 import { log, setLogFile } from "../logger.js";
 
-TimeAgo.addDefaultLocale(en);
-
-const timeAgo = new TimeAgo("en-US");
-
 const actionHistory = [];
+const actionSetWorldCommands = [];
 const actionResults = [];
 
 const replayTimestamp = new Date();
@@ -24,6 +20,9 @@ setLogFile(`./data/${replayTimestamp.getTime()}/log.txt`);
 
 // get string input from user to describe the run
 import { createInterface } from "readline";
+import { Memory } from "@prisma/client";
+import OpenAI from "openai";
+import { exit } from "process";
 
 const rl = createInterface({
     input: process.stdin,
@@ -47,12 +46,13 @@ async function saveActionResult(
     data: {
         characterId: string;
         result: string;
+        resultTime: number;
     }
 ) {
     actionResults.push({
         characterId: data.characterId,
         result: data.result,
-        timestamp: new Date(),
+        time: data.resultTime,
     });
     const historyString = JSON.stringify(actionResults, null, 2);
     fs.writeFileSync(
@@ -71,6 +71,7 @@ async function updateTaskList(data: {
     inventory: string[];
     environment: string[];
     hitbox: string[];
+    time: number;
 }) {
     // -- Get Action --
     const character = await getCharacter(data.characterId);
@@ -84,6 +85,9 @@ async function updateTaskList(data: {
     prompt += `- Personality: ${character.personality.join(", ")}\n\n`;
 
     prompt += `Location: ${data.location.x}, ${data.location.y}\n\n`;
+
+    prompt += `Time: ${convertTimeToString(data.time)}\n\n`;
+
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
         const environment = data.environment[i];
@@ -128,7 +132,6 @@ async function updateTaskList(data: {
             const taskObj = {
                 task: task.task,
                 priority: task.priority,
-                // createdAt: timeAgo.format(task.createdAt),
             };
 
             tasksArray.push(taskObj);
@@ -145,7 +148,7 @@ async function updateTaskList(data: {
 
             for (let j = 0; j < memories.length; j++) {
                 const memory = memories[j];
-                const memoryKey = memory.memory + memory.createdAt;
+                const memoryKey = memory.memory + memory.time;
                 if (!memorySet.has(memoryKey)) {
                     memorySet.add(memoryKey);
                     allMemories.push(memory);
@@ -157,17 +160,18 @@ async function updateTaskList(data: {
     }
 
     allMemories.sort((a, b) => {
-        return a.createdAt.getTime() - b.createdAt.getTime();
+        return a.createdAt - b.createdAt;
     });
 
-    let numMemories = allMemories.length > 10 ? 10 : allMemories.length;
+    let numMemories = allMemories.length > 15 ? 15 : allMemories.length;
 
     if (allMemories.length > 0) {
         prompt += `Memories:\n`;
         for (let i = 0; i < numMemories; i++) {
             const memory = allMemories[i];
-            prompt += `- ${memory.memory} [${timeAgo.format(
-                memory.createdAt
+            prompt += `- ${memory.memory} [${getRelativeTime(
+                memory.time,
+                data.time
             )}]\n`;
         }
         prompt += "\n";
@@ -179,8 +183,8 @@ async function updateTaskList(data: {
     const availableActionsSet = new Set(data.availableActions);
     data.availableActions = Array.from(availableActionsSet);
     for (let i = 0; i < data.availableActions.length; i++) {
-        const action = data.availableActions[i];
-        prompt += `- ${action}\n\n`;
+        const action = JSON.parse(data.availableActions[i]);
+        prompt += `- ${action.name}: ${action.description}\n`;
     }
     prompt += "\n";
 
@@ -203,14 +207,15 @@ async function updateTaskList(data: {
         ) {
             const action = actionHistory[i];
             const result = actionResults[i];
-            prompt += `- [${action.type}]: ${result.result} [${timeAgo.format(
-                result.timestamp
+            prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
+                result.time,
+                data.time
             )}]\n`;
         }
         prompt += "\n";
     }
 
-    prompt += `Given the available information, update your task list. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible.`;
+    prompt += `Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.`;
 
     let generationAttempts = 0;
     while (generationAttempts < 10) {
@@ -233,7 +238,7 @@ async function updateTaskList(data: {
             log("Updated Tasks: ");
 
             // use regex to select a JSON array
-            const taskArray = response.match(/\[.*\]/s)[0];
+            const taskArray = response.content.match(/\[.*\]/s)[0];
 
             const tasksJSON = JSON.parse(taskArray);
 
@@ -249,7 +254,7 @@ async function updateTaskList(data: {
     }
 }
 
-let counter = 0;
+let count = 5;
 
 async function getAction(
     ws: WebSocket,
@@ -263,14 +268,16 @@ async function getAction(
         inventory: string[];
         environment: string[];
         hitbox: string[];
-        time: string;
+        time: number;
     }
 ) {
-    // counter += 1;
+    if (count === 5) {
+        await updateTaskList(data);
 
-    // if (counter % 5 === 0) {
-    //     await updateTaskList(data);
-    // }
+        count = 0;
+    } else {
+        count++;
+    }
 
     // -- Get Action --
     const character = await getCharacter(data.characterId);
@@ -286,7 +293,7 @@ async function getAction(
 
     prompt += `Location: ${data.location.x}, ${data.location.y}\n\n`;
 
-    prompt += `Time: ${data.time}\n\n`;
+    prompt += `Time: ${convertTimeToString(data.time)}\n\n`;
 
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
@@ -320,7 +327,7 @@ async function getAction(
     }
 
     const tasks = await getUnfinishedTasks(character);
-    const allMemories = [];
+    const allMemories = [] as Memory[];
     const memorySet = new Set(); // A set to store unique memories
 
     let tasksArray = []; // An array to store task objects
@@ -332,7 +339,6 @@ async function getAction(
             const taskObj = {
                 task: task.task,
                 priority: task.priority,
-                // createdAt: timeAgo.format(task.createdAt),
             };
 
             tasksArray.push(taskObj); // Add each task object to the array
@@ -349,10 +355,10 @@ async function getAction(
 
             for (let j = 0; j < memories.length; j++) {
                 const memory = memories[j];
-                const memoryKey = memory.memory + memory.createdAt;
+                const memoryKey = memory.memory + memory.time;
                 if (!memorySet.has(memoryKey)) {
                     memorySet.add(memoryKey);
-                    allMemories.push(memory);
+                    allMemories.push(memory as unknown as Memory);
                 }
             }
         }
@@ -361,7 +367,7 @@ async function getAction(
     }
 
     allMemories.sort((a, b) => {
-        return a.createdAt.getTime() - b.createdAt.getTime();
+        return a.time - b.time;
     });
 
     let numMemories = allMemories.length > 10 ? 10 : allMemories.length;
@@ -374,23 +380,13 @@ async function getAction(
             i--
         ) {
             const memory = allMemories[i];
-            prompt += `- ${memory.memory} [${timeAgo.format(
-                memory.createdAt
+            prompt += `- ${memory.memory} [${getRelativeTime(
+                memory.time,
+                data.time
             )}]\n`;
         }
         prompt += "\n";
     }
-
-    prompt += `Available Actions:\n`;
-
-    // Turn the available actions string array into a set to remove duplicates
-    const availableActionsSet = new Set(data.availableActions);
-    data.availableActions = Array.from(availableActionsSet);
-    for (let i = 0; i < data.availableActions.length; i++) {
-        const action = data.availableActions[i];
-        prompt += `- ${action}\n\n`;
-    }
-    prompt += "\n";
 
     if (data.hitbox.length > 0) {
         prompt += `Hitbox (what you would hit with a swing based action):\n`;
@@ -411,14 +407,15 @@ async function getAction(
         ) {
             const action = actionHistory[i];
             const result = actionResults[i];
-            prompt += `- [${action.type}]: ${result.result} [${timeAgo.format(
-                result.timestamp
+            prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
+                result.time,
+                data.time
             )}]\n`;
         }
         prompt += "\n";
     }
 
-    prompt += `Given the available information, pick the best available action to accomplish your tasks. Respond in JSON: { type: [ActionType], data: {characterId optional parameters}}. Please note that if an action is in the available items list, you can execute it immediately, without needing to change or move. First you should list your reasoning and create a plan, and then using that plan, select an action and create a JSON object for that action with the necessary info. The JSON object must be immediately after "Action: " as we're using regex to parse it.\n\n`;
+    prompt += `Given the available information, pick the best available action function to accomplish your tasks.\n\n`;
 
     let generationAttempts = 0;
     while (generationAttempts < 10) {
@@ -426,28 +423,62 @@ async function getAction(
             log("--- Prompt ---");
             log(prompt);
 
-            const response = await createChatCompletion([
-                {
-                    role: "user",
-                    content: prompt,
-                },
-                {
-                    role: "assistant",
-                    content: "Plan:",
-                },
-            ]);
+            // Turn the available actions string array into a set to remove duplicates
+            const availableActionsSet = new Set(data.availableActions);
+            data.availableActions = Array.from(availableActionsSet);
 
-            log("--- Response ---");
-            log("Plan: ");
-            log(response);
+            let actions: OpenAI.Chat.Completions.CompletionCreateParams.CreateChatCompletionRequestNonStreaming.Function[] =
+                [];
 
-            const actionJSON = extractJSON(response);
+            for (let i = 0; i < data.availableActions.length; i++) {
+                let action = JSON.parse(data.availableActions[i]);
 
-            if (actionJSON === null) {
-                throw new Error("No valid JSON object found in response");
+                actions.push({
+                    name: action.name,
+                    description: action.description,
+                    parameters: JSON.parse(action.parameters),
+                });
             }
+            prompt += "\n";
+
+            log(colors.blue("[OPENAI] Actions:"));
+            log(actions);
+
+            const response = await createChatCompletion(
+                [
+                    {
+                        role: "system",
+                        content:
+                            "You must select a function to call, and you can only call functions that have been provided. Do not provide any additional explanation.",
+                    },
+                    {
+                        role: "user",
+                        content: prompt,
+                    },
+                ],
+                actions
+            );
+
+            console.log(response);
+
+            let type = response.function_call.name;
+            if (type.startsWith("drop")) {
+                type = "drop";
+            } else if (type.startsWith("add")) {
+                type = "add_to_chest";
+            } else if (type.startsWith("remove")) {
+                type = "remove_from_chest";
+            }
+
+            const action = {
+                type,
+                data: JSON.parse(response.function_call.arguments),
+            };
+
+            console.log(action);
+
             // Verify action schema
-            const verifiedAction = Action.parse(actionJSON);
+            const verifiedAction = Action.parse(action);
 
             log("--- Verified Action ---");
             log(verifiedAction);
@@ -455,6 +486,26 @@ async function getAction(
             ws.send(JSON.stringify(verifiedAction));
 
             // --- History --
+            actionSetWorldCommands.push({
+                type: "SetWorldTime",
+                data: {
+                    time: Number(data.time),
+                },
+            });
+
+            const setWorldCommands = JSON.stringify(
+                actionSetWorldCommands,
+                null,
+                2
+            );
+
+            fs.writeFileSync(
+                `./data/${replayTimestamp.getTime()}/setWorldCommands.txt`,
+                setWorldCommands
+            );
+
+            // ----
+
             actionHistory.push(verifiedAction);
             const historyString = JSON.stringify(actionHistory, null, 2);
 

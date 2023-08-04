@@ -13,7 +13,8 @@ if (!config.model) throw new Error("No model provided in config.json");
 
 const answerReflectionQuestion = async (
     character: Character,
-    reflectionQuestion: string
+    reflectionQuestion: string,
+    time: number
 ) => {
     log(colors.yellow("[REFLECTION] Answering reflection question..."));
 
@@ -44,7 +45,7 @@ const answerReflectionQuestion = async (
         { role: "user", content: reflectionPrompt },
     ]);
 
-    const reflections = completion
+    const reflections = completion.content
         .replace(/[0-9]. /g, "")
         .trim()
         .split("\n");
@@ -52,7 +53,7 @@ const answerReflectionQuestion = async (
     for (let i = 0; i < reflections.length; i++) {
         if (reflections[i].trim().length === 0) continue;
 
-        createMemory(character, reflections[i]);
+        createMemory(character, reflections[i], time);
     }
 
     log(
@@ -62,7 +63,7 @@ const answerReflectionQuestion = async (
     );
 };
 
-const generateReflection = async (character: Character) => {
+const generateReflection = async (character: Character, time: number) => {
     log(colors.yellow("Generating reflection..."));
 
     const memories = await getLatestMemories(character, 100);
@@ -90,7 +91,7 @@ const generateReflection = async (character: Character) => {
         .split("\n");
 
     for (let i = 0; i < reflectionQuestionsParsed.length; i++) {
-        answerReflectionQuestion(character, reflectionQuestionsParsed[i]);
+        answerReflectionQuestion(character, reflectionQuestionsParsed[i], time);
     }
 
     log(colors.green("[REFLECTION] Reflection generation completed."));

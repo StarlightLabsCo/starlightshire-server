@@ -7,6 +7,7 @@ async function observe(
     data: {
         observerId: string;
         observation: string;
+        time: number;
     }
 ) {
     log("--- Observations received -- ");
@@ -19,7 +20,7 @@ async function observe(
         return;
     }
 
-    await createMemory(character, data.observation);
+    await createMemory(character, data.observation, data.time);
 }
 
 export { observe };

@@ -1,6 +1,6 @@
 import { getCharacter } from "../character.js";
 import { getGameDate } from "../game.js";
-import { getAllMemoriesFromDay, getRelevantMemories } from "./memory.js";
+import { getRelevantMemories } from "./memory.js";
 import config from "../config.json" assert { type: "json" };
 import { Character } from "@prisma/client";
 import { prisma } from "../db.js";
@@ -15,16 +15,16 @@ const generatePlan = async (character: Character) => {
     // Generate the agent summary
     const agentSummary = await generateAgentSummary(character);
 
-    // Generate summary of the previous day
-    const previousDaySummary = await generateDaySummary(
-        character,
-        new Date(gameDate.getTime() - 86400000)
-    );
+    // // Generate summary of the previous day
+    // const previousDaySummary = await generateDaySummary(
+    //     character,
+    //     new Date(gameDate.getTime() - 86400000)
+    // );
 
     // Create the planning prompt
     let planningPrompt;
     planningPrompt += agentSummary;
-    planningPrompt += previousDaySummary;
+    // planningPrompt += previousDaySummary;
     planningPrompt +=
         "Today is " +
         "Wed May 6th, 2023" +
@@ -116,29 +116,29 @@ const generateAgentSummary = async (character: Character) => {
 };
 
 // Day Summary
-const generateDaySummary = async (character: Character, gameDate: Date) => {
-    // Get the character's name, and all the memories from the day
-    const memories = await getAllMemoriesFromDay(character, gameDate);
+// const generateDaySummary = async (character: Character, gameDate: Date) => {
+//     // Get the character's name, and all the memories from the day
+//     const memories = await getAllMemoriesFromDay(character, gameDate);
 
-    // Generate the summary prompt
-    let summary: string;
-    summary += `Date: ${gameDate}\n`;
-    summary += `Memories:\n`;
-    for (let i = 0; i < memories.length; i++) {
-        const memory = memories[i];
-        summary += `${i + 1}. ${memory.memory}\n`;
-    }
+//     // Generate the summary prompt
+//     let summary: string;
+//     summary += `Date: ${gameDate}\n`;
+//     summary += `Memories:\n`;
+//     for (let i = 0; i < memories.length; i++) {
+//         const memory = memories[i];
+//         summary += `${i + 1}. ${memory.memory}\n`;
+//     }
 
-    // Generate the summary
-    const completion = await createChatCompletion([
-        { role: "user", content: summary },
-        {
-            role: "assistant",
-            content: `Here is ${character.name}'s summary for the day:`,
-        },
-    ]);
+//     // Generate the summary
+//     const completion = await createChatCompletion([
+//         { role: "user", content: summary },
+//         {
+//             role: "assistant",
+//             content: `Here is ${character.name}'s summary for the day:`,
+//         },
+//     ]);
 
-    return completion;
-};
+//     return completion;
+// };
 
-export { generatePlan, generateDaySummary, generateAgentSummary };
+export { generatePlan, generateAgentSummary }; // generateDaySummary,

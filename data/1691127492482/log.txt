@@ -1,0 +1,3913 @@
+[1691127496130][33m[OPENAI] Creating chat completion...[39m
+[1691127496133][33m[OPENAI] Creating embedding...[39m
+[1691127496134][33m[OPENAI] Creating chat completion...[39m
+[1691127496134][33m[OPENAI] Creating embedding...[39m
+[1691127496134][33m[OPENAI] Creating chat completion...[39m
+[1691127496134][33m[OPENAI] Creating embedding...[39m
+[1691127496135][33m[OPENAI] Creating chat completion...[39m
+[1691127496135][33m[OPENAI] Creating embedding...[39m
+[1691127496135][33m[OPENAI] Creating chat completion...[39m
+[1691127496135][33m[OPENAI] Creating embedding...[39m
+[1691127496135][33m[OPENAI] Creating chat completion...[39m
+[1691127496135][33m[OPENAI] Creating embedding...[39m
+[1691127496135][33m[OPENAI] Creating chat completion...[39m
+[1691127496135][33m[OPENAI] Creating embedding...[39m
+[1691127496135][33m[OPENAI] Creating chat completion...[39m
+[1691127496135][33m[OPENAI] Creating embedding...[39m
+[1691127496135][33m[OPENAI] Creating chat completion...[39m
+[1691127496136][33m[OPENAI] Creating embedding...[39m
+[1691127496136][33m[OPENAI] Creating chat completion...[39m
+[1691127496136][33m[OPENAI] Creating embedding...[39m
+[1691127496136][33m[OPENAI] Creating chat completion...[39m
+[1691127496136][33m[OPENAI] Creating embedding...[39m
+[1691127496136][33m[OPENAI] Creating chat completion...[39m
+[1691127496136][33m[OPENAI] Creating embedding...[39m
+[1691127496136][33m[OPENAI] Creating chat completion...[39m
+[1691127496136][33m[OPENAI] Creating embedding...[39m
+[1691127496136][33m[OPENAI] Creating chat completion...[39m
+[1691127496136][33m[OPENAI] Creating embedding...[39m
+[1691127496261]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474032b4996b1-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "173",
+    "x-ratelimit-remaining-tokens": "39814",
+    "x-ratelimit-reset-requests": "8.041s",
+    "x-ratelimit-reset-tokens": "278ms",
+    "x-request-id": "7ef0ab096794ee41edb12fc6d33994f1"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496261][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 1)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474032b4996b1-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '173',[39m
+[31m    'x-ratelimit-remaining-tokens': '39814',[39m
+[31m    'x-ratelimit-reset-requests': '8.041s',[39m
+[31m    'x-ratelimit-reset-tokens': '278ms',[39m
+[31m    'x-request-id': '7ef0ab096794ee41edb12fc6d33994f1'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496262][31mFailed to create chat completion. Retrying...[39m
+[1691127496275]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474033d74fa32-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "3",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "171",
+    "x-ratelimit-remaining-tokens": "39642",
+    "x-ratelimit-reset-requests": "8.64s",
+    "x-ratelimit-reset-tokens": "536ms",
+    "x-request-id": "eba4e1769b24189067fd9b75576751bd"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496275][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 6)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474033d74fa32-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '3',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '171',[39m
+[31m    'x-ratelimit-remaining-tokens': '39642',[39m
+[31m    'x-ratelimit-reset-requests': '8.64s',[39m
+[31m    'x-ratelimit-reset-tokens': '536ms',[39m
+[31m    'x-request-id': 'eba4e1769b24189067fd9b75576751bd'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496275][31mFailed to create chat completion. Retrying...[39m
+[1691127496277]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f14740328c8156b-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "174",
+    "x-ratelimit-remaining-tokens": "39899",
+    "x-ratelimit-reset-requests": "7.748s",
+    "x-ratelimit-reset-tokens": "151ms",
+    "x-request-id": "63196248232c1b8afa8881e8912ea59c"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496277][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 13)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f14740328c8156b-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '174',[39m
+[31m    'x-ratelimit-remaining-tokens': '39899',[39m
+[31m    'x-ratelimit-reset-requests': '7.748s',[39m
+[31m    'x-ratelimit-reset-tokens': '151ms',[39m
+[31m    'x-request-id': '63196248232c1b8afa8881e8912ea59c'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496277][31mFailed to create chat completion. Retrying...[39m
+[1691127496279]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f14740349d7aab2-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "6",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "161",
+    "x-ratelimit-remaining-tokens": "38773",
+    "x-ratelimit-reset-requests": "11.623s",
+    "x-ratelimit-reset-tokens": "1.839s",
+    "x-request-id": "1ec25d5db45cf5e1a795b83d83852914"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496279][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 11)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f14740349d7aab2-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '6',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '161',[39m
+[31m    'x-ratelimit-remaining-tokens': '38773',[39m
+[31m    'x-ratelimit-reset-requests': '11.623s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.839s',[39m
+[31m    'x-request-id': '1ec25d5db45cf5e1a795b83d83852914'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496279][31mFailed to create chat completion. Retrying...[39m
+[1691127496293]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474033ad1d049-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "169",
+    "x-ratelimit-remaining-tokens": "39471",
+    "x-ratelimit-reset-requests": "9.234s",
+    "x-ratelimit-reset-tokens": "792ms",
+    "x-request-id": "76aed9a9340b3649cfa41d302e7f4f67"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496294][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 5)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474033ad1d049-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '169',[39m
+[31m    'x-ratelimit-remaining-tokens': '39471',[39m
+[31m    'x-ratelimit-reset-requests': '9.234s',[39m
+[31m    'x-ratelimit-reset-tokens': '792ms',[39m
+[31m    'x-request-id': '76aed9a9340b3649cfa41d302e7f4f67'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496294][31mFailed to create chat completion. Retrying...[39m
+[1691127496295]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403294af977-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "172",
+    "x-ratelimit-remaining-tokens": "39727",
+    "x-ratelimit-reset-requests": "8.34s",
+    "x-ratelimit-reset-tokens": "408ms",
+    "x-request-id": "e50de66b37fda980aecffe1af2a56695"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496296][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403294af977-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '172',[39m
+[31m    'x-ratelimit-remaining-tokens': '39727',[39m
+[31m    'x-ratelimit-reset-requests': '8.34s',[39m
+[31m    'x-ratelimit-reset-tokens': '408ms',[39m
+[31m    'x-request-id': 'e50de66b37fda980aecffe1af2a56695'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496296][31mFailed to create chat completion. Retrying...[39m
+[1691127496298]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474033df315fb-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "168",
+    "x-ratelimit-remaining-tokens": "39377",
+    "x-ratelimit-reset-requests": "9.533s",
+    "x-ratelimit-reset-tokens": "934ms",
+    "x-request-id": "52128b529cb519f813ea3124b284653d"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496298][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 12)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474033df315fb-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '168',[39m
+[31m    'x-ratelimit-remaining-tokens': '39377',[39m
+[31m    'x-ratelimit-reset-requests': '9.533s',[39m
+[31m    'x-ratelimit-reset-tokens': '934ms',[39m
+[31m    'x-request-id': '52128b529cb519f813ea3124b284653d'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496298][31mFailed to create chat completion. Retrying...[39m
+[1691127496300]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474033cae97e7-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "3",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "167",
+    "x-ratelimit-remaining-tokens": "39289",
+    "x-ratelimit-reset-requests": "9.832s",
+    "x-ratelimit-reset-tokens": "1.065s",
+    "x-request-id": "4345de1855901de15be20e1e7690c7bf"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496300][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 3)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474033cae97e7-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '3',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '167',[39m
+[31m    'x-ratelimit-remaining-tokens': '39289',[39m
+[31m    'x-ratelimit-reset-requests': '9.832s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.065s',[39m
+[31m    'x-request-id': '4345de1855901de15be20e1e7690c7bf'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496300][31mFailed to create chat completion. Retrying...[39m
+[1691127496302]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474033ba41584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "170",
+    "x-ratelimit-remaining-tokens": "39553",
+    "x-ratelimit-reset-requests": "8.939s",
+    "x-ratelimit-reset-tokens": "670ms",
+    "x-request-id": "a4a5eb261424bf6deca2cb79873211f6"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496302][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 2)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474033ba41584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '170',[39m
+[31m    'x-ratelimit-remaining-tokens': '39553',[39m
+[31m    'x-ratelimit-reset-requests': '8.939s',[39m
+[31m    'x-ratelimit-reset-tokens': '670ms',[39m
+[31m    'x-request-id': 'a4a5eb261424bf6deca2cb79873211f6'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496302][31mFailed to create chat completion. Retrying...[39m
+[1691127496304]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474034d1a17da-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "166",
+    "x-ratelimit-remaining-tokens": "39203",
+    "x-ratelimit-reset-requests": "10.131s",
+    "x-ratelimit-reset-tokens": "1.195s",
+    "x-request-id": "1d348f93e29960d806e4482f4fb49c74"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496304][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 9)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474034d1a17da-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '166',[39m
+[31m    'x-ratelimit-remaining-tokens': '39203',[39m
+[31m    'x-ratelimit-reset-requests': '10.131s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.195s',[39m
+[31m    'x-request-id': '1d348f93e29960d806e4482f4fb49c74'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496304][31mFailed to create chat completion. Retrying...[39m
+[1691127496306]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474034b9f96a8-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "165",
+    "x-ratelimit-remaining-tokens": "39117",
+    "x-ratelimit-reset-requests": "10.431s",
+    "x-ratelimit-reset-tokens": "1.324s",
+    "x-request-id": "2397e7fb93cfae272de5c5e51d3a8d41"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496306][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 8)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474034b9f96a8-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '165',[39m
+[31m    'x-ratelimit-remaining-tokens': '39117',[39m
+[31m    'x-ratelimit-reset-requests': '10.431s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.324s',[39m
+[31m    'x-request-id': '2397e7fb93cfae272de5c5e51d3a8d41'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496307][31mFailed to create chat completion. Retrying...[39m
+[1691127496308]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474034eb6230c-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "164",
+    "x-ratelimit-remaining-tokens": "39032",
+    "x-ratelimit-reset-requests": "10.729s",
+    "x-ratelimit-reset-tokens": "1.45s",
+    "x-request-id": "28e7d28325b28657c1a2bbf66ac06c51"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496308][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 10)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474034eb6230c-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '164',[39m
+[31m    'x-ratelimit-remaining-tokens': '39032',[39m
+[31m    'x-ratelimit-reset-requests': '10.729s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.45s',[39m
+[31m    'x-request-id': '28e7d28325b28657c1a2bbf66ac06c51'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496308][31mFailed to create chat completion. Retrying...[39m
+[1691127496310]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f14740349d1159c-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "163",
+    "x-ratelimit-remaining-tokens": "38945",
+    "x-ratelimit-reset-requests": "11.029s",
+    "x-ratelimit-reset-tokens": "1.581s",
+    "x-request-id": "e197d42d976abc92dad2fb41bf5032e2"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496311][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 7)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f14740349d1159c-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '163',[39m
+[31m    'x-ratelimit-remaining-tokens': '38945',[39m
+[31m    'x-ratelimit-reset-requests': '11.029s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.581s',[39m
+[31m    'x-request-id': 'e197d42d976abc92dad2fb41bf5032e2'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496311][31mFailed to create chat completion. Retrying...[39m
+[1691127496313]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474034bab1584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "162",
+    "x-ratelimit-remaining-tokens": "38861",
+    "x-ratelimit-reset-requests": "11.326s",
+    "x-ratelimit-reset-tokens": "1.707s",
+    "x-request-id": "0b565b5664e93d3eb22fea744f8bfe06"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496313][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 4)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474034bab1584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '162',[39m
+[31m    'x-ratelimit-remaining-tokens': '38861',[39m
+[31m    'x-ratelimit-reset-requests': '11.326s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.707s',[39m
+[31m    'x-request-id': '0b565b5664e93d3eb22fea744f8bfe06'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496314][31mFailed to create chat completion. Retrying...[39m
+[1691127496321][32m[OPENAI] Embedding created successfully.[39m
+[1691127496328][32m[OPENAI] Embedding created successfully.[39m
+[1691127496334][32m[OPENAI] Embedding created successfully.[39m
+[1691127496335][32m[OPENAI] Embedding created successfully.[39m
+[1691127496344][32m[OPENAI] Embedding created successfully.[39m
+[1691127496347][32m[OPENAI] Embedding created successfully.[39m
+[1691127496347][32m[OPENAI] Embedding created successfully.[39m
+[1691127496348][32m[OPENAI] Embedding created successfully.[39m
+[1691127496353][32m[OPENAI] Embedding created successfully.[39m
+[1691127496354][32m[OPENAI] Embedding created successfully.[39m
+[1691127496355]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403ca76aab2-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "157",
+    "x-ratelimit-remaining-tokens": "38461",
+    "x-ratelimit-reset-requests": "12.744s",
+    "x-ratelimit-reset-tokens": "2.307s",
+    "x-request-id": "6941eda4d1a9919c934bb7d520604a54"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496355][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 11)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403ca76aab2-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '157',[39m
+[31m    'x-ratelimit-remaining-tokens': '38461',[39m
+[31m    'x-ratelimit-reset-requests': '12.744s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.307s',[39m
+[31m    'x-request-id': '6941eda4d1a9919c934bb7d520604a54'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496355][31mFailed to create chat completion. Retrying...[39m
+[1691127496356][32m[OPENAI] Embedding created successfully.[39m
+[1691127496357]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403c964156b-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "159",
+    "x-ratelimit-remaining-tokens": "38629",
+    "x-ratelimit-reset-requests": "12.154s",
+    "x-ratelimit-reset-tokens": "2.056s",
+    "x-request-id": "b037b715662caa068727df6c2d8f1fdc"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496357][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 13)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403c964156b-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '159',[39m
+[31m    'x-ratelimit-remaining-tokens': '38629',[39m
+[31m    'x-ratelimit-reset-requests': '12.154s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.056s',[39m
+[31m    'x-request-id': 'b037b715662caa068727df6c2d8f1fdc'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496357][31mFailed to create chat completion. Retrying...[39m
+[1691127496360]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403abb596b1-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "160",
+    "x-ratelimit-remaining-tokens": "38720",
+    "x-ratelimit-reset-requests": "11.869s",
+    "x-ratelimit-reset-tokens": "1.919s",
+    "x-request-id": "ea4b39829f33ce1dfd4f2988d7525206"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496360][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 1)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403abb596b1-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '160',[39m
+[31m    'x-ratelimit-remaining-tokens': '38720',[39m
+[31m    'x-ratelimit-reset-requests': '11.869s',[39m
+[31m    'x-ratelimit-reset-tokens': '1.919s',[39m
+[31m    'x-request-id': 'ea4b39829f33ce1dfd4f2988d7525206'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496360][31mFailed to create chat completion. Retrying...[39m
+[1691127496361][32m[OPENAI] Embedding created successfully.[39m
+[1691127496373][32m[OPENAI] Embedding created successfully.[39m
+[1691127496375]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403ec4d1584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "153",
+    "x-ratelimit-remaining-tokens": "38118",
+    "x-ratelimit-reset-requests": "13.921s",
+    "x-ratelimit-reset-tokens": "2.821s",
+    "x-request-id": "31c50705788b639f6fbdbeb4944ffe67"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496376][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 2)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403ec4d1584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '153',[39m
+[31m    'x-ratelimit-remaining-tokens': '38118',[39m
+[31m    'x-ratelimit-reset-requests': '13.921s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.821s',[39m
+[31m    'x-request-id': '31c50705788b639f6fbdbeb4944ffe67'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496376][31mFailed to create chat completion. Retrying...[39m
+[1691127496378]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403be0efa32-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "158",
+    "x-ratelimit-remaining-tokens": "38544",
+    "x-ratelimit-reset-requests": "12.454s",
+    "x-ratelimit-reset-tokens": "2.183s",
+    "x-request-id": "090c6ba23065814e5414f27fd2d254b4"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496379][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 6)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403be0efa32-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '158',[39m
+[31m    'x-ratelimit-remaining-tokens': '38544',[39m
+[31m    'x-ratelimit-reset-requests': '12.454s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.183s',[39m
+[31m    'x-request-id': '090c6ba23065814e5414f27fd2d254b4'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496379][31mFailed to create chat completion. Retrying...[39m
+[1691127496388]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403faa4159c-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "148",
+    "x-ratelimit-remaining-tokens": "37690",
+    "x-ratelimit-reset-requests": "15.413s",
+    "x-ratelimit-reset-tokens": "3.464s",
+    "x-request-id": "62c5ffcc1571ac664baf62bb3241a4ca"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496388][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 7)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403faa4159c-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '148',[39m
+[31m    'x-ratelimit-remaining-tokens': '37690',[39m
+[31m    'x-ratelimit-reset-requests': '15.413s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.464s',[39m
+[31m    'x-request-id': '62c5ffcc1571ac664baf62bb3241a4ca'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496389][31mFailed to create chat completion. Retrying...[39m
+[1691127496393]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403db63d049-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "156",
+    "x-ratelimit-remaining-tokens": "38382",
+    "x-ratelimit-reset-requests": "13.034s",
+    "x-ratelimit-reset-tokens": "2.425s",
+    "x-request-id": "0837506f4d6de47d97000426ebe17065"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496394][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 5)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403db63d049-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '156',[39m
+[31m    'x-ratelimit-remaining-tokens': '38382',[39m
+[31m    'x-ratelimit-reset-requests': '13.034s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.425s',[39m
+[31m    'x-request-id': '0837506f4d6de47d97000426ebe17065'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496395][31mFailed to create chat completion. Retrying...[39m
+[1691127496396][32m[OPENAI] Embedding created successfully.[39m
+[1691127496397]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403ef4a15fb-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "154",
+    "x-ratelimit-remaining-tokens": "38203",
+    "x-ratelimit-reset-requests": "13.629s",
+    "x-ratelimit-reset-tokens": "2.694s",
+    "x-request-id": "6cd4d67d87833e1c6ca021eed5934bf0"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496398][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 12)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403ef4a15fb-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '154',[39m
+[31m    'x-ratelimit-remaining-tokens': '38203',[39m
+[31m    'x-ratelimit-reset-requests': '13.629s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.694s',[39m
+[31m    'x-request-id': '6cd4d67d87833e1c6ca021eed5934bf0'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496398][31mFailed to create chat completion. Retrying...[39m
+[1691127496399]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403da14f977-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "155",
+    "x-ratelimit-remaining-tokens": "38295",
+    "x-ratelimit-reset-requests": "13.334s",
+    "x-ratelimit-reset-tokens": "2.557s",
+    "x-request-id": "4c1bbd060b405d3f583eeda1753acc79"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496399][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403da14f977-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '155',[39m
+[31m    'x-ratelimit-remaining-tokens': '38295',[39m
+[31m    'x-ratelimit-reset-requests': '13.334s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.557s',[39m
+[31m    'x-request-id': '4c1bbd060b405d3f583eeda1753acc79'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496400][31mFailed to create chat completion. Retrying...[39m
+[1691127496407]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403ed0797e7-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "152",
+    "x-ratelimit-remaining-tokens": "38030",
+    "x-ratelimit-reset-requests": "14.221s",
+    "x-ratelimit-reset-tokens": "2.954s",
+    "x-request-id": "cc8923ea591931a9dd6622276024f9e3"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496408][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 3)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403ed0797e7-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '152',[39m
+[31m    'x-ratelimit-remaining-tokens': '38030',[39m
+[31m    'x-ratelimit-reset-requests': '14.221s',[39m
+[31m    'x-ratelimit-reset-tokens': '2.954s',[39m
+[31m    'x-request-id': 'cc8923ea591931a9dd6622276024f9e3'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496408][31mFailed to create chat completion. Retrying...[39m
+[1691127496414]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403fc1c96a8-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "151",
+    "x-ratelimit-remaining-tokens": "37945",
+    "x-ratelimit-reset-requests": "14.519s",
+    "x-ratelimit-reset-tokens": "3.081s",
+    "x-request-id": "015ccad60a0de2ff6f560cf5f2cfeb06"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496415][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 8)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403fc1c96a8-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '151',[39m
+[31m    'x-ratelimit-remaining-tokens': '37945',[39m
+[31m    'x-ratelimit-reset-requests': '14.519s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.081s',[39m
+[31m    'x-request-id': '015ccad60a0de2ff6f560cf5f2cfeb06'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496415][31mFailed to create chat completion. Retrying...[39m
+[1691127496417]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403fdf017da-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "150",
+    "x-ratelimit-remaining-tokens": "37860",
+    "x-ratelimit-reset-requests": "14.817s",
+    "x-ratelimit-reset-tokens": "3.209s",
+    "x-request-id": "8e28352f7f426447d8c306dc6d5f51b0"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496418][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 9)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403fdf017da-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '150',[39m
+[31m    'x-ratelimit-remaining-tokens': '37860',[39m
+[31m    'x-ratelimit-reset-requests': '14.817s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.209s',[39m
+[31m    'x-request-id': '8e28352f7f426447d8c306dc6d5f51b0'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496418][31mFailed to create chat completion. Retrying...[39m
+[1691127496420]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403fc5d1584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "149",
+    "x-ratelimit-remaining-tokens": "37776",
+    "x-ratelimit-reset-requests": "15.114s",
+    "x-ratelimit-reset-tokens": "3.335s",
+    "x-request-id": "5a768801878d03e3e249987aead73f32"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496420][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 4)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403fc5d1584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '149',[39m
+[31m    'x-ratelimit-remaining-tokens': '37776',[39m
+[31m    'x-ratelimit-reset-requests': '15.114s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.335s',[39m
+[31m    'x-request-id': '5a768801878d03e3e249987aead73f32'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496421][31mFailed to create chat completion. Retrying...[39m
+[1691127496422]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147403ff55230c-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "6",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "147",
+    "x-ratelimit-remaining-tokens": "37604",
+    "x-ratelimit-reset-requests": "15.712s",
+    "x-ratelimit-reset-tokens": "3.593s",
+    "x-request-id": "1898957d239f9d181759da748f30b688"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496423][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 10)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147403ff55230c-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '6',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '147',[39m
+[31m    'x-ratelimit-remaining-tokens': '37604',[39m
+[31m    'x-ratelimit-reset-requests': '15.712s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.593s',[39m
+[31m    'x-request-id': '1898957d239f9d181759da748f30b688'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496423][31mFailed to create chat completion. Retrying...[39m
+[1691127496446]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f14740449f5156b-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "145",
+    "x-ratelimit-remaining-tokens": "37444",
+    "x-ratelimit-reset-requests": "16.266s",
+    "x-ratelimit-reset-tokens": "3.833s",
+    "x-request-id": "ab2441ccce6419f5758b6a6774f045b5"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496447][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 13)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f14740449f5156b-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '145',[39m
+[31m    'x-ratelimit-remaining-tokens': '37444',[39m
+[31m    'x-ratelimit-reset-requests': '16.266s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.833s',[39m
+[31m    'x-request-id': 'ab2441ccce6419f5758b6a6774f045b5'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496447][31mFailed to create chat completion. Retrying...[39m
+[1691127496458]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474044aeeaab2-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "146",
+    "x-ratelimit-remaining-tokens": "37541",
+    "x-ratelimit-reset-requests": "15.972s",
+    "x-ratelimit-reset-tokens": "3.687s",
+    "x-request-id": "88867f6306686b602c91da95f433bc28"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496458][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 11)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474044aeeaab2-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '146',[39m
+[31m    'x-ratelimit-remaining-tokens': '37541',[39m
+[31m    'x-ratelimit-reset-requests': '15.972s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.687s',[39m
+[31m    'x-request-id': '88867f6306686b602c91da95f433bc28'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496458][31mFailed to create chat completion. Retrying...[39m
+[1691127496477]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474046ea7fa32-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "144",
+    "x-ratelimit-remaining-tokens": "37369",
+    "x-ratelimit-reset-requests": "16.551s",
+    "x-ratelimit-reset-tokens": "3.945s",
+    "x-request-id": "233bf1f816c9c30a399b7e1aaae34b4b"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496477][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 6)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474046ea7fa32-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '144',[39m
+[31m    'x-ratelimit-remaining-tokens': '37369',[39m
+[31m    'x-ratelimit-reset-requests': '16.551s',[39m
+[31m    'x-ratelimit-reset-tokens': '3.945s',[39m
+[31m    'x-request-id': '233bf1f816c9c30a399b7e1aaae34b4b'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496477][31mFailed to create chat completion. Retrying...[39m
+[1691127496479]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474046ccb1584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "143",
+    "x-ratelimit-remaining-tokens": "37282",
+    "x-ratelimit-reset-requests": "16.847s",
+    "x-ratelimit-reset-tokens": "4.076s",
+    "x-request-id": "74cb67780fe9043367efae5f4c6d1568"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496479][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 2)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474046ccb1584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '143',[39m
+[31m    'x-ratelimit-remaining-tokens': '37282',[39m
+[31m    'x-ratelimit-reset-requests': '16.847s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.076s',[39m
+[31m    'x-request-id': '74cb67780fe9043367efae5f4c6d1568'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496479][31mFailed to create chat completion. Retrying...[39m
+[1691127496496]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404883d15fb-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "139",
+    "x-ratelimit-remaining-tokens": "36938",
+    "x-ratelimit-reset-requests": "18.03s",
+    "x-ratelimit-reset-tokens": "4.592s",
+    "x-request-id": "c45c4492a2b5d274064f5773fd0cc690"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496496][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 12)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404883d15fb-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '139',[39m
+[31m    'x-ratelimit-remaining-tokens': '36938',[39m
+[31m    'x-ratelimit-reset-requests': '18.03s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.592s',[39m
+[31m    'x-request-id': 'c45c4492a2b5d274064f5773fd0cc690'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496496][31mFailed to create chat completion. Retrying...[39m
+[1691127496498]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474047b4d159c-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "6",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "142",
+    "x-ratelimit-remaining-tokens": "37204",
+    "x-ratelimit-reset-requests": "17.133s",
+    "x-ratelimit-reset-tokens": "4.193s",
+    "x-request-id": "f908f2552b784170183b8060b49047b5"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496498][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 7)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474047b4d159c-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '6',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '142',[39m
+[31m    'x-ratelimit-remaining-tokens': '37204',[39m
+[31m    'x-ratelimit-reset-requests': '17.133s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.193s',[39m
+[31m    'x-request-id': 'f908f2552b784170183b8060b49047b5'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496498][31mFailed to create chat completion. Retrying...[39m
+[1691127496499]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474048ac1f977-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "140",
+    "x-ratelimit-remaining-tokens": "37033",
+    "x-ratelimit-reset-requests": "17.73s",
+    "x-ratelimit-reset-tokens": "4.45s",
+    "x-request-id": "d1f0aa0815fd905ba58c571b2e2e7410"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496499][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474048ac1f977-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '140',[39m
+[31m    'x-ratelimit-remaining-tokens': '37033',[39m
+[31m    'x-ratelimit-reset-requests': '17.73s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.45s',[39m
+[31m    'x-request-id': 'd1f0aa0815fd905ba58c571b2e2e7410'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496500][31mFailed to create chat completion. Retrying...[39m
+[1691127496503]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474048bedd049-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "6",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "141",
+    "x-ratelimit-remaining-tokens": "37120",
+    "x-ratelimit-reset-requests": "17.431s",
+    "x-ratelimit-reset-tokens": "4.318s",
+    "x-request-id": "efc247c6cbe5482b7c8e8c69b9088158"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496503][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 5)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474048bedd049-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '6',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '141',[39m
+[31m    'x-ratelimit-remaining-tokens': '37120',[39m
+[31m    'x-ratelimit-reset-requests': '17.431s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.318s',[39m
+[31m    'x-request-id': 'efc247c6cbe5482b7c8e8c69b9088158'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496503][31mFailed to create chat completion. Retrying...[39m
+[1691127496512]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474049d5697e7-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "138",
+    "x-ratelimit-remaining-tokens": "36860",
+    "x-ratelimit-reset-requests": "18.314s",
+    "x-ratelimit-reset-tokens": "4.708s",
+    "x-request-id": "ef3f2c5dbdefa8e4a9261526e02e0987"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496512][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 3)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474049d5697e7-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '138',[39m
+[31m    'x-ratelimit-remaining-tokens': '36860',[39m
+[31m    'x-ratelimit-reset-requests': '18.314s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.708s',[39m
+[31m    'x-request-id': 'ef3f2c5dbdefa8e4a9261526e02e0987'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496513][31mFailed to create chat completion. Retrying...[39m
+[1691127496514]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404ac9296a8-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "137",
+    "x-ratelimit-remaining-tokens": "36775",
+    "x-ratelimit-reset-requests": "18.613s",
+    "x-ratelimit-reset-tokens": "4.836s",
+    "x-request-id": "e57b88734aa04a91590b932b835a8e16"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496515][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 8)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404ac9296a8-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '137',[39m
+[31m    'x-ratelimit-remaining-tokens': '36775',[39m
+[31m    'x-ratelimit-reset-requests': '18.613s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.836s',[39m
+[31m    'x-request-id': 'e57b88734aa04a91590b932b835a8e16'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496515][31mFailed to create chat completion. Retrying...[39m
+[1691127496521]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404aec717da-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "136",
+    "x-ratelimit-remaining-tokens": "36690",
+    "x-ratelimit-reset-requests": "18.91s",
+    "x-ratelimit-reset-tokens": "4.963s",
+    "x-request-id": "1ab73219d47bdb3f2ca29792eb520a06"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496521][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 9)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404aec717da-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '136',[39m
+[31m    'x-ratelimit-remaining-tokens': '36690',[39m
+[31m    'x-ratelimit-reset-requests': '18.91s',[39m
+[31m    'x-ratelimit-reset-tokens': '4.963s',[39m
+[31m    'x-request-id': '1ab73219d47bdb3f2ca29792eb520a06'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496522][31mFailed to create chat completion. Retrying...[39m
+[1691127496527]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404ad001584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "135",
+    "x-ratelimit-remaining-tokens": "36609",
+    "x-ratelimit-reset-requests": "19.202s",
+    "x-ratelimit-reset-tokens": "5.085s",
+    "x-request-id": "0ec6162c20a0d9c2184d64be1fad5f63"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496528][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 4)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404ad001584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '135',[39m
+[31m    'x-ratelimit-remaining-tokens': '36609',[39m
+[31m    'x-ratelimit-reset-requests': '19.202s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.085s',[39m
+[31m    'x-request-id': '0ec6162c20a0d9c2184d64be1fad5f63'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496528][31mFailed to create chat completion. Retrying...[39m
+[1691127496529]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404a80a230c-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "134",
+    "x-ratelimit-remaining-tokens": "36524",
+    "x-ratelimit-reset-requests": "19.502s",
+    "x-ratelimit-reset-tokens": "5.213s",
+    "x-request-id": "6fe5f42320348916fe65d5da8c291abe"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496529][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 10)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404a80a230c-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '134',[39m
+[31m    'x-ratelimit-remaining-tokens': '36524',[39m
+[31m    'x-ratelimit-reset-requests': '19.502s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.213s',[39m
+[31m    'x-request-id': '6fe5f42320348916fe65d5da8c291abe'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496529][31mFailed to create chat completion. Retrying...[39m
+[1691127496530]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404ca74156b-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "134",
+    "x-ratelimit-remaining-tokens": "36434",
+    "x-ratelimit-reset-requests": "19.785s",
+    "x-ratelimit-reset-tokens": "5.348s",
+    "x-request-id": "c2329a57bc25ec607ecae1feee4e14e1"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496530][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 13)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404ca74156b-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '134',[39m
+[31m    'x-ratelimit-remaining-tokens': '36434',[39m
+[31m    'x-ratelimit-reset-requests': '19.785s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.348s',[39m
+[31m    'x-request-id': 'c2329a57bc25ec607ecae1feee4e14e1'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496531][31mFailed to create chat completion. Retrying...[39m
+[1691127496555]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f147404eba8aab2-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "133",
+    "x-ratelimit-remaining-tokens": "36361",
+    "x-ratelimit-reset-requests": "20.06s",
+    "x-ratelimit-reset-tokens": "5.458s",
+    "x-request-id": "0f899b1a8ae98566e10087a4e766433e"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496555][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 11)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f147404eba8aab2-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '133',[39m
+[31m    'x-ratelimit-remaining-tokens': '36361',[39m
+[31m    'x-ratelimit-reset-requests': '20.06s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.458s',[39m
+[31m    'x-request-id': '0f899b1a8ae98566e10087a4e766433e'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496555][31mFailed to create chat completion. Retrying...[39m
+[1691127496567]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474052b6cf977-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "130",
+    "x-ratelimit-remaining-tokens": "36116",
+    "x-ratelimit-reset-requests": "20.932s",
+    "x-ratelimit-reset-tokens": "5.824s",
+    "x-request-id": "47aa12690540fef3b1ce99c8d985139b"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496568][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474052b6cf977-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '130',[39m
+[31m    'x-ratelimit-remaining-tokens': '36116',[39m
+[31m    'x-ratelimit-reset-requests': '20.932s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.824s',[39m
+[31m    'x-request-id': '47aa12690540fef3b1ce99c8d985139b'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496568][31mFailed to create chat completion. Retrying...[39m
+[1691127496578]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474050f61fa32-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "132",
+    "x-ratelimit-remaining-tokens": "36280",
+    "x-ratelimit-reset-requests": "20.353s",
+    "x-ratelimit-reset-tokens": "5.579s",
+    "x-request-id": "3176c81916dcdef84a4fabd279b5bee8"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496578][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 6)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474050f61fa32-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '132',[39m
+[31m    'x-ratelimit-remaining-tokens': '36280',[39m
+[31m    'x-ratelimit-reset-requests': '20.353s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.579s',[39m
+[31m    'x-request-id': '3176c81916dcdef84a4fabd279b5bee8'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496579][31mFailed to create chat completion. Retrying...[39m
+[1691127496580]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474050d4c1584-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "131",
+    "x-ratelimit-remaining-tokens": "36194",
+    "x-ratelimit-reset-requests": "20.647s",
+    "x-ratelimit-reset-tokens": "5.708s",
+    "x-request-id": "b2b2656729814518ccbf0d021a8221a1"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496580][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 2)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474050d4c1584-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '131',[39m
+[31m    'x-ratelimit-remaining-tokens': '36194',[39m
+[31m    'x-ratelimit-reset-requests': '20.647s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.708s',[39m
+[31m    'x-request-id': 'b2b2656729814518ccbf0d021a8221a1'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496580][31mFailed to create chat completion. Retrying...[39m
+[1691127496592]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474055b02156b-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "124",
+    "x-ratelimit-remaining-tokens": "35594",
+    "x-ratelimit-reset-requests": "22.702s",
+    "x-ratelimit-reset-tokens": "6.608s",
+    "x-request-id": "2be701d06783a922b28c4e95fcc48482"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496593][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 13)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474055b02156b-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '124',[39m
+[31m    'x-ratelimit-remaining-tokens': '35594',[39m
+[31m    'x-ratelimit-reset-requests': '22.702s',[39m
+[31m    'x-ratelimit-reset-tokens': '6.608s',[39m
+[31m    'x-request-id': '2be701d06783a922b28c4e95fcc48482'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496593][31mFailed to create chat completion. Retrying...[39m
+[1691127496595]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f1474052c94d049-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "4",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "127",
+    "x-ratelimit-remaining-tokens": "35854",
+    "x-ratelimit-reset-requests": "21.825s",
+    "x-ratelimit-reset-tokens": "6.218s",
+    "x-request-id": "de347195c3fc04baed243ffb80d086e1"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496596][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 5)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f1474052c94d049-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '4',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '127',[39m
+[31m    'x-ratelimit-remaining-tokens': '35854',[39m
+[31m    'x-ratelimit-reset-requests': '21.825s',[39m
+[31m    'x-ratelimit-reset-tokens': '6.218s',[39m
+[31m    'x-request-id': 'de347195c3fc04baed243ffb80d086e1'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496596][31mFailed to create chat completion. Retrying...[39m
+[1691127496598]{
+  "status": 400,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "7f14740528ce15fb-SJC",
+    "connection": "keep-alive",
+    "content-length": "222",
+    "content-type": "application/json",
+    "date": "Fri, 04 Aug 2023 05:38:16 GMT",
+    "openai-organization": "ember-ai",
+    "openai-processing-ms": "5",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-ratelimit-limit-requests": "200",
+    "x-ratelimit-limit-tokens": "40000",
+    "x-ratelimit-remaining-requests": "129",
+    "x-ratelimit-remaining-tokens": "36022",
+    "x-ratelimit-reset-requests": "21.231s",
+    "x-ratelimit-reset-tokens": "5.966s",
+    "x-request-id": "cd9863bdea66b2e434bcb7ec6030cb15"
+  },
+  "error": {
+    "message": "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",
+    "type": "invalid_request_error",
+    "param": "function_call",
+    "code": null
+  },
+  "code": null,
+  "param": "function_call",
+  "type": "invalid_request_error"
+}
+[1691127496598][31mBadRequestError: Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.[39m
+[31m    at APIError.generate (file:///Users/harris/src/starlightshire-server/node_modules/openai/error.mjs:31:14)[39m
+[31m    at OpenAI.makeStatusError (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:176:21)[39m
+[31m    at OpenAI.request (file:///Users/harris/src/starlightshire-server/node_modules/openai/core.mjs:212:24)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async createChatCompletion (file:///Users/harris/src/starlightshire-server/dist/src/ai/openai.js:46:30)[39m
+[31m    at async getMemoryImportance (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:13:24)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async createMemory (file:///Users/harris/src/starlightshire-server/dist/src/ai/memory.js:48:37)[39m
+[31m    at async Promise.all (index 12)[39m
+[31m    at async createThomas (file:///Users/harris/src/starlightshire-server/dist/src/character.js:41:5) {[39m
+[31m  status: 400,[39m
+[31m  headers: {[39m
+[31m    'access-control-allow-origin': '*',[39m
+[31m    'alt-svc': 'h3=":443"; ma=86400',[39m
+[31m    'cf-cache-status': 'DYNAMIC',[39m
+[31m    'cf-ray': '7f14740528ce15fb-SJC',[39m
+[31m    connection: 'keep-alive',[39m
+[31m    'content-length': '222',[39m
+[31m    'content-type': 'application/json',[39m
+[31m    date: 'Fri, 04 Aug 2023 05:38:16 GMT',[39m
+[31m    'openai-organization': 'ember-ai',[39m
+[31m    'openai-processing-ms': '5',[39m
+[31m    'openai-version': '2020-10-01',[39m
+[31m    server: 'cloudflare',[39m
+[31m    'strict-transport-security': 'max-age=15724800; includeSubDomains',[39m
+[31m    'x-ratelimit-limit-requests': '200',[39m
+[31m    'x-ratelimit-limit-tokens': '40000',[39m
+[31m    'x-ratelimit-remaining-requests': '129',[39m
+[31m    'x-ratelimit-remaining-tokens': '36022',[39m
+[31m    'x-ratelimit-reset-requests': '21.231s',[39m
+[31m    'x-ratelimit-reset-tokens': '5.966s',[39m
+[31m    'x-request-id': 'cd9863bdea66b2e434bcb7ec6030cb15'[39m
+[31m  },[39m
+[31m  error: {[39m
+[31m    message: "Invalid value for 'function_call': 'function_call' is only allowed when 'functions' are specified.",[39m
+[31m    type: 'invalid_request_error',[39m
+[31m    param: 'function_call',[39m
+[31m    code: null[39m
+[31m  },[39m
+[31m  code: null,[39m
+[31m  param: 'function_call',[39m
+[31m  type: 'invalid_request_error'[39m
+[31m}[39m
+[1691127496598][31mFailed to create chat completion. Retrying...[39m

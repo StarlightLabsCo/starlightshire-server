@@ -2,7 +2,7 @@ import { z } from "zod";
 
 const MoveToEvent = z
     .object({
-        type: z.literal("MoveTo"),
+        type: z.literal("move_to"),
         data: z
             .object({
                 characterId: z.string(),
@@ -15,7 +15,7 @@ const MoveToEvent = z
 
 const DropItemEvent = z
     .object({
-        type: z.literal("DropItem"),
+        type: z.literal("drop"),
         data: z
             .object({
                 characterId: z.string(),
@@ -37,7 +37,7 @@ const DropItemEvent = z
 
 const SwingAxeEvent = z
     .object({
-        type: z.literal("SwingAxe"),
+        type: z.literal("swing_axe"),
         data: z
             .object({
                 characterId: z.string(),
@@ -48,7 +48,7 @@ const SwingAxeEvent = z
 
 const SwingSwordEvent = z
     .object({
-        type: z.literal("SwingSword"),
+        type: z.literal("swing_sword"),
         data: z
             .object({
                 characterId: z.string(),
@@ -59,7 +59,7 @@ const SwingSwordEvent = z
 
 const SwingPickaxeEvent = z
     .object({
-        type: z.literal("SwingPickaxe"),
+        type: z.literal("swing_pickaxe"),
         data: z
             .object({
                 characterId: z.string(),
@@ -70,7 +70,7 @@ const SwingPickaxeEvent = z
 
 const AddItemToChest = z
     .object({
-        type: z.literal("AddItemToChest"),
+        type: z.literal("add_to_chest"),
         data: z
             .object({
                 characterId: z.string(),
@@ -93,7 +93,7 @@ const AddItemToChest = z
 
 const RemoveItemFromChest = z
     .object({
-        type: z.literal("RemoveItemFromChest"),
+        type: z.literal("remove_from_chest"),
         data: z
             .object({
                 characterId: z.string(),
