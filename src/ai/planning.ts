@@ -1,5 +1,4 @@
 import { getCharacter } from "../character.js";
-import { getGameDate } from "../game.js";
 import { getRelevantMemories } from "./memory.js";
 import config from "../config.json" assert { type: "json" };
 import { Character } from "@prisma/client";
@@ -10,7 +9,7 @@ if (!config.model) throw new Error("No model provided in config.json");
 
 const generatePlan = async (character: Character) => {
     // Get the current game date
-    const gameDate = await getGameDate();
+    // const gameDate = await getGameDate();
 
     // Generate the agent summary
     const agentSummary = await generateAgentSummary(character);

@@ -6,6 +6,7 @@ import { createChatCompletion, getEmbedding } from "./openai.js";
 import { generateReflection } from "./reflection.js";
 
 import config from "../config.json" assert { type: "json" };
+import { log } from "../logger.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
@@ -16,13 +17,17 @@ const getMemoryImportance = async (character: Character, memory: string) => {
     const memoryImportancePromptBase = `On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number`;
     const memoryImportancePrompt = `${memoryImportancePromptBase}\nMemory: `;
 
-    const response = await createChatCompletion([
-        { role: "user", content: memoryImportancePrompt + memory },
-        {
-            role: "assistant",
-            content: "Rating: ",
-        },
-    ]);
+    const response = await createChatCompletion(
+        [
+            { role: "user", content: memoryImportancePrompt + memory },
+            {
+                role: "assistant",
+                content: "Rating: ",
+            },
+        ],
+        undefined,
+        "gpt-3.5-turbo"
+    );
 
     // Convert from string to number
     return Number(response.content.trim());
@@ -42,20 +47,15 @@ const cosineSimilarity = (a: number[], b: number[]) => {
     return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
 };
 
-// Storage
 const createMemory = async (
     character: Character,
     memory: string,
     time: number
 ) => {
-    console.log(
-        colors.red("[createMemory]") +
-            " " +
-            character +
-            " " +
-            memory +
-            " " +
-            time
+    log(
+        colors.red("[createMemory]") + " " + memory + " [" + time + "]",
+        "info",
+        character.id
     );
 
     const latestCharacter = await prisma.character.findUnique({
@@ -69,7 +69,7 @@ const createMemory = async (
         getEmbedding(memory),
     ]);
 
-    // // Create the memory, and update the character's reflection threshold
+    // Create the memory, and update the character's reflection threshold
     const updatedCharacter = await prisma.character.update({
         where: {
             id: latestCharacter.id,

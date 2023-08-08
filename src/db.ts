@@ -11,3 +11,10 @@ export const prisma =
     });
 
 if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+
+const resetDb = async () => {
+    await prisma.character.deleteMany({});
+    await prisma.memory.deleteMany({});
+};
+
+export { resetDb };

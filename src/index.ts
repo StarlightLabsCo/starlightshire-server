@@ -5,12 +5,8 @@ dotenv.config();
 // Webs Sockets
 import { WebSocketServer } from "ws";
 
-if (!process.env.PORT) {
-    console.error("PORT environment variable not set");
-    process.exit(1);
-}
-const wss = new WebSocketServer({ port: process.env.PORT as any as number });
-const clients = new Map();
+let wss;
+let clients;
 
 import { randomUUID } from "crypto";
 
@@ -23,9 +19,12 @@ export type StreamMessage = {
     data: any;
 };
 
+// Starlight
+import { resetDb } from "./db.js";
+import { initLogging, log } from "./logger.js";
+import { createCharacters } from "./character.js";
 import { getAction, saveActionResult } from "./ai/agent.js";
 import { observe } from "./ai/observation.js";
-import { createThomas } from "./character.js";
 
 const handlers = {
     GetAction: getAction,
@@ -33,61 +32,76 @@ const handlers = {
     Observation: observe,
 };
 
-createThomas();
+async function main() {
+    await resetDb();
+    await initLogging();
 
-wss.on("connection", async (ws) => {
-    // Init Connection
-    console.log("WebSocket connection established");
+    createCharacters();
 
-    const connectionMetadata: ConnectionMetadata = {
-        id: randomUUID(),
-    };
+    if (!process.env.PORT) {
+        console.error("PORT environment variable not set");
+        process.exit(1);
+    }
 
-    clients.set(ws, connectionMetadata);
+    wss = new WebSocketServer({ port: process.env.PORT as any as number });
+    clients = new Map();
 
-    ws.send(
-        JSON.stringify({
-            type: "ConnectionEstablished",
-            data: connectionMetadata.id,
-        })
-    );
+    wss.on("connection", async (ws) => {
+        log("[Main] WebSocket connection established");
 
-    // Define event handlers
-    ws.on("message", async (message) => {
-        // Check if message is valid
-        if (
-            !message ||
-            message == undefined ||
-            message.toString().length === 0
-        ) {
-            console.log("No message received. Skipping...");
-            return;
-        }
+        const connectionMetadata: ConnectionMetadata = {
+            id: randomUUID(),
+        };
 
-        // Parse message
-        const streamMessage = JSON.parse(message.toString()) as StreamMessage;
+        clients.set(ws, connectionMetadata);
 
-        // Check if parsed message is valid
-        if (!streamMessage.type) {
-            console.log("No type received. Skipping...");
-            return;
-        }
+        ws.send(
+            JSON.stringify({
+                type: "ConnectionEstablished",
+                data: connectionMetadata.id,
+            })
+        );
 
-        if (!handlers[streamMessage.type]) {
-            console.log("No handler found. Skipping...");
-            return;
-        }
+        ws.on("message", async (message) => {
+            // Check if message is valid
+            if (
+                !message ||
+                message == undefined ||
+                message.toString().length === 0
+            ) {
+                log("[Main] No message received. Skipping...");
+                return;
+            }
 
-        // Handle message
-        await handlers[streamMessage.type](ws, streamMessage.data);
+            // Parse message
+            const streamMessage = JSON.parse(
+                message.toString()
+            ) as StreamMessage;
+
+            // Check if parsed message is valid
+            if (!streamMessage.type) {
+                log("[Main] No type received. Skipping...");
+                return;
+            }
+
+            if (!handlers[streamMessage.type]) {
+                log("[Main] No handler found. Skipping...");
+                return;
+            }
+
+            // Handle message
+            await handlers[streamMessage.type](ws, streamMessage.data);
+        });
+
+        ws.on("close", () => {
+            log(`[Main] connection (id = ${clients.get(ws).id}) closed`);
+            clients.delete(ws);
+        });
     });
 
-    ws.on("close", () => {
-        console.log(`connection (id = ${clients.get(ws).id}) closed`);
-        clients.delete(ws);
-    });
-});
-
-console.log(`WebSocket server listening on port ${process.env.PORT}`);
+    log(`[Main] WebSocket server listening on port ${process.env.PORT}`);
+}
 
 export { wss, clients };
+
+main();

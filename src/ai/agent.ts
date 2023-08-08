@@ -1,45 +1,19 @@
+import * as fs from "fs";
+import OpenAI from "openai";
+import { Memory } from "@prisma/client";
+
 import { Action } from "../actions.js";
+import { globalLogPath, log } from "../logger.js";
 import { getCharacter } from "../character.js";
-import { convertTimeToString, extractJSON, getRelativeTime } from "../utils.js";
+import { getUnfinishedTasks, updateTasks } from "./task.js";
+import { convertTimeToString, getRelativeTime } from "../utils.js";
 import { calculateMaxMemoriesForTask, getRelevantMemories } from "./memory.js";
 import { createChatCompletion } from "./openai.js";
-import * as fs from "fs";
-import colors from "colors";
 
-import { getUnfinishedTasks, updateTasks } from "./task.js";
-
-import { log, setLogFile } from "../logger.js";
-
-const actionHistory = [];
-const actionSetWorldCommands = [];
-const actionResults = [];
-
-const replayTimestamp = new Date();
-fs.mkdirSync(`./data/${replayTimestamp.getTime()}`);
-setLogFile(`./data/${replayTimestamp.getTime()}/log.txt`);
-
-// get string input from user to describe the run
-import { createInterface } from "readline";
-import { Memory } from "@prisma/client";
-import OpenAI from "openai";
-import { exit } from "process";
-
-const rl = createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
-const description = await new Promise<string>((resolve) => {
-    rl.question("Please describe the run: ", (description) => {
-        resolve(description);
-    });
-});
-
-fs.writeFileSync(
-    `./data/${replayTimestamp.getTime()}/description.txt`,
-    description
-);
-rl.close();
+const actionCounter = {};
+const actionHistory = {};
+const actionSetWorldCommands = {};
+const actionResults = {};
 
 async function saveActionResult(
     ws: WebSocket,
@@ -49,14 +23,23 @@ async function saveActionResult(
         resultTime: number;
     }
 ) {
-    actionResults.push({
+    if (actionResults[data.characterId] === undefined)
+        actionResults[data.characterId] = [];
+
+    actionResults[data.characterId].push({
         characterId: data.characterId,
         result: data.result,
         time: data.resultTime,
     });
-    const historyString = JSON.stringify(actionResults, null, 2);
+
+    const historyString = JSON.stringify(
+        actionResults[data.characterId],
+        null,
+        2
+    );
+
     fs.writeFileSync(
-        `./data/${replayTimestamp.getTime()}/results.txt`,
+        `${globalLogPath}${data.characterId}_results.txt`,
         historyString
     );
 }
@@ -121,7 +104,7 @@ async function updateTaskList(data: {
 
     const tasks = await getUnfinishedTasks(character);
     const allMemories = [];
-    const memorySet = new Set(); // A set to store unique memories
+    const memorySet = new Set();
 
     let tasksArray = [];
 
@@ -197,16 +180,16 @@ async function updateTaskList(data: {
         prompt += "\n";
     }
 
-    if (actionHistory.length > 0) {
+    if (actionHistory[character.id].length > 0) {
         prompt += `Previous Actions:\n`;
         // print the most recent 10 actions
         for (
-            let i = Math.max(0, actionHistory.length - 10);
-            i < actionHistory.length;
+            let i = Math.max(0, actionHistory[character.id].length - 10);
+            i < actionHistory[character.id].length;
             i++
         ) {
-            const action = actionHistory[i];
-            const result = actionResults[i];
+            const action = actionHistory[character.id][i];
+            const result = actionResults[character.id][i];
             prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
                 result.time,
                 data.time
@@ -220,8 +203,8 @@ async function updateTaskList(data: {
     let generationAttempts = 0;
     while (generationAttempts < 10) {
         try {
-            log("--- Prompt ---");
-            log(prompt);
+            log("--- Prompt ---", "info", character.id);
+            log(prompt, "info", character.id);
 
             const response = await createChatCompletion([
                 {
@@ -234,21 +217,20 @@ async function updateTaskList(data: {
                 },
             ]);
 
-            log("--- Response ---");
-            log("Updated Tasks: ");
+            log("--- Response ---", "info", character.id);
+            log("Updated Tasks: ", "info", character.id);
 
             // use regex to select a JSON array
             const taskArray = response.content.match(/\[.*\]/s)[0];
-
             const tasksJSON = JSON.parse(taskArray);
 
-            log(tasksJSON);
+            log(tasksJSON, "info", character.id);
 
             updateTasks(tasksJSON);
 
             return;
         } catch (e) {
-            log(e);
+            log(e, "error", character.id);
             generationAttempts++;
         }
     }
@@ -271,13 +253,28 @@ async function getAction(
         time: number;
     }
 ) {
-    if (count === 5) {
-        await updateTaskList(data);
-
-        count = 0;
-    } else {
-        count++;
+    // init action history
+    if (actionHistory[data.characterId] === undefined) {
+        actionHistory[data.characterId] = [];
     }
+
+    if (actionSetWorldCommands[data.characterId] === undefined) {
+        actionSetWorldCommands[data.characterId] = [];
+    }
+
+    if (actionResults[data.characterId] === undefined) {
+        actionResults[data.characterId] = [];
+    }
+
+    if (actionCounter[data.characterId] === undefined) {
+        actionCounter[data.characterId] = 1;
+        await updateTaskList(data);
+    }
+
+    if (actionCounter[data.characterId] % 5 == 0) {
+        await updateTaskList(data);
+    }
+    count++;
 
     // -- Get Action --
     const character = await getCharacter(data.characterId);
@@ -397,16 +394,16 @@ async function getAction(
         prompt += "\n";
     }
 
-    if (actionHistory.length > 0) {
+    if (actionHistory[character.id].length > 0) {
         prompt += `Previous Actions:\n`;
         // print the most recent 10 actions
         for (
-            let i = Math.max(0, actionHistory.length - 10);
-            i < actionHistory.length;
+            let i = Math.max(0, actionHistory[character.id].length - 10);
+            i < actionHistory[character.id].length;
             i++
         ) {
-            const action = actionHistory[i];
-            const result = actionResults[i];
+            const action = actionHistory[character.id][i];
+            const result = actionResults[character.id][i];
             prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
                 result.time,
                 data.time
@@ -420,8 +417,8 @@ async function getAction(
     let generationAttempts = 0;
     while (generationAttempts < 10) {
         try {
-            log("--- Prompt ---");
-            log(prompt);
+            log("--- Prompt ---", "info", character.id);
+            log(prompt, "info", character.id);
 
             // Turn the available actions string array into a set to remove duplicates
             const availableActionsSet = new Set(data.availableActions);
@@ -441,9 +438,6 @@ async function getAction(
             }
             prompt += "\n";
 
-            log(colors.blue("[OPENAI] Actions:"));
-            log(actions);
-
             const response = await createChatCompletion(
                 [
                     {
@@ -459,7 +453,8 @@ async function getAction(
                 actions
             );
 
-            console.log(response);
+            log("--- Response ---", "info", character.id);
+            log(response, "info", character.id);
 
             let type = response.function_call.name;
             if (type.startsWith("drop")) {
@@ -475,18 +470,16 @@ async function getAction(
                 data: JSON.parse(response.function_call.arguments),
             };
 
-            console.log(action);
-
             // Verify action schema
             const verifiedAction = Action.parse(action);
 
-            log("--- Verified Action ---");
-            log(verifiedAction);
+            log("--- Verified Action ---", "info", character.id);
+            log(verifiedAction, "info", character.id);
 
             ws.send(JSON.stringify(verifiedAction));
 
-            // --- History --
-            actionSetWorldCommands.push({
+            // Save World Time
+            actionSetWorldCommands[character.id].push({
                 type: "SetWorldTime",
                 data: {
                     time: Number(data.time),
@@ -494,29 +487,32 @@ async function getAction(
             });
 
             const setWorldCommands = JSON.stringify(
-                actionSetWorldCommands,
+                actionSetWorldCommands[character.id],
                 null,
                 2
             );
 
             fs.writeFileSync(
-                `./data/${replayTimestamp.getTime()}/setWorldCommands.txt`,
+                `${globalLogPath}${character.id}_setWorldCommands.txt`,
                 setWorldCommands
             );
 
-            // ----
-
-            actionHistory.push(verifiedAction);
-            const historyString = JSON.stringify(actionHistory, null, 2);
+            // Action History
+            actionHistory[character.id].push(verifiedAction);
+            const historyString = JSON.stringify(
+                actionHistory[character.id],
+                null,
+                2
+            );
 
             fs.writeFileSync(
-                `./data/${replayTimestamp.getTime()}/actions.txt`,
+                `${globalLogPath}${character.id}_actions.txt`,
                 historyString
             );
 
             return;
         } catch (e) {
-            log(e);
+            log(e, "error", character.id);
             generationAttempts++;
         }
     }

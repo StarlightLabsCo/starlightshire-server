@@ -7,10 +7,9 @@ import colors from "colors";
 import { log } from "../logger.js";
 
 import OpenAI from "openai";
-import { exit } from "process";
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY, // This is also the default, can be omitted
+    // baseURL: "https://llm_cache.harrishr.workers.dev",
 });
 
 async function sleep(ms) {
@@ -52,9 +51,16 @@ async function getEmbedding(input: string) {
 
 async function createChatCompletion(
     messages: OpenAI.Chat.Completions.CreateChatCompletionRequestMessage[],
-    functions?: OpenAI.Chat.Completions.CompletionCreateParams.CreateChatCompletionRequestNonStreaming.Function[]
+    functions?: OpenAI.Chat.Completions.CompletionCreateParams.CreateChatCompletionRequestNonStreaming.Function[],
+    model: string = config.model
 ) {
-    log(colors.yellow("[OPENAI] Creating chat completion..."));
+    log(
+        colors.yellow(
+            `[OPENAI][${
+                model ? model : config.model
+            }] Creating chat completion...`
+        )
+    );
 
     let requestAttempts = 0;
     while (requestAttempts < config.requestAttempts) {
@@ -65,12 +71,11 @@ async function createChatCompletion(
 
             if (functions) {
                 response = await openai.chat.completions.create({
-                    model: config.model,
+                    model: model ? model : config.model,
                     messages: messages,
                     functions: functions,
                     function_call: "auto",
                 });
-                console.log();
             } else {
                 response = await openai.chat.completions.create({
                     model: config.model,
