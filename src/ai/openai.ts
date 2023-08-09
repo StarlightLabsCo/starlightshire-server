@@ -9,7 +9,7 @@ import { log } from "../logger.js";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-    // baseURL: "https://llm_cache.harrishr.workers.dev",
+    baseURL: "https://llm_cache.harrishr.workers.dev",
 });
 
 async function sleep(ms) {
@@ -70,6 +70,11 @@ async function createChatCompletion(
             let response;
 
             if (functions) {
+                log(
+                    colors.yellow(
+                        `[OPENAI] Using ${functions.length} functions.}`
+                    )
+                );
                 response = await openai.chat.completions.create({
                     model: model ? model : config.model,
                     messages: messages,
@@ -77,8 +82,9 @@ async function createChatCompletion(
                     function_call: "auto",
                 });
             } else {
+                log(colors.yellow(`[OPENAI] No functions provided.`));
                 response = await openai.chat.completions.create({
-                    model: config.model,
+                    model: model ? model : config.model,
                     messages: messages,
                 });
             }

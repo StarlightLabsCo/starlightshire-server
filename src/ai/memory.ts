@@ -14,12 +14,20 @@ if (!config.model) throw new Error("No model provided in config.json");
 const getMemoryImportance = async (character: Character, memory: string) => {
     // TODO: draw relevant memories from the character's memory bank to help the model determine importance
 
-    const memoryImportancePromptBase = `On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number`;
-    const memoryImportancePrompt = `${memoryImportancePromptBase}\nMemory: `;
+    log(
+        `[getMemoryImportance] Getting importance for memory: ${memory}`,
+        "info",
+        character.id
+    );
 
     const response = await createChatCompletion(
         [
-            { role: "user", content: memoryImportancePrompt + memory },
+            {
+                role: "system",
+                content:
+                    "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number.",
+            },
+            { role: "user", content: `Memory: ${memory}` },
             {
                 role: "assistant",
                 content: "Rating: ",
@@ -28,6 +36,8 @@ const getMemoryImportance = async (character: Character, memory: string) => {
         undefined,
         "gpt-3.5-turbo"
     );
+
+    log(`[getMemoryImportance] Importance: ${response}`, "info", character.id);
 
     // Convert from string to number
     return Number(response.content.trim());
@@ -108,15 +118,23 @@ const createMemory = async (
 
 // Returns the latest memories (used by the reflection system to figure out what to reflect on)
 const getLatestMemories = async (character: Character, top_k: number) => {
+    log(
+        `[getLatestMemories] Retrieving top ${top_k} latest memories.`,
+        "info",
+        character.id
+    );
+
     const memories = await prisma.memory.findMany({
         where: {
-            id: character.id,
+            characterId: character.id,
         },
         orderBy: {
             time: "desc",
         },
         take: top_k,
     });
+
+    log(memories, "info", character.id);
 
     return memories;
 };

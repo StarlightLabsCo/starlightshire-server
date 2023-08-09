@@ -142,7 +142,7 @@ const createWill = async () => {
 
     await Promise.all(memories.map((memory) => createMemory(will, memory, 0)));
 
-    log("[Chracter] Will created", "info", "A3");
+    log("[Character] Will created", "info", "A3");
 
     // await generatePlan(will);
 
@@ -230,7 +230,7 @@ const createEli = async () => {
 
     await Promise.all(memories.map((memory) => createMemory(eli, memory, 0)));
 
-    log("Eli created", "info", "A5");
+    log("[Character] Eli created", "info", "A5");
 
     // If you want to generate a plan for Eli:
     // await generatePlan(eli);

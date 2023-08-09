@@ -1,0 +1,327 @@
+[1691551357762] [Character] Creating Thomas
+[1691551358214] [31m[createMemory][39m I should be asleep until 7am. [0]
+[1691551358214] [31m[createMemory][39m It's my job to protect the village. [0]
+[1691551358214] [31m[createMemory][39m I need to make sure everyone is safe. [0]
+[1691551358214] [31m[createMemory][39m I do the work that no one else wants to do. [0]
+[1691551358214] [31m[createMemory][39m I try to be as honest as possible. [0]
+[1691551358214] [31m[createMemory][39m I'm not afraid of anything. [0]
+[1691551358214] [31m[createMemory][39m I go to bed at 10pm. [0]
+[1691551358214] [31m[createMemory][39m I like strawberries. [0]
+[1691551358214] [31m[createMemory][39m The village location is 2, -58. [0]
+[1691551358214] [31m[createMemory][39m The mine site is at 51, 17. [0]
+[1691551358214] [31m[createMemory][39m The lumberyard is at 72, -55.1 [0]
+[1691551358215] [31m[createMemory][39m The campsite is at 7, -8.3 [0]
+[1691551358215] [31m[createMemory][39m The Nume River flows through the village. [0]
+[1691551358215] [31m[createMemory][39m Nume Falls are north of the village, and west of the campsite. [0]
+[1691551358215] [31m[createMemory][39m The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [0]
+[1691551360786] [Character] Thomas created
+[1691551507120] --- Prompt ---
+[1691551507120] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 6.3, -54.1
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Tree (Health: 10/10) [X: 8.63, Y: -47.53, Distance: 6.970925m]
+- Tree (Health: 10/10) [X: 12.6, Y: -49.3, Distance: 7.920229m]
+- Tree (Health: 10/10) [X: 2.51, Y: -46.13, Distance: 8.825249m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- I'm not afraid of anything. [0 minutes ago]
+- I do the work that no one else wants to do. [0 minutes ago]
+- The campsite is at 7, -8.3 [0 minutes ago]
+- I try to be as honest as possible. [0 minutes ago]
+- It's my job to protect the village. [0 minutes ago]
+- I like strawberries. [0 minutes ago]
+- I need to make sure everyone is safe. [0 minutes ago]
+- The mine site is at 51, 17. [0 minutes ago]
+- The Nume River flows through the village. [0 minutes ago]
+- The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [0 minutes ago]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1691551524337] --- Response ---
+[1691551524338] Updated Tasks: 
+[1691551524338] [
+  {
+    "task": "Move to mine site at coordinates 51, 17",
+    "priority": 1
+  },
+  {
+    "task": "Mine ore",
+    "priority": 2
+  },
+  {
+    "task": "Move back to campsite at coordinates 7, -8.3",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Ensure village safety",
+    "priority": 6
+  },
+  {
+    "task": "Rest and prepare for next day",
+    "priority": 7
+  }
+]
+[1691551528321] --- Prompt ---
+[1691551528321] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 6.3, -54.1
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Tree (Health: 10/10) [X: 8.63, Y: -47.53, Distance: 6.970925m]
+- Tree (Health: 10/10) [X: 12.6, Y: -49.3, Distance: 7.920229m]
+- Tree (Health: 10/10) [X: 2.51, Y: -46.13, Distance: 8.825249m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Move to mine site at coordinates 51, 17",
+    "priority": 1
+  },
+  {
+    "task": "Mine ore",
+    "priority": 2
+  },
+  {
+    "task": "Move back to campsite at coordinates 7, -8.3",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Ensure village safety",
+    "priority": 6
+  },
+  {
+    "task": "Rest and prepare for next day",
+    "priority": 7
+  }
+]
+
+Memories:
+- I like strawberries. [0 minutes ago]
+- The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [0 minutes ago]
+- I need to make sure everyone is safe. [0 minutes ago]
+- The Nume River flows through the village. [0 minutes ago]
+- The mine site is at 51, 17. [0 minutes ago]
+- I try to be as honest as possible. [0 minutes ago]
+- I'm not afraid of anything. [0 minutes ago]
+- I do the work that no one else wants to do. [0 minutes ago]
+- It's my job to protect the village. [0 minutes ago]
+- The campsite is at 7, -8.3 [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691551531430] --- Response ---
+[1691551531430] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"x\": 51,\n  \"y\": 17\n}"
+  }
+}
+[1691551531431] --- Verified Action ---
+[1691551531431] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 51,
+    "y": 17
+  }
+}
+[1691551531562] [31m[createMemory][39m Thomas Smith has started walking to 51, Y: 17. [26.69008]
+[1691551547162] [31m[createMemory][39m Thomas Smith sees Tree at X: 35.12, Y: -49.42. [42.3800354]
+[1691551548714] [31m[createMemory][39m Thomas Smith sees Tree at X: 36.04, Y: -47.68999. [43.86005]
+[1691551550474] [31m[createMemory][39m Thomas Smith sees Tree Stump at X: 36.50999, Y: -46.03. [45.7010269]
+[1691551550808] [31m[createMemory][39m Thomas Smith sees Tree at X: 36.37, Y: -44.45. [46.02004]
+[1691551551472] [31m[createMemory][39m Thomas Smith sees Tree at X: 25.76, Y: -44.33. [46.7005959]
+[1691551551650] [31m[createMemory][39m Thomas Smith sees Stone Ore Deposit (Small) at X: 32.23, Y: -40.35. [46.880764]
+[1691551551990] [31m[createMemory][39m Thomas Smith no longer sees Tree (658) at X: 35.12, Y: -49.42 [47.22137]
+[1691551552013] [31m[createMemory][39m Thomas Smith sees Tree at X: 35.27, Y: -40.99. [47.2004623]
+[1691551552413] [31m[createMemory][39m Thomas Smith no longer sees Tree (649) at X: 36.04, Y: -47.68999 [47.64009]
+[1691551552633] [31m[createMemory][39m Thomas Smith sees Tree at X: 25.76, Y: -42.09. [47.8612976]
+[1691551552673] [31m[createMemory][39m Thomas Smith no longer sees Stump (50) at X: 36.50999, Y: -46.03 [47.9014549]
+[1691551553095] [31m[createMemory][39m Thomas Smith no longer sees Tree (655) at X: 36.37, Y: -44.45 [48.3216553]
+[1691551553596] [31m[createMemory][39m Thomas Smith sees Tree at X: 25.48, Y: -39.34. [48.8007622]
+[1691551554196] [31m[createMemory][39m Thomas Smith sees Tree at X: 32.43, Y: -36.81211. [49.42067]
+[1691551554557] [31m[createMemory][39m Thomas Smith no longer sees Tree (344) at X: 35.27, Y: -40.99 [49.7766228]
+[1691551554829] [31m[createMemory][39m Thomas Smith sees Tree Stump at X: 30.7, Y: -35.81. [50.0603523]
+[1691551554992] [31m[createMemory][39m Thomas Smith sees Tree at X: 24.93, Y: -36.81. [50.1406136]
+[1691551555710] [31m[createMemory][39m Thomas Smith no longer sees Tree (336) at X: 25.76, Y: -44.33 [50.94173]
+[1691551555755] [31m[createMemory][39m Thomas Smith sees Tree at X: 31.45, Y: -34.49. [50.9616966]
+[1691551556458] [31m[createMemory][39m Thomas Smith sees Tree at X: 24.38, Y: -34.45. [51.6808548]
+[1691551557081] [31m[createMemory][39m Thomas Smith no longer sees Tree (331) at X: 25.76, Y: -42.09 [52.2202568]
+[1691551557176] [31m[createMemory][39m Thomas Smith sees Tree at X: 33.12, Y: -33.14. [52.40131]
+[1691551557834] [31m[createMemory][39m Thomas Smith no longer sees StoneOreSmall (10) at X: 32.23, Y: -40.35 [53.06137]
+[1691551557992] [31m[createMemory][39m Thomas Smith sees Tree at X: 34.39, Y: -34.21. [53.2201347]
+[1691551558194] [31m[createMemory][39m Thomas Smith sees Tree at X: 28.28, Y: -29.76. [53.4213524]
+[1691551558435] [31m[createMemory][39m Thomas Smith no longer sees Tree (330) at X: 25.48, Y: -39.34 [53.6602325]
+[1691551558654] [31m[createMemory][39m Thomas Smith sees Tree at X: 30.73, Y: -29.31. [53.80061]
+[1691551559217] [31m[createMemory][39m Thomas Smith no longer sees Tree (263) at X: 24.93, Y: -36.81 [54.4416924]
+[1691551559336] [31m[createMemory][39m Thomas Smith no longer sees Tree (259) at X: 24.38, Y: -34.45 [54.5601959]
+[1691551559558] [31m[createMemory][39m Thomas Smith sees Tree at X: 34.25, Y: -29.19. [54.781353]
+[1691551559730] [31m[createMemory][39m Thomas Smith sees Tree at X: 36.21, Y: -34.08. [54.9612961]
+[1691551560018] [31m[createMemory][39m Thomas Smith sees Tree at X: 32.07, Y: -27.45. [55.24245]
+[1691551560471] [31m[createMemory][39m Thomas Smith sees Tree at X: 27.86, Y: -27.79. [55.70079]
+[1691551560614] [31m[createMemory][39m Thomas Smith sees Tree at X: 29.28, Y: -26.96. [55.84138]
+[1691551560773] [31m[createMemory][39m Thomas Smith sees Tree at X: 36.84, Y: -29.19. [55.941906]
+[1691551560852] [31m[createMemory][39m Thomas Smith sees Tree at X: 34.25, Y: -26.66. [56.08217]
+[1691551561153] [31m[createMemory][39m Thomas Smith no longer sees Tree (302) at X: 32.43, Y: -36.81211 [56.3813324]
+[1691551561458] [31m[createMemory][39m Thomas Smith no longer sees Tree (264) at X: 27.86, Y: -27.79 [56.64177]
+[1691551561823] [31m[createMemory][39m Thomas Smith sees Tree at X: 36.09, Y: -35.85. [56.9814758]
+[1691551561900] [31m[createMemory][39m Thomas Smith no longer sees Tree (161) at X: 29.28, Y: -26.96 [57.12149]
+[1691551562010] [31m[createMemory][39m Thomas Smith sees Tree at X: 38.98, Y: -28.7. [57.241188]
+[1691551562111] [31m[createMemory][39m Thomas Smith sees Tree at X: 38.2, Y: -27.17. [57.34186]
+[1691551562150] [31m[createMemory][39m Thomas Smith no longer sees Tree (265) at X: 28.28, Y: -29.76 [57.3806763]
+[1691551562349] [31m[createMemory][39m Thomas Smith no longer sees Stump (25) at X: 30.7, Y: -35.81 [57.54172]
+[1691551562629] [31m[createMemory][39m Thomas Smith sees Tree at X: 39.58, Y: -34.11. [57.8609772]
+[1691551563395] [31m[createMemory][39m Thomas Smith no longer sees Tree (301) at X: 31.45, Y: -34.49 [58.60099]
+[1691551563513] [31m[createMemory][39m Thomas Smith no longer sees Tree (730) at X: 30.73, Y: -29.31 [58.74149]
+[1691551563676] [31m[createMemory][39m Thomas Smith sees Tree at X: 38.22, Y: -36.24. [58.90096]
+[1691551563750] [31m[createMemory][39m Thomas Smith no longer sees Tree (164) at X: 32.07, Y: -27.45 [58.9819]
+[1691551563795] [31m[createMemory][39m Thomas Smith sees Tree at X: 39.9, Y: -26.17. [59.020195]
+[1691551564446] [31m[createMemory][39m Thomas Smith no longer sees Tree (358) at X: 38.22, Y: -36.24 [59.6005325]
+[1691551564595] [31m[createMemory][39m Thomas Smith no longer sees Tree (350) at X: 36.09, Y: -35.85 [59.82177]
+[1691551564620] [31m[createMemory][39m Thomas Smith sees Tree at X: 43.32, Y: -33.08. [59.8416748]
+[1691551564623] [31m[createMemory][39m Thomas Smith sees Tree at X: 43.32, Y: -33.08. [59.8416748]
+[1691551564629] [31m[createMemory][39m Thomas Smith sees Tree at X: 42.42, Y: -26.71. [59.8612061]
+[1691551564733] [31m[createMemory][39m Thomas Smith no longer sees Tree (300) at X: 33.12, Y: -33.14 [59.9610939]
+[1691551564967] [31m[createMemory][39m Thomas Smith no longer sees Tree (351) at X: 34.39, Y: -34.21 [60.180336]
+[1691551565253] [31m[createMemory][39m Thomas Smith no longer sees Tree (165) at X: 34.25, Y: -26.66 [60.4802742]
+[1691551565799] [31m[createMemory][39m Thomas Smith no longer sees Tree (231) at X: 34.25, Y: -29.19 [61.02138]
+[1691551565991] [31m[createMemory][39m Thomas Smith sees Tree at X: 44.62, Y: -26.27. [61.1417961]
+[1691551566018] [31m[createMemory][39m Thomas Smith no longer sees Tree (357) at X: 36.21, Y: -34.08 [61.18007]
+[1691551566057] [31m[createMemory][39m Thomas Smith sees Tree at X: 45.36, Y: -32.92. [61.2801361]
+[1691551567278] [31m[createMemory][39m Thomas Smith no longer sees Tree (269) at X: 36.84, Y: -29.19 [62.5018044]
+[1691551567613] [31m[createMemory][39m Thomas Smith sees Tree at X: 48.24, Y: -32.62. [62.8401833]
+[1691551567720] [31m[createMemory][39m Thomas Smith no longer sees Tree (267) at X: 38.2, Y: -27.17 [62.94126]
+[1691551567853] [31m[createMemory][39m Thomas Smith no longer sees Tree (360) at X: 39.58, Y: -34.11 [63.0815964]
+[1691551568296] [31m[createMemory][39m Thomas Smith no longer sees Tree (270) at X: 39.9, Y: -26.17 [63.5201149]
+[1691551568470] [31m[createMemory][39m Thomas Smith no longer sees Tree (268) at X: 38.98, Y: -28.7 [63.7009163]
+[1691551568794] [31m[createMemory][39m Thomas Smith sees Tree at X: 46.5, Y: -35.29. [64.00087]
+[1691551569396] [31m[createMemory][39m Thomas Smith sees Tree at X: 50.81, Y: -33.49. [64.62118]
+[1691551569430] [31m[createMemory][39m Thomas Smith sees Tree at X: 49.14, Y: -34.84. [64.660614]
+[1691551569687] [31m[createMemory][39m Thomas Smith no longer sees Tree (372) at X: 46.5, Y: -35.29 [64.90095]
+[1691551569855] [31m[createMemory][39m Thomas Smith sees Tree at X: 45.95, Y: -24.29. [65.08094]
+[1691551569875] [31m[createMemory][39m Thomas Smith no longer sees Tree (378) at X: 49.14, Y: -34.84 [65.1001358]
+[1691551570277] [31m[createMemory][39m Thomas Smith sees Tree at X: 53.01, Y: -30.91. [65.50114]
+[1691551570333] [31m[createMemory][39m Thomas Smith no longer sees Tree (376) at X: 43.32, Y: -33.08 [65.54233]
+[1691551570333] [31m[createMemory][39m Thomas Smith no longer sees Tree (373) at X: 43.32, Y: -33.08 [65.54233]
+[1691551570492] [31m[createMemory][39m Thomas Smith no longer sees Tree (271) at X: 42.42, Y: -26.71 [65.7204]
+[1691551570870] [31m[createMemory][39m Thomas Smith no longer sees Tree (377) at X: 50.81, Y: -33.49 [66.08045]
+[1691551571116] [31m[createMemory][39m Thomas Smith no longer sees Tree (382) at X: 45.36, Y: -32.92 [66.34006]
+[1691551571371] [31m[createMemory][39m Thomas Smith no longer sees Tree (386) at X: 53.01, Y: -30.91 [66.60009]
+[1691551571397] [31m[createMemory][39m Thomas Smith sees Tree at X: 44.01, Y: -23.64. [66.62104]
+[1691551571592] [31m[createMemory][39m Thomas Smith no longer sees Tree (379) at X: 48.24, Y: -32.62 [66.80075]
+[1691551571797] [31m[createMemory][39m Thomas Smith sees Tree at X: 45.95, Y: -21.7. [67.0208359]
+[1691551573080] [31m[createMemory][39m Thomas Smith sees Tree at X: 44.3, Y: -20.42. [68.30013]
+[1691551573397] [31m[createMemory][39m Thomas Smith sees Tree Stump at X: 52.4, Y: -20.42. [68.62119]
+[1691551573717] [31m[createMemory][39m Thomas Smith sees Tree at X: 46.7, Y: -18.14. [68.9412842]
+[1691551574276] [31m[createMemory][39m Thomas Smith sees Tree at X: 44.34, Y: -18.3. [69.50005]
+[1691551574655] [31m[createMemory][39m Thomas Smith no longer sees Tree (280) at X: 44.62, Y: -26.27 [69.88005]
+[1691551574933] [31m[createMemory][39m Thomas Smith sees Tree at X: 47.86, Y: -15.94. [70.16]
+[1691551575154] [31m[createMemory][39m Thomas Smith sees Tree at X: 45.66, Y: -15.94. [70.381546]
+[1691551575195] [31m[createMemory][39m Thomas Smith sees Tree at X: 52.91, Y: -17.4. [70.42232]
+[1691551575966] [31m[createMemory][39m Thomas Smith no longer sees Tree (279) at X: 44.01, Y: -23.64 [71.08129]
+[1691551576150] [31m[createMemory][39m Thomas Smith sees Tree at X: 43.22001, Y: -16.37. [71.3801956]
+[1691551576170] [31m[createMemory][39m Thomas Smith no longer sees Tree (278) at X: 45.95, Y: -24.29 [71.4018]
+[1691551576230] [31m[createMemory][39m Thomas Smith sees Tree at X: 42.61, Y: -18.15. [71.46047]
+[1691551576545] [31m[createMemory][39m Thomas Smith no longer sees Tree (173) at X: 42.61, Y: -18.15 [71.7616]
+[1691551576754] [31m[createMemory][39m Thomas Smith sees Tree at X: 54.2, Y: -19.25. [71.98212]
+[1691551577114] [31m[createMemory][39m Thomas Smith sees Tree at X: 54.01, Y: -15.6. [72.1606]
+[1691551577115] [31m[createMemory][39m Thomas Smith no longer sees Tree (184) at X: 43.22001, Y: -16.37 [72.19558]
+[1691551577396] [31m[createMemory][39m Thomas Smith sees Tree at X: 44.48, Y: -14.04. [72.62342]
+[1691551577411] [31m[createMemory][39m Thomas Smith no longer sees Tree (276) at X: 44.3, Y: -20.42 [72.64185]
+[1691551577553] [31m[createMemory][39m Thomas Smith sees Tree at X: 52.03, Y: -12.2. [72.76233]
+[1691551577597] [31m[createMemory][39m Thomas Smith no longer sees Tree (277) at X: 45.95, Y: -21.7 [72.82081]
+[1691551578079] [31m[createMemory][39m Thomas Smith no longer sees Tree (414) at X: 54.2, Y: -19.25 [73.30084]
+[1691551578457] [31m[createMemory][39m Thomas Smith sees Tree at X: 49.51, Y: -10.13. [73.6802139]
+[1691551578601] [31m[createMemory][39m Thomas Smith no longer sees Stump (23) at X: 52.4, Y: -20.42 [73.7809753]
+[1691551578603] [31m[createMemory][39m Thomas Smith sees Tree at X: 51.52, Y: -10.15. [73.79999]
+[1691551578640] [31m[createMemory][39m Thomas Smith no longer sees Tree (275) at X: 44.34, Y: -18.3 [73.82042]
+[1691551578693] [31m[createMemory][39m Thomas Smith sees Tree at X: 54.59, Y: -12.8. [73.92099]
+[1691551579717] [31m[createMemory][39m Thomas Smith sees Tree at X: 54.53, Y: -10.85. [74.94074]
+[1691551579719] [31m[createMemory][39m Thomas Smith sees Tree at X: 51.85, Y: -8.290001. [74.94074]
+[1691551579832] [31m[createMemory][39m Thomas Smith no longer sees Tree (274) at X: 46.7, Y: -18.14 [75.06007]
+[1691551579918] [31m[createMemory][39m Thomas Smith no longer sees Tree (411) at X: 52.91, Y: -17.4 [75.14141]
+[1691551580017] [31m[createMemory][39m Thomas Smith no longer sees Tree (427) at X: 54.53, Y: -10.85 [75.2401047]
+[1691551580174] [31m[createMemory][39m Thomas Smith no longer sees Tree (412) at X: 54.01, Y: -15.6 [75.34129]
+[1691551580213] [31m[createMemory][39m Thomas Smith no longer sees Tree (419) at X: 54.59, Y: -12.8 [75.44147]
+[1691551580220] [31m[createMemory][39m Thomas Smith sees Tree at X: 48.84, Y: -7.200001. [75.42174]
+[1691551580701] [31m[createMemory][39m Thomas Smith sees Tree at X: 42.72, Y: -12.97. [75.86041]
+[1691551581812] [31m[createMemory][39m Thomas Smith no longer sees Tree (272) at X: 45.66, Y: -15.94 [77.04137]
+[1691551581840] [31m[createMemory][39m Thomas Smith no longer sees Tree (273) at X: 47.86, Y: -15.94 [77.06091]
+[1691551581892] [31m[createMemory][39m Thomas Smith sees Tree at X: 48.91, Y: -5.23. [77.12011]
+[1691551582313] [31m[createMemory][39m Thomas Smith no longer sees Tree (424) at X: 52.03, Y: -12.2 [77.541]
+[1691551582959] [31m[createMemory][39m Thomas Smith no longer sees Tree (432) at X: 51.85, Y: -8.290001 [78.18206]
+[1691551583053] [31m[createMemory][39m Thomas Smith no longer sees Tree (282) at X: 44.48, Y: -14.04 [78.28043]
+[1691551583140] [31m[createMemory][39m Thomas Smith no longer sees Tree (423) at X: 51.52, Y: -10.15 [78.36231]
+[1691551583151] [31m[createMemory][39m Thomas Smith sees Tree at X: 41.03, Y: -11.7. [78.38174]
+[1691551583616] [31m[createMemory][39m Thomas Smith sees Tree at X: 46.88, Y: -2.68. [78.8405762]
+[1691551583674] [31m[createMemory][39m Thomas Smith no longer sees Tree (283) at X: 42.72, Y: -12.97 [78.9017639]
+[1691551584172] [31m[createMemory][39m Thomas Smith sees Tree at X: 44.56, Y: -1.91. [79.40104]
+[1691551584362] [31m[createMemory][39m Thomas Smith no longer sees Tree (281) at X: 41.03, Y: -11.7 [79.56076]
+[1691551584364] [31m[createMemory][39m Thomas Smith no longer sees Tree (421) at X: 49.51, Y: -10.13 [79.52265]
+[1691551584651] [31m[createMemory][39m Thomas Smith sees Tree at X: 38.75, Y: -9.01. [79.88225]
