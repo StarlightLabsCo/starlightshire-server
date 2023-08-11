@@ -211,6 +211,7 @@ const createEli = async () => {
     });
 
     const memories: string[] = [
+        "I need to let Thomas know I'm going to explore. He's asked me in the past to let him know just in case I get hurt or lost.",
         "I once found a secret clearing in the woods, it's my personal hideout now.",
         "The world feels so big and full of wonders, I want to see them all!",
         "I saw a deer up close once, our eyes met and we just stared for a moment.",

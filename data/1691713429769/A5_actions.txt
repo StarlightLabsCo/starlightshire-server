@@ -1,0 +1,62 @@
+[
+  {
+    "type": "move_to",
+    "data": {
+      "characterId": "A5",
+      "x": 54.64,
+      "y": 16.97
+    }
+  },
+  {
+    "type": "swing_pickaxe",
+    "data": {
+      "characterId": "A5"
+    }
+  },
+  {
+    "type": "move_to",
+    "data": {
+      "characterId": "A5",
+      "x": 50.52,
+      "y": 14.5
+    }
+  },
+  {
+    "type": "add_to_chest",
+    "data": {
+      "characterId": "A5",
+      "itemId": "coal",
+      "chestId": "chest_(50.52,14.5)"
+    }
+  },
+  {
+    "type": "move_to",
+    "data": {
+      "characterId": "A5",
+      "x": 52.41,
+      "y": 11.03
+    }
+  },
+  {
+    "type": "swing_axe",
+    "data": {
+      "characterId": "A5"
+    }
+  },
+  {
+    "type": "move_to",
+    "data": {
+      "characterId": "A5",
+      "x": 54.64,
+      "y": 16.97
+    }
+  },
+  {
+    "type": "start_conversation",
+    "data": {
+      "characterId": "A5",
+      "targetCharacterId": "A1",
+      "conversationGoal": "Get information about the area"
+    }
+  }
+]

@@ -236,7 +236,7 @@ async function updateTaskList(data: {
     }
 }
 
-let count = 5;
+let count = 3;
 
 async function getAction(
     ws: WebSocket,
@@ -452,6 +452,9 @@ async function getAction(
                 ],
                 actions
             );
+
+            // log("--- Actions ---", "info", character.id);
+            // log(actions, "info", character.id);
 
             log("--- Response ---", "info", character.id);
             log(response, "info", character.id);

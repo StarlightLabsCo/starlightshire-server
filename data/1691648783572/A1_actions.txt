@@ -1,0 +1,24 @@
+[
+  {
+    "type": "move_to",
+    "data": {
+      "characterId": "A1",
+      "x": 50.52,
+      "y": 14.5
+    }
+  },
+  {
+    "type": "swing_pickaxe",
+    "data": {
+      "characterId": "A1"
+    }
+  },
+  {
+    "type": "start_conversation",
+    "data": {
+      "characterId": "A1",
+      "targetCharacterId": "A5",
+      "conversationGoal": "Discuss village issues"
+    }
+  }
+]

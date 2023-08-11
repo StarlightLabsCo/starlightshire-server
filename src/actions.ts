@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const MoveToEvent = z
+const MoveTo = z
     .object({
         type: z.literal("move_to"),
         data: z
@@ -13,7 +13,7 @@ const MoveToEvent = z
     })
     .strict();
 
-const DropItemEvent = z
+const DropItem = z
     .object({
         type: z.literal("drop"),
         data: z
@@ -35,7 +35,7 @@ const DropItemEvent = z
     })
     .strict();
 
-const SwingAxeEvent = z
+const SwingAxe = z
     .object({
         type: z.literal("swing_axe"),
         data: z
@@ -46,7 +46,7 @@ const SwingAxeEvent = z
     })
     .strict();
 
-const SwingSwordEvent = z
+const SwingSword = z
     .object({
         type: z.literal("swing_sword"),
         data: z
@@ -57,7 +57,7 @@ const SwingSwordEvent = z
     })
     .strict();
 
-const SwingPickaxeEvent = z
+const SwingPickaxe = z
     .object({
         type: z.literal("swing_pickaxe"),
         data: z
@@ -104,12 +104,26 @@ const RemoveItemFromChest = z
     })
     .strict();
 
+const StartConversation = z
+    .object({
+        type: z.literal("start_conversation"),
+        data: z
+            .object({
+                characterId: z.string(),
+                targetCharacterId: z.string(),
+                conversationGoal: z.string(),
+            })
+            .strict(),
+    })
+    .strict();
+
 export const Action = z.union([
     AddItemToChest,
     RemoveItemFromChest,
-    MoveToEvent,
-    DropItemEvent,
-    SwingAxeEvent,
-    SwingSwordEvent,
-    SwingPickaxeEvent,
+    MoveTo,
+    DropItem,
+    SwingAxe,
+    SwingSword,
+    SwingPickaxe,
+    StartConversation,
 ]);

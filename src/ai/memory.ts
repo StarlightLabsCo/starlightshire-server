@@ -13,13 +13,6 @@ if (!config.model) throw new Error("No model provided in config.json");
 // Importance (Using LLM to determine importance from 1-10)
 const getMemoryImportance = async (character: Character, memory: string) => {
     // TODO: draw relevant memories from the character's memory bank to help the model determine importance
-
-    log(
-        `[getMemoryImportance] Getting importance for memory: ${memory}`,
-        "info",
-        character.id
-    );
-
     const response = await createChatCompletion(
         [
             {
@@ -36,8 +29,6 @@ const getMemoryImportance = async (character: Character, memory: string) => {
         undefined,
         "gpt-3.5-turbo"
     );
-
-    log(`[getMemoryImportance] Importance: ${response}`, "info", character.id);
 
     // Convert from string to number
     return Number(response.content.trim());
@@ -119,7 +110,9 @@ const createMemory = async (
 // Returns the latest memories (used by the reflection system to figure out what to reflect on)
 const getLatestMemories = async (character: Character, top_k: number) => {
     log(
-        `[getLatestMemories] Retrieving top ${top_k} latest memories.`,
+        colors.red(
+            `[getLatestMemories] Retrieving top ${top_k} latest memories.`
+        ),
         "info",
         character.id
     );
@@ -139,30 +132,6 @@ const getLatestMemories = async (character: Character, top_k: number) => {
     return memories;
 };
 
-// Returns all the memories from a specific game date
-// This is used by the system to summarize a day, for planning and as such shouldn't update the accessedAt field
-// const getAllMemoriesFromDay = async (character: Character, gameDate: Date) => {
-//     // TODO: I replaced game date with createdAt, but need to refactor this whole section
-//     const memories = await prisma.memory.findMany({
-//         where: {
-//             id: character.id,
-//             createdAt: {
-//                 gte: new Date(
-//                     gameDate.getFullYear(),
-//                     gameDate.getMonth(),
-//                     gameDate.getDate()
-//                 ),
-//                 lt: new Date(
-//                     gameDate.getFullYear(),
-//                     gameDate.getMonth(),
-//                     gameDate.getDate() + 1
-//                 ),
-//             },
-//         },
-//     });
-
-//     return memories;
-// };
 
 function clamp(num, min, max) {
     return num <= min ? min : num >= max ? max : num;
@@ -293,7 +262,6 @@ const getRelevantMemories = async (
     }
 
     // Otherwise, update the returned memories' accessedAt values
-
     await Promise.all(
         mostRelevantMemories.map((memory) =>
             prisma.memory.update({

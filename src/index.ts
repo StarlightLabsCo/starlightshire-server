@@ -25,11 +25,13 @@ import { initLogging, log } from "./logger.js";
 import { createCharacters } from "./character.js";
 import { getAction, saveActionResult } from "./ai/agent.js";
 import { observe } from "./ai/observation.js";
+import { startConversation } from "./ai/converstation.js";
 
 const handlers = {
     GetAction: getAction,
     ActionExecuted: saveActionResult,
     Observation: observe,
+    StartConversation: startConversation,
 };
 
 async function main() {

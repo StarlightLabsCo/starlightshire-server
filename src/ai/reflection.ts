@@ -39,7 +39,7 @@ const answerReflectionQuestion = async (
     }
 
     reflectionPrompt +=
-        "What 5 high-level insights can you infer from the above statements from" +
+        "What 5 high-level insights can you infer from the above statements from " +
         character.name +
         "'s point of view?\n";
 

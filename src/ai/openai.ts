@@ -72,7 +72,7 @@ async function createChatCompletion(
             if (functions) {
                 log(
                     colors.yellow(
-                        `[OPENAI] Using ${functions.length} functions.}`
+                        `[OPENAI] Using ${functions.length} functions.`
                     )
                 );
                 response = await openai.chat.completions.create({
