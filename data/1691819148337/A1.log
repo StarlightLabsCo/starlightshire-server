@@ -1,0 +1,898 @@
+[1691819152678] [Character] Creating Thomas
+[1691819153085] [31m[createMemory][39m I should be asleep until 7am. [0]
+[1691819153086] [31m[createMemory][39m It's my job to protect the village. [0]
+[1691819153086] [31m[createMemory][39m I need to make sure everyone is safe. [0]
+[1691819153086] [31m[createMemory][39m I do the work that no one else wants to do. [0]
+[1691819153086] [31m[createMemory][39m I try to be as honest as possible. [0]
+[1691819153086] [31m[createMemory][39m I'm not afraid of anything. [0]
+[1691819153086] [31m[createMemory][39m I go to bed at 10pm. [0]
+[1691819153086] [31m[createMemory][39m I like strawberries. [0]
+[1691819153086] [31m[createMemory][39m The village location is 2, -58. [0]
+[1691819153086] [31m[createMemory][39m The mine site is at 51, 17. [0]
+[1691819153086] [31m[createMemory][39m The lumberyard is at 72, -55.1 [0]
+[1691819153086] [31m[createMemory][39m The campsite is at 7, -8.3 [0]
+[1691819153086] [31m[createMemory][39m The Nume River flows through the village. [0]
+[1691819153086] [31m[createMemory][39m Nume Falls are north of the village, and west of the campsite. [0]
+[1691819153086] [31m[createMemory][39m The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [0]
+[1691819156431] [Character] Thomas created
+[1691819163951] [31m[createMemory][39m Thomas Smith sees Tree at X: 53.93, Y: 9.11. [0]
+[1691819163960] [31m[createMemory][39m Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [0]
+[1691819163961] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Small) at X: 54.64, Y: 16.97. [0]
+[1691819163961] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [0]
+[1691819163961] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Small) at X: 56.74, Y: 14.81. [0]
+[1691819163961] [31m[createMemory][39m Thomas Smith sees Tree at X: 52.41, Y: 11.03. [0]
+[1691819163961] [31m[createMemory][39m Thomas Smith sees Tree at X: 50.77, Y: 9.22. [0]
+[1691819163961] [31m[createMemory][39m Thomas Smith sees Chest at X: 50.52, Y: 14.5. [0]
+[1691819163968] [31m[createMemory][39m Thomas Smith sees Eli Green at X: 54.5, Y: 13.66. [0]
+[1691819166204] --- Prompt ---
+[1691819166204] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 53.17, 13.44
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Eli Green (Health: 25/25) [X: 54.5, Y: 13.66, Distance: 1.348075m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 2.526994m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 2.854135m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 3.823846m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 3.82385m]
+- Tree (Health: 10/10) [X: 53.93, Y: 9.11, Distance: 4.396192m]
+- Tree (Health: 10/10) [X: 50.77, Y: 9.22, Distance: 4.854728m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 5.303265m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 5.644858m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 6.18639m]
+- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 6.335244m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 6.429324m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 7.211175m]
+- Tree (Health: 10/10) [X: 56.01, Y: 6.46, Distance: 7.535648m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 7.671407m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 7.769201m]
+- Tree (Health: 10/10) [X: 50.12, Y: 6.280001, Distance: 7.78255m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 8.005058m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 8.253032m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 8.281046m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.375112m]
+- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 8.566351m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- The campsite is at 7, -8.3 [just now]
+- Nume Falls are north of the village, and west of the campsite. [just now]
+- The Nume River flows through the village. [just now]
+- It's my job to protect the village. [just now]
+- I like strawberries. [just now]
+- The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [just now]
+- The mine site is at 51, 17. [just now]
+- I need to make sure everyone is safe. [just now]
+- I go to bed at 10pm. [just now]
+- I do the work that no one else wants to do. [just now]
+- Thomas Smith sees Chest at X: 50.52, Y: 14.5. [just now]
+- Thomas Smith sees Coal Ore Deposit (Small) at X: 54.64, Y: 16.97. [just now]
+- Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [just now]
+- Thomas Smith sees Tree at X: 50.77, Y: 9.22. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Eli Green (ID: A5).
+
+Hitbox (what you would hit with a swing based action):
+- Eli Green (Health: 25/25)
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1691819171855] --- Response ---
+[1691819171855] Updated Tasks: 
+[1691819171856] [
+  {
+    "task": "Start conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Mine ore",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Ensure everyone is safe",
+    "priority": 5
+  }
+]
+[1691819175143] --- Prompt ---
+[1691819175143] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 53.17, 13.44
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Eli Green (Health: 25/25) [X: 54.5, Y: 13.66, Distance: 1.348075m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 2.526994m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 2.854135m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 3.823846m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 3.82385m]
+- Tree (Health: 10/10) [X: 53.93, Y: 9.11, Distance: 4.396192m]
+- Tree (Health: 10/10) [X: 50.77, Y: 9.22, Distance: 4.854728m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 5.303265m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 5.644858m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 6.18639m]
+- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 6.335244m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 6.429324m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 7.211175m]
+- Tree (Health: 10/10) [X: 56.01, Y: 6.46, Distance: 7.535648m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 7.671407m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 7.769201m]
+- Tree (Health: 10/10) [X: 50.12, Y: 6.280001, Distance: 7.78255m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 8.005058m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 8.253032m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 8.281046m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.375112m]
+- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 8.566351m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Mine ore",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Ensure everyone is safe",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Coal Ore Deposit (Small) at X: 56.74, Y: 14.81. [just now]
+- I do the work that no one else wants to do. [just now]
+- Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [just now]
+- Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [just now]
+- The Nume River flows through the village. [just now]
+- The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [just now]
+- I like strawberries. [just now]
+- It's my job to protect the village. [just now]
+- I need to make sure everyone is safe. [just now]
+- The campsite is at 7, -8.3 [just now]
+
+Hitbox (what you would hit with a swing based action):
+- Eli Green (Health: 25/25)
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819179392] --- Response ---
+[1691819179394] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"targetCharacterId\": \"A5\",\n  \"conversationGoal\": \"Ensure Eli Green is safe and ask about any concerns.\"\n}"
+  }
+}
+[1691819179397] --- Verified Action ---
+[1691819179397] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A1",
+    "targetCharacterId": "A5",
+    "conversationGoal": "Ensure Eli Green is safe and ask about any concerns."
+  }
+}
+[1691819187618] [35m[CORTEX] Character 1 - Plan: [39m To patrol the village outskirts and monitor activities around the Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. Also, he is planning to devise an evacuation strategy in case of emergency, using the location of the Tree at X: 57.55001, Y: 10.45 as a rendezvous point.
+[1691819198163] [35m[CORTEX] Character 1 - Say: [39mI need to make sure everyone is safe. It's my job to protect the village. I have identified a Coal Ore Deposit at coordinates X: 57.27, Y: 17.32. I will patrol the area around it and monitor for any unusual activities. In case of any emergency, let's use the large Tree at coordinates X: 57.55001, Y: 10.45 as our rendezvous point. Everyone should know this plan. Also, always remember that the Nume River flows through our village, it's an essential source of our livelihood. Now, do you have any concerns, Eli Green?
+
+[1691819215480] [35m[CORTEX] Character 1 - Feel: [39mI feel reassured that Eli Green understands the importance of safety and is willing to take initiative for the wellbeing of our village.
+[1691819221816] [35m[CORTEX] Character 1 - Explain: [39mI am glad that Eli Green is on board with the plan and also willing to actively involve himself in ensuring the safety of our village. His personal exploration could provide additional perspectives and resources that we might have overlooked. We have certainly made progress towards our goal of maintaining safety in the village, but there's always more to be done. I appreciate Eli's dedication and believe that together, we can protect our home.
+[1691819223146] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1691819224245] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1691819227214] [35m[CORTEX] Character 1 Goodbye: [39mThank you for your understanding and cooperation, Eli. I'm reassured to know that you are committed to our village's safety. I'll see you around. Stay safe!
+[1691819287397] --- Prompt ---
+[1691819287397] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 53.17, 13.44
+
+Time: Day 0, 11:58 AM
+
+Environment:
+- Eli Green (Health: 25/25) [X: 54.5, Y: 13.66, Distance: 1.348075m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 2.526994m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 2.854135m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 3.823846m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 3.82385m]
+- Tree (Health: 10/10) [X: 53.93, Y: 9.11, Distance: 4.396192m]
+- Tree (Health: 10/10) [X: 50.77, Y: 9.22, Distance: 4.854728m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 5.303265m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 5.644858m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 6.18639m]
+- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 6.335244m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 6.429324m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 7.211175m]
+- Tree (Health: 10/10) [X: 56.01, Y: 6.46, Distance: 7.535648m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 7.671407m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 7.769201m]
+- Tree (Health: 10/10) [X: 50.12, Y: 6.280001, Distance: 7.78255m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 8.005058m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 8.253032m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 8.281046m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.375112m]
+- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 8.566351m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 2
+  },
+  {
+    "task": "Talk to Thomas Smith",
+    "priority": 4
+  },
+  {
+    "task": "Explore the environment",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Eli Green at X: 54.5, Y: 13.66. [11 hours ago]
+- I do the work that no one else wants to do. [11 hours ago]
+- Thomas Smith sees Coal Ore Deposit (Small) at X: 56.74, Y: 14.81. [11 hours ago]
+- The Nume River flows through the village. [11 hours ago]
+- The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [11 hours ago]
+- I like strawberries. [11 hours ago]
+- I need to make sure everyone is safe. [11 hours ago]
+- The campsite is at 7, -8.3 [11 hours ago]
+- It's my job to protect the village. [11 hours ago]
+- Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [11 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Eli Green (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819290784] --- Response ---
+[1691819290784] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"x\": 52.41,\n  \"y\": 11.03\n}"
+  }
+}
+[1691819290784] --- Verified Action ---
+[1691819290784] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 52.41,
+    "y": 11.03
+  }
+}
+[1691819290817] [31m[createMemory][39m Thomas Smith has started walking to 52.41, Y: 11.03. [126.36956]
+[1691819291309] [31m[createMemory][39m Thomas Smith no longer sees CoalOreMedium (1) at X: 57.27, Y: 17.32 [126.780228]
+[1691819291460] [31m[createMemory][39m Thomas Smith sees Tree at X: 47.72001, Y: 10.21. [127.020721]
+[1691819292130] [31m[createMemory][39m Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97 [127.68454]
+[1691819292259] [31m[createMemory][39m Thomas Smith finished walking to 52.41, Y: 11.03. [127.819954]
+[1691819295635] --- Prompt ---
+[1691819295636] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 52.46369, 11.16019
+
+Time: Day 0, 12:46 PM
+
+Environment:
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 0.1408255m]
+- Tree (Health: 10/10) [X: 53.93, Y: 9.11, Distance: 2.520586m]
+- Tree (Health: 10/10) [X: 50.77, Y: 9.22, Distance: 2.575444m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 3.864228m]
+- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 4.837911m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 5.135664m]
+- Tree (Health: 10/10) [X: 50.12, Y: 6.280001, Distance: 5.41379m]
+- Eli Green (Health: 25/25) [X: 56.34905, Y: 14.93738, Distance: 5.418784m]
+- Tree (Health: 10/10) [X: 56.01, Y: 6.46, Distance: 5.887962m]
+- Tree (Health: 10/10) [X: 53.51, Y: 5.059999, Distance: 6.189272m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 6.204049m]
+- Tree (Health: 10/10) [X: 50.98, Y: 4.519997, Distance: 6.803932m]
+- Tree (Health: 10/10) [X: 48.47, Y: 5.46, Distance: 6.960007m]
+- Tree (Health: 10/10) [X: 55.4, Y: 4.5, Distance: 7.27874m]
+- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 7.287218m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 7.463939m]
+- Tree (Health: 10/10) [X: 58.16, Y: 5.91, Distance: 7.746771m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 7.81306m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 7.909708m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 8.888972m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 2
+  },
+  {
+    "task": "Talk to Thomas Smith",
+    "priority": 4
+  },
+  {
+    "task": "Explore the environment",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97 [0 minutes ago]
+- Thomas Smith sees Tree at X: 47.72001, Y: 10.21. [4 minutes ago]
+- Thomas Smith no longer sees CoalOreMedium (1) at X: 57.27, Y: 17.32 [6 minutes ago]
+- Thomas Smith has started walking to 52.41, Y: 11.03. [8 minutes ago]
+- I do the work that no one else wants to do. [12 hours ago]
+- The Nume River flows through the village. [12 hours ago]
+- The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [12 hours ago]
+- I like strawberries. [12 hours ago]
+- Thomas Smith sees Coal Ore Deposit (Small) at X: 56.74, Y: 14.81. [12 hours ago]
+- I need to make sure everyone is safe. [12 hours ago]
+
+Previous Actions:
+- [start_conversation]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [48 minutes ago]
+- [move_to]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [48 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819296668] [31m[createMemory][39m Thomas Smith no longer sees Human (4) at X: 56.33579, Y: 15.07654 [132.220367]
+[1691819298142] --- Response ---
+[1691819298142] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"x\": 54.64,\n  \"y\": 16.97\n}"
+  }
+}
+[1691819298143] --- Verified Action ---
+[1691819298143] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 54.64,
+    "y": 16.97
+  }
+}
+[1691819298176] [31m[createMemory][39m Thomas Smith has started walking to 54.64, Y: 16.97. [133.728668]
+[1691819298367] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Small) at X: 54.64, Y: 16.97. [133.920471]
+[1691819299005] [31m[createMemory][39m Thomas Smith no longer sees Tree (483) at X: 57.55001, Y: 10.45 [134.560226]
+[1691819299175] [31m[createMemory][39m Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [134.640411]
+[1691819299379] [31m[createMemory][39m Thomas Smith no longer sees Tree (481) at X: 47.72001, Y: 10.21 [134.901154]
+[1691819299510] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [135.06015]
+[1691819299523] [31m[createMemory][39m Thomas Smith no longer sees Tree (483) at X: 57.55001, Y: 10.45 [135.080688]
+[1691819300001] [31m[createMemory][39m Thomas Smith no longer sees Tree (484) at X: 50.77, Y: 9.22 [135.561172]
+[1691819300089] [31m[createMemory][39m Thomas Smith sees Copper Ore Deposit (Small) at X: 53.88, Y: 19.83. [135.641647]
+[1691819300105] [31m[createMemory][39m Thomas Smith no longer sees Tree (485) at X: 53.93, Y: 9.11 [135.660065]
+[1691819300265] [31m[createMemory][39m Thomas Smith sees Eli Green at X: 57.13316, Y: 18.02693. [135.7217]
+[1691819301164] [31m[createMemory][39m Thomas Smith sees Copper Ore Deposit (Small) at X: 50.43, Y: 20.71. [136.721085]
+[1691819301296] [31m[createMemory][39m Thomas Smith no longer sees Tree (486) at X: 52.41, Y: 11.03 [136.841522]
+[1691819301297] [31m[createMemory][39m Thomas Smith sees Copper Ore Deposit (Medium) at X: 53.76, Y: 21.7. [136.801056]
+[1691819301385] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Large) at X: 58.91, Y: 19.37. [136.941071]
+[1691819302186] [31m[createMemory][39m Thomas Smith sees Copper Ore Deposit (Medium) at X: 52.01, Y: 23.05. [137.74057]
+[1691819302347] [31m[createMemory][39m Thomas Smith no longer sees CopperOreMedium at X: 52.01, Y: 23.05 [137.881]
+[1691819302349] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Medium) at X: 59.9, Y: 16.03. [137.860641]
+[1691819302470] [31m[createMemory][39m Thomas Smith finished walking to 54.64, Y: 16.97. [138.019958]
+[1691819305588] --- Prompt ---
+[1691819305589] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 54.49751, 17.54071
+
+Time: Day 0, 1:48 PM
+
+Environment:
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 0.5882301m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 2.37111m]
+- Eli Green (Health: 25/25) [X: 57.13316, Y: 18.02693, Distance: 2.680125m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 2.781263m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 4.224171m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 4.776649m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 5.006645m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 5.156454m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 5.609739m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 5.918293m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 52.01, Y: 23.05, Distance: 6.04483m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 6.558412m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 6.837181m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 54.06, Y: 24.46, Distance: 6.933107m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 7.106792m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 7.178509m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 57.1, Y: 24.45, Distance: 7.383173m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 7.719842m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 7.782087m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 49.03, Y: 23.52, Distance: 8.102196m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 8.127619m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.45317m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 2
+  },
+  {
+    "task": "Talk to Thomas Smith",
+    "priority": 4
+  },
+  {
+    "task": "Explore the environment",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 52.01, Y: 23.05. [1 minutes ago]
+- Thomas Smith no longer sees Tree (486) at X: 52.41, Y: 11.03 [7 minutes ago]
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 53.76, Y: 21.7. [7 minutes ago]
+- Thomas Smith no longer sees Tree (485) at X: 53.93, Y: 9.11 [14 minutes ago]
+- Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [17 minutes ago]
+- Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [20 minutes ago]
+- Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97 [1 hours ago]
+- Thomas Smith sees Tree at X: 47.72001, Y: 10.21. [1 hours ago]
+- Thomas Smith no longer sees CoalOreMedium (1) at X: 57.27, Y: 17.32 [1 hours ago]
+- The Nume River flows through the village. [13 hours ago]
+
+Previous Actions:
+- [start_conversation]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [1 hours ago]
+- [move_to]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [1 hours ago]
+- [move_to]: Thomas Smith walked to X: 52.41, Y: 11.03. [1 hours ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819308197] --- Response ---
+[1691819308197] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"x\": 54.64,\n  \"y\": 16.97\n}"
+  }
+}
+[1691819308199] --- Verified Action ---
+[1691819308199] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 54.64,
+    "y": 16.97
+  }
+}
+[1691819308231] [31m[createMemory][39m Thomas Smith has started walking to 54.64, Y: 16.97. [143.784744]
+[1691819308287] [31m[createMemory][39m Thomas Smith finished walking to 54.64, Y: 16.97. [143.839951]
+[1691819311541] --- Prompt ---
+[1691819311541] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 54.53116, 17.5311
+
+Time: Day 0, 2:23 PM
+
+Environment:
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 0.5715544m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 2.389346m]
+- Eli Green (Health: 25/25) [X: 57.13316, Y: 18.02693, Distance: 2.64882m]
+- Coal Ore Deposit (Medium) (Health: 5/10) [X: 57.27, Y: 17.32, Distance: 2.746961m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 4.23963m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 4.749294m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 5.02762m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 5.188926m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 5.574739m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 5.885309m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 52.01, Y: 23.05, Distance: 6.067501m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 6.546694m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 6.83839m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 54.06, Y: 24.46, Distance: 6.944904m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 7.141753m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 7.145583m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 57.1, Y: 24.45, Distance: 7.380391m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 7.697752m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 7.760279m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 8.092631m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 49.03, Y: 23.52, Distance: 8.132022m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.487157m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 2
+  },
+  {
+    "task": "Talk to Thomas Smith",
+    "priority": 4
+  },
+  {
+    "task": "Explore the environment",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 52.01, Y: 23.05. [36 minutes ago]
+- Thomas Smith no longer sees Tree (486) at X: 52.41, Y: 11.03 [41 minutes ago]
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 53.76, Y: 21.7. [42 minutes ago]
+- Thomas Smith no longer sees Tree (485) at X: 53.93, Y: 9.11 [49 minutes ago]
+- Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [52 minutes ago]
+- Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [55 minutes ago]
+- Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97 [1 hours ago]
+- Thomas Smith sees Tree at X: 47.72001, Y: 10.21. [1 hours ago]
+- Thomas Smith no longer sees CoalOreMedium (1) at X: 57.27, Y: 17.32 [1 hours ago]
+- The Nume River flows through the village. [14 hours ago]
+
+Previous Actions:
+- [start_conversation]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [2 hours ago]
+- [move_to]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [2 hours ago]
+- [move_to]: Thomas Smith walked to X: 52.41, Y: 11.03. [1 hours ago]
+- [move_to]: Thomas Smith walked to X: 54.64, Y: 16.97. [34 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819312126] [31m[createMemory][39m Thomas Smith sees Coal Ore Deposit (Small) at X: 57.27, Y: 17.32. [147.681534]
+[1691819314611] --- Response ---
+[1691819314611] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"x\": 54.64,\n  \"y\": 16.97\n}"
+  }
+}
+[1691819314611] --- Verified Action ---
+[1691819314611] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 54.64,
+    "y": 16.97
+  }
+}
+[1691819314645] [31m[createMemory][39m Thomas Smith has started walking to 54.64, Y: 16.97. [150.198257]
+[1691819314708] [31m[createMemory][39m Thomas Smith finished walking to 54.64, Y: 16.97. [150.259949]
+[1691819317654] --- Prompt ---
+[1691819317657] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 54.56482, 17.52148
+
+Time: Day 0, 3:01 PM
+
+Environment:
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 0.5565807m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 2.407954m]
+- Eli Green (Health: 25/25) [X: 57.13316, Y: 18.02693, Distance: 2.617609m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 57.27, Y: 17.32, Distance: 2.712677m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 4.255323m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 4.72204m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 5.048748m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 5.221433m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 5.53974m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 5.852347m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 52.01, Y: 23.05, Distance: 6.09029m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 6.535143m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 6.839776m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 54.06, Y: 24.46, Distance: 6.95686m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 7.112676m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 7.176715m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 57.1, Y: 24.45, Distance: 7.377776m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 7.675755m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 7.738568m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 8.057644m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 49.03, Y: 23.52, Distance: 8.161891m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.521152m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 2
+  },
+  {
+    "task": "Talk to Thomas Smith",
+    "priority": 4
+  },
+  {
+    "task": "Explore the environment",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 52.01, Y: 23.05. [1 hours ago]
+- Thomas Smith no longer sees Tree (486) at X: 52.41, Y: 11.03 [1 hours ago]
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 53.76, Y: 21.7. [1 hours ago]
+- Thomas Smith no longer sees Tree (485) at X: 53.93, Y: 9.11 [1 hours ago]
+- Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [1 hours ago]
+- Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [1 hours ago]
+- Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97 [2 hours ago]
+- Thomas Smith sees Tree at X: 47.72001, Y: 10.21. [2 hours ago]
+- Thomas Smith no longer sees CoalOreMedium (1) at X: 57.27, Y: 17.32 [2 hours ago]
+- The Nume River flows through the village. [15 hours ago]
+
+Previous Actions:
+- [start_conversation]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [3 hours ago]
+- [move_to]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [3 hours ago]
+- [move_to]: Thomas Smith walked to X: 52.41, Y: 11.03. [2 hours ago]
+- [move_to]: Thomas Smith walked to X: 54.64, Y: 16.97. [1 hours ago]
+- [move_to]: Thomas Smith walked to X: 54.64, Y: 16.97. [38 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819320460] --- Response ---
+[1691819320460] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A1\",\n  \"x\": 54.64,\n  \"y\": 16.97\n}"
+  }
+}
+[1691819320461] --- Verified Action ---
+[1691819320461] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 54.64,
+    "y": 16.97
+  }
+}
+[1691819320495] [31m[createMemory][39m Thomas Smith has started walking to 54.64, Y: 16.97. [156.047546]
+[1691819320544] [31m[createMemory][39m Thomas Smith finished walking to 54.64, Y: 16.97. [156.099945]
+[1691819323509] --- Prompt ---
+[1691819323509] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Location: 54.59847, 17.51186
+
+Time: Day 0, 3:36 PM
+
+Environment:
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 0.5434536m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 2.426922m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 57.27, Y: 17.32, Distance: 2.678412m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 53.76, Y: 21.7, Distance: 4.271244m]
+- Eli Green (Health: 25/25) [X: 58.78099, Y: 18.45783, Distance: 4.28816m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 4.694888m]
+- Chest (Health: 10/10) [X: 50.52, Y: 14.5, Distance: 5.070032m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 50.43, Y: 20.71, Distance: 5.25397m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 5.50474m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 5.81941m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 52.01, Y: 23.05, Distance: 6.113193m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 6.523758m]
+- Tree (Health: 10/10) [X: 52.41, Y: 11.03, Distance: 6.841342m]
+- Copper Ore Deposit (Medium) (Health: 10/10) [X: 54.06, Y: 24.46, Distance: 6.968969m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 7.07979m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 7.211678m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 57.1, Y: 24.45, Distance: 7.375323m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 7.653858m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 7.716955m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 8.022656m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 49.03, Y: 23.52, Distance: 8.191798m]
+- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 8.555155m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 8.752298m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Mine ore",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 2
+  },
+  {
+    "task": "Talk to Thomas Smith",
+    "priority": 4
+  },
+  {
+    "task": "Explore the environment",
+    "priority": 5
+  }
+]
+
+Memories:
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 52.01, Y: 23.05. [1 hours ago]
+- Thomas Smith no longer sees Tree (486) at X: 52.41, Y: 11.03 [1 hours ago]
+- Thomas Smith sees Copper Ore Deposit (Medium) at X: 53.76, Y: 21.7. [1 hours ago]
+- Thomas Smith no longer sees Tree (485) at X: 53.93, Y: 9.11 [2 hours ago]
+- Thomas Smith sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [2 hours ago]
+- Thomas Smith sees Tree at X: 57.55001, Y: 10.45. [2 hours ago]
+- Thomas Smith no longer sees CoalOreSmall (1) at X: 54.64, Y: 16.97 [2 hours ago]
+- Thomas Smith sees Tree at X: 47.72001, Y: 10.21. [2 hours ago]
+- Thomas Smith no longer sees CoalOreMedium (1) at X: 57.27, Y: 17.32 [2 hours ago]
+- The Nume River flows through the village. [15 hours ago]
+
+Previous Actions:
+- [start_conversation]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [3 hours ago]
+- [move_to]: Thomas Smith spoke with Eli Green about Ensure Eli Green is safe and ask about any concerns.. [3 hours ago]
+- [move_to]: Thomas Smith walked to X: 52.41, Y: 11.03. [2 hours ago]
+- [move_to]: Thomas Smith walked to X: 54.64, Y: 16.97. [1 hours ago]
+- [move_to]: Thomas Smith walked to X: 54.64, Y: 16.97. [1 hours ago]
+- [move_to]: Thomas Smith walked to X: 54.64, Y: 16.97. [35 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691819325963] --- Response ---
+[1691819325963] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n\"characterId\": \"A1\",\n\"x\": 54.64,\n\"y\": 16.97\n}"
+  }
+}
+[1691819325964] --- Verified Action ---
+[1691819325964] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A1",
+    "x": 54.64,
+    "y": 16.97
+  }
+}

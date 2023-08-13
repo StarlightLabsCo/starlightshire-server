@@ -3,8 +3,12 @@ import { prisma } from "../db.js";
 
 let tasks = [
     {
-        task: "Mine ore",
+        task: "Catch up with other villagers",
         priority: 1,
+    },
+    {
+        task: "Check on the mine",
+        priority: 2,
     },
     {
         task: "Store extra materials in chest",

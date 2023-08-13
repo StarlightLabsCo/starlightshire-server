@@ -33,10 +33,11 @@ async function fetchCharacters(character1Id: string, character2Id: string) {
 // - Upgrade patience to be more complex -- delta patience = delta information > 0
 // - patience on character 2's side
 // - ability for both parties to "remember" more contextual information from my vectordb
-// - ability for character 1 and character 2 to be async so it can break out of the 1:1 message pattern
-// - other stats that correlate with the characters, hunger, tired, etc (i wonder if it's possible to have a meta layer where an LLM defines this  behavior)
-// - ability for parties to join/leave conversations and handle it properly
 
+// - other stats that correlate with the characters, hunger, tired, etc (i wonder if it's possible to have a meta layer where an LLM defines this  behavior)
+
+// - ability for parties to join/leave conversations and handle it properly
+// - ability for character 1 and character 2 to be async so it can break out of the 1:1 message pattern
 // -----------------
 
 async function startConversation(
@@ -57,6 +58,8 @@ async function startConversation(
         )
     );
 
+    // TODO: Mark both characters as "occupied" so all generated actions are ignored and not sent or saved
+
     // Fetch each character
     const [character, targetCharacter] = await fetchCharacters(
         data.characterId,
@@ -75,22 +78,28 @@ async function startConversation(
     const initialCharacterMemories = [
         {
             role: "system",
-            content: `You are ${character.name}. You are ${
-                character.age
-            } years old. You are a ${
-                character.occupation
-            }. You are ${character.personality.join(", ")}.`,
+            content:
+                character.id == "A1"
+                    ? `In the shadows of the village, where whispers grow like creeping vines, the leader stands as an unyielding monolith of bombast. His presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around him. Every word he utters thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. His laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. His meetings are less about dialogue and more about dictation, with him always on a self-made pedestal, looking down on those he deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. His bombast is his weapon, one he wields with ruthless precision. He uses it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale he tells, while cloaked in the grandeur of his own making, serves only to further his grip on the village. Each exaggerated anecdote is a smokescreen, behind which he conducts his dark dealings. This bombastic leader, with his unchecked ego and ironclad will, has turned the village into his personal theater, where the inhabitants are mere puppets, dancing to his discordant tune.`
+                    : `You are ${character.name}. You are ${
+                          character.age
+                      } years old. You are a ${
+                          character.occupation
+                      }. You are ${character.personality.join(", ")}.`,
         },
     ];
 
     const initialTargetCharacterMemories = [
         {
             role: "system",
-            content: `You are ${targetCharacter.name}. You are ${
-                targetCharacter.age
-            } years old. You are a ${
-                targetCharacter.occupation
-            }. You are ${targetCharacter.personality.join(", ")}.`,
+            content:
+                character.id == "A1"
+                    ? `In the shadows of the village, where whispers grow like creeping vines, the leader stands as an unyielding monolith of bombast. His presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around him. Every word he utters thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. His laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. His meetings are less about dialogue and more about dictation, with him always on a self-made pedestal, looking down on those he deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. His bombast is his weapon, one he wields with ruthless precision. He uses it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale he tells, while cloaked in the grandeur of his own making, serves only to further his grip on the village. Each exaggerated anecdote is a smokescreen, behind which he conducts his dark dealings. This bombastic leader, with his unchecked ego and ironclad will, has turned the village into his personal theater, where the inhabitants are mere puppets, dancing to his discordant tune.`
+                    : `You are ${character.name}. You are ${
+                          character.age
+                      } years old. You are a ${
+                          character.occupation
+                      }. You are ${character.personality.join(", ")}.`,
         },
     ];
 
@@ -105,15 +114,17 @@ async function startConversation(
     // Fetch relevant memories for each character & the environment (conversation partner, etc)
     const characterReleventMemories = await getRelevantMemories(
         character,
-        `I started a convesation with ${targetCharacter.name} to ${data.conversationGoal}`,
+        `I started a conversation with ${targetCharacter.name} to ${data.conversationGoal}`,
         10
     );
 
     const targetCharacterRelevantMemories = await getRelevantMemories(
         targetCharacter,
-        `${character.name} started a convesation with me.`,
+        `${character.name} started a conversation with me.`,
         10
     );
+
+    // TODO: summarization step
 
     const characterReleventMemoriesBlock = [
         {
@@ -186,7 +197,7 @@ async function startConversation(
 
     const say = {
         action: "say",
-        description: "Says out loud next.",
+        description: "Says out loud next. Generally keep responses short.",
     };
 
     const character1Explain = {
