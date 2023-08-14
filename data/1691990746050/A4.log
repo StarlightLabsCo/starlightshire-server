@@ -1,0 +1,106 @@
+[1691990746060] [Character] Creating Lucy
+[1691990746520] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1691990746520] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1691990746520] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1691990746520] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1691990746520] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1691990746520] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1691990746520] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1691990746520] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1691990746520] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1691990746520] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1691990746520] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1691990746521] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1691990746521] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1691990746521] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1691990746521] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1691990749743] [Character] Lucy created
+[1691990757655] [31m[createMemory][39m Lucy Wilde sees Will Turner at X: 36.35, Y: -59.36. [0]
+[1691990760508] --- Prompt ---
+[1691990760508] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.31, -58.62
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.35, Y: -59.36, Distance: 1.2764m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- George and I have shared tales over campfires many nights. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- I remember the tallest tree I've ever felled, stood mighty for over a century. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Will Turner (ID: A3).
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1691990773439] --- Response ---
+[1691990773439] Updated Tasks: 
+[1691990773440] [
+  {
+    "task": "Start a conversation with Will Turner",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Remember to carve today's symbol on a tree",
+    "priority": 6
+  }
+]

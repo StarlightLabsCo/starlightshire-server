@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import colors from "colors";
 import OpenAI from "openai";
 import { Memory } from "@prisma/client";
 
@@ -14,6 +15,8 @@ const actionCounter = {};
 const actionHistory = {};
 const actionSetWorldCommands = {};
 const actionResults = {};
+
+let occupiedAgents = {};
 
 async function saveActionResult(
     ws: WebSocket,
@@ -456,6 +459,17 @@ async function getAction(
             // log("--- Actions ---", "info", character.id);
             // log(actions, "info", character.id);
 
+            if (occupiedAgents[character.id]) {
+                log(
+                    colors.red(
+                        `Agent ${character.id} is already occupied. Skipping...`
+                    ),
+                    "info",
+                    character.id
+                );
+                return;
+            }
+
             log("--- Response ---", "info", character.id);
             log(response, "info", character.id);
 
@@ -521,4 +535,4 @@ async function getAction(
     }
 }
 
-export { getAction, saveActionResult };
+export { getAction, saveActionResult, occupiedAgents };

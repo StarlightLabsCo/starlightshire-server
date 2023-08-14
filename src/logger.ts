@@ -7,7 +7,7 @@ let globalLogMap;
 
 export type LogLevel = "info" | "warn" | "error";
 
-async function initLogging() {
+async function initLogging(cliDescription: string | undefined) {
     // Create the run-specific log directory
     const replayTimestamp = new Date();
     globalLogPath = `./data/${replayTimestamp.getTime()}/`;
@@ -23,11 +23,16 @@ async function initLogging() {
         output: process.stdout,
     });
 
-    const description = await new Promise<string>((resolve) => {
-        rl.question("Please describe the run: ", (description) => {
-            resolve(description);
+    let description;
+    if (cliDescription) {
+        description = cliDescription;
+    } else {
+        description = await new Promise<string>((resolve) => {
+            rl.question("Please describe the run: ", (description) => {
+                resolve(description);
+            });
         });
-    });
+    }
 
     fs.writeFileSync(`${globalLogPath}description.txt`, description);
     rl.close();

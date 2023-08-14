@@ -2,6 +2,10 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+// CLI
+import yargs from "yargs/yargs";
+import { hideBin } from "yargs/helpers";
+
 // Webs Sockets
 import { WebSocketServer } from "ws";
 
@@ -36,7 +40,13 @@ const handlers = {
 
 async function main() {
     await resetDb();
-    await initLogging();
+
+    const argv = await yargs(hideBin(process.argv)).option("m", {
+        description: "Message for the run",
+        type: "string",
+    }).argv;
+
+    await initLogging(argv.m as string | undefined);
 
     createCharacters();
 

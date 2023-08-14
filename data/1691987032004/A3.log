@@ -1,0 +1,276 @@
+[1691987032507] [31m[createMemory][39m Today was my first day in the mines. [0]
+[1691987032507] [31m[createMemory][39m George and Thomas have been really helpful. [0]
+[1691987032507] [31m[createMemory][39m The depth and darkness of the mines can be intimidating. [0]
+[1691987032507] [31m[createMemory][39m I accidentally broke a pickaxe on my first day. [0]
+[1691987032507] [31m[createMemory][39m The older miners have so many stories to tell. [0]
+[1691987032507] [31m[createMemory][39m I've always dreamed of being a miner like my father. [0]
+[1691987032507] [31m[createMemory][39m The echo in the mines is fascinating. [0]
+[1691987032508] [31m[createMemory][39m I need to remember to wear my helmet at all times. [0]
+[1691987032508] [31m[createMemory][39m The village has been supportive of my new journey. [0]
+[1691987032508] [31m[createMemory][39m I'm still learning the different routes in the mine. [0]
+[1691987032508] [31m[createMemory][39m I was startled by the sound of a mine cart today. [0]
+[1691987032508] [31m[createMemory][39m It's tiring, but I'm determined to make everyone proud. [0]
+[1691987032508] [31m[createMemory][39m I hope to find a rare gem or mineral soon. [0]
+[1691987032508] [31m[createMemory][39m The lanterns light up the mines in such a mysterious way. [0]
+[1691987032509] [31m[createMemory][39m I can't wait to tell my family about my adventures here. [0]
+[1691987035943] [Character] Will created
+[1691987074918] [31m[createMemory][39m Will Turner sees Lucy Wilde at X: 35.29, Y: -58.96. [0]
+[1691987077725] --- Prompt ---
+[1691987077725] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 36.447, -58.651
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 35.29, Y: -58.96, Distance: 1.197549m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 8.65895m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- The village has been supportive of my new journey. [just now]
+- The older miners have so many stories to tell. [just now]
+- I can't wait to tell my family about my adventures here. [just now]
+- I've always dreamed of being a miner like my father. [just now]
+- The depth and darkness of the mines can be intimidating. [just now]
+- The echo in the mines is fascinating. [just now]
+- Today was my first day in the mines. [just now]
+- I accidentally broke a pickaxe on my first day. [just now]
+- I was startled by the sound of a mine cart today. [just now]
+- The lanterns light up the mines in such a mysterious way. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Lucy Wilde (ID: A4).
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1691987088794] --- Response ---
+[1691987088794] Updated Tasks: 
+[1691987088794] [
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Move to the mine location",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Chop trees",
+    "priority": 6
+  }
+]
+[1691987091881] --- Prompt ---
+[1691987091883] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 36.447, -58.651
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 35.29, Y: -58.96, Distance: 1.197549m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 8.65895m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Move to the mine location",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Chop trees",
+    "priority": 6
+  }
+]
+
+Memories:
+- I accidentally broke a pickaxe on my first day. [just now]
+- The echo in the mines is fascinating. [just now]
+- The lanterns light up the mines in such a mysterious way. [just now]
+- The depth and darkness of the mines can be intimidating. [just now]
+- I can't wait to tell my family about my adventures here. [just now]
+- Today was my first day in the mines. [just now]
+- The older miners have so many stories to tell. [just now]
+- I've always dreamed of being a miner like my father. [just now]
+- Will Turner sees Lucy Wilde at X: 35.29, Y: -58.96. [just now]
+- The village has been supportive of my new journey. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691987097021] --- Response ---
+[1691987097022] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"targetCharacterId\": \"A4\",\n  \"conversationGoal\": \"Get to know Lucy Wilde better and introduce myself.\"\n}"
+  }
+}
+[1691987097023] --- Verified Action ---
+[1691987097023] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A3",
+    "targetCharacterId": "A4",
+    "conversationGoal": "Get to know Lucy Wilde better and introduce myself."
+  }
+}
+[1691987103233] [35m[CORTEX] Character 1 - Plan: [39m Will is planning to return to the mines early the next morning, eager to continue learning and experiencing the life of mining. He also intends to start a friendship with Lucy Wilde and get to know her better. Additionally, he wants to explore the mines further and push past his fears.
+[1691987108783] [35m[CORTEX] Character 1 - Say: [39mHello Lucy Wilde, I'm Will Turner. This is my first time as a miner. What can you tell me about the profession? I am eager to learn.
+
+[1691987123957] [35m[CORTEX] Character 1 - Feel: [39mI feel encouraged and inspired by Lucy's words, motivated to learn and thrive as a miner.
+[1691987132198] [35m[CORTEX] Character 1 - Explain: [39mI made progress towards my goal of getting to know Lucy better. She welcomed me into the mining community and gave me valuable advice on how to succeed in the profession. Her words have instilled a sense of inspiration and motivation within me to continue on my journey as a miner and to constantly learn and grow. Even though mining is a challenging profession, I'm eager to experience the thrill of discovering something valuable. I can't wait to start my day early tomorrow.
+[1691987133850] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1691987135501] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1691987139106] [35m[CORTEX] Character 1 Goodbye: [39mIt was a pleasure to meet you, Lucy, and thanks for the advice. I'm looking forward to embracing the challenges and rewards that mining will bring to my life. See you tomorrow!
+[1691987148528] --- Prompt ---
+[1691987148528] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 36.447, -58.651
+
+Time: Day 0, 6:54 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 36.2954, Y: -58.68059, Distance: 0.154457m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 8.65895m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Thomas Smith",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Explore Coal Ore Deposit (Small) at X: 54.64, Y: 16.97",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Explore Copper Ore Deposit (Small) at X: 50.43, Y: 20.71",
+    "priority": 6
+  },
+  {
+    "task": "Move to secret clearing in the woods",
+    "priority": 7
+  },
+  {
+    "task": "Listen to the forest",
+    "priority": 8
+  },
+  {
+    "task": "Look at the stars",
+    "priority": 9
+  }
+]
+
+Memories:
+- The lanterns light up the mines in such a mysterious way. [6 hours ago]
+- Will Turner sees Lucy Wilde at X: 35.29, Y: -58.96. [6 hours ago]
+- I accidentally broke a pickaxe on my first day. [6 hours ago]
+- The echo in the mines is fascinating. [6 hours ago]
+- The depth and darkness of the mines can be intimidating. [6 hours ago]
+- I can't wait to tell my family about my adventures here. [6 hours ago]
+- The older miners have so many stories to tell. [6 hours ago]
+- Today was my first day in the mines. [6 hours ago]
+- I've always dreamed of being a miner like my father. [6 hours ago]
+- The village has been supportive of my new journey. [6 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better and introduce myself.. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691987152514] [31mAgent A3 is already occupied. Skipping...[39m

@@ -1,0 +1,260 @@
+[1691984992149] [Character] Creating Lucy
+[1691984992588] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1691984992588] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1691984992588] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1691984992588] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1691984992588] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1691984992588] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1691984992588] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1691984992588] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1691984992588] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1691984992589] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1691984992589] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1691984992589] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1691984992589] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1691984992589] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1691984992589] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1691984995671] [Character] Lucy created
+[1691986589055] [31m[createMemory][39m Lucy Wilde sees Will Turner at X: 36.447, Y: -58.651. [0]
+[1691986592227] --- Prompt ---
+[1691986592227] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.29, -58.96
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 1.197549m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- I remember the tallest tree I've ever felled, stood mighty for over a century. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- George and I have shared tales over campfires many nights. [just now]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Will Turner (ID: A3).
+
+Hitbox (what you would hit with a swing based action):
+- Will Turner (Health: 25/25)
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1691986604132] --- Response ---
+[1691986604132] Updated Tasks: 
+[1691986604132] [
+  {
+    "task": "Start a conversation with Will Turner",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Prepare for a new day's work",
+    "priority": 6
+  }
+]
+[1691986606848] --- Prompt ---
+[1691986606849] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.29, -58.96
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 1.197549m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Will Turner",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Prepare for a new day's work",
+    "priority": 6
+  }
+]
+
+Memories:
+- Rain or shine, the trees await and work must be done. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- I remember the tallest tree I've ever felled, stood mighty for over a century. [just now]
+- George and I have shared tales over campfires many nights. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- Lucy Wilde sees Will Turner at X: 36.447, Y: -58.651. [just now]
+
+Hitbox (what you would hit with a swing based action):
+- Will Turner (Health: 25/25)
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691986607305] [31m[createMemory][39m Will Turner started a conversation with me. [17.80366]
+[1691986609723] [31mAgent A4 is already occupied. Skipping...[39m
+[1691986619783] [36m[CORTEX] Character 2 - Feel: [39mI feel excited to hear about your first day and look forward to sharing in your journey as you learn and grow in your new role!
+[1691986624585] [36m[CORTEX] Character 2 - Plan: [39mI am planning to ask Will more about his day, what he found challenging and rewarding, and how he feels about his new role. I also plan to reassure him that breaking a pickaxe is not uncommon for apprentice miners, and it's all part of the learning process.
+[1691986631035] [36m[CORTEX] Character 2 - Say: [39mHi Will! I can only imagine how tough it must have been, but it's great to hear that you found it invigorating. Don't worry about the pickaxe, those things happen, especially in the beginning. Every experience, even the challenging ones, are great learning opportunities. Just stay curious and eager like you always are!
+
+[1691986659788] [31m[createMemory][39m Will told me about his first day in the mines, how tough yet invigorating he found it. [17.80366]
+[1691986659788] [31m[createMemory][39m He shared that he broke a pickaxe on his very first day, showing his enthusiasm yet lack of experience. [17.80366]
+[1691986659789] [31m[createMemory][39m I recalled assuring him that it's normal for mistakes to happen in the beginning, especially for an apprentice miner. [17.80366]
+[1691986659789] [31m[createMemory][39m I encouraged him to stay curious and eager as those are his inherent strengths. [17.80366]
+[1691986660761] --- Prompt ---
+[1691986660761] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.29, -58.96
+
+Time: Day 0, 6:42 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 1.197549m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Collect resources from nearby ore deposits",
+    "priority": 5
+  },
+  {
+    "task": "Drop unwanted items to make space in inventory",
+    "priority": 6
+  },
+  {
+    "task": "Go to bed",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner started a conversation with me. [4 hours ago]
+- Rain or shine, the trees await and work must be done. [6 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [6 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [6 hours ago]
+- I remember the tallest tree I've ever felled, stood mighty for over a century. [6 hours ago]
+- George and I have shared tales over campfires many nights. [6 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [6 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [6 hours ago]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [6 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [6 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Will Turner (Health: 25/25)
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691986667486] [31mAgent A4 is already occupied. Skipping...[39m

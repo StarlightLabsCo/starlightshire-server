@@ -1,0 +1,393 @@
+[1691988925802] [Character] Creating Lucy
+[1691988926289] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1691988926289] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1691988926289] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1691988926289] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1691988926289] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1691988926289] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1691988926289] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1691988926289] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1691988926289] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1691988926289] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1691988926289] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1691988926289] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1691988926290] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1691988926290] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1691988926290] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1691988929182] [Character] Lucy created
+[1691988966695] [31m[createMemory][39m Lucy Wilde sees Will Turner at X: 36.447, Y: -58.651. [0]
+[1691988969819] --- Prompt ---
+[1691988969819] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.29, -58.96
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 1.197549m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- Nothing beats the smell of fresh-cut timber in the morning. [just now]
+- The feel of the axe in my hand is like an extension of myself. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Will Turner (ID: A3).
+
+Hitbox (what you would hit with a swing based action):
+- Will Turner (Health: 25/25)
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1691988979752] --- Response ---
+[1691988979752] Updated Tasks: 
+[1691988979752] [
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner",
+    "priority": 5
+  },
+  {
+    "task": "Spare some time to listen to the forest",
+    "priority": 6
+  }
+]
+[1691988983187] --- Prompt ---
+[1691988983187] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.29, -58.96
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 1.197549m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 1
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 3
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner",
+    "priority": 5
+  },
+  {
+    "task": "Spare some time to listen to the forest",
+    "priority": 6
+  }
+]
+
+Memories:
+- Lucy Wilde sees Will Turner at X: 36.447, Y: -58.651. [just now]
+- The feel of the axe in my hand is like an extension of myself. [just now]
+- Nothing beats the smell of fresh-cut timber in the morning. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+
+Hitbox (what you would hit with a swing based action):
+- Will Turner (Health: 25/25)
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691988986024] --- Response ---
+[1691988986024] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 36.447,\n  \"y\": -58.651\n}"
+  }
+}
+[1691988986025] --- Verified Action ---
+[1691988986025] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 36.447,
+    "y": -58.651
+  }
+}
+[1691988986208] [31m[createMemory][39m Lucy Wilde has started walking to 36.447, Y: -58.651. [18.2112541]
+[1691988986913] [31m[createMemory][39m Lucy Wilde finished walking to 36.447, Y: -58.651. [18.9599934]
+[1691988990583] --- Prompt ---
+[1691988990583] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 36.2954, -58.68059
+
+Time: Day 0, 1:53 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 0.154457m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 8.713243m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in the chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Plan next day's tasks",
+    "priority": 6
+  },
+  {
+    "task": "Check inventory before bed",
+    "priority": 7
+  },
+  {
+    "task": "Get a good night's sleep",
+    "priority": 8
+  }
+]
+
+Memories:
+- Lucy Wilde has started walking to 36.447, Y: -58.651. [4 minutes ago]
+- Nothing beats the smell of fresh-cut timber in the morning. [1 hours ago]
+- Rain or shine, the trees await and work must be done. [1 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [1 hours ago]
+- The feel of the axe in my hand is like an extension of myself. [1 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [1 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [1 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [1 hours ago]
+- Lucy Wilde sees Will Turner at X: 36.447, Y: -58.651. [1 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [1 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Will Turner (Health: 25/25)
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 36.447, Y: -58.651. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691988993924] --- Response ---
+[1691988993924] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"targetCharacterId\": \"A3\",\n  \"conversationGoal\": \"Discuss about the health of the forest and the quantity of timber required by the village\"\n}"
+  }
+}
+[1691988993926] --- Verified Action ---
+[1691988993926] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A4",
+    "targetCharacterId": "A3",
+    "conversationGoal": "Discuss about the health of the forest and the quantity of timber required by the village"
+  }
+}
+[1691989003184] [35m[CORTEX] Character 1 - Plan: [39m After the discussion with Will Turner, Lucy plans to do a thorough survey of the forest to assess its health and map out areas where cutting can be done sustainably. She then aims to prepare a detailed report for the villagers explaining the condition of the forest and the amount of timber they can expect in the coming months. She also plans to spend some time training Will, passing on her knowledge and skills as a lumberjack.
+[1691989009072] [35m[CORTEX] Character 1 - Say: [39mWill, I think it's time we assess the forest's condition. It's not just about cutting trees, but ensuring they thrive for generations to come. We also have to figure out just how much timber the village really needs. And lastly, I have some things to teach you about being a good lumberjack. It's a lot more than just swinging an axe, you know?
+
+[1691989020996] [35m[CORTEX] Character 1 - Feel: [39mI feel encouraged by Will's eagerness to learn and contribute to the well-being of our forest and village.
+[1691989028266] [35m[CORTEX] Character 1 - Explain: [39mI believe we're making solid progress here. His eagerness to learn gives me hope that the future of our forest is in good hands. We've set a clear plan now to assess the forest's condition and to manage the village's timber needs responsively. With him by my side, not only can we ensure that our village thrives, but we can also make certain that our forest continues to grow and flourish for future generations. It's a long journey, but a rewarding one.
+[1691989029843] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1691989030886] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1691989036134] [35m[CORTEX] Character 1 Goodbye: [39mThank you for the talk, Will. The work we've planned is just the beginning. Remember, the forest needs us as much as we need it. Let's do our best to serve both village and forest equally. Until tomorrow, take care.
+[1691989046840] --- Prompt ---
+[1691989046841] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 36.2954, -58.68059
+
+Time: Day 0, 7:32 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 36.447, Y: -58.651, Distance: 0.154457m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 8.713243m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in the chest",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Plan next day's tasks",
+    "priority": 6
+  },
+  {
+    "task": "Check inventory before bed",
+    "priority": 7
+  },
+  {
+    "task": "Get a good night's sleep",
+    "priority": 8
+  }
+]
+
+Memories:
+- Lucy Wilde finished walking to 36.447, Y: -58.651. [5 hours ago]
+- Lucy Wilde has started walking to 36.447, Y: -58.651. [5 hours ago]
+- Rain or shine, the trees await and work must be done. [7 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [7 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [7 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [7 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [7 hours ago]
+- Lucy Wilde sees Will Turner at X: 36.447, Y: -58.651. [7 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [7 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [7 hours ago]
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 36.447, Y: -58.651. [5 hours ago]
+- [start_conversation]: I spoke with Will Turner about Discuss about the health of the forest and the quantity of timber required by the village. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1691989051380] --- Response ---
+[1691989051380] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"targetCharacterId\": \"A3\",\n  \"conversationGoal\": \"Discuss about the health of the forest and the quantity of timber required by the village.\"\n}"
+  }
+}
+[1691989051381] --- Verified Action ---
+[1691989051381] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A4",
+    "targetCharacterId": "A3",
+    "conversationGoal": "Discuss about the health of the forest and the quantity of timber required by the village."
+  }
+}

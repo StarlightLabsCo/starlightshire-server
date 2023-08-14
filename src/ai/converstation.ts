@@ -3,6 +3,7 @@ import { prisma } from "../db.js";
 import { createMemory, getRelevantMemories } from "./memory.js";
 import { log } from "../logger.js";
 import colors from "colors";
+import { occupiedAgents } from "./agent.js";
 
 const gpt4 = new OpenAILanguageProgramProcessor(
     {},
@@ -58,7 +59,8 @@ async function startConversation(
         )
     );
 
-    // TODO: Mark both characters as "occupied" so all generated actions are ignored and not sent or saved
+    occupiedAgents[data.characterId] = true;
+    occupiedAgents[data.targetCharacterId] = true;
 
     // Fetch each character
     const [character, targetCharacter] = await fetchCharacters(
@@ -80,7 +82,7 @@ async function startConversation(
             role: "system",
             content:
                 character.id == "A1"
-                    ? `In the shadows of the village, where whispers grow like creeping vines, the leader stands as an unyielding monolith of bombast. His presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around him. Every word he utters thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. His laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. His meetings are less about dialogue and more about dictation, with him always on a self-made pedestal, looking down on those he deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. His bombast is his weapon, one he wields with ruthless precision. He uses it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale he tells, while cloaked in the grandeur of his own making, serves only to further his grip on the village. Each exaggerated anecdote is a smokescreen, behind which he conducts his dark dealings. This bombastic leader, with his unchecked ego and ironclad will, has turned the village into his personal theater, where the inhabitants are mere puppets, dancing to his discordant tune.`
+                    ? `You are ${targetCharacter.name}, an unyielding monolith of bombast. Your presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around you. Every word you utter thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. Your laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. Your meetings are less about dialogue and more about dictation, with yourself always on a self-made pedestal, looking down on those you deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. Your bombast is his weapon, one you wields with ruthless precision. You use it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale you tell, while cloaked in the grandeur of your own making, serves only to further your grip on the village. Each exaggerated anecdote is a smokescreen, behind which you conducts your dark dealings. Your unchecked ego and ironclad will, has turned the village into your personal theater, where the inhabitants are mere puppets, dancing to your discordant tune.`
                     : `You are ${character.name}. You are ${
                           character.age
                       } years old. You are a ${
@@ -93,13 +95,13 @@ async function startConversation(
         {
             role: "system",
             content:
-                character.id == "A1"
-                    ? `In the shadows of the village, where whispers grow like creeping vines, the leader stands as an unyielding monolith of bombast. His presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around him. Every word he utters thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. His laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. His meetings are less about dialogue and more about dictation, with him always on a self-made pedestal, looking down on those he deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. His bombast is his weapon, one he wields with ruthless precision. He uses it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale he tells, while cloaked in the grandeur of his own making, serves only to further his grip on the village. Each exaggerated anecdote is a smokescreen, behind which he conducts his dark dealings. This bombastic leader, with his unchecked ego and ironclad will, has turned the village into his personal theater, where the inhabitants are mere puppets, dancing to his discordant tune.`
-                    : `You are ${character.name}. You are ${
-                          character.age
+                targetCharacter.id == "A1"
+                    ? `You are ${targetCharacter.name}, an unyielding monolith of bombast. Your presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around you. Every word you utter thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. Your laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. Your meetings are less about dialogue and more about dictation, with yourself always on a self-made pedestal, looking down on those you deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. Your bombast is his weapon, one you wields with ruthless precision. You use it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale you tell, while cloaked in the grandeur of your own making, serves only to further your grip on the village. Each exaggerated anecdote is a smokescreen, behind which you conducts your dark dealings. Your unchecked ego and ironclad will, has turned the village into your personal theater, where the inhabitants are mere puppets, dancing to your discordant tune.`
+                    : `You are ${targetCharacter.name}. You are ${
+                          targetCharacter.age
                       } years old. You are a ${
-                          character.occupation
-                      }. You are ${character.personality.join(", ")}.`,
+                          targetCharacter.occupation
+                      }. You are ${targetCharacter.personality.join(", ")}.`,
         },
     ];
 
@@ -436,6 +438,9 @@ async function startConversation(
 
     log(colors.yellow("[CONVERSATION] Conversation finished."));
 
+    delete occupiedAgents[data.characterId];
+    delete occupiedAgents[data.targetCharacterId];
+
     // Generate memories
     // Common regex pattern for both characters
     let characterRegex = /^\s*\d+\.\s+"(.+?)"\s*$/m;
@@ -445,6 +450,8 @@ async function startConversation(
         let characterMemory = await cortexStep.queryMemory(
             `Pick up to 4 most salient memories from the conversation that ${character.name} would have. List them in first person voice and maximum one sentence each.`
         );
+
+        log(`Generated memories for ${character.name}: ${characterMemory}`);
 
         let characterMemoryCount = 0;
         let match;
