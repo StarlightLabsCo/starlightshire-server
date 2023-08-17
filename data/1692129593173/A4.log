@@ -1,0 +1,118 @@
+[1692129593179] [Character] Creating Lucy
+[1692129593694] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1692129593694] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1692129593694] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1692129593694] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1692129593694] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1692129593694] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1692129593694] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1692129593695] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1692129593695] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1692129593695] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1692129593695] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1692129593695] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1692129593695] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1692129593695] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1692129593695] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1692129596848] [Character] Lucy created
+[1692129997930] [31m[createMemory][39m Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [0]
+[1692130000619] --- Prompt ---
+[1692130000619] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  }
+]
+
+Memories:
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- Nothing beats the smell of fresh-cut timber in the morning. [just now]
+- The creaking sound a tree makes just before it falls is both eerie and beautiful. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- Thomas once tried to chop wood, it was amusing to say the least. [just now]
+- George and I have shared tales over campfires many nights. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1692130031966] --- Response ---
+[1692130031966] Updated Tasks: 
+[1692130031966] [
+  {
+    "task": "Chop tree closer to you",
+    "priority": 1
+  },
+  {
+    "task": "Move to next closer tree",
+    "priority": 2
+  },
+  {
+    "task": "Repeat the cycle of work, carrying out your daily duties",
+    "priority": 3
+  },
+  {
+    "task": "Take a break and have lunch",
+    "priority": 4
+  },
+  {
+    "task": "Inspect trees health and mark the unhealthy ones",
+    "priority": 5
+  },
+  {
+    "task": "Replace old symbols on trees",
+    "priority": 6
+  },
+  {
+    "task": "Check on animals in the forest",
+    "priority": 7
+  },
+  {
+    "task": "Catch up with Will, Thomas, and George",
+    "priority": 8
+  },
+  {
+    "task": "Clean work area and prepare for tomorrow",
+    "priority": 9
+  },
+  {
+    "task": "Return home and rest for the next day",
+    "priority": 10
+  }
+]

@@ -1,0 +1,859 @@
+[1692128211208] [31m[createMemory][39m Today was my first day in the mines. [0]
+[1692128211208] [31m[createMemory][39m George and Thomas have been really helpful. [0]
+[1692128211208] [31m[createMemory][39m The depth and darkness of the mines can be intimidating. [0]
+[1692128211208] [31m[createMemory][39m I accidentally broke a pickaxe on my first day. [0]
+[1692128211208] [31m[createMemory][39m The older miners have so many stories to tell. [0]
+[1692128211208] [31m[createMemory][39m I've always dreamed of being a miner like my father. [0]
+[1692128211208] [31m[createMemory][39m The echo in the mines is fascinating. [0]
+[1692128211208] [31m[createMemory][39m I need to remember to wear my helmet at all times. [0]
+[1692128211208] [31m[createMemory][39m The village has been supportive of my new journey. [0]
+[1692128211208] [31m[createMemory][39m I'm still learning the different routes in the mine. [0]
+[1692128211208] [31m[createMemory][39m I was startled by the sound of a mine cart today. [0]
+[1692128211209] [31m[createMemory][39m It's tiring, but I'm determined to make everyone proud. [0]
+[1692128211209] [31m[createMemory][39m I hope to find a rare gem or mineral soon. [0]
+[1692128211209] [31m[createMemory][39m The lanterns light up the mines in such a mysterious way. [0]
+[1692128211209] [31m[createMemory][39m I can't wait to tell my family about my adventures here. [0]
+[1692128214438] [Character] Will created
+[1692128952385] [31m[createMemory][39m Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [0]
+[1692128952397] [31m[createMemory][39m Will Turner sees Tree at X: 35.12, Y: -49.42. [0]
+[1692128952418] [31m[createMemory][39m Will Turner sees Tree at X: 37.81, Y: -50.1. [0]
+[1692128954480] --- Prompt ---
+[1692128954480] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  }
+]
+
+Memories:
+- I've always dreamed of being a miner like my father. [just now]
+- It's tiring, but I'm determined to make everyone proud. [just now]
+- The village has been supportive of my new journey. [just now]
+- Today was my first day in the mines. [just now]
+- The older miners have so many stories to tell. [just now]
+- George and Thomas have been really helpful. [just now]
+- I accidentally broke a pickaxe on my first day. [just now]
+- I was startled by the sound of a mine cart today. [just now]
+- The lanterns light up the mines in such a mysterious way. [just now]
+- I can't wait to tell my family about my adventures here. [just now]
+- Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Lucy Wilde (ID: A4).
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1692128966933] --- Response ---
+[1692128966933] Updated Tasks: 
+[1692128966933] [
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Check health of nearby trees and tree stumps with axe",
+    "priority": 3
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 4
+  },
+  {
+    "task": "Tell family about first day in mines",
+    "priority": 5
+  }
+]
+[1692128970203] --- Prompt ---
+[1692128970204] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Check health of nearby trees and tree stumps with axe",
+    "priority": 3
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 4
+  },
+  {
+    "task": "Tell family about first day in mines",
+    "priority": 5
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 35.12, Y: -49.42. [just now]
+- Will Turner sees Tree at X: 37.81, Y: -50.1. [just now]
+- It's tiring, but I'm determined to make everyone proud. [just now]
+- George and Thomas have been really helpful. [just now]
+- I was startled by the sound of a mine cart today. [just now]
+- I accidentally broke a pickaxe on my first day. [just now]
+- The lanterns light up the mines in such a mysterious way. [just now]
+- Today was my first day in the mines. [just now]
+- I can't wait to tell my family about my adventures here. [just now]
+- The older miners have so many stories to tell. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692128973944] --- Response ---
+[1692128973945] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"targetCharacterId\": \"A4\",\n  \"conversationGoal\": \"Get to know Lucy Wilde better\"\n}"
+  }
+}
+[1692128973948] --- Verified Action ---
+[1692128973948] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A3",
+    "targetCharacterId": "A4",
+    "conversationGoal": "Get to know Lucy Wilde better"
+  }
+}
+[1692128987065] [35m[CORTEX] Character 1 - Plan: [39m To continue building his skills as a miner, continue engaging with Lucy Wilde and the other miners to learn about their experiences, and share his own adventures with his family back at home. He wants to manage his tools better so as to avoid another incident like the broken pickaxe. Finally, he's planning to explore more of the mines, and get used to the sounds and atmosphere of the mining environment.
+[1692128995417] [35m[CORTEX] Character 1 - Say: [39mToday was both an exciting and daunting experience. Going into the mines for the first time was something I've waited for my whole life and it was just as extraordinary as I'd imagined. Yet, I realize there's a lot I need to learn. Lucy, could you perhaps share any advice or experiences that might help me get better at mining?
+
+[1692129019474] [35m[CORTEX] Character 1 - Feel: [39mI feel enlightened by Lucy's wise advice and am eager to apply her words about patience, safety, and respect for the mine into my work.
+[1692129035552] [35m[CORTEX] Character 1 - Explain: [39mLucy's words are sage, and it's clear I was a bit too eager and perhaps reckless on my first day. I was hurrying, not paying enough attention to my surroundings or the work itself, resulting in the broken pickaxe. But her advice puts things into perspective - I must be patient, respectful and safe. I'm understanding the nuances of this profession better and even though it's a slow process, I believe I've made significant progress towards my goal of becoming a good miner. I'll also take note of understanding the mine, akin to listening to nature, as that seems to be an interesting perspective that I'd overlooked.
+[1692129037100] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1692129038664] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1692129043450] [35m[CORTEX] Character 1 Goodbye: [39mThank you for your advice, Lucy. I appreciate your wisdom and I'll certainly do my best to apply it in the mines. I look forward to our future conversations. Goodbye for now, Lucy.
+[1692129053645] --- Prompt ---
+[1692129053649] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 9:37 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- The lanterns light up the mines in such a mysterious way. [9 hours ago]
+- I can't wait to tell my family about my adventures here. [9 hours ago]
+- I was startled by the sound of a mine cart today. [9 hours ago]
+- The older miners have so many stories to tell. [9 hours ago]
+- Today was my first day in the mines. [9 hours ago]
+- I accidentally broke a pickaxe on my first day. [9 hours ago]
+- Will Turner sees Tree at X: 35.12, Y: -49.42. [9 hours ago]
+- I've always dreamed of being a miner like my father. [9 hours ago]
+- Will Turner sees Tree at X: 37.81, Y: -50.1. [9 hours ago]
+- The village has been supportive of my new journey. [9 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129055924] [31m[createMemory][39m I remember how excited I was on my first day in the mines, the culmination of a lifelong dream. [20.7171726]
+[1692129055924] [31m[createMemory][39m After breaking a pickaxe out of eagerness, I learned the value of patience and careful work. [20.7171726]
+[1692129055924] [31m[createMemory][39m I recall the enlightening conversation with Lucy Wilde, who told me of the importance of respect and understanding of the mine, just as one would with nature. [20.7171726]
+[1692129055924] [31m[createMemory][39m I felt a sense of progress on this arduous journey of becoming a good miner after receiving Lucy's valuable advice. [20.7171726]
+[1692129057739] --- Response ---
+[1692129057739] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129057739] --- Verified Action ---
+[1692129057739] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129057769] [31m[createMemory][39m Will Turner has started walking to 35.12, Y: -49.42. [104.507629]
+[1692129058049] [31m[createMemory][39m Will Turner sees Tree at X: 36.04, Y: -47.68999. [104.781723]
+[1692129059336] [31m[createMemory][39m Will Turner sees Tree Stump at X: 36.50999, Y: -46.03. [106.060295]
+[1692129059722] [31m[createMemory][39m Will Turner sees Tree at X: 38.98, Y: -47.91. [106.460213]
+[1692129059920] [31m[createMemory][39m Will Turner sees Tree at X: 36.37, Y: -44.45. [106.660088]
+[1692129060002] [31m[createMemory][39m Will Turner sees Tree at X: 38.28, Y: -45.67. [106.740509]
+[1692129060045] [31m[createMemory][39m Will Turner sees Tree at X: 39.59, Y: -49.45. [106.785416]
+[1692129060735] [31m[createMemory][39m Will Turner finished walking to 35.12, Y: -49.42. [107.459961]
+[1692129064670] --- Prompt ---
+[1692129064670] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 34.86123, -49.0573
+
+Time: Day 0, 10:44 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 34.86364, Y: -49.05611, Distance: 0.002688666m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 0.4455418m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.805273m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.127692m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.447169m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.275578m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.745049m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.812668m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.848045m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.250266m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.836576m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.157737m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.796618m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.077648m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.219988m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.861993m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 39.59, Y: -49.45. [4 minutes ago]
+- Will Turner sees Tree at X: 38.98, Y: -47.91. [6 minutes ago]
+- Will Turner sees Tree Stump at X: 36.50999, Y: -46.03. [8 minutes ago]
+- Will Turner sees Tree at X: 36.04, Y: -47.68999. [16 minutes ago]
+- I felt a sense of progress on this arduous journey of becoming a good miner after receiving Lucy's valuable advice. [8 hours ago]
+- After breaking a pickaxe out of eagerness, I learned the value of patience and careful work. [8 hours ago]
+- I remember how excited I was on my first day in the mines, the culmination of a lifelong dream. [8 hours ago]
+- I recall the enlightening conversation with Lucy Wilde, who told me of the importance of respect and understanding of the mine, just as one would with nature. [8 hours ago]
+- The older miners have so many stories to tell. [10 hours ago]
+- I've always dreamed of being a miner like my father. [10 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better. [1 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129067405] --- Response ---
+[1692129067406] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A3\"\n}"
+  }
+}
+[1692129067406] --- Verified Action ---
+[1692129067406] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A3"
+  }
+}
+[1692129068073] [31m[createMemory][39m Will Turner picked up Wood at X: 34.86123, Y: -49.0573 [114.800613]
+[1692129068087] [31m[createMemory][39m Will Turner sees Tree Stump at X: 35.12, Y: -49.42. [114.800613]
+[1692129072027] --- Prompt ---
+[1692129072028] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 34.86123, -49.0573
+
+Time: Day 0, 11:31 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 34.86364, Y: -49.05611, Distance: 0.002688666m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4455418m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.805273m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.127692m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.447169m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.275578m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.745049m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.812668m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.848045m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.250266m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.836576m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.157737m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.796618m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.077648m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.219988m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.861993m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 35.12, Y: -49.42. [2 minutes ago]
+- Will Turner sees Tree at X: 39.59, Y: -49.45. [50 minutes ago]
+- Will Turner sees Tree at X: 38.28, Y: -45.67. [50 minutes ago]
+- Will Turner sees Tree at X: 38.98, Y: -47.91. [52 minutes ago]
+- Will Turner sees Tree Stump at X: 36.50999, Y: -46.03. [54 minutes ago]
+- Will Turner sees Tree at X: 36.04, Y: -47.68999. [1 hours ago]
+- I felt a sense of progress on this arduous journey of becoming a good miner after receiving Lucy's valuable advice. [9 hours ago]
+- After breaking a pickaxe out of eagerness, I learned the value of patience and careful work. [9 hours ago]
+- I remember how excited I was on my first day in the mines, the culmination of a lifelong dream. [9 hours ago]
+- I recall the enlightening conversation with Lucy Wilde, who told me of the importance of respect and understanding of the mine, just as one would with nature. [9 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better. [1 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [46 minutes ago]
+- [swing_axe]: Will Turner swong their axe at X: 34.86123, Y: -49.0573 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129075203] --- Response ---
+[1692129075203] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129075203] --- Verified Action ---
+[1692129075203] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129075236] [31m[createMemory][39m Will Turner has started walking to 35.12, Y: -49.42. [121.971924]
+[1692129075281] [31m[createMemory][39m Will Turner finished walking to 35.12, Y: -49.42. [122.019958]
+[1692129078808] --- Prompt ---
+[1692129078808] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 34.89579, -49.01674
+
+Time: Day 0, 12:12 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 34.86364, Y: -49.05611, Distance: 0.05082769m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4613904m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.751988m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.109027m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.395038m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.231505m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.714162m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.759573m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.798788m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.203795m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.783566m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.132279m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.758322m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.03546m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.167929m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.812291m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 35.12, Y: -49.42. [43 minutes ago]
+- Will Turner sees Tree at X: 39.59, Y: -49.45. [1 hours ago]
+- Will Turner sees Tree at X: 38.98, Y: -47.91. [1 hours ago]
+- Will Turner sees Tree Stump at X: 36.50999, Y: -46.03. [1 hours ago]
+- Will Turner sees Tree at X: 36.04, Y: -47.68999. [1 hours ago]
+- I felt a sense of progress on this arduous journey of becoming a good miner after receiving Lucy's valuable advice. [10 hours ago]
+- After breaking a pickaxe out of eagerness, I learned the value of patience and careful work. [10 hours ago]
+- I remember how excited I was on my first day in the mines, the culmination of a lifelong dream. [10 hours ago]
+- I recall the enlightening conversation with Lucy Wilde, who told me of the importance of respect and understanding of the mine, just as one would with nature. [10 hours ago]
+- The older miners have so many stories to tell. [12 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better. [2 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 34.86123, Y: -49.0573 and hit 1 trees. [41 minutes ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129082394] --- Response ---
+[1692129082394] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "drop_wood",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"itemId\": \"wood\"\n}"
+  }
+}
+[1692129082394] --- Verified Action ---
+[1692129082394] {
+  "type": "drop",
+  "data": {
+    "characterId": "A3",
+    "itemId": "wood"
+  }
+}
+[1692129082455] [31m[createMemory][39m Will Turner dropped Wood at X: 34.89579, Y: -49.01674 [129.16423]
+[1692129082455] [31m[createMemory][39m Will Turner picked up Wood at X: 34.89579, Y: -49.01674 [129.1876]
+[1692129085882] --- Prompt ---
+[1692129085882] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 34.89579, -49.01674
+
+Time: Day 0, 12:55 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 34.86364, Y: -49.05611, Distance: 0.05082769m]
+- Wood (Item ID: e9b720f0-7440-40bc-81d7-a0db414962c0) [X: 34.9867, Y: -49.01717, Distance: 0.09090903m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4613904m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.751988m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.109027m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.395038m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.231505m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.714162m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.759573m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.798788m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.203795m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.783566m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.132279m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.758322m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.03546m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.167929m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.812291m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 35.12, Y: -49.42. [1 hours ago]
+- Will Turner sees Tree at X: 39.59, Y: -49.45. [2 hours ago]
+- Will Turner sees Tree at X: 38.98, Y: -47.91. [2 hours ago]
+- Will Turner sees Tree Stump at X: 36.50999, Y: -46.03. [2 hours ago]
+- Will Turner sees Tree at X: 36.04, Y: -47.68999. [2 hours ago]
+- I felt a sense of progress on this arduous journey of becoming a good miner after receiving Lucy's valuable advice. [10 hours ago]
+- After breaking a pickaxe out of eagerness, I learned the value of patience and careful work. [10 hours ago]
+- I remember how excited I was on my first day in the mines, the culmination of a lifelong dream. [10 hours ago]
+- I recall the enlightening conversation with Lucy Wilde, who told me of the importance of respect and understanding of the mine, just as one would with nature. [10 hours ago]
+- The older miners have so many stories to tell. [12 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better. [3 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [2 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 34.86123, Y: -49.0573 and hit 1 trees. [1 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [43 minutes ago]
+- [drop]: Will Turner dropped Wood on the ground at X: 34.89579, Y: -49.01674. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129090838] --- Response ---
+[1692129090838] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129090838] --- Verified Action ---
+[1692129090838] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129090863] [31m[createMemory][39m Will Turner has started walking to 35.12, Y: -49.42. [137.6092]
+[1692129090920] [31m[createMemory][39m Will Turner finished walking to 35.12, Y: -49.42. [137.659958]
+[1692129095533] --- Prompt ---
+[1692129095533] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 34.93028, -48.98778
+
+Time: Day 0, 1:45 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 34.89824, Y: -49.01575, Distance: 0.04253314m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4720207m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.707549m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.087042m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.353204m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.190689m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.682594m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.714691m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.760694m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.161464m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.738626m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.104712m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.721318m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.004992m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.126163m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.768192m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 8.971564m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 8.971564m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 35.12, Y: -49.42. [2 hours ago]
+- Will Turner sees Tree at X: 39.59, Y: -49.45. [3 hours ago]
+- Will Turner sees Tree at X: 38.98, Y: -47.91. [3 hours ago]
+- Will Turner sees Tree Stump at X: 36.50999, Y: -46.03. [3 hours ago]
+- Will Turner sees Tree at X: 36.04, Y: -47.68999. [3 hours ago]
+- I felt a sense of progress on this arduous journey of becoming a good miner after receiving Lucy's valuable advice. [11 hours ago]
+- After breaking a pickaxe out of eagerness, I learned the value of patience and careful work. [11 hours ago]
+- I remember how excited I was on my first day in the mines, the culmination of a lifelong dream. [11 hours ago]
+- I recall the enlightening conversation with Lucy Wilde, who told me of the importance of respect and understanding of the mine, just as one would with nature. [11 hours ago]
+- The older miners have so many stories to tell. [13 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Get to know Lucy Wilde better. [4 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [3 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 34.86123, Y: -49.0573 and hit 1 trees. [2 hours ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [drop]: Will Turner dropped Wood on the ground at X: 34.89579, Y: -49.01674. [50 minutes ago]
+- [move_to]: Will Turner walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129099702] --- Response ---
+[1692129099703] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129099703] --- Verified Action ---
+[1692129099703] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129099734] [31m[createMemory][39m Will Turner has started walking to 35.12, Y: -49.42. [146.4752]
+[1692129099782] [31m[createMemory][39m Will Turner finished walking to 35.12, Y: -49.42. [146.519943]
+[1692129104412] [31m[createMemory][39m Will Turner sees Eli Green at X: 31.62617, Y: -44.62602. [150.98082]
+[1692129104494] [31m[createMemory][39m Will Turner sees Thomas Smith at X: 31.62625, Y: -44.62611. [151.22]

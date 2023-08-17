@@ -1,0 +1,930 @@
+[1692049057342] [Character] Creating Lucy
+[1692049057912] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1692049057912] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1692049057912] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1692049057912] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1692049057912] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1692049057912] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1692049057912] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1692049057912] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1692049057912] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1692049057912] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1692049057912] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1692049057912] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1692049057912] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1692049057912] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1692049057912] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1692049061758] [Character] Lucy created
+[1692049078248] [31m[createMemory][39m Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [0]
+[1692049078253] [31m[createMemory][39m Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [0]
+[1692049082164] --- Prompt ---
+[1692049082164] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- Thomas once tried to chop wood, it was amusing to say the least. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- The creaking sound a tree makes just before it falls is both eerie and beautiful. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Will Turner (ID: A3).
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1692049094177] --- Response ---
+[1692049094177] Updated Tasks: 
+[1692049094177] [
+  {
+    "task": "Start conversation with Will Turner",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Start storing extra materials in chest",
+    "priority": 5
+  },
+  {
+    "task": "Inspect tree health within vicinity",
+    "priority": 6
+  },
+  {
+    "task": "Examine tree stump and plant new tree in its place",
+    "priority": 7
+  },
+  {
+    "task": "Teach Will Turner how to chop wood properly",
+    "priority": 8
+  }
+]
+[1692049101535] --- Prompt ---
+[1692049101535] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start conversation with Will Turner",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Start storing extra materials in chest",
+    "priority": 5
+  },
+  {
+    "task": "Inspect tree health within vicinity",
+    "priority": 6
+  },
+  {
+    "task": "Examine tree stump and plant new tree in its place",
+    "priority": 7
+  },
+  {
+    "task": "Teach Will Turner how to chop wood properly",
+    "priority": 8
+  }
+]
+
+Memories:
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- Thomas once tried to chop wood, it was amusing to say the least. [just now]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [just now]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049105520] --- Response ---
+[1692049105520] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"targetCharacterId\": \"A3\",\n  \"conversationGoal\": \"Discuss about teaching Will Turner how to chop wood properly\"\n}"
+  }
+}
+[1692049105521] --- Verified Action ---
+[1692049105521] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A4",
+    "targetCharacterId": "A3",
+    "conversationGoal": "Discuss about teaching Will Turner how to chop wood properly"
+  }
+}
+[1692049118083] [35m[CORTEX] Character 1 - Plan: [39m Lucy plans to invite Will Turner to a day in the forest. She intends to guide him on how to efficiently and safely chop wood. She wants to show him her favorite tree to cut, the one she has named Whisper. Lucy also plans to demonstrate her respect for the forest by taking him through her re-planting routine after lumbering. She also hopes to share a couple of her lumberjack tales and listen to what the forest whispers in return.
+[1692049123762] [35m[CORTEX] Character 1 - Say: [39mWould you like to join me for a day in the forest, Will? I can show you how to chop wood efficiently and safely. There's a lot more to being a lumberjack than meets the eye. You'll even get to meet Whisper, my favorite tree.
+
+[1692049135161] [35m[CORTEX] Character 1 - Feel: [39mI feel pleased and excited that Will is willing to learn and share this adventure with me.
+[1692049146749] [35m[CORTEX] Character 1 - Explain: [39mI'm excited to see that Will is enthusiastic about this shared adventure. His interest gives me hope that he will learn well and respect the forest as I do. His reaction makes me feel like I've made progress toward my goal of sharing my knowledge and passion for being a lumberjack. There's satisfaction in knowing that my craft, my respect for the forest, and the balance between the forest and our community will continue to be invested in.
+[1692049147998] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1692049149301] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1692049154030] [35m[CORTEX] Character 1 Goodbye: [39mGreat, Will! I'm excited for our day in the forest. Be sure to wear something you don't mind getting a little dirty. See you tomorrow!
+[1692049163757] [31m[createMemory][39m I invited Will Turner to join me for a day in the forest to learn how to chop wood. [25.7933331]
+[1692049163758] [31m[createMemory][39m Will was excited and grateful to learn from me, making me feel pleased and hopeful. [25.7933331]
+[1692049163758] [31m[createMemory][39m I decided to show him Whisper, my favorite tree to chop. [25.7933331]
+[1692049163758] [31m[createMemory][39m I shared my plans to demonstrate my respect for the forest, by practicing re-planting routine after lumbering. [25.7933331]
+[1692049167895] --- Prompt ---
+[1692049167895] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 7:52 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- I respect the forest, only taking what's necessary and planting twice as much. [7 hours ago]
+- Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [7 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [7 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [7 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [7 hours ago]
+- Thomas once tried to chop wood, it was amusing to say the least. [7 hours ago]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [7 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [7 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [7 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [7 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049172642] --- Response ---
+[1692049172643] {
+  "role": "assistant",
+  "content": "{\n  \"namespace\": \"functions\",\n  \"type\": \"move_to\",\n  \"characterId\": \"A4\",\n  \"x\": 32.87,\n  \"y\": -53.14\n}"
+}
+[1692049172644] {}
+[1692049172644] --- Prompt ---
+[1692049172645] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 7:52 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- I respect the forest, only taking what's necessary and planting twice as much. [7 hours ago]
+- Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [7 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [7 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [7 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [7 hours ago]
+- Thomas once tried to chop wood, it was amusing to say the least. [7 hours ago]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [7 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [7 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [7 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [7 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+
+[1692049173487] [31m[createMemory][39m Will Turner started a conversation with me. [93.70427]
+[1692049178851] [31mAgent A4 is already occupied. Skipping...[39m
+[1692049184488] [36m[CORTEX] Character 2 - Feel: [39mI feel pleased that Will has taken up my offer and is eager to learn something new from me
+[1692049193125] [36m[CORTEX] Character 2 - Plan: [39mI plan on giving a tutorial to Will Turner on how to chop wood, providing a hands-on learning experience in the forest. This will include explaining the tools used, safety measures, and the actual process of chopping wood. Additionally, I intend to share my experiences as a lumberjack and my connection with the forest.
+[1692049198073] [36m[CORTEX] Character 2 - Say: [39mAbsolutely, Will. Preparing yourself for hard work is the first step. Don't worry, I'll guide you through each step to ensure you learn the ropes properly. When would you like to start?
+
+[1692049218521] [31m[createMemory][39m Will Turner took up my offer to teach him how to chop wood. [93.70427]
+[1692049218522] [31m[createMemory][39m He told me that he could use a break from the mines and wanted to learn something new. [93.70427]
+[1692049218522] [31m[createMemory][39m I was pleased that he was eager to learn and agreed to guide him through the process. [93.70427]
+[1692049218522] [31m[createMemory][39m We planned to have a hands-on learning experience in the forest. [93.70427]
+[1692049223329] --- Prompt ---
+[1692049223330] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 1:18 PM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- Will Turner took up my offer to teach him how to chop wood. [3 hours ago]
+- He told me that he could use a break from the mines and wanted to learn something new. [3 hours ago]
+- Will Turner started a conversation with me. [3 hours ago]
+- I invited Will Turner to join me for a day in the forest to learn how to chop wood. [10 hours ago]
+- I decided to show him Whisper, my favorite tree to chop. [10 hours ago]
+- Will was excited and grateful to learn from me, making me feel pleased and hopeful. [10 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [13 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [13 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [13 hours ago]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [13 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [5 hours ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049227311] [31m[createMemory][39m Will Turner started a conversation with me. [147.552628]
+[1692049228526] [31mAgent A4 is already occupied. Skipping...[39m
+[1692049239537] [36m[CORTEX] Character 2 - Feel: [39mI feel appreciated and excited to share my knowledge and love for the forest with someone else
+[1692049242318] [36m[CORTEX] Character 2 - Plan: [39mI plan to teach Will how to properly handle an axe, how to identify the best trees to chop, and overall, I want him to gain a deep respect for the forest and its inhabitants during our time together.
+[1692049248391] [36m[CORTEX] Character 2 - Say: [39mAlright, Will. Tomorrow, bright and early, we will head into the forest. I'll show you how to handle a 'Whisper.' Make sure to wear something you won't mind getting a bit dirty. Remember, respect the forest and it will respect you.
+
+[1692049269215] [31m[createMemory][39m Will Turner approached me, eager to learn about my work and the art of chopping wood. [147.552628]
+[1692049269215] [31m[createMemory][39m I agreed to teach Will, reminiscent of my young self, hungry for knowledge and agile hands. [147.552628]
+[1692049269215] [31m[createMemory][39m Assuring him that the forest is not just a source of work but a living entity that deserves our respect, I saw his eyes twinkle with a newfound understanding. [147.552628]
+[1692049269215] [31m[createMemory][39m I planned out a lesson that would not just teach him the technicalities of logging but also foster a deep respect for nature. [147.552628]
+[1692049275403] --- Prompt ---
+[1692049275404] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 6:40 PM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- I planned out a lesson that would not just teach him the technicalities of logging but also foster a deep respect for nature. [3 hours ago]
+- Will Turner started a conversation with me. [3 hours ago]
+- He told me that he could use a break from the mines and wanted to learn something new. [9 hours ago]
+- Will Turner took up my offer to teach him how to chop wood. [9 hours ago]
+- Will Turner started a conversation with me. [9 hours ago]
+- I invited Will Turner to join me for a day in the forest to learn how to chop wood. [16 hours ago]
+- I decided to show him Whisper, my favorite tree to chop. [16 hours ago]
+- Will was excited and grateful to learn from me, making me feel pleased and hopeful. [16 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [18 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [18 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [10 hours ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049281788] --- Response ---
+[1692049281788] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n\"characterId\": \"A4\",\n\"targetCharacterId\": \"A3\",\n\"conversationGoal\": \"To catch up with other villagers and specifically with Will Turner, understand his progress with chopping wood and check his interest in mining\"\n}"
+  }
+}
+[1692049281789] --- Verified Action ---
+[1692049281789] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A4",
+    "targetCharacterId": "A3",
+    "conversationGoal": "To catch up with other villagers and specifically with Will Turner, understand his progress with chopping wood and check his interest in mining"
+  }
+}
+[1692049289861] [35m[CORTEX] Character 1 - Plan: [39m To invite Will Turner for another round of wood chopping lessons and introduce him to some advanced techniques. Lucy also plans to bring up the subject of mining, to gauge Will's interest and perhaps broaden his skill set.
+[1692049293207] [35m[CORTEX] Character 1 - Say: [39mWill, your progress in wood chopping impressive, but how do you feel about learning something new? Maybe mining? It can be just as rewarding.
+
+[1692049308476] [35m[CORTEX] Character 1 - Feel: [39mI feel encouraged by Will's eagerness to learn and try new things.
+[1692049316573] [35m[CORTEX] Character 1 - Explain: [39mI believe we've made great progress. Will's enthusiasm towards learning and adapting to new tasks is impressive. His willingness to delve into mining, a field quite different yet related to his current knowledge, gives me confidence that he has not only mastered the art of wood chopping, but also possesses a keen interest in learning diverse skills. This broadened horizon will surely aid his comprehensive growth.
+[1692049318045] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1692049320411] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1692049324766] [35m[CORTEX] Character 1 Goodbye: [39mGoodbye Will Turner. Looking forward to our mining lesson, keep up the good work and see you soon.
+[1692049333109] [31m[createMemory][39m I taught Will Turner how to chop wood and he was eager to learn about my work. [202.066]
+[1692049333110] [31m[createMemory][39m Will's eyes sparkled with a newfound understanding when I explained the forest as a living entity that we should respect. [202.066]
+[1692049333110] [31m[createMemory][39m I proposed mining to Will as a new skill to learn and he was excited to give it a try. [202.066]
+[1692049333110] [31m[createMemory][39m Will's enthusiasm towards learning and adapting to new tasks was impressive and encouraged me. [202.066]
+[1692049336566] --- Prompt ---
+[1692049336567] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:49 PM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- Assuring him that the forest is not just a source of work but a living entity that deserves our respect, I saw his eyes twinkle with a newfound understanding. [10 hours ago]
+- Will Turner approached me, eager to learn about my work and the art of chopping wood. [10 hours ago]
+- I planned out a lesson that would not just teach him the technicalities of logging but also foster a deep respect for nature. [10 hours ago]
+- I agreed to teach Will, reminiscent of my young self, hungry for knowledge and agile hands. [10 hours ago]
+- Will Turner started a conversation with me. [10 hours ago]
+- He told me that he could use a break from the mines and wanted to learn something new. [15 hours ago]
+- Will Turner took up my offer to teach him how to chop wood. [15 hours ago]
+- Will Turner started a conversation with me. [15 hours ago]
+- Will was excited and grateful to learn from me, making me feel pleased and hopeful. [22 hours ago]
+- Every lumberjack has a favorite axe; mine's named 'Whisper'. [24 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [16 hours ago]
+- [start_conversation]: I spoke with Will Turner about To catch up with other villagers and specifically with Will Turner, understand his progress with chopping wood and check his interest in mining. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049341814] [31m[createMemory][39m Will Turner started a conversation with me. [261.9708]
+[1692049342881] [31mAgent A4 is already occupied. Skipping...[39m
+[1692049356461] [36m[CORTEX] Character 2 - Feel: [39mI feel pleased to see Will's enthusiasm toward learning about the forest and chopping wood.
+[1692049365526] [36m[CORTEX] Character 2 - Plan: [39mI am planning to start Will's lessons tomorrow morning. We'll begin with a general introduction to the forest, identifying different types of trees and explaining why it's important to rotate the areas we log. From there, we'll move on to safety measures and handling the axe properly to chop wood.
+[1692049371669] [36m[CORTEX] Character 2 - Say: [39mWe will start tomorrow morning, Will. The lesson will not only be about the techniques of chopping wood, but also about respecting the life of the forest. I hope you bring along your eager spirit and a stout heart. See you at dawn by the biggest pine tree.
+
+[1692049402837] --- Prompt ---
+[1692049402837] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 1, 6:34 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- Will Turner started a conversation with me. [5 hours ago]
+- I taught Will Turner how to chop wood and he was eager to learn about my work. [11 hours ago]
+- I proposed mining to Will as a new skill to learn and he was excited to give it a try. [11 hours ago]
+- Will's eyes sparkled with a newfound understanding when I explained the forest as a living entity that we should respect. [11 hours ago]
+- Assuring him that the forest is not just a source of work but a living entity that deserves our respect, I saw his eyes twinkle with a newfound understanding. [16 hours ago]
+- Will Turner approached me, eager to learn about my work and the art of chopping wood. [16 hours ago]
+- I planned out a lesson that would not just teach him the technicalities of logging but also foster a deep respect for nature. [16 hours ago]
+- I agreed to teach Will, reminiscent of my young self, hungry for knowledge and agile hands. [16 hours ago]
+- Will Turner started a conversation with me. [16 hours ago]
+- He told me that he could use a break from the mines and wanted to learn something new. [22 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [23 hours ago]
+- [start_conversation]: I spoke with Will Turner about To catch up with other villagers and specifically with Will Turner, understand his progress with chopping wood and check his interest in mining. [6 hours ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049405298] --- Response ---
+[1692049405298] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "drop_axe",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"itemId\": \"axe\"\n}"
+  }
+}
+[1692049405298] --- Verified Action ---
+[1692049405298] {
+  "type": "drop",
+  "data": {
+    "characterId": "A4",
+    "itemId": "axe"
+  }
+}
+[1692049405399] [31m[createMemory][39m Lucy Wilde dropped Axe at X: 31.93, Y: -52.6 [325.572845]
+[1692049407838] [31m[createMemory][39m Will Turner started a conversation with me. [328.023773]
+[1692049413036] --- Prompt ---
+[1692049413037] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 1, 7:33 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (2/10):
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- Will Turner started a conversation with me. [6 hours ago]
+- I taught Will Turner how to chop wood and he was eager to learn about my work. [12 hours ago]
+- I proposed mining to Will as a new skill to learn and he was excited to give it a try. [12 hours ago]
+- Will's eyes sparkled with a newfound understanding when I explained the forest as a living entity that we should respect. [12 hours ago]
+- Will Turner approached me, eager to learn about my work and the art of chopping wood. [17 hours ago]
+- Assuring him that the forest is not just a source of work but a living entity that deserves our respect, I saw his eyes twinkle with a newfound understanding. [17 hours ago]
+- I planned out a lesson that would not just teach him the technicalities of logging but also foster a deep respect for nature. [17 hours ago]
+- I agreed to teach Will, reminiscent of my young self, hungry for knowledge and agile hands. [17 hours ago]
+- Will Turner started a conversation with me. [17 hours ago]
+- He told me that he could use a break from the mines and wanted to learn something new. [23 hours ago]
+
+Previous Actions:
+- [start_conversation]: I spoke with Will Turner about Discuss about teaching Will Turner how to chop wood properly. [24 hours ago]
+- [start_conversation]: I spoke with Will Turner about To catch up with other villagers and specifically with Will Turner, understand his progress with chopping wood and check his interest in mining. [7 hours ago]
+- [drop]: Lucy Wilde dropped Axe on the ground at X: 31.93, Y: -52.6. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049415405] [31mAgent A4 is already occupied. Skipping...[39m

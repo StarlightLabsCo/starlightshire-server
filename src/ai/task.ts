@@ -1,22 +1,13 @@
 import { Character } from "@prisma/client";
-import { prisma } from "../db.js";
 
 let tasks = [
     {
-        task: "Catch up with other villagers",
+        task: "Carry out your daily dutiies",
         priority: 1,
     },
     {
-        task: "Check on the mine",
+        task: "Catch up with other villagers",
         priority: 2,
-    },
-    {
-        task: "Store extra materials in chest",
-        priority: 2,
-    },
-    {
-        task: "Chop trees",
-        priority: 3,
     },
 ];
 

@@ -1,0 +1,887 @@
+[1692049057342] [Character] Creating Will
+[1692049057816] [31m[createMemory][39m Today was my first day in the mines. [0]
+[1692049057817] [31m[createMemory][39m George and Thomas have been really helpful. [0]
+[1692049057817] [31m[createMemory][39m The depth and darkness of the mines can be intimidating. [0]
+[1692049057817] [31m[createMemory][39m I accidentally broke a pickaxe on my first day. [0]
+[1692049057817] [31m[createMemory][39m The older miners have so many stories to tell. [0]
+[1692049057817] [31m[createMemory][39m I've always dreamed of being a miner like my father. [0]
+[1692049057817] [31m[createMemory][39m The echo in the mines is fascinating. [0]
+[1692049057817] [31m[createMemory][39m I need to remember to wear my helmet at all times. [0]
+[1692049057817] [31m[createMemory][39m The village has been supportive of my new journey. [0]
+[1692049057817] [31m[createMemory][39m I'm still learning the different routes in the mine. [0]
+[1692049057817] [31m[createMemory][39m I was startled by the sound of a mine cart today. [0]
+[1692049057817] [31m[createMemory][39m It's tiring, but I'm determined to make everyone proud. [0]
+[1692049057817] [31m[createMemory][39m I hope to find a rare gem or mineral soon. [0]
+[1692049057817] [31m[createMemory][39m The lanterns light up the mines in such a mysterious way. [0]
+[1692049057817] [31m[createMemory][39m I can't wait to tell my family about my adventures here. [0]
+[1692049060502] [Character] Will created
+[1692049078252] [31m[createMemory][39m Will Turner sees Tree at X: 37.81, Y: -50.1. [0]
+[1692049078252] [31m[createMemory][39m Will Turner sees Tree at X: 35.12, Y: -49.42. [0]
+[1692049078255] [31m[createMemory][39m Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [0]
+[1692049081985] --- Prompt ---
+[1692049081986] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Catch up with other villagers",
+    "priority": 1
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 2
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 2
+  },
+  {
+    "task": "Chop trees",
+    "priority": 3
+  }
+]
+
+Memories:
+- The village has been supportive of my new journey. [just now]
+- I've always dreamed of being a miner like my father. [just now]
+- I can't wait to tell my family about my adventures here. [just now]
+- The older miners have so many stories to tell. [just now]
+- The lanterns light up the mines in such a mysterious way. [just now]
+- I was startled by the sound of a mine cart today. [just now]
+- I'm still learning the different routes in the mine. [just now]
+- It's tiring, but I'm determined to make everyone proud. [just now]
+- The depth and darkness of the mines can be intimidating. [just now]
+- The echo in the mines is fascinating. [just now]
+- Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Lucy Wilde (ID: A4).
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1692049096201] --- Response ---
+[1692049096201] Updated Tasks: 
+[1692049096202] [
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 5
+  },
+  {
+    "task": "Explore nearby trees and stumps",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for nightfall",
+    "priority": 7
+  },
+  {
+    "task": "Remember the day's events and learn from them",
+    "priority": 8
+  }
+]
+[1692049102813] --- Prompt ---
+[1692049102813] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Lucy Wilde",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Chop trees",
+    "priority": 4
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 5
+  },
+  {
+    "task": "Explore nearby trees and stumps",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for nightfall",
+    "priority": 7
+  },
+  {
+    "task": "Remember the day's events and learn from them",
+    "priority": 8
+  }
+]
+
+Memories:
+- It's tiring, but I'm determined to make everyone proud. [just now]
+- I was startled by the sound of a mine cart today. [just now]
+- The echo in the mines is fascinating. [just now]
+- The lanterns light up the mines in such a mysterious way. [just now]
+- The depth and darkness of the mines can be intimidating. [just now]
+- I can't wait to tell my family about my adventures here. [just now]
+- The older miners have so many stories to tell. [just now]
+- I've always dreamed of being a miner like my father. [just now]
+- The village has been supportive of my new journey. [just now]
+- Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049105572] [31m[createMemory][39m Lucy Wilde started a conversation with me. [25.7933331]
+[1692049106642] [31mAgent A3 is already occupied. Skipping...[39m
+[1692049126402] [36m[CORTEX] Character 2 - Feel: [39mI feel excited and intrigued by the prospect of learning new skills and meeting Whisper
+[1692049130271] [36m[CORTEX] Character 2 - Plan: [39mI'm planning to accompany Lucy Wilde for a day in the forest to learn about efficiently and safely chopping wood. I'm also looking forward to meeting her favorite tree, Whisper.
+[1692049132927] [36m[CORTEX] Character 2 - Say: [39mThat sounds like a great adventure, Lucy! I'd be grateful to learn from you. And I can't wait to meet Whisper.
+
+[1692049161439] [31m[createMemory][39m Lucy offered to show me how to chop wood efficiently and safely in the forest. [25.7933331]
+[1692049161439] [31m[createMemory][39m She mentioned that there is more to being a lumberjack than meets the eye. [25.7933331]
+[1692049161439] [31m[createMemory][39m Lucy invited me to meet Whisper, her favorite tree. [25.7933331]
+[1692049161439] [31m[createMemory][39m She made me excited about learning new skills outside of mine. [25.7933331]
+[1692049167823] --- Prompt ---
+[1692049167824] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 7:52 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- Lucy invited me to meet Whisper, her favorite tree. [5 hours ago]
+- She mentioned that there is more to being a lumberjack than meets the eye. [5 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [5 hours ago]
+- Lucy Wilde started a conversation with me. [5 hours ago]
+- It's tiring, but I'm determined to make everyone proud. [7 hours ago]
+- The lanterns light up the mines in such a mysterious way. [7 hours ago]
+- The echo in the mines is fascinating. [7 hours ago]
+- The depth and darkness of the mines can be intimidating. [7 hours ago]
+- Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [7 hours ago]
+- I can't wait to tell my family about my adventures here. [7 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049173421] --- Response ---
+[1692049173422] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"targetCharacterId\": \"A4\",\n  \"conversationGoal\": \"Check up on Lucy and talk about the lessons she offered about chopping wood\"\n}"
+  }
+}
+[1692049173431] --- Verified Action ---
+[1692049173431] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A3",
+    "targetCharacterId": "A4",
+    "conversationGoal": "Check up on Lucy and talk about the lessons she offered about chopping wood"
+  }
+}
+[1692049177853] [35m[CORTEX] Character 1 - Plan: [39m To approach Lucy Wilde and ask her more about her expertise in chopping wood. After the conversation, put the advice into practice by trying to chop some wood himself.
+[1692049181794] [35m[CORTEX] Character 1 - Say: [39mHello Lucy, I was thinking about your offer to teach me how to chop wood. I think I could use a break from the mines and learn something new. Would you be willing to show me?
+
+[1692049200913] [35m[CORTEX] Character 1 - Feel: [39mI feel excited and eager to start learning a new skill from Lucy.
+[1692049205814] [35m[CORTEX] Character 1 - Explain: [39mI feel like I've made progress towards my goal of learning new skills outside of mining. Lucy seems to really understand what she's teaching, and her willingness to guide me has boosted my confidence. This could be a great opportunity to diversify my skills and understand more about life outside the mine.
+[1692049207178] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1692049208535] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1692049210646] [35m[CORTEX] Character 1 Goodbye: [39mThank you so much Lucy for your guidance. I'll see you again soon.
+[1692049220815] [31m[createMemory][39m Lucy offered to show me how to chop wood efficiently and safely in the forest. [93.70427]
+[1692049220815] [31m[createMemory][39m She mentioned that there is more to being a lumberjack than meets the eye, making me excited about learning new skills outside of mining. [93.70427]
+[1692049220815] [31m[createMemory][39m Lucy invited me to meet Whisper, her favorite tree, which showed me her deep connection to nature. [93.70427]
+[1692049220815] [31m[createMemory][39m I thanked Lucy for her guidance and promised to see her again soon for further lessons. [93.70427]
+[1692049221760] --- Prompt ---
+[1692049221761] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 1:18 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- She mentioned that there is more to being a lumberjack than meets the eye. [10 hours ago]
+- She made me excited about learning new skills outside of mine. [10 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [10 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree. [10 hours ago]
+- Lucy Wilde started a conversation with me. [10 hours ago]
+- The depth and darkness of the mines can be intimidating. [13 hours ago]
+- Will Turner sees Lucy Wilde at X: 31.93, Y: -52.6. [13 hours ago]
+- The older miners have so many stories to tell. [13 hours ago]
+- I've always dreamed of being a miner like my father. [13 hours ago]
+- The village has been supportive of my new journey. [13 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Check up on Lucy and talk about the lessons she offered about chopping wood. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049227277] --- Response ---
+[1692049227277] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"targetCharacterId\": \"A4\",\n  \"conversationGoal\": \"Catch up with Lucy Wilde and learn more about her lessons on chopping wood\"\n}"
+  }
+}
+[1692049227279] --- Verified Action ---
+[1692049227279] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A3",
+    "targetCharacterId": "A4",
+    "conversationGoal": "Catch up with Lucy Wilde and learn more about her lessons on chopping wood"
+  }
+}
+[1692049233475] [35m[CORTEX] Character 1 - Plan: [39m To practice the wood chopping techniques that Lucy showed him and maybe spend some more time in the forest to learn more about Whisper and nature in general.
+[1692049237064] [35m[CORTEX] Character 1 - Say: [39mI'm eager to give these wood chopping techniques a try and spend more time in the forest learning from nature.
+
+[1692049250475] [35m[CORTEX] Character 1 - Feel: [39mI feel eager and excited for tomorrow's lesson in the forest with Lucy Wilde.
+[1692049257543] [35m[CORTEX] Character 1 - Explain: [39mI believe I am making progress towards my goal. I'm not only learning a new skill beyond mining, but also developing a deeper appreciation for nature. I'm excited to learn how to handle a 'Whisper' and gain more practical skills from Lucy. It's an opportunity to grow and broaden my horizons, which is exactly what I wanted.
+[1692049258693] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1692049259945] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1692049262662] [35m[CORTEX] Character 1 Goodbye: [39mThanks again for the lesson, Lucy. I'll see you bright and early tomorrow for our trip to the forest. Goodbye for now!
+[1692049273447] [31m[createMemory][39m Lucy showed me how to chop wood efficiently and safely in the forest. [147.552628]
+[1692049273447] [31m[createMemory][39m Lucy introduced me to 'Whisper', her favorite tree in the forest. [147.552628]
+[1692049273448] [31m[createMemory][39m She made me excited about learning new skills outside of mining. [147.552628]
+[1692049273448] [31m[createMemory][39m Lucy promised to teach me more about the forest and handling a 'Whisper' tomorrow. [147.552628]
+[1692049276238] --- Prompt ---
+[1692049276240] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 6:40 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- She mentioned that there is more to being a lumberjack than meets the eye, making me excited about learning new skills outside of mining. [9 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [9 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree, which showed me her deep connection to nature. [9 hours ago]
+- She mentioned that there is more to being a lumberjack than meets the eye. [16 hours ago]
+- She made me excited about learning new skills outside of mine. [16 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [16 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree. [16 hours ago]
+- Lucy Wilde started a conversation with me. [16 hours ago]
+- The depth and darkness of the mines can be intimidating. [18 hours ago]
+- I've always dreamed of being a miner like my father. [18 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Check up on Lucy and talk about the lessons she offered about chopping wood. [5 hours ago]
+- [start_conversation]: I spoke with Lucy Wilde about Catch up with Lucy Wilde and learn more about her lessons on chopping wood. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049280979] --- Response ---
+[1692049280979] {
+  "role": "assistant",
+  "content": "{ \"function\": \"functions.start_conversation\", \"parameters\": { \"characterId\": \"A3\", \"targetCharacterId\": \"A4\", \"conversationGoal\": \"Discuss further about Lucy's technique in wood chopping and her connection with nature\" } }"
+}
+[1692049280980] {}
+[1692049280980] --- Prompt ---
+[1692049280980] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 6:40 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- She mentioned that there is more to being a lumberjack than meets the eye, making me excited about learning new skills outside of mining. [9 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [9 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree, which showed me her deep connection to nature. [9 hours ago]
+- She mentioned that there is more to being a lumberjack than meets the eye. [16 hours ago]
+- She made me excited about learning new skills outside of mine. [16 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [16 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree. [16 hours ago]
+- Lucy Wilde started a conversation with me. [16 hours ago]
+- The depth and darkness of the mines can be intimidating. [18 hours ago]
+- I've always dreamed of being a miner like my father. [18 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Check up on Lucy and talk about the lessons she offered about chopping wood. [5 hours ago]
+- [start_conversation]: I spoke with Lucy Wilde about Catch up with Lucy Wilde and learn more about her lessons on chopping wood. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+
+[1692049281839] [31m[createMemory][39m Lucy Wilde started a conversation with me. [202.066]
+[1692049284692] [31mAgent A3 is already occupied. Skipping...[39m
+[1692049296890] [36m[CORTEX] Character 2 - Feel: [39mI feel intrigued and eager as mining has always been my foundation, yet learning new skills from Lucy could open up different paths for me
+[1692049301400] [36m[CORTEX] Character 2 - Plan: [39mPlan to start training in mining with Lucy and apply the skills learned in wood chopping to this new experience.
+[1692049305366] [36m[CORTEX] Character 2 - Say: [39mThat sounds exciting, Lucy. I look forward to applying what I've learned from wood chopping to mining. Let's give it a try!
+
+[1692049334971] [31m[createMemory][39m I remember Lucy Wilde starting a conversation with me, introducing me to a whole new world outside of mining. [202.066]
+[1692049334971] [31m[createMemory][39m Lucy invited me to meet Whisper, her favorite tree, showing me her deep connection with nature. [202.066]
+[1692049334971] [31m[createMemory][39m She made the offer to teach me how to chop wood efficiently and safely, which got me really excited. [202.066]
+[1692049334971] [31m[createMemory][39m Lucy's promise to teach me more about the forest and handling a 'Whisper' left me feeling eager for the next day. [202.066]
+[1692049336487] --- Prompt ---
+[1692049336488] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 0, 12:49 PM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- Lucy Wilde started a conversation with me. [4 hours ago]
+- Lucy introduced me to 'Whisper', her favorite tree in the forest. [10 hours ago]
+- Lucy promised to teach me more about the forest and handling a 'Whisper' tomorrow. [10 hours ago]
+- She made me excited about learning new skills outside of mining. [10 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [15 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree, which showed me her deep connection to nature. [15 hours ago]
+- She mentioned that there is more to being a lumberjack than meets the eye. [22 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [22 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree. [22 hours ago]
+- Lucy Wilde started a conversation with me. [22 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Check up on Lucy and talk about the lessons she offered about chopping wood. [11 hours ago]
+- [start_conversation]: I spoke with Lucy Wilde about Catch up with Lucy Wilde and learn more about her lessons on chopping wood. [6 hours ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049341695] --- Response ---
+[1692049341695] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"targetCharacterId\": \"A4\",\n  \"conversationGoal\": \"Discuss the lessons about chopping wood and handling a 'Whisper' that she promised to teach\"\n}"
+  }
+}
+[1692049341697] --- Verified Action ---
+[1692049341697] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A3",
+    "targetCharacterId": "A4",
+    "conversationGoal": "Discuss the lessons about chopping wood and handling a 'Whisper' that she promised to teach"
+  }
+}
+[1692049348250] [35m[CORTEX] Character 1 - Plan: [39m Meet Lucy Wilde for the promised lessons on handling a 'Whisper' and chopping wood. Spend the day exploring the forest with Lucy to learn about the natural world outside of mining. 
+[1692049353994] [35m[CORTEX] Character 1 - Say: [39mLucy, I am excited to learn more about the forest, Whisper, and the techniques to chop wood safely. When should we start? 
+
+[1692049375422] [35m[CORTEX] Character 1 - Feel: [39mI feel excited and slightly nervous about the upcoming lesson, but I'm really looking forward to learning from Lucy and exploring more about the forest.
+[1692049383215] [35m[CORTEX] Character 1 - Explain: [39mI believe I have made progress towards my goal. Earlier, I was just a miner with only a vague understanding of the world beyond the mines. But now, I am about to learn more about the forest, about chopping wood, and about the 'Whisper'. Thanks to Lucy, I'm starting to see a bigger picture, enriching my understanding about the world around me. This feels like a stepping stone to break out of my naive shell and gain more life skills beyond mining.
+[1692049384522] [35m[CORTEX] Character 1 - Did I make progress? [39m[choice=yes]
+[1692049386144] [35m[CORTEX] Character 1 - Did I accomplish my goal? [39m[choice=yes]
+[1692049390006] [35m[CORTEX] Character 1 Goodbye: [39mThank you, Lucy. I'll be there at dawn, ready and eager to learn. I appreciate your willingness to teach me. Goodbye for now. See you tomorrow by the biggest pine tree.
+[1692049396308] [31m[createMemory][39m Lucy promised to teach me more about the forest and how to handle a 'Whisper'. [261.9708]
+[1692049396308] [31m[createMemory][39m She introduced me to Whisper, her favourite tree, demonstrating her deep connection to nature. [261.9708]
+[1692049396308] [31m[createMemory][39m Lucy offered to show me how to chop wood efficiently and safely in the forest. [261.9708]
+[1692049396308] [31m[createMemory][39m We planned to meet at dawn by the biggest pine tree for my first lesson. [261.9708]
+[1692049403997] --- Prompt ---
+[1692049403998] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 32.87, -53.14
+
+Time: Day 1, 6:34 AM
+
+Environment:
+- Lucy Wilde (Health: 25/25) [X: 31.93, Y: -52.6, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.347516m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 5.800451m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.304874m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 7.666455m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 7.987595m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.042699m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Start a conversation with Eli Green",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Check on the mine",
+    "priority": 3
+  },
+  {
+    "task": "Store extra materials in chest",
+    "priority": 4
+  },
+  {
+    "task": "Chop trees",
+    "priority": 5
+  },
+  {
+    "task": "Drop Axe",
+    "priority": 6
+  },
+  {
+    "task": "Drop Pickaxe",
+    "priority": 7
+  },
+  {
+    "task": "Drop Sword",
+    "priority": 8
+  },
+  {
+    "task": "Move to village location",
+    "priority": 9
+  },
+  {
+    "task": "Move to campsite",
+    "priority": 10
+  }
+]
+
+Memories:
+- She introduced me to Whisper, her favourite tree, demonstrating her deep connection to nature. [5 hours ago]
+- Lucy promised to teach me more about the forest and how to handle a 'Whisper'. [5 hours ago]
+- We planned to meet at dawn by the biggest pine tree for my first lesson. [5 hours ago]
+- Lucy offered to show me how to chop wood efficiently and safely in the forest. [5 hours ago]
+- Lucy Wilde started a conversation with me. [11 hours ago]
+- I remember Lucy Wilde starting a conversation with me, introducing me to a whole new world outside of mining. [11 hours ago]
+- Lucy invited me to meet Whisper, her favorite tree, showing me her deep connection with nature. [11 hours ago]
+- Lucy introduced me to 'Whisper', her favorite tree in the forest. [16 hours ago]
+- She made me excited about learning new skills outside of mining. [16 hours ago]
+- Lucy promised to teach me more about the forest and handling a 'Whisper' tomorrow. [16 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Lucy Wilde (Health: 25/25)
+
+Previous Actions:
+- [start_conversation]: I spoke with Lucy Wilde about Check up on Lucy and talk about the lessons she offered about chopping wood. [18 hours ago]
+- [start_conversation]: I spoke with Lucy Wilde about Catch up with Lucy Wilde and learn more about her lessons on chopping wood. [12 hours ago]
+- [start_conversation]: I spoke with Lucy Wilde about Discuss the lessons about chopping wood and handling a 'Whisper' that she promised to teach. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692049405414] [31m[createMemory][39m Will Turner picked up Axe at X: 32.87, Y: -53.14 [325.6528]
+[1692049407802] --- Response ---
+[1692049407802] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "start_conversation",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"targetCharacterId\": \"A4\",\n  \"conversationGoal\": \"Discuss the lessons about chopping wood and handling a 'Whisper' that she promised to teach\"\n}"
+  }
+}
+[1692049407803] --- Verified Action ---
+[1692049407803] {
+  "type": "start_conversation",
+  "data": {
+    "characterId": "A3",
+    "targetCharacterId": "A4",
+    "conversationGoal": "Discuss the lessons about chopping wood and handling a 'Whisper' that she promised to teach"
+  }
+}
+[1692049413038] [35m[CORTEX] Character 1 - Plan: [39m To meet Lucy Wilde the next day for the lessons about chopping wood and handling a 'Whisper' in the forest.
+[1692049415941] [35m[CORTEX] Character 1 - Say: [39mI'm looking forward to learning more about the forest and how to handle a 'Whisper'. See you tomorrow, Lucy!
+

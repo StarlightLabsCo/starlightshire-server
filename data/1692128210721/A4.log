@@ -1,0 +1,835 @@
+[1692128210726] [Character] Creating Lucy
+[1692128211235] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1692128211235] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1692128211235] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1692128211235] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1692128211235] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1692128211235] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1692128211235] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1692128211235] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1692128211235] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1692128211235] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1692128211235] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1692128211235] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1692128211235] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1692128211235] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1692128211235] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1692128214889] [Character] Lucy created
+[1692128952357] [31m[createMemory][39m Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [0]
+[1692128952358] [31m[createMemory][39m Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [0]
+[1692128954792] --- Prompt ---
+[1692128954792] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  }
+]
+
+Memories:
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- start_conversation: Start a conversation with Will Turner (ID: A3).
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1692128974106] [31m[createMemory][39m Will Turner started a conversation with me. [20.7171726]
+[1692128974900] --- Response ---
+[1692128974900] Updated Tasks: 
+[1692128974901] [
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+[1692128978991] --- Prompt ---
+[1692128978991] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner started a conversation with me. [in the future]
+- Rain or shine, the trees await and work must be done. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692128984346] [31mAgent A4 is already occupied. Skipping...[39m
+[1692128997597] [36m[CORTEX] Character 2 - Feel: [39mI feel curious about his new venture and empathy towards his eagerness to learn
+[1692129003737] [36m[CORTEX] Character 2 - Plan: [39mI plan to share my knowledge and experience related to mining. Although my expertise lies in lumberjacking, I understand the basic principles of working in nature and the patience and dedication it requires. I will give him advice on safety protocols, efficient working methodologies, and the importance of respecting what nature has bestowed us.
+[1692129014646] [36m[CORTEX] Character 2 - Say: [39mWell, Will, just like working in the forest, mining is a job that requires patience and respect for where we work. Always follow the safety rules, don't rush, and learn to understand the mine, much like how I listen to the forest. Nature has a way of speaking to us. We just need to learn how to listen.
+
+[1692129053550] --- Prompt ---
+[1692129053559] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 9:37 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 32.87, Y: -53.14, Distance: 1.084066m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Will Turner started a conversation with me. [7 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [9 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [9 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [9 hours ago]
+- Lucy Wilde sees Will Turner at X: 32.87, Y: -53.14. [9 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [9 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [9 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [9 hours ago]
+- Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [9 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [9 hours ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129055953] [31m[createMemory][39m Will Turner turned to me for advice on his first mining experience, reminding me of my own youthful eagerness. [20.7171726]
+[1692129055954] [31m[createMemory][39m I told him the importance of patience and respect for nature in our line of work, to listen as nature has a way of speaking to us. [20.7171726]
+[1692129055954] [31m[createMemory][39m I realized that despite my expertise being in lumberjacking, the basic principles of working with nature rang true in mining as well. [20.7171726]
+[1692129055954] [31m[createMemory][39m I felt a curious empathy towards Will's new venture and his desire to learn. [20.7171726]
+[1692129057601] --- Response ---
+[1692129057601] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129057602] --- Verified Action ---
+[1692129057602] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129057765] [31m[createMemory][39m Lucy Wilde has started walking to 35.12, Y: -49.42. [104.370476]
+[1692129057991] [31m[createMemory][39m Lucy Wilde sees Tree at X: 36.04, Y: -47.68999. [104.721214]
+[1692129058045] [31m[createMemory][39m Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [104.781723]
+[1692129059145] [31m[createMemory][39m Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [105.88015]
+[1692129059540] [31m[createMemory][39m Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [106.261292]
+[1692129059743] [31m[createMemory][39m Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [106.480057]
+[1692129059860] [31m[createMemory][39m Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [106.560127]
+[1692129059861] [31m[createMemory][39m Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [106.600418]
+[1692129060547] [31m[createMemory][39m Lucy Wilde finished walking to 35.12, Y: -49.42. [107.279961]
+[1692129064867] --- Prompt ---
+[1692129064868] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.86364, -49.05611
+
+Time: Day 0, 10:43 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 34.60244, Y: -49.1642, Distance: 0.2826828m]
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 0.4451184m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.802798m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.125816m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.444971m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.272935m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.742745m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.810118m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.846164m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.247591m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.834011m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.155618m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.794102m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.076338m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.217801m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.859306m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [4 minutes ago]
+- Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [4 minutes ago]
+- Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [4 minutes ago]
+- Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [6 minutes ago]
+- Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [8 minutes ago]
+- Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [14 minutes ago]
+- Will Turner started a conversation with me. [8 hours ago]
+- I told him the importance of patience and respect for nature in our line of work, to listen as nature has a way of speaking to us. [8 hours ago]
+- Will Turner turned to me for advice on his first mining experience, reminding me of my own youthful eagerness. [8 hours ago]
+- I realized that despite my expertise being in lumberjacking, the basic principles of working with nature rang true in mining as well. [8 hours ago]
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129066849] --- Response ---
+[1692129066849] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A4\"\n}"
+  }
+}
+[1692129066850] --- Verified Action ---
+[1692129066850] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A4"
+  }
+}
+[1692129068060] [31m[createMemory][39m Lucy Wilde sees Tree Stump at X: 35.12, Y: -49.42. [114.800613]
+[1692129071373] --- Prompt ---
+[1692129071373] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.86364, -49.05611
+
+Time: Day 0, 11:27 AM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 34.86123, Y: -49.0573, Distance: 0.002688666m]
+- Tree (Health: 5/10) [X: 35.12, Y: -49.42, Distance: 0.4451184m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.802798m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.125816m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.444971m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.272935m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.742745m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.810118m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.846164m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.247591m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.834011m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.155618m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.794102m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.076338m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.217801m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.859306m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [48 minutes ago]
+- Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [48 minutes ago]
+- Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [48 minutes ago]
+- Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [50 minutes ago]
+- Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [52 minutes ago]
+- Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [59 minutes ago]
+- Will Turner started a conversation with me. [9 hours ago]
+- I told him the importance of patience and respect for nature in our line of work, to listen as nature has a way of speaking to us. [9 hours ago]
+- Will Turner turned to me for advice on his first mining experience, reminding me of my own youthful eagerness. [9 hours ago]
+- I realized that despite my expertise being in lumberjacking, the basic principles of working with nature rang true in mining as well. [9 hours ago]
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [44 minutes ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129073706] --- Response ---
+[1692129073706] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A4\"\n}"
+  }
+}
+[1692129073707] --- Verified Action ---
+[1692129073707] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A4"
+  }
+}
+[1692129078479] --- Prompt ---
+[1692129078479] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.86364, -49.05611
+
+Time: Day 0, 12:08 PM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 34.86123, Y: -49.0573, Distance: 0.002688666m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4451184m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.802798m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.125816m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.444971m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.272935m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.742745m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.810118m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.846164m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.247591m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.834011m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.155618m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.794102m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.076338m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.217801m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.859306m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree Stump at X: 35.12, Y: -49.42. [40 minutes ago]
+- Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [1 hours ago]
+- Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [1 hours ago]
+- Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [1 hours ago]
+- Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [1 hours ago]
+- Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [1 hours ago]
+- Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [1 hours ago]
+- Will Turner started a conversation with me. [10 hours ago]
+- I told him the importance of patience and respect for nature in our line of work, to listen as nature has a way of speaking to us. [10 hours ago]
+- Will Turner turned to me for advice on his first mining experience, reminding me of my own youthful eagerness. [10 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [41 minutes ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 0 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129083061] --- Response ---
+[1692129083061] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129083061] --- Verified Action ---
+[1692129083061] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129083093] [31m[createMemory][39m Lucy Wilde has started walking to 35.12, Y: -49.42. [129.831985]
+[1692129083144] [31m[createMemory][39m Lucy Wilde finished walking to 35.12, Y: -49.42. [129.879959]
+[1692129086683] --- Prompt ---
+[1692129086683] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.89824, -49.01575
+
+Time: Day 0, 12:59 PM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 34.89579, Y: -49.01674, Distance: 0.00263518m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4610784m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.749643m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.107085m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.393005m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.228889m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.711823m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.757141m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.797094m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.201161m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.781116m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.1301m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.755798m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.034355m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.165904m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.809671m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 9.014016m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 9.014016m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree Stump at X: 35.12, Y: -49.42. [1 hours ago]
+- Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [2 hours ago]
+- Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [2 hours ago]
+- Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [2 hours ago]
+- Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [2 hours ago]
+- Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [2 hours ago]
+- Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [2 hours ago]
+- Will Turner started a conversation with me. [10 hours ago]
+- I told him the importance of patience and respect for nature in our line of work, to listen as nature has a way of speaking to us. [10 hours ago]
+- Will Turner turned to me for advice on his first mining experience, reminding me of my own youthful eagerness. [10 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [2 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [1 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 0 trees. [50 minutes ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129092158] --- Response ---
+[1692129092158] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129092158] --- Verified Action ---
+[1692129092158] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129092192] [31m[createMemory][39m Lucy Wilde has started walking to 35.12, Y: -49.42. [138.928482]
+[1692129092246] [31m[createMemory][39m Lucy Wilde finished walking to 35.12, Y: -49.42. [138.97995]
+[1692129096714] --- Prompt ---
+[1692129096715] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.93263, -48.98725
+
+Time: Day 0, 1:53 PM
+
+Environment:
+- Will Turner (Health: 25/25) [X: 34.93028, Y: -48.98778, Distance: 0.002412657m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4715661m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.705617m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.085038m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.351629m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.188278m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.680305m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.712646m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.759477m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.159071m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.736559m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.102526m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.718926m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.004362m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.124591m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.765868m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 8.969518m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 8.969518m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Chop down the nearest Tree at X: 35.12, Y: -49.42",
+    "priority": 1
+  },
+  {
+    "task": "Locate the nearest Tree Stump at X: 36.50999, Y: -46.03 and remove it",
+    "priority": 2
+  },
+  {
+    "task": "Carry timber to village",
+    "priority": 3
+  },
+  {
+    "task": "Plant twice as many trees as chopped",
+    "priority": 4
+  },
+  {
+    "task": "Start a conversation with Will Turner at X: 32.87, Y: -53.14",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  },
+  {
+    "task": "Finish all tasks before dusk",
+    "priority": 7
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree Stump at X: 35.12, Y: -49.42. [2 hours ago]
+- Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [3 hours ago]
+- Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [3 hours ago]
+- Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [3 hours ago]
+- Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [3 hours ago]
+- Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [3 hours ago]
+- Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [3 hours ago]
+- Will Turner started a conversation with me. [11 hours ago]
+- I told him the importance of patience and respect for nature in our line of work, to listen as nature has a way of speaking to us. [11 hours ago]
+- Will Turner turned to me for advice on his first mining experience, reminding me of my own youthful eagerness. [11 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [3 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [2 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 0 trees. [1 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [54 minutes ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692129100737] --- Response ---
+[1692129100738] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1692129100738] --- Verified Action ---
+[1692129100738] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1692129100772] [31m[createMemory][39m Lucy Wilde has started walking to 35.12, Y: -49.42. [147.509247]
+[1692129100823] [31m[createMemory][39m Lucy Wilde finished walking to 35.12, Y: -49.42. [147.559952]
+[1692129104412] [31m[createMemory][39m Lucy Wilde sees Eli Green at X: 31.62617, Y: -44.62602. [150.98082]
+[1692129104495] [31m[createMemory][39m Lucy Wilde sees Thomas Smith at X: 31.62625, Y: -44.62611. [151.22]
