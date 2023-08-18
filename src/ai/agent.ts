@@ -111,9 +111,9 @@ async function updateTaskList(data: {
 
     let tasksArray = [];
 
-    if (tasks.length > 0) {
-        for (let i = 0; i < tasks.length; i++) {
-            const task = tasks[i];
+    if (tasks[character.id].length > 0) {
+        for (let i = 0; i < tasks[character.id].length; i++) {
+            const task = tasks[character.id][i];
 
             const taskObj = {
                 task: task.task,
@@ -229,7 +229,7 @@ async function updateTaskList(data: {
 
             log(tasksJSON, "info", character.id);
 
-            updateTasks(tasksJSON);
+            updateTasks(character.id, tasksJSON);
 
             return;
         } catch (e) {
@@ -332,9 +332,9 @@ async function getAction(
 
     let tasksArray = []; // An array to store task objects
 
-    if (tasks.length > 0) {
-        for (let i = 0; i < tasks.length; i++) {
-            const task = tasks[i];
+    if (tasks[character.id].length > 0) {
+        for (let i = 0; i < tasks[character.id].length; i++) {
+            const task = tasks[character.id][i];
 
             const taskObj = {
                 task: task.task,

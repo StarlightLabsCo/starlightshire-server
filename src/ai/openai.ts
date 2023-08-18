@@ -91,6 +91,8 @@ async function createChatCompletion(
 
             const endTime = performance.now();
 
+            log(response);
+
             log(
                 colors.cyan(
                     `[OPENAI] Chat completion took ${endTime - startTime}ms`

@@ -132,7 +132,6 @@ const getLatestMemories = async (character: Character, top_k: number) => {
     return memories;
 };
 
-
 function clamp(num, min, max) {
     return num <= min ? min : num >= max ? max : num;
 }
