@@ -1,0 +1,3812 @@
+[1692478820619] [Character] Creating George
+[1692478821228] [31m[createMemory][39m Working in the mines is tough but rewarding. [0]
+[1692478821228] [31m[createMemory][39m I've been friends with Thomas for a long time. [0]
+[1692478821228] [31m[createMemory][39m Safety in the mines is a top priority for me. [0]
+[1692478821228] [31m[createMemory][39m I've discovered some rare minerals during my time here. [0]
+[1692478821228] [31m[createMemory][39m I'm usually one of the first to arrive at the mine site. [0]
+[1692478821228] [31m[createMemory][39m My family has been mining for generations. [0]
+[1692478821228] [31m[createMemory][39m I enjoy a cold beverage after a long day in the mines. [0]
+[1692478821228] [31m[createMemory][39m I've been taught traditional mining songs by the older miners. [0]
+[1692478821228] [31m[createMemory][39m I've saved up to buy a house near the village. [0]
+[1692478821228] [31m[createMemory][39m I know a secret tunnel in the mine that few know about. [0]
+[1692478821228] [31m[createMemory][39m It's important to have the right tools for the job. [0]
+[1692478821228] [31m[createMemory][39m I take pride in my work and look after my equipment. [0]
+[1692478821228] [31m[createMemory][39m I sometimes join Thomas and others for a meal after work. [0]
+[1692478821228] [31m[createMemory][39m I've had a few close calls, but always came out safe. [0]
+[1692478821228] [31m[createMemory][39m The village festivities are something I look forward to every year. [0]
+[1692478825668] [Character] George created
+[1692478861254] [31m[createMemory][39m George Brown sees Tree at X: 20.14, Y: -22.62. [0]
+[1692478861255] [31m[createMemory][39m George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [0]
+[1692478861255] [31m[createMemory][39m George Brown sees Tree at X: 18.28, Y: -21.95. [0]
+[1692478861255] [31m[createMemory][39m George Brown sees Tree at X: 22.59, Y: -23.18. [0]
+[1692478861255] [31m[createMemory][39m George Brown sees Tree at X: 24.08, Y: -21.93. [0]
+[1692478861255] [31m[createMemory][39m George Brown sees Tree at X: 21.54, Y: -20.29. [0]
+[1692478865092] --- Prompt ---
+[1692478865093] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 19.9, -25.4
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 2.202231m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 2.790337m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 3.487764m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.811416m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.366721m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 5.432614m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 6.054502m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 6.175443m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 6.71015m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 6.926368m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 7.566275m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 7.734371m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 7.790233m]
+- Tree (Health: 10/10) [X: 23.02, Y: -32.65, Distance: 7.89284m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.943047m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 8.222432m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.31106m]
+- Tree (Health: 10/10) [X: 12.38, Y: -29.04, Distance: 8.35464m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Memories:
+- The village festivities are something I look forward to every year. [just now]
+- I've been taught traditional mining songs by the older miners. [just now]
+- It's important to have the right tools for the job. [just now]
+- Working in the mines is tough but rewarding. [just now]
+- I take pride in my work and look after my equipment. [just now]
+- I've had a few close calls, but always came out safe. [just now]
+- I enjoy a cold beverage after a long day in the mines. [just now]
+- My family has been mining for generations. [just now]
+- I'm usually one of the first to arrive at the mine site. [just now]
+- I've saved up to buy a house near the village. [just now]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1692478877739] --- Response ---
+[1692478877739] Updated Tasks: 
+[1692478877746] [
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+[1692478881866] --- Prompt ---
+[1692478881868] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 19.9, -25.4
+
+Time: Day 0, 12:00 AM
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 2.202231m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 2.790337m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 3.487764m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.811416m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.366721m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 5.432614m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 6.054502m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 6.175443m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 6.71015m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 6.926368m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 7.566275m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 7.734371m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 7.790233m]
+- Tree (Health: 10/10) [X: 23.02, Y: -32.65, Distance: 7.89284m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.943047m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 8.222432m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.31106m]
+- Tree (Health: 10/10) [X: 12.38, Y: -29.04, Distance: 8.35464m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- I've saved up to buy a house near the village. [just now]
+- It's important to have the right tools for the job. [just now]
+- I'm usually one of the first to arrive at the mine site. [just now]
+- George Brown sees Tree at X: 21.54, Y: -20.29. [just now]
+- I've had a few close calls, but always came out safe. [just now]
+- The village festivities are something I look forward to every year. [just now]
+- George Brown sees Tree at X: 18.28, Y: -21.95. [just now]
+- Working in the mines is tough but rewarding. [just now]
+- George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [just now]
+- My family has been mining for generations. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478885545] --- Response ---
+[1692478885545] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692478885547] --- Verified Action ---
+[1692478885547] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692478885594] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [24.0270481]
+[1692478885894] [31m[createMemory][39m George Brown sees Tree at X: 14.11, Y: -27.17. [24.320713]
+[1692478886217] [31m[createMemory][39m George Brown sees Tree at X: 19.34, Y: -19.25. [24.640358]
+[1692478886309] [31m[createMemory][39m George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [24.7400436]
+[1692478886347] [31m[createMemory][39m George Brown sees Tree at X: 24.08, Y: -21.93. [24.7810764]
+[1692478886688] [31m[createMemory][39m George Brown no longer sees Tree (256) at X: 14.11, Y: -27.17 [25.1201782]
+[1692478886952] [31m[createMemory][39m George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [25.38185]
+[1692478887291] [31m[createMemory][39m George Brown sees Tree at X: 24.25, Y: -20.01. [25.72117]
+[1692478887413] [31m[createMemory][39m George Brown sees Tree at X: 22.51, Y: -18.06. [25.84136]
+[1692478888391] [31m[createMemory][39m George Brown sees Tree at X: 26.2, Y: -23.09. [26.8200684]
+[1692478888412] [31m[createMemory][39m George Brown sees Tree at X: 26.24, Y: -20.97. [26.8402843]
+[1692478888482] [31m[createMemory][39m George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [26.90138]
+[1692478889080] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [27.3599911]
+[1692478893006] --- Prompt ---
+[1692478893006] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16742, -22.89271
+
+Time: Day 0, 2:44 AM
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 0.7806857m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.062998m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.451299m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629239m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.037416m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.067559m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.075388m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22046m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015736m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.036445m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.424745m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.532452m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.571755m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.10468m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113779m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.124676m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.201719m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.325431m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.381319m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.694586m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.718869m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.164594m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.252419m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.293015m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.528601m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824107m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 minutes ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [9 minutes ago]
+- George Brown sees Tree at X: 24.25, Y: -20.01. [9 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [11 minutes ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [15 minutes ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [15 minutes ago]
+- George Brown sees Tree at X: 14.11, Y: -27.17. [18 minutes ago]
+- I've saved up to buy a house near the village. [2 hours ago]
+- I've had a few close calls, but always came out safe. [2 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478895022] --- Response ---
+[1692478895022] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478895025] --- Verified Action ---
+[1692478895025] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478899730] --- Prompt ---
+[1692478899730] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16742, -22.89271
+
+Time: Day 0, 3:27 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7806857m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.062998m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.451299m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629239m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.037416m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.067559m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.075388m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22046m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015736m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.036445m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.424745m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.532452m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.571755m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.10468m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113779m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.124676m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.201719m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.325431m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.381319m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.694586m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.718869m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.164594m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.252419m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.293015m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.528601m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824107m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [45 minutes ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [46 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [46 minutes ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [52 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [54 minutes ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [58 minutes ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [58 minutes ago]
+- I've saved up to buy a house near the village. [3 hours ago]
+- I've had a few close calls, but always came out safe. [3 hours ago]
+- The village festivities are something I look forward to every year. [3 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [42 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478901639] --- Response ---
+[1692478901639] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478901641] --- Verified Action ---
+[1692478901641] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478906282] --- Prompt ---
+[1692478906282] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16742, -22.89271
+
+Time: Day 0, 4:06 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7806857m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.062998m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.451299m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629239m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.037416m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.067559m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.075388m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22046m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015736m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.036445m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.424745m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.532452m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.571755m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.10468m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113779m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.124676m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.201719m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.325431m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.381319m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.694586m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.718869m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.164594m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.252419m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.293015m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.528601m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824107m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [1 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [1 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [1 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [1 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [1 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [1 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [1 hours ago]
+- I've saved up to buy a house near the village. [4 hours ago]
+- I've had a few close calls, but always came out safe. [4 hours ago]
+- The village festivities are something I look forward to every year. [4 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [39 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478908292] --- Response ---
+[1692478908292] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478908293] --- Verified Action ---
+[1692478908293] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478912642] --- Prompt ---
+[1692478912644] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16742, -22.89271
+
+Time: Day 0, 4:46 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7806857m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.062998m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.451299m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629239m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.037416m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.067559m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.075388m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22046m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015736m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.036445m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.424745m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.532452m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.571755m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.10468m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113779m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.124676m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.201719m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.325431m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.381319m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.694586m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.718869m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.164594m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.252419m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.293015m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.528601m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824107m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [2 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [2 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [2 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [2 hours ago]
+- I've saved up to buy a house near the village. [4 hours ago]
+- I've had a few close calls, but always came out safe. [4 hours ago]
+- The village festivities are something I look forward to every year. [4 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [39 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478914370] --- Response ---
+[1692478914370] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478914372] --- Verified Action ---
+[1692478914372] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478918848] --- Prompt ---
+[1692478918848] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16742, -22.89271
+
+Time: Day 0, 5:23 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7806857m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.062998m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.451299m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629239m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.037416m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.067559m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.075388m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22046m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015736m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.036445m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.424745m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.532452m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.571755m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.10468m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113779m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.124676m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.201719m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.325431m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.381319m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.694586m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.718869m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.164594m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.252419m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.293015m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.528601m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824107m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [2 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [2 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [2 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [2 hours ago]
+- I've saved up to buy a house near the village. [5 hours ago]
+- I've had a few close calls, but always came out safe. [5 hours ago]
+- The village festivities are something I look forward to every year. [5 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [36 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478921254] --- Response ---
+[1692478921254] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692478921255] --- Verified Action ---
+[1692478921258] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692478921309] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [59.7371941]
+[1692478921362] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [59.77998]
+[1692478924740] --- Prompt ---
+[1692478924743] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19029, -22.91921
+
+Time: Day 0, 5:58 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7519169m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.092074m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.423802m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.652362m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.054337m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.06743m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.109335m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.222004m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.012625m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.035232m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.412856m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.538051m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.605893m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.130049m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.131745m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.158312m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.18027m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.295405m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.41616m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.690418m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.704067m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.198355m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.25831m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.258918m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.563539m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.833957m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [3 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [3 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [3 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [3 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [3 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [3 hours ago]
+- I've saved up to buy a house near the village. [5 hours ago]
+- I've had a few close calls, but always came out safe. [5 hours ago]
+- The village festivities are something I look forward to every year. [5 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [35 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478927279] --- Response ---
+[1692478927290] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478927292] --- Verified Action ---
+[1692478927292] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478931756] --- Prompt ---
+[1692478931759] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19029, -22.91921
+
+Time: Day 0, 6:40 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7519169m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.092074m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.423802m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.652362m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.054337m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.06743m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.109335m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.222004m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.012625m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.035232m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.412856m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.538051m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.605893m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.130049m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.131745m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.158312m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.18027m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.295405m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.41616m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.690418m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.704067m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.198355m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.25831m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.258918m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.563539m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.833957m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [3 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [3 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [4 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [4 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [4 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [4 hours ago]
+- I've saved up to buy a house near the village. [6 hours ago]
+- I've had a few close calls, but always came out safe. [6 hours ago]
+- The village festivities are something I look forward to every year. [6 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [41 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478934375] --- Response ---
+[1692478934375] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692478934376] --- Verified Action ---
+[1692478934377] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692478934430] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [72.85534]
+[1692478934468] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [72.89997]
+[1692478937976] --- Prompt ---
+[1692478937977] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.21315, -22.9457
+
+Time: Day 0, 7:17 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7236992m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.121491m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.396639m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.67574m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.041457m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.097549m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.143299m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223835m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.988934m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.054892m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.401165m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.54383m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.64004m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.146451m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.158876m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.158926m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.19196m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.265422m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.451003m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.686403m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.689394m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.224828m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.232128m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.264349m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.598476m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.843931m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [4 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [4 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [4 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [4 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [4 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [4 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [4 hours ago]
+- I've saved up to buy a house near the village. [7 hours ago]
+- I've had a few close calls, but always came out safe. [7 hours ago]
+- The village festivities are something I look forward to every year. [7 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [36 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478939832] --- Response ---
+[1692478939833] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n\"characterId\": \"A2\"\n}"
+  }
+}
+[1692478939835] --- Verified Action ---
+[1692478939835] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478945168] --- Prompt ---
+[1692478945168] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.21315, -22.9457
+
+Time: Day 0, 7:55 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7236992m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.121491m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.396639m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.67574m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.041457m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.097549m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.143299m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223835m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.988934m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.054892m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.401165m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.54383m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.64004m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.146451m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.158876m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.158926m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.19196m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.265422m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.451003m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.686403m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.689394m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.224828m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.232128m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.264349m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.598476m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.843931m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [5 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [5 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [5 hours ago]
+- George Brown sees Tree at X: 22.51, Y: -18.06. [5 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [5 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [5 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [5 hours ago]
+- I've saved up to buy a house near the village. [7 hours ago]
+- I've had a few close calls, but always came out safe. [7 hours ago]
+- The village festivities are something I look forward to every year. [7 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [38 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478949505] --- Response ---
+[1692478949505] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 15.88,\n  \"y\": -18.99\n}"
+  }
+}
+[1692478949505] --- Verified Action ---
+[1692478949506] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 15.88,
+    "y": -18.99
+  }
+}
+[1692478949586] [31m[createMemory][39m George Brown has started walking to 15.88, Y: -18.99. [87.9859543]
+[1692478950089] [31m[createMemory][39m George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [88.52138]
+[1692478950192] [31m[createMemory][39m George Brown no longer sees Tree (156) at X: 26.2, Y: -23.09 [88.62059]
+[1692478950245] [31m[createMemory][39m George Brown no longer sees Tree (154) at X: 26.24, Y: -20.97 [88.66116]
+[1692478950353] [31m[createMemory][39m George Brown sees Tree at X: 18.19, Y: -16.42. [88.78119]
+[1692478950597] [31m[createMemory][39m George Brown sees Tree Stump at X: 16.9, Y: -16.87. [89.02027]
+[1692478950673] [31m[createMemory][39m George Brown sees Tree at X: 21, Y: -15.79. [89.1001]
+[1692478951106] [31m[createMemory][39m George Brown sees Stone Ore Deposit (Small) at X: 14.39, Y: -18.34. [89.50098]
+[1692478951107] [31m[createMemory][39m George Brown sees Tree at X: 15.22, Y: -16.78. [89.5203552]
+[1692478951751] [31m[createMemory][39m George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [90.18018]
+[1692478951846] [31m[createMemory][39m George Brown no longer sees Tree (150) at X: 24.25, Y: -20.01 [90.2801]
+[1692478951974] [31m[createMemory][39m George Brown sees Tree at X: 19.28, Y: -14.16. [90.40149]
+[1692478952009] [31m[createMemory][39m George Brown sees Tree at X: 13.25, Y: -16.78. [90.44027]
+[1692478952143] [31m[createMemory][39m George Brown sees Tree at X: 15.44, Y: -14.63. [90.46028]
+[1692478952158] [31m[createMemory][39m George Brown no longer sees Tree (34) at X: 22.59, Y: -23.18 [90.56061]
+[1692478952159] [31m[createMemory][39m George Brown sees Tree at X: 12.43, Y: -19.6. [90.58108]
+[1692478952676] [31m[createMemory][39m George Brown no longer sees Stump (15) at X: 21.26, Y: -23.66788 [91.02067]
+[1692478953037] [31m[createMemory][39m George Brown sees Tree at X: 13.75, Y: -13.81. [91.4607849]
+[1692478953189] [31m[createMemory][39m George Brown no longer sees Tree (147) at X: 22.51, Y: -18.06 [91.52007]
+[1692478953398] [31m[createMemory][39m George Brown no longer sees Tree (33) at X: 20.14, Y: -22.62 [91.8212662]
+[1692478953450] [31m[createMemory][39m George Brown sees Tree at X: 10.73, Y: -16.49. [91.88039]
+[1692478953512] [31m[createMemory][39m George Brown finished walking to 15.88, Y: -18.99. [91.9399643]
+[1692478957951] --- Prompt ---
+[1692478957955] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 16.13555, -18.55519
+
+Time: Day 0, 9:11 AM
+
+Environment:
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 0.5043505m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 1.758767m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 1.850464m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 1.997379m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 2.963069m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 3.278909m]
+- Tree (Health: 10/10) [X: 13.25, Y: -16.78, Distance: 3.387876m]
+- Tree (Health: 10/10) [X: 12.43, Y: -19.6, Distance: 3.850034m]
+- Tree (Health: 10/10) [X: 15.44, Y: -14.63, Distance: 3.986335m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 4.015399m]
+- Tree (Health: 10/10) [X: 13.75, Y: -13.81, Distance: 5.311086m]
+- Tree (Health: 10/10) [X: 19.28, Y: -14.16, Distance: 5.404184m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 5.595452m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.676058m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 5.705991m]
+- Tree (Health: 10/10) [X: 15.86, Y: -12.82, Distance: 5.741801m]
+- Tree (Health: 10/10) [X: 10.73, Y: -16.49, Distance: 5.786623m]
+- Tree (Health: 10/10) [X: 11.84, Y: -14.35, Distance: 6.011271m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 6.393652m]
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 7.23876m]
+- Tree (Health: 10/10) [X: 13.98, Y: -11.61, Distance: 7.272001m]
+- Tree (Health: 10/10) [X: 11.7, Y: -12.56, Distance: 7.457638m]
+- Tree (Health: 10/10) [X: 16.84, Y: -10.94, Distance: 7.6477m]
+- Tree (Health: 10/10) [X: 22.54, Y: -14.13, Distance: 7.784549m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.830927m]
+- Tree Stump (Health: 5/5) [X: 21.57, Y: -12.88, Distance: 7.857539m]
+- Tree (Health: 10/10) [X: 9.45, Y: -14.39, Distance: 7.87689m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 7.940327m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.985427m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 8.24383m]
+- Tree (Health: 10/10) [X: 20.16, Y: -11.35, Distance: 8.252931m]
+- Tree Stump (Health: 5/5) [X: 13.81, Y: -10.34, Distance: 8.538001m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 8.631547m]
+- Tree (Health: 10/10) [X: 18.31, Y: -9.99, Distance: 8.836889m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 10.73, Y: -16.49. [0 minutes ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [10 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 14.39, Y: -18.34. [14 minutes ago]
+- George Brown sees Tree at X: 21, Y: -15.79. [17 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [20 minutes ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [6 hours ago]
+- George Brown sees Tree at X: 26.24, Y: -20.97. [6 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [6 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [6 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [6 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478961295] --- Response ---
+[1692478961295] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692478961296] --- Verified Action ---
+[1692478961296] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692478961346] [31m[createMemory][39m George Brown sees Tree at X: 15.86, Y: -12.82. [99.78125]
+[1692478961347] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [99.77487]
+[1692478961397] [31m[createMemory][39m George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [99.82116]
+[1692478961418] [31m[createMemory][39m George Brown no longer sees Tree (40) at X: 10.73, Y: -16.49 [99.8401642]
+[1692478961566] [31m[createMemory][39m George Brown sees Tree at X: 20.14, Y: -22.62. [99.92058]
+[1692478961803] [31m[createMemory][39m George Brown sees Tree at X: 22.51, Y: -18.06. [100.221481]
+[1692478961834] [31m[createMemory][39m George Brown no longer sees Tree (39) at X: 13.75, Y: -13.81 [100.261269]
+[1692478962274] [31m[createMemory][39m George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [100.700516]
+[1692478962653] [31m[createMemory][39m George Brown no longer sees Tree (68) at X: 19.28, Y: -14.16 [101.02037]
+[1692478962713] [31m[createMemory][39m George Brown sees Tree at X: 22.59, Y: -23.18. [101.140915]
+[1692478962754] [31m[createMemory][39m George Brown no longer sees Tree (80) at X: 15.44, Y: -14.63 [101.160355]
+[1692478962823] [31m[createMemory][39m George Brown no longer sees Tree (72) at X: 12.43, Y: -19.6 [101.240608]
+[1692478962874] [31m[createMemory][39m George Brown no longer sees Tree (44) at X: 13.25, Y: -16.78 [101.301575]
+[1692478963177] [31m[createMemory][39m George Brown sees Tree at X: 24.25, Y: -20.01. [101.600426]
+[1692478963227] [31m[createMemory][39m George Brown sees Tree at X: 24.08, Y: -21.93. [101.600426]
+[1692478963734] [31m[createMemory][39m George Brown no longer sees Tree (54) at X: 15.22, Y: -16.78 [102.162239]
+[1692478963847] [31m[createMemory][39m George Brown no longer sees StoneOreSmall at X: 14.39, Y: -18.34 [102.26017]
+[1692478963896] [31m[createMemory][39m George Brown no longer sees Tree (70) at X: 21, Y: -15.79 [102.320755]
+[1692478964214] [31m[createMemory][39m George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [102.60218]
+[1692478964355] [31m[createMemory][39m George Brown no longer sees Tree (69) at X: 18.19, Y: -16.42 [102.781052]
+[1692478964756] [31m[createMemory][39m George Brown sees Tree at X: 26.2, Y: -23.09. [103.140968]
+[1692478964757] [31m[createMemory][39m George Brown sees Tree at X: 26.24, Y: -20.97. [103.140968]
+[1692478964802] [31m[createMemory][39m George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [103.220856]
+[1692478965267] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [103.679962]
+[1692478969188] --- Prompt ---
+[1692478969191] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16963, -22.89352
+
+Time: Day 0, 10:22 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7796158m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.065344m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.44897m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629735m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.039771m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.065717m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.077109m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.219404m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015931m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.034204m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.422967m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.531651m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.574019m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.105548m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113723m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.126341m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.199552m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.323076m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.383263m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.693204m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.716961m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.166883m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.253886m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.290749m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.530727m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.823589m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 minutes ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [6 minutes ago]
+- George Brown no longer sees Tree (72) at X: 12.43, Y: -19.6 [14 minutes ago]
+- George Brown sees Tree at X: 20.14, Y: -22.62. [22 minutes ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [23 minutes ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [1 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [1 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [1 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [7 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478971052] --- Response ---
+[1692478971052] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478971054] --- Verified Action ---
+[1692478971054] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478976448] --- Prompt ---
+[1692478976450] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16963, -22.89352
+
+Time: Day 0, 11:03 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7796158m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.065344m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.44897m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629735m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.039771m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.065717m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.077109m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.219404m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015931m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.034204m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.422967m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.531651m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.574019m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.105548m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113723m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.126341m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.199552m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.323076m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.383263m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.693204m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.716961m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.166883m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.253886m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.290749m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.530727m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.823589m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [43 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [44 minutes ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [47 minutes ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [53 minutes ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [1 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [1 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [2 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [2 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [8 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [8 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [41 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478981320] --- Response ---
+[1692478981321] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692478981321] --- Verified Action ---
+[1692478981322] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692478981372] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [119.802048]
+[1692478981513] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [119.859955]
+[1692478986864] --- Prompt ---
+[1692478986868] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19228, -22.92021
+
+Time: Day 0, 11:59 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7507373m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.094267m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.421657m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.653092m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.052774m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.069639m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.111128m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.221249m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.010597m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.035676m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.411355m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.537541m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.608093m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.130254m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.132799m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.160057m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.178332m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.293197m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.418131m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.689326m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.702423m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.200569m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.256716m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.259506m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.565647m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.83372m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [1 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [1 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [1 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [1 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [2 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [2 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [2 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [3 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [9 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [9 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [55 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478989179] --- Response ---
+[1692478989179] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692478989180] --- Verified Action ---
+[1692478989180] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692478994298] --- Prompt ---
+[1692478994302] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19228, -22.92021
+
+Time: Day 0, 12:51 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7507373m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.094267m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.421657m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.653092m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.052774m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.069639m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.111128m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.221249m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.010597m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.035676m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.411355m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.537541m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.608093m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.130254m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.132799m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.160057m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.178332m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.293197m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.418131m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.689326m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.702423m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.200569m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.256716m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.259506m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.565647m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.83372m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [2 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [2 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [3 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [3 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [4 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [10 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [10 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.16742, Y: -22.89271 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [52 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692478997922] --- Response ---
+[1692478997922] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692478997922] --- Verified Action ---
+[1692478997922] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692478997971] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [136.401337]
+[1692478998037] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [136.459946]
+[1692479002577] --- Prompt ---
+[1692479002581] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.21493, -22.94689
+
+Time: Day 0, 1:38 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7224004m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.123535m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.394689m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.676703m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.04018m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.099613m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.145162m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223384m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.987125m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.055585m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.399947m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.543616m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.642175m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.146919m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.157223m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.160118m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.193785m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.263366m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.453m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.685607m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.688018m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.222692m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.234264m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.265268m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.600567m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.843979m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [3 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [3 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [3 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [3 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [4 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [4 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [4 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [10 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [10 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [46 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479004706] --- Response ---
+[1692479004706] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479004706] --- Verified Action ---
+[1692479004706] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479010138] --- Prompt ---
+[1692479010143] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.21493, -22.94689
+
+Time: Day 0, 2:25 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7224004m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.123535m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.394689m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.676703m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.04018m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.099613m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.145162m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223384m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.987125m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.055585m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.399947m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.543616m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.642175m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.146919m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.157223m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.160118m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.193785m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.263366m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.453m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.685607m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.688018m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.222692m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.234264m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.265268m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.600567m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.843979m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [4 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [4 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [4 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [4 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [4 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [5 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [5 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [5 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [11 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [11 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.19029, Y: -22.91921 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [46 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479014365] --- Response ---
+[1692479014365] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479014368] --- Verified Action ---
+[1692479014368] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479014413] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [152.846878]
+[1692479014552] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [152.899948]
+[1692479020275] --- Prompt ---
+[1692479020312] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.23758, -22.97358
+
+Time: Day 0, 3:17 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6946712m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.153124m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.368084m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.700561m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.027937m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.129693m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.179213m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.225807m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.963787m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.075658m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.38874m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.54987m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.676268m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.13622m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.163716m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.187502m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.227525m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.233579m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.48787m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.673744m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.682045m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.188676m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.267972m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.271176m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.635488m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.854362m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [4 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [4 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [5 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [5 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [5 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [6 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [6 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [6 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [12 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [12 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [8 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [52 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479021900] --- Response ---
+[1692479021900] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479021901] --- Verified Action ---
+[1692479021901] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479028193] --- Prompt ---
+[1692479028202] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.23758, -22.97358
+
+Time: Day 0, 4:08 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6946712m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.153124m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.368084m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.700561m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.027937m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.129693m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.179213m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.225807m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.963787m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.075658m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.38874m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.54987m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.676268m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.13622m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.163716m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.187502m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.227525m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.233579m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.48787m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.673744m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.682045m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.188676m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.267972m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.271176m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.635488m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.854362m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [5 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [5 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [5 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [5 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [6 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [6 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [7 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [7 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [13 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [13 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.21315, Y: -22.9457 and hit 1 trees. [8 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [50 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479030652] --- Response ---
+[1692479030652] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479030654] --- Verified Action ---
+[1692479030656] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479030787] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [169.135132]
+[1692479030818] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [169.179947]
+[1692479035724] --- Prompt ---
+[1692479035727] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.26023, -23.00026
+
+Time: Day 0, 4:55 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6676255m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.183007m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.341865m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.72466m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.016052m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.159872m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.213279m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22852m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.940588m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.095892m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.377739m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.556306m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.710368m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.11533m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.180645m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.203841m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.214953m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.261276m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.522741m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.659605m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.678641m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.15467m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.277226m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.301688m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.670408m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.864874m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [6 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [6 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [6 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [6 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [6 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [7 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [7 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [8 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [14 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [14 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [46 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479038822] --- Response ---
+[1692479038822] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479038823] --- Verified Action ---
+[1692479038823] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479046256] --- Prompt ---
+[1692479046257] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.26023, -23.00026
+
+Time: Day 0, 5:49 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6676255m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.183007m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.341865m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.72466m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.016052m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.159872m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.213279m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22852m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.940588m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.095892m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.377739m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.556306m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.710368m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.11533m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.180645m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.203841m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.214953m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.261276m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.522741m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.659605m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.678641m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.15467m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.277226m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.301688m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.670408m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.864874m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [7 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [7 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [7 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [7 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [7 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [8 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [8 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [8 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [15 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [15 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [54 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479049655] --- Response ---
+[1692479049655] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479049655] --- Verified Action ---
+[1692479049655] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479049701] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [188.134689]
+[1692479049761] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [188.179932]
+[1692479054745] --- Prompt ---
+[1692479054763] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.26, -23.00025
+
+Time: Day 0, 6:49 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6676311m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.182787m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.342095m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.724679m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.016266m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.159653m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.213169m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.228679m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.94082m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.095943m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.377951m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.556447m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.71018m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.115561m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.180721m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.204063m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.214939m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.261173m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.522603m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.659824m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.678827m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.15486m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.27703m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.301495m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.670243m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.864991m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [8 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [8 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [8 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [8 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [8 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [9 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [9 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [9 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [16 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [16 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.16963, Y: -22.89352 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [59 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479056678] --- Response ---
+[1692479056678] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479056679] --- Verified Action ---
+[1692479056679] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479061773] --- Prompt ---
+[1692479061786] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.26, -23.00025
+
+Time: Day 0, 7:36 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6676311m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.182787m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.342095m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.724679m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.016266m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.159653m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.213169m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.228679m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.94082m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.095943m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.377951m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.556447m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.71018m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.115561m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.180721m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.204063m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.214939m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.261173m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.522603m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.659824m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.678827m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.15486m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.27703m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.301495m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.670243m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.864991m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [9 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [9 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [9 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [9 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [9 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [10 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [10 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [10 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [16 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [16 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [47 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479066186] --- Response ---
+[1692479066186] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 15.88,\n  \"y\": -18.99\n}"
+  }
+}
+[1692479066187] --- Verified Action ---
+[1692479066200] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 15.88,
+    "y": -18.99
+  }
+}
+[1692479066255] [31m[createMemory][39m George Brown has started walking to 15.88, Y: -18.99. [204.679947]
+[1692479066807] [31m[createMemory][39m George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [205.24]
+[1692479066992] [31m[createMemory][39m George Brown no longer sees Tree (156) at X: 26.2, Y: -23.09 [205.3605]
+[1692479066993] [31m[createMemory][39m George Brown no longer sees Tree (154) at X: 26.24, Y: -20.97 [205.380585]
+[1692479067121] [31m[createMemory][39m George Brown sees Tree at X: 18.19, Y: -16.42. [205.50087]
+[1692479067313] [31m[createMemory][39m George Brown sees Tree Stump at X: 16.9, Y: -16.87. [205.740417]
+[1692479067482] [31m[createMemory][39m George Brown sees Tree at X: 21, Y: -15.79. [205.820969]
+[1692479067812] [31m[createMemory][39m George Brown sees Stone Ore Deposit (Small) at X: 14.39, Y: -18.34. [206.220856]
+[1692479067863] [31m[createMemory][39m George Brown sees Tree at X: 15.22, Y: -16.78. [206.240265]
+[1692479068613] [31m[createMemory][39m George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [206.90036]
+[1692479068703] [31m[createMemory][39m George Brown no longer sees Tree (150) at X: 24.25, Y: -20.01 [207.000168]
+[1692479068738] [31m[createMemory][39m George Brown sees Tree at X: 13.25, Y: -16.78. [207.160751]
+[1692479068762] [31m[createMemory][39m George Brown sees Tree at X: 15.44, Y: -14.63. [207.180054]
+[1692479068769] [31m[createMemory][39m George Brown sees Tree at X: 19.28, Y: -14.16. [207.140808]
+[1692479068870] [31m[createMemory][39m George Brown sees Tree at X: 12.43, Y: -19.6. [207.30127]
+[1692479068880] [31m[createMemory][39m George Brown no longer sees Tree (34) at X: 22.59, Y: -23.18 [207.30127]
+[1692479069468] [31m[createMemory][39m George Brown no longer sees Stump (15) at X: 21.26, Y: -23.66788 [207.7412]
+[1692479069819] [31m[createMemory][39m George Brown sees Tree at X: 13.75, Y: -13.81. [208.20079]
+[1692479069841] [31m[createMemory][39m George Brown no longer sees Tree (147) at X: 22.51, Y: -18.06 [208.261169]
+[1692479070131] [31m[createMemory][39m George Brown no longer sees Tree (33) at X: 20.14, Y: -22.62 [208.540543]
+[1692479070465] [31m[createMemory][39m George Brown sees Tree at X: 10.73, Y: -16.49. [208.620514]
+[1692479070467] [31m[createMemory][39m George Brown finished walking to 15.88, Y: -18.99. [208.659927]
+[1692479075382] --- Prompt ---
+[1692479075385] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 16.14115, -18.55788
+
+Time: Day 0, 8:52 PM
+
+Environment:
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 0.5048992m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 1.764656m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 1.850619m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 2.002348m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 2.961137m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 3.272865m]
+- Tree (Health: 10/10) [X: 13.25, Y: -16.78, Distance: 3.39406m]
+- Tree (Health: 10/10) [X: 12.43, Y: -19.6, Distance: 3.854693m]
+- Tree (Health: 10/10) [X: 15.44, Y: -14.63, Distance: 3.989973m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 4.010128m]
+- Tree (Health: 10/10) [X: 13.75, Y: -13.81, Distance: 5.316014m]
+- Tree (Health: 10/10) [X: 19.28, Y: -14.16, Distance: 5.403124m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 5.59192m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.669901m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 5.700138m]
+- Tree (Health: 10/10) [X: 15.86, Y: -12.82, Distance: 5.744769m]
+- Tree (Health: 10/10) [X: 10.73, Y: -16.49, Distance: 5.792818m]
+- Tree (Health: 10/10) [X: 11.84, Y: -14.35, Distance: 6.01716m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 6.388278m]
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 7.23289m]
+- Tree (Health: 10/10) [X: 13.98, Y: -11.61, Distance: 7.27624m]
+- Tree (Health: 10/10) [X: 11.7, Y: -12.56, Distance: 7.463139m]
+- Tree (Health: 10/10) [X: 16.84, Y: -10.94, Distance: 7.649874m]
+- Tree (Health: 10/10) [X: 22.54, Y: -14.13, Distance: 7.781478m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.831632m]
+- Tree Stump (Health: 5/5) [X: 21.57, Y: -12.88, Distance: 7.855618m]
+- Tree (Health: 10/10) [X: 9.45, Y: -14.39, Distance: 7.88307m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 7.934203m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.980829m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 8.237842m]
+- Tree (Health: 10/10) [X: 20.16, Y: -11.35, Distance: 8.252558m]
+- Tree Stump (Health: 5/5) [X: 13.81, Y: -10.34, Distance: 8.542125m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 8.625338m]
+- Tree (Health: 10/10) [X: 18.31, Y: -9.99, Distance: 8.83813m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 10.73, Y: -16.49. [0 minutes ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [10 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [20 minutes ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [10 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [10 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [10 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [10 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [10 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [11 hours ago]
+- George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [11 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.19228, Y: -22.92021 and hit 1 trees. [8 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479077698] --- Response ---
+[1692479077698] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479077704] --- Verified Action ---
+[1692479077712] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479077787] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [216.191467]
+[1692479077788] [31m[createMemory][39m George Brown sees Tree at X: 15.86, Y: -12.82. [216.200623]
+[1692479077820] [31m[createMemory][39m George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [216.23999]
+[1692479077829] [31m[createMemory][39m George Brown no longer sees Tree (40) at X: 10.73, Y: -16.49 [216.260361]
+[1692479077988] [31m[createMemory][39m George Brown sees Tree at X: 20.14, Y: -22.62. [216.3413]
+[1692479078216] [31m[createMemory][39m George Brown sees Tree at X: 22.51, Y: -18.06. [216.640869]
+[1692479078233] [31m[createMemory][39m George Brown no longer sees Tree (39) at X: 13.75, Y: -13.81 [216.661179]
+[1692479078692] [31m[createMemory][39m George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [217.120926]
+[1692479079024] [31m[createMemory][39m George Brown no longer sees Tree (68) at X: 19.28, Y: -14.16 [217.440659]
+[1692479079131] [31m[createMemory][39m George Brown no longer sees Tree (80) at X: 15.44, Y: -14.63 [217.560165]
+[1692479079133] [31m[createMemory][39m George Brown sees Tree at X: 22.59, Y: -23.18. [217.560165]
+[1692479079235] [31m[createMemory][39m George Brown no longer sees Tree (72) at X: 12.43, Y: -19.6 [217.660355]
+[1692479079335] [31m[createMemory][39m George Brown no longer sees Tree (44) at X: 13.25, Y: -16.78 [217.7004]
+[1692479079597] [31m[createMemory][39m George Brown sees Tree at X: 24.25, Y: -20.01. [218.000443]
+[1692479079605] [31m[createMemory][39m George Brown sees Tree at X: 24.08, Y: -21.93. [218.021378]
+[1692479080134] [31m[createMemory][39m George Brown no longer sees Tree (54) at X: 15.22, Y: -16.78 [218.560471]
+[1692479080233] [31m[createMemory][39m George Brown no longer sees StoneOreSmall at X: 14.39, Y: -18.34 [218.660873]
+[1692479080314] [31m[createMemory][39m George Brown no longer sees Tree (70) at X: 21, Y: -15.79 [218.741058]
+[1692479080610] [31m[createMemory][39m George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [219.021118]
+[1692479080773] [31m[createMemory][39m George Brown no longer sees Tree (69) at X: 18.19, Y: -16.42 [219.199982]
+[1692479081127] [31m[createMemory][39m George Brown sees Tree at X: 26.2, Y: -23.09. [219.540756]
+[1692479081133] [31m[createMemory][39m George Brown sees Tree at X: 26.24, Y: -20.97. [219.540756]
+[1692479081232] [31m[createMemory][39m George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [219.641541]
+[1692479081702] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [220.099915]
+[1692479086739] --- Prompt ---
+[1692479086742] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.17571, -22.89843
+
+Time: Day 0, 10:00 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7740543m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.072482m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.442047m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.633748m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.047072m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.061498m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.084225m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.218329m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.019043m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.027943m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.419031m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.531492m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.581823m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.110604m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.116053m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.133343m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.193733m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.315762m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.390783m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.690894m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.712438m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.174665m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.256543m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.282946m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.538484m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824406m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 minutes ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [6 minutes ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [12 minutes ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [23 minutes ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [1 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [11 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [11 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [11 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [12 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [8 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479088956] --- Response ---
+[1692479088956] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479088957] --- Verified Action ---
+[1692479088957] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479097914] --- Prompt ---
+[1692479097914] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.17571, -22.89843
+
+Time: Day 0, 10:50 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7740543m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.072482m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.442047m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.633748m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.047072m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.061498m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.084225m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.218329m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.019043m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.027943m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.419031m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.531492m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.581823m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.110604m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.116053m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.133343m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.193733m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.315762m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.390783m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.690894m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.712438m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.174665m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.256543m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.282946m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.538484m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824406m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [52 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [53 minutes ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [56 minutes ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [1 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [1 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [1 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [12 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [12 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [12 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [12 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.21493, Y: -22.94689 and hit 1 trees. [8 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [50 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479100727] --- Response ---
+[1692479100727] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479100728] --- Verified Action ---
+[1692479100728] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479100805] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [239.207016]
+[1692479100846] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [239.259918]
+[1692479106269] --- Prompt ---
+[1692479106275] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19806, -22.92537
+
+Time: Day 0, 11:55 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7450983m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.101245m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.415038m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.657455m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.048987m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.076754m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.118337m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.220625m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.004649m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.039145m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.407827m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.537805m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.615806m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.132955m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.138113m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.167163m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.172844m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.286096m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.425682m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.687435m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.69828m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.208243m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.249007m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.261811m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.573374m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.834935m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [1 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [1 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [2 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [3 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [13 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [13 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [13 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [13 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [8 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479108055] --- Response ---
+[1692479108055] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479108057] --- Verified Action ---
+[1692479108058] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479114395] --- Prompt ---
+[1692479114405] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19806, -22.92537
+
+Time: Day 0, 12:45 PM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7450983m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.101245m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.415038m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.657455m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.048987m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.076754m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.118337m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.220625m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.004649m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.039145m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.407827m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.537805m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.615806m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.132955m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.138113m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.167163m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.172844m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.286096m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.425682m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.687435m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.69828m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.208243m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.249007m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.261811m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.573374m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.834935m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [2 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [2 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [3 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [3 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [14 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [14 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [14 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [14 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.23758, Y: -22.97358 and hit 1 trees. [8 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [49 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19806, Y: -22.92537 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479119363] --- Response ---
+[1692479119363] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479119364] --- Verified Action ---
+[1692479119364] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479119465] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [257.843353]
+[1692479119519] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [257.8999]
+[1692479124846] --- Prompt ---
+[1692479124851] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.22042, -22.9523
+
+Time: Day 1, 12:47 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7166817m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.130362m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.388385m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.681409m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.036827m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.106547m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.152465m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223208m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.981489m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.05941m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.396826m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.544298m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.649801m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.149989m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.152064m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.165687m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.200996m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.256475m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.460583m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.684133m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.684254m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.215075m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.241836m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.267225m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.608266m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.84559m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [3 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [3 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [3 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [4 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [4 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [15 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [15 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [15 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [15 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [8 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [6 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19806, Y: -22.92537 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479128165] --- Response ---
+[1692479128165] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479128170] --- Verified Action ---
+[1692479128170] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479135786] --- Prompt ---
+[1692479135788] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.22042, -22.9523
+
+Time: Day 1, 1:45 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.7166817m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.130362m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.388385m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.681409m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.036827m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.106547m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.152465m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223208m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.981489m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.05941m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.396826m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.544298m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.649801m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.149989m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.152064m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.165687m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.200996m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.256475m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.460583m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.684133m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.684254m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.215075m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.241836m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.267225m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.608266m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.84559m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [4 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [4 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [4 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [4 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [5 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [5 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [16 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [16 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [16 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [16 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.26023, Y: -23.00026 and hit 1 trees. [8 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [7 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [7 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19806, Y: -22.92537 and hit 1 trees. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [58 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.22042, Y: -22.9523 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479139285] --- Response ---
+[1692479139285] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479139286] --- Verified Action ---
+[1692479139286] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1692479139375] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [277.7651]
+[1692479139393] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [277.819916]
+[1692479144907] --- Prompt ---
+[1692479144911] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.24277, -22.97923
+
+Time: Day 1, 2:46 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6888714m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.159802m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.362111m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.705604m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.025024m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.136446m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.186606m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22608m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.958471m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.079834m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.386031m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.550972m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.683804m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.131397m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.167153m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.193326m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.226904m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.234839m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.495484m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.670363m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.68099m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.181155m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.272782m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.275437m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.643158m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.856371m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [5 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [5 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [5 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [5 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [6 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [6 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [17 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [17 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [17 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [17 hours ago]
+
+Previous Actions:
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [8 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [8 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [6 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [5 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [3 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19806, Y: -22.92537 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.22042, Y: -22.9523 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479146934] --- Response ---
+[1692479146934] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1692479146935] --- Verified Action ---
+[1692479146935] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1692479153705] --- Prompt ---
+[1692479153710] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.24277, -22.97923
+
+Time: Day 1, 3:38 AM
+
+Environment:
+- Tree Stump (Health: 0/5) [X: 21.26, Y: -23.66788, Distance: 0.6888714m]
+- Tree (Health: 5/10) [X: 20.14, Y: -22.62, Distance: 1.159802m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.362111m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.705604m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.025024m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.136446m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.186606m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22608m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.958471m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.079834m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.386031m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.550972m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.683804m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.131397m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.167153m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.193326m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.226904m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.234839m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.495484m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.670363m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.68099m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.181155m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.272782m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.275437m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.643158m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.856371m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Navigate to the closest Tree X: 21.26, Y: -23.66788 and begin mining",
+    "priority": 1
+  },
+  {
+    "task": "Move to Stone Ore Deposit at X: 15.88, Y: -18.99 and begin mining",
+    "priority": 2
+  },
+  {
+    "task": "Check the condition of mining tools",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle by eating and resting",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  }
+]
+
+Memories:
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [6 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [6 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [6 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [6 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [7 hours ago]
+- George Brown sees Tree at X: 10.73, Y: -16.49. [7 hours ago]
+- George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [18 hours ago]
+- George Brown no longer sees Stump (7) at X: 16.9, Y: -16.87 [18 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [18 hours ago]
+- George Brown no longer sees Tree (61) at X: 15.86, Y: -12.82 [18 hours ago]
+
+Previous Actions:
+- [swing_axe]: George Brown swong their axe at X: 21.26, Y: -23.00025 and hit 2 trees. [9 hours ago]
+- [move_to]: George Brown walked to X: 15.88, Y: -18.99. [7 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [6 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.17571, Y: -22.89843 and hit 1 trees. [5 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [4 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.19806, Y: -22.92537 and hit 1 trees. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [swing_axe]: George Brown swong their axe at X: 21.22042, Y: -22.9523 and hit 1 trees. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [51 minutes ago]
+- [swing_axe]: George Brown swong their axe at X: 21.24277, Y: -22.97923 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1692479156646] --- Response ---
+[1692479156646] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1692479156646] --- Verified Action ---
+[1692479156646] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}

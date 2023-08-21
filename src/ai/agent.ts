@@ -441,6 +441,10 @@ async function getAction(
             }
             prompt += "\n";
 
+            // Log action functions
+            log("--- Action Functions ---", "info", character.id);
+            log(actions, "info", character.id);
+
             const response = await createChatCompletion(
                 [
                     {
