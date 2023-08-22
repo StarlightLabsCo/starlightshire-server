@@ -117,6 +117,18 @@ const StartConversation = z
     })
     .strict();
 
+const Eat = z
+    .object({
+        type: z.literal("eat"),
+        data: z
+            .object({
+                characterId: z.string(),
+                foodId: z.string(),
+            })
+            .strict(),
+    })
+    .strict();
+
 export const Action = z.union([
     AddItemToChest,
     RemoveItemFromChest,
@@ -126,4 +138,5 @@ export const Action = z.union([
     SwingSword,
     SwingPickaxe,
     StartConversation,
+    Eat,
 ]);

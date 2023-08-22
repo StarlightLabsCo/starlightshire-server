@@ -34,4 +34,14 @@ const getRelativeTime = (referenceTime: number, currentTime: number) => {
         return `${Math.floor(timeDifference / dayDuration)} days ago`;
     }
 };
-export { convertTimeToString, getRelativeTime };
+
+function getHungerDescription(satiety: number, maxSatiety: number): string {
+    const fraction = satiety / maxSatiety;
+    if (fraction === 1) return "Full";
+    if (fraction > 0.75) return "Well-fed";
+    if (fraction > 0.5) return "Satisfied";
+    if (fraction > 0.25) return "Hungry";
+    return "Starving";
+}
+
+export { convertTimeToString, getRelativeTime, getHungerDescription };

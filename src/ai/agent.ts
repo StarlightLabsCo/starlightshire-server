@@ -7,7 +7,11 @@ import { Action } from "../actions.js";
 import { globalLogPath, log } from "../logger.js";
 import { getCharacter } from "../character.js";
 import { getUnfinishedTasks, updateTasks } from "./task.js";
-import { convertTimeToString, getRelativeTime } from "../utils.js";
+import {
+    convertTimeToString,
+    getHungerDescription,
+    getRelativeTime,
+} from "../utils.js";
 import { calculateMaxMemoriesForTask, getRelevantMemories } from "./memory.js";
 import { createChatCompletion } from "./openai.js";
 
@@ -58,6 +62,8 @@ async function updateTaskList(data: {
     environment: string[];
     hitbox: string[];
     time: number;
+    satiety: number;
+    maxSatiety: number;
 }) {
     // -- Get Action --
     const character = await getCharacter(data.characterId);
@@ -73,6 +79,11 @@ async function updateTaskList(data: {
     prompt += `Location: ${data.location.x}, ${data.location.y}\n\n`;
 
     prompt += `Time: ${convertTimeToString(data.time)}\n\n`;
+
+    prompt += `Hunger: ${getHungerDescription(
+        data.satiety,
+        data.maxSatiety
+    )}\n\n`;
 
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
@@ -254,6 +265,8 @@ async function getAction(
         environment: string[];
         hitbox: string[];
         time: number;
+        satiety: number;
+        maxSatiety: number;
     }
 ) {
     // init action history
@@ -294,6 +307,8 @@ async function getAction(
     prompt += `Location: ${data.location.x}, ${data.location.y}\n\n`;
 
     prompt += `Time: ${convertTimeToString(data.time)}\n\n`;
+
+    prompt += `Hunger: ${data.satiety} / ${data.maxSatiety}\n\n`;
 
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
