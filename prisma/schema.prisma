@@ -13,10 +13,11 @@ datasource db {
 model Character {
   id String @id @default(cuid())
 
-  name        String   @unique
-  age         Int
-  occupation  String
-  personality String[]
+  name         String   @unique
+  age          Int
+  occupation   String
+  personality  String[]
+  systemPrompt String
 
   memories            Memory[]
   reflectionThreshold Float    @default(0)

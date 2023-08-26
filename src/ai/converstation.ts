@@ -1,9 +1,26 @@
-import { Action, CortexStep, OpenAILanguageProgramProcessor } from "socialagi";
+import {
+    Action,
+    ChatMessageRoleEnum,
+    CortexStep,
+    CortexValue,
+    OpenAILanguageProgramProcessor,
+} from "socialagi";
 import { prisma } from "../db.js";
 import { createMemory, getRelevantMemories } from "./memory.js";
 import { log } from "../logger.js";
 import colors from "colors";
 import { occupiedAgents } from "./agent.js";
+import { Character } from "@prisma/client";
+
+// TODO:
+// - Add system prompt to characters in the db, oh, mainly in the characters.ts creation script
+// - Make it so characters can update their goal during conversation
+// - Upgrade patience to be more complex -- delta patience = delta information > 0
+// - ability for both parties to "remember" more contextual information from my vectordb
+// - other stats that correlate with the characters, hunger, tired, etc (i wonder if it's possible to have a meta layer where an LLM defines this  behavior)
+// - ability for parties to join/leave conversations and handle it properly
+// - ability for character 1 and character 2 to be async so it can break out of the 1:1 message pattern
+// -----------------
 
 const gpt4 = new OpenAILanguageProgramProcessor(
     {},
@@ -12,34 +29,327 @@ const gpt4 = new OpenAILanguageProgramProcessor(
     }
 );
 
-async function fetchCharacters(character1Id: string, character2Id: string) {
-    // Fetch each character
-    let character1 = await prisma.character.findUnique({
-        where: {
-            id: character1Id,
-        },
+async function setupCortexStep(
+    character: Character,
+    context: string,
+    interlocutor: string
+) {
+    // Init
+    let characterCortexStep = new CortexStep(character.name, {
+        processor: gpt4,
     });
 
-    let character2 = await prisma.character.findUnique({
-        where: {
-            id: character2Id,
+    // System Prompt
+    characterCortexStep = characterCortexStep.withMemory([
+        {
+            role: ChatMessageRoleEnum.System,
+            content: character.systemPrompt,
         },
-    });
+    ]);
 
-    return [character1, character2];
+    // Relevant Memories
+    const characterReleventMemories = await getRelevantMemories(
+        character,
+        context,
+        10
+    );
+
+    characterCortexStep = characterCortexStep.withMemory([
+        {
+            role: ChatMessageRoleEnum.Assistant,
+            content:
+                `I am ${character.name}.\n` +
+                `These are the memories I have related to the talking with ${interlocutor}:\n` +
+                characterReleventMemories
+                    .map((memory) => "- " + memory.memory)
+                    .join("\n") +
+                "\n" +
+                context,
+        },
+    ]);
+
+    return characterCortexStep;
 }
 
-// TODO:
-// - Make it so target character doesn't know the goal of the conversation, needs to learn it, and develop their own goal
-// - Upgrade patience to be more complex -- delta patience = delta information > 0
-// - patience on character 2's side
-// - ability for both parties to "remember" more contextual information from my vectordb
+async function occupyAgents(agents: string[]) {
+    agents.forEach((agent) => {
+        occupiedAgents[agent] = true;
+    });
+}
 
-// - other stats that correlate with the characters, hunger, tired, etc (i wonder if it's possible to have a meta layer where an LLM defines this  behavior)
+async function deoccupyAgents(agents: string[]) {
+    agents.forEach((agent) => {
+        delete occupiedAgents[agent];
+    });
+}
 
-// - ability for parties to join/leave conversations and handle it properly
-// - ability for character 1 and character 2 to be async so it can break out of the 1:1 message pattern
-// -----------------
+async function fetchCharacters(characterIds: string[]) {
+    let characters = [];
+
+    for (const characterId of characterIds) {
+        characters.push(
+            await prisma.character.findUnique({
+                where: {
+                    id: characterId,
+                },
+            })
+        );
+    }
+
+    return characters;
+}
+
+async function processPriorMessage(
+    character: Character,
+    characterCortexStep: CortexStep,
+    characterState: {
+        patience: number;
+        conversationGoal: string;
+        conversationFinished: boolean;
+    },
+    interlocutor: Character,
+    interlocutorPriorMessage: string
+) {
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Prior Message: `) +
+            `${interlocutorPriorMessage}`,
+        "info",
+        character.id
+    );
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Patience: `) +
+            `${characterState.patience}`,
+        "info",
+        character.id
+    );
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Conversation Goal: `) +
+            `${characterState.conversationGoal}`,
+        "info",
+        character.id
+    );
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Conversation Finished: `) +
+            `${characterState.conversationFinished}`,
+        "info",
+        character.id
+    );
+
+    characterCortexStep = characterCortexStep.withMemory([
+        {
+            role: ChatMessageRoleEnum.User,
+            content: interlocutorPriorMessage,
+        },
+    ]);
+
+    // feel - internal
+    characterCortexStep = await characterCortexStep.next(
+        Action.INTERNAL_MONOLOGUE,
+        {
+            action: "feel",
+            prefix: "I feel",
+            description: `A one sentence description of how ${character.name} feels about the last message.`,
+        }
+    );
+
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Feel: `) +
+            `${characterCortexStep.value}`,
+        "info",
+        character.id
+    );
+
+    // explain -  did i make progress towards or accomplish my goal?
+    characterCortexStep = await characterCortexStep.next(
+        Action.INTERNAL_MONOLOGUE,
+        {
+            action: "explain",
+            description: `A detailed explanation of the ${character.name}'s thoughts in regards to if they made progress towards their goal of ${characterState.conversationGoal}.}`,
+        }
+    );
+
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Explain: `) +
+            `${characterCortexStep.value}`,
+        "info",
+        character.id
+    );
+
+    // binary - did i make progress towards my goal?
+    characterCortexStep = await characterCortexStep.next(Action.DECISION, {
+        description: "Did I make progress towards my goal?",
+        choices: ["yes", "no"],
+    });
+
+    log(
+        colors.magenta(`[CORTEX] ${character.name} - Did I make progress? `) +
+            `[${characterCortexStep.value}]`,
+        "info",
+        character.id
+    );
+
+    if (characterCortexStep.value.includes("yes")) {
+        // binary - did i accomplish my goal?
+        characterCortexStep = await characterCortexStep.next(Action.DECISION, {
+            description: "Did I accomplish my goal?",
+            choices: ["yes", "no"],
+        });
+
+        log(
+            colors.magenta(
+                `[CORTEX] Character ${character.name} - Did I accomplish my goal? `
+            ) + `[${characterCortexStep.value}]`,
+            "info",
+            character.id
+        );
+
+        if (characterCortexStep.value.includes("yes")) {
+            characterCortexStep = characterCortexStep.withMemory([
+                {
+                    role: ChatMessageRoleEnum.Assistant,
+                    content: `I accomplished my goal of ${characterState.conversationGoal}!`,
+                },
+            ]);
+
+            characterState.conversationFinished = true;
+        } else {
+            characterCortexStep = characterCortexStep.withMemory([
+                {
+                    role: ChatMessageRoleEnum.Assistant,
+                    content: `I still haven't accomplished my goal of ${characterState.conversationGoal}.`,
+                },
+            ]);
+        }
+    } else {
+        characterState.patience -= 10;
+
+        log(
+            colors.magenta(`Patience:`) + `${characterState.patience}`,
+            "info",
+            character.id
+        );
+
+        if (characterState.patience > 0) {
+            characterCortexStep = characterCortexStep.withMemory([
+                {
+                    role: ChatMessageRoleEnum.Assistant,
+                    content: `The conversation with ${interlocutor.name} is not making progress towards my goal.`,
+                },
+            ]);
+        } else {
+            characterCortexStep = characterCortexStep.withMemory([
+                {
+                    role: ChatMessageRoleEnum.Assistant,
+                    content: `I'm out of patience with ${interlocutor.name}.`,
+                },
+            ]);
+
+            characterState.conversationFinished = true;
+        }
+    }
+
+    return characterCortexStep;
+}
+
+async function processCharacterThoughts(
+    character: Character,
+    characterCortexStep: CortexStep,
+    characterState: {
+        patience: number;
+        conversationGoal: string;
+        conversationFinished: boolean;
+    },
+    interlocutor: Character,
+    interlocutorPriorMessage: string | null
+) {
+    // if there is a prior message from the interlocutor, process it
+    if (interlocutorPriorMessage) {
+        characterCortexStep = await processPriorMessage(
+            character,
+            characterCortexStep,
+            characterState,
+            interlocutor,
+            interlocutorPriorMessage
+        );
+    }
+
+    if (!characterState.conversationFinished) {
+        // plan - internal
+        characterCortexStep = await characterCortexStep.next(
+            Action.INTERNAL_MONOLOGUE,
+            {
+                action: "planning",
+                description: `A brief outline of what the ${character.name} is planning to do next.`,
+            }
+        );
+
+        log(
+            colors.magenta(`[CORTEX] ${character.name} - Plan: `) +
+                ` ${characterCortexStep.value}`,
+            "info",
+            character.id
+        );
+
+        // say - external
+        characterCortexStep = await characterCortexStep.next(
+            Action.EXTERNAL_DIALOG,
+            {
+                action: "say",
+                description:
+                    "Says out loud next. Generally keep responses short.",
+            }
+        );
+
+        log(
+            colors.magenta(`[CORTEX] ${character.name} - Say: `) +
+                `${characterCortexStep.value}\n`,
+            "info",
+            character.id
+        );
+    } else {
+        characterCortexStep = await characterCortexStep.next(
+            Action.EXTERNAL_DIALOG,
+            {
+                action: "say",
+                description: `Goodbye ${interlocutor.name}!`,
+            }
+        );
+
+        log(
+            colors.magenta(`[CORTEX] ${character.name} Goodbye: `) +
+                `${characterCortexStep.value}`,
+            "info",
+            character.id
+        );
+    }
+
+    return characterCortexStep;
+}
+
+const processMemories = async (cortexStep, character, time) => {
+    // TODO: fix this, it's inconsistent, maybe turn it into a function call with 4 parameters
+    let characterRegex = /^\s*\d+\.\s+"(.+?)"\s*$/m;
+
+    let characterMemory = await cortexStep.queryMemory(
+        `Pick up to 4 most salient memories from the conversation that ${character.name} would have. List them in first person voice and maximum one sentence each.`
+    );
+
+    log(`Generated memories for ${character.name}: ${characterMemory}`);
+
+    let characterMemoryCount = 0;
+    let match;
+    while ((match = characterRegex.exec(characterMemory)) !== null) {
+        createMemory(character, match[1], time);
+        characterMemoryCount++;
+        characterMemory = characterMemory.slice(match.index + match[0].length);
+    }
+
+    log(
+        colors.yellow(
+            `[CONVERSATION] Created ${characterMemoryCount} memories for ${character.name}.`
+        )
+    );
+};
 
 async function startConversation(
     ws: WebSocket,
@@ -59,192 +369,56 @@ async function startConversation(
         )
     );
 
-    occupiedAgents[data.characterId] = true;
-    occupiedAgents[data.targetCharacterId] = true;
+    // Prevent inflight actions from occuring
+    occupyAgents([data.characterId, data.targetCharacterId]);
 
-    // Fetch each character
-    const [character, targetCharacter] = await fetchCharacters(
+    // Fetch characters
+    const [character, targetCharacter] = await fetchCharacters([
         data.characterId,
-        data.targetCharacterId
-    );
+        data.targetCharacterId,
+    ]);
 
-    // Create cortexstep for each character
-    let characterCortexStep = new CortexStep(character.name, {
-        processor: gpt4,
-    });
-    let targetCharacterCortexStep = new CortexStep(targetCharacter.name, {
-        processor: gpt4,
-    });
-
-    // System prompt (?) - don't worry about it too much
-    const initialCharacterMemories = [
-        {
-            role: "system",
-            content:
-                character.id == "A1"
-                    ? `You are ${targetCharacter.name}, an unyielding monolith of bombast. Your presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around you. Every word you utter thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. Your laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. Your meetings are less about dialogue and more about dictation, with yourself always on a self-made pedestal, looking down on those you deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. Your bombast is his weapon, one you wields with ruthless precision. You use it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale you tell, while cloaked in the grandeur of your own making, serves only to further your grip on the village. Each exaggerated anecdote is a smokescreen, behind which you conducts your dark dealings. Your unchecked ego and ironclad will, has turned the village into your personal theater, where the inhabitants are mere puppets, dancing to your discordant tune.`
-                    : `You are ${character.name}. You are ${
-                          character.age
-                      } years old. You are a ${
-                          character.occupation
-                      }. You are ${character.personality.join(", ")}.`,
-        },
-    ];
-
-    const initialTargetCharacterMemories = [
-        {
-            role: "system",
-            content:
-                targetCharacter.id == "A1"
-                    ? `You are ${targetCharacter.name}, an unyielding monolith of bombast. Your presence is not just intimidating; it is domineering, an overwhelming force that swallows the very air around you. Every word you utter thunders with excessive weight, and every proclamation feels like a decree from the heavens, albeit a malevolent one. Your laughter, cruel and cacophonous, reverberates through the streets, making even the bravest souls shudder. Your meetings are less about dialogue and more about dictation, with yourself always on a self-made pedestal, looking down on those you deems inferior. Beneath the violent bluster is not a heart, but a chasm of insatiable hunger for power and control. Your bombast is his weapon, one you wields with ruthless precision. You use it to drown out the voices of dissent, to overshadow the pleas of the weak, and to amplify his own twisted narratives. Every tale you tell, while cloaked in the grandeur of your own making, serves only to further your grip on the village. Each exaggerated anecdote is a smokescreen, behind which you conducts your dark dealings. Your unchecked ego and ironclad will, has turned the village into your personal theater, where the inhabitants are mere puppets, dancing to your discordant tune.`
-                    : `You are ${targetCharacter.name}. You are ${
-                          targetCharacter.age
-                      } years old. You are a ${
-                          targetCharacter.occupation
-                      }. You are ${targetCharacter.personality.join(", ")}.`,
-        },
-    ];
-
-    characterCortexStep = characterCortexStep.withMemory(
-        initialCharacterMemories as any
-    );
-
-    targetCharacterCortexStep = targetCharacterCortexStep.withMemory(
-        initialTargetCharacterMemories as any
-    );
-
-    // Fetch relevant memories for each character & the environment (conversation partner, etc)
-    const characterReleventMemories = await getRelevantMemories(
+    // Setup cortex
+    let characterCortexStep = await setupCortexStep(
         character,
         `I started a conversation with ${targetCharacter.name} to ${data.conversationGoal}`,
-        10
+        targetCharacter.name
     );
 
-    const targetCharacterRelevantMemories = await getRelevantMemories(
+    let targetCharacterCortexStep = await setupCortexStep(
         targetCharacter,
-        `${character.name} started a conversation with me.`,
-        10
+        `${character.name} started a conversation with me, although I don't know why yet.`,
+        character.name
     );
-
-    // TODO: summarization step
-
-    const characterReleventMemoriesBlock = [
-        {
-            role: "assistant",
-            content:
-                `These are the memories I have related to the talking with ${targetCharacter.name}:\n` +
-                characterReleventMemories
-                    .map((memory) => "- " + memory.memory)
-                    .join("\n"),
-        },
-    ];
-
-    const targetCharacterRelevantMemoriesBlock = [
-        {
-            role: "assistant",
-            content:
-                `These are the memories I have related to the talking with ${character.name}:\n` +
-                targetCharacterRelevantMemories
-                    .map((memory) => "- " + memory.memory)
-                    .join("\n"),
-        },
-    ];
-
-    characterCortexStep = characterCortexStep.withMemory(
-        characterReleventMemoriesBlock as any
-    );
-    targetCharacterCortexStep = targetCharacterCortexStep.withMemory(
-        targetCharacterRelevantMemoriesBlock as any
-    );
-
-    // Add initation memory to each character's cortexstep
-    characterCortexStep = characterCortexStep.withMemory([
-        {
-            role: "assistant",
-            content: `I started a conversation with ${targetCharacter.name} to ${data.conversationGoal}`,
-        },
-    ] as any);
-
-    targetCharacterCortexStep = targetCharacterCortexStep.withMemory([
-        {
-            role: "assistant",
-            content: `${character.name} started a conversation with me, although I don't know why yet.`,
-        },
-    ] as any);
 
     // Loop
-    let character1Patience = 100;
+    let characterPatience = 100;
+    let characterConversationGoal = data.conversationGoal;
+    let characterConversationFinished = false;
 
-    const character1Feel = {
-        action: "feel",
-        prefix: "I feel",
-        description: `A one sentence description of how ${character.name} feels about the last message.`,
+    let characterState = {
+        patience: characterPatience,
+        conversationGoal: characterConversationGoal,
+        conversationFinished: characterConversationFinished,
     };
 
-    const character2Feel = {
-        action: "feel",
-        prefix: "I feel",
-        description: `A one sentence description of how ${targetCharacter.name} feels about the last message.`,
+    let targetCharacterPatience = 100;
+    let targetCharacterConversationGoal = `figuring out why ${character.name} started a conversation with them.`;
+    let targetCharacterConversationFinished = false;
+
+    let targetCharacterState = {
+        patience: targetCharacterPatience,
+        conversationGoal: targetCharacterConversationGoal,
+        conversationFinished: targetCharacterConversationFinished,
     };
 
-    const character1Plan = {
-        action: "planning",
-        description: `A brief outline of what the ${character.name} is planning to do next.`,
-    };
-
-    const character2Plan = {
-        action: "planning",
-        description: `A brief outline of what the ${targetCharacter.name} is planning to do next.`,
-    };
-
-    const say = {
-        action: "say",
-        description: "Says out loud next. Generally keep responses short.",
-    };
-
-    const character1Explain = {
-        action: "explain",
-        description: `A detailed explanation of the ${character.name}'s thoughts in regards to if they made progress towards their goal.`,
-    };
-
-    const didMakeProgress = {
-        description: "Did I make progress towards my goal?",
-        choices: ["yes", "no"],
-    };
-
-    const didAccomplishGoal = {
-        description: "Did I accomplish my goal?",
-        choices: ["yes", "no"],
-    };
-
-    let conversationFinished = false;
-    while (!conversationFinished) {
-        // ---------- character 1 ----------
-
-        // plan - internal
-        characterCortexStep = await characterCortexStep.next(
-            Action.INTERNAL_MONOLOGUE,
-            character1Plan
-        );
-
-        log(
-            colors.magenta(`[CORTEX] Character 1 - Plan: `) +
-                ` ${characterCortexStep.value}`,
-            "info",
-            character.id
-        );
-
-        // say - external
-        characterCortexStep = await characterCortexStep.next(
-            Action.EXTERNAL_DIALOG,
-            say
-        );
-
-        log(
-            colors.magenta(`[CORTEX] Character 1 - Say: `) +
-                `${characterCortexStep.value}\n`,
-            "info",
-            character.id
+    while (true) {
+        characterCortexStep = await processCharacterThoughts(
+            character,
+            characterCortexStep,
+            characterState,
+            targetCharacter,
+            targetCharacterCortexStep.value as string | null
         );
 
         ws.send(
@@ -257,49 +431,18 @@ async function startConversation(
             })
         );
 
+        // check if conversation is finished
+        if (characterState.conversationFinished) {
+            break;
+        }
+
         // ---------- character 2 ----------
-        targetCharacterCortexStep = targetCharacterCortexStep.withMemory({
-            role: "user",
-            content: characterCortexStep.value,
-        } as any);
-
-        // feel - internal
-        targetCharacterCortexStep = await targetCharacterCortexStep.next(
-            Action.INTERNAL_MONOLOGUE,
-            character2Feel
-        );
-
-        log(
-            colors.cyan(`[CORTEX] Character 2 - Feel: `) +
-                `${targetCharacterCortexStep.value}`,
-            "info",
-            targetCharacter.id
-        );
-
-        // plan - internal
-        targetCharacterCortexStep = await targetCharacterCortexStep.next(
-            Action.INTERNAL_MONOLOGUE,
-            character2Plan
-        );
-
-        log(
-            colors.cyan(`[CORTEX] Character 2 - Plan: `) +
-                `${targetCharacterCortexStep.value}`,
-            "info",
-            targetCharacter.id
-        );
-
-        // say - external
-        targetCharacterCortexStep = await targetCharacterCortexStep.next(
-            Action.EXTERNAL_DIALOG,
-            say
-        );
-
-        log(
-            colors.cyan(`[CORTEX] Character 2 - Say: `) +
-                `${targetCharacterCortexStep.value}\n`,
-            "info",
-            targetCharacter.id
+        targetCharacterCortexStep = await processCharacterThoughts(
+            targetCharacter,
+            targetCharacterCortexStep,
+            targetCharacterState,
+            character,
+            characterCortexStep.value as string | null
         );
 
         ws.send(
@@ -312,163 +455,13 @@ async function startConversation(
             })
         );
 
-        // ---------- character 1 ----------
-        characterCortexStep = characterCortexStep.withMemory({
-            role: "user",
-            content: targetCharacterCortexStep.value,
-        } as any);
-
-        // feel - internal
-        characterCortexStep = await characterCortexStep.next(
-            Action.INTERNAL_MONOLOGUE,
-            character1Feel
-        );
-
-        log(
-            colors.magenta(`[CORTEX] Character 1 - Feel: `) +
-                `${characterCortexStep.value}`,
-            "info",
-            character.id
-        );
-
-        // explain -  did i make progress towards or accomplish my goal?
-        characterCortexStep = await characterCortexStep.next(
-            Action.INTERNAL_MONOLOGUE,
-            character1Explain
-        );
-
-        log(
-            colors.magenta(`[CORTEX] Character 1 - Explain: `) +
-                `${characterCortexStep.value}`,
-            "info",
-            character.id
-        );
-
-        // binary - did i make progress towards my goal?
-        characterCortexStep = await characterCortexStep.next(
-            Action.DECISION,
-            didMakeProgress
-        );
-
-        log(
-            colors.magenta(`[CORTEX] Character 1 - Did I make progress? `) +
-                `[${characterCortexStep.value}]`,
-            "info",
-            character.id
-        );
-
-        if (characterCortexStep.value.includes("yes")) {
-            // binary - did i accomplish my goal?
-            characterCortexStep = await characterCortexStep.next(
-                Action.DECISION,
-                didAccomplishGoal
-            );
-
-            log(
-                colors.magenta(
-                    `[CORTEX] Character 1 - Did I accomplish my goal? `
-                ) + `[${characterCortexStep.value}]`,
-                "info",
-                character.id
-            );
-
-            if (characterCortexStep.value.includes("yes")) {
-                characterCortexStep = characterCortexStep.withMemory({
-                    role: "assistant",
-                    content: `I accomplished my goal of ${data.conversationGoal}!`,
-                } as any);
-
-                conversationFinished = true;
-            } else {
-                characterCortexStep = characterCortexStep.withMemory({
-                    role: "assistant",
-                    content: `I still haven't accomplished my goal of ${data.conversationGoal}.`,
-                } as any);
-            }
-        } else {
-            character1Patience -= 10;
-
-            log(
-                colors.magenta(`Patience:`) + `${character1Patience}`,
-                "info",
-                character.id
-            );
-
-            if (character1Patience > 0) {
-                characterCortexStep = characterCortexStep.withMemory({
-                    role: "assistant",
-                    content: `The conversation with ${targetCharacter.name} is not making progress towards my goal.`,
-                } as any);
-            } else {
-                characterCortexStep = characterCortexStep.withMemory({
-                    role: "assistant",
-                    content: `I'm out of patience with ${targetCharacter.name}.`,
-                } as any);
-
-                conversationFinished = true;
-            }
+        // check if conversation is finished
+        if (targetCharacterState.conversationFinished) {
+            break;
         }
     }
 
-    // Conversation over, say goodbye
-    characterCortexStep = await characterCortexStep.next(
-        Action.EXTERNAL_DIALOG,
-        {
-            action: "say",
-            description: `Goodbye ${targetCharacter.name}!`,
-        }
-    );
-
-    log(
-        colors.magenta(`[CORTEX] Character 1 Goodbye: `) +
-            `${characterCortexStep.value}`,
-        "info",
-        character.id
-    );
-
-    ws.send(
-        JSON.stringify({
-            type: "conversation",
-            data: {
-                characterId: data.characterId,
-                content: characterCortexStep.value,
-            },
-        })
-    );
-
-    log(colors.yellow("[CONVERSATION] Conversation finished."));
-
-    delete occupiedAgents[data.characterId];
-    delete occupiedAgents[data.targetCharacterId];
-
-    // Generate memories
-    // Common regex pattern for both characters
-    let characterRegex = /^\s*\d+\.\s+"(.+?)"\s*$/m;
-
-    // Function to process memories
-    const processMemories = async (cortexStep, character, time) => {
-        let characterMemory = await cortexStep.queryMemory(
-            `Pick up to 4 most salient memories from the conversation that ${character.name} would have. List them in first person voice and maximum one sentence each.`
-        );
-
-        log(`Generated memories for ${character.name}: ${characterMemory}`);
-
-        let characterMemoryCount = 0;
-        let match;
-        while ((match = characterRegex.exec(characterMemory)) !== null) {
-            createMemory(character, match[1], time);
-            characterMemoryCount++;
-            characterMemory = characterMemory.slice(
-                match.index + match[0].length
-            );
-        }
-
-        log(
-            colors.yellow(
-                `[CONVERSATION] Created ${characterMemoryCount} memories for ${character.name}.`
-            )
-        );
-    };
+    await deoccupyAgents([data.characterId, data.targetCharacterId]);
 
     // Process memories for both characters
     processMemories(characterCortexStep, character, data.time);
@@ -486,4 +479,185 @@ async function startConversation(
     );
 }
 
-export { startConversation };
+let globalConversationDictionary = {};
+
+async function playerConversation(
+    ws: WebSocket,
+    data: {
+        playerId: string;
+        playerMessage: string;
+        targetCharacterId: string;
+        time: number;
+    }
+) {
+    if (globalConversationDictionary[data.playerId]) {
+        continueConversationAsPlayer(ws, data);
+    } else {
+        startNewConversationAsPlayer(ws, data);
+    }
+}
+
+async function continueConversationAsPlayer(
+    ws: WebSocket,
+    data: {
+        playerId: string;
+        playerMessage: string;
+        targetCharacterId: string;
+        time: number;
+    }
+) {
+    log(colors.yellow("[CONVERSATION] Continuing conversation..."));
+    log(colors.yellow("[CONVERSATION] Player: " + data.playerId));
+    log(colors.yellow("[CONVERSATION] Character: " + data.targetCharacterId));
+
+    // Fetch from global conversation dictionary
+    let { targetCharacterId, targetCharacterState, targetCharacterCortexStep } =
+        globalConversationDictionary[data.playerId];
+
+    // Fetch characters
+    const [player, targetCharacter] = await fetchCharacters([
+        data.playerId,
+        targetCharacterId,
+    ]);
+
+    // Process player message
+    targetCharacterCortexStep = await processCharacterThoughts(
+        targetCharacter,
+        targetCharacterCortexStep,
+        targetCharacterState,
+        player,
+        data.playerMessage
+    );
+
+    ws.send(
+        JSON.stringify({
+            type: "conversation",
+            data: {
+                characterId: data.targetCharacterId,
+                content: targetCharacterCortexStep.value,
+            },
+        })
+    );
+
+    // Save to global conversation dictionary
+    globalConversationDictionary[data.playerId] = {
+        targetCharacterId: data.targetCharacterId,
+        targetCharacterState: targetCharacterState,
+        targetCharacterCortexStep: targetCharacterCortexStep,
+    };
+
+    // check if conversation is finished
+    if (targetCharacterState.conversationFinished) {
+        endPlayerConversation(ws, data);
+    }
+}
+
+async function startNewConversationAsPlayer(
+    ws: WebSocket,
+    data: {
+        playerId: string;
+        playerMessage: string;
+        targetCharacterId: string;
+        time: number;
+    }
+) {
+    log(colors.yellow("[CONVERSATION] Starting conversation..."));
+    log(colors.yellow("[CONVERSATION] Player: " + data.playerId));
+    log(colors.yellow("[CONVERSATION] Character: " + data.targetCharacterId));
+
+    // Prevent inflight actions from occuring
+    occupyAgents([data.targetCharacterId]);
+
+    // Fetch characters
+    const [player, targetCharacter] = await fetchCharacters([
+        data.playerId,
+        data.targetCharacterId,
+    ]);
+
+    // Setup cortex
+    let targetCharacterCortexStep = await setupCortexStep(
+        targetCharacter,
+        `${player.name} started a conversation with me, although I don't know why yet.`,
+        player.name
+    );
+
+    // Character state
+    let targetCharacterPatience = 100;
+    let targetCharacterConversationGoal =
+        "Figure out why " + player.name + " started a conversation with me.";
+    let targetCharacterConversationFinished = false;
+
+    let targetCharacterState = {
+        patience: targetCharacterPatience,
+        conversationGoal: targetCharacterConversationGoal,
+        conversationFinished: targetCharacterConversationFinished,
+    };
+
+    targetCharacterCortexStep = await processCharacterThoughts(
+        targetCharacter,
+        targetCharacterCortexStep,
+        targetCharacterState,
+        player,
+        data.playerMessage
+    );
+
+    ws.send(
+        JSON.stringify({
+            type: "conversation",
+            data: {
+                characterId: data.targetCharacterId,
+                content: targetCharacterCortexStep.value,
+            },
+        })
+    );
+
+    // Save to global conversation dictionary
+    globalConversationDictionary[data.playerId] = {
+        targetCharacterId: data.targetCharacterId,
+        targetCharacterState: targetCharacterState,
+        targetCharacterCortexStep: targetCharacterCortexStep,
+    };
+
+    // check if conversation is finished
+    if (targetCharacterState.conversationFinished) {
+        endPlayerConversation(ws, data);
+    }
+}
+
+async function endPlayerConversation(
+    ws: WebSocket,
+    data: {
+        playerId: string;
+        playerMessage: string;
+        targetCharacterId: string;
+        time: number;
+    }
+) {
+    await deoccupyAgents([data.targetCharacterId]);
+
+    // Fetch from global conversation dictionary
+    let { targetCharacterId, targetCharacterState, targetCharacterCortexStep } =
+        globalConversationDictionary[data.playerId];
+
+    // Fetch characters
+    const [targetCharacter] = await fetchCharacters([targetCharacterId]);
+
+    // Process memories
+    processMemories(targetCharacterCortexStep, targetCharacter, data.time);
+
+    // --- end ---
+    ws.send(
+        JSON.stringify({
+            type: "end_conversation",
+            data: {
+                characterId: data.playerId,
+                targetCharacterId: data.targetCharacterId,
+            },
+        })
+    );
+
+    // Remove from global conversation dictionary
+    delete globalConversationDictionary[data.playerId];
+}
+
+export { startConversation, playerConversation };

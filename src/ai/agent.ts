@@ -475,9 +475,6 @@ async function getAction(
                 actions
             );
 
-            // log("--- Actions ---", "info", character.id);
-            // log(actions, "info", character.id);
-
             if (occupiedAgents[character.id]) {
                 log(
                     colors.red(

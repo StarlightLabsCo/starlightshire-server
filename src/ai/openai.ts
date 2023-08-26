@@ -9,7 +9,7 @@ import { log } from "../logger.js";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-    baseURL: "https://llm_cache.harrishr.workers.dev",
+    // baseURL: "https://llm_cache.harrishr.workers.dev",
 });
 
 async function sleep(ms) {
