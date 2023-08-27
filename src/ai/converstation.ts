@@ -9,7 +9,7 @@ import { prisma } from "../db.js";
 import { createMemory, getRelevantMemories } from "./memory.js";
 import { log } from "../logger.js";
 import colors from "colors";
-import { occupiedAgents } from "./agent.js";
+import { occupiedAgents, updateTaskListAfterConversation } from "./agent.js";
 import { Character } from "@prisma/client";
 
 // TODO:
@@ -106,6 +106,7 @@ async function processPriorMessage(
         patience: number;
         conversationGoal: string;
         conversationFinished: boolean;
+        currentResponseNumber: number;
     },
     interlocutor: Character,
     interlocutorPriorMessage: string
@@ -159,6 +160,11 @@ async function processPriorMessage(
         character.id
     );
 
+    // shortciruit if first two messages
+    if (characterState.currentResponseNumber < 1) {
+        return characterCortexStep;
+    }
+
     // explain -  did i make progress towards or accomplish my goal?
     characterCortexStep = await characterCortexStep.next(
         Action.INTERNAL_MONOLOGUE,
@@ -197,7 +203,7 @@ async function processPriorMessage(
 
         log(
             colors.magenta(
-                `[CORTEX] Character ${character.name} - Did I accomplish my goal? `
+                `[CORTEX] ${character.name} - Did I accomplish my goal? `
             ) + `[${characterCortexStep.value}]`,
             "info",
             character.id
@@ -258,6 +264,7 @@ async function processCharacterThoughts(
         patience: number;
         conversationGoal: string;
         conversationFinished: boolean;
+        currentResponseNumber: number;
     },
     interlocutor: Character,
     interlocutorPriorMessage: string | null
@@ -323,23 +330,27 @@ async function processCharacterThoughts(
         );
     }
 
+    characterState.currentResponseNumber++;
+
     return characterCortexStep;
 }
 
 const processMemories = async (cortexStep, character, time) => {
     // TODO: fix this, it's inconsistent, maybe turn it into a function call with 4 parameters
-    let characterRegex = /^\s*\d+\.\s+"(.+?)"\s*$/m;
+    let characterRegex = /^-\s*(.+)\s*$/m;
 
     let characterMemory = await cortexStep.queryMemory(
-        `Pick up to 4 most salient memories from the conversation that ${character.name} would have. List them in first person voice and maximum one sentence each.`
+        `Pick up to 4 most salient memories from the conversation that ${character.name} would have. List them in first person voice and maximum one sentence each. Use dashes to indent each memory and put them each on a new line.`
     );
 
     log(`Generated memories for ${character.name}: ${characterMemory}`);
 
     let characterMemoryCount = 0;
     let match;
+    let memories = [];
     while ((match = characterRegex.exec(characterMemory)) !== null) {
         createMemory(character, match[1], time);
+        memories.push(match[1]);
         characterMemoryCount++;
         characterMemory = characterMemory.slice(match.index + match[0].length);
     }
@@ -349,6 +360,8 @@ const processMemories = async (cortexStep, character, time) => {
             `[CONVERSATION] Created ${characterMemoryCount} memories for ${character.name}.`
         )
     );
+
+    return memories;
 };
 
 async function startConversation(
@@ -400,6 +413,7 @@ async function startConversation(
         patience: characterPatience,
         conversationGoal: characterConversationGoal,
         conversationFinished: characterConversationFinished,
+        currentResponseNumber: 0,
     };
 
     let targetCharacterPatience = 100;
@@ -410,6 +424,7 @@ async function startConversation(
         patience: targetCharacterPatience,
         conversationGoal: targetCharacterConversationGoal,
         conversationFinished: targetCharacterConversationFinished,
+        currentResponseNumber: 0,
     };
 
     while (true) {
@@ -464,8 +479,29 @@ async function startConversation(
     await deoccupyAgents([data.characterId, data.targetCharacterId]);
 
     // Process memories for both characters
-    processMemories(characterCortexStep, character, data.time);
-    processMemories(targetCharacterCortexStep, targetCharacter, data.time);
+
+    // TODO: optimize promise chain here
+    let characterMemories = await processMemories(
+        characterCortexStep,
+        character,
+        data.time
+    );
+    let targetCharacterMemories = await processMemories(
+        targetCharacterCortexStep,
+        targetCharacter,
+        data.time
+    );
+
+    if (characterMemories.length > 0) {
+        await updateTaskListAfterConversation(character.id, characterMemories);
+    }
+
+    if (targetCharacterMemories.length > 0) {
+        await updateTaskListAfterConversation(
+            targetCharacter.id,
+            targetCharacterMemories
+        );
+    }
 
     // --- end ---
     ws.send(
@@ -591,6 +627,7 @@ async function startNewConversationAsPlayer(
         patience: targetCharacterPatience,
         conversationGoal: targetCharacterConversationGoal,
         conversationFinished: targetCharacterConversationFinished,
+        currentResponseNumber: 0,
     };
 
     targetCharacterCortexStep = await processCharacterThoughts(
@@ -643,7 +680,15 @@ async function endPlayerConversation(
     const [targetCharacter] = await fetchCharacters([targetCharacterId]);
 
     // Process memories
-    processMemories(targetCharacterCortexStep, targetCharacter, data.time);
+    const memories = await processMemories(
+        targetCharacterCortexStep,
+        targetCharacter,
+        data.time
+    );
+
+    if (memories.length > 0) {
+        await updateTaskListAfterConversation(targetCharacter.id, memories);
+    }
 
     // --- end ---
     ws.send(

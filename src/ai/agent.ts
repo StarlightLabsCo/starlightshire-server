@@ -202,7 +202,9 @@ async function updateTaskList(data: {
             i < actionHistory[character.id].length;
             i++
         ) {
+            log(`Getting action ${i}`, "info", character.id);
             const action = actionHistory[character.id][i];
+            log(`Getting result ${i}`, "info", character.id);
             const result = actionResults[character.id][i];
             prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
                 result.time,
@@ -237,6 +239,91 @@ async function updateTaskList(data: {
             // use regex to select a JSON array
             const taskArray = response.content.match(/\[.*\]/s)[0];
             const tasksJSON = JSON.parse(taskArray);
+
+            log(tasksJSON, "info", character.id);
+
+            updateTasks(character.id, tasksJSON);
+
+            return;
+        } catch (e) {
+            log(e, "error", character.id);
+            generationAttempts++;
+        }
+    }
+}
+
+async function updateTaskListAfterConversation(
+    characterId: string,
+    memories: string[]
+) {
+    const character = await getCharacter(characterId);
+
+    const tasks = await getUnfinishedTasks(character);
+
+    let prompt = "";
+    prompt += `Character: \n`;
+    prompt += `- ID: ${character.id}\n`;
+    prompt += `- Name: ${character.name}\n`;
+    prompt += `- Age: ${character.age}\n`;
+    prompt += `- Occupation: ${character.occupation}\n`;
+    prompt += `- Personality: ${character.personality.join(", ")}\n\n`;
+
+    prompt += `Action items & memories from conversation just now:\n`;
+    for (let i = 0; i < memories.length; i++) {
+        const memory = memories[i];
+        prompt += `- ${memory}\n`;
+    }
+
+    let tasksArray = [];
+    if (tasks[character.id].length > 0) {
+        for (let i = 0; i < tasks[character.id].length; i++) {
+            const task = tasks[character.id][i];
+
+            const taskObj = {
+                task: task.task,
+                priority: task.priority,
+            };
+
+            tasksArray.push(taskObj);
+        }
+
+        prompt += `Tasks:\n${JSON.stringify(tasksArray, null, 2)}\n\n`;
+    }
+
+    prompt += `Given the available information from a conversation you just had, update your task list, placing priority on the conversation action items & memories. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. The result must be sorted by priority, with the highest priority task at the top.`;
+
+    let generationAttempts = 0;
+    while (generationAttempts < 5) {
+        try {
+            log(
+                "--- Conversation Task Update Prompt ---",
+                "info",
+                character.id
+            );
+            log(prompt, "info", character.id);
+
+            const response = await createChatCompletion([
+                {
+                    role: "user",
+                    content: prompt,
+                },
+                {
+                    role: "assistant",
+                    content: "Updated Tasks:",
+                },
+            ]);
+
+            log("--- Response ---", "info", character.id);
+            log("Updated Tasks: ", "info", character.id);
+
+            // use regex to select a JSON array
+            const taskArray = response.content.match(/\[.*\]/s)[0];
+            const tasksJSON = JSON.parse(taskArray);
+
+            // Sort the tasks by priority
+            tasksJSON.sort((a, b) => {
+                return a.priority - b.priority;
+            });
 
             log(tasksJSON, "info", character.id);
 
@@ -420,8 +507,12 @@ async function getAction(
             i < actionHistory[character.id].length;
             i++
         ) {
+            log(`Getting action ${i}`, "info", character.id);
             const action = actionHistory[character.id][i];
+
+            log(`Getting result ${i}`, "info", character.id);
             const result = actionResults[character.id][i];
+
             prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
                 result.time,
                 data.time
@@ -551,4 +642,9 @@ async function getAction(
     }
 }
 
-export { getAction, saveActionResult, occupiedAgents };
+export {
+    getAction,
+    saveActionResult,
+    occupiedAgents,
+    updateTaskListAfterConversation,
+};

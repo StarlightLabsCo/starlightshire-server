@@ -1,0 +1,2127 @@
+[1693094968970] [Character] Creating Lucy
+[1693094969364] [31m[createMemory][39m The feel of the axe in my hand is like an extension of myself. [0]
+[1693094969365] [31m[createMemory][39m I remember the tallest tree I've ever felled, stood mighty for over a century. [0]
+[1693094969365] [31m[createMemory][39m The forest whispers its secrets if you're patient enough to listen. [0]
+[1693094969365] [31m[createMemory][39m The village depends on our timber, it's a responsibility I don't take lightly. [0]
+[1693094969365] [31m[createMemory][39m Thomas once tried to chop wood, it was amusing to say the least. [0]
+[1693094969365] [31m[createMemory][39m Nothing beats the smell of fresh-cut timber in the morning. [0]
+[1693094969365] [31m[createMemory][39m I've carved symbols on some trees, marking special moments of my life. [0]
+[1693094969365] [31m[createMemory][39m Will reminds me of when I was young, eager to learn and prove myself. [0]
+[1693094969365] [31m[createMemory][39m I've saved more than a few animals stuck or hurt, the forest is their home. [0]
+[1693094969365] [31m[createMemory][39m George and I have shared tales over campfires many nights. [0]
+[1693094969365] [31m[createMemory][39m Rain or shine, the trees await and work must be done. [0]
+[1693094969365] [31m[createMemory][39m I respect the forest, only taking what's necessary and planting twice as much. [0]
+[1693094969365] [31m[createMemory][39m Every lumberjack has a favorite axe; mine's named 'Whisper'. [0]
+[1693094969365] [31m[createMemory][39m The creaking sound a tree makes just before it falls is both eerie and beautiful. [0]
+[1693094969365] [31m[createMemory][39m At times, the forest feels alive, watching, and I'm just a small part of its vast story. [0]
+[1693094971791] [Character] Lucy created
+[1693095107932] [31m[createMemory][39m Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [0]
+[1693095111259] --- Prompt ---
+[1693095111260] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Hunger: Starving
+
+Environment:
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Memories:
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+- Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- George and I have shared tales over campfires many nights. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- eat: Eat some food.
+- drop_berries: Drop Berries onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1693095117089] --- Response ---
+[1693095117089] Updated Tasks: 
+[1693095117090] [
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+[1693095122110] --- Prompt ---
+[1693095122117] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 12:00 AM
+
+Hunger: 0 / 10
+
+Environment:
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [just now]
+- The village depends on our timber, it's a responsibility I don't take lightly. [just now]
+- I've carved symbols on some trees, marking special moments of my life. [just now]
+- I respect the forest, only taking what's necessary and planting twice as much. [just now]
+- Will reminds me of when I was young, eager to learn and prove myself. [just now]
+- George and I have shared tales over campfires many nights. [just now]
+- The forest whispers its secrets if you're patient enough to listen. [just now]
+- Rain or shine, the trees await and work must be done. [just now]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [just now]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095122117] --- Action Functions ---
+[1693095122117] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "eat",
+    "description": "Eat some food.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "foodId": {
+          "type": "string",
+          "description": "The food ID of the food to be eaten.",
+          "values": [
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_berries",
+    "description": "Drop Berries onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095124372] --- Response ---
+[1693095124372] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "eat",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"foodId\": \"berries\"\n}"
+  }
+}
+[1693095124380] --- Verified Action ---
+[1693095124380] {
+  "type": "eat",
+  "data": {
+    "characterId": "A4",
+    "foodId": "berries"
+  }
+}
+[1693095127122] --- Prompt ---
+[1693095127123] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 31.93, -52.6
+
+Time: Day 0, 1:36 AM
+
+Hunger: 9.999707 / 10
+
+Environment:
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 4.504272m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 6.389399m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 6.403141m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 8.008822m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 8.282398m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 8.467503m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree at X: 35.12, Y: -49.42. [1 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [1 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [1 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [1 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [1 hours ago]
+- George and I have shared tales over campfires many nights. [1 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [1 hours ago]
+- Rain or shine, the trees await and work must be done. [1 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [1 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [1 hours ago]
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095127123] --- Action Functions ---
+[1693095127123] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095129928] --- Response ---
+[1693095129928] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1693095129930] --- Verified Action ---
+[1693095129930] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1693095130004] [31m[createMemory][39m Lucy Wilde has started walking to 35.12, Y: -49.42. [21.6686916]
+[1693095130241] [31m[createMemory][39m Lucy Wilde sees Tree at X: 36.04, Y: -47.68999. [21.9401588]
+[1693095130329] [31m[createMemory][39m Lucy Wilde sees Tree at X: 37.81, Y: -50.1. [22.0024033]
+[1693095131538] [31m[createMemory][39m Lucy Wilde sees Tree Stump at X: 36.50999, Y: -46.03. [23.101635]
+[1693095131793] [31m[createMemory][39m Lucy Wilde sees Tree at X: 38.98, Y: -47.91. [23.4814987]
+[1693095132049] [31m[createMemory][39m Lucy Wilde sees Tree at X: 36.37, Y: -44.45. [23.7014465]
+[1693095132101] [31m[createMemory][39m Lucy Wilde sees Tree at X: 38.28, Y: -45.67. [23.7804]
+[1693095132140] [31m[createMemory][39m Lucy Wilde sees Tree at X: 39.59, Y: -49.45. [23.82142]
+[1693095132847] [31m[createMemory][39m Lucy Wilde finished walking to 35.12, Y: -49.42. [24.49999]
+[1693095136338] --- Prompt ---
+[1693095136339] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.86364, -49.05611
+
+Time: Day 0, 2:27 AM
+
+Hunger: 9.860214 / 10
+
+Environment:
+- Tree (Health: 10/10) [X: 35.12, Y: -49.42, Distance: 0.4451184m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.802798m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.125816m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.444971m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.272935m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.742745m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.810118m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.846164m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.247591m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.834011m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.155618m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.794102m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.076338m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.217801m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.859306m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde has started walking to 35.12, Y: -49.42. [17 minutes ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [2 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [2 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [2 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [2 hours ago]
+- George and I have shared tales over campfires many nights. [2 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [2 hours ago]
+- Rain or shine, the trees await and work must be done. [2 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [2 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [2 hours ago]
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [50 minutes ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095136339] --- Action Functions ---
+[1693095136339] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095138352] --- Response ---
+[1693095138352] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A4\"\n}"
+  }
+}
+[1693095138353] --- Verified Action ---
+[1693095138353] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A4"
+  }
+}
+[1693095142358] --- Prompt ---
+[1693095142359] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.86364, -49.05611
+
+Time: Day 0, 3:06 AM
+
+Hunger: 9.750425 / 10
+
+Environment:
+- Tree (Health: 5/10) [X: 35.12, Y: -49.42, Distance: 0.4451184m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.802798m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.125816m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.444971m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.272935m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.742745m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.810118m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.846164m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.247591m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.834011m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.155618m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.794102m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.076338m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.217801m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.859306m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde has started walking to 35.12, Y: -49.42. [56 minutes ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [3 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [3 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [3 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [3 hours ago]
+- George and I have shared tales over campfires many nights. [3 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [3 hours ago]
+- Rain or shine, the trees await and work must be done. [3 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [3 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [3 hours ago]
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [1 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [39 minutes ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095142359] --- Action Functions ---
+[1693095142360] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095145260] --- Response ---
+[1693095145260] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 35.12,\n  \"y\": -49.42\n}"
+  }
+}
+[1693095145261] --- Verified Action ---
+[1693095145261] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 35.12,
+    "y": -49.42
+  }
+}
+[1693095145300] [31m[createMemory][39m Lucy Wilde has started walking to 35.12, Y: -49.42. [36.99382]
+[1693095145341] [31m[createMemory][39m Lucy Wilde finished walking to 35.12, Y: -49.42. [37.0399857]
+[1693095148650] --- Prompt ---
+[1693095148651] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.89824, -49.01575
+
+Time: Day 0, 3:42 AM
+
+Hunger: 9.65121 / 10
+
+Environment:
+- Tree (Health: 5/10) [X: 35.12, Y: -49.42, Distance: 0.4610784m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.749643m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.107085m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.393005m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.228889m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.711823m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.757141m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.797094m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.201161m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.781116m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.1301m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.755798m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.034355m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.165904m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.809671m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 9.014016m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 9.014016m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde has started walking to 35.12, Y: -49.42. [1 hours ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [3 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [3 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [3 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [3 hours ago]
+- George and I have shared tales over campfires many nights. [3 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [3 hours ago]
+- Rain or shine, the trees await and work must be done. [3 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [3 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [3 hours ago]
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [35 minutes ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095148651] --- Action Functions ---
+[1693095148652] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095150380] --- Response ---
+[1693095150380] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A4\"\n}"
+  }
+}
+[1693095150388] --- Verified Action ---
+[1693095150388] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A4"
+  }
+}
+[1693095151073] [31m[createMemory][39m Lucy Wilde sees Tree Stump at X: 35.12, Y: -49.42. [42.7423859]
+[1693095151073] [31m[createMemory][39m Lucy Wilde picked up Wood at X: 34.89824, Y: -49.01575 [42.7423859]
+[1693095154629] --- Prompt ---
+[1693095154630] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 34.89824, -49.01575
+
+Time: Day 0, 4:18 AM
+
+Hunger: 9.549669 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 0.4610784m]
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 1.749643m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.107085m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 3.393005m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 4.228889m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.711823m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 4.757141m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 4.797094m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 6.201161m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 6.781116m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 7.1301m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 7.755798m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 8.034355m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 8.165904m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 8.809671m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 9.014016m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 9.014016m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde finished walking to 35.12, Y: -49.42. [36 minutes ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [4 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [4 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [4 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [4 hours ago]
+- George and I have shared tales over campfires many nights. [4 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [4 hours ago]
+- Rain or shine, the trees await and work must be done. [4 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [4 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [4 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [1 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [36 minutes ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.89824, Y: -49.01575 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095154630] --- Action Functions ---
+[1693095154630] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095157241] --- Response ---
+[1693095157241] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A4\",\n  \"x\": 36.04,\n  \"y\": -47.68999\n}"
+  }
+}
+[1693095157243] --- Verified Action ---
+[1693095157243] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A4",
+    "x": 36.04,
+    "y": -47.68999
+  }
+}
+[1693095157286] [31m[createMemory][39m Lucy Wilde has started walking to 36.04, Y: -47.68999. [48.9762421]
+[1693095158045] [31m[createMemory][39m Lucy Wilde sees Tree at X: 39.8, Y: -44.33. [49.7401962]
+[1693095158258] [31m[createMemory][39m Lucy Wilde sees Tree at X: 40.72, Y: -46.88. [49.8618164]
+[1693095158792] [31m[createMemory][39m Lucy Wilde finished walking to 36.04, Y: -47.68999. [50.4199829]
+[1693095162244] --- Prompt ---
+[1693095162244] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.84835, -47.47768
+
+Time: Day 0, 5:02 AM
+
+Hunger: 9.428185 / 10
+
+Environment:
+- Tree (Health: 10/10) [X: 36.04, Y: -47.68999, Distance: 0.2860173m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 1.591714m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 2.074392m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 3.029955m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 3.072285m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 3.161353m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.274848m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.229661m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 4.908177m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 5.05207m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 6.362722m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 6.513406m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 6.742053m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 6.820201m]
+- Tree (Health: 10/10) [X: 37.69, Y: -40.45, Distance: 7.264981m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 7.269619m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 7.269619m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 7.298809m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 32.23, Y: -40.35, Distance: 7.993517m]
+- Tree (Health: 10/10) [X: 44.35, Y: -46.47, Distance: 8.561158m]
+- Tree (Health: 10/10) [X: 41.04, Y: -40.38, Distance: 8.793766m]
+- Tree (Health: 10/10) [X: 41.04, Y: -40.38, Distance: 8.793766m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree at X: 40.72, Y: -46.88. [3 minutes ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [5 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [5 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [5 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [5 hours ago]
+- George and I have shared tales over campfires many nights. [5 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [5 hours ago]
+- Rain or shine, the trees await and work must be done. [5 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [5 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [5 hours ago]
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [3 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [2 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [1 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.89824, Y: -49.01575 and hit 1 trees. [43 minutes ago]
+- [move_to]: Lucy Wilde walked to X: 36.04, Y: -47.68999. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095162244] --- Action Functions ---
+[1693095162245] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095164094] --- Response ---
+[1693095164094] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A4\"\n}"
+  }
+}
+[1693095164099] --- Verified Action ---
+[1693095164099] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A4"
+  }
+}
+[1693095168894] --- Prompt ---
+[1693095168895] Character: 
+- ID: A4
+- Name: Lucy Wilde
+- Age: 35
+- Occupation: Lumberjack
+- Personality: Stoic, Resourceful, Witty
+
+Location: 35.84835, -47.47768
+
+Time: Day 0, 5:41 AM
+
+Hunger: 9.321263 / 10
+
+Environment:
+- Tree (Health: 5/10) [X: 36.04, Y: -47.68999, Distance: 0.2860173m]
+- Tree Stump (Health: 5/5) [X: 36.50999, Y: -46.03, Distance: 1.591714m]
+- Tree Stump (Health: 5/5) [X: 35.12, Y: -49.42, Distance: 2.074392m]
+- Tree (Health: 10/10) [X: 38.28, Y: -45.67, Distance: 3.029955m]
+- Tree (Health: 10/10) [X: 36.37, Y: -44.45, Distance: 3.072285m]
+- Tree (Health: 10/10) [X: 38.98, Y: -47.91, Distance: 3.161353m]
+- Tree (Health: 10/10) [X: 37.81, Y: -50.1, Distance: 3.274848m]
+- Tree (Health: 10/10) [X: 39.59, Y: -49.45, Distance: 4.229661m]
+- Tree (Health: 10/10) [X: 40.72, Y: -46.88, Distance: 4.908177m]
+- Tree (Health: 10/10) [X: 39.8, Y: -44.33, Distance: 5.05207m]
+- Tree Stump (Health: 5/5) [X: 38.74, Y: -41.81, Distance: 6.362722m]
+- Tree (Health: 10/10) [X: 35.27, Y: -40.99, Distance: 6.513406m]
+- Tree (Health: 10/10) [X: 41.87, Y: -50.51, Distance: 6.742053m]
+- Tree (Health: 10/10) [X: 42.62, Y: -48.29, Distance: 6.820201m]
+- Tree (Health: 10/10) [X: 37.69, Y: -40.45, Distance: 7.264981m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 7.269619m]
+- Tree (Health: 10/10) [X: 41.31, Y: -42.68, Distance: 7.269619m]
+- Tree (Health: 10/10) [X: 42.65, Y: -44.83, Distance: 7.298809m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 32.23, Y: -40.35, Distance: 7.993517m]
+- Tree (Health: 10/10) [X: 44.35, Y: -46.47, Distance: 8.561158m]
+- Tree (Health: 10/10) [X: 41.04, Y: -40.38, Distance: 8.793766m]
+- Tree (Health: 10/10) [X: 41.04, Y: -40.38, Distance: 8.793766m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Collect more food",
+    "priority": 5
+  }
+]
+
+Memories:
+- Lucy Wilde sees Tree at X: 40.72, Y: -46.88. [41 minutes ago]
+- The village depends on our timber, it's a responsibility I don't take lightly. [5 hours ago]
+- I've carved symbols on some trees, marking special moments of my life. [5 hours ago]
+- I respect the forest, only taking what's necessary and planting twice as much. [5 hours ago]
+- Will reminds me of when I was young, eager to learn and prove myself. [5 hours ago]
+- George and I have shared tales over campfires many nights. [5 hours ago]
+- The forest whispers its secrets if you're patient enough to listen. [5 hours ago]
+- Rain or shine, the trees await and work must be done. [5 hours ago]
+- I've saved more than a few animals stuck or hurt, the forest is their home. [5 hours ago]
+- At times, the forest feels alive, watching, and I'm just a small part of its vast story. [5 hours ago]
+
+Previous Actions:
+- [eat]: Lucy Wilde ate Berries which restored 10 satiety. [4 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [3 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.86364, Y: -49.05611 and hit 1 trees. [2 hours ago]
+- [move_to]: Lucy Wilde walked to X: 35.12, Y: -49.42. [1 hours ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 34.89824, Y: -49.01575 and hit 1 trees. [1 hours ago]
+- [move_to]: Lucy Wilde walked to X: 36.04, Y: -47.68999. [38 minutes ago]
+- [swing_axe]: Lucy Wilde swong their axe at X: 35.84835, Y: -47.47768 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693095168895] --- Action Functions ---
+[1693095168895] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693095170983] --- Response ---
+[1693095170983] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A4\"\n}"
+  }
+}
+[1693095170987] --- Verified Action ---
+[1693095170987] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A4"
+  }
+}

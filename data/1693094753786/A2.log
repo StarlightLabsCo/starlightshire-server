@@ -1,0 +1,2181 @@
+[1693094754221] [31m[createMemory][39m Working in the mines is tough but rewarding. [0]
+[1693094754221] [31m[createMemory][39m I've been friends with Thomas for a long time. [0]
+[1693094754221] [31m[createMemory][39m Safety in the mines is a top priority for me. [0]
+[1693094754221] [31m[createMemory][39m I've discovered some rare minerals during my time here. [0]
+[1693094754221] [31m[createMemory][39m I'm usually one of the first to arrive at the mine site. [0]
+[1693094754221] [31m[createMemory][39m My family has been mining for generations. [0]
+[1693094754221] [31m[createMemory][39m I enjoy a cold beverage after a long day in the mines. [0]
+[1693094754221] [31m[createMemory][39m I've been taught traditional mining songs by the older miners. [0]
+[1693094754221] [31m[createMemory][39m I've saved up to buy a house near the village. [0]
+[1693094754221] [31m[createMemory][39m I know a secret tunnel in the mine that few know about. [0]
+[1693094754221] [31m[createMemory][39m It's important to have the right tools for the job. [0]
+[1693094754221] [31m[createMemory][39m I take pride in my work and look after my equipment. [0]
+[1693094754221] [31m[createMemory][39m I sometimes join Thomas and others for a meal after work. [0]
+[1693094754221] [31m[createMemory][39m I've had a few close calls, but always came out safe. [0]
+[1693094754221] [31m[createMemory][39m The village festivities are something I look forward to every year. [0]
+[1693094757233] [Character] George created
+[1693094828237] [31m[createMemory][39m George Brown sees Tree at X: 24.08, Y: -21.93. [0]
+[1693094828237] [31m[createMemory][39m George Brown sees Tree at X: 22.59, Y: -23.18. [0]
+[1693094828237] [31m[createMemory][39m George Brown sees Tree at X: 18.28, Y: -21.95. [0]
+[1693094828237] [31m[createMemory][39m George Brown sees Tree at X: 21.54, Y: -20.29. [0]
+[1693094828237] [31m[createMemory][39m George Brown sees Tree at X: 20.14, Y: -22.62. [0]
+[1693094828254] [31m[createMemory][39m George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [0]
+[1693094832869] --- Prompt ---
+[1693094832876] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 19.9, -25.4
+
+Time: Day 0, 12:00 AM
+
+Hunger: Starving
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 2.202231m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 2.790337m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 3.487764m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.811416m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.366721m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 5.432614m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 6.054502m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 6.175443m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 6.71015m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 6.926368m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 7.566275m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 7.734371m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 7.790233m]
+- Tree (Health: 10/10) [X: 23.02, Y: -32.65, Distance: 7.89284m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.943047m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 8.222432m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.31106m]
+- Tree (Health: 10/10) [X: 12.38, Y: -29.04, Distance: 8.35464m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Memories:
+- I've saved up to buy a house near the village. [just now]
+- I enjoy a cold beverage after a long day in the mines. [just now]
+- I've been taught traditional mining songs by the older miners. [just now]
+- I'm usually one of the first to arrive at the mine site. [just now]
+- Working in the mines is tough but rewarding. [just now]
+- The village festivities are something I look forward to every year. [just now]
+- I've been friends with Thomas for a long time. [just now]
+- It's important to have the right tools for the job. [just now]
+- I've had a few close calls, but always came out safe. [just now]
+- I sometimes join Thomas and others for a meal after work. [just now]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- eat: Eat some food.
+- drop_berries: Drop Berries onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1693094843262] --- Response ---
+[1693094843262] Updated Tasks: 
+[1693094843263] [
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+[1693094847160] --- Prompt ---
+[1693094847163] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 19.9, -25.4
+
+Time: Day 0, 12:00 AM
+
+Hunger: 0 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 2.202231m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 2.790337m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 3.487764m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.811416m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.366721m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 5.432614m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 6.054502m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 6.175443m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 6.71015m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 6.926368m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 7.566275m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 7.734371m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 7.790233m]
+- Tree (Health: 10/10) [X: 23.02, Y: -32.65, Distance: 7.89284m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.943047m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 8.222432m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.31106m]
+- Tree (Health: 10/10) [X: 12.38, Y: -29.04, Distance: 8.35464m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [just now]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [just now]
+- I've been friends with Thomas for a long time. [just now]
+- I sometimes join Thomas and others for a meal after work. [just now]
+- I'm usually one of the first to arrive at the mine site. [just now]
+- It's important to have the right tools for the job. [just now]
+- Working in the mines is tough but rewarding. [just now]
+- I've been taught traditional mining songs by the older miners. [just now]
+- The village festivities are something I look forward to every year. [just now]
+- I enjoy a cold beverage after a long day in the mines. [just now]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094847163] --- Action Functions ---
+[1693094847167] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "eat",
+    "description": "Eat some food.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "foodId": {
+          "type": "string",
+          "description": "The food ID of the food to be eaten.",
+          "values": [
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_berries",
+    "description": "Drop Berries onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094849687] --- Response ---
+[1693094849687] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "eat",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"foodId\": \"berries\"\n}"
+  }
+}
+[1693094849687] --- Verified Action ---
+[1693094849687] {
+  "type": "eat",
+  "data": {
+    "characterId": "A2",
+    "foodId": "berries"
+  }
+}
+[1693094853627] --- Prompt ---
+[1693094853627] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 19.9, -25.4
+
+Time: Day 0, 2:06 AM
+
+Hunger: 9.999907 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 2.202231m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 2.790337m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 3.487764m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.811416m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.366721m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 5.432614m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 6.054502m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 6.175443m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 6.71015m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 6.926368m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 7.566275m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 7.734371m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 7.790233m]
+- Tree (Health: 10/10) [X: 23.02, Y: -32.65, Distance: 7.89284m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.943047m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 8.222432m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.31106m]
+- Tree (Health: 10/10) [X: 12.38, Y: -29.04, Distance: 8.35464m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- I've been friends with Thomas for a long time. [2 hours ago]
+- I sometimes join Thomas and others for a meal after work. [2 hours ago]
+- It's important to have the right tools for the job. [2 hours ago]
+- I'm usually one of the first to arrive at the mine site. [2 hours ago]
+- Working in the mines is tough but rewarding. [2 hours ago]
+- I've been taught traditional mining songs by the older miners. [2 hours ago]
+- The village festivities are something I look forward to every year. [2 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [2 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094853628] --- Action Functions ---
+[1693094853628] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094857208] --- Response ---
+[1693094857208] {
+  "role": "assistant",
+  "content": "{ \"function\": \"functions.move_to\", \"parameters\": { \"characterId\": \"A2\", \"x\": 21.26, \"y\": -23.66788 } }"
+}
+[1693094857212] {}
+[1693094857212] --- Prompt ---
+[1693094857213] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 19.9, -25.4
+
+Time: Day 0, 2:06 AM
+
+Hunger: 9.999907 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 2.202231m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 2.790337m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 3.487764m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.811416m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 5.366721m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 5.432614m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 6.054502m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 6.175443m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 6.71015m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 6.926368m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 7.566275m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 7.734371m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 7.790233m]
+- Tree (Health: 10/10) [X: 23.02, Y: -32.65, Distance: 7.89284m]
+- Tree (Health: 10/10) [X: 11.96, Y: -25.18, Distance: 7.943047m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 8.222432m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.31106m]
+- Tree (Health: 10/10) [X: 12.38, Y: -29.04, Distance: 8.35464m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree Stump at X: 21.26, Y: -23.66788. [2 hours ago]
+- George Brown sees Tree at X: 24.08, Y: -21.93. [2 hours ago]
+- I've been friends with Thomas for a long time. [2 hours ago]
+- I sometimes join Thomas and others for a meal after work. [2 hours ago]
+- It's important to have the right tools for the job. [2 hours ago]
+- I'm usually one of the first to arrive at the mine site. [2 hours ago]
+- Working in the mines is tough but rewarding. [2 hours ago]
+- I've been taught traditional mining songs by the older miners. [2 hours ago]
+- The village festivities are something I look forward to every year. [2 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [2 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+
+[1693094857213] --- Action Functions ---
+[1693094857213] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094860278] --- Response ---
+[1693094860278] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1693094860278] --- Verified Action ---
+[1693094860279] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1693094860311] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [31.6611938]
+[1693094860623] [31m[createMemory][39m George Brown sees Tree at X: 14.11, Y: -27.17. [31.9620533]
+[1693094861055] [31m[createMemory][39m George Brown sees Tree at X: 19.34, Y: -19.25. [32.282093]
+[1693094861100] [31m[createMemory][39m George Brown sees Tree at X: 24.08, Y: -21.93. [32.4202347]
+[1693094861208] [31m[createMemory][39m George Brown no longer sees Tree (155) at X: 24.08, Y: -21.93 [32.3827438]
+[1693094861420] [31m[createMemory][39m George Brown no longer sees Tree (256) at X: 14.11, Y: -27.17 [32.76128]
+[1693094861676] [31m[createMemory][39m George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [33.02001]
+[1693094862008] [31m[createMemory][39m George Brown sees Tree at X: 24.25, Y: -20.01. [33.3600464]
+[1693094862151] [31m[createMemory][39m George Brown sees Tree at X: 22.51, Y: -18.06. [33.4826355]
+[1693094863120] [31m[createMemory][39m George Brown sees Tree at X: 26.2, Y: -23.09. [34.4604]
+[1693094863161] [31m[createMemory][39m George Brown sees Tree at X: 26.24, Y: -20.97. [34.48069]
+[1693094863193] [31m[createMemory][39m George Brown no longer sees StoneOreSmall (1) at X: 15.88, Y: -18.99 [34.5419579]
+[1693094863658] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [34.99999]
+[1693094867713] --- Prompt ---
+[1693094867717] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.16742, -22.89271
+
+Time: Day 0, 3:30 AM
+
+Hunger: 9.767756 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 0.7806857m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.062998m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.451299m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.629239m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.037416m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.067559m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.075388m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.22046m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.015736m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.036445m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.424745m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.532452m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.571755m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.10468m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.113779m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.124676m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.201719m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.325431m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.381319m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.694586m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.718869m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.164594m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.252419m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.293015m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.528601m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.824107m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 26.24, Y: -20.97. [3 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [3 minutes ago]
+- George Brown sees Tree at X: 24.25, Y: -20.01. [9 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [11 minutes ago]
+- I sometimes join Thomas and others for a meal after work. [3 hours ago]
+- It's important to have the right tools for the job. [3 hours ago]
+- I'm usually one of the first to arrive at the mine site. [3 hours ago]
+- Working in the mines is tough but rewarding. [3 hours ago]
+- I've been taught traditional mining songs by the older miners. [3 hours ago]
+- The village festivities are something I look forward to every year. [3 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094867717] --- Action Functions ---
+[1693094867718] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094870138] --- Response ---
+[1693094870138] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1693094870139] --- Verified Action ---
+[1693094870139] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1693094870179] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [41.52117]
+[1693094870239] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [41.5799866]
+[1693094874346] --- Prompt ---
+[1693094874346] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.19029, -22.91921
+
+Time: Day 0, 4:09 AM
+
+Hunger: 9.658174 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 0.7519169m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.092074m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.423802m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.652362m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.054337m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.06743m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.109335m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.222004m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 5.012625m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.035232m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.412856m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.538051m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.605893m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.130049m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.131745m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.158312m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.18027m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.295405m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.41616m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.690418m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.704067m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.198355m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.25831m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.258918m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.563539m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.833957m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 26.24, Y: -20.97. [42 minutes ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [42 minutes ago]
+- George Brown sees Tree at X: 24.25, Y: -20.01. [49 minutes ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [51 minutes ago]
+- I sometimes join Thomas and others for a meal after work. [4 hours ago]
+- I'm usually one of the first to arrive at the mine site. [4 hours ago]
+- It's important to have the right tools for the job. [4 hours ago]
+- Working in the mines is tough but rewarding. [4 hours ago]
+- I've been taught traditional mining songs by the older miners. [4 hours ago]
+- The village festivities are something I look forward to every year. [4 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [39 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094874346] --- Action Functions ---
+[1693094874351] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094877442] --- Response ---
+[1693094877442] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1693094877443] --- Verified Action ---
+[1693094877444] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1693094877483] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [48.14874]
+[1693094877536] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [48.19998]
+[1693094882097] --- Prompt ---
+[1693094882097] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.21315, -22.9457
+
+Time: Day 0, 4:49 AM
+
+Hunger: 9.547774 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 0.7236992m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.121491m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.396639m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.67574m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.041457m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.097549m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.143299m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.223835m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.988934m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.054892m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.401165m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.54383m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.64004m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.146451m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.158876m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.158926m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.19196m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.265422m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.451003m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.686403m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.689394m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.224828m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.232128m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.264349m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.598476m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.843931m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 26.24, Y: -20.97. [1 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [1 hours ago]
+- George Brown sees Tree at X: 24.25, Y: -20.01. [1 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [1 hours ago]
+- I sometimes join Thomas and others for a meal after work. [4 hours ago]
+- I'm usually one of the first to arrive at the mine site. [4 hours ago]
+- It's important to have the right tools for the job. [4 hours ago]
+- Working in the mines is tough but rewarding. [4 hours ago]
+- I've been taught traditional mining songs by the older miners. [4 hours ago]
+- The village festivities are something I look forward to every year. [4 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [39 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094882097] --- Action Functions ---
+[1693094882097] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094884943] --- Response ---
+[1693094884943] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1693094884944] --- Verified Action ---
+[1693094884945] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1693094885653] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [55.6988068]
+[1693094885720] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [55.75998]
+[1693094889892] --- Prompt ---
+[1693094889893] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.23602, -22.9722
+
+Time: Day 0, 5:34 AM
+
+Hunger: 9.42179 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 0.6960957m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.151218m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.369834m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.699372m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.028929m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.127769m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.177281m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.225957m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.965379m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.07472m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.389678m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.549793m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.674196m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.137692m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.162989m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.186079m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.225622m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.235487m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.485847m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.674854m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.682549m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.190745m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.26591m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.270529m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.633416m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.854036m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 26.24, Y: -20.97. [2 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [2 hours ago]
+- George Brown sees Tree at X: 24.25, Y: -20.01. [2 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [2 hours ago]
+- I sometimes join Thomas and others for a meal after work. [5 hours ago]
+- I'm usually one of the first to arrive at the mine site. [5 hours ago]
+- It's important to have the right tools for the job. [5 hours ago]
+- Working in the mines is tough but rewarding. [5 hours ago]
+- I've been taught traditional mining songs by the older miners. [5 hours ago]
+- The village festivities are something I look forward to every year. [5 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [3 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [45 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094889893] --- Action Functions ---
+[1693094889894] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094892223] --- Response ---
+[1693094892223] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1693094892227] --- Verified Action ---
+[1693094892227] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}
+[1693094892260] [31m[createMemory][39m George Brown has started walking to 21.26, Y: -23.66788. [62.3023872]
+[1693094892411] [31m[createMemory][39m George Brown finished walking to 21.26, Y: -23.66788. [62.3599777]
+[1693094899065] --- Prompt ---
+[1693094899068] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 21.25889, -22.9987
+
+Time: Day 0, 6:14 AM
+
+Hunger: 9.311761 / 10
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 21.26, Y: -23.66788, Distance: 0.6691866m]
+- Tree (Health: 10/10) [X: 20.14, Y: -22.62, Distance: 1.181236m]
+- Tree (Health: 10/10) [X: 22.59, Y: -23.18, Distance: 1.343404m]
+- Tree (Health: 10/10) [X: 21.54, Y: -20.29, Distance: 2.723247m]
+- Tree (Health: 10/10) [X: 24.08, Y: -21.93, Distance: 3.016753m]
+- Tree (Health: 10/10) [X: 18.28, Y: -21.95, Distance: 3.158089m]
+- Tree (Health: 10/10) [X: 19.34, Y: -19.25, Distance: 4.211279m]
+- Tree (Health: 10/10) [X: 24.25, Y: -20.01, Distance: 4.228365m]
+- Tree (Health: 10/10) [X: 26.2, Y: -23.09, Distance: 4.941958m]
+- Tree (Health: 10/10) [X: 22.51, Y: -18.06, Distance: 5.094709m]
+- Tree (Health: 10/10) [X: 26.24, Y: -20.97, Distance: 5.378393m]
+- Tree (Health: 10/10) [X: 25.38, Y: -17.9, Distance: 6.555935m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 15.88, Y: -18.99, Distance: 6.708361m]
+- Tree (Health: 10/10) [X: 28.36, Y: -22.53, Distance: 7.116565m]
+- Tree (Health: 10/10) [X: 23.79, Y: -16.28, Distance: 7.179657m]
+- Tree (Health: 10/10) [X: 28.12, Y: -25.2, Distance: 7.205595m]
+- Tree (Health: 10/10) [X: 21, Y: -15.79, Distance: 7.213346m]
+- Tree (Health: 10/10) [X: 18.19, Y: -16.42, Distance: 7.259295m]
+- Tree Stump (Health: 5/5) [X: 16.9, Y: -16.87, Distance: 7.520692m]
+- Tree (Health: 10/10) [X: 28.6, Y: -20.81, Distance: 7.660444m]
+- Tree (Health: 10/10) [X: 27.56, Y: -18.61, Distance: 7.678849m]
+- Tree (Health: 10/10) [X: 27.86, Y: -27.79, Distance: 8.156671m]
+- Tree (Health: 10/10) [X: 14.11, Y: -27.17, Distance: 8.276855m]
+- Stone Ore Deposit (Small) (Health: 5/5) [X: 14.39, Y: -18.34, Distance: 8.299703m]
+- Tree (Health: 10/10) [X: 15.22, Y: -16.78, Distance: 8.668355m]
+- Tree (Health: 10/10) [X: 25.97, Y: -15.49, Distance: 8.864264m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat berries to curb hunger",
+    "priority": 1
+  },
+  {
+    "task": "Visit closest Tree Stump to gather resources",
+    "priority": 2
+  },
+  {
+    "task": "Chop down nearby trees for wood",
+    "priority": 3
+  },
+  {
+    "task": "Proceed to Stone Ore Deposit (Small) to mine",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 6
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Tree at X: 26.24, Y: -20.97. [2 hours ago]
+- George Brown sees Tree at X: 26.2, Y: -23.09. [2 hours ago]
+- George Brown sees Tree at X: 24.25, Y: -20.01. [2 hours ago]
+- George Brown sees Stone Ore Deposit (Small) at X: 15.88, Y: -18.99. [2 hours ago]
+- I sometimes join Thomas and others for a meal after work. [6 hours ago]
+- I'm usually one of the first to arrive at the mine site. [6 hours ago]
+- It's important to have the right tools for the job. [6 hours ago]
+- Working in the mines is tough but rewarding. [6 hours ago]
+- I've been taught traditional mining songs by the older miners. [6 hours ago]
+- The village festivities are something I look forward to every year. [6 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [4 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [2 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [1 hours ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [39 minutes ago]
+- [move_to]: George Brown walked to X: 21.26, Y: -23.66788. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693094899069] --- Action Functions ---
+[1693094899069] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693094901309] --- Response ---
+[1693094901312] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 21.26,\n  \"y\": -23.66788\n}"
+  }
+}
+[1693094901312] --- Verified Action ---
+[1693094901312] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 21.26,
+    "y": -23.66788
+  }
+}

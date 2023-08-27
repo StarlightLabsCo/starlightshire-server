@@ -93,6 +93,8 @@ async function createChatCompletion(
 
             log(response);
 
+            log(response.choices[0].message);
+
             log(
                 colors.cyan(
                     `[OPENAI] Chat completion took ${endTime - startTime}ms`
