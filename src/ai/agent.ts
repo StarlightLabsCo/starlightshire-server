@@ -22,6 +22,38 @@ const actionResults = {};
 
 let occupiedAgents = {};
 
+async function occupyAgent(
+    ws: WebSocket,
+    data: { characterId: string; reason: string; time: number }
+) {
+    occupiedAgents[data.characterId] = true;
+
+    if (
+        actionHistory[data.characterId].length !=
+        actionResults[data.characterId].length
+    ) {
+        actionResults[data.characterId].push({
+            characterId: data.characterId,
+            result: data.reason,
+            time: data.time,
+        });
+    }
+
+    log("Occupied agent " + data.characterId, "info", data.characterId);
+}
+
+async function occupyAgents(agents: string[]) {
+    agents.forEach((agent) => {
+        occupiedAgents[agent] = true;
+    });
+}
+
+async function deoccupyAgents(agents: string[]) {
+    agents.forEach((agent) => {
+        delete occupiedAgents[agent];
+    });
+}
+
 async function saveActionResult(
     ws: WebSocket,
     data: {
@@ -206,6 +238,21 @@ async function updateTaskList(data: {
             const action = actionHistory[character.id][i];
             log(`Getting result ${i}`, "info", character.id);
             const result = actionResults[character.id][i];
+
+            if (result === undefined) {
+                log(
+                    colors.red(
+                        `Result for action ${i} is undefined. Skipping...`
+                    ),
+                    "info",
+                    character.id
+                );
+
+                log(action[i], "info", character.id);
+
+                continue;
+            }
+
             prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
                 result.time,
                 data.time
@@ -395,7 +442,10 @@ async function getAction(
 
     prompt += `Time: ${convertTimeToString(data.time)}\n\n`;
 
-    prompt += `Hunger: ${data.satiety} / ${data.maxSatiety}\n\n`;
+    prompt += `Hunger: ${getHungerDescription(
+        data.satiety,
+        data.maxSatiety
+    )}\n\n`;
 
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
@@ -512,6 +562,20 @@ async function getAction(
 
             log(`Getting result ${i}`, "info", character.id);
             const result = actionResults[character.id][i];
+
+            if (result === undefined) {
+                log(
+                    colors.red(
+                        `Result for action ${i} is undefined. Skipping...`
+                    ),
+                    "info",
+                    character.id
+                );
+
+                log(action[i], "info", character.id);
+
+                continue;
+            }
 
             prompt += `- [${action.type}]: ${result.result} [${getRelativeTime(
                 result.time,
@@ -645,6 +709,8 @@ async function getAction(
 export {
     getAction,
     saveActionResult,
-    occupiedAgents,
+    occupyAgents,
+    deoccupyAgents,
     updateTaskListAfterConversation,
+    occupyAgent,
 };

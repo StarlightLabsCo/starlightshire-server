@@ -27,16 +27,22 @@ export type StreamMessage = {
 import { resetDb } from "./db.js";
 import { initLogging, log } from "./logger.js";
 import { createCharacters } from "./character.js";
-import { getAction, saveActionResult } from "./ai/agent.js";
+import { getAction, occupyAgent, saveActionResult } from "./ai/agent.js";
 import { observe } from "./ai/observation.js";
-import { startConversation, playerConversation } from "./ai/converstation.js";
+import {
+    startConversation,
+    startPlayerConversation,
+    continuePlayerConversation,
+} from "./ai/converstation.js";
 
 const handlers = {
     GetAction: getAction,
     ActionExecuted: saveActionResult,
     Observation: observe,
     StartConversation: startConversation,
-    PlayerConversation: playerConversation,
+    StartPlayerConversation: startPlayerConversation,
+    ContinuePlayerConversation: continuePlayerConversation,
+    OccupyAgent: occupyAgent,
 };
 
 async function main() {

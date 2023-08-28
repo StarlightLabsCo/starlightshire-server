@@ -9,7 +9,11 @@ import { prisma } from "../db.js";
 import { createMemory, getRelevantMemories } from "./memory.js";
 import { log } from "../logger.js";
 import colors from "colors";
-import { occupiedAgents, updateTaskListAfterConversation } from "./agent.js";
+import {
+    deoccupyAgents,
+    occupyAgents,
+    updateTaskListAfterConversation,
+} from "./agent.js";
 import { Character } from "@prisma/client";
 
 // TODO:
@@ -69,18 +73,6 @@ async function setupCortexStep(
     ]);
 
     return characterCortexStep;
-}
-
-async function occupyAgents(agents: string[]) {
-    agents.forEach((agent) => {
-        occupiedAgents[agent] = true;
-    });
-}
-
-async function deoccupyAgents(agents: string[]) {
-    agents.forEach((agent) => {
-        delete occupiedAgents[agent];
-    });
 }
 
 async function fetchCharacters(characterIds: string[]) {
@@ -517,7 +509,7 @@ async function startConversation(
 
 let globalConversationDictionary = {};
 
-async function playerConversation(
+async function startPlayerConversation(
     ws: WebSocket,
     data: {
         playerId: string;
@@ -526,10 +518,25 @@ async function playerConversation(
         time: number;
     }
 ) {
+    log(colors.yellow("[CONVERSATION] Starting conversation as player ..."));
+    startNewConversationAsPlayer(ws, data);
+}
+
+async function continuePlayerConversation(
+    ws: WebSocket,
+    data: {
+        playerId: string;
+        playerMessage: string;
+        targetCharacterId: string;
+        time: number;
+    }
+) {
+    log(colors.yellow("[CONVERSATION] Continuing conversation as player..."));
     if (globalConversationDictionary[data.playerId]) {
         continueConversationAsPlayer(ws, data);
     } else {
-        startNewConversationAsPlayer(ws, data);
+        log(`[CONVERSATION] No conversation found for ${data.playerId}`);
+        return;
     }
 }
 
@@ -705,4 +712,8 @@ async function endPlayerConversation(
     delete globalConversationDictionary[data.playerId];
 }
 
-export { startConversation, playerConversation };
+export {
+    startConversation,
+    startPlayerConversation,
+    continuePlayerConversation,
+};

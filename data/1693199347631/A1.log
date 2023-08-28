@@ -1,0 +1,68 @@
+[1693199347641] [Character] Creating Thomas
+[1693199348002] [31m[createMemory][39m I should be asleep until 7am. [0]
+[1693199348002] [31m[createMemory][39m It's my job to protect the village. [0]
+[1693199348002] [31m[createMemory][39m I need to make sure everyone is safe. [0]
+[1693199348002] [31m[createMemory][39m I do the work that no one else wants to do. [0]
+[1693199348002] [31m[createMemory][39m I try to be as honest as possible. [0]
+[1693199348002] [31m[createMemory][39m I'm not afraid of anything. [0]
+[1693199348002] [31m[createMemory][39m I go to bed at 10pm. [0]
+[1693199348002] [31m[createMemory][39m I like strawberries. [0]
+[1693199348002] [31m[createMemory][39m The village location is 2, -58. [0]
+[1693199348002] [31m[createMemory][39m The mine site is at 51, 17. [0]
+[1693199348002] [31m[createMemory][39m The lumberyard is at 72, -55.1 [0]
+[1693199348002] [31m[createMemory][39m The campsite is at 7, -8.3 [0]
+[1693199348002] [31m[createMemory][39m The Nume River flows through the village. [0]
+[1693199348002] [31m[createMemory][39m Nume Falls are north of the village, and west of the campsite. [0]
+[1693199348002] [31m[createMemory][39m The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [0]
+[1693199350243] [Character] Thomas created
+[1693199779827] [35m[CORTEX] Thomas Smith - Prior Message: [39mAlright, Thomas. Let's find the perfect tree for our campfire. And while we're at it, maybe the forest will tell us its tales.
+[1693199779827] [35m[CORTEX] Thomas Smith - Patience: [39m100
+[1693199779827] [35m[CORTEX] Thomas Smith - Conversation Goal: [39mfiguring out why Eli Green started a conversation with them.
+[1693199779827] [35m[CORTEX] Thomas Smith - Conversation Finished: [39mfalse
+[1693199784481] [35m[CORTEX] Thomas Smith - Feel: [39mI feel excited and somewhat mystified at the prospect of not only finding the perfect tree for our campfire, but also uncovering the stories that the forest might reveal to us.
+[1693199787907] [35m[CORTEX] Thomas Smith - Plan: [39m Accompany Eli Green to scout around the woods for the perfect tree to use for our campfire. We'll also open our minds and hearts to whatever tales and secrets the forest may unveil to us during our exploration.
+[1693199794211] [35m[CORTEX] Thomas Smith - Say: [39mVery well, Eli. Let's tread into the whispers of the forest. Keep your senses sharpened, for each rustle, each bird cry has a tale to tell. And as for the tree, we'll know it when we see it - strong yet giving, a symbol of warmth and camaraderie. After all, its sacrifice will bring us light and warmth in the dark night.
+
+[1693199815292] [35m[CORTEX] Thomas Smith - Prior Message: [39mI'm ready, Thomas. Lead the way into the forest, guide me through its whispers. Let's find our tree, the one that'll share its warmth with us tonight.
+[1693199815292] [35m[CORTEX] Thomas Smith - Patience: [39m100
+[1693199815292] [35m[CORTEX] Thomas Smith - Conversation Goal: [39mfiguring out why Eli Green started a conversation with them.
+[1693199815292] [35m[CORTEX] Thomas Smith - Conversation Finished: [39mfalse
+[1693199817761] [35m[CORTEX] Thomas Smith - Feel: [39mI feel a sense of responsibility and determination as we embark on our journey to find the perfect tree and unravel the stories of the forest.
+[1693199823430] [35m[CORTEX] Thomas Smith - Explain: [39mI am yet to understand fully why Eli initiated this dialogue with me. However, our shared venture into the forest hints towards Eli's interest in getting to know me and the village better. Building a campfire together could represent an attempt at camaraderie, perhaps even a subtle testing of my leadership capabilities. It's slowly helping me decipher Eli's intentions.
+[1693199825379] [35m[CORTEX] Thomas Smith - Did I make progress? [39m[choice=yes]
+[1693199826684] [35m[CORTEX] Thomas Smith - Did I accomplish my goal? [39m[choice=yes]
+[1693199830574] [35m[CORTEX] Thomas Smith Goodbye: [39mFarewell, Eli. Our little journey today has revealed much to us – the whispers of the forest and the perfect tree's willing sacrifice. Let's meet again under the glow of the campfire. Till then, take care.
+[1693199844295] [31m[createMemory][39m I remember agreeing to venture into the woods with Eli to find the perfect tree for our campfire. [409.7602]
+[1693199844295] [31m[createMemory][39m I recall the sense of responsibility I felt as I was chosen to lead the way and decipher the forest's whispers. [409.7602]
+[1693199844295] [31m[createMemory][39m I felt a growing camaraderie between Eli and myself, a bond being formed through a shared task. [409.7602]
+[1693199844295] [31m[createMemory][39m The task given by Eli made me realize he was subtly testing my leadership capabilities. [409.7602]
+[1693199870658] --- Conversation Task Update Prompt ---
+[1693199870659] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Action items & memories from conversation just now:
+- I remember agreeing to venture into the woods with Eli to find the perfect tree for our campfire.
+- I recall the sense of responsibility I felt as I was chosen to lead the way and decipher the forest's whispers.
+- I felt a growing camaraderie between Eli and myself, a bond being formed through a shared task.
+- The task given by Eli made me realize he was subtly testing my leadership capabilities.
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Given the available information from a conversation you just had, update your task list, placing priority on the conversation action items & memories. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. The result must be sorted by priority, with the highest priority task at the top.

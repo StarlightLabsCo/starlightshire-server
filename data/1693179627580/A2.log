@@ -1,0 +1,1736 @@
+[1693179627584] [Character] Creating George
+[1693179627762] [31m[createMemory][39m Working in the mines is tough but rewarding. [0]
+[1693179627762] [31m[createMemory][39m I've been friends with Thomas for a long time. [0]
+[1693179627762] [31m[createMemory][39m Safety in the mines is a top priority for me. [0]
+[1693179627762] [31m[createMemory][39m I've discovered some rare minerals during my time here. [0]
+[1693179627762] [31m[createMemory][39m I'm usually one of the first to arrive at the mine site. [0]
+[1693179627763] [31m[createMemory][39m My family has been mining for generations. [0]
+[1693179627763] [31m[createMemory][39m I enjoy a cold beverage after a long day in the mines. [0]
+[1693179627763] [31m[createMemory][39m I've been taught traditional mining songs by the older miners. [0]
+[1693179627763] [31m[createMemory][39m I've saved up to buy a house near the village. [0]
+[1693179627763] [31m[createMemory][39m I know a secret tunnel in the mine that few know about. [0]
+[1693179627763] [31m[createMemory][39m It's important to have the right tools for the job. [0]
+[1693179627763] [31m[createMemory][39m I take pride in my work and look after my equipment. [0]
+[1693179627763] [31m[createMemory][39m I sometimes join Thomas and others for a meal after work. [0]
+[1693179627763] [31m[createMemory][39m I've had a few close calls, but always came out safe. [0]
+[1693179627763] [31m[createMemory][39m The village festivities are something I look forward to every year. [0]
+[1693179630604] [Character] George created
+[1693179772045] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Small) at X: 62.25, Y: 15.1. [0.0199999921]
+[1693179772046] [31m[createMemory][39m George Brown sees Tree at X: 67.61, Y: 9.619999. [0.0199999921]
+[1693179772046] [31m[createMemory][39m George Brown sees Iron Ore Deposit (Large) at X: 65.22, Y: 18.37. [0.0199999921]
+[1693179774443] --- Prompt ---
+[1693179774458] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 66, 13.3
+
+Time: Day 0, 12:00 AM
+
+Hunger: Starving
+
+Environment:
+- Tree (Health: 10/10) [X: 67.61, Y: 9.619999, Distance: 4.016779m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 4.159627m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 5.12965m]
+- Tree (Health: 10/10) [X: 61.49, Y: 9.35, Distance: 5.995214m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.407028m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 6.41202m]
+- Tree (Health: 10/10) [X: 71.74, Y: 10.26, Distance: 6.495319m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 6.68303m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 6.72893m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 7.480066m]
+- Tree (Health: 10/10) [X: 73.72, Y: 13.31, Distance: 7.720008m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 7.889645m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Memories:
+- I enjoy a cold beverage after a long day in the mines. [0 minutes ago]
+- Working in the mines is tough but rewarding. [0 minutes ago]
+- I take pride in my work and look after my equipment. [0 minutes ago]
+- I've been friends with Thomas for a long time. [0 minutes ago]
+- I've been taught traditional mining songs by the older miners. [0 minutes ago]
+- I've saved up to buy a house near the village. [0 minutes ago]
+- I've discovered some rare minerals during my time here. [0 minutes ago]
+- It's important to have the right tools for the job. [0 minutes ago]
+- I'm usually one of the first to arrive at the mine site. [0 minutes ago]
+- I've had a few close calls, but always came out safe. [0 minutes ago]
+- The village festivities are something I look forward to every year. [0 minutes ago]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- eat: Eat some food.
+- drop_berries: Drop Berries onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1693179783658] --- Response ---
+[1693179783658] Updated Tasks: 
+[1693179783661] [
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+[1693179787304] --- Prompt ---
+[1693179787304] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 66, 13.3
+
+Time: Day 0, 12:00 AM
+
+Hunger: 0 / 10
+
+Environment:
+- Tree (Health: 10/10) [X: 67.61, Y: 9.619999, Distance: 4.016779m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 4.159627m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 5.12965m]
+- Tree (Health: 10/10) [X: 61.49, Y: 9.35, Distance: 5.995214m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.407028m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 6.41202m]
+- Tree (Health: 10/10) [X: 71.74, Y: 10.26, Distance: 6.495319m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 6.68303m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 6.72893m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 7.480066m]
+- Tree (Health: 10/10) [X: 73.72, Y: 13.31, Distance: 7.720008m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 7.889645m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+
+Memories:
+- I'm usually one of the first to arrive at the mine site. [0 minutes ago]
+- It's important to have the right tools for the job. [0 minutes ago]
+- Working in the mines is tough but rewarding. [0 minutes ago]
+- I've been friends with Thomas for a long time. [0 minutes ago]
+- The village festivities are something I look forward to every year. [0 minutes ago]
+- I take pride in my work and look after my equipment. [0 minutes ago]
+- I've been taught traditional mining songs by the older miners. [0 minutes ago]
+- I've discovered some rare minerals during my time here. [0 minutes ago]
+- I've saved up to buy a house near the village. [0 minutes ago]
+- I enjoy a cold beverage after a long day in the mines. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693179787304] --- Action Functions ---
+[1693179787304] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "eat",
+    "description": "Eat some food.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "foodId": {
+          "type": "string",
+          "description": "The food ID of the food to be eaten.",
+          "values": [
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_berries",
+    "description": "Drop Berries onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693179789955] --- Response ---
+[1693179789955] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "eat",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"foodId\": \"berries\"\n}"
+  }
+}
+[1693179789956] --- Verified Action ---
+[1693179789956] {
+  "type": "eat",
+  "data": {
+    "characterId": "A2",
+    "foodId": "berries"
+  }
+}
+[1693179793374] Getting action 0
+[1693179793374] Getting result 0
+[1693179793374] --- Prompt ---
+[1693179793382] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 66, 13.3
+
+Time: Day 0, 1:48 AM
+
+Hunger: 9.999842 / 10
+
+Environment:
+- Tree (Health: 10/10) [X: 67.61, Y: 9.619999, Distance: 4.016779m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 4.159627m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 5.12965m]
+- Tree (Health: 10/10) [X: 61.49, Y: 9.35, Distance: 5.995214m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.407028m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 6.41202m]
+- Tree (Health: 10/10) [X: 71.74, Y: 10.26, Distance: 6.495319m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 6.68303m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 6.72893m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 7.480066m]
+- Tree (Health: 10/10) [X: 73.72, Y: 13.31, Distance: 7.720008m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 7.889645m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+
+Memories:
+- I'm usually one of the first to arrive at the mine site. [1 hours ago]
+- It's important to have the right tools for the job. [1 hours ago]
+- I've been friends with Thomas for a long time. [1 hours ago]
+- Working in the mines is tough but rewarding. [1 hours ago]
+- The village festivities are something I look forward to every year. [1 hours ago]
+- I take pride in my work and look after my equipment. [1 hours ago]
+- I've been taught traditional mining songs by the older miners. [1 hours ago]
+- I've discovered some rare minerals during my time here. [1 hours ago]
+- I've saved up to buy a house near the village. [1 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [1 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693179793382] --- Action Functions ---
+[1693179793382] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693179795740] --- Response ---
+[1693179795740] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 62.25,\n  \"y\": 15.1\n}"
+  }
+}
+[1693179795741] --- Verified Action ---
+[1693179795741] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 62.25,
+    "y": 15.1
+  }
+}
+[1693179795776] [31m[createMemory][39m George Brown has started walking to 62.25, Y: 15.1. [23.8366871]
+[1693179795963] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Medium) at X: 61.66, Y: 18.02. [24.0221977]
+[1693179796234] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Medium) at X: 59.9, Y: 16.03. [24.2841415]
+[1693179796630] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Small) at X: 59.32, Y: 14.11. [24.68365]
+[1693179796746] [31m[createMemory][39m George Brown no longer sees Tree (1056) at X: 67.61, Y: 9.619999 [24.8006763]
+[1693179797026] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Small) at X: 62.95, Y: 20.13. [25.0807152]
+[1693179797741] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Large) at X: 58.91, Y: 19.37. [25.8008423]
+[1693179797983] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [26.0434952]
+[1693179798167] [31m[createMemory][39m George Brown finished walking to 62.25, Y: 15.1. [26.21999]
+[1693179801739] Getting action 0
+[1693179801739] Getting result 0
+[1693179801739] Getting action 1
+[1693179801739] Getting result 1
+[1693179801739] --- Prompt ---
+[1693179801744] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 62.6383, 15.4435
+
+Time: Day 0, 2:37 AM
+
+Hunger: 9.863791 / 10
+
+Environment:
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.25, Y: 15.1, Distance: 0.5184329m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 2.755977m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 2.800405m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 3.576222m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 3.902507m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 4.69685m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 5.414575m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 5.686818m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 5.932223m]
+- Tree (Health: 10/10) [X: 61.49, Y: 9.35, Distance: 6.200756m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.704555m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 6.846873m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 6.854388m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 64.4, Y: 22.23, Distance: 7.011427m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 7.129221m]
+- Tree (Health: 10/10) [X: 67.61, Y: 9.619999, Distance: 7.657088m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 8.142668m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 8.590728m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 65.92, Y: 23.75, Distance: 8.931261m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [1 minutes ago]
+- It's important to have the right tools for the job. [2 hours ago]
+- I've been friends with Thomas for a long time. [2 hours ago]
+- Working in the mines is tough but rewarding. [2 hours ago]
+- The village festivities are something I look forward to every year. [2 hours ago]
+- I take pride in my work and look after my equipment. [2 hours ago]
+- I've been taught traditional mining songs by the older miners. [2 hours ago]
+- I've discovered some rare minerals during my time here. [2 hours ago]
+- I've saved up to buy a house near the village. [2 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [2 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [48 minutes ago]
+- [move_to]: George Brown walked to X: 62.25, Y: 15.1. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693179801745] --- Action Functions ---
+[1693179801749] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693179803331] --- Response ---
+[1693179803332] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_pickaxe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1693179803336] --- Verified Action ---
+[1693179803336] {
+  "type": "swing_pickaxe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1693179803980] [31m[createMemory][39m George Brown picked up Coal at X: 62.6383, Y: 15.4435 [32.040226]
+[1693179807762] Getting action 0
+[1693179807763] Getting result 0
+[1693179807763] Getting action 1
+[1693179807763] Getting result 1
+[1693179807763] Getting action 2
+[1693179807763] Getting result 2
+[1693179807763] --- Prompt ---
+[1693179807766] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 62.6383, 15.4435
+
+Time: Day 0, 3:14 AM
+
+Hunger: 9.760271 / 10
+
+Environment:
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 2.755977m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 2.800405m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 3.576222m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 3.902507m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 4.69685m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 5.414575m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 5.686818m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 5.932223m]
+- Tree (Health: 10/10) [X: 61.49, Y: 9.35, Distance: 6.200756m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.704555m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 6.846873m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 6.854388m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 64.4, Y: 22.23, Distance: 7.011427m]
+- Tree (Health: 10/10) [X: 57.55001, Y: 10.45, Distance: 7.129221m]
+- Tree (Health: 10/10) [X: 67.61, Y: 9.619999, Distance: 7.657088m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 8.142668m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 8.590728m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 65.92, Y: 23.75, Distance: 8.931261m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Coal x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [38 minutes ago]
+- It's important to have the right tools for the job. [3 hours ago]
+- I've been friends with Thomas for a long time. [3 hours ago]
+- Working in the mines is tough but rewarding. [3 hours ago]
+- The village festivities are something I look forward to every year. [3 hours ago]
+- I take pride in my work and look after my equipment. [3 hours ago]
+- I've been taught traditional mining songs by the older miners. [3 hours ago]
+- I've discovered some rare minerals during my time here. [3 hours ago]
+- I've saved up to buy a house near the village. [3 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [3 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [1 hours ago]
+- [move_to]: George Brown walked to X: 62.25, Y: 15.1. [37 minutes ago]
+- [swing_pickaxe]: George Brown swong their pickaxe at X: 62.6383, Y: 15.4435 and hit 1 mineable entities. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693179807767] --- Action Functions ---
+[1693179807769] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_coal",
+    "description": "Drop Coal onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693179809908] --- Response ---
+[1693179809921] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A2\",\n  \"x\": 61.66,\n  \"y\": 18.02\n}"
+  }
+}
+[1693179809922] --- Verified Action ---
+[1693179809922] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A2",
+    "x": 61.66,
+    "y": 18.02
+  }
+}
+[1693179809956] [31m[createMemory][39m George Brown has started walking to 61.66, Y: 18.02. [38.01599]
+[1693179810520] [31m[createMemory][39m George Brown sees Iron Ore Deposit (Medium) at X: 66.39, Y: 21.18. [38.5800819]
+[1693179810566] [31m[createMemory][39m George Brown sees Diamond Ore Deposit (Medium) at X: 60.84, Y: 22.05. [38.6213074]
+[1693179810583] [31m[createMemory][39m George Brown sees Iron Ore Deposit (Large) at X: 64.4, Y: 22.23. [38.64018]
+[1693179811031] [31m[createMemory][39m George Brown sees Iron Ore Deposit (Large) at X: 68.08, Y: 19.36. [39.08048]
+[1693179811590] [31m[createMemory][39m George Brown no longer sees IronOreSmall (1) at X: 68.08, Y: 19.36 [39.64057]
+[1693179811785] [31m[createMemory][39m George Brown sees Diamond Ore Deposit (Small) at X: 58.32, Y: 22.87. [39.8411636]
+[1693179811911] [31m[createMemory][39m George Brown finished walking to 61.66, Y: 18.02. [39.9399872]
+[1693179815780] Getting action 0
+[1693179815781] Getting result 0
+[1693179815781] Getting action 1
+[1693179815781] Getting result 1
+[1693179815781] Getting action 2
+[1693179815781] Getting result 2
+[1693179815781] Getting action 3
+[1693179815781] Getting result 3
+[1693179815781] --- Prompt ---
+[1693179815781] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 62.13342, 18.42824
+
+Time: Day 0, 3:59 AM
+
+Hunger: 9.635087 / 10
+
+Environment:
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 61.66, Y: 18.02, Distance: 0.6251264m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 1.887535m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 3.087135m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 3.277148m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 3.358172m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 3.845783m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 64.4, Y: 22.23, Distance: 4.426147m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 4.988086m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 5.068598m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 5.153884m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 5.854175m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.019142m]
+- Diamond Ore Deposit (Large) (Health: 30/30) [X: 60.38, Y: 24.68, Distance: 6.492992m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 6.494658m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 65.92, Y: 23.75, Distance: 6.53141m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 63.58, Y: 24.8, Distance: 6.533905m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 7.633986m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 57.1, Y: 24.45, Distance: 7.848367m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 69.37, Y: 22.11, Distance: 8.119331m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 69.37, Y: 22.11, Distance: 8.119331m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 8.371605m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.92, Y: 26.32, Distance: 8.753174m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Coal x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [1 hours ago]
+- It's important to have the right tools for the job. [3 hours ago]
+- I've been friends with Thomas for a long time. [3 hours ago]
+- Working in the mines is tough but rewarding. [3 hours ago]
+- The village festivities are something I look forward to every year. [3 hours ago]
+- I take pride in my work and look after my equipment. [3 hours ago]
+- I've been taught traditional mining songs by the older miners. [3 hours ago]
+- I've discovered some rare minerals during my time here. [3 hours ago]
+- I've saved up to buy a house near the village. [3 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [3 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: George Brown walked to X: 62.25, Y: 15.1. [1 hours ago]
+- [swing_pickaxe]: George Brown swong their pickaxe at X: 62.6383, Y: 15.4435 and hit 1 mineable entities. [45 minutes ago]
+- [move_to]: George Brown walked to X: 61.66, Y: 18.02. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693179815781] --- Action Functions ---
+[1693179815782] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_coal",
+    "description": "Drop Coal onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693179817472] --- Response ---
+[1693179817473] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_pickaxe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1693179817476] --- Verified Action ---
+[1693179817476] {
+  "type": "swing_pickaxe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1693179822151] Getting action 0
+[1693179822151] Getting result 0
+[1693179822151] Getting action 1
+[1693179822151] Getting result 1
+[1693179822151] Getting action 2
+[1693179822151] Getting result 2
+[1693179822151] Getting action 3
+[1693179822151] Getting result 3
+[1693179822151] Getting action 4
+[1693179822151] Getting result 4
+[1693179822151] --- Prompt ---
+[1693179822152] Character: 
+- ID: A2
+- Name: George Brown
+- Age: 28
+- Occupation: Miner
+- Personality: Hardworking, Loyal, Reserved
+
+Location: 62.13342, 18.42824
+
+Time: Day 0, 4:39 AM
+
+Hunger: 9.524551 / 10
+
+Environment:
+- Coal Ore Deposit (Medium) (Health: 5/10) [X: 61.66, Y: 18.02, Distance: 0.6251264m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 62.95, Y: 20.13, Distance: 1.887535m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.22, Y: 18.37, Distance: 3.087135m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 59.9, Y: 16.03, Distance: 3.277148m]
+- Coal Ore Deposit (Large) (Health: 20/20) [X: 58.91, Y: 19.37, Distance: 3.358172m]
+- Diamond Ore Deposit (Medium) (Health: 20/20) [X: 60.84, Y: 22.05, Distance: 3.845783m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 64.4, Y: 22.23, Distance: 4.426147m]
+- Coal Ore Deposit (Medium) (Health: 10/10) [X: 57.27, Y: 17.32, Distance: 4.988086m]
+- Iron Ore Deposit (Medium) (Health: 1/1) [X: 66.39, Y: 21.18, Distance: 5.068598m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 59.32, Y: 14.11, Distance: 5.153884m]
+- Diamond Ore Deposit (Small) (Health: 1/1) [X: 58.32, Y: 22.87, Distance: 5.854175m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 68.08, Y: 19.36, Distance: 6.019142m]
+- Diamond Ore Deposit (Large) (Health: 30/30) [X: 60.38, Y: 24.68, Distance: 6.492992m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 56.74, Y: 14.81, Distance: 6.494658m]
+- Iron Ore Deposit (Large) (Health: 20/20) [X: 65.92, Y: 23.75, Distance: 6.53141m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 63.58, Y: 24.8, Distance: 6.533905m]
+- Coal Ore Deposit (Small) (Health: 5/5) [X: 54.64, Y: 16.97, Distance: 7.633986m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 57.1, Y: 24.45, Distance: 7.848367m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 69.37, Y: 22.11, Distance: 8.119331m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 69.37, Y: 22.11, Distance: 8.119331m]
+- Copper Ore Deposit (Small) (Health: 5/5) [X: 53.88, Y: 19.83, Distance: 8.371605m]
+- Iron Ore Deposit (Large) (Health: 5/5) [X: 65.92, Y: 26.32, Distance: 8.753174m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Coal x 1
+
+Tasks:
+[
+  {
+    "task": "Eat some food",
+    "priority": 1
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 2
+  },
+  {
+    "task": "Collect resources from environment",
+    "priority": 3
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 4
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 5
+  },
+  {
+    "task": "Repair and maintain tools",
+    "priority": 6
+  },
+  {
+    "task": "Prepare for village festivities",
+    "priority": 7
+  }
+]
+
+Memories:
+- George Brown sees Coal Ore Deposit (Medium) at X: 57.27, Y: 17.32. [2 hours ago]
+- It's important to have the right tools for the job. [4 hours ago]
+- I've been friends with Thomas for a long time. [4 hours ago]
+- Working in the mines is tough but rewarding. [4 hours ago]
+- The village festivities are something I look forward to every year. [4 hours ago]
+- I take pride in my work and look after my equipment. [4 hours ago]
+- I've been taught traditional mining songs by the older miners. [4 hours ago]
+- I've discovered some rare minerals during my time here. [4 hours ago]
+- I've saved up to buy a house near the village. [4 hours ago]
+- I enjoy a cold beverage after a long day in the mines. [4 hours ago]
+
+Previous Actions:
+- [eat]: George Brown ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: George Brown walked to X: 62.25, Y: 15.1. [2 hours ago]
+- [swing_pickaxe]: George Brown swong their pickaxe at X: 62.6383, Y: 15.4435 and hit 1 mineable entities. [1 hours ago]
+- [move_to]: George Brown walked to X: 61.66, Y: 18.02. [39 minutes ago]
+- [swing_pickaxe]: George Brown swong their pickaxe at X: 62.13342, Y: 18.42824 and hit 1 mineable entities. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693179822152] --- Action Functions ---
+[1693179822155] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_coal",
+    "description": "Drop Coal onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693179823829] --- Response ---
+[1693179823829] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_pickaxe",
+    "arguments": "{\n  \"characterId\": \"A2\"\n}"
+  }
+}
+[1693179823832] --- Verified Action ---
+[1693179823832] {
+  "type": "swing_pickaxe",
+  "data": {
+    "characterId": "A2"
+  }
+}
+[1693179824541] [31m[createMemory][39m George Brown sees Coal Ore Deposit (Small) at X: 61.66, Y: 18.02. [52.54135]
+[1693179824542] [31m[createMemory][39m George Brown picked up Coal at X: 62.13342, Y: 18.42824 [52.54135]
