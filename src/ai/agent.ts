@@ -422,6 +422,8 @@ async function getAction(
     }
 
     if (actionCounter[data.characterId] % 5 == 0) {
+        // Every 5 actions, update the task list
+        
         await updateTaskList(data);
     }
     count++;
