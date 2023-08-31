@@ -1,0 +1,86 @@
+[1693477297232] [Character] Creating Thomas
+[1693477297528] [31m[createMemory][39m I should be asleep until 7am. [0]
+[1693477297528] [31m[createMemory][39m It's my job to protect the village. [0]
+[1693477297528] [31m[createMemory][39m I need to make sure everyone is safe. [0]
+[1693477297528] [31m[createMemory][39m I do the work that no one else wants to do. [0]
+[1693477297528] [31m[createMemory][39m I try to be as honest as possible. [0]
+[1693477297528] [31m[createMemory][39m I'm not afraid of anything. [0]
+[1693477297528] [31m[createMemory][39m I go to bed at 10pm. [0]
+[1693477297528] [31m[createMemory][39m I like strawberries. [0]
+[1693477297528] [31m[createMemory][39m The village location is 2, -58. [0]
+[1693477297528] [31m[createMemory][39m The mine site is at 51, 17. [0]
+[1693477297528] [31m[createMemory][39m The lumberyard is at 72, -55.1 [0]
+[1693477297528] [31m[createMemory][39m The campsite is at 7, -8.3 [0]
+[1693477297528] [31m[createMemory][39m The Nume River flows through the village. [0]
+[1693477297528] [31m[createMemory][39m Nume Falls are north of the village, and west of the campsite. [0]
+[1693477297528] [31m[createMemory][39m The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes. [0]
+[1693477299831] [Character] Thomas created
+[1693477478363] [31m[createMemory][39m Thomas Smith picked up Wood at X: 55.26824, Y: 8.901843 [132.7013]
+[1693477484432] [31m[createMemory][39m Thomas Smith picked up Wood at X: 53.66375, Y: 10.84602 [138.7012]
+[1693477489584] [31m[createMemory][39m Thomas Smith picked up Wood at X: 51.73402, Y: 8.83609 [143.920044]
+[1693477528098] [35m[CORTEX] Thomas Smith - Prior Message: [39mThomas, I'd be glad to help with your tree-chopping task. After that, let's head back to the village.
+[1693477528098] [35m[CORTEX] Thomas Smith - Patience: [39m100
+[1693477528098] [35m[CORTEX] Thomas Smith - Conversation Goal: [39mfiguring out why George Brown started a conversation with them.
+[1693477528098] [35m[CORTEX] Thomas Smith - Conversation Finished: [39mfalse
+[1693477532242] [35m[CORTEX] Thomas Smith - Feel: [39mI feel pleased and appreciative for the help offered with the tree-chopping task, and content about returning to the village afterwards.
+[1693477537525] [35m[CORTEX] Thomas Smith - Plan: [39m Thomas is planning to chop down the trees as per his task assignment, with the help offered by George Brown. Once they finish the task, they will head back to the village.
+[1693477540250] [35m[CORTEX] Thomas Smith - Say: [39mYour assistance is well appreciated, George. Let us proceed with the task and then make our way back to the village.
+
+[1693477564224] [31m[createMemory][39m I received help from George Brown with the tree-chopping task. [170.059341]
+[1693477564227] [31m[createMemory][39m George and I planned to return to the village after completing the task. [170.059341]
+[1693477564227] [31m[createMemory][39m George initiated a conversation with me. [170.059341]
+[1693477564227] [31m[createMemory][39m I expressed my appreciation for George's assistance. [170.059341]
+[1693477582077] --- Conversation Task Update Prompt ---
+[1693477582077] Character: 
+- ID: A1
+- Name: Thomas Smith
+- Age: 32
+- Occupation: Village Leader
+- Personality: Brave, Calm, Honest
+
+Action items & memories from conversation just now:
+- I received help from George Brown with the tree-chopping task.
+- George and I planned to return to the village after completing the task.
+- George initiated a conversation with me.
+- I expressed my appreciation for George's assistance.
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Given the available information from a conversation you just had, update your task list, placing priority on the conversation action items & memories. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. The result must be sorted by priority, with the highest priority task at the top.
+[1693477591031] --- Response ---
+[1693477591031] Updated Tasks: 
+[1693477591031] [
+  {
+    "task": "Return to the village with George",
+    "priority": 1
+  },
+  {
+    "task": "Express appreciation to George Brown",
+    "priority": 2
+  },
+  {
+    "task": "Carry out your daily duties",
+    "priority": 3
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 4
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 5
+  }
+]

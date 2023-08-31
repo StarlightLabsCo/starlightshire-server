@@ -1,0 +1,5553 @@
+[1693475582092] [Character] Creating Thomas's logger
+[1693475582093] [Character] Creating George's logger
+[1693475582093] [Character] Creating Will's logger
+[1693475582093] [Character] Creating Lucy's logger
+[1693475582094] [Character] Creating Eli's logger
+[1693475582097] [Main] WebSocket server listening on port 8082
+[1693475582303] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582304] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I should be asleep until 7am."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582304] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582306] [33m[OPENAI] Creating embedding...[39m
+[1693475582306] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582307] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: It's my job to protect the village."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582307] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582307] [33m[OPENAI] Creating embedding...[39m
+[1693475582307] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582307] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I need to make sure everyone is safe."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582308] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582308] [33m[OPENAI] Creating embedding...[39m
+[1693475582308] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582308] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I do the work that no one else wants to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582308] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582308] [33m[OPENAI] Creating embedding...[39m
+[1693475582309] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582309] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I try to be as honest as possible."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582309] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582309] [33m[OPENAI] Creating embedding...[39m
+[1693475582309] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582309] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I'm not afraid of anything."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582309] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582310] [33m[OPENAI] Creating embedding...[39m
+[1693475582310] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582310] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I go to bed at 10pm."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582310] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582310] [33m[OPENAI] Creating embedding...[39m
+[1693475582310] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582310] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I like strawberries."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582310] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582310] [33m[OPENAI] Creating embedding...[39m
+[1693475582310] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582311] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The village location is 2, -58."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582311] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582311] [33m[OPENAI] Creating embedding...[39m
+[1693475582311] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582311] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The mine site is at 51, 17."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582311] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582311] [33m[OPENAI] Creating embedding...[39m
+[1693475582311] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582311] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The lumberyard is at 72, -55.1"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582311] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582311] [33m[OPENAI] Creating embedding...[39m
+[1693475582311] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582311] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The campsite is at 7, -8.3"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582311] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582311] [33m[OPENAI] Creating embedding...[39m
+[1693475582311] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582311] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The Nume River flows through the village."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582311] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582311] [33m[OPENAI] Creating embedding...[39m
+[1693475582311] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582311] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Nume Falls are north of the village, and west of the campsite."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582311] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582312] [33m[OPENAI] Creating embedding...[39m
+[1693475582312] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582312] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582312] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582312] [33m[OPENAI] Creating embedding...[39m
+[1693475582464] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582464] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The feel of the axe in my hand is like an extension of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582464] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582464] [33m[OPENAI] Creating embedding...[39m
+[1693475582464] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582464] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I remember the tallest tree I've ever felled, stood mighty for over a century."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582464] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582464] [33m[OPENAI] Creating embedding...[39m
+[1693475582464] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582464] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The forest whispers its secrets if you're patient enough to listen."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582465] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582465] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The village depends on our timber, it's a responsibility I don't take lightly."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582465] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582465] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Thomas once tried to chop wood, it was amusing to say the least."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582465] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582465] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Nothing beats the smell of fresh-cut timber in the morning."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582465] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582465] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've carved symbols on some trees, marking special moments of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582465] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582465] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Will reminds me of when I was young, eager to learn and prove myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582465] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582465] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've saved more than a few animals stuck or hurt, the forest is their home."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582465] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582465] [33m[OPENAI] Creating embedding...[39m
+[1693475582466] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582466] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: George and I have shared tales over campfires many nights."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582466] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582466] [33m[OPENAI] Creating embedding...[39m
+[1693475582466] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582466] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Rain or shine, the trees await and work must be done."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582466] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582466] [33m[OPENAI] Creating embedding...[39m
+[1693475582466] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582466] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I respect the forest, only taking what's necessary and planting twice as much."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582466] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582466] [33m[OPENAI] Creating embedding...[39m
+[1693475582466] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582466] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Every lumberjack has a favorite axe; mine's named 'Whisper'."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582466] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582466] [33m[OPENAI] Creating embedding...[39m
+[1693475582466] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582466] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The creaking sound a tree makes just before it falls is both eerie and beautiful."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582467] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582467] [33m[OPENAI] Creating embedding...[39m
+[1693475582467] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582467] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: At times, the forest feels alive, watching, and I'm just a small part of its vast story."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582467] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582467] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I need to let Thomas know I'm going to explore. He's asked me in the past to let him know just in case I get hurt or lost."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I once found a secret clearing in the woods, it's my personal hideout now."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The world feels so big and full of wonders, I want to see them all!"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I saw a deer up close once, our eyes met and we just stared for a moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Climbing trees is my favorite! The higher I go, the bigger the world looks."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Lucy showed me how to listen to the forest, it's like it's telling stories."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Every rock and leaf, every bird and bug, feels like a friend to me."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I once got lost, but the stars guided me home. They're like nature's map!"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582475] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582475] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: George tells me tales of old, turning every tree and hill into an adventure."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582475] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582475] [33m[OPENAI] Creating embedding...[39m
+[1693475582476] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582476] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I made a whistle out of a reed! Nature is full of surprises."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582476] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582476] [33m[OPENAI] Creating embedding...[39m
+[1693475582476] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582476] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The woods in autumn is my favorite. All those colors... like nature's painting!"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582476] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582476] [33m[OPENAI] Creating embedding...[39m
+[1693475582476] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582476] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I wish I could talk to animals. Imagine the stories they'd tell!"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582476] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582476] [33m[OPENAI] Creating embedding...[39m
+[1693475582476] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582476] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've learned to move silently. That way, nature doesn’t hide from me."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582476] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582476] [33m[OPENAI] Creating embedding...[39m
+[1693475582476] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582477] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Lucy once said every tree has a story. I'm trying to learn them all."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582477] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582477] [33m[OPENAI] Creating embedding...[39m
+[1693475582477] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582477] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Rainy days? That's when the forest sings its loudest song!"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582477] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582477] [33m[OPENAI] Creating embedding...[39m
+[1693475582477] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582477] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I dreamt I could fly like a bird, seeing the world from above. Maybe one day..."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582477] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582477] [33m[OPENAI] Creating embedding...[39m
+[1693475582557] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582557] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Today was my first day in the mines."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582557] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582557] [33m[OPENAI] Creating embedding...[39m
+[1693475582557] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582557] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: George and Thomas have been really helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582557] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582557] [33m[OPENAI] Creating embedding...[39m
+[1693475582557] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582557] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The depth and darkness of the mines can be intimidating."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582557] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582557] [33m[OPENAI] Creating embedding...[39m
+[1693475582557] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582557] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I accidentally broke a pickaxe on my first day."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582557] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582557] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The older miners have so many stories to tell."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've always dreamed of being a miner like my father."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The echo in the mines is fascinating."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I need to remember to wear my helmet at all times."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The village has been supportive of my new journey."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I'm still learning the different routes in the mine."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I was startled by the sound of a mine cart today."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: It's tiring, but I'm determined to make everyone proud."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I hope to find a rare gem or mineral soon."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The lanterns light up the mines in such a mysterious way."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582558] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582558] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I can't wait to tell my family about my adventures here."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582558] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582558] [33m[OPENAI] Creating embedding...[39m
+[1693475582565] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582565] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Working in the mines is tough but rewarding."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582565] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582565] [33m[OPENAI] Creating embedding...[39m
+[1693475582565] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582565] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've been friends with Thomas for a long time."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582565] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582565] [33m[OPENAI] Creating embedding...[39m
+[1693475582565] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582565] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Safety in the mines is a top priority for me."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582565] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582565] [33m[OPENAI] Creating embedding...[39m
+[1693475582565] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582565] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've discovered some rare minerals during my time here."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582565] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582565] [33m[OPENAI] Creating embedding...[39m
+[1693475582565] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582565] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I'm usually one of the first to arrive at the mine site."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: My family has been mining for generations."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I enjoy a cold beverage after a long day in the mines."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've been taught traditional mining songs by the older miners."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've saved up to buy a house near the village."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I know a secret tunnel in the mine that few know about."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: It's important to have the right tools for the job."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I take pride in my work and look after my equipment."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I sometimes join Thomas and others for a meal after work."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: I've had a few close calls, but always came out safe."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582566] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475582566] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: The village festivities are something I look forward to every year."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475582566] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475582566] [33m[OPENAI] Creating embedding...[39m
+[1693475582642] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582674] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582687] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582687] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582711] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582752] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582755] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582756] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582756] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582760] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582760] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582761] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582764] {
+  "id": "chatcmpl-7tYeEBYkvRHq8pxYcowUe5rJNqBds",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582764] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582764] [36m[OPENAI] Chat completion took 455.7560830116272ms[39m
+[1693475582764] [36m[OPENAI] Tokens per second: 2.194156122704978tps[39m
+[1693475582764] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582765] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582769] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582772] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582776] {
+  "id": "chatcmpl-7tYeEAwSdXG9LQAmZdMTugH6woUlW",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582776] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475582776] [36m[OPENAI] Chat completion took 464.84016704559326ms[39m
+[1693475582776] [36m[OPENAI] Tokens per second: 2.1512770859621435tps[39m
+[1693475582776] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582776] {
+  "id": "chatcmpl-7tYeENtENdAFmhvISqjpGLdLvZW1O",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 1,
+    "total_tokens": 101
+  }
+}
+[1693475582776] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582776] [36m[OPENAI] Chat completion took 300.95299994945526ms[39m
+[1693475582776] [36m[OPENAI] Tokens per second: 3.3227779758565257tps[39m
+[1693475582776] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582776] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582777] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582777] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582777] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582781] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582781] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582785] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582792] {
+  "id": "chatcmpl-7tYeEf4ipvOainL1uox7KhPVntgsl",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475582792] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475582792] [36m[OPENAI] Chat completion took 486.3929169178009ms[39m
+[1693475582792] [36m[OPENAI] Tokens per second: 2.0559509919199694tps[39m
+[1693475582792] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582793] {
+  "id": "chatcmpl-7tYeE13MyvvKaKwyhuIPonoq9pkE8",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 102,
+    "completion_tokens": 1,
+    "total_tokens": 103
+  }
+}
+[1693475582793] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582793] [36m[OPENAI] Chat completion took 315.75654101371765ms[39m
+[1693475582793] [36m[OPENAI] Tokens per second: 3.166996942611416tps[39m
+[1693475582793] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582793] {
+  "id": "chatcmpl-7tYeEkGS5F749pUI34iRyStb4CEeY",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 1,
+    "total_tokens": 98
+  }
+}
+[1693475582793] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582793] [36m[OPENAI] Chat completion took 328.3182089328766ms[39m
+[1693475582793] [36m[OPENAI] Tokens per second: 3.045825582596444tps[39m
+[1693475582793] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582794] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582794] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582795] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582795] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582796] {
+  "id": "chatcmpl-7tYeE2sAD2fK60ZZKd7pzjW6uoZIn",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475582796] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475582796] [36m[OPENAI] Chat completion took 486.2540000677109ms[39m
+[1693475582796] [36m[OPENAI] Tokens per second: 2.056538352097361tps[39m
+[1693475582796] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582796] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582796] {
+  "id": "chatcmpl-7tYeE6NCi5LttOBcIPHjHdbL0Hill",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 1,
+    "total_tokens": 98
+  }
+}
+[1693475582796] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582796] [36m[OPENAI] Chat completion took 320.6437920331955ms[39m
+[1693475582796] [36m[OPENAI] Tokens per second: 3.118725591595026tps[39m
+[1693475582796] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582798] {
+  "id": "chatcmpl-7tYeECyS53Z0SxKp1bxa0ahqmBBUQ",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 89,
+    "completion_tokens": 1,
+    "total_tokens": 90
+  }
+}
+[1693475582798] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582798] [36m[OPENAI] Chat completion took 488.19287502765656ms[39m
+[1693475582798] [36m[OPENAI] Tokens per second: 2.0483707386007tps[39m
+[1693475582798] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582799] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582800] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582800] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582800] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582801] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582801] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582801] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582803] {
+  "id": "chatcmpl-7tYeEuWGvLfKshOwNH89nEUrv436k",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 92,
+    "completion_tokens": 1,
+    "total_tokens": 93
+  }
+}
+[1693475582803] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475582803] [36m[OPENAI] Chat completion took 491.900750041008ms[39m
+[1693475582803] [36m[OPENAI] Tokens per second: 2.0329304232950114tps[39m
+[1693475582803] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582803] {
+  "id": "chatcmpl-7tYeE3w4X1domOcRrG9PxTKSjfitp",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 86,
+    "completion_tokens": 1,
+    "total_tokens": 87
+  }
+}
+[1693475582803] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475582803] [36m[OPENAI] Chat completion took 492.9707499742508ms[39m
+[1693475582803] [36m[OPENAI] Tokens per second: 2.028517919272559tps[39m
+[1693475582803] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582804] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582806] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582808] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582809] {
+  "id": "chatcmpl-7tYeEOHoiD8sn16TIEdrWgCwwEuEP",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 1,
+    "total_tokens": 101
+  }
+}
+[1693475582809] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582809] [36m[OPENAI] Chat completion took 345.1681669950485ms[39m
+[1693475582809] [36m[OPENAI] Tokens per second: 2.897138541788951tps[39m
+[1693475582809] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582821] {
+  "id": "chatcmpl-7tYeEbvq8bPtviHc5aG7WfM71RY55",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582822] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582822] [36m[OPENAI] Chat completion took 264.019583940506ms[39m
+[1693475582822] [36m[OPENAI] Tokens per second: 3.787597817839677tps[39m
+[1693475582822] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582822] {
+  "id": "chatcmpl-7tYeEdvaSLEnLUx4TQMvby4AGlf7N",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 1,
+    "total_tokens": 99
+  }
+}
+[1693475582822] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582822] [36m[OPENAI] Chat completion took 356.2308748960495ms[39m
+[1693475582822] [36m[OPENAI] Tokens per second: 2.807168245289818tps[39m
+[1693475582822] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582822] {
+  "id": "chatcmpl-7tYeEwMfhqMKDxemWog2aE24xvEGd",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 2,
+    "total_tokens": 96
+  }
+}
+[1693475582822] {
+  "role": "assistant",
+  "content": "5."
+}
+[1693475582822] [36m[OPENAI] Chat completion took 510.4985419511795ms[39m
+[1693475582822] [36m[OPENAI] Tokens per second: 3.9177389074526796tps[39m
+[1693475582822] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582823] {
+  "id": "chatcmpl-7tYeESwmlGvwfsfqfLeXPhWF1i0IN",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 101,
+    "completion_tokens": 1,
+    "total_tokens": 102
+  }
+}
+[1693475582824] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582824] [36m[OPENAI] Chat completion took 348.0320839881897ms[39m
+[1693475582824] [36m[OPENAI] Tokens per second: 2.873298313594371tps[39m
+[1693475582824] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582824] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582824] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582826] {
+  "id": "chatcmpl-7tYeEPLDtTltrRL9pcRyFFyWTiCSu",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582826] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475582826] [36m[OPENAI] Chat completion took 514.7260000705719ms[39m
+[1693475582826] [36m[OPENAI] Tokens per second: 1.942781207599566tps[39m
+[1693475582826] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582829] {
+  "id": "chatcmpl-7tYeEDB3UiBSlcp0ycDQ4ZoxbwdYP",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 1,
+    "total_tokens": 100
+  }
+}
+[1693475582829] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582829] [36m[OPENAI] Chat completion took 353.26812493801117ms[39m
+[1693475582829] [36m[OPENAI] Tokens per second: 2.8307110928150463tps[39m
+[1693475582829] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582832] {
+  "id": "chatcmpl-7tYeENoA062L2Aq1Q5JwpPf5f6j1S",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "7"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 1,
+    "total_tokens": 100
+  }
+}
+[1693475582832] {
+  "role": "assistant",
+  "content": "7"
+}
+[1693475582832] [36m[OPENAI] Chat completion took 356.7436249256134ms[39m
+[1693475582832] [36m[OPENAI] Tokens per second: 2.8031334833482044tps[39m
+[1693475582832] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582834] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582836] {
+  "id": "chatcmpl-7tYeEbaQyKFp3ZvEn62Aa8dTxwwum",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 1,
+    "total_tokens": 98
+  }
+}
+[1693475582836] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582836] [36m[OPENAI] Chat completion took 359.5592919588089ms[39m
+[1693475582836] [36m[OPENAI] Tokens per second: 2.7811824707746946tps[39m
+[1693475582836] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582837] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582838] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582839] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582841] {
+  "id": "chatcmpl-7tYeEHSJZ8aoyZW0dCzeERBuHO72d",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "7"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582841] {
+  "role": "assistant",
+  "content": "7"
+}
+[1693475582841] [36m[OPENAI] Chat completion took 375.7123750448227ms[39m
+[1693475582841] [36m[OPENAI] Tokens per second: 2.661610493614163tps[39m
+[1693475582841] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582843] {
+  "id": "chatcmpl-7tYeEVGKoKLvoY1PvUhoPPtJjfo7D",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 1,
+    "total_tokens": 99
+  }
+}
+[1693475582843] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475582843] [36m[OPENAI] Chat completion took 367.7598749399185ms[39m
+[1693475582843] [36m[OPENAI] Tokens per second: 2.7191655972891864tps[39m
+[1693475582843] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582844] {
+  "id": "chatcmpl-7tYeEVZPrHJF7ILhY7VunCAdf56xl",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 1,
+    "total_tokens": 98
+  }
+}
+[1693475582844] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582844] [36m[OPENAI] Chat completion took 380.3889169692993ms[39m
+[1693475582844] [36m[OPENAI] Tokens per second: 2.6288883702694963tps[39m
+[1693475582844] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582845] {
+  "id": "chatcmpl-7tYeEC5flgrW0d4nra1vV26nBN0sX",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 1,
+    "total_tokens": 100
+  }
+}
+[1693475582845] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582845] [36m[OPENAI] Chat completion took 380.1924580335617ms[39m
+[1693475582845] [36m[OPENAI] Tokens per second: 2.6302468101871828tps[39m
+[1693475582845] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582846] {
+  "id": "chatcmpl-7tYeE9l8ciY1NFVUrUZ1i8T74Ghja",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "8"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 104,
+    "completion_tokens": 1,
+    "total_tokens": 105
+  }
+}
+[1693475582846] {
+  "role": "assistant",
+  "content": "8"
+}
+[1693475582846] [36m[OPENAI] Chat completion took 378.8579580783844ms[39m
+[1693475582846] [36m[OPENAI] Tokens per second: 2.6395116657232878tps[39m
+[1693475582846] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582846] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582846] {
+  "id": "chatcmpl-7tYeEnPviZ5uHsLuzUtIv478uaLvA",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 102,
+    "completion_tokens": 1,
+    "total_tokens": 103
+  }
+}
+[1693475582846] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582846] [36m[OPENAI] Chat completion took 534.7090829610825ms[39m
+[1693475582846] [36m[OPENAI] Tokens per second: 1.8701758243234905tps[39m
+[1693475582846] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582849] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582851] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582851] {
+  "id": "chatcmpl-7tYeE0x1wExna3tPMAMXkVa6X3zN1",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 1,
+    "total_tokens": 96
+  }
+}
+[1693475582851] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582851] [36m[OPENAI] Chat completion took 284.91883301734924ms[39m
+[1693475582851] [36m[OPENAI] Tokens per second: 3.509771500219181tps[39m
+[1693475582851] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582851] {
+  "id": "chatcmpl-7tYeEJAmDIPasH5ySsdqkW0uKCGOY",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 114,
+    "completion_tokens": 1,
+    "total_tokens": 115
+  }
+}
+[1693475582851] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582851] [36m[OPENAI] Chat completion took 376.07212495803833ms[39m
+[1693475582851] [36m[OPENAI] Tokens per second: 2.6590644018393514tps[39m
+[1693475582851] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582853] {
+  "id": "chatcmpl-7tYeEPUHAFKcM5tTk7sWUA99HNXv8",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "7"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 1,
+    "total_tokens": 101
+  }
+}
+[1693475582853] {
+  "role": "assistant",
+  "content": "7"
+}
+[1693475582853] [36m[OPENAI] Chat completion took 387.78079199790955ms[39m
+[1693475582853] [36m[OPENAI] Tokens per second: 2.5787765166186745tps[39m
+[1693475582853] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582854] {
+  "id": "chatcmpl-7tYeEwIsU0Es3QWdxLoJhvZplMupA",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "8"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582854] {
+  "role": "assistant",
+  "content": "8"
+}
+[1693475582854] [36m[OPENAI] Chat completion took 288.14391708374023ms[39m
+[1693475582854] [36m[OPENAI] Tokens per second: 3.470487977399782tps[39m
+[1693475582854] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582855] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582857] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582857] {
+  "id": "chatcmpl-7tYeEsWwZ1FI82MtKRxoslfPJz0tL",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 1,
+    "total_tokens": 100
+  }
+}
+[1693475582857] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582857] [36m[OPENAI] Chat completion took 380.4695830345154ms[39m
+[1693475582857] [36m[OPENAI] Tokens per second: 2.6283310009286134tps[39m
+[1693475582857] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582858] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582860] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582860] {
+  "id": "chatcmpl-7tYeEWZKeks7zOsnvFcNT8t1RwXC5",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 1,
+    "total_tokens": 99
+  }
+}
+[1693475582860] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475582860] [36m[OPENAI] Chat completion took 548.2488329410553ms[39m
+[1693475582860] [36m[OPENAI] Tokens per second: 1.8239892908399762tps[39m
+[1693475582860] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582861] {
+  "id": "chatcmpl-7tYeEX9Ky4lRwmsBMzfIW2tD9qbWb",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475582861] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475582861] [36m[OPENAI] Chat completion took 551.5479580163956ms[39m
+[1693475582861] [36m[OPENAI] Tokens per second: 1.8130789634258306tps[39m
+[1693475582861] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582864] {
+  "id": "chatcmpl-7tYeEjmmwRlcnjr9jVPXWfjOj3gpZ",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 1,
+    "total_tokens": 98
+  }
+}
+[1693475582864] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582864] [36m[OPENAI] Chat completion took 398.46895802021027ms[39m
+[1693475582864] [36m[OPENAI] Tokens per second: 2.5096057795028544tps[39m
+[1693475582864] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582864] {
+  "id": "chatcmpl-7tYeEW8DfbGFJQRypVyGOYEaWeoqW",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 101,
+    "completion_tokens": 1,
+    "total_tokens": 102
+  }
+}
+[1693475582864] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582864] [36m[OPENAI] Chat completion took 388.8597500324249ms[39m
+[1693475582864] [36m[OPENAI] Tokens per second: 2.5716212591213554tps[39m
+[1693475582864] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582866] {
+  "id": "chatcmpl-7tYeErEyUreaYNQ32U8ss6UZxm73p",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582866] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582866] [36m[OPENAI] Chat completion took 308.2931660413742ms[39m
+[1693475582866] [36m[OPENAI] Tokens per second: 3.243665803042147tps[39m
+[1693475582866] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582867] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582868] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582869] {
+  "id": "chatcmpl-7tYeESXROsXLHRB08c6Ne6vudHjrg",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 1,
+    "total_tokens": 96
+  }
+}
+[1693475582869] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582869] [36m[OPENAI] Chat completion took 403.6738750934601ms[39m
+[1693475582869] [36m[OPENAI] Tokens per second: 2.4772472575008138tps[39m
+[1693475582869] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582870] {
+  "id": "chatcmpl-7tYeEaaQq56bClhb2qBdyHsf3PRWc",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "9"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 1,
+    "total_tokens": 101
+  }
+}
+[1693475582870] {
+  "role": "assistant",
+  "content": "9"
+}
+[1693475582870] [36m[OPENAI] Chat completion took 403.5567910671234ms[39m
+[1693475582870] [36m[OPENAI] Tokens per second: 2.4779659818279964tps[39m
+[1693475582870] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582870] {
+  "id": "chatcmpl-7tYeEEaZaWTcp9umM5f5QI8YWXyQS",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "7"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 92,
+    "completion_tokens": 1,
+    "total_tokens": 93
+  }
+}
+[1693475582870] {
+  "role": "assistant",
+  "content": "7"
+}
+[1693475582870] [36m[OPENAI] Chat completion took 312.61333298683167ms[39m
+[1693475582870] [36m[OPENAI] Tokens per second: 3.198839890946441tps[39m
+[1693475582870] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582871] {
+  "id": "chatcmpl-7tYeEEsis47BcI0hzdduGBc2PLunT",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 1,
+    "total_tokens": 91
+  }
+}
+[1693475582871] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582871] [36m[OPENAI] Chat completion took 314.3386660814285ms[39m
+[1693475582871] [36m[OPENAI] Tokens per second: 3.1812821898943633tps[39m
+[1693475582871] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582871] {
+  "id": "chatcmpl-7tYeEFVwXB0DTmmIkf7hiCSInek25",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 2,
+    "total_tokens": 100
+  }
+}
+[1693475582871] {
+  "role": "assistant",
+  "content": "4."
+}
+[1693475582871] [36m[OPENAI] Chat completion took 405.5234580039978ms[39m
+[1693475582871] [36m[OPENAI] Tokens per second: 4.931897182579961tps[39m
+[1693475582871] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582872] {
+  "id": "chatcmpl-7tYeEOPOmUJjLaxVde1MEMng8vzbO",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475582872] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582872] [36m[OPENAI] Chat completion took 564.3493750095367ms[39m
+[1693475582872] [36m[OPENAI] Tokens per second: 1.7719519933606755tps[39m
+[1693475582872] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582875] {
+  "id": "chatcmpl-7tYeEZz6enWHJ2SxMrvCR8N8wuKia",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582875] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582875] [36m[OPENAI] Chat completion took 317.14049994945526ms[39m
+[1693475582875] [36m[OPENAI] Tokens per second: 3.1531765894276402tps[39m
+[1693475582875] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582875] {
+  "id": "chatcmpl-7tYeEusCOK4gdwUAPXj6MWTO9LSOi",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582875] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582875] [36m[OPENAI] Chat completion took 317.2515000104904ms[39m
+[1693475582875] [36m[OPENAI] Tokens per second: 3.1520733549468907tps[39m
+[1693475582875] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582876] {
+  "id": "chatcmpl-7tYeEWO4iUyp56EPVBIYhvWrBtJJ7",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582876] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582876] [36m[OPENAI] Chat completion took 310.6501250267029ms[39m
+[1693475582876] [36m[OPENAI] Tokens per second: 3.219055520785778tps[39m
+[1693475582876] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582876] {
+  "id": "chatcmpl-7tYeEM8CcMasxXeluioCM2m2kfYDP",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582876] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582876] [36m[OPENAI] Chat completion took 310.1800420284271ms[39m
+[1693475582876] [36m[OPENAI] Tokens per second: 3.2239340528181137tps[39m
+[1693475582876] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582877] {
+  "id": "chatcmpl-7tYeE7L5tgTnDPWq8uxHK2svSzaKV",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 1,
+    "total_tokens": 96
+  }
+}
+[1693475582877] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582877] [36m[OPENAI] Chat completion took 412.8663330078125ms[39m
+[1693475582877] [36m[OPENAI] Tokens per second: 2.4220914132542686tps[39m
+[1693475582878] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582879] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582879] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582880] {
+  "id": "chatcmpl-7tYeEKBPmrzNI4yxsR52mEDLDxuAl",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "7."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 2,
+    "total_tokens": 102
+  }
+}
+[1693475582880] {
+  "role": "assistant",
+  "content": "7."
+}
+[1693475582880] [36m[OPENAI] Chat completion took 404.9299169778824ms[39m
+[1693475582880] [36m[OPENAI] Tokens per second: 4.9391262935735165tps[39m
+[1693475582880] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582884] {
+  "id": "chatcmpl-7tYeEXE9uILNlTYlHDi1qrjZTxHxP",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "8"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 1,
+    "total_tokens": 100
+  }
+}
+[1693475582884] {
+  "role": "assistant",
+  "content": "8"
+}
+[1693475582884] [36m[OPENAI] Chat completion took 406.8368330001831ms[39m
+[1693475582884] [36m[OPENAI] Tokens per second: 2.4579878685653567tps[39m
+[1693475582884] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582884] {
+  "id": "chatcmpl-7tYeEvW6jmdFs0rItVMeDiaIrT1q2",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582884] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475582884] [36m[OPENAI] Chat completion took 317.44808292388916ms[39m
+[1693475582884] [36m[OPENAI] Tokens per second: 3.150121401866391tps[39m
+[1693475582884] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582885] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582887] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582888] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582891] {
+  "id": "chatcmpl-7tYeEmWDPsMDDe3Cuqdvro1W7TKab",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582891] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582891] [36m[OPENAI] Chat completion took 325.80770790576935ms[39m
+[1693475582891] [36m[OPENAI] Tokens per second: 3.069295095649553tps[39m
+[1693475582891] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582893] {
+  "id": "chatcmpl-7tYeEIcdaxePAL82H70alPB9ri9th",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582893] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582893] [36m[OPENAI] Chat completion took 326.87720799446106ms[39m
+[1693475582893] [36m[OPENAI] Tokens per second: 3.0592527577418154tps[39m
+[1693475582893] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582895] {
+  "id": "chatcmpl-7tYeENpAEG7flWwuUyZPpNMLUhYK6",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582895] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582895] [36m[OPENAI] Chat completion took 329.8261249065399ms[39m
+[1693475582895] [36m[OPENAI] Tokens per second: 3.0319005211711527tps[39m
+[1693475582895] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582904] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582906] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582906] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582907] {
+  "id": "chatcmpl-7tYeEpaqBZDP98JcuyjTJwWnbkop5",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 1,
+    "total_tokens": 96
+  }
+}
+[1693475582907] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582907] [36m[OPENAI] Chat completion took 348.3955420255661ms[39m
+[1693475582907] [36m[OPENAI] Tokens per second: 2.870300791410866tps[39m
+[1693475582907] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582917] {
+  "id": "chatcmpl-7tYeEK1MpU8lJCpXUhYquJt5Bl8sM",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 1,
+    "total_tokens": 96
+  }
+}
+[1693475582917] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582917] [36m[OPENAI] Chat completion took 350.998792052269ms[39m
+[1693475582917] [36m[OPENAI] Tokens per second: 2.849012653727552tps[39m
+[1693475582917] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582919] {
+  "id": "chatcmpl-7tYeEIsJfgzUKRw4yp6fqdjDFNoaa",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 1,
+    "total_tokens": 97
+  }
+}
+[1693475582919] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582919] [36m[OPENAI] Chat completion took 352.2583329677582ms[39m
+[1693475582919] [36m[OPENAI] Tokens per second: 2.838825675392976tps[39m
+[1693475582919] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582920] {
+  "id": "chatcmpl-7tYeEpGanLronz4HFC998YROGVxmK",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582920] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582920] [36m[OPENAI] Chat completion took 362.2650420665741ms[39m
+[1693475582920] [36m[OPENAI] Tokens per second: 2.760409876413712tps[39m
+[1693475582920] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582929] {
+  "id": "chatcmpl-7tYeEuHzIJ8mH2LOiNS9zxHMxeStX",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 1,
+    "total_tokens": 97
+  }
+}
+[1693475582929] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582929] [36m[OPENAI] Chat completion took 370.3316659927368ms[39m
+[1693475582929] [36m[OPENAI] Tokens per second: 2.700282184401732tps[39m
+[1693475582929] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582930] {
+  "id": "chatcmpl-7tYeEHaQ9lGVERf6DL6lDyrQomUoP",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 1,
+    "total_tokens": 91
+  }
+}
+[1693475582930] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582930] [36m[OPENAI] Chat completion took 372.3153330087662ms[39m
+[1693475582930] [36m[OPENAI] Tokens per second: 2.6858952918182797tps[39m
+[1693475582930] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582932] {
+  "id": "chatcmpl-7tYeELtO6eA29l9fOPAk3TuV8yVjz",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 1,
+    "total_tokens": 100
+  }
+}
+[1693475582932] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475582932] [36m[OPENAI] Chat completion took 457.11125004291534ms[39m
+[1693475582932] [36m[OPENAI] Tokens per second: 2.1876512553697074tps[39m
+[1693475582932] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582936] {
+  "id": "chatcmpl-7tYeENRODTaZVRlHwGmj2nPfeWBTi",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 1,
+    "total_tokens": 98
+  }
+}
+[1693475582936] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582936] [36m[OPENAI] Chat completion took 469.35545802116394ms[39m
+[1693475582936] [36m[OPENAI] Tokens per second: 2.1305813811478216tps[39m
+[1693475582936] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582940] {
+  "id": "chatcmpl-7tYeETXanhNjzZVoXy5MMTZ0iOq9s",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 1,
+    "total_tokens": 97
+  }
+}
+[1693475582940] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582940] [36m[OPENAI] Chat completion took 374.1177909374237ms[39m
+[1693475582940] [36m[OPENAI] Tokens per second: 2.6729549468746425tps[39m
+[1693475582940] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582941] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582941] {
+  "id": "chatcmpl-7tYeESlmeQWc6PycR1S8ZohJ3BHNO",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475582941] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582941] [36m[OPENAI] Chat completion took 384.1331249475479ms[39m
+[1693475582941] [36m[OPENAI] Tokens per second: 2.6032641682139404tps[39m
+[1693475582941] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582942] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582942] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582943] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582945] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582952] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582953] {
+  "id": "chatcmpl-7tYeENkUs64ULOkS3t96SadTMEVej",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582954] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582954] [36m[OPENAI] Chat completion took 488.28162491321564ms[39m
+[1693475582954] [36m[OPENAI] Tokens per second: 2.0479984275012075tps[39m
+[1693475582954] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582954] {
+  "id": "chatcmpl-7tYeEN0TZKuT41sHi9gpUKa1zXeCH",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582954] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582954] [36m[OPENAI] Chat completion took 395.3482919931412ms[39m
+[1693475582954] [36m[OPENAI] Tokens per second: 2.5294152529621874tps[39m
+[1693475582954] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582956] {
+  "id": "chatcmpl-7tYeElgBf7S3r91D5qZXCjQVjcUrx",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 1,
+    "total_tokens": 91
+  }
+}
+[1693475582956] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475582956] [36m[OPENAI] Chat completion took 390.5865409374237ms[39m
+[1693475582956] [36m[OPENAI] Tokens per second: 2.560252070130115tps[39m
+[1693475582956] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582957] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582959] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582961] {
+  "id": "chatcmpl-7tYeEaBqdGZ3CApNenJwtgNpq6IEA",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475582961] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582961] [36m[OPENAI] Chat completion took 395.306666970253ms[39m
+[1693475582961] [36m[OPENAI] Tokens per second: 2.529681595466869tps[39m
+[1693475582961] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582962] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582964] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582965] {
+  "id": "chatcmpl-7tYeE8mXDzOFlieWc1gfAgrOpdTbz",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 1,
+    "total_tokens": 96
+  }
+}
+[1693475582965] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475582965] [36m[OPENAI] Chat completion took 406.390625ms[39m
+[1693475582965] [36m[OPENAI] Tokens per second: 2.460686685378138tps[39m
+[1693475582965] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582967] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582974] [32m[OPENAI] Embedding created successfully.[39m
+[1693475582975] {
+  "id": "chatcmpl-7tYeEhKJlVARPeVTCSpSzRNR9wB3z",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "7"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 92,
+    "completion_tokens": 1,
+    "total_tokens": 93
+  }
+}
+[1693475582975] {
+  "role": "assistant",
+  "content": "7"
+}
+[1693475582976] [36m[OPENAI] Chat completion took 417.48395800590515ms[39m
+[1693475582976] [36m[OPENAI] Tokens per second: 2.39530161775906tps[39m
+[1693475582976] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582988] {
+  "id": "chatcmpl-7tYeESq10lCGE3gYG4RPIvCyd2TcA",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 93,
+    "completion_tokens": 1,
+    "total_tokens": 94
+  }
+}
+[1693475582988] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475582988] [36m[OPENAI] Chat completion took 429.5422910451889ms[39m
+[1693475582988] [36m[OPENAI] Tokens per second: 2.328059473647491tps[39m
+[1693475582988] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475582988] [32m[OPENAI] Embedding created successfully.[39m
+[1693475583004] {
+  "id": "chatcmpl-7tYeE9rn30Pdh3kU2nDK7aS96SJCU",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 1,
+    "total_tokens": 101
+  }
+}
+[1693475583004] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475583004] [36m[OPENAI] Chat completion took 529.1271250247955ms[39m
+[1693475583004] [36m[OPENAI] Tokens per second: 1.889905001474152tps[39m
+[1693475583004] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475583017] {
+  "id": "chatcmpl-7tYeEBhYEv91vcqjl09yvKYA8X6kX",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475583017] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475583017] [36m[OPENAI] Chat completion took 710.034500002861ms[39m
+[1693475583017] [36m[OPENAI] Tokens per second: 1.408382268743238tps[39m
+[1693475583017] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475583029] {
+  "id": "chatcmpl-7tYeEAfju1KfUHr2nJU197fMN69eS",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475583029] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475583029] [36m[OPENAI] Chat completion took 717.1042500734329ms[39m
+[1693475583029] [36m[OPENAI] Tokens per second: 1.3944973829085492tps[39m
+[1693475583029] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475583063] {
+  "id": "chatcmpl-7tYeEwABlsrjUPPzpymkIgDojTuw4",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 1,
+    "total_tokens": 95
+  }
+}
+[1693475583063] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475583063] [36m[OPENAI] Chat completion took 496.69979202747345ms[39m
+[1693475583063] [36m[OPENAI] Tokens per second: 2.0132885417932447tps[39m
+[1693475583063] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475583116] {
+  "id": "chatcmpl-7tYeETwX1zwTuJuheW3uxymGMQW2t",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "8"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 1,
+    "total_tokens": 99
+  }
+}
+[1693475583116] {
+  "role": "assistant",
+  "content": "8"
+}
+[1693475583116] [36m[OPENAI] Chat completion took 640.6733330488205ms[39m
+[1693475583116] [36m[OPENAI] Tokens per second: 1.5608578481661233tps[39m
+[1693475583116] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475583219] {
+  "id": "chatcmpl-7tYeEE3A2V7QqgvHqemj19ZC4pXiJ",
+  "object": "chat.completion",
+  "created": 1693475582,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 1,
+    "total_tokens": 92
+  }
+}
+[1693475583219] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475583219] [36m[OPENAI] Chat completion took 654.1933749914169ms[39m
+[1693475583220] [36m[OPENAI] Tokens per second: 1.5286000106820403tps[39m
+[1693475583220] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475583350] [32m[OPENAI] Embedding created successfully.[39m
+[1693475583444] [32m[OPENAI] Embedding created successfully.[39m
+[1693475584573] [32m[OPENAI] Embedding created successfully.[39m
+[1693475591101] [Main] WebSocket connection established
+[1693475591134] [Character] Getting character: A5
+[1693475591146] --- Observations received -- 
+[1693475591146] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Small) at X: 41.33658, Y: 13.99647.",
+  "time": 0
+}
+[1693475591146] [Character] Getting character: A5
+[1693475591149] --- Observations received -- 
+[1693475591149] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Tree at X: 42.12, Y: 5.77.",
+  "time": 0
+}
+[1693475591149] [Character] Getting character: A5
+[1693475591204] [33m[OPENAI] Creating embedding...[39m
+[1693475591239] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475591239] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Small) at X: 41.33658, Y: 13.99647."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475591239] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475591240] [33m[OPENAI] Creating embedding...[39m
+[1693475591244] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475591244] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Tree at X: 42.12, Y: 5.77."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475591244] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475591244] [33m[OPENAI] Creating embedding...[39m
+[1693475591444] [32m[OPENAI] Embedding created successfully.[39m
+[1693475591449] [32m[OPENAI] Embedding created successfully.[39m
+[1693475591456] [32m[OPENAI] Embedding created successfully.[39m
+[1693475591622] {
+  "id": "chatcmpl-7tYeNwlNDyYJQwU5zHEMOGY7frhij",
+  "object": "chat.completion",
+  "created": 1693475591,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 101,
+    "completion_tokens": 1,
+    "total_tokens": 102
+  }
+}
+[1693475591623] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475591623] [36m[OPENAI] Chat completion took 378.28312504291534ms[39m
+[1693475591623] [36m[OPENAI] Tokens per second: 2.6435226257754754tps[39m
+[1693475591623] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475591677] {
+  "id": "chatcmpl-7tYeNMmhZUQiyX7Lg3w4lCE7JHX2s",
+  "object": "chat.completion",
+  "created": 1693475591,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 108,
+    "completion_tokens": 1,
+    "total_tokens": 109
+  }
+}
+[1693475591677] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475591677] [36m[OPENAI] Chat completion took 437.82245802879333ms[39m
+[1693475591677] [36m[OPENAI] Tokens per second: 2.2840308478059734tps[39m
+[1693475591678] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475591967] [33m[OPENAI] Creating embedding...[39m
+[1693475592171] [32m[OPENAI] Embedding created successfully.[39m
+[1693475592613] [33m[OPENAI] Creating embedding...[39m
+[1693475592864] [32m[OPENAI] Embedding created successfully.[39m
+[1693475593235] [33m[OPENAI][gpt-4] Creating chat completion...[39m
+[1693475593236] {
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Character: \n- ID: A5\n- Name: Eli Green\n- Age: 12\n- Occupation: Explorer\n- Personality: Curious, Energetic, Kind-hearted\n\nLocation: 39.08, 10\n\nTime: Day 0, 12:00 AM\n\nHunger: Hungry\n\nEnvironment:\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 41.33658, Y: 13.99647, Distance: 4.589547m]\n- Tree (Health: 10/10) [X: 42.12, Y: 5.77, Distance: 5.209076m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 38.24, Y: 15.93, Distance: 5.989199m]\n- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 6.163249m]\n- Stone Ore Deposit (Medium) (Health: 10/10) [X: 42.53862, Y: 17.00157, Distance: 7.809221m]\n- Tree (Health: 10/10) [X: 31.24, Y: 9.42, Distance: 7.861425m]\n- Tree (Health: 10/10) [X: 33.51, Y: 4.43, Distance: 7.877169m]\n- Tree (Health: 10/10) [X: 45.84, Y: 5.299999, Distance: 8.233325m]\n- Tree Stump (Health: 5/5) [X: 34.56, Y: 3.07, Distance: 8.273774m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 8.509911m]\n- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 8.642555m]\n\nInventory (4/10):\n- Axe x 1\n- Pickaxe x 1\n- Sword x 1\n- Berries x 1\n\nTasks:\n[\n  {\n    \"task\": \"Carry out your daily dutiies\",\n    \"priority\": 1\n  },\n  {\n    \"task\": \"Catch up with other villagers\",\n    \"priority\": 2\n  },\n  {\n    \"task\": \"Maintain a healthy lifestyle\",\n    \"priority\": 3\n  }\n]\n\nMemories:\n- George tells me tales of old, turning every tree and hill into an adventure. [just now]\n- Rainy days? That's when the forest sings its loudest song! [just now]\n- I once found a secret clearing in the woods, it's my personal hideout now. [just now]\n- Lucy once said every tree has a story. I'm trying to learn them all. [just now]\n- Lucy showed me how to listen to the forest, it's like it's telling stories. [just now]\n- The world feels so big and full of wonders, I want to see them all! [just now]\n- I dreamt I could fly like a bird, seeing the world from above. Maybe one day... [just now]\n- Every rock and leaf, every bird and bug, feels like a friend to me. [just now]\n- Climbing trees is my favorite! The higher I go, the bigger the world looks. [just now]\n- I've learned to move silently. That way, nature doesn’t hide from me. [just now]\n\nAvailable Actions:\n- move_to: Move to a target location\n- drop_axe: Drop Axe onto the ground.\n- drop_pickaxe: Drop Pickaxe onto the ground.\n- drop_sword: Drop Sword onto the ground.\n- eat: Eat some food.\n- drop_berries: Drop Berries onto the ground.\n\nGiven the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities."
+    },
+    {
+      "role": "assistant",
+      "content": "Updated Tasks:"
+    }
+  ]
+}
+[1693475593236] {
+  "X-Starlight-Tag": "updateTaskList",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475618017] {
+  "id": "chatcmpl-7tYePh1GNeHcI5hA66TOsfeEVb2lv",
+  "object": "chat.completion",
+  "created": 1693475593,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"task\": \"Eat your berries\",\n    \"priority\": 1\n  },\n  {\n    \"task\": \"Explore and gather resources\",\n    \"priority\": 2\n  },\n  {\n    \"task\": \"Investigate nearest Stone Ore Deposit\",\n    \"priority\": 3\n  },\n  {\n    \"task\": \"Investigate nearest Tree\",\n    \"priority\": 4\n  },\n  {\n    \"task\": \"Chop down a tree with your Axe\",\n    \"priority\": 5\n  },\n  {\n    \"task\": \"Mine Ore from the Deposit with your Pickaxe\",\n    \"priority\": 6\n  },\n  {\n    \"task\": \"Interact with nature, learn the story of a tree\",\n    \"priority\": 7\n  },\n  {\n    \"task\": \"Check your secret clearing in the forest\",\n    \"priority\": 8\n  },\n  {\n    \"task\": \"Catch up with other villagers\",\n    \"priority\": 9\n  },\n  {\n    \"task\": \"Carry out your daily duties\",\n    \"priority\": 10\n  },\n  {\n    \"task\": \"Maintain a healthy lifestyle\",\n    \"priority\": 11\n  }\n]"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 959,
+    "completion_tokens": 257,
+    "total_tokens": 1216
+  }
+}
+[1693475618020] {
+  "role": "assistant",
+  "content": "[\n  {\n    \"task\": \"Eat your berries\",\n    \"priority\": 1\n  },\n  {\n    \"task\": \"Explore and gather resources\",\n    \"priority\": 2\n  },\n  {\n    \"task\": \"Investigate nearest Stone Ore Deposit\",\n    \"priority\": 3\n  },\n  {\n    \"task\": \"Investigate nearest Tree\",\n    \"priority\": 4\n  },\n  {\n    \"task\": \"Chop down a tree with your Axe\",\n    \"priority\": 5\n  },\n  {\n    \"task\": \"Mine Ore from the Deposit with your Pickaxe\",\n    \"priority\": 6\n  },\n  {\n    \"task\": \"Interact with nature, learn the story of a tree\",\n    \"priority\": 7\n  },\n  {\n    \"task\": \"Check your secret clearing in the forest\",\n    \"priority\": 8\n  },\n  {\n    \"task\": \"Catch up with other villagers\",\n    \"priority\": 9\n  },\n  {\n    \"task\": \"Carry out your daily duties\",\n    \"priority\": 10\n  },\n  {\n    \"task\": \"Maintain a healthy lifestyle\",\n    \"priority\": 11\n  }\n]"
+}
+[1693475618020] [36m[OPENAI] Chat completion took 24780.696375012398ms[39m
+[1693475618020] [36m[OPENAI] Tokens per second: 10.37097570264998tps[39m
+[1693475618020] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475618022] [Character] Getting character: A5
+[1693475618086] [33m[OPENAI] Creating embedding...[39m
+[1693475618267] [32m[OPENAI] Embedding created successfully.[39m
+[1693475618690] [33m[OPENAI] Creating embedding...[39m
+[1693475618970] [32m[OPENAI] Embedding created successfully.[39m
+[1693475619418] [33m[OPENAI] Creating embedding...[39m
+[1693475619616] [32m[OPENAI] Embedding created successfully.[39m
+[1693475619964] [33m[OPENAI] Creating embedding...[39m
+[1693475620103] [32m[OPENAI] Embedding created successfully.[39m
+[1693475620474] [33m[OPENAI] Creating embedding...[39m
+[1693475620970] [32m[OPENAI] Embedding created successfully.[39m
+[1693475621339] [33m[OPENAI] Creating embedding...[39m
+[1693475621743] [32m[OPENAI] Embedding created successfully.[39m
+[1693475622151] [33m[OPENAI] Creating embedding...[39m
+[1693475622493] [32m[OPENAI] Embedding created successfully.[39m
+[1693475622846] [33m[OPENAI] Creating embedding...[39m
+[1693475623054] [32m[OPENAI] Embedding created successfully.[39m
+[1693475623370] [33m[OPENAI] Creating embedding...[39m
+[1693475623557] [32m[OPENAI] Embedding created successfully.[39m
+[1693475623752] [33m[OPENAI] Creating embedding...[39m
+[1693475623940] [32m[OPENAI] Embedding created successfully.[39m
+[1693475624143] [33m[OPENAI] Creating embedding...[39m
+[1693475624388] [32m[OPENAI] Embedding created successfully.[39m
+[1693475624691] [33m[OPENAI][gpt-4] Creating chat completion...[39m
+[1693475624693] {
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You must select a function to call, and you can only call functions that have been provided. Do not provide any additional explanation."
+    },
+    {
+      "role": "user",
+      "content": "Character: \n- ID: A5\n- Name: Eli Green\n- Age: 12\n- Occupation: Explorer\n- Personality: Curious, Energetic, Kind-hearted\n\nLocation: 39.08, 10\n\nTime: Day 0, 12:00 AM\n\nHunger: Hungry\n\nEnvironment:\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 41.33658, Y: 13.99647, Distance: 4.589547m]\n- Tree (Health: 10/10) [X: 42.12, Y: 5.77, Distance: 5.209076m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 38.24, Y: 15.93, Distance: 5.989199m]\n- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 6.163249m]\n- Stone Ore Deposit (Medium) (Health: 10/10) [X: 42.53862, Y: 17.00157, Distance: 7.809221m]\n- Tree (Health: 10/10) [X: 31.24, Y: 9.42, Distance: 7.861425m]\n- Tree (Health: 10/10) [X: 33.51, Y: 4.43, Distance: 7.877169m]\n- Tree (Health: 10/10) [X: 45.84, Y: 5.299999, Distance: 8.233325m]\n- Tree Stump (Health: 5/5) [X: 34.56, Y: 3.07, Distance: 8.273774m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 8.509911m]\n- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 8.642555m]\n\nInventory (4/10):\n- Axe x 1\n- Pickaxe x 1\n- Sword x 1\n- Berries x 1\n\nTasks:\n[\n  {\n    \"task\": \"Eat your berries\",\n    \"priority\": 1\n  },\n  {\n    \"task\": \"Explore and gather resources\",\n    \"priority\": 2\n  },\n  {\n    \"task\": \"Investigate nearest Stone Ore Deposit\",\n    \"priority\": 3\n  },\n  {\n    \"task\": \"Investigate nearest Tree\",\n    \"priority\": 4\n  },\n  {\n    \"task\": \"Chop down a tree with your Axe\",\n    \"priority\": 5\n  },\n  {\n    \"task\": \"Mine Ore from the Deposit with your Pickaxe\",\n    \"priority\": 6\n  },\n  {\n    \"task\": \"Interact with nature, learn the story of a tree\",\n    \"priority\": 7\n  },\n  {\n    \"task\": \"Check your secret clearing in the forest\",\n    \"priority\": 8\n  },\n  {\n    \"task\": \"Catch up with other villagers\",\n    \"priority\": 9\n  },\n  {\n    \"task\": \"Carry out your daily duties\",\n    \"priority\": 10\n  },\n  {\n    \"task\": \"Maintain a healthy lifestyle\",\n    \"priority\": 11\n  }\n]\n\nMemories:\n- I dreamt I could fly like a bird, seeing the world from above. Maybe one day... [just now]\n- The world feels so big and full of wonders, I want to see them all! [just now]\n- I've learned to move silently. That way, nature doesn’t hide from me. [just now]\n- Climbing trees is my favorite! The higher I go, the bigger the world looks. [just now]\n- I once found a secret clearing in the woods, it's my personal hideout now. [just now]\n- Every rock and leaf, every bird and bug, feels like a friend to me. [just now]\n- Rainy days? That's when the forest sings its loudest song! [just now]\n- Lucy showed me how to listen to the forest, it's like it's telling stories. [just now]\n- Lucy once said every tree has a story. I'm trying to learn them all. [just now]\n- George tells me tales of old, turning every tree and hill into an adventure. [just now]\n\nGiven the available information, pick the best available action function to accomplish your tasks.\n\n\n"
+    }
+  ],
+  "functions": [
+    {
+      "name": "move_to",
+      "description": "Move to a target location",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "x": {
+            "type": "number",
+            "description": "The X coordinate of the target location."
+          },
+          "y": {
+            "type": "number",
+            "description": "The Y coordinate of the target location."
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_axe",
+      "description": "Drop Axe onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_pickaxe",
+      "description": "Drop Pickaxe onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_sword",
+      "description": "Drop Sword onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "eat",
+      "description": "Eat some food.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "foodId": {
+            "type": "string",
+            "description": "The food ID of the food to be eaten.",
+            "values": [
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_berries",
+      "description": "Drop Berries onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "function_call": "auto"
+}
+[1693475624693] {
+  "X-Starlight-Tag": "getAction",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475628215] {
+  "id": "chatcmpl-7tYeuAhIEryMEl56GM4CdpsQzE4xu",
+  "object": "chat.completion",
+  "created": 1693475624,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "eat",
+          "arguments": "{\n\"characterId\": \"A5\",\n\"foodId\": \"berries\"\n}"
+        }
+      },
+      "finish_reason": "function_call"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1425,
+    "completion_tokens": 23,
+    "total_tokens": 1448
+  }
+}
+[1693475628215] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "eat",
+    "arguments": "{\n\"characterId\": \"A5\",\n\"foodId\": \"berries\"\n}"
+  }
+}
+[1693475628215] [36m[OPENAI] Chat completion took 3521.6297919750214ms[39m
+[1693475628215] [36m[OPENAI] Tokens per second: 6.5310669657587725tps[39m
+[1693475628215] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475628270] [Character] Getting character: A5
+[1693475628326] [33m[OPENAI] Creating embedding...[39m
+[1693475628460] [32m[OPENAI] Embedding created successfully.[39m
+[1693475628814] [33m[OPENAI] Creating embedding...[39m
+[1693475629021] [32m[OPENAI] Embedding created successfully.[39m
+[1693475629403] [33m[OPENAI] Creating embedding...[39m
+[1693475629590] [32m[OPENAI] Embedding created successfully.[39m
+[1693475629951] [33m[OPENAI] Creating embedding...[39m
+[1693475630225] [32m[OPENAI] Embedding created successfully.[39m
+[1693475630590] [33m[OPENAI] Creating embedding...[39m
+[1693475631390] [32m[OPENAI] Embedding created successfully.[39m
+[1693475631755] [33m[OPENAI] Creating embedding...[39m
+[1693475632120] [32m[OPENAI] Embedding created successfully.[39m
+[1693475632468] [33m[OPENAI] Creating embedding...[39m
+[1693475632693] [32m[OPENAI] Embedding created successfully.[39m
+[1693475633028] [33m[OPENAI] Creating embedding...[39m
+[1693475633195] [32m[OPENAI] Embedding created successfully.[39m
+[1693475633501] [33m[OPENAI] Creating embedding...[39m
+[1693475633663] [32m[OPENAI] Embedding created successfully.[39m
+[1693475633899] [33m[OPENAI] Creating embedding...[39m
+[1693475634143] [32m[OPENAI] Embedding created successfully.[39m
+[1693475634349] [33m[OPENAI] Creating embedding...[39m
+[1693475634606] [32m[OPENAI] Embedding created successfully.[39m
+[1693475634822] [33m[OPENAI][gpt-4] Creating chat completion...[39m
+[1693475634836] {
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You must select a function to call, and you can only call functions that have been provided. Do not provide any additional explanation."
+    },
+    {
+      "role": "user",
+      "content": "Character: \n- ID: A5\n- Name: Eli Green\n- Age: 12\n- Occupation: Explorer\n- Personality: Curious, Energetic, Kind-hearted\n\nLocation: 39.08, 10\n\nTime: Day 0, 3:33 AM\n\nHunger: Well-fed\n\nEnvironment:\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 41.33658, Y: 13.99647, Distance: 4.589547m]\n- Tree (Health: 10/10) [X: 42.12, Y: 5.77, Distance: 5.209076m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 38.24, Y: 15.93, Distance: 5.989199m]\n- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 6.163249m]\n- Stone Ore Deposit (Medium) (Health: 10/10) [X: 42.53862, Y: 17.00157, Distance: 7.809221m]\n- Tree (Health: 10/10) [X: 31.24, Y: 9.42, Distance: 7.861425m]\n- Tree (Health: 10/10) [X: 33.51, Y: 4.43, Distance: 7.877169m]\n- Tree (Health: 10/10) [X: 45.84, Y: 5.299999, Distance: 8.233325m]\n- Tree Stump (Health: 5/5) [X: 34.56, Y: 3.07, Distance: 8.273774m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 8.509911m]\n- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 8.642555m]\n\nInventory (3/10):\n- Axe x 1\n- Pickaxe x 1\n- Sword x 1\n\nTasks:\n[\n  {\n    \"task\": \"Eat your berries\",\n    \"priority\": 1\n  },\n  {\n    \"task\": \"Explore and gather resources\",\n    \"priority\": 2\n  },\n  {\n    \"task\": \"Investigate nearest Stone Ore Deposit\",\n    \"priority\": 3\n  },\n  {\n    \"task\": \"Investigate nearest Tree\",\n    \"priority\": 4\n  },\n  {\n    \"task\": \"Chop down a tree with your Axe\",\n    \"priority\": 5\n  },\n  {\n    \"task\": \"Mine Ore from the Deposit with your Pickaxe\",\n    \"priority\": 6\n  },\n  {\n    \"task\": \"Interact with nature, learn the story of a tree\",\n    \"priority\": 7\n  },\n  {\n    \"task\": \"Check your secret clearing in the forest\",\n    \"priority\": 8\n  },\n  {\n    \"task\": \"Catch up with other villagers\",\n    \"priority\": 9\n  },\n  {\n    \"task\": \"Carry out your daily duties\",\n    \"priority\": 10\n  },\n  {\n    \"task\": \"Maintain a healthy lifestyle\",\n    \"priority\": 11\n  }\n]\n\nMemories:\n- I dreamt I could fly like a bird, seeing the world from above. Maybe one day... [3 hours ago]\n- I've learned to move silently. That way, nature doesn’t hide from me. [3 hours ago]\n- The world feels so big and full of wonders, I want to see them all! [3 hours ago]\n- Climbing trees is my favorite! The higher I go, the bigger the world looks. [3 hours ago]\n- I once found a secret clearing in the woods, it's my personal hideout now. [3 hours ago]\n- Every rock and leaf, every bird and bug, feels like a friend to me. [3 hours ago]\n- Rainy days? That's when the forest sings its loudest song! [3 hours ago]\n- Lucy showed me how to listen to the forest, it's like it's telling stories. [3 hours ago]\n- Lucy once said every tree has a story. I'm trying to learn them all. [3 hours ago]\n- George tells me tales of old, turning every tree and hill into an adventure. [3 hours ago]\n\nPrevious Actions:\n- [eat]: Eli Green ate Berries which restored 10 satiety. [0 minutes ago]\n\nGiven the available information, pick the best available action function to accomplish your tasks.\n\n\n"
+    }
+  ],
+  "functions": [
+    {
+      "name": "move_to",
+      "description": "Move to a target location",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "x": {
+            "type": "number",
+            "description": "The X coordinate of the target location."
+          },
+          "y": {
+            "type": "number",
+            "description": "The Y coordinate of the target location."
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_axe",
+      "description": "Drop Axe onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_pickaxe",
+      "description": "Drop Pickaxe onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_sword",
+      "description": "Drop Sword onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "function_call": "auto"
+}
+[1693475634836] {
+  "X-Starlight-Tag": "getAction",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475640948] {
+  "id": "chatcmpl-7tYf4W5urzPTesOtGQgyU5KLyoS12",
+  "object": "chat.completion",
+  "created": 1693475634,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "move_to",
+          "arguments": "{\n  \"characterId\": \"A5\",\n  \"x\": 41.33658,\n  \"y\": 13.99647\n}"
+        }
+      },
+      "finish_reason": "function_call"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1337,
+    "completion_tokens": 37,
+    "total_tokens": 1374
+  }
+}
+[1693475640948] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A5\",\n  \"x\": 41.33658,\n  \"y\": 13.99647\n}"
+  }
+}
+[1693475640948] [36m[OPENAI] Chat completion took 6111.392250061035ms[39m
+[1693475640948] [36m[OPENAI] Tokens per second: 6.05426693068678tps[39m
+[1693475640948] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475640982] --- Observations received -- 
+[1693475640982] {
+  "observerId": "A5",
+  "observation": "Eli Green has started walking to 41.33658, Y: 13.99647.",
+  "time": 48.2777672
+}
+[1693475640982] [Character] Getting character: A5
+[1693475641068] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475641068] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green has started walking to 41.33658, Y: 13.99647."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475641069] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475641070] [33m[OPENAI] Creating embedding...[39m
+[1693475641352] {
+  "id": "chatcmpl-7tYfB5rkd7cnFRPeQiY43iTCeE7Zj",
+  "object": "chat.completion",
+  "created": 1693475641,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 102,
+    "completion_tokens": 2,
+    "total_tokens": 104
+  }
+}
+[1693475641352] {
+  "role": "assistant",
+  "content": "4."
+}
+[1693475641352] [36m[OPENAI] Chat completion took 282.2074159383774ms[39m
+[1693475641352] [36m[OPENAI] Tokens per second: 7.0869859792654015tps[39m
+[1693475641352] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475641417] [32m[OPENAI] Embedding created successfully.[39m
+[1693475641501] --- Observations received -- 
+[1693475641501] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Small) at X: 38.24, Y: 15.93.",
+  "time": 48.81225
+}
+[1693475641501] [Character] Getting character: A5
+[1693475641501] --- Observations received -- 
+[1693475641502] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Tree at X: 45.24001, Y: 10.2.",
+  "time": 48.81225
+}
+[1693475641502] [Character] Getting character: A5
+[1693475641503] --- Observations received -- 
+[1693475641503] {
+  "observerId": "A5",
+  "observation": "Eli Green no longer sees Tree (205) at X: 42.12, Y: 5.77",
+  "time": 48.81225
+}
+[1693475641503] [Character] Getting character: A5
+[1693475641591] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475641592] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green no longer sees Tree (205) at X: 42.12, Y: 5.77"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475641592] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475641592] [33m[OPENAI] Creating embedding...[39m
+[1693475641616] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475641616] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Small) at X: 38.24, Y: 15.93."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475641616] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475641616] [33m[OPENAI] Creating embedding...[39m
+[1693475641616] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475641616] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Tree at X: 45.24001, Y: 10.2."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475641616] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475641616] [33m[OPENAI] Creating embedding...[39m
+[1693475641784] [32m[OPENAI] Embedding created successfully.[39m
+[1693475641793] [32m[OPENAI] Embedding created successfully.[39m
+[1693475641824] [32m[OPENAI] Embedding created successfully.[39m
+[1693475641847] {
+  "id": "chatcmpl-7tYfB9hQklprPSBW8fJJu9YFuocsl",
+  "object": "chat.completion",
+  "created": 1693475641,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 105,
+    "completion_tokens": 1,
+    "total_tokens": 106
+  }
+}
+[1693475641847] {
+  "role": "assistant",
+  "content": "1"
+}
+[1693475641847] [36m[OPENAI] Chat completion took 254.5645830631256ms[39m
+[1693475641847] [36m[OPENAI] Tokens per second: 3.9282762274594383tps[39m
+[1693475641847] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475641968] {
+  "id": "chatcmpl-7tYfBWIu22fgi8pxhZ4rYHcH2DRdG",
+  "object": "chat.completion",
+  "created": 1693475641,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 102,
+    "completion_tokens": 1,
+    "total_tokens": 103
+  }
+}
+[1693475641969] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475641969] [36m[OPENAI] Chat completion took 352.2519590854645ms[39m
+[1693475641969] [36m[OPENAI] Tokens per second: 2.8388770430014185tps[39m
+[1693475641969] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475641988] {
+  "id": "chatcmpl-7tYfBjslwOQxO5vpKdVw597A78N1F",
+  "object": "chat.completion",
+  "created": 1693475641,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 1,
+    "total_tokens": 107
+  }
+}
+[1693475641988] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475641989] [36m[OPENAI] Chat completion took 372.4548330307007ms[39m
+[1693475641989] [36m[OPENAI] Tokens per second: 2.6848893109075913tps[39m
+[1693475641989] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475642151] --- Observations received -- 
+[1693475642151] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Medium) at X: 42.53862, Y: 17.00157.",
+  "time": 49.4626236
+}
+[1693475642151] [Character] Getting character: A5
+[1693475642219] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475642220] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Medium) at X: 42.53862, Y: 17.00157."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475642220] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475642220] [33m[OPENAI] Creating embedding...[39m
+[1693475642380] [32m[OPENAI] Embedding created successfully.[39m
+[1693475642697] {
+  "id": "chatcmpl-7tYfCCGTCrrQHZ1BE5p3qOJiDpPIf",
+  "object": "chat.completion",
+  "created": 1693475642,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 108,
+    "completion_tokens": 1,
+    "total_tokens": 109
+  }
+}
+[1693475642698] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475642698] [36m[OPENAI] Chat completion took 476.230082988739ms[39m
+[1693475642698] [36m[OPENAI] Tokens per second: 2.0998253485461693tps[39m
+[1693475642698] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475642889] --- Observations received -- 
+[1693475642895] {
+  "observerId": "A5",
+  "observation": "Eli Green no longer sees Tree (479) at X: 45.24001, Y: 10.2",
+  "time": 50.2005424
+}
+[1693475642895] [Character] Getting character: A5
+[1693475642959] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475642961] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green no longer sees Tree (479) at X: 45.24001, Y: 10.2"
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475642961] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475642961] [33m[OPENAI] Creating embedding...[39m
+[1693475643093] [32m[OPENAI] Embedding created successfully.[39m
+[1693475643137] --- Observations received -- 
+[1693475643139] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78.",
+  "time": 50.4421844
+}
+[1693475643139] [Character] Getting character: A5
+[1693475643203] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475643205] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475643205] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475643205] [33m[OPENAI] Creating embedding...[39m
+[1693475643269] {
+  "id": "chatcmpl-7tYfDKRTiZh4k69125d2jTM81Px7D",
+  "object": "chat.completion",
+  "created": 1693475643,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 1,
+    "total_tokens": 107
+  }
+}
+[1693475643269] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475643269] [36m[OPENAI] Chat completion took 308.3402500152588ms[39m
+[1693475643269] [36m[OPENAI] Tokens per second: 3.2431704908798418tps[39m
+[1693475643270] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475643368] [32m[OPENAI] Embedding created successfully.[39m
+[1693475643443] {
+  "id": "chatcmpl-7tYfDDq9471GtcFd483NyFbXHMi0C",
+  "object": "chat.completion",
+  "created": 1693475643,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "4"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 1,
+    "total_tokens": 107
+  }
+}
+[1693475643443] {
+  "role": "assistant",
+  "content": "4"
+}
+[1693475643443] [36m[OPENAI] Chat completion took 237.53320801258087ms[39m
+[1693475643443] [36m[OPENAI] Tokens per second: 4.209937668787075tps[39m
+[1693475643443] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475643512] --- Observations received -- 
+[1693475643512] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Large) at X: 40.75, Y: 19.74.",
+  "time": 50.822197
+}
+[1693475643512] [Character] Getting character: A5
+[1693475643512] --- Observations received -- 
+[1693475643512] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Small) at X: 45.73, Y: 15.31.",
+  "time": 50.822197
+}
+[1693475643512] [Character] Getting character: A5
+[1693475643568] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475643569] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Large) at X: 40.75, Y: 19.74."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475643569] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475643569] [33m[OPENAI] Creating embedding...[39m
+[1693475643594] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475643595] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Small) at X: 45.73, Y: 15.31."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475643595] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475643595] [33m[OPENAI] Creating embedding...[39m
+[1693475643776] [32m[OPENAI] Embedding created successfully.[39m
+[1693475643916] {
+  "id": "chatcmpl-7tYfDWLLXNsy6OAEC717eJb9KnW22",
+  "object": "chat.completion",
+  "created": 1693475643,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 1,
+    "total_tokens": 107
+  }
+}
+[1693475643916] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475643916] [36m[OPENAI] Chat completion took 346.6782500743866ms[39m
+[1693475643917] [36m[OPENAI] Tokens per second: 2.884519002231696tps[39m
+[1693475643917] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475644119] {
+  "id": "chatcmpl-7tYfDleGSwn2031rsJlxmcvoxi5de",
+  "object": "chat.completion",
+  "created": 1693475643,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "2"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 1,
+    "total_tokens": 107
+  }
+}
+[1693475644119] {
+  "role": "assistant",
+  "content": "2"
+}
+[1693475644119] [36m[OPENAI] Chat completion took 523.5578329563141ms[39m
+[1693475644119] [36m[OPENAI] Tokens per second: 1.9100086696314225tps[39m
+[1693475644119] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475644185] [32m[OPENAI] Embedding created successfully.[39m
+[1693475644209] --- Observations received -- 
+[1693475644210] {
+  "observerId": "A5",
+  "observation": "Eli Green sees Stone Ore Deposit (Medium) at X: 46.05, Y: 17.85.",
+  "time": 51.5211372
+}
+[1693475644210] [Character] Getting character: A5
+[1693475644270] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475644271] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green sees Stone Ore Deposit (Medium) at X: 46.05, Y: 17.85."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475644271] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475644271] [33m[OPENAI] Creating embedding...[39m
+[1693475644293] --- Observations received -- 
+[1693475644294] {
+  "observerId": "A5",
+  "observation": "Eli Green finished walking to 41.33658, Y: 13.99647.",
+  "time": 51.5999832
+}
+[1693475644294] [Character] Getting character: A5
+[1693475644308] [Character] Getting character: A5
+[1693475644344] [33m[OPENAI] Creating embedding...[39m
+[1693475644354] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475644354] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green finished walking to 41.33658, Y: 13.99647."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475644354] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475644354] [33m[OPENAI] Creating embedding...[39m
+[1693475644506] [32m[OPENAI] Embedding created successfully.[39m
+[1693475644510] [32m[OPENAI] Embedding created successfully.[39m
+[1693475644511] [32m[OPENAI] Embedding created successfully.[39m
+[1693475644611] {
+  "id": "chatcmpl-7tYfElZg1r9jurUSvLg2ZjHlKG0OE",
+  "object": "chat.completion",
+  "created": 1693475644,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "6"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 1,
+    "total_tokens": 107
+  }
+}
+[1693475644611] {
+  "role": "assistant",
+  "content": "6"
+}
+[1693475644611] [36m[OPENAI] Chat completion took 340.10058403015137ms[39m
+[1693475644611] [36m[OPENAI] Tokens per second: 2.940306623852624tps[39m
+[1693475644611] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475644683] {
+  "id": "chatcmpl-7tYfEtaMpswsE44s1ycZYmO8F6mL4",
+  "object": "chat.completion",
+  "created": 1693475644,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 101,
+    "completion_tokens": 1,
+    "total_tokens": 102
+  }
+}
+[1693475644684] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475644684] [36m[OPENAI] Chat completion took 328.4123749732971ms[39m
+[1693475644684] [36m[OPENAI] Tokens per second: 3.044952249687025tps[39m
+[1693475644684] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475645033] [33m[OPENAI] Creating embedding...[39m
+[1693475645709] [32m[OPENAI] Embedding created successfully.[39m
+[1693475646159] [33m[OPENAI] Creating embedding...[39m
+[1693475646288] [32m[OPENAI] Embedding created successfully.[39m
+[1693475646688] [33m[OPENAI] Creating embedding...[39m
+[1693475646885] [32m[OPENAI] Embedding created successfully.[39m
+[1693475647264] [33m[OPENAI] Creating embedding...[39m
+[1693475647417] [32m[OPENAI] Embedding created successfully.[39m
+[1693475647823] [33m[OPENAI] Creating embedding...[39m
+[1693475647973] [32m[OPENAI] Embedding created successfully.[39m
+[1693475648349] [33m[OPENAI] Creating embedding...[39m
+[1693475648688] [32m[OPENAI] Embedding created successfully.[39m
+[1693475649075] [33m[OPENAI] Creating embedding...[39m
+[1693475649225] [32m[OPENAI] Embedding created successfully.[39m
+[1693475649572] [33m[OPENAI] Creating embedding...[39m
+[1693475649866] [32m[OPENAI] Embedding created successfully.[39m
+[1693475650206] [33m[OPENAI] Creating embedding...[39m
+[1693475650527] [32m[OPENAI] Embedding created successfully.[39m
+[1693475650825] [33m[OPENAI] Creating embedding...[39m
+[1693475651068] [32m[OPENAI] Embedding created successfully.[39m
+[1693475651375] [33m[OPENAI][gpt-4] Creating chat completion...[39m
+[1693475651383] {
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You must select a function to call, and you can only call functions that have been provided. Do not provide any additional explanation."
+    },
+    {
+      "role": "user",
+      "content": "Character: \n- ID: A5\n- Name: Eli Green\n- Age: 12\n- Occupation: Explorer\n- Personality: Curious, Energetic, Kind-hearted\n\nLocation: 41.20406, 14.52373\n\nTime: Day 0, 5:09 AM\n\nHunger: Well-fed\n\nEnvironment:\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 41.33658, Y: 13.99647, Distance: 0.5436535m]\n- Stone Ore Deposit (Medium) (Health: 10/10) [X: 42.53862, Y: 17.00157, Distance: 2.814375m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 38.24, Y: 15.93, Distance: 3.280741m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 45.73, Y: 15.31, Distance: 4.593726m]\n- Stone Ore Deposit (Large) (Health: 10/10) [X: 40.75, Y: 19.74, Distance: 5.235996m]\n- Stone Ore Deposit (Medium) (Health: 10/10) [X: 38.03, Y: 18.78, Distance: 5.309476m]\n- Stone Ore Deposit (Medium) (Health: 10/10) [X: 46.05, Y: 17.85, Distance: 5.877684m]\n- Tree (Health: 10/10) [X: 45.24001, Y: 10.2, Distance: 5.914681m]\n- Stone Ore Deposit (Large) (Health: 10/10) [X: 44.3, Y: 20.36, Distance: 6.606579m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 35.5, Y: 18.48, Distance: 6.941788m]\n- Tree (Health: 10/10) [X: 47.72001, Y: 10.21, Distance: 7.814457m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 47.58, Y: 19.17, Distance: 7.88926m]\n- Stone Ore Deposit (Large) (Health: 10/10) [X: 41.29, Y: 22.52, Distance: 7.996733m]\n- Stone Ore Deposit (Small) (Health: 5/5) [X: 37.2, Y: 21.65, Distance: 8.174121m]\n\nInventory (3/10):\n- Axe x 1\n- Pickaxe x 1\n- Sword x 1\n\nTasks:\n[\n  {\n    \"task\": \"Eat your berries\",\n    \"priority\": 1\n  },\n  {\n    \"task\": \"Explore and gather resources\",\n    \"priority\": 2\n  },\n  {\n    \"task\": \"Investigate nearest Stone Ore Deposit\",\n    \"priority\": 3\n  },\n  {\n    \"task\": \"Investigate nearest Tree\",\n    \"priority\": 4\n  },\n  {\n    \"task\": \"Chop down a tree with your Axe\",\n    \"priority\": 5\n  },\n  {\n    \"task\": \"Mine Ore from the Deposit with your Pickaxe\",\n    \"priority\": 6\n  },\n  {\n    \"task\": \"Interact with nature, learn the story of a tree\",\n    \"priority\": 7\n  },\n  {\n    \"task\": \"Check your secret clearing in the forest\",\n    \"priority\": 8\n  },\n  {\n    \"task\": \"Catch up with other villagers\",\n    \"priority\": 9\n  },\n  {\n    \"task\": \"Carry out your daily duties\",\n    \"priority\": 10\n  },\n  {\n    \"task\": \"Maintain a healthy lifestyle\",\n    \"priority\": 11\n  }\n]\n\nMemories:\n- Eli Green sees Stone Ore Deposit (Medium) at X: 46.05, Y: 17.85. [0 minutes ago]\n- Eli Green sees Stone Ore Deposit (Large) at X: 40.75, Y: 19.74. [4 minutes ago]\n- Eli Green sees Stone Ore Deposit (Small) at X: 45.73, Y: 15.31. [4 minutes ago]\n- Eli Green sees Stone Ore Deposit (Medium) at X: 38.03, Y: 18.78. [6 minutes ago]\n- Eli Green sees Stone Ore Deposit (Medium) at X: 42.53862, Y: 17.00157. [12 minutes ago]\n- Eli Green sees Tree at X: 45.24001, Y: 10.2. [16 minutes ago]\n- Eli Green sees Stone Ore Deposit (Small) at X: 38.24, Y: 15.93. [16 minutes ago]\n- I dreamt I could fly like a bird, seeing the world from above. Maybe one day... [5 hours ago]\n- I've learned to move silently. That way, nature doesn’t hide from me. [5 hours ago]\n- The world feels so big and full of wonders, I want to see them all! [5 hours ago]\n\nPrevious Actions:\n- [eat]: Eli Green ate Berries which restored 10 satiety. [1 hours ago]\n- [move_to]: Eli Green walked to X: 41.33658, Y: 13.99647. [0 minutes ago]\n\nGiven the available information, pick the best available action function to accomplish your tasks.\n\n\n"
+    }
+  ],
+  "functions": [
+    {
+      "name": "move_to",
+      "description": "Move to a target location",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "x": {
+            "type": "number",
+            "description": "The X coordinate of the target location."
+          },
+          "y": {
+            "type": "number",
+            "description": "The Y coordinate of the target location."
+          }
+        }
+      }
+    },
+    {
+      "name": "swing_axe",
+      "description": "Swing Axe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_axe",
+      "description": "Drop Axe onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "swing_pickaxe",
+      "description": "Swing Pickaxe.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_pickaxe",
+      "description": "Drop Pickaxe onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "swing_sword",
+      "description": "Swing sword.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          }
+        }
+      }
+    },
+    {
+      "name": "drop_sword",
+      "description": "Drop Sword onto the ground.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "characterId": {
+            "type": "string",
+            "description": "The character ID of the character that is adding the item to the chest."
+          },
+          "itemId": {
+            "type": "string",
+            "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+            "values": [
+              "wood",
+              "stone",
+              "iron",
+              "diamond",
+              "copper",
+              "coal",
+              "axe",
+              "pickaxe",
+              "sword",
+              "berries"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "function_call": "auto"
+}
+[1693475651384] {
+  "X-Starlight-Tag": "getAction",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475656360] {
+  "id": "chatcmpl-7tYfLawXv7mHvdeMzO45mQ5HPIYSX",
+  "object": "chat.completion",
+  "created": 1693475651,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "move_to",
+          "arguments": "{\n  \"characterId\": \"A5\",\n  \"x\": 41.33658,\n  \"y\": 13.99647\n}"
+        }
+      },
+      "finish_reason": "function_call"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1670,
+    "completion_tokens": 37,
+    "total_tokens": 1707
+  }
+}
+[1693475656360] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A5\",\n  \"x\": 41.33658,\n  \"y\": 13.99647\n}"
+  }
+}
+[1693475656360] [36m[OPENAI] Chat completion took 4975.659833908081ms[39m
+[1693475656360] [36m[OPENAI] Tokens per second: 7.436199666997479tps[39m
+[1693475656361] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475656373] --- Observations received -- 
+[1693475656373] {
+  "observerId": "A5",
+  "observation": "Eli Green has started walking to 41.33658, Y: 13.99647.",
+  "time": 63.685112
+}
+[1693475656373] [Character] Getting character: A5
+[1693475656431] --- Observations received -- 
+[1693475656431] {
+  "observerId": "A5",
+  "observation": "Eli Green finished walking to 41.33658, Y: 13.99647.",
+  "time": 63.73998
+}
+[1693475656431] [Character] Getting character: A5
+[1693475656434] [Character] Getting character: A5
+[1693475656501] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475656502] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green has started walking to 41.33658, Y: 13.99647."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475656502] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475656502] [33m[OPENAI] Creating embedding...[39m
+[1693475656505] [33m[OPENAI][gpt-3.5-turbo] Creating chat completion...[39m
+[1693475656505] {
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "On the scale of 1 to 10, where 1 is purely mundane (e.g., waking up, making bed) and 10 is extremely poignant (e.g., a break up, a family death), rate the likely poignancy of the following piece of memory. Only return the number."
+    },
+    {
+      "role": "user",
+      "content": "Memory: Eli Green finished walking to 41.33658, Y: 13.99647."
+    },
+    {
+      "role": "assistant",
+      "content": "Rating: "
+    }
+  ]
+}
+[1693475656505] {
+  "X-Starlight-Tag": "getMemoryImportance",
+  "X-Starlight-Run": "1693475582085"
+}
+[1693475656505] [33m[OPENAI] Creating embedding...[39m
+[1693475656510] [33m[OPENAI] Creating embedding...[39m
+[1693475656720] [32m[OPENAI] Embedding created successfully.[39m
+[1693475656724] [32m[OPENAI] Embedding created successfully.[39m
+[1693475656740] [32m[OPENAI] Embedding created successfully.[39m
+[1693475656741] {
+  "id": "chatcmpl-7tYfQeKmVe27eO2X1Ly28anSVyqsb",
+  "object": "chat.completion",
+  "created": 1693475656,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "5"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 102,
+    "completion_tokens": 1,
+    "total_tokens": 103
+  }
+}
+[1693475656741] {
+  "role": "assistant",
+  "content": "5"
+}
+[1693475656742] [36m[OPENAI] Chat completion took 239.67391693592072ms[39m
+[1693475656742] [36m[OPENAI] Tokens per second: 4.172335533145896tps[39m
+[1693475656742] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475656807] {
+  "id": "chatcmpl-7tYfQ4rkPbkO2SYfd6BYsCnmBeypz",
+  "object": "chat.completion",
+  "created": 1693475656,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "3"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 101,
+    "completion_tokens": 1,
+    "total_tokens": 102
+  }
+}
+[1693475656807] {
+  "role": "assistant",
+  "content": "3"
+}
+[1693475656807] [36m[OPENAI] Chat completion took 301.7506250143051ms[39m
+[1693475656807] [36m[OPENAI] Tokens per second: 3.313994792728575tps[39m
+[1693475656807] [32m[OPENAI] Chat completion created successfully.[39m
+[1693475657172] [33m[OPENAI] Creating embedding...[39m

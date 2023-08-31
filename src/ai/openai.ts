@@ -84,11 +84,9 @@ async function createChatCompletion(
     };
 
     if (functions) {
-        openaiArgs["functions"] = functions;
+        openaiArgs["functions"] = functions;    
         openaiArgs["function_call"] = "auto";
     }
-
-    log(openaiArgs);
 
     let headers = {};
     if (tag) {
@@ -98,8 +96,6 @@ async function createChatCompletion(
     if (run) {
         headers["X-Starlight-Run"] = run;
     }
-
-    log(headers);
 
     let requestAttempts = 0;
     while (requestAttempts < config.requestAttempts) {
