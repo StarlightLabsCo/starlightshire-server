@@ -7,7 +7,7 @@ import {
 import { Character } from "@prisma/client";
 import config from "../config.json" assert { type: "json" };
 import colors from "colors";
-import { log } from "../logger.js";
+import { log, replayTimestamp } from "../logger.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
@@ -45,14 +45,20 @@ const answerReflectionQuestion = async (
 
     log(reflectionPrompt, "info", character.id);
 
-    const completion = await createChatCompletion([
-        {
-            role: "system",
-            content:
-                "The job of the reflection system is to take the observations, and memories of characters and generative higher level insights from their point of view. Please avoid breaking the fourth wall.",
-        },
-        { role: "user", content: reflectionPrompt },
-    ]);
+    const completion = await createChatCompletion(
+        [
+            {
+                role: "system",
+                content:
+                    "The job of the reflection system is to take the observations, and memories of characters and generative higher level insights from their point of view. Please avoid breaking the fourth wall.",
+            },
+            { role: "user", content: reflectionPrompt },
+        ],
+        undefined,
+        undefined,
+        replayTimestamp.getTime().toString(),
+        "answerReflectionQuestion"
+    );
 
     log(completion);
 
@@ -98,14 +104,20 @@ const generateReflection = async (character: Character, time: number) => {
 
     log(generateReflectionQuestionsPrompt, "info", character.id);
 
-    const completion = await createChatCompletion([
-        {
-            role: "system",
-            content:
-                "The job of the reflection system is to take the observations, and memories of characters and generate reflection questions that they might have from their point of view. Please avoid breaking the fourth wall.",
-        },
-        { role: "user", content: generateReflectionQuestionsPrompt },
-    ]);
+    const completion = await createChatCompletion(
+        [
+            {
+                role: "system",
+                content:
+                    "The job of the reflection system is to take the observations, and memories of characters and generate reflection questions that they might have from their point of view. Please avoid breaking the fourth wall.",
+            },
+            { role: "user", content: generateReflectionQuestionsPrompt },
+        ],
+        undefined,
+        undefined,
+        replayTimestamp.getTime().toString(),
+        "generateReflection"
+    );
 
     log(completion, "info", character.id);
 

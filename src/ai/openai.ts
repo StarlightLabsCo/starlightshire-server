@@ -9,24 +9,38 @@ import { log } from "../logger.js";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-    // baseURL: "https://llm_cache.harrishr.workers.dev",
+    baseURL: "https://llm_cache.harrishr.workers.dev",
 });
 
 async function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function getEmbedding(input: string) {
+async function getEmbedding(input: string, run?: string, tag?: string) {
     log(colors.yellow("[OPENAI] Creating embedding..."));
 
     let requestAttempts = 0;
 
+    let headers = {};
+    if (tag) {
+        headers["X-Starlight-Tag"] = tag;
+    }
+
+    if (run) {
+        headers["X-Starlight-Run"] = run;
+    }
+
     while (requestAttempts < config.requestAttempts) {
         try {
-            const response = await openai.embeddings.create({
-                model: config.embeddingModel,
-                input: input,
-            });
+            const response = await openai.embeddings.create(
+                {
+                    model: config.embeddingModel,
+                    input: input,
+                },
+                {
+                    headers,
+                }
+            );
 
             log(colors.green("[OPENAI] Embedding created successfully."));
             return response.data[0].embedding;
@@ -52,7 +66,9 @@ async function getEmbedding(input: string) {
 async function createChatCompletion(
     messages: OpenAI.Chat.Completions.CreateChatCompletionRequestMessage[],
     functions?: OpenAI.Chat.Completions.CompletionCreateParams.CreateChatCompletionRequestNonStreaming.Function[],
-    model: string = config.model
+    model: string = config.model,
+    run?: string,
+    tag?: string
 ) {
     log(
         colors.yellow(
@@ -62,32 +78,37 @@ async function createChatCompletion(
         )
     );
 
+    let openaiArgs = {
+        model: model ? model : config.model,
+        messages: messages,
+    };
+
+    if (functions) {
+        openaiArgs["functions"] = functions;
+        openaiArgs["function_call"] = "auto";
+    }
+
+    log(openaiArgs);
+
+    let headers = {};
+    if (tag) {
+        headers["X-Starlight-Tag"] = tag;
+    }
+
+    if (run) {
+        headers["X-Starlight-Run"] = run;
+    }
+
+    log(headers);
+
     let requestAttempts = 0;
     while (requestAttempts < config.requestAttempts) {
         try {
             const startTime = performance.now();
 
-            let response;
-
-            if (functions) {
-                log(
-                    colors.yellow(
-                        `[OPENAI] Using ${functions.length} functions.`
-                    )
-                );
-                response = await openai.chat.completions.create({
-                    model: model ? model : config.model,
-                    messages: messages,
-                    functions: functions,
-                    function_call: "auto",
-                });
-            } else {
-                log(colors.yellow(`[OPENAI] No functions provided.`));
-                response = await openai.chat.completions.create({
-                    model: model ? model : config.model,
-                    messages: messages,
-                });
-            }
+            let response = await openai.chat.completions.create(openaiArgs, {
+                headers,
+            });
 
             const endTime = performance.now();
 

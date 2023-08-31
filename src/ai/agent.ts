@@ -4,7 +4,7 @@ import OpenAI from "openai";
 import { Memory } from "@prisma/client";
 
 import { Action } from "../actions.js";
-import { globalLogPath, log } from "../logger.js";
+import { globalLogPath, log, replayTimestamp } from "../logger.js";
 import { getCharacter } from "../character.js";
 import { getUnfinishedTasks, updateTasks } from "./task.js";
 import {
@@ -269,16 +269,22 @@ async function updateTaskList(data: {
             log("--- Prompt ---", "info", character.id);
             log(prompt, "info", character.id);
 
-            const response = await createChatCompletion([
-                {
-                    role: "user",
-                    content: prompt,
-                },
-                {
-                    role: "assistant",
-                    content: "Updated Tasks:",
-                },
-            ]);
+            const response = await createChatCompletion(
+                [
+                    {
+                        role: "user",
+                        content: prompt,
+                    },
+                    {
+                        role: "assistant",
+                        content: "Updated Tasks:",
+                    },
+                ],
+                undefined,
+                undefined,
+                replayTimestamp.getTime().toString(),
+                "updateTaskList"
+            );
 
             log("--- Response ---", "info", character.id);
             log("Updated Tasks: ", "info", character.id);
@@ -349,16 +355,22 @@ async function updateTaskListAfterConversation(
             );
             log(prompt, "info", character.id);
 
-            const response = await createChatCompletion([
-                {
-                    role: "user",
-                    content: prompt,
-                },
-                {
-                    role: "assistant",
-                    content: "Updated Tasks:",
-                },
-            ]);
+            const response = await createChatCompletion(
+                [
+                    {
+                        role: "user",
+                        content: prompt,
+                    },
+                    {
+                        role: "assistant",
+                        content: "Updated Tasks:",
+                    },
+                ],
+                undefined,
+                undefined,
+                replayTimestamp.getTime().toString(),
+                "updateTaskListAfterConversation"
+            );
 
             log("--- Response ---", "info", character.id);
             log("Updated Tasks: ", "info", character.id);
@@ -423,7 +435,7 @@ async function getAction(
 
     if (actionCounter[data.characterId] % 5 == 0) {
         // Every 5 actions, update the task list
-        
+
         await updateTaskList(data);
     }
     count++;
@@ -629,7 +641,10 @@ async function getAction(
                         content: prompt,
                     },
                 ],
-                actions
+                actions,
+                undefined,
+                replayTimestamp.getTime().toString(),
+                "getAction"
             );
 
             if (occupiedAgents[character.id]) {

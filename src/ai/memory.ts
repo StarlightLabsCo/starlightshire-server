@@ -6,7 +6,7 @@ import { createChatCompletion, getEmbedding } from "./openai.js";
 import { generateReflection } from "./reflection.js";
 
 import config from "../config.json" assert { type: "json" };
-import { log } from "../logger.js";
+import { log, replayTimestamp } from "../logger.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
@@ -27,7 +27,9 @@ const getMemoryImportance = async (character: Character, memory: string) => {
             },
         ],
         undefined,
-        "gpt-3.5-turbo"
+        "gpt-3.5-turbo",
+        replayTimestamp.getTime().toString(),
+        "getMemoryImportance"
     );
 
     // Convert from string to number
@@ -67,7 +69,11 @@ const createMemory = async (
 
     const [importance, embedding] = await Promise.all([
         getMemoryImportance(latestCharacter, memory),
-        getEmbedding(memory),
+        getEmbedding(
+            memory,
+            replayTimestamp.getTime().toString(),
+            "createMemory"
+        ),
     ]);
 
     // Create the memory, and update the character's reflection threshold

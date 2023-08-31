@@ -2,14 +2,15 @@ import fs from "fs";
 import fsPromises from "fs/promises";
 import { createInterface } from "readline";
 
-let globalLogPath;
-let globalLogMap;
+let replayTimestamp: Date;
+let globalLogPath: string;
+let globalLogMap: Map<string | undefined, Logger>;
 
 export type LogLevel = "info" | "warn" | "error";
 
 async function initLogging(cliDescription: string | undefined) {
     // Create the run-specific log directory
-    const replayTimestamp = new Date();
+    replayTimestamp = new Date();
     globalLogPath = `./data/${replayTimestamp.getTime()}/`;
     fs.mkdirSync(globalLogPath);
 
@@ -130,4 +131,11 @@ class Logger {
     }
 }
 
-export { globalLogPath, globalLogMap, initLogging, createLogger, log };
+export {
+    replayTimestamp,
+    globalLogPath,
+    globalLogMap,
+    initLogging,
+    createLogger,
+    log,
+};

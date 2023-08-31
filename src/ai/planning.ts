@@ -4,6 +4,7 @@ import config from "../config.json" assert { type: "json" };
 import { Character } from "@prisma/client";
 import { prisma } from "../db.js";
 import { createChatCompletion } from "./openai.js";
+import { replayTimestamp } from "../logger.js";
 
 if (!config.model) throw new Error("No model provided in config.json");
 
@@ -32,13 +33,18 @@ const generatePlan = async (character: Character) => {
         "'s potential schedule today only. Do not create a schedule for any other day. Do not provide any disclaimers or text outside of the schedule in the response. Please provide each time period in the format of 'HH:MM - HH:MM: <action/event>, with each on a new line.\n";
 
     // Generate the plan
-    const completion = await createChatCompletion([
-        { role: "user", content: planningPrompt },
-    ]);
+    const completion = await createChatCompletion(
+        [{ role: "user", content: planningPrompt }],
+        undefined,
+        undefined,
+        replayTimestamp.getTime().toString(),
+        "generatePlan"
+    );
 
-    const plans = completion.split("\n");
+    // const plans = completion.split("\n");
 
-    return plans;
+    // return plans;
+    return;
 };
 
 async function decomposePlan(character: Character, plan: string) {
@@ -55,9 +61,13 @@ async function decomposePlan(character: Character, plan: string) {
     prompt += `Create a schedule of subtasks to complete the following task within the provided timeframe. Do not create tasks outside this time frame. Please keep the same format, just with smaller time increments. Decompose this task: ${plan}\n`;
 
     // Generate the subtasks
-    const completion = await createChatCompletion([
-        { role: "user", content: prompt },
-    ]);
+    const completion = await createChatCompletion(
+        [{ role: "user", content: prompt }],
+        undefined,
+        undefined,
+        replayTimestamp.getTime().toString(),
+        "decomposePlan"
+    );
 
     return completion;
 }
@@ -78,9 +88,13 @@ const generateSummaryInfo = async (
     }
     prompt += question + "\n";
 
-    const completion = await createChatCompletion([
-        { role: "user", content: prompt },
-    ]);
+    const completion = await createChatCompletion(
+        [{ role: "user", content: prompt }],
+        undefined,
+        undefined,
+        replayTimestamp.getTime().toString(),
+        "generateSummaryInfo"
+    );
 
     return completion;
 };
