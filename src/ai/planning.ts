@@ -1,4 +1,4 @@
-import { getCharacter } from "../character.js";
+import { getCharacter } from "../seed.js";
 import { getRelevantMemories } from "./memory.js";
 import config from "../config.json" assert { type: "json" };
 import { Character } from "@prisma/client";
@@ -37,8 +37,8 @@ const generatePlan = async (character: Character) => {
         [{ role: "user", content: planningPrompt }],
         undefined,
         undefined,
-        replayTimestamp.getTime().toString(),
-        "generatePlan"
+        "generatePlan",
+        character.id
     );
 
     // const plans = completion.split("\n");
@@ -65,8 +65,8 @@ async function decomposePlan(character: Character, plan: string) {
         [{ role: "user", content: prompt }],
         undefined,
         undefined,
-        replayTimestamp.getTime().toString(),
-        "decomposePlan"
+        "decomposePlan",
+        character.id
     );
 
     return completion;
@@ -92,8 +92,8 @@ const generateSummaryInfo = async (
         [{ role: "user", content: prompt }],
         undefined,
         undefined,
-        replayTimestamp.getTime().toString(),
-        "generateSummaryInfo"
+        "generateSummaryInfo",
+        character.id
     );
 
     return completion;

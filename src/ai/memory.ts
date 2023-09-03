@@ -1,5 +1,5 @@
 import { prisma } from "../db.js";
-import { Character } from "@prisma/client";
+import { Character, Memory } from "@prisma/client";
 import colors from "colors";
 
 import { createChatCompletion, getEmbedding } from "./openai.js";
@@ -28,8 +28,8 @@ const getMemoryImportance = async (character: Character, memory: string) => {
         ],
         undefined,
         "gpt-3.5-turbo",
-        replayTimestamp.getTime().toString(),
-        "getMemoryImportance"
+        "getMemoryImportance",
+        character.id
     );
 
     // Convert from string to number
@@ -69,11 +69,7 @@ const createMemory = async (
 
     const [importance, embedding] = await Promise.all([
         getMemoryImportance(latestCharacter, memory),
-        getEmbedding(
-            memory,
-            replayTimestamp.getTime().toString(),
-            "createMemory"
-        ),
+        getEmbedding(memory, "createMemory", character.id),
     ]);
 
     // Create the memory, and update the character's reflection threshold
@@ -87,13 +83,22 @@ const createMemory = async (
             memories: {
                 create: {
                     memory,
-                    embedding: embedding.toString(),
                     importance: importance,
                     time,
                 },
             },
         },
+        include: {
+            memories: true,
+        },
     });
+
+    // Get the id of the newly created memory
+    const newMemoryId =
+        updatedCharacter.memories[updatedCharacter.memories.length - 1].id;
+
+    // Update the memory with the embedding
+    await prisma.$executeRaw`UPDATE "Memory" SET "embedding" = ${embedding}::vector WHERE "id" = ${newMemoryId}`;
 
     if (updatedCharacter.reflectionThreshold >= config.reflectionThreshold) {
         // Reset the threshold
@@ -163,21 +168,23 @@ const getRelevantMemories = async (
     updateAccessedAt: boolean = true
 ) => {
     // Get the embedding of the query
-    const queryEmbedding = await getEmbedding(query);
+    const queryEmbedding = await getEmbedding(
+        query,
+        "getRelevantMemoriesQuery",
+        character.id
+    );
 
-    const memories = await prisma.memory.findMany({
-        where: {
-            characterId: character.id,
-        },
-    });
+    // const memories = await prisma.memory.findMany({
+    //     where: {
+    //         characterId: character.id,
+    //     },
+    // });
 
-    // Turn embedding strings into arrays that can be searched via cosign similarity
-    const memoriesWithEmbeddings = memories.map((memory) => {
-        return {
-            ...memory,
-            embedding: memory.embedding.split(",").map((e) => Number(e)),
-        };
-    });
+    const memories = (await prisma.$queryRaw`
+        SELECT * FROM "Memory" WHERE "characterId" = ${character.id}
+    `) as (Memory & {
+        embedding: number[];
+    })[];
 
     // Noramlize the memories based on their similarity, importance, and recency
     let similarityMin: number = Number.MAX_VALUE;
@@ -193,12 +200,9 @@ const getRelevantMemories = async (
     const currentTime = Date.now();
 
     // Also add the similarity to the query (so it doesn't have to be calculated again)
-    const memoriesWithSimilarity = memoriesWithEmbeddings.map((memory) => {
+    const memoriesWithSimilarity = memories.map((memory) => {
         // Similarity
-        const similarity = cosineSimilarity(
-            queryEmbedding,
-            memory.embedding as number[]
-        );
+        const similarity = cosineSimilarity(queryEmbedding, memory.embedding);
 
         // In our implementation, we treat recency as an exponential decay function
         // over the number of sandbox game hours since the memory was

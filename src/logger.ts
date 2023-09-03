@@ -57,11 +57,6 @@ function log(message: any, level: LogLevel = "info", id?: string): void {
 
     logger.log(message, level);
 }
-
-function saveAction() {}
-
-function saveResult() {}
-
 class Logger {
     private logfile: string;
     private logQueue: string[];
@@ -139,3 +134,4 @@ export {
     createLogger,
     log,
 };
+

@@ -26,7 +26,7 @@ export type StreamMessage = {
 // Starlight
 import { resetDb } from "./db.js";
 import { initLogging, log } from "./logger.js";
-import { createCharacters } from "./character.js";
+import { createCharacters, createInstance } from "./seed.js";
 import { getAction, occupyAgent, saveActionResult } from "./ai/agent.js";
 import { observe } from "./ai/observation.js";
 import {
@@ -55,7 +55,8 @@ async function main() {
 
     await initLogging(argv.m as string | undefined);
 
-    createCharacters();
+    const instance = await createInstance(argv.m as string | undefined);
+    createCharacters(instance.id);
 
     if (!process.env.PORT) {
         console.error("PORT environment variable not set");

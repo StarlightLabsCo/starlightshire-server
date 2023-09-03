@@ -41,6 +41,7 @@ function getHungerDescription(satiety: number, maxSatiety: number): string {
     if (fraction > 0.75) return "Well-fed";
     if (fraction > 0.5) return "Satisfied";
     if (fraction > 0.25) return "Hungry";
+    if (fraction > 0.1) return "Hangry";
     return "Starving";
 }
 

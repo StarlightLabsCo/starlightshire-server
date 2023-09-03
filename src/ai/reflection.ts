@@ -56,8 +56,8 @@ const answerReflectionQuestion = async (
         ],
         undefined,
         undefined,
-        replayTimestamp.getTime().toString(),
-        "answerReflectionQuestion"
+        "answerReflectionQuestion",
+        character.id
     );
 
     log(completion);
@@ -115,8 +115,8 @@ const generateReflection = async (character: Character, time: number) => {
         ],
         undefined,
         undefined,
-        replayTimestamp.getTime().toString(),
-        "generateReflection"
+        "generateReflection",
+        character.id
     );
 
     log(completion, "info", character.id);

@@ -1,13 +1,14 @@
 import {
-    Action,
     ChatMessageRoleEnum,
     CortexStep,
-    CortexValue,
+    decision,
+    externalDialog,
+    internalMonologue,
     OpenAILanguageProgramProcessor,
-} from "socialagi";
+} from "@opensouls/cortexstep";
 import { prisma } from "../db.js";
 import { createMemory, getRelevantMemories } from "./memory.js";
-import { log } from "../logger.js";
+import { log, replayTimestamp } from "../logger.js";
 import colors from "colors";
 import {
     deoccupyAgents,
@@ -15,10 +16,10 @@ import {
     updateTaskListAfterConversation,
 } from "./agent.js";
 import { Character } from "@prisma/client";
+import { z } from "zod";
+import { openaiConfig } from "./openai.js";
 
 // TODO:
-// - Add system prompt to characters in the db, oh, mainly in the characters.ts creation script
-// - Make it so characters can update their goal during conversation
 // - Upgrade patience to be more complex -- delta patience = delta information > 0
 // - ability for both parties to "remember" more contextual information from my vectordb
 // - other stats that correlate with the characters, hunger, tired, etc (i wonder if it's possible to have a meta layer where an LLM defines this  behavior)
@@ -26,18 +27,15 @@ import { Character } from "@prisma/client";
 // - ability for character 1 and character 2 to be async so it can break out of the 1:1 message pattern
 // -----------------
 
-const gpt4 = new OpenAILanguageProgramProcessor(
-    {},
-    {
-        model: "gpt-4",
-    }
-);
-
 async function setupCortexStep(
     character: Character,
     context: string,
     interlocutor: string
 ) {
+    const gpt4 = new OpenAILanguageProgramProcessor(openaiConfig, {
+        model: "gpt-4",
+    });
+
     // Init
     let characterCortexStep = new CortexStep(character.name, {
         processor: gpt4,
@@ -75,7 +73,7 @@ async function setupCortexStep(
     return characterCortexStep;
 }
 
-async function fetchCharacters(characterIds: string[]) {
+async function fetchCharacters(characterIds: string[]): Promise<Character[]> {
     let characters = [];
 
     for (const characterId of characterIds) {
@@ -93,7 +91,9 @@ async function fetchCharacters(characterIds: string[]) {
 
 async function processPriorMessage(
     character: Character,
-    characterCortexStep: CortexStep,
+    characterCortexStep:
+        | CortexStep<string>
+        | CortexStep<{ decision: string | number }>,
     characterState: {
         patience: number;
         conversationGoal: string;
@@ -137,11 +137,18 @@ async function processPriorMessage(
 
     // feel - internal
     characterCortexStep = await characterCortexStep.next(
-        Action.INTERNAL_MONOLOGUE,
+        internalMonologue(
+            "feels",
+            `A one sentence description of how ${character.name} feels about the last message beginning with the words "I feel" or "I felt".`
+        ),
         {
-            action: "feel",
-            prefix: "I feel",
-            description: `A one sentence description of how ${character.name} feels about the last message.`,
+            requestOptions: {
+                headers: {
+                    "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                    "X-Starlight-Tag": "processPriorMessage/feels",
+                    "X-Starlight-Agent-Id": character.id,
+                },
+            },
         }
     );
 
@@ -159,10 +166,19 @@ async function processPriorMessage(
 
     // explain -  did i make progress towards or accomplish my goal?
     characterCortexStep = await characterCortexStep.next(
-        Action.INTERNAL_MONOLOGUE,
+        internalMonologue(
+            "explain",
+            `A detailed explanation of the ${character.name}'s thoughts in regards to if they made progress towards their goal of ${characterState.conversationGoal}.}`
+        ),
         {
-            action: "explain",
-            description: `A detailed explanation of the ${character.name}'s thoughts in regards to if they made progress towards their goal of ${characterState.conversationGoal}.}`,
+            requestOptions: {
+                headers: {
+                    "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                    "X-Starlight-Tag":
+                        "processPriorMessage/goalProgressExplain",
+                    "X-Starlight-Agent-Id": character.id,
+                },
+            },
         }
     );
 
@@ -174,34 +190,57 @@ async function processPriorMessage(
     );
 
     // binary - did i make progress towards my goal?
-    characterCortexStep = await characterCortexStep.next(Action.DECISION, {
-        description: "Did I make progress towards my goal?",
-        choices: ["yes", "no"],
-    });
+    characterCortexStep = await characterCortexStep.next(
+        decision("Did I make progress towards my goal?", {
+            Yes: "yes",
+            No: "no",
+        }),
+        {
+            requestOptions: {
+                headers: {
+                    "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                    "X-Starlight-Tag":
+                        "processPriorMessage/goalProgressDecision",
+                    "X-Starlight-Agent-Id": character.id,
+                },
+            },
+        }
+    );
 
     log(
         colors.magenta(`[CORTEX] ${character.name} - Did I make progress? `) +
-            `[${characterCortexStep.value}]`,
+            `[${characterCortexStep.value.decision}]`,
         "info",
         character.id
     );
 
-    if (characterCortexStep.value.includes("yes")) {
-        // binary - did i accomplish my goal?
-        characterCortexStep = await characterCortexStep.next(Action.DECISION, {
-            description: "Did I accomplish my goal?",
-            choices: ["yes", "no"],
-        });
+    if (characterCortexStep.value.decision.toString().includes("yes")) {
+        characterCortexStep = await characterCortexStep.next(
+            decision("Did I accomplish my goal?", {
+                Yes: "yes",
+                No: "no",
+            }),
+            {
+                requestOptions: {
+                    headers: {
+                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Tag":
+                            "processPriorMessage/goalAccomplishDecision",
+                        "X-Starlight-Agent-Id": character.id,
+                    },
+                },
+            }
+        );
 
         log(
             colors.magenta(
                 `[CORTEX] ${character.name} - Did I accomplish my goal? `
-            ) + `[${characterCortexStep.value}]`,
+            ) + `[${characterCortexStep.value.decision}]`,
             "info",
             character.id
         );
 
-        if (characterCortexStep.value.includes("yes")) {
+        if (characterCortexStep.value.decision.toString().includes("yes")) {
             characterCortexStep = characterCortexStep.withMemory([
                 {
                     role: ChatMessageRoleEnum.Assistant,
@@ -209,7 +248,102 @@ async function processPriorMessage(
                 },
             ]);
 
-            characterState.conversationFinished = true;
+            characterCortexStep = await characterCortexStep.next(
+                internalMonologue(
+                    "explain",
+                    `A sentence describing ${character.name}'s thoughts in regards to if they should end the conversation with ${interlocutor.name} or if they have a new conversation goal in regards to talking to ${interlocutor.name}.`
+                ),
+                {
+                    requestOptions: {
+                        headers: {
+                            "X-Starlight-Run": replayTimestamp
+                                .getTime()
+                                .toString(),
+                            "X-Starlight-Tag":
+                                "processPriorMessage/endConversationOrNewGoalExplain",
+                            "X-Starlight-Agent-Id": character.id,
+                        },
+                    },
+                }
+            );
+
+            log(
+                colors.magenta(`[CORTEX] ${character.name} - Explain: `) +
+                    `${characterCortexStep.value}`,
+                "info",
+                character.id
+            );
+
+            characterCortexStep = await characterCortexStep.next(
+                decision("Should I end the conversation?", {
+                    Yes: "yes",
+                    No: "no",
+                }),
+                {
+                    requestOptions: {
+                        headers: {
+                            "X-Starlight-Run": replayTimestamp
+                                .getTime()
+                                .toString(),
+                            "X-Starlight-Tag":
+                                "processPriorMessage/endConversationDecision",
+                            "X-Starlight-Agent-Id": character.id,
+                        },
+                    },
+                }
+            );
+
+            log(
+                colors.magenta(
+                    `[CORTEX] ${character.name} - Should I end the conversation? `
+                ) + `[${characterCortexStep.value.decision}]`,
+                "info",
+                character.id
+            );
+
+            if (characterCortexStep.value.decision.toString().includes("yes")) {
+                characterCortexStep = characterCortexStep.withMemory([
+                    {
+                        role: ChatMessageRoleEnum.Assistant,
+                        content: `I'm going to end the conversation with ${interlocutor.name}.`,
+                    },
+                ]);
+
+                characterState.conversationFinished = true;
+            } else {
+                characterCortexStep = await characterCortexStep.next(
+                    internalMonologue(
+                        "decide",
+                        `A sentence describing the ${character.name}'s next goal for the conversation.`
+                    ),
+                    {
+                        requestOptions: {
+                            headers: {
+                                "X-Starlight-Run": replayTimestamp
+                                    .getTime()
+                                    .toString(),
+                                "X-Starlight-Tag":
+                                    "processPriorMessage/newGoalDecide",
+                                "X-Starlight-Agent-Id": character.id,
+                            },
+                        },
+                    }
+                );
+                characterState.conversationGoal = characterCortexStep.value;
+
+                log(
+                    colors.magenta(
+                        `[CORTEX] ${character.name} - New Goal: ${characterCortexStep.value}}`
+                    )
+                );
+
+                characterCortexStep = characterCortexStep.withMemory([
+                    {
+                        role: ChatMessageRoleEnum.Assistant,
+                        content: `My new goal in talking to ${interlocutor.name} is ${characterCortexStep.value}.`,
+                    },
+                ]);
+            }
         } else {
             characterCortexStep = characterCortexStep.withMemory([
                 {
@@ -238,7 +372,7 @@ async function processPriorMessage(
             characterCortexStep = characterCortexStep.withMemory([
                 {
                     role: ChatMessageRoleEnum.Assistant,
-                    content: `I'm out of patience with ${interlocutor.name}.`,
+                    content: `I'm out of patience with ${interlocutor.name} and I'm going to end the conversation.`,
                 },
             ]);
 
@@ -251,7 +385,9 @@ async function processPriorMessage(
 
 async function processCharacterThoughts(
     character: Character,
-    characterCortexStep: CortexStep,
+    characterCortexStep:
+        | CortexStep<string>
+        | CortexStep<{ decision: string | number }>,
     characterState: {
         patience: number;
         conversationGoal: string;
@@ -275,10 +411,18 @@ async function processCharacterThoughts(
     if (!characterState.conversationFinished) {
         // plan - internal
         characterCortexStep = await characterCortexStep.next(
-            Action.INTERNAL_MONOLOGUE,
+            internalMonologue(
+                "planning",
+                `A brief outline of what the ${character.name} is planning to do next.`
+            ),
             {
-                action: "planning",
-                description: `A brief outline of what the ${character.name} is planning to do next.`,
+                requestOptions: {
+                    headers: {
+                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Tag": "processCharacterThoughts/planning",
+                        "X-Starlight-Agent-Id": character.id,
+                    },
+                },
             }
         );
 
@@ -291,11 +435,18 @@ async function processCharacterThoughts(
 
         // say - external
         characterCortexStep = await characterCortexStep.next(
-            Action.EXTERNAL_DIALOG,
+            externalDialog(
+                "say",
+                `A sentence that ${character.name} says out loud to ${interlocutor.name}. Generally keep responses short.`
+            ),
             {
-                action: "say",
-                description:
-                    "Says out loud next. Generally keep responses short.",
+                requestOptions: {
+                    headers: {
+                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Tag": "processCharacterThoughts/say",
+                        "X-Starlight-Agent-Id": character.id,
+                    },
+                },
             }
         );
 
@@ -307,10 +458,18 @@ async function processCharacterThoughts(
         );
     } else {
         characterCortexStep = await characterCortexStep.next(
-            Action.EXTERNAL_DIALOG,
+            externalDialog(
+                "say",
+                `A sentence for ${character.name}'s goodbye to ${interlocutor.name}.`
+            ),
             {
-                action: "say",
-                description: `Goodbye ${interlocutor.name}!`,
+                requestOptions: {
+                    headers: {
+                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Tag": "processCharacterThoughts/goodbye",
+                        "X-Starlight-Agent-Id": character.id,
+                    },
+                },
             }
         );
 
@@ -327,31 +486,57 @@ async function processCharacterThoughts(
     return characterCortexStep;
 }
 
-const processMemories = async (cortexStep, character, time) => {
-    // TODO: fix this, it's inconsistent, maybe turn it into a function call with 4 parameters
-    let characterRegex = /^-\s*(.+)\s*$/m;
+const processMemories = async (
+    cortexStep: CortexStep<any>,
+    character: Character,
+    time: number
+) => {
+    const generateMemoriesFromConversation = () => {
+        return () => {
+            return {
+                name: "queryMemory",
+                description: `Pick up to 4 most salient memories from the conversation that ${character.name} would have.`,
+                parameters: z.object({
+                    memory1: z.string(),
+                    memory2: z.string(),
+                    memory3: z.string(),
+                    memory4: z.string(),
+                }),
+            };
+        };
+    };
 
-    let characterMemory = await cortexStep.queryMemory(
-        `Pick up to 4 most salient memories from the conversation that ${character.name} would have. List them in first person voice and maximum one sentence each. Use dashes to indent each memory and put them each on a new line.`
-    );
-
-    log(`Generated memories for ${character.name}: ${characterMemory}`);
-
-    let characterMemoryCount = 0;
-    let match;
-    let memories = [];
-    while ((match = characterRegex.exec(characterMemory)) !== null) {
-        createMemory(character, match[1], time);
-        memories.push(match[1]);
-        characterMemoryCount++;
-        characterMemory = characterMemory.slice(match.index + match[0].length);
-    }
+    cortexStep = await cortexStep.next(generateMemoriesFromConversation(), {
+        requestOptions: {
+            headers: {
+                "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                "X-Starlight-Tag":
+                    "processMemories/generateMemoriesFromConversation",
+                "X-Starlight-Agent-Id": character.id,
+            },
+        },
+    });
 
     log(
-        colors.yellow(
-            `[CONVERSATION] Created ${characterMemoryCount} memories for ${character.name}.`
-        )
+        colors.magenta(
+            `[CORTEX] ${
+                character.name
+            } - Memories: ${cortexStep.value.toString()}`
+        ),
+        "info"
     );
+
+    let memories = [];
+
+    for (let memory of cortexStep.value.keys) {
+        if (memory != null) {
+            memories.push(
+                createMemory(character, cortexStep.value[memory], time)
+            );
+        }
+    }
+
+    await Promise.all(memories);
 
     return memories;
 };
@@ -384,17 +569,17 @@ async function startConversation(
     ]);
 
     // Setup cortex
-    let characterCortexStep = await setupCortexStep(
+    let characterCortexStep = (await setupCortexStep(
         character,
         `I started a conversation with ${targetCharacter.name} to ${data.conversationGoal}`,
         targetCharacter.name
-    );
+    )) as CortexStep<string> | CortexStep<{ decision: string | number }>;
 
-    let targetCharacterCortexStep = await setupCortexStep(
+    let targetCharacterCortexStep = (await setupCortexStep(
         targetCharacter,
         `${character.name} started a conversation with me, although I don't know why yet.`,
         character.name
-    );
+    )) as CortexStep<string> | CortexStep<{ decision: string | number }>;
 
     // Loop
     let characterPatience = 100;
@@ -618,11 +803,11 @@ async function startNewConversationAsPlayer(
     ]);
 
     // Setup cortex
-    let targetCharacterCortexStep = await setupCortexStep(
+    let targetCharacterCortexStep = (await setupCortexStep(
         targetCharacter,
         `${player.name} started a conversation with me, although I don't know why yet.`,
         player.name
-    );
+    )) as CortexStep<string> | CortexStep<{ decision: string | number }>;
 
     // Character state
     let targetCharacterPatience = 100;

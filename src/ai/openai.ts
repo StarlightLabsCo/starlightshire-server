@@ -4,30 +4,34 @@ dotenv.config();
 
 import config from "../config.json" assert { type: "json" };
 import colors from "colors";
-import { log } from "../logger.js";
+import { log, replayTimestamp } from "../logger.js";
 
 import OpenAI from "openai";
 
-const openai = new OpenAI({
+export const openaiConfig = {
     baseURL: "https://llm_cache.harrishr.workers.dev",
-});
+};
+export const openai = new OpenAI(openaiConfig);
 
 async function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function getEmbedding(input: string, run?: string, tag?: string) {
+async function getEmbedding(input: string, tag?: string, agentId?: string) {
     log(colors.yellow("[OPENAI] Creating embedding..."));
 
     let requestAttempts = 0;
 
-    let headers = {};
+    let headers = {
+        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+    };
+
     if (tag) {
         headers["X-Starlight-Tag"] = tag;
     }
 
-    if (run) {
-        headers["X-Starlight-Run"] = run;
+    if (agentId) {
+        headers["X-Starlight-Agent-Id"] = agentId;
     }
 
     while (requestAttempts < config.requestAttempts) {
@@ -67,8 +71,8 @@ async function createChatCompletion(
     messages: OpenAI.Chat.Completions.CreateChatCompletionRequestMessage[],
     functions?: OpenAI.Chat.Completions.CompletionCreateParams.CreateChatCompletionRequestNonStreaming.Function[],
     model: string = config.model,
-    run?: string,
-    tag?: string
+    tag?: string,
+    agentId?: string
 ) {
     log(
         colors.yellow(
@@ -84,17 +88,20 @@ async function createChatCompletion(
     };
 
     if (functions) {
-        openaiArgs["functions"] = functions;    
+        openaiArgs["functions"] = functions;
         openaiArgs["function_call"] = "auto";
     }
 
-    let headers = {};
+    let headers = {
+        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+    };
+
     if (tag) {
         headers["X-Starlight-Tag"] = tag;
     }
 
-    if (run) {
-        headers["X-Starlight-Run"] = run;
+    if (agentId) {
+        headers["X-Starlight-Agent-Id"] = agentId;
     }
 
     let requestAttempts = 0;

@@ -1,0 +1,2838 @@
+[1693528486940] [Character] Creating Will
+[1693528487340] [31m[createMemory][39m Today was my first day in the mines. [0]
+[1693528487340] [31m[createMemory][39m George and Thomas have been really helpful. [0]
+[1693528487340] [31m[createMemory][39m The depth and darkness of the mines can be intimidating. [0]
+[1693528487340] [31m[createMemory][39m I accidentally broke a pickaxe on my first day. [0]
+[1693528487340] [31m[createMemory][39m The older miners have so many stories to tell. [0]
+[1693528487340] [31m[createMemory][39m I've always dreamed of being a miner like my father. [0]
+[1693528487340] [31m[createMemory][39m The echo in the mines is fascinating. [0]
+[1693528487340] [31m[createMemory][39m I need to remember to wear my helmet at all times. [0]
+[1693528487340] [31m[createMemory][39m The village has been supportive of my new journey. [0]
+[1693528487340] [31m[createMemory][39m I'm still learning the different routes in the mine. [0]
+[1693528487341] [31m[createMemory][39m I was startled by the sound of a mine cart today. [0]
+[1693528487341] [31m[createMemory][39m It's tiring, but I'm determined to make everyone proud. [0]
+[1693528487341] [31m[createMemory][39m I hope to find a rare gem or mineral soon. [0]
+[1693528487341] [31m[createMemory][39m The lanterns light up the mines in such a mysterious way. [0]
+[1693528487341] [31m[createMemory][39m I can't wait to tell my family about my adventures here. [0]
+[1693528519184] [31m[createMemory][39m Will Turner sees Tree at X: 38.75, Y: -9.01. [0.0199999921]
+[1693528519184] [31m[createMemory][39m Will Turner sees Tree at X: 41.03, Y: -11.7. [0.0199999921]
+[1693528519184] [31m[createMemory][39m Will Turner sees Tree at X: 42.72, Y: -12.97. [0.0199999921]
+[1693528521246] --- Prompt ---
+[1693528521246] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 43, -8.2
+
+Time: Day 0, 12:00 AM
+
+Hunger: Starving
+
+Environment:
+- Tree (Health: 10/10) [X: 41.03, Y: -11.7, Distance: 4.016331m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 4.3265m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 4.778212m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 5.561519m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 5.924998m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 6.024617m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 6.403633m]
+- Tree (Health: 10/10) [X: 44.56, Y: -1.91, Distance: 6.480564m]
+- Tree (Health: 10/10) [X: 48.91, Y: -5.23, Distance: 6.614303m]
+- Tree (Health: 10/10) [X: 46.88, Y: -2.68, Distance: 6.747207m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.760893m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 6.790065m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 6.822793m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 7.69587m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 7.871245m]
+- Tree (Health: 10/10) [X: 42, Y: -0.3199997, Distance: 7.943199m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 7.956437m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 8.184325m]
+- Tree (Health: 10/10) [X: 49.87, Y: -2.939999, Distance: 8.652428m]
+- Tree (Health: 10/10) [X: 47.63, Y: -0.7000008, Distance: 8.814017m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 1
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 2
+  },
+  {
+    "task": "Maintain a healthy lifestyle",
+    "priority": 3
+  }
+]
+
+Memories:
+- It's tiring, but I'm determined to make everyone proud. [0 minutes ago]
+- I've always dreamed of being a miner like my father. [0 minutes ago]
+- I can't wait to tell my family about my adventures here. [0 minutes ago]
+- The depth and darkness of the mines can be intimidating. [0 minutes ago]
+- I need to remember to wear my helmet at all times. [0 minutes ago]
+- The village has been supportive of my new journey. [0 minutes ago]
+- I accidentally broke a pickaxe on my first day. [0 minutes ago]
+- The echo in the mines is fascinating. [0 minutes ago]
+- The lanterns light up the mines in such a mysterious way. [0 minutes ago]
+- The older miners have so many stories to tell. [0 minutes ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [in the future]
+
+Available Actions:
+- move_to: Move to a target location
+- drop_axe: Drop Axe onto the ground.
+- drop_pickaxe: Drop Pickaxe onto the ground.
+- drop_sword: Drop Sword onto the ground.
+- eat: Eat some food.
+- drop_berries: Drop Berries onto the ground.
+
+Given the available information, update your task list. Take into consideration the time of day, environment, personality of the character, and more. Replace the entire JSON array by removing completed tasks, updating existing tasks with new information and priorities, and create new tasks based on the provided info. Keep the list as concise as possible. Remember focus on the time of day to adjust priorities.
+[1693528532122] --- Response ---
+[1693528532122] Updated Tasks: 
+[1693528532122] [
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+[1693528535306] --- Prompt ---
+[1693528535306] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 43, -8.2
+
+Time: Day 0, 12:00 AM
+
+Hunger: Starving
+
+Environment:
+- Tree (Health: 10/10) [X: 41.03, Y: -11.7, Distance: 4.016331m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 4.3265m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 4.778212m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 5.561519m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 5.924998m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 6.024617m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 6.403633m]
+- Tree (Health: 10/10) [X: 44.56, Y: -1.91, Distance: 6.480564m]
+- Tree (Health: 10/10) [X: 48.91, Y: -5.23, Distance: 6.614303m]
+- Tree (Health: 10/10) [X: 46.88, Y: -2.68, Distance: 6.747207m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.760893m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 6.790065m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 6.822793m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 7.69587m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 7.871245m]
+- Tree (Health: 10/10) [X: 42, Y: -0.3199997, Distance: 7.943199m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 7.956437m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 8.184325m]
+- Tree (Health: 10/10) [X: 49.87, Y: -2.939999, Distance: 8.652428m]
+- Tree (Health: 10/10) [X: 47.63, Y: -0.7000008, Distance: 8.814017m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Berries x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [in the future]
+- I accidentally broke a pickaxe on my first day. [0 minutes ago]
+- The depth and darkness of the mines can be intimidating. [0 minutes ago]
+- I need to remember to wear my helmet at all times. [0 minutes ago]
+- The village has been supportive of my new journey. [0 minutes ago]
+- The lanterns light up the mines in such a mysterious way. [0 minutes ago]
+- The older miners have so many stories to tell. [0 minutes ago]
+- I've always dreamed of being a miner like my father. [0 minutes ago]
+- The echo in the mines is fascinating. [0 minutes ago]
+- I can't wait to tell my family about my adventures here. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528535307] --- Action Functions ---
+[1693528535307] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "eat",
+    "description": "Eat some food.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "foodId": {
+          "type": "string",
+          "description": "The food ID of the food to be eaten.",
+          "values": [
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_berries",
+    "description": "Drop Berries onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528537515] --- Response ---
+[1693528537515] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "eat",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"foodId\": \"berries\"\n}"
+  }
+}
+[1693528537516] --- Verified Action ---
+[1693528537516] {
+  "type": "eat",
+  "data": {
+    "characterId": "A3",
+    "foodId": "berries"
+  }
+}
+[1693528541289] Getting action 0
+[1693528541289] Getting result 0
+[1693528541289] --- Prompt ---
+[1693528541289] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 43, -8.2
+
+Time: Day 0, 1:51 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree (Health: 10/10) [X: 41.03, Y: -11.7, Distance: 4.016331m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 4.3265m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 4.778212m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 5.561519m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 5.924998m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 6.024617m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 6.403633m]
+- Tree (Health: 10/10) [X: 44.56, Y: -1.91, Distance: 6.480564m]
+- Tree (Health: 10/10) [X: 48.91, Y: -5.23, Distance: 6.614303m]
+- Tree (Health: 10/10) [X: 46.88, Y: -2.68, Distance: 6.747207m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.760893m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 6.790065m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 6.822793m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 7.69587m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 7.871245m]
+- Tree (Health: 10/10) [X: 42, Y: -0.3199997, Distance: 7.943199m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 7.956437m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 8.184325m]
+- Tree (Health: 10/10) [X: 49.87, Y: -2.939999, Distance: 8.652428m]
+- Tree (Health: 10/10) [X: 47.63, Y: -0.7000008, Distance: 8.814017m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [1 hours ago]
+- I accidentally broke a pickaxe on my first day. [1 hours ago]
+- The depth and darkness of the mines can be intimidating. [1 hours ago]
+- I need to remember to wear my helmet at all times. [1 hours ago]
+- The village has been supportive of my new journey. [1 hours ago]
+- The lanterns light up the mines in such a mysterious way. [1 hours ago]
+- The older miners have so many stories to tell. [1 hours ago]
+- I've always dreamed of being a miner like my father. [1 hours ago]
+- The echo in the mines is fascinating. [1 hours ago]
+- I can't wait to tell my family about my adventures here. [1 hours ago]
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528541289] --- Action Functions ---
+[1693528541289] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528544832] --- Response ---
+[1693528544836] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528544836] --- Verified Action ---
+[1693528544837] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528544893] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [25.8209934]
+[1693528544912] [31m[createMemory][39m Will Turner sees Tree at X: 38.63, Y: -11.64. [25.86159]
+[1693528545571] [31m[createMemory][39m Will Turner sees Tree at X: 44.48, Y: -14.04. [26.5213814]
+[1693528545610] [31m[createMemory][39m Will Turner sees Tree at X: 40.96, Y: -14.27. [26.5615826]
+[1693528545877] [31m[createMemory][39m Will Turner sees Tree at X: 36.64, Y: -10.67. [26.820673]
+[1693528546322] [31m[createMemory][39m Will Turner sees Tree at X: 36.7, Y: -12.62. [27.2406769]
+[1693528546333] [31m[createMemory][39m Will Turner sees Tree at X: 38.39, Y: -14.58. [27.2802353]
+[1693528546672] [31m[createMemory][39m Will Turner sees Tree at X: 41.43, Y: -16. [27.6217079]
+[1693528546952] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [27.89999]
+[1693528550607] Getting action 0
+[1693528550607] Getting result 0
+[1693528550607] Getting action 1
+[1693528550607] Getting result 1
+[1693528550607] --- Prompt ---
+[1693528550608] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.54372, -11.35713
+
+Time: Day 0, 2:47 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree (Health: 10/10) [X: 41.03, Y: -11.7, Distance: 0.6176268m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.996242m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.927413m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.970776m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.648821m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.977377m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.509188m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.644258m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.951625m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 5.005639m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.285716m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.77328m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.160068m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.22925m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.231812m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.368248m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.876046m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.232088m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.310861m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.484823m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.803722m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.988502m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 8.057185m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.060243m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.310231m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.397471m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.416539m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.494682m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.500345m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 41.43, Y: -16. [1 minutes ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [3 minutes ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [3 minutes ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [6 minutes ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [12 minutes ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [12 minutes ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [2 hours ago]
+- I accidentally broke a pickaxe on my first day. [2 hours ago]
+- The depth and darkness of the mines can be intimidating. [2 hours ago]
+- I need to remember to wear my helmet at all times. [2 hours ago]
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [56 minutes ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528550608] --- Action Functions ---
+[1693528550612] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528552603] --- Response ---
+[1693528552603] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A3\"\n}"
+  }
+}
+[1693528552604] --- Verified Action ---
+[1693528552604] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A3"
+  }
+}
+[1693528557146] Getting action 0
+[1693528557147] Getting result 0
+[1693528557147] Getting action 1
+[1693528557147] Getting result 1
+[1693528557147] Getting action 2
+[1693528557147] Getting result 2
+[1693528557147] --- Prompt ---
+[1693528557150] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.54372, -11.35713
+
+Time: Day 0, 3:27 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree (Health: 5/10) [X: 41.03, Y: -11.7, Distance: 0.6176268m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.996242m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.927413m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.970776m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.648821m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.977377m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.509188m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.644258m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.951625m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 5.005639m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.285716m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.77328m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.160068m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.22925m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.231812m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.368248m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.876046m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.232088m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.310861m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.484823m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.803722m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.988502m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 8.057185m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.060243m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.310231m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.397471m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.416539m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.494682m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.500345m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 41.43, Y: -16. [41 minutes ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [43 minutes ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [44 minutes ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [46 minutes ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [52 minutes ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [52 minutes ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [3 hours ago]
+- I accidentally broke a pickaxe on my first day. [3 hours ago]
+- I need to remember to wear my helmet at all times. [3 hours ago]
+- The village has been supportive of my new journey. [3 hours ago]
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [1 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [40 minutes ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528557151] --- Action Functions ---
+[1693528557158] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528560566] --- Response ---
+[1693528560567] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528560569] --- Verified Action ---
+[1693528560570] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528560609] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [41.555336]
+[1693528560635] [31m[createMemory][39m Will Turner sees Tree at X: 43.22001, Y: -16.37. [41.5801277]
+[1693528560660] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [41.599987]
+[1693528564208] Getting action 0
+[1693528564208] Getting result 0
+[1693528564208] Getting action 1
+[1693528564208] Getting result 1
+[1693528564208] Getting action 2
+[1693528564208] Getting result 2
+[1693528564208] Getting action 3
+[1693528564209] Getting result 3
+[1693528564209] --- Prompt ---
+[1693528564213] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.53347, -11.3906
+
+Time: Day 0, 4:09 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree (Health: 5/10) [X: 41.03, Y: -11.7, Distance: 0.5909435m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.975435m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.914164m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.93595m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.662649m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.962489m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.478133m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.610558m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.946247m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 4.987373m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.257262m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.738769m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.142086m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.203183m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.238175m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.333479m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.844588m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.22727m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.279613m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.457637m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.792428m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.95422m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 8.022405m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.075522m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.295081m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.383652m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.422973m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.465991m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.476956m]
+
+Inventory (3/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree at X: 43.22001, Y: -16.37. [0 minutes ago]
+- Will Turner sees Tree at X: 41.43, Y: -16. [1 hours ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [1 hours ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [1 hours ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [1 hours ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [1 hours ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [1 hours ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [4 hours ago]
+- I accidentally broke a pickaxe on my first day. [4 hours ago]
+- I need to remember to wear my helmet at all times. [4 hours ago]
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [1 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [42 minutes ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528564216] --- Action Functions ---
+[1693528564218] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_axe",
+    "description": "Swing Axe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_pickaxe",
+    "description": "Swing Pickaxe.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "swing_sword",
+    "description": "Swing sword.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528566271] --- Response ---
+[1693528566272] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "swing_axe",
+    "arguments": "{\n  \"characterId\": \"A3\"\n}"
+  }
+}
+[1693528566272] --- Verified Action ---
+[1693528566272] {
+  "type": "swing_axe",
+  "data": {
+    "characterId": "A3"
+  }
+}
+[1693528566919] [31m[createMemory][39m Will Turner sees Tree Stump at X: 41.03, Y: -11.7. [47.86899]
+[1693528566920] [31m[createMemory][39m Will Turner picked up Wood at X: 41.53347, Y: -11.3906 [47.86899]
+[1693528571757] Getting action 0
+[1693528571757] Getting result 0
+[1693528571757] Getting action 1
+[1693528571757] Getting result 1
+[1693528571757] Getting action 2
+[1693528571757] Getting result 2
+[1693528571757] Getting action 3
+[1693528571757] Getting result 3
+[1693528571757] Getting action 4
+[1693528571757] Getting result 4
+[1693528571757] --- Prompt ---
+[1693528571760] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.53347, -11.3906
+
+Time: Day 0, 4:49 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 41.03, Y: -11.7, Distance: 0.5909435m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.975435m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.914164m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.93595m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.662649m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.962489m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.478133m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.610558m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.946247m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 4.987373m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.257262m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.738769m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.142086m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.203183m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.238175m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.333479m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.844588m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.22727m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.279613m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.457637m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.792428m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.95422m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 8.022405m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.075522m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.295081m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.383652m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.422973m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.465991m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.476956m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 41.03, Y: -11.7. [2 minutes ago]
+- Will Turner sees Tree at X: 43.22001, Y: -16.37. [40 minutes ago]
+- Will Turner sees Tree at X: 41.43, Y: -16. [2 hours ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [2 hours ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [2 hours ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [2 hours ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [2 hours ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [2 hours ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [4 hours ago]
+- I accidentally broke a pickaxe on my first day. [4 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [2 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [1 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [39 minutes ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.53347, Y: -11.3906 and hit 1 trees. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528571760] --- Action Functions ---
+[1693528571760] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528574602] --- Response ---
+[1693528574602] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528574603] --- Verified Action ---
+[1693528574603] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528574634] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [55.5865479]
+[1693528574690] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [55.63998]
+[1693528578308] Getting action 0
+[1693528578308] Getting result 0
+[1693528578308] Getting action 1
+[1693528578308] Getting result 1
+[1693528578308] Getting action 2
+[1693528578308] Getting result 2
+[1693528578308] Getting action 3
+[1693528578308] Getting result 3
+[1693528578308] Getting action 4
+[1693528578308] Getting result 4
+[1693528578309] Getting action 5
+[1693528578309] Getting result 5
+[1693528578309] --- Prompt ---
+[1693528578309] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.52323, -11.42407
+
+Time: Day 0, 5:33 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 41.03, Y: -11.7, Distance: 0.5651686m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.955034m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.901128m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.901277m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.676758m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.947856m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.447136m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.576878m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.941111m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 4.969286m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.228889m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.704265m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.124251m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.174621m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.247283m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.298713m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.813165m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.222618m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.2484m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.430516m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.781275m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.919944m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 7.987626m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.090924m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.280052m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.350782m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.437346m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.448543m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.453648m]
+- Tree (Health: 10/10) [X: 46.7, Y: -18.14, Distance: 8.479542m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 41.03, Y: -11.7. [46 minutes ago]
+- Will Turner sees Tree at X: 43.22001, Y: -16.37. [1 hours ago]
+- Will Turner sees Tree at X: 41.43, Y: -16. [2 hours ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [2 hours ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [2 hours ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [2 hours ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [2 hours ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [2 hours ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [5 hours ago]
+- I accidentally broke a pickaxe on my first day. [5 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [3 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [2 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [1 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.53347, Y: -11.3906 and hit 1 trees. [44 minutes ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528578310] --- Action Functions ---
+[1693528578310] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528581784] --- Response ---
+[1693528581787] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528581788] --- Verified Action ---
+[1693528581788] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528581824] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [62.772644]
+[1693528581881] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [62.8199768]
+[1693528586366] Getting action 0
+[1693528586366] Getting result 0
+[1693528586366] Getting action 1
+[1693528586366] Getting result 1
+[1693528586366] Getting action 2
+[1693528586366] Getting result 2
+[1693528586366] Getting action 3
+[1693528586366] Getting result 3
+[1693528586366] Getting action 4
+[1693528586366] Getting result 4
+[1693528586366] Getting action 5
+[1693528586366] Getting result 5
+[1693528586366] Getting action 6
+[1693528586366] Getting result 6
+[1693528586366] --- Prompt ---
+[1693528586367] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.51299, -11.45754
+
+Time: Day 0, 6:16 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 41.03, Y: -11.7, Distance: 0.5404357m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.935048m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.866311m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.88876m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.691149m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.933476m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.416202m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.543219m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.936222m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 4.951385m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.200595m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.669768m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.106563m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.146128m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.256577m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.26395m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.781775m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.217225m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.218137m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.403461m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.77026m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.885675m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 7.952851m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.106445m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.265147m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.317932m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.408753m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.430424m]
+- Tree (Health: 10/10) [X: 46.7, Y: -18.14, Distance: 8.459333m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.474176m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner sees Tree Stump at X: 41.03, Y: -11.7. [1 hours ago]
+- Will Turner sees Tree at X: 43.22001, Y: -16.37. [2 hours ago]
+- Will Turner sees Tree at X: 41.43, Y: -16. [3 hours ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [3 hours ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [3 hours ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [3 hours ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [3 hours ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [3 hours ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [6 hours ago]
+- I accidentally broke a pickaxe on my first day. [6 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [4 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [3 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [2 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.53347, Y: -11.3906 and hit 1 trees. [1 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [43 minutes ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528586367] --- Action Functions ---
+[1693528586373] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528589941] --- Response ---
+[1693528589941] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528589941] --- Verified Action ---
+[1693528589941] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528589978] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [70.92663]
+[1693528590041] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [70.97997]
+[1693528590854] [Character] Will created
+[1693528593491] Getting action 0
+[1693528593491] Getting result 0
+[1693528593491] Getting action 1
+[1693528593491] Getting result 1
+[1693528593491] Getting action 2
+[1693528593491] Getting result 2
+[1693528593491] Getting action 3
+[1693528593491] Getting result 3
+[1693528593491] Getting action 4
+[1693528593491] Getting result 4
+[1693528593491] Getting action 5
+[1693528593491] Getting result 5
+[1693528593491] Getting action 6
+[1693528593491] Getting result 6
+[1693528593491] Getting action 7
+[1693528593491] Getting result 7
+[1693528593491] --- Prompt ---
+[1693528593492] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.50275, -11.49101
+
+Time: Day 0, 7:05 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 41.03, Y: -11.7, Distance: 0.5168869m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.915495m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.831498m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.87661m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.705811m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.919359m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.385325m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.509579m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.931572m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 4.933663m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.172384m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.635276m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.089026m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.1177m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.229189m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.266049m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.750423m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.186081m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.213819m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.376473m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.759391m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.851412m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 7.918077m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.12209m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.25036m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.285097m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.380206m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.407277m]
+- Tree (Health: 10/10) [X: 46.7, Y: -18.14, Distance: 8.439224m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.499881m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner has started walking to 41.03, Y: -11.7. [0 minutes ago]
+- Will Turner sees Tree Stump at X: 41.03, Y: -11.7. [2 hours ago]
+- Will Turner sees Tree at X: 41.43, Y: -16. [4 hours ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [4 hours ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [4 hours ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [4 hours ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [4 hours ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [4 hours ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [7 hours ago]
+- Today was my first day in the mines. [7 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [5 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [4 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [3 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [2 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.53347, Y: -11.3906 and hit 1 trees. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [1 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [48 minutes ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528593492] --- Action Functions ---
+[1693528593493] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528596479] --- Response ---
+[1693528596486] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528596487] --- Verified Action ---
+[1693528596488] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528596519] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [77.4728]
+[1693528596567] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [77.51997]
+[1693528600520] Getting action 0
+[1693528600520] Getting result 0
+[1693528600520] Getting action 1
+[1693528600520] Getting result 1
+[1693528600520] Getting action 2
+[1693528600520] Getting result 2
+[1693528600520] Getting action 3
+[1693528600520] Getting result 3
+[1693528600520] Getting action 4
+[1693528600520] Getting result 4
+[1693528600520] Getting action 5
+[1693528600520] Getting result 5
+[1693528600520] Getting action 6
+[1693528600520] Getting result 6
+[1693528600520] Getting action 7
+[1693528600520] Getting result 7
+[1693528600520] Getting action 8
+[1693528600520] Getting result 8
+[1693528600520] --- Prompt ---
+[1693528600520] Character: 
+- ID: A3
+- Name: Will Turner
+- Age: 19
+- Occupation: Apprentice Miner
+- Personality: Curious, Eager, Naive
+
+Location: 41.49251, -11.52448
+
+Time: Day 0, 7:45 AM
+
+Hunger: Well-fed
+
+Environment:
+- Tree Stump (Health: 5/5) [X: 41.03, Y: -11.7, Distance: 0.4946987m]
+- Tree (Health: 10/10) [X: 42.72, Y: -12.97, Distance: 1.896384m]
+- Tree (Health: 10/10) [X: 40.96, Y: -14.27, Distance: 2.796689m]
+- Tree (Health: 10/10) [X: 38.63, Y: -11.64, Distance: 2.864841m]
+- Tree (Health: 10/10) [X: 38.75, Y: -9.01, Distance: 3.720748m]
+- Tree (Health: 10/10) [X: 44.48, Y: -14.04, Distance: 3.905502m]
+- Tree (Health: 10/10) [X: 38.39, Y: -14.58, Distance: 4.354514m]
+- Tree (Health: 10/10) [X: 41.43, Y: -16, Distance: 4.475959m]
+- Tree (Health: 10/10) [X: 36.7, Y: -12.62, Distance: 4.916131m]
+- Tree (Health: 10/10) [X: 36.64, Y: -10.67, Distance: 4.92717m]
+- Tree (Health: 10/10) [X: 43.22001, Y: -16.37, Distance: 5.144254m]
+- Tree (Health: 10/10) [X: 38.96, Y: -16.52, Distance: 5.600791m]
+- Tree (Health: 10/10) [X: 45.66, Y: -15.94, Distance: 6.071638m]
+- Tree (Health: 10/10) [X: 36.63, Y: -15.19, Distance: 6.089342m]
+- Tree Stump (Health: 5/5) [X: 40.39, Y: -17.62, Distance: 6.19443m]
+- Tree (Health: 10/10) [X: 36.24, Y: -8.09, Distance: 6.275707m]
+- Tree (Health: 10/10) [X: 42.61, Y: -18.15, Distance: 6.719104m]
+- Tree Stump (Health: 5/5) [X: 36.49, Y: -16.64, Distance: 7.154975m]
+- Tree (Health: 10/10) [X: 34.4, Y: -10.23, Distance: 7.209672m]
+- Tree (Health: 10/10) [X: 44.34, Y: -18.3, Distance: 7.34955m]
+- Tree (Health: 10/10) [X: 47.86, Y: -15.94, Distance: 7.748661m]
+- Tree (Health: 10/10) [X: 40.79, Y: -19.31, Distance: 7.817154m]
+- Tree (Health: 10/10) [X: 38.34, Y: -18.75, Distance: 7.883305m]
+- Tree (Health: 10/10) [X: 49.51, Y: -10.13, Distance: 8.137854m]
+- Tree (Health: 10/10) [X: 33.33, Y: -12.62, Distance: 8.2357m]
+- Tree (Health: 10/10) [X: 36.48, Y: -18.08, Distance: 8.252281m]
+- Tree (Health: 10/10) [X: 34.86, Y: -16.6, Distance: 8.35171m]
+- Tree (Health: 10/10) [X: 33.84, Y: -14.95, Distance: 8.384216m]
+- Tree (Health: 10/10) [X: 46.7, Y: -18.14, Distance: 8.419209m]
+- Tree (Health: 10/10) [X: 48.84, Y: -7.200001, Distance: 8.525648m]
+
+Inventory (4/10):
+- Axe x 1
+- Pickaxe x 1
+- Sword x 1
+- Wood x 1
+
+Tasks:
+[
+  {
+    "task": "eat",
+    "priority": 1
+  },
+  {
+    "task": "move_to: Nearest Tree (X: 41.03, Y: -11.7)",
+    "priority": 2
+  },
+  {
+    "task": "Cut down tree",
+    "priority": 3
+  },
+  {
+    "task": "Gather wood",
+    "priority": 4
+  },
+  {
+    "task": "Carry out your daily dutiies",
+    "priority": 5
+  },
+  {
+    "task": "Catch up with other villagers",
+    "priority": 6
+  }
+]
+
+Memories:
+- Will Turner has started walking to 41.03, Y: -11.7. [39 minutes ago]
+- Will Turner sees Tree Stump at X: 41.03, Y: -11.7. [2 hours ago]
+- Will Turner sees Tree at X: 41.43, Y: -16. [4 hours ago]
+- Will Turner sees Tree at X: 38.39, Y: -14.58. [5 hours ago]
+- Will Turner sees Tree at X: 36.7, Y: -12.62. [5 hours ago]
+- Will Turner sees Tree at X: 36.64, Y: -10.67. [5 hours ago]
+- Will Turner sees Tree at X: 38.63, Y: -11.64. [5 hours ago]
+- Will Turner has started walking to 41.03, Y: -11.7. [5 hours ago]
+- Will Turner sees Tree at X: 41.03, Y: -11.7. [7 hours ago]
+- I accidentally broke a pickaxe on my first day. [7 hours ago]
+
+Hitbox (what you would hit with a swing based action):
+- Tree Stump (Health: 5/5)
+
+Previous Actions:
+- [eat]: Will Turner ate Berries which restored 10 satiety. [5 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [4 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.54372, Y: -11.35713 and hit 1 trees. [4 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [3 hours ago]
+- [swing_axe]: Will Turner swong their axe at X: 41.53347, Y: -11.3906 and hit 1 trees. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [2 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [1 hours ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [39 minutes ago]
+- [move_to]: Will Turner walked to X: 41.03, Y: -11.7. [0 minutes ago]
+
+Given the available information, pick the best available action function to accomplish your tasks.
+
+
+[1693528600520] --- Action Functions ---
+[1693528600520] [
+  {
+    "name": "move_to",
+    "description": "Move to a target location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "x": {
+          "type": "number",
+          "description": "The X coordinate of the target location."
+        },
+        "y": {
+          "type": "number",
+          "description": "The Y coordinate of the target location."
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_axe",
+    "description": "Drop Axe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_pickaxe",
+    "description": "Drop Pickaxe onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_sword",
+    "description": "Drop Sword onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "drop_wood",
+    "description": "Drop Wood onto the ground.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "characterId": {
+          "type": "string",
+          "description": "The character ID of the character that is adding the item to the chest."
+        },
+        "itemId": {
+          "type": "string",
+          "description": "The item ID of the item that is being added to the chest. Must be lowercase.",
+          "values": [
+            "wood",
+            "stone",
+            "iron",
+            "diamond",
+            "copper",
+            "coal",
+            "axe",
+            "pickaxe",
+            "sword",
+            "berries"
+          ]
+        }
+      }
+    }
+  }
+]
+[1693528604058] --- Response ---
+[1693528604058] {
+  "role": "assistant",
+  "content": null,
+  "function_call": {
+    "name": "move_to",
+    "arguments": "{\n  \"characterId\": \"A3\",\n  \"x\": 41.03,\n  \"y\": -11.7\n}"
+  }
+}
+[1693528604058] --- Verified Action ---
+[1693528604058] {
+  "type": "move_to",
+  "data": {
+    "characterId": "A3",
+    "x": 41.03,
+    "y": -11.7
+  }
+}
+[1693528604091] [31m[createMemory][39m Will Turner has started walking to 41.03, Y: -11.7. [85.04308]
+[1693528604314] [31m[createMemory][39m Will Turner finished walking to 41.03, Y: -11.7. [85.25997]

@@ -1,4 +1,4 @@
-import { getCharacter } from "../character.js";
+import { getCharacter } from "../seed.js";
 import { log } from "../logger.js";
 import { createMemory } from "./memory.js";
 

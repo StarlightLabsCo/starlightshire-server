@@ -4,8 +4,8 @@ import OpenAI from "openai";
 import { Memory } from "@prisma/client";
 
 import { Action } from "../actions.js";
-import { globalLogPath, log, replayTimestamp } from "../logger.js";
-import { getCharacter } from "../character.js";
+import { globalLogPath, log } from "../logger.js";
+import { getCharacter } from "../seed.js";
 import { getUnfinishedTasks, updateTasks } from "./task.js";
 import {
     convertTimeToString,
@@ -83,6 +83,39 @@ async function saveActionResult(
     );
 }
 
+interface EnvironmentData {
+    type: string;
+    health?: string;
+    itemId?: string;
+    x: number;
+    y: number;
+    distance: number;
+}
+
+const getDirection = (x: number, y: number): string => {
+    const degree = Math.atan2(y, x) * (180 / Math.PI);
+    const directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW", "N"];
+    const index = Math.round(((degree + 360) % 360) / 45);
+    return directions[index];
+};
+
+const parseEnvironment = (environmentString: string): EnvironmentData => {
+    const regex =
+        /^(.+?)( \(Health: (.+?)\)| \(Item ID: (.+?)\))?\s?\[X: (.+?), Y: (.+?), Distance: (.+?)m\]$/;
+    const match = environmentString.match(regex);
+    if (match) {
+        return {
+            type: match[1],
+            health: match[3],
+            itemId: match[4],
+            x: parseFloat(match[5]),
+            y: parseFloat(match[6]),
+            distance: parseFloat(match[7]),
+        };
+    }
+    throw new Error("Could not parse environment string.");
+};
+
 async function updateTaskList(data: {
     characterId: string;
     location: {
@@ -119,8 +152,13 @@ async function updateTaskList(data: {
 
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
-        const environment = data.environment[i];
-        prompt += `- ${environment}\n`;
+        const parsedData = parseEnvironment(data.environment[i]);
+        const direction = getDirection(parsedData.x, parsedData.y);
+        const distance = parsedData.distance.toPrecision(2);
+        let healthOrItemId = parsedData.health
+            ? `(Health: ${parsedData.health})`
+            : `(Item ID: ${parsedData.itemId})`;
+        prompt += `- ${parsedData.type} ${healthOrItemId} [Direction: ${direction}, Distance: ${distance}m]\n`;
     }
     prompt += "\n";
 
@@ -282,8 +320,8 @@ async function updateTaskList(data: {
                 ],
                 undefined,
                 undefined,
-                replayTimestamp.getTime().toString(),
-                "updateTaskList"
+                "updateTaskList",
+                character.id
             );
 
             log("--- Response ---", "info", character.id);
@@ -368,8 +406,8 @@ async function updateTaskListAfterConversation(
                 ],
                 undefined,
                 undefined,
-                replayTimestamp.getTime().toString(),
-                "updateTaskListAfterConversation"
+                "updateTaskListAfterConversation",
+                character.id
             );
 
             log("--- Response ---", "info", character.id);
@@ -463,8 +501,13 @@ async function getAction(
 
     prompt += `Environment:\n`;
     for (let i = 0; i < data.environment.length; i++) {
-        const environment = data.environment[i];
-        prompt += `- ${environment}\n`;
+        const parsedData = parseEnvironment(data.environment[i]);
+        const direction = getDirection(parsedData.x, parsedData.y);
+        const distance = parsedData.distance.toPrecision(2);
+        let healthOrItemId = parsedData.health
+            ? `(Health: ${parsedData.health})`
+            : `(Item ID: ${parsedData.itemId})`;
+        prompt += `- ${parsedData.type} ${healthOrItemId} [Direction: ${direction}, Distance: ${distance}m]\n`;
     }
     prompt += "\n";
 
@@ -643,8 +686,8 @@ async function getAction(
                 ],
                 actions,
                 undefined,
-                replayTimestamp.getTime().toString(),
-                "getAction"
+                "getAction",
+                character.id
             );
 
             if (occupiedAgents[character.id]) {

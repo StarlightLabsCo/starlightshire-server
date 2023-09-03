@@ -2,12 +2,82 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [vector]
+}
+
+// Next Auth
+// https://next-auth.js.org/
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// Starlight
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+
+  accounts Account[]
+  sessions Session[]
+
+  instances Instance[] // Game instances, think of it like a playthrough
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Instance {
+  id String @id @default(cuid())
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  description String?
+
+  characters Character[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Character {
@@ -22,27 +92,57 @@ model Character {
   memories            Memory[]
   reflectionThreshold Float    @default(0)
 
-  // Metadata
+  instance   Instance @relation(fields: [instanceId], references: [id], onDelete: Cascade)
+  instanceId String
+
+  requestLogs OpenAIRequestLog[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
-// There are 2 types of memories:
-// - Observations - memories created by the user, or by the system in obsveration of the world
-// - Reflections - after an importance threshold is reached, the system will create a reflection based on the observations so far
 model Memory {
   id String @id @default(cuid())
 
-  characterId String?
-  character   Character? @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  characterId String
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
 
   memory String
 
-  // The 3 values below are used to calculate the relevancy of a memory
-  embedding  String
+  embedding  Unsupported("vector(1536)")?
   importance Float
-  accessedAt DateTime @default(now())
+  accessedAt DateTime                     @default(now())
 
-  // Metadata
-  time Float
+  time Float @default(0) // Game time
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OpenAIRequestLog {
+  id Int @id @default(autoincrement())
+
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  characterId String
+
+  tag String
+
+  requestMethod  String
+  requestUrl     String
+  requestHeaders Json
+  requestBody    String
+
+  responseHeaders Json
+  responseBody    Json
+  responseTime    Int
+
+  model            String
+  promptTokens     Int
+  completionTokens Int
+  totalTokens      Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tag])
 }
