@@ -14,6 +14,7 @@ import {
 } from "../utils.js";
 import { calculateMaxMemoriesForTask, getRelevantMemories } from "./memory.js";
 import { createChatCompletion } from "./openai.js";
+import { instance } from "../index.js";
 
 const actionCounter = {};
 const actionHistory = {};
@@ -131,11 +132,11 @@ async function updateTaskList(data: {
     maxSatiety: number;
 }) {
     // -- Get Action --
-    const character = await getCharacter(data.characterId);
+    const character = await getCharacter(instance.id, data.characterId);
 
     let prompt = "";
     prompt += `Character: \n`;
-    prompt += `- ID: ${character.id}\n`;
+    prompt += `- ID: ${character.unityId}\n`;
     prompt += `- Name: ${character.name}\n`;
     prompt += `- Age: ${character.age}\n`;
     prompt += `- Occupation: ${character.occupation}\n`;
@@ -192,9 +193,9 @@ async function updateTaskList(data: {
 
     let tasksArray = [];
 
-    if (tasks[character.id].length > 0) {
-        for (let i = 0; i < tasks[character.id].length; i++) {
-            const task = tasks[character.id][i];
+    if (tasks[character.unityId].length > 0) {
+        for (let i = 0; i < tasks[character.unityId].length; i++) {
+            const task = tasks[character.unityId][i];
 
             const taskObj = {
                 task: task.task,
@@ -264,18 +265,18 @@ async function updateTaskList(data: {
         prompt += "\n";
     }
 
-    if (actionHistory[character.id].length > 0) {
+    if (actionHistory[character.unityId].length > 0) {
         prompt += `Previous Actions:\n`;
         // print the most recent 10 actions
         for (
-            let i = Math.max(0, actionHistory[character.id].length - 10);
-            i < actionHistory[character.id].length;
+            let i = Math.max(0, actionHistory[character.unityId].length - 10);
+            i < actionHistory[character.unityId].length;
             i++
         ) {
-            log(`Getting action ${i}`, "info", character.id);
-            const action = actionHistory[character.id][i];
-            log(`Getting result ${i}`, "info", character.id);
-            const result = actionResults[character.id][i];
+            log(`Getting action ${i}`, "info", character.unityId);
+            const action = actionHistory[character.unityId][i];
+            log(`Getting result ${i}`, "info", character.unityId);
+            const result = actionResults[character.unityId][i];
 
             if (result === undefined) {
                 log(
@@ -283,10 +284,10 @@ async function updateTaskList(data: {
                         `Result for action ${i} is undefined. Skipping...`
                     ),
                     "info",
-                    character.id
+                    character.unityId
                 );
 
-                log(action[i], "info", character.id);
+                log(action[i], "info", character.unityId);
 
                 continue;
             }
@@ -304,8 +305,8 @@ async function updateTaskList(data: {
     let generationAttempts = 0;
     while (generationAttempts < 10) {
         try {
-            log("--- Prompt ---", "info", character.id);
-            log(prompt, "info", character.id);
+            log("--- Prompt ---", "info", character.unityId);
+            log(prompt, "info", character.unityId);
 
             const response = await createChatCompletion(
                 [
@@ -324,20 +325,20 @@ async function updateTaskList(data: {
                 character.id
             );
 
-            log("--- Response ---", "info", character.id);
-            log("Updated Tasks: ", "info", character.id);
+            log("--- Response ---", "info", character.unityId);
+            log("Updated Tasks: ", "info", character.unityId);
 
             // use regex to select a JSON array
             const taskArray = response.content.match(/\[.*\]/s)[0];
             const tasksJSON = JSON.parse(taskArray);
 
-            log(tasksJSON, "info", character.id);
+            log(tasksJSON, "info", character.unityId);
 
             updateTasks(character.id, tasksJSON);
 
             return;
         } catch (e) {
-            log(e, "error", character.id);
+            log(e, "error", character.unityId);
             generationAttempts++;
         }
     }
@@ -347,13 +348,13 @@ async function updateTaskListAfterConversation(
     characterId: string,
     memories: string[]
 ) {
-    const character = await getCharacter(characterId);
+    const character = await getCharacter(instance.id, characterId);
 
     const tasks = await getUnfinishedTasks(character);
 
     let prompt = "";
     prompt += `Character: \n`;
-    prompt += `- ID: ${character.id}\n`;
+    prompt += `- ID: ${character.unityId}\n`;
     prompt += `- Name: ${character.name}\n`;
     prompt += `- Age: ${character.age}\n`;
     prompt += `- Occupation: ${character.occupation}\n`;
@@ -366,9 +367,9 @@ async function updateTaskListAfterConversation(
     }
 
     let tasksArray = [];
-    if (tasks[character.id].length > 0) {
-        for (let i = 0; i < tasks[character.id].length; i++) {
-            const task = tasks[character.id][i];
+    if (tasks[character.unityId].length > 0) {
+        for (let i = 0; i < tasks[character.unityId].length; i++) {
+            const task = tasks[character.unityId][i];
 
             const taskObj = {
                 task: task.task,
@@ -389,9 +390,9 @@ async function updateTaskListAfterConversation(
             log(
                 "--- Conversation Task Update Prompt ---",
                 "info",
-                character.id
+                character.unityId
             );
-            log(prompt, "info", character.id);
+            log(prompt, "info", character.unityId);
 
             const response = await createChatCompletion(
                 [
@@ -410,8 +411,8 @@ async function updateTaskListAfterConversation(
                 character.id
             );
 
-            log("--- Response ---", "info", character.id);
-            log("Updated Tasks: ", "info", character.id);
+            log("--- Response ---", "info", character.unityId);
+            log("Updated Tasks: ", "info", character.unityId);
 
             // use regex to select a JSON array
             const taskArray = response.content.match(/\[.*\]/s)[0];
@@ -422,13 +423,13 @@ async function updateTaskListAfterConversation(
                 return a.priority - b.priority;
             });
 
-            log(tasksJSON, "info", character.id);
+            log(tasksJSON, "info", character.unityId);
 
             updateTasks(character.id, tasksJSON);
 
             return;
         } catch (e) {
-            log(e, "error", character.id);
+            log(e, "error", character.unityId);
             generationAttempts++;
         }
     }
@@ -479,12 +480,12 @@ async function getAction(
     count++;
 
     // -- Get Action --
-    const character = await getCharacter(data.characterId);
+    const character = await getCharacter(instance.id, data.characterId);
 
     let prompt = "";
     // TODO: replace with planning.ts 's generate agent summary function or something like it(?)
     prompt += `Character: \n`;
-    prompt += `- ID: ${character.id}\n`;
+    prompt += `- ID: ${character.unityId}\n`;
     prompt += `- Name: ${character.name}\n`;
     prompt += `- Age: ${character.age}\n`;
     prompt += `- Occupation: ${character.occupation}\n`;
@@ -541,9 +542,9 @@ async function getAction(
 
     let tasksArray = []; // An array to store task objects
 
-    if (tasks[character.id].length > 0) {
-        for (let i = 0; i < tasks[character.id].length; i++) {
-            const task = tasks[character.id][i];
+    if (tasks[character.unityId].length > 0) {
+        for (let i = 0; i < tasks[character.unityId].length; i++) {
+            const task = tasks[character.unityId][i];
 
             const taskObj = {
                 task: task.task,
@@ -606,19 +607,19 @@ async function getAction(
         prompt += "\n";
     }
 
-    if (actionHistory[character.id].length > 0) {
+    if (actionHistory[character.unityId].length > 0) {
         prompt += `Previous Actions:\n`;
         // print the most recent 10 actions
         for (
-            let i = Math.max(0, actionHistory[character.id].length - 10);
-            i < actionHistory[character.id].length;
+            let i = Math.max(0, actionHistory[character.unityId].length - 10);
+            i < actionHistory[character.unityId].length;
             i++
         ) {
-            log(`Getting action ${i}`, "info", character.id);
-            const action = actionHistory[character.id][i];
+            log(`Getting action ${i}`, "info", character.unityId);
+            const action = actionHistory[character.unityId][i];
 
-            log(`Getting result ${i}`, "info", character.id);
-            const result = actionResults[character.id][i];
+            log(`Getting result ${i}`, "info", character.unityId);
+            const result = actionResults[character.unityId][i];
 
             if (result === undefined) {
                 log(
@@ -626,10 +627,10 @@ async function getAction(
                         `Result for action ${i} is undefined. Skipping...`
                     ),
                     "info",
-                    character.id
+                    character.unityId
                 );
 
-                log(action[i], "info", character.id);
+                log(action[i], "info", character.unityId);
 
                 continue;
             }
@@ -647,8 +648,8 @@ async function getAction(
     let generationAttempts = 0;
     while (generationAttempts < 10) {
         try {
-            log("--- Prompt ---", "info", character.id);
-            log(prompt, "info", character.id);
+            log("--- Prompt ---", "info", character.unityId);
+            log(prompt, "info", character.unityId);
 
             // Turn the available actions string array into a set to remove duplicates
             const availableActionsSet = new Set(data.availableActions);
@@ -669,8 +670,8 @@ async function getAction(
             prompt += "\n";
 
             // Log action functions
-            log("--- Action Functions ---", "info", character.id);
-            log(actions, "info", character.id);
+            log("--- Action Functions ---", "info", character.unityId);
+            log(actions, "info", character.unityId);
 
             const response = await createChatCompletion(
                 [
@@ -690,19 +691,19 @@ async function getAction(
                 character.id
             );
 
-            if (occupiedAgents[character.id]) {
+            if (occupiedAgents[character.unityId]) {
                 log(
                     colors.red(
-                        `Agent ${character.id} is already occupied. Skipping...`
+                        `Agent ${character.unityId} is already occupied. Skipping...`
                     ),
                     "info",
-                    character.id
+                    character.unityId
                 );
                 return;
             }
 
-            log("--- Response ---", "info", character.id);
-            log(response, "info", character.id);
+            log("--- Response ---", "info", character.unityId);
+            log(response, "info", character.unityId);
 
             let type = response.function_call.name;
             if (type.startsWith("drop")) {
@@ -721,13 +722,13 @@ async function getAction(
             // Verify action schema
             const verifiedAction = Action.parse(action);
 
-            log("--- Verified Action ---", "info", character.id);
-            log(verifiedAction, "info", character.id);
+            log("--- Verified Action ---", "info", character.unityId);
+            log(verifiedAction, "info", character.unityId);
 
             ws.send(JSON.stringify(verifiedAction));
 
             // Save World Time
-            actionSetWorldCommands[character.id].push({
+            actionSetWorldCommands[character.unityId].push({
                 type: "SetWorldTime",
                 data: {
                     time: Number(data.time),
@@ -735,32 +736,32 @@ async function getAction(
             });
 
             const setWorldCommands = JSON.stringify(
-                actionSetWorldCommands[character.id],
+                actionSetWorldCommands[character.unityId],
                 null,
                 2
             );
 
             fs.writeFileSync(
-                `${globalLogPath}${character.id}_setWorldCommands.txt`,
+                `${globalLogPath}${character.unityId}_setWorldCommands.txt`,
                 setWorldCommands
             );
 
             // Action History
-            actionHistory[character.id].push(verifiedAction);
+            actionHistory[character.unityId].push(verifiedAction);
             const historyString = JSON.stringify(
-                actionHistory[character.id],
+                actionHistory[character.unityId],
                 null,
                 2
             );
 
             fs.writeFileSync(
-                `${globalLogPath}${character.id}_actions.txt`,
+                `${globalLogPath}${character.unityId}_actions.txt`,
                 historyString
             );
 
             return;
         } catch (e) {
-            log(e, "error", character.id);
+            log(e, "error", character.unityId);
             generationAttempts++;
         }
     }

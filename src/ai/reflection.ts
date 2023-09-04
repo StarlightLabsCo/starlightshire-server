@@ -43,7 +43,7 @@ const answerReflectionQuestion = async (
         character.name +
         "'s point of view?\n";
 
-    log(reflectionPrompt, "info", character.id);
+    log(reflectionPrompt, "info", character.unityId);
 
     const completion = await createChatCompletion(
         [
@@ -78,7 +78,7 @@ const answerReflectionQuestion = async (
             "[REFLECTION] Reflection question answered and memories created."
         ),
         "info",
-        character.id
+        character.unityId
     );
 };
 
@@ -91,7 +91,7 @@ const generateReflection = async (character: Character, time: number) => {
             `[REFLECTION] Retrieved ${memories.length} latest memories for reflection generation.`
         ),
         "info",
-        character.id
+        character.unityId
     );
 
     let generateReflectionQuestionsPrompt = "";
@@ -102,7 +102,7 @@ const generateReflection = async (character: Character, time: number) => {
 
     generateReflectionQuestionsPrompt += `Given only the information above, what are 3 most salient high-level questions we can answer about the subjects in the statements from ${character.name}'s point of view?\n`;
 
-    log(generateReflectionQuestionsPrompt, "info", character.id);
+    log(generateReflectionQuestionsPrompt, "info", character.unityId);
 
     const completion = await createChatCompletion(
         [
@@ -119,7 +119,7 @@ const generateReflection = async (character: Character, time: number) => {
         character.id
     );
 
-    log(completion, "info", character.id);
+    log(completion, "info", character.unityId);
 
     const reflectionQuestionsParsed = completion.content
         .replace(/^[0-9].\s+?/g, "")

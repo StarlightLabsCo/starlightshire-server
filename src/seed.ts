@@ -2,6 +2,7 @@ import { createMemory } from "./ai/memory.js";
 import { generatePlan } from "./ai/planning.js";
 import { prisma } from "./db.js";
 import { createLogger, log } from "./logger.js";
+import colors from "colors";
 
 const createInstance = async (description: string) => {
     log("[Starlight] Creating instance");
@@ -11,19 +12,22 @@ const createInstance = async (description: string) => {
             description: description,
             user: {
                 connect: {
-                    id: "clm2zlhya0000vd41tx2eqkxo",
+                    id: "clm4l6ras0000vd2s07ebi5t7",
                 },
             },
         },
     });
 };
 
-const getCharacter = async (id: string) => {
-    log("[Character] Getting character: " + id);
+const getCharacter = async (instanceId: string, unityId: string) => {
+    log("[Character] Getting character: " + unityId);
 
     return await prisma.character.findUnique({
         where: {
-            id,
+            character_instanceId_unityId_unique: {
+                unityId: unityId,
+                instanceId: instanceId,
+            },
         },
     });
 };
@@ -35,50 +39,51 @@ const createThomas = async (instanceId: string) => {
 
     log("[Character] Creating Thomas", "info", "A1");
 
-    const thomas = await prisma.character.create({
-        data: {
-            id: "A1",
-            instance: {
-                connect: {
-                    id: instanceId,
+    let thomas;
+    try {
+        thomas = await prisma.character.create({
+            data: {
+                unityId: "A1",
+                instance: {
+                    connect: {
+                        id: instanceId,
+                    },
                 },
+                name: "Thomas Smith",
+                age: 32,
+                occupation: "Village Leader",
+                personality: ["Brave", "Calm", "Honest"],
+                systemPrompt:
+                    "In the village's shadows, Thomas Smit stands as an overpowering force of ego and control. His voice booms like divine decrees, each word meticulously calculated to silence opposition. His laughter, a malevolent symphony, intimidates even the bravest. Meetings are monologues from his self-erected pedestal, where he dispenses twisted tales that tighten his grasp on the community. Beneath his bluster lies a void, an unquenchable thirst for power that turns the village into his puppet theater, with residents dancing to his discordant whims.",
             },
-            name: "Thomas Smith",
-            age: 32,
-            occupation: "Village Leader",
-            personality: ["Brave", "Calm", "Honest"],
-            systemPrompt:
-                "In the village's shadows, Thomas Smit stands as an overpowering force of ego and control. His voice booms like divine decrees, each word meticulously calculated to silence opposition. His laughter, a malevolent symphony, intimidates even the bravest. Meetings are monologues from his self-erected pedestal, where he dispenses twisted tales that tighten his grasp on the community. Beneath his bluster lies a void, an unquenchable thirst for power that turns the village into his puppet theater, with residents dancing to his discordant whims.",
-        },
-    });
+        });
 
-    const memories: string[] = [
-        "I should be asleep until 7am.",
-        "It's my job to protect the village.",
-        "I need to make sure everyone is safe.",
-        "I do the work that no one else wants to do.",
-        "I try to be as honest as possible.",
-        "I'm not afraid of anything.",
-        "I go to bed at 10pm.",
-        "I like strawberries.",
-        "The village location is 2, -58.",
-        "The mine site is at 51, 17.",
-        "The lumberyard is at 72, -55.1",
-        "The campsite is at 7, -8.3",
-        "The Nume River flows through the village.",
-        "Nume Falls are north of the village, and west of the campsite.",
-        "The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes.",
-    ];
+        const memories: string[] = [
+            "I should be asleep until 7am.",
+            "It's my job to protect the village.",
+            "I need to make sure everyone is safe.",
+            "I do the work that no one else wants to do.",
+            "I try to be as honest as possible.",
+            "I'm not afraid of anything.",
+            "I go to bed at 10pm.",
+            "I like strawberries.",
+            "The village location is 2, -58.",
+            "The mine site is at 51, 17.",
+            "The lumberyard is at 72, -55.1",
+            "The campsite is at 7, -8.3",
+            "The Nume River flows through the village.",
+            "Nume Falls are north of the village, and west of the campsite.",
+            "The area is surrounded by forested monutains, filled with wildlife, rivers, and lakes.",
+        ];
 
-    await Promise.all(
-        memories.map((memory) => createMemory(thomas, memory, 0))
-    );
+        await Promise.all(
+            memories.map((memory) => createMemory(thomas, memory, 0))
+        );
 
-    log("[Character] Thomas created", "info", "A1");
-
-    // await generatePlan(thomas);
-
-    // console.log("Plan generated");
+        log(`[Character] Thomas created (${thomas.id})`, "info", "A1");
+    } catch (err) {
+        log(colors.red(err), "error", "A1");
+    }
 };
 
 const createGeorge = async (instanceId: string) => {
@@ -90,7 +95,7 @@ const createGeorge = async (instanceId: string) => {
 
     const george = await prisma.character.create({
         data: {
-            id: "A2",
+            unityId: "A2",
             instance: {
                 connect: {
                     id: instanceId,
@@ -143,7 +148,7 @@ const createWill = async (instanceId: string) => {
 
     const will = await prisma.character.create({
         data: {
-            id: "A3",
+            unityId: "A3",
             instance: {
                 connect: {
                     id: instanceId,
@@ -194,7 +199,7 @@ const createLucy = async (instanceId: string) => {
 
     const lucy = await prisma.character.create({
         data: {
-            id: "A4",
+            unityId: "A4",
             instance: {
                 connect: {
                     id: instanceId,
@@ -245,7 +250,7 @@ const createEli = async (instanceId: string) => {
 
     const eli = await prisma.character.create({
         data: {
-            id: "A5",
+            unityId: "A5",
             instance: {
                 connect: {
                     id: instanceId,

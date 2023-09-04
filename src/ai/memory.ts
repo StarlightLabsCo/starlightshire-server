@@ -58,7 +58,7 @@ const createMemory = async (
     log(
         colors.red("[createMemory]") + " " + memory + " [" + time + "]",
         "info",
-        character.id
+        character.unityId
     );
 
     const latestCharacter = await prisma.character.findUnique({
@@ -125,7 +125,7 @@ const getLatestMemories = async (character: Character, top_k: number) => {
             `[getLatestMemories] Retrieving top ${top_k} latest memories.`
         ),
         "info",
-        character.id
+        character.unityId
     );
 
     const memories = await prisma.memory.findMany({
@@ -138,7 +138,7 @@ const getLatestMemories = async (character: Character, top_k: number) => {
         take: top_k,
     });
 
-    log(memories, "info", character.id);
+    log(memories, "info", character.unityId);
 
     return memories;
 };

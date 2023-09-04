@@ -22,16 +22,14 @@ async function getEmbedding(input: string, tag?: string, agentId?: string) {
 
     let requestAttempts = 0;
 
-    let headers = {
-        "X-Starlight-Run": replayTimestamp.getTime().toString(),
-    };
+    let headers = {};
 
     if (tag) {
         headers["X-Starlight-Tag"] = tag;
     }
 
     if (agentId) {
-        headers["X-Starlight-Agent-Id"] = agentId;
+        headers["X-Starlight-Character-Id"] = agentId;
     }
 
     while (requestAttempts < config.requestAttempts) {
@@ -92,16 +90,14 @@ async function createChatCompletion(
         openaiArgs["function_call"] = "auto";
     }
 
-    let headers = {
-        "X-Starlight-Run": replayTimestamp.getTime().toString(),
-    };
+    let headers = {};
 
     if (tag) {
         headers["X-Starlight-Tag"] = tag;
     }
 
     if (agentId) {
-        headers["X-Starlight-Agent-Id"] = agentId;
+        headers["X-Starlight-Character-Id"] = agentId;
     }
 
     let requestAttempts = 0;

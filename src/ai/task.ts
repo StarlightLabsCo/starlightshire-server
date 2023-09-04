@@ -77,16 +77,13 @@ async function getUnfinishedTasks(character: Character) {
     return tasks;
 }
 
-function updateTasks(
-    characterId: string,
-    updatedTasks: [
-        {
-            task: string;
-            priority: number;
-            createdAt: Date;
-        }
-    ]
-) {
+interface Task {
+    task: string;
+    priority: number;
+    createdAt: Date;
+}
+
+function updateTasks(characterId: string, updatedTasks: Task[]) {
     tasks[characterId] = updatedTasks;
 }
 

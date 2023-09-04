@@ -83,7 +83,11 @@ model Instance {
 model Character {
   id String @id @default(cuid())
 
-  name         String   @unique
+  instance   Instance @relation(fields: [instanceId], references: [id], onDelete: Cascade)
+  instanceId String
+
+  unityId      String
+  name         String
   age          Int
   occupation   String
   personality  String[]
@@ -92,13 +96,12 @@ model Character {
   memories            Memory[]
   reflectionThreshold Float    @default(0)
 
-  instance   Instance @relation(fields: [instanceId], references: [id], onDelete: Cascade)
-  instanceId String
-
   requestLogs OpenAIRequestLog[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@unique([instanceId, unityId], name: "character_instanceId_unityId_unique")
 }
 
 model Memory {
@@ -120,7 +123,7 @@ model Memory {
 }
 
 model OpenAIRequestLog {
-  id Int @id @default(autoincrement())
+  id String @id @default(cuid())
 
   character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
   characterId String
@@ -130,7 +133,7 @@ model OpenAIRequestLog {
   requestMethod  String
   requestUrl     String
   requestHeaders Json
-  requestBody    String
+  requestBody    Json
 
   responseHeaders Json
   responseBody    Json

@@ -107,25 +107,25 @@ async function processPriorMessage(
         colors.magenta(`[CORTEX] ${character.name} - Prior Message: `) +
             `${interlocutorPriorMessage}`,
         "info",
-        character.id
+        character.unityId
     );
     log(
         colors.magenta(`[CORTEX] ${character.name} - Patience: `) +
             `${characterState.patience}`,
         "info",
-        character.id
+        character.unityId
     );
     log(
         colors.magenta(`[CORTEX] ${character.name} - Conversation Goal: `) +
             `${characterState.conversationGoal}`,
         "info",
-        character.id
+        character.unityId
     );
     log(
         colors.magenta(`[CORTEX] ${character.name} - Conversation Finished: `) +
             `${characterState.conversationFinished}`,
         "info",
-        character.id
+        character.unityId
     );
 
     characterCortexStep = characterCortexStep.withMemory([
@@ -144,9 +144,8 @@ async function processPriorMessage(
         {
             requestOptions: {
                 headers: {
-                    "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                    "X-Starlight-Character-Id": character.id,
                     "X-Starlight-Tag": "processPriorMessage/feels",
-                    "X-Starlight-Agent-Id": character.id,
                 },
             },
         }
@@ -156,7 +155,7 @@ async function processPriorMessage(
         colors.magenta(`[CORTEX] ${character.name} - Feel: `) +
             `${characterCortexStep.value}`,
         "info",
-        character.id
+        character.unityId
     );
 
     // shortciruit if first two messages
@@ -173,10 +172,9 @@ async function processPriorMessage(
         {
             requestOptions: {
                 headers: {
-                    "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                    "X-Starlight-Character-Id": character.id,
                     "X-Starlight-Tag":
                         "processPriorMessage/goalProgressExplain",
-                    "X-Starlight-Agent-Id": character.id,
                 },
             },
         }
@@ -186,7 +184,7 @@ async function processPriorMessage(
         colors.magenta(`[CORTEX] ${character.name} - Explain: `) +
             `${characterCortexStep.value}`,
         "info",
-        character.id
+        character.unityId
     );
 
     // binary - did i make progress towards my goal?
@@ -198,10 +196,9 @@ async function processPriorMessage(
         {
             requestOptions: {
                 headers: {
-                    "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                    "X-Starlight-Character-Id": character.id,
                     "X-Starlight-Tag":
                         "processPriorMessage/goalProgressDecision",
-                    "X-Starlight-Agent-Id": character.id,
                 },
             },
         }
@@ -211,7 +208,7 @@ async function processPriorMessage(
         colors.magenta(`[CORTEX] ${character.name} - Did I make progress? `) +
             `[${characterCortexStep.value.decision}]`,
         "info",
-        character.id
+        character.unityId
     );
 
     if (characterCortexStep.value.decision.toString().includes("yes")) {
@@ -223,10 +220,9 @@ async function processPriorMessage(
             {
                 requestOptions: {
                     headers: {
-                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Character-Id": character.id,
                         "X-Starlight-Tag":
                             "processPriorMessage/goalAccomplishDecision",
-                        "X-Starlight-Agent-Id": character.id,
                     },
                 },
             }
@@ -237,7 +233,7 @@ async function processPriorMessage(
                 `[CORTEX] ${character.name} - Did I accomplish my goal? `
             ) + `[${characterCortexStep.value.decision}]`,
             "info",
-            character.id
+            character.unityId
         );
 
         if (characterCortexStep.value.decision.toString().includes("yes")) {
@@ -256,12 +252,9 @@ async function processPriorMessage(
                 {
                     requestOptions: {
                         headers: {
-                            "X-Starlight-Run": replayTimestamp
-                                .getTime()
-                                .toString(),
+                            "X-Starlight-Character-Id": character.id,
                             "X-Starlight-Tag":
                                 "processPriorMessage/endConversationOrNewGoalExplain",
-                            "X-Starlight-Agent-Id": character.id,
                         },
                     },
                 }
@@ -271,7 +264,7 @@ async function processPriorMessage(
                 colors.magenta(`[CORTEX] ${character.name} - Explain: `) +
                     `${characterCortexStep.value}`,
                 "info",
-                character.id
+                character.unityId
             );
 
             characterCortexStep = await characterCortexStep.next(
@@ -282,12 +275,9 @@ async function processPriorMessage(
                 {
                     requestOptions: {
                         headers: {
-                            "X-Starlight-Run": replayTimestamp
-                                .getTime()
-                                .toString(),
                             "X-Starlight-Tag":
                                 "processPriorMessage/endConversationDecision",
-                            "X-Starlight-Agent-Id": character.id,
+                            "X-Starlight-Character-Id": character.id,
                         },
                     },
                 }
@@ -298,7 +288,7 @@ async function processPriorMessage(
                     `[CORTEX] ${character.name} - Should I end the conversation? `
                 ) + `[${characterCortexStep.value.decision}]`,
                 "info",
-                character.id
+                character.unityId
             );
 
             if (characterCortexStep.value.decision.toString().includes("yes")) {
@@ -319,12 +309,9 @@ async function processPriorMessage(
                     {
                         requestOptions: {
                             headers: {
-                                "X-Starlight-Run": replayTimestamp
-                                    .getTime()
-                                    .toString(),
+                                "X-Starlight-Character-Id": character.id,
                                 "X-Starlight-Tag":
                                     "processPriorMessage/newGoalDecide",
-                                "X-Starlight-Agent-Id": character.id,
                             },
                         },
                     }
@@ -358,7 +345,7 @@ async function processPriorMessage(
         log(
             colors.magenta(`Patience:`) + `${characterState.patience}`,
             "info",
-            character.id
+            character.unityId
         );
 
         if (characterState.patience > 0) {
@@ -418,9 +405,8 @@ async function processCharacterThoughts(
             {
                 requestOptions: {
                     headers: {
-                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Character-Id": character.id,
                         "X-Starlight-Tag": "processCharacterThoughts/planning",
-                        "X-Starlight-Agent-Id": character.id,
                     },
                 },
             }
@@ -430,7 +416,7 @@ async function processCharacterThoughts(
             colors.magenta(`[CORTEX] ${character.name} - Plan: `) +
                 ` ${characterCortexStep.value}`,
             "info",
-            character.id
+            character.unityId
         );
 
         // say - external
@@ -442,9 +428,8 @@ async function processCharacterThoughts(
             {
                 requestOptions: {
                     headers: {
-                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Character-Id": character.id,
                         "X-Starlight-Tag": "processCharacterThoughts/say",
-                        "X-Starlight-Agent-Id": character.id,
                     },
                 },
             }
@@ -454,7 +439,7 @@ async function processCharacterThoughts(
             colors.magenta(`[CORTEX] ${character.name} - Say: `) +
                 `${characterCortexStep.value}\n`,
             "info",
-            character.id
+            character.unityId
         );
     } else {
         characterCortexStep = await characterCortexStep.next(
@@ -465,9 +450,8 @@ async function processCharacterThoughts(
             {
                 requestOptions: {
                     headers: {
-                        "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                        "X-Starlight-Character-Id": character.id,
                         "X-Starlight-Tag": "processCharacterThoughts/goodbye",
-                        "X-Starlight-Agent-Id": character.id,
                     },
                 },
             }
@@ -477,7 +461,7 @@ async function processCharacterThoughts(
             colors.magenta(`[CORTEX] ${character.name} Goodbye: `) +
                 `${characterCortexStep.value}`,
             "info",
-            character.id
+            character.unityId
         );
     }
 
@@ -509,10 +493,9 @@ const processMemories = async (
     cortexStep = await cortexStep.next(generateMemoriesFromConversation(), {
         requestOptions: {
             headers: {
-                "X-Starlight-Run": replayTimestamp.getTime().toString(),
+                "X-Starlight-Character-Id": character.id,
                 "X-Starlight-Tag":
                     "processMemories/generateMemoriesFromConversation",
-                "X-Starlight-Agent-Id": character.id,
             },
         },
     });

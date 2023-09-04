@@ -1,6 +1,7 @@
 import { getCharacter } from "../seed.js";
 import { log } from "../logger.js";
 import { createMemory } from "./memory.js";
+import { instance } from "../index.js";
 
 async function observe(
     ws: WebSocket,
@@ -13,7 +14,7 @@ async function observe(
     log("--- Observations received -- ");
     log(data);
 
-    const character = await getCharacter(data.observerId);
+    const character = await getCharacter(instance.id, data.observerId);
 
     if (!character) {
         log("Character not found");

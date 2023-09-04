@@ -45,9 +45,8 @@ const handlers = {
     OccupyAgent: occupyAgent,
 };
 
+let instance;
 async function main() {
-    await resetDb();
-
     const argv = await yargs(hideBin(process.argv)).option("m", {
         description: "Message for the run",
         type: "string",
@@ -55,7 +54,7 @@ async function main() {
 
     await initLogging(argv.m as string | undefined);
 
-    const instance = await createInstance(argv.m as string | undefined);
+    instance = await createInstance(argv.m as string | undefined);
     createCharacters(instance.id);
 
     if (!process.env.PORT) {
@@ -122,6 +121,6 @@ async function main() {
     log(`[Main] WebSocket server listening on port ${process.env.PORT}`);
 }
 
-export { wss, clients };
+export { wss, clients, instance };
 
 main();
